@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clan Français</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1 onclick="window.scrollTo({top:0,behavior:'smooth'})">Clan Français</h1>
+  <nav>
+    <a href="#home">Accueil</a>
+    <a href="#team">Équipe</a>
+    <a href="#news">Actualités</a>
+    <a href="#tournaments">Recrutements</a>
+    <a href="#Objectifs">Objectifs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Bienvenue sur le site du Clan Français</h2>
+  <p>Clan actuellement dans le top 1000 France sur Clash Royale</p>
+  <button onclick="window.location.href = 'https://link.clashroyale.com/?clanInfo?id=LJ8GVLQC';">Rejoindre le clan</button>
+</section>
+
+<section id="team">
+  <h2>Gérants du clan</h2>
+  <div class="team-container">
+    <div class="member" style="animation-delay:0.2s;">
+      <img src="https://cdn.royaleapi.com/static/img/badge/gold-1/flag_k_01.png?t=8597d6a2c" alt="Jean">
+      <h3>✨Tom07✨</h3>
+      <p>Chef</p>
+      <div class="stats">
+        <div class="stat">Trophées: 7798</div>
+        <div class="stat">Victoires: 1854</div>
+      </div>
+    </div>
+    <div class="member" style="animation-delay:0.4s;">
+      <img src="https://cdn.royaleapi.com/static/img/badge/gold-1/flag_k_01.png?t=8597d6a2c" alt="Marie">
+      <h3>ExAnoVa</h3>
+      <p>Chef adjoint</p>
+      <div class="stats">
+        <div class="stat">Trophées: 10565</div>
+        <div class="stat">Victoires: 1426</div>
+      </div>
+    </div>
+    <div class="member" style="animation-delay:0.6s;">
+      <img src="https://cdn.royaleapi.com/static/img/badge/gold-1/flag_k_01.png?t=8597d6a2c" alt="Luc">
+      <h3>HyperLoop-2000</h3>
+      <p>Chef adjoint</p>
+      <div class="stats">
+        <div class="stat">Trophées: 12000</div>
+        <div class="stat">Victoires: 3110</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="news">
+  <h2>Actualités</h2>
+  <div class="news-container">
+    <div class="news-card" style="animation-delay:0.2s;">
+      <img src="https://cdn.webshopapp.com/shops/31683/files/191173805/image.jpg" alt="">
+      <h4>Top France</h4>
+      <span>14 Novembre 2025</span>
+      <p>Notre clan représente la France en passant dans le top 1000 des meilleurs clans du pays</p>
+    </div>
+    <div class="news-card" style="animation-delay:0.4s;">
+      <img src="https://fireteam.fr/wp-content/uploads/2017/12/clash-royale-banniere.jpg" alt="">
+      <h4>Création du clan</h4>
+      <span>2021</span>
+      <p>Création du clan "Clan Francais"</p>
+    </div>
+  </div>
+</section>
+
+<section id="tournaments">
+  <h2>Critères pour rejoindre le clan</h2>
+  <div class="tournaments">
+    <div class="tournament-card" style="animation-delay:0.2s;">
+      <h4>Activité</h4>
+      <p>Nous recherchons des personnes très actives pour faire monter le clan au sommet</p>
+    </div>
+    <div class="tournament-card" style="animation-delay:0.4s;">
+      <h4>Comportement</h4>
+      <p>Le respect et la communication sont des choses essentielles pour le bon fonctionnement du clan</p>
+    </div>
+    <div class="tournament-card" style="animation-delay:0.6s;">
+      <h4>Guerre de clan (GDC)</h4>
+      <p>Même si la GDC est facultative, il est tout de même important d'y participer pour montrer son engagement et son activité</p>
+    </div>
+    <div class="tournament-card" style="animation-delay:0.4s;">
+      <h4>Trophées</h4>
+      <p>Pour rejoindre le clan, vous devez avoir un minimum de 9000 trophées. Nous recherchons en effet des personnes compétentes sur le jeu</p>
+    </div>
+  </div>
+</section>
+
+<section id="Objectifs">
+  <h2>Nos objectifs</h2>
+  <div class="Objectifs">
+    <div class="tournament-card" style="animation-delay:0.2s;">
+      <h4>Progression</h4>
+      <p>Monter dans le classement national afin de se faire connaitre</p>
+    </div>
+    <div class="tournament-card" style="animation-delay:0.4s;">
+      <h4>Aide</h4>
+      <p>Aider chaque membre à augmenter ses trophées et améliorer ses cartes</p>
+    </div>
+    <div class="tournament-card" style="animation-delay:0.6s;">
+      <h4>Recrutement ciblé</h4>
+      <p>Attirer des membres compétitifs et motivés afin de renforcer le clan</p>
+    </div>
+    <div class="tournament-card" style="animation-delay:0.4s;">
+      <h4>Participation</h4>
+      <p>Participer aux événements officiels afin de s'améliorer</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contactez-nous</h2>
+  <form class="contact-form" action="https://formspree.io/f/xkgkbrap" method="POST">
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Clan Français | Suivez-nous sur 
+  <a href="https://discord.gg/WmDpGVdW">Discord</a>
+</footer>
+
+</body>
+</html>
