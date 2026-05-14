@@ -13,6 +13,7 @@
   <h1 onclick="window.scrollTo({top:0,behavior:'smooth'})">Clan Francais</h1>
   <nav>
     <a href="#home">Accueil</a>
+    <a href="#classement">Classement</a>
     <a href="#team">Équipe</a>
     <a href="#news">Actualités</a>
     <a href="#tournaments">Recrutements</a>
@@ -25,6 +26,22 @@
   <h2>Bienvenue sur le site du Clan Francais</h2>
   <p>Clan actuellement dans le top 1000 France sur Clash Royale</p>
   <button onclick="window.location.href = 'https://link.clashroyale.com/?clanInfo?id=LJ8GVLQC';">Rejoindre le clan</button>
+</section>
+
+<!-- ==================== CLASSEMENT LIVE DIRECT ==================== -->
+<section id="classement">
+  <h2>Classement Live du Clan</h2>
+  <p id="last-update" style="text-align:center; color:#aaa; margin-bottom:30px;">
+    Chargement des membres...
+  </p>
+
+  <div id="clan-table" style="overflow-x:auto; padding:0 20px; max-width:1100px; margin:0 auto;"></div>
+
+  <p style="text-align:center; margin-top:30px;">
+    <a href="https://www.deckshop.pro/spy/clan/LJ8GVLQC" target="_blank" class="btn-classement">
+      Voir le classement complet sur Deckshop →
+    </a>
+  </p>
 </section>
 
 <section id="team">
@@ -137,9 +154,57 @@
   <a href="https://discord.gg/WmDpGVdW">Discord</a>
 </footer>
 
+<!-- ====================== SCRIPT CLASSEMENT LIVE ====================== -->
+<script>
+// Meilleur proxy + tentative d'extraction
+const proxy = "https://api.allorigins.win/raw?url=";
+const clanUrl = encodeURIComponent("https://royaleapi.com/clan/LJ8GVLQC");
+
+async function loadLiveRanking() {
+  const container = document.getElementById("clan-table");
+  const updateEl = document.getElementById("last-update");
+
+  try {
+    const response = await fetch(proxy + clanUrl);
+    const htmlText = await response.text();
+
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlText, "text/html");
+
+    // Essaie de trouver le tableau des membres
+    let table = doc.querySelector('table') || doc.querySelector('.clan-members-table');
+
+    if (table) {
+      container.innerHTML = table.outerHTML;
+      
+      // Style du tableau
+      const tables = container.querySelectorAll('table');
+      tables.forEach(t => {
+        t.style.width = "100%";
+        t.style.borderCollapse = "collapse";
+        t.style.background = "#1a1a1a";
+        t.style.borderRadius = "10px";
+      });
+    } else {
+      throw new Error("Tableau non trouvé");
+    }
+
+    updateEl.textContent = "Dernière mise à jour : " + new Date().toLocaleTimeString('fr-FR');
+
+  } catch (e) {
+    console.error(e);
+    container.innerHTML = `
+      <p style="text-align:center; color:#ffcc00; padding:40px; background:#1a1a1a; border-radius:10px;">
+        ⚠️ Impossible de charger le classement automatiquement pour le moment.<br><br>
+        Utilise le bouton ci-dessous pour voir les stats en direct.
+      </p>`;
+  }
+}
+
+// Lancement
+loadLiveRanking();
+setInterval(loadLiveRanking, 300000); // toutes les 5 minutes
+</script>
+
 </body>
 </html>
-
-
-
-
