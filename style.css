@@ -115,3 +115,60 @@ footer a:hover { color:var(--secondary); }
   .hero h2 { font-size:2.4em; }
   .hero p { font-size:1.1em; }
 }
+
+/* Bouton Classement Live */
+.btn-classement {
+    background: linear-gradient(135deg, var(--french-red), #c8102e);
+    color: white;
+    padding: 18px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.25em;
+    display: inline-block;
+    box-shadow: 0 6px 20px rgba(239, 65, 53, 0.4);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+.btn-classement:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(239, 65, 53, 0.5);
+    background: linear-gradient(135deg, #ff3366, var(--french-red));
+}
+
+/* Ajoute ça à la fin de ton style.css */
+
+/* Style pour le tableau live */
+#clan-table table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+#clan-table th {
+    background: var(--french-red);
+    padding: 14px 8px;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+#clan-table td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #333;
+    text-align: left;
+}
+
+#clan-table tr:hover {
+    background: #252525;
+}
+
+#clan-table .trophies {
+    color: #4ade80;
+    font-weight: bold;
+}
