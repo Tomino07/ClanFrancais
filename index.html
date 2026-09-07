@@ -1,201 +1,4638 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clan Francais</title>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header>
-  <h1 onclick="window.scrollTo({top:0,behavior:'smooth'})">Clan Francais</h1>
-  <nav>
-    <a href="#home">Accueil</a>
-    <a href="#team">Équipe</a>
-    <a href="#news">Actualités</a>
-    <a href="#tournaments">Recrutements</a>
-    <a href="#Objectifs">Objectifs</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <title>Clan Francais</title>
 
-<section class="hero" id="home">
-  <h2>Bienvenue sur le site du Clan Francais</h2>
-  <p>Clan actuellement dans le top 1000 France sur Clash Royale</p>
-  <button onclick="window.location.href = 'https://link.clashroyale.com/?clanInfo?id=LJ8GVLQC';">Rejoindre le clan</button>
-</section>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<section id="team">
-  <h2>Gérants du clan</h2>
-  <div class="team-container">
-    <div class="member" style="animation-delay:0.2s;">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzHhHi-Z2qbTo2Wq8pjFKgq9e4m2rU5gg_g&s" alt="">
-      <h3>✨Tom07✨</h3>
-      <p>Chef</p>
-      <div class="stats">
-        <div class="stat">Trophées: 8566</div>
-        <div class="stat">Victoires: 2272</div>
-      </div>
-    </div>
-    <div class="member" style="animation-delay:0.4s;">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzHhHi-Z2qbTo2Wq8pjFKgq9e4m2rU5gg_g&s" alt="">
-      <h3>ExAnoVa</h3>
-      <p>Chef adjoint</p>
-      <div class="stats">
-        <div class="stat">Trophées: 11359</div>
-        <div class="stat">Victoires: 1659</div>
-      </div>
-    </div>
-    <div class="member" style="animation-delay:0.6s;">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzHhHi-Z2qbTo2Wq8pjFKgq9e4m2rU5gg_g&s" alt="">
-      <h3>HyperLoop-2000</h3>
-      <p>Chef adjoint</p>
-      <div class="stats">
-        <div class="stat">Trophées: 12559</div>
-        <div class="stat">Victoires: 3551</div>
-      </div>
-    </div>
-  </div>
-</section>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Luckiest+Guy&display=swap"
+    rel="stylesheet"
+  >
 
-<section id="news">
-  <h2>Informations</h2>
-  <div class="news-container">
-    <div class="news-card" style="animation-delay:0.2s;">
-      <img src="https://cdn.webshopapp.com/shops/31683/files/191173805/image.jpg" alt="">
-      <h4>Top France</h4>
-      <span>Novembre 2025</span>
-      <p>Notre clan représente la France en passant dans le top 1000 des meilleurs clans du pays</p>
-    </div>
-    <div class="news-card" style="animation-delay:0.4s;">
-      <img src="https://fireteam.fr/wp-content/uploads/2017/12/clash-royale-banniere.jpg" alt="">
-      <h4>Création du clan</h4>
-      <span>2021</span>
-      <p>Création du clan "Clan Francais"</p>
-    </div>
-    <div class="news-container">
-    <div class="news-card" style="animation-delay:0.2s;">
-      <img src="https://i.redd.it/7l27b50rw12a1.png" alt="">
-      <h4>Record</h4>
-      <span>Janvier 2025</span>
-      <p>Le clan établit un record en devenant le 243ème meilleur clan de France </p>
-    </div>
-  </div>
-</section>
+  <style>
 
+    :root {
+      --blue: #002395;
+      --blue-light: #1647d8;
+      --white: #ffffff;
+      --red: #ED2939;
+      --gold: #FFD700;
+      --gold-dark: #c99b00;
 
-<section id="tournaments">
-  <h2>Critères pour rejoindre le clan</h2>
-  <div class="tournaments">
-    <div class="tournament-card" style="animation-delay:0.2s;">
-      <h4>Activité</h4>
-      <p>Nous recherchons des personnes très actives pour faire monter le clan au sommet</p>
-    </div>
-    <div class="tournament-card" style="animation-delay:0.4s;">
-      <h4>Comportement</h4>
-      <p>Le respect et la communication sont des choses essentielles pour le bon fonctionnement du clan</p>
-    </div>
-    <div class="tournament-card" style="animation-delay:0.6s;">
-      <h4>Guerre de clan (GDC)</h4>
-      <p>Même si la GDC est facultative, il est tout de même important d'y participer pour montrer son engagement et son activité</p>
-    </div>
-    <div class="tournament-card" style="animation-delay:0.4s;">
-      <h4>Trophées</h4>
-      <p>Pour rejoindre le clan, vous devez avoir un minimum de 9000 trophées. Nous recherchons en effet des personnes compétentes sur le jeu</p>
-    </div>
-  </div>
-</section>
+      --bg: #080718;
+      --bg-2: #100C2B;
+      --purple: #17113d;
+      --purple-light: #211854;
 
-<section id="Objectifs">
-  <h2>Nos objectifs</h2>
-  <div class="Objectifs">
-    <div class="tournament-card" style="animation-delay:0.2s;">
-      <h4>Progression</h4>
-      <p>Monter dans le classement national afin de se faire connaitre</p>
-    </div>
-    <div class="tournament-card" style="animation-delay:0.4s;">
-      <h4>Aide</h4>
-      <p>Aider chaque membre à augmenter ses trophées et améliorer ses cartes</p>
-    </div>
-    <div class="tournament-card" style="animation-delay:0.6s;">
-      <h4>Recrutement ciblé</h4>
-      <p>Attirer des membres compétitifs et motivés afin de renforcer le clan</p>
-    </div>
-    <div class="tournament-card" style="animation-delay:0.4s;">
-      <h4>Participation</h4>
-      <p>Participer aux événements officiels afin de s'améliorer</p>
-    </div>
-  </div>
-</section>
+      --text: #ffffff;
+      --muted: #aaa7c4;
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <form class="contact-form" action="https://formspree.io/f/xkgkbrap" method="POST">
-    <input type="text" name="name" placeholder="Votre nom" required>
-    <input type="email" name="email" placeholder="Votre email" required>
-    <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+      --border: rgba(255,255,255,.12);
+      --glass: rgba(255,255,255,.055);
 
-<footer>
-  &copy; 2025 Clan Français | Suivez-nous sur 
-  <a href="https://discord.gg/WmDpGVdW">Discord</a>
-</footer>
-
-<!-- ====================== SCRIPT CLASSEMENT LIVE ====================== -->
-<script>
-// Meilleur proxy + tentative d'extraction
-const proxy = "https://api.allorigins.win/raw?url=";
-const clanUrl = encodeURIComponent("https://royaleapi.com/clan/LJ8GVLQC");
-
-async function loadLiveRanking() {
-  const container = document.getElementById("clan-table");
-  const updateEl = document.getElementById("last-update");
-
-  try {
-    const response = await fetch(proxy + clanUrl);
-    const htmlText = await response.text();
-
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(htmlText, "text/html");
-
-    // Essaie de trouver le tableau des membres
-    let table = doc.querySelector('table') || doc.querySelector('.clan-members-table');
-
-    if (table) {
-      container.innerHTML = table.outerHTML;
-      
-      // Style du tableau
-      const tables = container.querySelectorAll('table');
-      tables.forEach(t => {
-        t.style.width = "100%";
-        t.style.borderCollapse = "collapse";
-        t.style.background = "#1a1a1a";
-        t.style.borderRadius = "10px";
-      });
-    } else {
-      throw new Error("Tableau non trouvé");
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
     }
 
-    updateEl.textContent = "Dernière mise à jour : " + new Date().toLocaleTimeString('fr-FR');
 
-  } catch (e) {
-    console.error(e);
-    container.innerHTML = `
-      <p style="text-align:center; color:#ffcc00; padding:40px; background:#1a1a1a; border-radius:10px;">
-        ⚠️ Impossible de charger le classement automatiquement pour le moment.<br><br>
-        Utilise le bouton ci-dessous pour voir les stats en direct.
-      </p>`;
-  }
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-// Lancement
-loadLiveRanking();
-setInterval(loadLiveRanking, 300000); // toutes les 5 minutes
-</script>
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    body {
+      font-family: 'Baloo 2', sans-serif;
+      color: var(--text);
+      overflow-x: hidden;
+
+      background:
+        radial-gradient(
+          ellipse 650px 900px at -5% 50%,
+          rgba(0,35,149,.85) 0%,
+          rgba(0,35,149,.45) 35%,
+          transparent 72%
+        ),
+
+        radial-gradient(
+          ellipse 500px 850px at 50% 50%,
+          rgba(255,255,255,.16) 0%,
+          rgba(255,255,255,.06) 35%,
+          transparent 72%
+        ),
+
+        radial-gradient(
+          ellipse 650px 900px at 105% 50%,
+          rgba(237,41,57,.85) 0%,
+          rgba(237,41,57,.45) 35%,
+          transparent 72%
+        ),
+
+        linear-gradient(
+          180deg,
+          #080718 0%,
+          #100C2B 45%,
+          #080718 100%
+        );
+
+      background-attachment: fixed;
+    }
+
+
+    body::before {
+      content: "";
+
+      position: fixed;
+      inset: 0;
+
+      pointer-events: none;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0,35,149,.08) 0%,
+          transparent 35%,
+          rgba(255,255,255,.025) 50%,
+          transparent 65%,
+          rgba(237,41,57,.08) 100%
+        );
+
+      z-index: 0;
+    }
+
+
+    body::after {
+      content: "";
+
+      position: fixed;
+
+      width: 900px;
+      height: 900px;
+
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(255,255,255,.035) 0%,
+          transparent 65%
+        );
+
+      pointer-events: none;
+
+      z-index: 0;
+    }
+
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    .container {
+      width: min(1180px, 92%);
+      margin: auto;
+
+      position: relative;
+      z-index: 2;
+    }
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(7,6,20,.78);
+
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+
+    header::after {
+      content: "";
+
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      height: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(0,35,149,.7),
+          rgba(255,255,255,.5),
+          rgba(237,41,57,.7),
+          transparent
+        );
+    }
+
+
+    .nav {
+      min-height: 78px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 25px;
+    }
+
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 27px;
+      letter-spacing: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #fff 0%,
+          #FFD700 45%,
+          #fff 100%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+
+      white-space: nowrap;
+    }
+
+
+    .logo img {
+      width: 48px;
+      height: 48px;
+
+      object-fit: contain;
+
+      filter:
+        drop-shadow(
+          0 4px 8px rgba(0,0,0,.4)
+        );
+
+      transition: .25s ease;
+    }
+
+
+    .logo:hover img {
+      transform: scale(1.08) rotate(-3deg);
+    }
+
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+
+    nav a {
+      color: #d6d3e7;
+
+      font-weight: 600;
+      font-size: 15px;
+
+      transition: .25s ease;
+
+      position: relative;
+    }
+
+
+    nav a:hover {
+      color: #fff;
+    }
+
+
+    nav a::after {
+      content: "";
+
+      position: absolute;
+
+      left: 0;
+      bottom: -7px;
+
+      width: 0;
+      height: 2px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--blue),
+          #fff,
+          var(--red)
+        );
+
+      transition: .25s ease;
+    }
+
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+
+    /* =========================
+       MENU MOBILE
+    ========================= */
+
+    .menu-toggle {
+      display: none;
+
+      border: 1px solid rgba(255,255,255,.15);
+
+      background: rgba(255,255,255,.06);
+
+      color: #fff;
+
+      width: 46px;
+      height: 46px;
+
+      border-radius: 12px;
+
+      font-size: 24px;
+
+      cursor: pointer;
+
+      transition:
+        background .25s ease,
+        transform .25s ease;
+    }
+
+
+    .menu-toggle:hover {
+      background: rgba(255,255,255,.12);
+
+      transform: scale(1.05);
+    }
+
+
+    .menu-toggle:active {
+      transform: scale(.95);
+    }
+
+
+    .discord-btn {
+      padding: 11px 18px;
+
+      border-radius: 12px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #5865F2,
+          #4752C4
+        );
+
+      color: #fff;
+
+      font-weight: 800;
+
+      box-shadow:
+        0 8px 25px rgba(88,101,242,.25);
+
+      transition: .25s ease;
+    }
+
+
+    .discord-btn:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 12px 30px rgba(88,101,242,.4);
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      position: relative;
+      z-index: 1;
+
+      padding: 100px 0 85px;
+    }
+
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      left: 50%;
+      top: 50%;
+
+      width: 1100px;
+      height: 600px;
+
+      transform: translate(-50%, -50%);
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0,35,149,.28) 0%,
+          rgba(0,35,149,.08) 28%,
+          rgba(255,255,255,.05) 50%,
+          rgba(237,41,57,.08) 72%,
+          rgba(237,41,57,.28) 100%
+        );
+
+      filter: blur(45px);
+
+      pointer-events: none;
+
+      z-index: -1;
+    }
+
+
+    .hero-content {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 60px;
+
+      width: 100%;
+    }
+
+
+    .hero-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+
+    .hero-logo-container {
+      flex-shrink: 0;
+
+      width: 330px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+    }
+
+
+    .hero-logo-container::before {
+      content: "";
+
+      position: absolute;
+
+      width: 320px;
+      height: 320px;
+
+      border-radius: 50%;
+
+      background:
+        conic-gradient(
+          from 0deg,
+          rgba(0,35,149,.35),
+          rgba(255,255,255,.15),
+          rgba(237,41,57,.35),
+          rgba(0,35,149,.35)
+        );
+
+      filter: blur(45px);
+
+      opacity: .45;
+
+      animation:
+        heroGlow 8s linear infinite;
+
+      z-index: -1;
+    }
+
+
+    .hero-logo {
+      width: 300px;
+      height: 300px;
+
+      object-fit: contain;
+
+      filter:
+        drop-shadow(
+          0 15px 25px rgba(0,0,0,.5)
+        )
+        drop-shadow(
+          0 0 30px rgba(255,255,255,.08)
+        );
+
+      transition: .4s ease;
+
+      animation:
+        heroFloat 4s ease-in-out infinite;
+    }
+
+
+    .hero-logo:hover {
+      animation-play-state: paused;
+
+      transform:
+        scale(1.08)
+        rotate(3deg);
+
+      filter:
+        drop-shadow(0 15px 30px rgba(0,0,0,.55))
+        drop-shadow(0 0 30px rgba(0,80,255,.25))
+        drop-shadow(0 0 35px rgba(255,0,50,.2));
+    }
+
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      bottom: 0;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      width: min(700px,80%);
+
+      height: 3px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #002395 0%,
+          #002395 33.33%,
+          #ffffff 33.33%,
+          #ffffff 66.66%,
+          #ED2939 66.66%,
+          #ED2939 100%
+        );
+
+      border-radius: 999px;
+
+      box-shadow:
+        0 0 20px rgba(255,255,255,.12);
+    }
+
+
+    /* =========================
+       NOUVEAU BADGE MEMBRES
+    ========================= */
+
+    .member-status {
+
+      display: inline-flex;
+
+      flex-direction: column;
+
+      gap: 9px;
+
+      width: min(390px, 100%);
+
+      padding: 14px 17px;
+
+      margin-bottom: 22px;
+
+      border-radius: 17px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(54,227,109,.10),
+          rgba(255,255,255,.055)
+        );
+
+      border:
+        1px solid rgba(54,227,109,.28);
+
+      box-shadow:
+        0 10px 30px rgba(0,0,0,.20),
+        0 0 25px rgba(54,227,109,.07);
+
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+
+      animation:
+        memberPulse 3s ease-in-out infinite;
+    }
+
+
+    .member-status-top {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 15px;
+    }
+
+
+    .member-label {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 8px;
+
+      color: #c9c7d8;
+
+      font-size: 12px;
+
+      font-weight: 900;
+
+      letter-spacing: 1.2px;
+
+      text-transform: uppercase;
+    }
+
+
+    .member-dot {
+
+      width: 9px;
+      height: 9px;
+
+      flex-shrink: 0;
+
+      border-radius: 50%;
+
+      background: #36e36d;
+
+      box-shadow:
+        0 0 10px #36e36d,
+        0 0 20px rgba(54,227,109,.5);
+
+      animation:
+        onlinePulse 1.8s ease-in-out infinite;
+    }
+
+
+    .member-count {
+
+      color: #fff;
+
+      font-size: 20px;
+
+      font-weight: 900;
+
+      line-height: 1;
+
+      white-space: nowrap;
+    }
+
+
+    .member-count strong {
+
+      color: #36e36d;
+
+      font-size: 25px;
+    }
+
+
+    .member-progress {
+
+      width: 100%;
+
+      height: 9px;
+
+      padding: 2px;
+
+      border-radius: 999px;
+
+      background:
+        rgba(0,0,0,.35);
+
+      border:
+        1px solid rgba(255,255,255,.08);
+
+      overflow: hidden;
+    }
+
+
+    .member-progress-bar {
+
+      width: 98%;
+
+      height: 100%;
+
+      border-radius: inherit;
+
+      background:
+        linear-gradient(
+          90deg,
+          #1bb954,
+          #36e36d,
+          #8affaa
+        );
+
+      box-shadow:
+        0 0 12px rgba(54,227,109,.65),
+        0 0 25px rgba(54,227,109,.25);
+
+      position: relative;
+
+      overflow: hidden;
+    }
+
+
+    .member-progress-bar::after {
+
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+
+      width: 80px;
+
+      left: -100px;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(255,255,255,.65),
+          transparent
+        );
+
+      transform: skewX(-20deg);
+
+      animation:
+        progressShine 2.5s ease-in-out infinite;
+    }
+
+
+    .member-bottom {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 10px;
+
+      font-size: 12px;
+
+      font-weight: 800;
+    }
+
+
+    .member-bottom .available {
+
+      color: #36e36d;
+
+      letter-spacing: .4px;
+    }
+
+
+    .member-bottom .capacity {
+
+      color: #77748d;
+    }
+
+
+    h1 {
+      font-family: 'Luckiest Guy', cursive;
+
+      font-size: clamp(50px,7vw,88px);
+
+      line-height: .98;
+
+      letter-spacing: 1px;
+
+      text-shadow:
+        0 5px 0 rgba(0,0,0,.3),
+        0 15px 45px rgba(0,0,0,.35);
+
+      animation:
+        titleAppear .9s ease both;
+    }
+
+
+    h1 .blue {
+      color: #5d82ff;
+    }
+
+
+    h1 .white {
+      color: #fff;
+    }
+
+
+    h1 .red {
+      color: #ff5966;
+    }
+
+
+    .hero-actions {
+      display: flex;
+
+      gap: 15px;
+
+      margin-top: 30px;
+
+      flex-wrap: wrap;
+    }
+
+
+    /* =========================
+       BOUTONS
+    ========================= */
+
+    .btn {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      padding: 14px 22px;
+
+      border-radius: 13px;
+
+      font-weight: 800;
+
+      transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        filter .25s ease;
+    }
+
+
+    .btn-primary {
+      background:
+        linear-gradient(
+          135deg,
+          #FFD700,
+          #e2ae00
+        );
+
+      color: #16120a;
+
+      box-shadow:
+        0 10px 30px rgba(255,215,0,.18);
+    }
+
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+
+      box-shadow:
+        0 15px 40px rgba(255,215,0,.28);
+    }
+
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.14);
+
+      background: rgba(255,255,255,.045);
+
+      color: #fff;
+    }
+
+
+    .btn-secondary:hover {
+      background: rgba(255,255,255,.09);
+
+      transform: translateY(-3px);
+    }
+
+
+    .btn:active {
+      transform: scale(.96);
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      padding: 10px 0 90px;
+    }
+
+
+    .stats-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 18px;
+    }
+
+
+    .stat-pill,
+    .team-card,
+    .tl-item,
+    .icon-card,
+    .contact-block {
+
+      position: relative;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.075),
+          rgba(255,255,255,.025)
+        );
+
+      backdrop-filter: blur(12px);
+
+      -webkit-backdrop-filter: blur(12px);
+
+      border: 1px solid rgba(255,255,255,.14);
+
+      box-shadow: var(--shadow);
+
+      transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+    }
+
+
+    .stat-pill {
+      padding: 25px;
+
+      border-radius: 18px;
+
+      text-align: center;
+    }
+
+
+    .stat-pill::before,
+    .team-card::before,
+    .contact-block::before {
+
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: 3px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #002395 0%,
+          #002395 33.33%,
+          #ffffff 33.33%,
+          #ffffff 66.66%,
+          #ED2939 66.66%,
+          #ED2939 100%
+        );
+    }
+
+
+    .stat-number {
+      font-family: 'Luckiest Guy', cursive;
+
+      color: #FFD700;
+
+      font-size: 42px;
+
+      line-height: 1;
+    }
+
+
+    .stat-label {
+      color: #aaa7c4;
+
+      margin-top: 8px;
+
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    section {
+      padding: 95px 0;
+
+      position: relative;
+
+      z-index: 1;
+    }
+
+
+    .section-heading {
+      text-align: center;
+
+      margin-bottom: 55px;
+    }
+
+
+    .eyebrow {
+      color: #FFD700;
+
+      text-transform: uppercase;
+
+      font-size: 13px;
+
+      font-weight: 900;
+
+      letter-spacing: 3px;
+
+      margin-bottom: 10px;
+    }
+
+
+    h2 {
+      font-family: 'Luckiest Guy', cursive;
+
+      font-size: 48px;
+
+      letter-spacing: 1px;
+
+      animation:
+        titleAppear .9s ease both;
+    }
+
+
+    .section-description {
+      max-width: 650px;
+
+      margin: 15px auto 0;
+
+      color: #aaa7c4;
+
+      font-size: 17px;
+
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       TEAM
+    ========================= */
+
+    .team-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3,1fr);
+
+      gap: 22px;
+    }
+
+
+    .team-card {
+      border-radius: 20px;
+
+      padding: 30px;
+    }
+
+
+    .team-card:hover {
+      transform: translateY(-7px);
+
+      border-color:
+        rgba(255,215,0,.25);
+    }
+
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+
+      border-radius: 50%;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      margin-bottom: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,35,149,.8),
+          rgba(255,255,255,.1),
+          rgba(237,41,57,.8)
+        );
+
+      border: 2px solid rgba(255,255,255,.2);
+
+      font-size: 32px;
+
+      overflow: hidden;
+    }
+
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: contain;
+    }
+
+
+    .role {
+      color: #FFD700;
+
+      font-size: 12px;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+    }
+
+
+    .player-name {
+      font-size: 26px;
+
+      font-weight: 800;
+
+      margin: 5px 0 18px;
+    }
+
+
+    .player-stats {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 10px;
+    }
+
+
+    .player-stat {
+      padding: 12px;
+
+      border-radius: 12px;
+
+      background: rgba(0,0,0,.16);
+
+      border: 1px solid rgba(255,255,255,.07);
+    }
+
+
+    .player-stat strong {
+      display: block;
+
+      font-size: 19px;
+
+      color: #fff;
+    }
+
+
+    .player-stat span {
+      color: #8f8ca8;
+
+      font-size: 12px;
+    }
+
+
+    /* =========================
+       TIMELINE / ACTUS
+    ========================= */
+
+    .timeline {
+      max-width: 850px;
+
+      margin: auto;
+
+      position: relative;
+    }
+
+
+    .timeline::before {
+      content: "";
+
+      position: absolute;
+
+      left: 20px;
+
+      top: 0;
+      bottom: 0;
+
+      width: 2px;
+
+      background:
+        linear-gradient(
+          180deg,
+          var(--blue),
+          #fff,
+          var(--red)
+        );
+
+      opacity: .7;
+    }
+
+
+    .tl-item {
+      margin-left: 60px;
+
+      margin-bottom: 22px;
+
+      padding: 25px;
+
+      border-radius: 18px;
+    }
+
+
+    .tl-dot {
+      position: absolute;
+
+      left: -50px;
+
+      top: 28px;
+
+      width: 22px;
+      height: 22px;
+
+      border-radius: 50%;
+
+      background: #FFD700;
+
+      border: 5px solid #100C2B;
+
+      box-shadow:
+        0 0 20px rgba(255,215,0,.35);
+    }
+
+
+    .tl-date {
+      color: #FFD700;
+
+      font-weight: 900;
+
+      font-size: 13px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+    }
+
+
+    .tl-title {
+      font-size: 22px;
+
+      font-weight: 800;
+
+      margin-top: 5px;
+    }
+
+
+    .tl-text {
+      color: #aaa7c4;
+
+      margin-top: 5px;
+
+      line-height: 1.5;
+    }
+
+
+    /* =========================
+       RECRUTEMENT
+    ========================= */
+
+    .icons-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4,1fr);
+
+      gap: 18px;
+    }
+
+
+    .icon-card {
+      padding: 28px 22px;
+
+      border-radius: 18px;
+
+      text-align: center;
+    }
+
+
+    .icon {
+      font-size: 38px;
+
+      margin-bottom: 12px;
+    }
+
+
+    .icon-card h3 {
+      font-size: 19px;
+
+      margin-bottom: 7px;
+    }
+
+
+    .icon-card p {
+      color: #aaa7c4;
+
+      font-size: 14px;
+
+      line-height: 1.5;
+    }
+
+
+    /* =========================
+       OBJECTIFS
+    ========================= */
+
+    .objectives {
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 20px;
+
+      max-width: 900px;
+
+      margin: auto;
+    }
+
+
+    .objective {
+      padding: 25px;
+
+      border-radius: 18px;
+
+      background: rgba(255,255,255,.04);
+
+      border: 1px solid rgba(255,255,255,.09);
+
+      display: flex;
+
+      gap: 16px;
+
+      align-items: flex-start;
+
+      transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+    }
+
+
+    .objective-number {
+      min-width: 42px;
+
+      height: 42px;
+
+      border-radius: 12px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(0,35,149,.7),
+          rgba(237,41,57,.7)
+        );
+
+      font-weight: 900;
+
+      color: #fff;
+    }
+
+
+    .objective h3 {
+      font-size: 19px;
+    }
+
+
+    .objective p {
+      color: #aaa7c4;
+
+      margin-top: 4px;
+
+      line-height: 1.5;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       FAQ
+    ========================= */
+
+    .faq-section {
+      position: relative;
+    }
+
+
+    .faq-container {
+      width: min(900px, 92%);
+
+      margin: 0 auto;
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 14px;
+    }
+
+
+    .faq-item {
+      position: relative;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,255,255,.075),
+          rgba(255,255,255,.025)
+        );
+
+      border: 1px solid rgba(255,255,255,.12);
+
+      border-radius: 18px;
+
+      overflow: hidden;
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      box-shadow:
+        0 15px 40px rgba(0,0,0,.2);
+
+      transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+    }
+
+
+    .faq-item:hover {
+      transform: translateY(-2px);
+
+      border-color:
+        rgba(255,215,0,.35);
+
+      box-shadow:
+        0 18px 45px rgba(0,0,0,.28);
+    }
+
+
+    .faq-item.active {
+      border-color:
+        rgba(255,215,0,.45);
+
+      box-shadow:
+        0 18px 50px rgba(255,215,0,.08);
+    }
+
+
+    .faq-question {
+      width: 100%;
+
+      padding: 22px 25px;
+
+      border: none;
+
+      background: transparent;
+
+      color: white;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 20px;
+
+      cursor: pointer;
+
+      text-align: left;
+
+      font-family: 'Baloo 2', sans-serif;
+
+      font-size: 1.05rem;
+
+      font-weight: 800;
+    }
+
+
+    .faq-question:hover {
+      color: #FFD700;
+    }
+
+
+    .faq-question:focus-visible {
+      outline: 2px solid #FFD700;
+
+      outline-offset: -3px;
+    }
+
+
+    .faq-icon {
+      min-width: 34px;
+      width: 34px;
+      height: 34px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      color: #FFD700;
+
+      border:
+        1px solid rgba(255,215,0,.45);
+
+      font-size: 1.35rem;
+
+      line-height: 1;
+
+      transition:
+        transform .3s ease,
+        background .3s ease;
+    }
+
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+
+      background:
+        rgba(255,215,0,.08);
+    }
+
+
+    .faq-answer {
+      display: grid;
+
+      grid-template-rows: 0fr;
+
+      transition:
+        grid-template-rows .4s ease;
+    }
+
+
+    .faq-answer-inner {
+      overflow: hidden;
+    }
+
+
+    .faq-answer p {
+      padding:
+        0 25px 22px;
+
+      margin: 0;
+
+      color:
+        rgba(255,255,255,.72);
+
+      line-height: 1.7;
+    }
+
+
+    .faq-answer strong {
+      color: #FFD700;
+    }
+
+
+    .faq-item.active .faq-answer {
+      grid-template-rows: 1fr;
+    }
+
+
+    /* =========================
+       DISCORD
+    ========================= */
+
+    .discord-cta {
+      padding: 50px 0 95px;
+    }
+
+
+    .discord-box {
+      position: relative;
+
+      overflow: hidden;
+
+      max-width: 1000px;
+
+      margin: auto;
+
+      padding: 40px 45px;
+
+      border-radius: 25px;
+
+      background:
+        radial-gradient(
+          circle at 0% 50%,
+          rgba(88,101,242,.30),
+          transparent 45%
+        ),
+
+        linear-gradient(
+          135deg,
+          rgba(88,101,242,.18),
+          rgba(255,255,255,.045)
+        );
+
+      border: 1px solid rgba(88,101,242,.35);
+
+      box-shadow:
+        0 25px 70px rgba(0,0,0,.35),
+        0 0 45px rgba(88,101,242,.10);
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 35px;
+
+      transition: .35s ease;
+    }
+
+
+    .discord-box:hover {
+      transform: translateY(-6px);
+
+      border-color:
+        rgba(88,101,242,.65);
+
+      box-shadow:
+        0 30px 80px rgba(0,0,0,.45),
+        0 0 60px rgba(88,101,242,.18);
+    }
+
+
+    .discord-box::before {
+      content: "";
+
+      position: absolute;
+
+      width: 300px;
+      height: 300px;
+
+      left: -100px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      background: rgba(88,101,242,.18);
+
+      filter: blur(70px);
+
+      pointer-events: none;
+    }
+
+
+    .discord-content {
+      display: flex;
+
+      align-items: center;
+
+      gap: 25px;
+
+      position: relative;
+
+      z-index: 1;
+    }
+
+
+    .discord-icon {
+      width: 85px;
+      height: 85px;
+
+      flex-shrink: 0;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 22px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #5865F2,
+          #4752C4
+        );
+
+      font-size: 42px;
+
+      box-shadow:
+        0 15px 35px rgba(88,101,242,.30);
+
+      animation:
+        discordPulse 2.5s ease-in-out infinite;
+    }
+
+
+    .discord-content h2 {
+      font-size: 38px;
+
+      margin: 0;
+    }
+
+
+    .discord-content p {
+      max-width: 600px;
+
+      margin-top: 8px;
+
+      color: #aaa7c4;
+
+      line-height: 1.5;
+    }
+
+
+    .discord-big-btn {
+      position: relative;
+
+      z-index: 1;
+
+      flex-shrink: 0;
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 14px;
+
+      padding: 17px 25px;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #5865F2,
+          #4752C4
+        );
+
+      color: white;
+
+      font-size: 16px;
+
+      font-weight: 800;
+
+      box-shadow:
+        0 12px 30px rgba(88,101,242,.30);
+
+      transition: .25s ease;
+    }
+
+
+    .discord-big-btn span {
+      font-size: 22px;
+
+      transition: .25s ease;
+    }
+
+
+    .discord-big-btn:hover {
+      transform:
+        translateY(-3px)
+        scale(1.03);
+
+      box-shadow:
+        0 18px 40px rgba(88,101,242,.45);
+    }
+
+
+    .discord-big-btn:hover span {
+      transform: translateX(5px);
+    }
+
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact-block {
+      border-radius: 25px;
+
+      padding: 50px;
+
+      text-align: center;
+
+      max-width: 900px;
+
+      margin: auto;
+    }
+
+
+    .contact-block h2 {
+      margin-bottom: 12px;
+    }
+
+
+    .contact-block p {
+      color: #aaa7c4;
+
+      max-width: 600px;
+
+      margin: 0 auto 25px;
+
+      line-height: 1.6;
+    }
+
+
+    .contact-actions {
+      display: flex;
+
+      justify-content: center;
+
+      gap: 15px;
+
+      flex-wrap: wrap;
+    }
+
+
+    form {
+      max-width: 550px;
+
+      margin: 30px auto 0;
+
+      display: grid;
+
+      gap: 12px;
+
+      text-align: left;
+    }
+
+
+    form label {
+      font-weight: 700;
+
+      color: #ddd;
+    }
+
+
+    input,
+    textarea {
+      width: 100%;
+
+      border: none;
+
+      outline: none;
+
+      padding: 14px 16px;
+
+      border-radius: 12px;
+
+      background: rgba(0,0,0,.2);
+
+      border: 1px solid rgba(255,255,255,.1);
+
+      color: #fff;
+
+      font-family: inherit;
+
+      font-size: 15px;
+    }
+
+
+    textarea {
+      min-height: 120px;
+
+      resize: vertical;
+    }
+
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #77748d;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      position: relative;
+
+      z-index: 2;
+
+      padding: 35px 0;
+
+      border-top:
+        1px solid rgba(255,255,255,.08);
+
+      background:
+        rgba(4,4,14,.55);
+    }
+
+
+    .footer-inner {
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+
+    .footer-brand {
+      font-family: 'Luckiest Guy', cursive;
+
+      font-size: 21px;
+
+      letter-spacing: 1px;
+
+      background:
+        linear-gradient(
+          90deg,
+          #fff 0%,
+          #FFD700 45%,
+          #fff 100%
+        );
+
+      -webkit-background-clip: text;
+      background-clip: text;
+
+      color: transparent;
+    }
+
+
+    .footer-text {
+      color: #77748d;
+
+      font-size: 14px;
+    }
+
+
+    .footer-discord {
+      color: #8f9aff;
+
+      font-weight: 800;
+    }
+
+
+    /* =========================
+       ANIMATIONS
+    ========================= */
+
+    .reveal {
+      opacity: 0;
+
+      transform: translateY(45px);
+
+      transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.8,.2,1);
+    }
+
+
+    .reveal.active {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+
+    .reveal-delay-1 {
+      transition-delay: .1s;
+    }
+
+
+    .reveal-delay-2 {
+      transition-delay: .2s;
+    }
+
+
+    .reveal-delay-3 {
+      transition-delay: .3s;
+    }
+
+
+    .stat-pill:hover,
+    .tl-item:hover,
+    .icon-card:hover,
+    .objective:hover,
+    .contact-block:hover {
+
+      transform:
+        translateY(-8px)
+        scale(1.02);
+
+      box-shadow:
+        0 15px 45px rgba(80,50,255,.25),
+        0 0 25px rgba(255,255,255,.05);
+    }
+
+
+    @keyframes badgePulse {
+
+      0%,100% {
+        box-shadow:
+          0 0 0 rgba(255,255,255,0);
+      }
+
+      50% {
+        box-shadow:
+          0 0 18px rgba(255,255,255,.15),
+          0 0 35px rgba(50,80,255,.15);
+      }
+    }
+
+
+    @keyframes memberPulse {
+
+      0%,100% {
+        transform: translateY(0);
+        box-shadow:
+          0 10px 30px rgba(0,0,0,.20),
+          0 0 15px rgba(54,227,109,.04);
+      }
+
+      50% {
+        transform: translateY(-2px);
+        box-shadow:
+          0 14px 35px rgba(0,0,0,.25),
+          0 0 28px rgba(54,227,109,.10);
+      }
+    }
+
+
+    @keyframes onlinePulse {
+
+      0%,100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      50% {
+        transform: scale(1.25);
+        opacity: .65;
+      }
+    }
+
+
+    @keyframes progressShine {
+
+      0% {
+        left: -100px;
+      }
+
+      55%,100% {
+        left: 120%;
+      }
+    }
+
+
+    @keyframes titleAppear {
+
+      from {
+        opacity: 0;
+
+        transform: translateY(25px);
+      }
+
+      to {
+        opacity: 1;
+
+        transform: translateY(0);
+      }
+    }
+
+
+    @keyframes discordPulse {
+
+      0%,100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+
+    @keyframes heroFloat {
+
+      0%,100% {
+        transform:
+          translateY(0)
+          rotate(0deg);
+      }
+
+      50% {
+        transform:
+          translateY(-12px)
+          rotate(1.5deg);
+      }
+    }
+
+
+    @keyframes heroGlow {
+
+      0% {
+        transform:
+          rotate(0deg)
+          scale(1);
+      }
+
+      50% {
+        transform:
+          rotate(180deg)
+          scale(1.08);
+      }
+
+      100% {
+        transform:
+          rotate(360deg)
+          scale(1);
+      }
+    }
+
+
+    /* =========================
+       PARTICULES
+    ========================= */
+
+    .particle {
+      position: fixed;
+
+      width: 3px;
+      height: 3px;
+
+      background:
+        rgba(255,255,255,.5);
+
+      border-radius: 50%;
+
+      pointer-events: none;
+
+      z-index: -1;
+
+      animation:
+        particleFloat linear infinite;
+    }
+
+
+    @keyframes particleFloat {
+
+      from {
+        transform: translateY(110vh);
+
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      to {
+        transform: translateY(-10vh);
+
+        opacity: 0;
+      }
+    }
+
+
+    /* =========================
+       RETOUR EN HAUT
+    ========================= */
+
+    #backToTop {
+      opacity: 0;
+
+      visibility: hidden;
+
+      transform: translateY(20px);
+
+      transition: .3s ease;
+    }
+
+
+    #backToTop.show {
+      opacity: 1;
+
+      visibility: visible;
+
+      transform: translateY(0);
+    }
+
+
+    /* =========================
+       BADGES DES RÔLES
+    ========================= */
+
+    .role-badge {
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 7px;
+
+      padding: 7px 14px;
+
+      margin-top: 8px;
+      margin-bottom: 10px;
+
+      border-radius: 999px;
+
+      font-family: 'Baloo 2', sans-serif;
+
+      font-size: .78rem;
+
+      font-weight: 900;
+
+      letter-spacing: .5px;
+
+      border: 2px solid;
+
+      position: relative;
+
+      overflow: hidden;
+
+      transition: all .3s ease;
+    }
+
+
+    .role-badge::before {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: -100%;
+
+      width: 60%;
+      height: 100%;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent,
+          rgba(255,255,255,.5),
+          transparent
+        );
+
+      transform: skewX(-20deg);
+
+      transition: left .5s ease;
+    }
+
+
+    .role-badge:hover::before {
+      left: 140%;
+    }
+
+
+    .role-badge:hover {
+      transform:
+        translateY(-2px)
+        scale(1.05);
+    }
+
+
+    /* CHEF */
+
+    .role-badge.chef {
+      color: #fff;
+
+      border-color: #FFD700;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255,215,0,.25),
+          rgba(255,140,0,.15)
+        );
+
+      box-shadow:
+        0 0 10px rgba(255,215,0,.35),
+        inset 0 0 12px rgba(255,215,0,.08);
+
+      animation:
+        chefGlow 2.5s infinite alternate;
+    }
+
+
+    /* CHEF ADJOINT */
+
+    .role-badge.adjoint {
+      color: #fff;
+
+      border-color: #ED2939;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(237,41,57,.25),
+          rgba(0,35,149,.2)
+        );
+
+      box-shadow:
+        0 0 10px rgba(237,41,57,.35),
+        inset 0 0 12px rgba(237,41,57,.08);
+    }
+
+
+    @keyframes chefGlow {
+
+      from {
+        box-shadow:
+          0 0 8px rgba(255,215,0,.25),
+          inset 0 0 10px rgba(255,215,0,.05);
+      }
+
+      to {
+        box-shadow:
+          0 0 18px rgba(255,215,0,.55),
+          inset 0 0 15px rgba(255,215,0,.12);
+      }
+    }
+
+
+    /* =========================
+       TABLETTE
+    ========================= */
+
+    @media(max-width:950px) {
+
+      .hero-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 35px;
+      }
+
+
+      .hero-text {
+        width: 100%;
+      }
+
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+
+      .hero-logo-container {
+        width: auto;
+      }
+
+
+      .hero-logo {
+        width: 220px;
+        height: 220px;
+      }
+
+
+      .member-status {
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+      }
+
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .icons-grid {
+        grid-template-columns:
+          repeat(2,1fr);
+      }
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media(max-width:750px) {
+
+      .nav {
+        position: relative;
+
+        flex-direction: row;
+
+        min-height: 70px;
+
+        padding: 12px 0;
+      }
+
+
+      .logo {
+        font-size: 21px;
+      }
+
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+
+      .menu-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-left: auto;
+      }
+
+
+      nav {
+        position: absolute;
+
+        top: calc(100% + 8px);
+
+        left: 0;
+        right: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 4px;
+
+        padding: 10px;
+
+        background:
+          rgba(8,7,24,.97);
+
+        backdrop-filter:
+          blur(20px);
+
+        -webkit-backdrop-filter:
+          blur(20px);
+
+        border:
+          1px solid rgba(255,255,255,.12);
+
+        border-radius: 16px;
+
+        box-shadow:
+          0 20px 50px rgba(0,0,0,.45);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        pointer-events: none;
+
+        transform: translateY(-10px);
+
+        transition:
+          opacity .25s ease,
+          visibility .25s ease,
+          transform .25s ease;
+      }
+
+
+      nav.open {
+        opacity: 1;
+
+        visibility: visible;
+
+        pointer-events: auto;
+
+        transform: translateY(0);
+      }
+
+
+      nav a {
+        width: 100%;
+
+        padding: 13px 15px;
+
+        border-radius: 10px;
+
+        font-size: 16px;
+      }
+
+
+      nav a:hover {
+        background:
+          rgba(255,255,255,.07);
+      }
+
+
+      nav a::after {
+        display: none;
+      }
+
+
+      .discord-btn {
+        display: none;
+      }
+
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .objectives {
+        grid-template-columns: 1fr;
+      }
+
+
+      h2 {
+        font-size: 40px;
+      }
+
+
+      .contact-block {
+        padding: 35px 22px;
+      }
+
+
+      .footer-inner {
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+
+      .discord-box {
+        padding: 32px 24px;
+
+        flex-direction: column;
+
+        text-align: center;
+      }
+
+
+      .discord-content {
+        flex-direction: column;
+      }
+
+
+      .discord-content h2 {
+        font-size: 32px;
+      }
+
+
+      .discord-big-btn {
+        width: 100%;
+
+        justify-content: center;
+      }
+
+
+      .faq-question {
+        padding: 19px 18px;
+
+        font-size: 1rem;
+      }
+
+
+      .faq-answer p {
+        padding:
+          0 18px 20px;
+      }
+
+
+      .faq-icon {
+        min-width: 32px;
+
+        width: 32px;
+        height: 32px;
+      }
+
+
+      .member-status {
+        width: min(390px, 100%);
+      }
+
+
+      .member-count {
+        font-size: 18px;
+      }
+
+
+      .member-count strong {
+        font-size: 23px;
+      }
+    }
+
+
+    /* =========================
+       PETIT MOBILE
+    ========================= */
+
+    @media(max-width:500px) {
+
+      .hero {
+        padding-top: 65px;
+      }
+
+
+      h1 {
+        font-size: 48px;
+      }
+
+
+      .hero-logo {
+        width: 160px;
+        height: 160px;
+      }
+
+
+      .icons-grid {
+        grid-template-columns: 1fr;
+      }
+
+
+      .timeline::before {
+        left: 10px;
+      }
+
+
+      .tl-item {
+        margin-left: 35px;
+      }
+
+
+      .tl-dot {
+        left: -36px;
+      }
+
+
+      .faq-container {
+        width: 94%;
+      }
+
+
+      .member-status {
+        padding: 13px 14px;
+      }
+
+
+      .member-status-top {
+        gap: 8px;
+      }
+
+
+      .member-label {
+        font-size: 10px;
+        letter-spacing: .8px;
+      }
+
+
+      .member-count {
+        font-size: 16px;
+      }
+
+
+      .member-count strong {
+        font-size: 21px;
+      }
+
+
+      .member-bottom {
+        font-size: 11px;
+      }
+    }
+
+
+    /* =========================
+       REDUCTION ANIMATIONS
+    ========================= */
+
+    @media(prefers-reduced-motion:reduce) {
+
+      *,
+      *::before,
+      *::after {
+
+        animation-duration: .01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: .01ms !important;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       HEADER
+  ========================= -->
+
+  <header>
+
+    <div class="container nav">
+
+      <a href="#accueil" class="logo">
+
+        <img
+          src="logofr-removebg-preview.png"
+          alt="Logo Clan Français"
+        >
+
+        <span>
+          CLAN FRANCAIS
+        </span>
+
+      </a>
+
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+        type="button"
+      >
+        ☰
+      </button>
+
+
+      <nav id="mobileNav">
+
+        <a href="#accueil">
+          Accueil
+        </a>
+
+        <a href="#statistiques">
+          Statistiques
+        </a>
+
+        <a href="#equipe">
+          Équipe
+        </a>
+
+        <a href="#actus">
+          Actus
+        </a>
+
+        <a href="#recrutement">
+          Recrutement
+        </a>
+
+        <a href="#objectifs">
+          Objectifs
+        </a>
+
+        <a href="#faq">
+          FAQ
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <a
+        href="https://discord.gg/yW4KV3GcN"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="discord-btn"
+      >
+        Discord
+      </a>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <main id="accueil">
+
+    <section class="hero">
+
+      <div class="container">
+
+        <div class="hero-content">
+
+          <div class="hero-text">
+
+
+            <!-- NOUVEAU INDICATEUR 49/50 -->
+
+            <div class="member-status">
+
+              <div class="member-status-top">
+
+                <div class="member-label">
+
+                  <span class="member-dot"></span>
+
+                  Clan presque complet
+
+                </div>
+
+
+                <div class="member-count">
+
+                  <strong>49</strong> / 50
+
+                </div>
+
+              </div>
+
+
+              <div class="member-progress">
+
+                <div class="member-progress-bar"></div>
+
+              </div>
+
+
+              <div class="member-bottom">
+
+                <span class="available">
+                  🔥 1 PLACE DISPONIBLE
+                </span>
+
+                <span class="capacity">
+                  98% rempli
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <h1>
+
+              <span class="blue">
+                BIENVENUE
+              </span>
+
+              <br>
+
+              <span class="white">
+                SUR LE SITE
+              </span>
+
+              <br>
+
+              <span class="red">
+                CLAN FRANCAIS
+              </span>
+
+            </h1>
+
+          </div>
+
+
+          <div class="hero-logo-container">
+
+            <img
+              src="logofr-removebg-preview.png"
+              alt="Logo Clan Français"
+              class="hero-logo"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         STATISTIQUES
+    ========================= -->
+
+    <section id="statistiques">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Statistiques
+          </div>
+
+          <h2>
+            LES INFORMATIONS PRINCIPALES 🇫🇷
+          </h2>
+
+          <p class="section-description">
+            Des statistiques qui montrent à quel point
+            le clan évolue.
+          </p>
+
+        </div>
+
+
+        <div class="stats">
+
+          <div class="stats-grid">
+
+            <div class="stat-pill">
+
+              <div
+                class="stat-number animated-stat"
+                data-target="1000"
+              >
+                TOP 1000
+              </div>
+
+              <div class="stat-label">
+                Classement France
+              </div>
+
+            </div>
+
+
+            <div class="stat-pill">
+
+              <div
+                class="stat-number animated-stat"
+                data-target="9000"
+              >
+                9 000+
+              </div>
+
+              <div class="stat-label">
+                Trophées minimum
+              </div>
+
+            </div>
+
+
+            <div class="stat-pill">
+
+              <div
+                class="stat-number animated-stat"
+                data-target="2021"
+              >
+                2021
+              </div>
+
+              <div class="stat-label">
+                Année de création
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ÉQUIPE
+    ========================= -->
+
+    <section id="equipe">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Notre équipe
+          </div>
+
+          <h2>
+            LES LEADERS 🇫🇷
+          </h2>
+
+          <p class="section-description">
+            Une équipe présente pour faire vivre le clan,
+            organiser les guerres et accompagner chaque membre.
+          </p>
+
+        </div>
+
+
+        <div class="team-grid">
+
+
+          <!-- TOM07 — CHEF -->
+
+          <div class="team-card">
+
+            <div class="avatar">
+
+              <img
+                src="logofr-removebg-preview.png"
+                alt="Tom07"
+              >
+
+            </div>
+
+
+            <div class="role-badge chef">
+              👑 CHEF
+            </div>
+
+
+            <div class="player-name">
+              Tom07
+            </div>
+
+
+            <div class="player-stats">
+
+              <div class="player-stat">
+
+                <strong>
+                  8 566
+                </strong>
+
+                <span>
+                  🏆 Trophées
+                </span>
+
+              </div>
+
+
+              <div class="player-stat">
+
+                <strong>
+                  2 272
+                </strong>
+
+                <span>
+                  ⚔️ Victoires
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- EXANOVA — CHEF ADJOINT -->
+
+          <div class="team-card">
+
+            <div class="avatar">
+
+              <img
+                src="logofr-removebg-preview.png"
+                alt="ExAnoVa"
+              >
+
+            </div>
+
+
+            <div class="role-badge adjoint">
+              ⚔️ CHEF ADJOINT
+            </div>
+
+
+            <div class="player-name">
+              ExAnoVa
+            </div>
+
+
+            <div class="player-stats">
+
+              <div class="player-stat">
+
+                <strong>
+                  11 359
+                </strong>
+
+                <span>
+                  🏆 Trophées
+                </span>
+
+              </div>
+
+
+              <div class="player-stat">
+
+                <strong>
+                  1 659
+                </strong>
+
+                <span>
+                  ⚔️ Victoires
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- HYPERLOOP-2000 — CHEF ADJOINT -->
+
+          <div class="team-card">
+
+            <div class="avatar">
+
+              <img
+                src="logofr-removebg-preview.png"
+                alt="HyperLoop-2000"
+              >
+
+            </div>
+
+
+            <div class="role-badge adjoint">
+              ⚔️ CHEF ADJOINT
+            </div>
+
+
+            <div class="player-name">
+              HyperLoop-2000
+            </div>
+
+
+            <div class="player-stats">
+
+              <div class="player-stat">
+
+                <strong>
+                  12 559
+                </strong>
+
+                <span>
+                  🏆 Trophées
+                </span>
+
+              </div>
+
+
+              <div class="player-stat">
+
+                <strong>
+                  3 551
+                </strong>
+
+                <span>
+                  ⚔️ Victoires
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACTUS / HISTOIRE
+    ========================= -->
+
+    <section id="actus">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Notre histoire
+          </div>
+
+          <h2>
+            LES GRANDES ÉTAPES
+          </h2>
+
+          <p class="section-description">
+            Quelques moments importants qui ont marqué
+            l'histoire du Clan Francais.
+          </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+          <div class="tl-item">
+
+            <div class="tl-dot"></div>
+
+            <div class="tl-date">
+              2021
+            </div>
+
+            <div class="tl-title">
+              Création du Clan Francais
+            </div>
+
+            <div class="tl-text">
+              Le clan est créé avec l'ambition de réunir
+              des joueurs français actifs et motivés.
+            </div>
+
+          </div>
+
+
+          <div class="tl-item">
+
+            <div class="tl-dot"></div>
+
+            <div class="tl-date">
+              Janvier 2025
+            </div>
+
+            <div class="tl-title">
+              243e au classement national
+            </div>
+
+            <div class="tl-text">
+              Une progression importante qui confirme
+              les ambitions du clan.
+            </div>
+
+          </div>
+
+
+          <div class="tl-item">
+
+            <div class="tl-dot"></div>
+
+            <div class="tl-date">
+              Novembre 2025
+            </div>
+
+            <div class="tl-title">
+              TOP 1000 France
+            </div>
+
+            <div class="tl-text">
+              Le Clan Francais atteint le TOP 1000 national.
+              Une étape importante dans notre progression.
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RECRUTEMENT
+    ========================= -->
+
+    <section id="recrutement">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Recrutement
+          </div>
+
+          <h2>
+            REJOINDRE LE CLAN
+          </h2>
+
+          <p class="section-description">
+            Nous recherchons des joueurs sérieux, actifs
+            et prêts à participer à la vie du clan.
+          </p>
+
+        </div>
+
+
+        <div class="icons-grid">
+
+
+          <div class="icon-card">
+
+            <div class="icon">
+              ⚡
+            </div>
+
+            <h3>
+              Activité
+            </h3>
+
+            <p>
+              Être actif régulièrement et participer
+              à la vie du clan.
+            </p>
+
+          </div>
+
+
+          <div class="icon-card">
+
+            <div class="icon">
+              🤝
+            </div>
+
+            <h3>
+              Bon comportement
+            </h3>
+
+            <p>
+              Respect, entraide et bonne ambiance
+              entre tous les membres.
+            </p>
+
+          </div>
+
+
+          <div class="icon-card">
+
+            <div class="icon">
+              ⚔️
+            </div>
+
+            <h3>
+              Guerres de clans
+            </h3>
+
+            <p>
+              Participer sérieusement aux guerres
+              et aux activités collectives.
+            </p>
+
+          </div>
+
+
+          <div class="icon-card">
+
+            <div class="icon">
+              🏆
+            </div>
+
+            <h3>
+              9000 trophées
+            </h3>
+
+            <p>
+              Un minimum de 9000 trophées est demandé
+              pour rejoindre le clan.
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         OBJECTIFS
+    ========================= -->
+
+    <section id="objectifs">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Nos ambitions
+          </div>
+
+          <h2>
+            OBJECTIFS DU CLAN
+          </h2>
+
+          <p class="section-description">
+            Notre vision pour continuer à progresser
+            et construire une communauté solide.
+          </p>
+
+        </div>
+
+
+        <div class="objectives">
+
+
+          <div class="objective">
+
+            <div class="objective-number">
+              01
+            </div>
+
+            <div>
+
+              <h3>
+                Progression
+              </h3>
+
+              <p>
+                Continuer à monter dans le classement
+                national et améliorer nos performances.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="objective">
+
+            <div class="objective-number">
+              02
+            </div>
+
+            <div>
+
+              <h3>
+                Entraide
+              </h3>
+
+              <p>
+                Partager nos conseils, nos decks et
+                aider les membres à progresser.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="objective">
+
+            <div class="objective-number">
+              03
+            </div>
+
+            <div>
+
+              <h3>
+                Recrutement ciblé
+              </h3>
+
+              <p>
+                Recruter des joueurs actifs, motivés
+                et compatibles avec l'esprit du clan.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="objective">
+
+            <div class="objective-number">
+              04
+            </div>
+
+            <div>
+
+              <h3>
+                Participation
+              </h3>
+
+              <p>
+                Maintenir une forte participation
+                aux guerres et aux événements.
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DISCORD
+    ========================= -->
+
+    <section class="discord-cta">
+
+      <div class="container">
+
+        <div class="discord-box">
+
+
+          <div class="discord-content">
+
+            <div class="discord-icon">
+              💬
+            </div>
+
+
+            <div>
+
+              <div class="eyebrow">
+                Rejoins-nous
+              </div>
+
+              <h2>
+                🇫🇷 REJOINS NOTRE DISCORD
+              </h2>
+
+              <p>
+                Discute avec les membres du Clan Français,
+                organise tes guerres, partage tes decks
+                et reste au courant de toutes les actualités.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <a
+            href="https://discord.gg/yW4KV3GcN"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="discord-big-btn"
+          >
+
+            💬 Rejoindre le Discord
+
+            <span>
+              →
+            </span>
+
+          </a>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         FAQ
+    ========================= -->
+
+    <section id="faq" class="faq-section">
+
+      <div class="container">
+
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            ❓ Questions
+          </div>
+
+          <h2>
+            FAQ DU CLAN
+          </h2>
+
+          <p class="section-description">
+            Tout ce qu'il faut savoir avant de rejoindre
+            Clan Francais.
+          </p>
+
+        </div>
+
+
+        <div class="faq-container">
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Comment rejoindre Clan Francais ?
+              </span>
+
+              <span
+                class="faq-icon"
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                <p>
+                  Il suffit de rechercher
+                  <strong>Clan Francais</strong>
+                  directement dans Clash Royale et de faire
+                  une demande pour rejoindre le clan.
+                  Tu peux également rejoindre notre Discord
+                  pour échanger avec les membres.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Combien de trophées faut-il avoir ?
+              </span>
+
+              <span
+                class="faq-icon"
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                <p>
+                  Nous demandons actuellement environ
+                  <strong>9 000 trophées</strong>.
+                  L'activité et la motivation restent cependant
+                  très importantes pour le clan.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Faut-il participer aux guerres de clans ?
+              </span>
+
+              <span
+                class="faq-icon"
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                <p>
+                  Oui. La participation aux guerres de clans
+                  fait partie des règles principales du clan.
+                  Chaque membre est invité à participer
+                  régulièrement.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Le Discord est-il obligatoire ?
+              </span>
+
+              <span
+                class="faq-icon"
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                <p>
+                  Le Discord n'est pas forcément obligatoire,
+                  mais il est fortement recommandé.
+                  C'est l'endroit idéal pour discuter,
+                  organiser les guerres et retrouver
+                  les autres membres.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Que se passe-t-il si je suis inactif ?
+              </span>
+
+              <span
+                class="faq-icon"
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                <p>
+                  Une absence prolongée sans prévenir peut
+                  entraîner une exclusion. Si tu dois t'absenter,
+                  préviens simplement les responsables du clan.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="faq-item">
+
+            <button
+              class="faq-question"
+              type="button"
+              aria-expanded="false"
+            >
+
+              <span>
+                Quel est l'objectif du clan ?
+              </span>
+
+              <span
+                class="faq-icon"
+                aria-hidden="true"
+              >
+                +
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer">
+
+              <div class="faq-answer-inner">
+
+                <p>
+                  Notre objectif est de continuer à progresser
+                  dans le classement français, renforcer notre
+                  communauté et atteindre régulièrement de
+                  nouveaux objectifs ensemble.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================= -->
+
+    <section id="contact">
+
+      <div class="container">
+
+        <div class="contact-block">
+
+          <div class="eyebrow">
+            Une question ?
+          </div>
+
+          <h2>
+            CONTACTE-NOUS
+          </h2>
+
+          <p>
+            Tu souhaites rejoindre le Clan Francais,
+            obtenir plus d'informations ou simplement
+            discuter avec nous ? Rejoins notre Discord
+            ou utilise le formulaire ci-dessous.
+          </p>
+
+
+          <div class="contact-actions">
+
+            <a
+              href="https://discord.gg/yW4KV3GcN"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              💬 Rejoindre le Discord
+            </a>
+
+          </div>
+
+
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xppzjnrq"
+            method="POST"
+          >
+
+            <label for="pseudo">
+              Ton pseudo
+            </label>
+
+            <input
+              id="pseudo"
+              name="pseudo"
+              type="text"
+              placeholder="Ton pseudo"
+              required
+            >
+
+
+            <label for="email">
+              Ton email
+            </label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Ton email"
+              required
+            >
+
+
+            <label for="message">
+              Ton message
+            </label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Ton message..."
+              required
+            ></textarea>
+
+
+            <button
+              type="submit"
+              class="btn btn-secondary"
+            >
+              Envoyer le message
+            </button>
+
+          </form>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        CLAN FRANCAIS
+      </div>
+
+
+      <div class="footer-text">
+        © 2025 Clan Francais — Clash Royale
+      </div>
+
+
+      <a
+        href="https://discord.gg/yW4KV3GcN"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-discord"
+      >
+        Discord
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+
+    /* =========================
+       MENU MOBILE
+    ========================= */
+
+    const menuToggle =
+      document.getElementById("menuToggle");
+
+    const mobileNav =
+      document.getElementById("mobileNav");
+
+
+    menuToggle.addEventListener(
+      "click",
+      () => {
+
+        const isOpen =
+          mobileNav.classList.toggle("open");
+
+
+        menuToggle.setAttribute(
+          "aria-expanded",
+          isOpen
+        );
+
+
+        menuToggle.setAttribute(
+          "aria-label",
+          isOpen
+            ? "Fermer le menu"
+            : "Ouvrir le menu"
+        );
+
+
+        menuToggle.textContent =
+          isOpen ? "✕" : "☰";
+
+      }
+    );
+
+
+    mobileNav
+      .querySelectorAll("a")
+      .forEach(link => {
+
+        link.addEventListener(
+          "click",
+          () => {
+
+            mobileNav.classList.remove("open");
+
+            menuToggle.setAttribute(
+              "aria-expanded",
+              "false"
+            );
+
+            menuToggle.setAttribute(
+              "aria-label",
+              "Ouvrir le menu"
+            );
+
+            menuToggle.textContent =
+              "☰";
+
+          }
+        );
+
+      });
+
+
+    /* =========================
+       COMPTEURS
+    ========================= */
+
+    const animatedStats =
+      document.querySelectorAll(".animated-stat");
+
+
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              animatedStats.forEach(stat => {
+
+                const target =
+                  Number(stat.dataset.target);
+
+                const duration = 1000;
+
+                const startTime =
+                  performance.now();
+
+
+                function updateCounter(currentTime) {
+
+                  const elapsed =
+                    currentTime - startTime;
+
+
+                  const progress =
+                    Math.min(
+                      elapsed / duration,
+                      1
+                    );
+
+
+                  const ease =
+                    1 -
+                    Math.pow(
+                      1 - progress,
+                      3
+                    );
+
+
+                  const value =
+                    Math.floor(
+                      target * ease
+                    );
+
+
+                  if (target === 1000) {
+
+                    stat.textContent =
+                      value > 0
+                        ? "TOP " + value
+                        : "TOP 1000";
+
+                  }
+
+
+                  else if (target === 9000) {
+
+                    stat.textContent =
+                      value.toLocaleString("fr-FR")
+                      + "+";
+
+                  }
+
+
+                  else if (target === 2021) {
+
+                    stat.textContent =
+                      value;
+
+                  }
+
+
+                  if (progress < 1) {
+
+                    requestAnimationFrame(
+                      updateCounter
+                    );
+
+                  }
+
+
+                  else {
+
+                    if (target === 1000) {
+
+                      stat.textContent =
+                        "TOP 1000";
+
+                    }
+
+
+                    else if (target === 9000) {
+
+                      stat.textContent =
+                        "9 000+";
+
+                    }
+
+
+                    else if (target === 2021) {
+
+                      stat.textContent =
+                        "2021";
+
+                    }
+
+                  }
+
+                }
+
+
+                requestAnimationFrame(
+                  updateCounter
+                );
+
+              });
+
+
+              observer.disconnect();
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .2
+        }
+      );
+
+
+    const statistiques =
+      document.getElementById(
+        "statistiques"
+      );
+
+
+    if (statistiques) {
+
+      observer.observe(
+        statistiques
+      );
+
+    }
+
+
+    /* =========================
+       APPARITION AU SCROLL
+    ========================= */
+
+    const revealElements =
+      document.querySelectorAll(
+        "section, .stat-pill, .team-card, .tl-item, .icon-card, .objective, .contact-block, .faq-item"
+      );
+
+
+    revealElements.forEach(
+      (element, index) => {
+
+        element.classList.add(
+          "reveal"
+        );
+
+
+        if (index % 3 === 1) {
+
+          element.classList.add(
+            "reveal-delay-1"
+          );
+
+        }
+
+
+        if (index % 3 === 2) {
+
+          element.classList.add(
+            "reveal-delay-2"
+          );
+
+        }
+
+      }
+    );
+
+
+    const revealObserver =
+      new IntersectionObserver(
+        (entries) => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add(
+                "active"
+              );
+
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+        {
+          threshold: .12
+        }
+      );
+
+
+    revealElements.forEach(
+      element => {
+
+        revealObserver.observe(
+          element
+        );
+
+      }
+    );
+
+
+    /* =========================
+       FAQ ACCORDÉON
+    ========================= */
+
+    const faqQuestions =
+      document.querySelectorAll(
+        ".faq-question"
+      );
+
+
+    faqQuestions.forEach(
+      question => {
+
+        question.addEventListener(
+          "click",
+          () => {
+
+            const currentItem =
+              question.closest(
+                ".faq-item"
+              );
+
+
+            const isCurrentlyOpen =
+              currentItem.classList.contains(
+                "active"
+              );
+
+
+            document
+              .querySelectorAll(".faq-item")
+              .forEach(item => {
+
+                item.classList.remove(
+                  "active"
+                );
+
+
+                const button =
+                  item.querySelector(
+                    ".faq-question"
+                  );
+
+
+                button.setAttribute(
+                  "aria-expanded",
+                  "false"
+                );
+
+              });
+
+
+            if (!isCurrentlyOpen) {
+
+              currentItem.classList.add(
+                "active"
+              );
+
+
+              question.setAttribute(
+                "aria-expanded",
+                "true"
+              );
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+    /* =========================
+       RETOUR EN HAUT
+    ========================= */
+
+    const backToTop =
+      document.createElement("button");
+
+
+    backToTop.id =
+      "backToTop";
+
+
+    backToTop.innerHTML =
+      "↑";
+
+
+    backToTop.setAttribute(
+      "aria-label",
+      "Retour en haut"
+    );
+
+
+    backToTop.style.position =
+      "fixed";
+
+    backToTop.style.bottom =
+      "25px";
+
+    backToTop.style.right =
+      "25px";
+
+    backToTop.style.width =
+      "50px";
+
+    backToTop.style.height =
+      "50px";
+
+    backToTop.style.borderRadius =
+      "50%";
+
+    backToTop.style.border =
+      "1px solid rgba(255,255,255,.2)";
+
+    backToTop.style.background =
+      "rgba(20,15,40,.85)";
+
+    backToTop.style.color =
+      "white";
+
+    backToTop.style.fontSize =
+      "24px";
+
+    backToTop.style.cursor =
+      "pointer";
+
+    backToTop.style.zIndex =
+      "999";
+
+
+    document.body.appendChild(
+      backToTop
+    );
+
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        if (window.scrollY > 500) {
+
+          backToTop.classList.add(
+            "show"
+          );
+
+        }
+
+        else {
+
+          backToTop.classList.remove(
+            "show"
+          );
+
+        }
+
+      }
+    );
+
+
+    backToTop.addEventListener(
+      "click",
+      () => {
+
+        window.scrollTo({
+
+          top: 0,
+
+          behavior: "smooth"
+
+        });
+
+      }
+    );
+
+
+    /* =========================
+       PARTICULES
+    ========================= */
+
+    for (let i = 0; i < 25; i++) {
+
+      const particle =
+        document.createElement("div");
+
+
+      particle.className =
+        "particle";
+
+
+      particle.style.left =
+        Math.random() * 100 + "vw";
+
+
+      particle.style.animationDuration =
+        (8 + Math.random() * 15)
+        + "s";
+
+
+      particle.style.animationDelay =
+        Math.random() * 10
+        + "s";
+
+
+      particle.style.opacity =
+        .2 + Math.random() * .6;
+
+
+      document.body.appendChild(
+        particle
+      );
+
+    }
+
+
+    /* =========================
+       EFFET 3D DES CARTES
+    ========================= */
+
+    document.querySelectorAll(
+      ".stat-pill, .team-card, .tl-item, .icon-card, .objective, .contact-block"
+    ).forEach(card => {
+
+
+      card.addEventListener(
+        "mousemove",
+        (e) => {
+
+          const rect =
+            card.getBoundingClientRect();
+
+
+          const x =
+            e.clientX - rect.left;
+
+
+          const y =
+            e.clientY - rect.top;
+
+
+          const centerX =
+            rect.width / 2;
+
+
+          const centerY =
+            rect.height / 2;
+
+
+          const rotateX =
+            ((y - centerY) /
+              centerY) * -3;
+
+
+          const rotateY =
+            ((x - centerX) /
+              centerX) * 3;
+
+
+          card.style.transform =
+            `perspective(800px)
+             rotateX(${rotateX}deg)
+             rotateY(${rotateY}deg)
+             translateY(-8px)
+             scale(1.02)`;
+
+        }
+      );
+
+
+      card.addEventListener(
+        "mouseleave",
+        () => {
+
+          card.style.transform =
+            "";
+
+        }
+      );
+
+    });
+
+
+    /* =========================
+       FORMULAIRE FORMSPREE
+    ========================= */
+
+    const contactForm =
+      document.getElementById(
+        "contactForm"
+      );
+
+
+    if (contactForm) {
+
+      contactForm.addEventListener(
+        "submit",
+        () => {
+
+          const button =
+            contactForm.querySelector(
+              "button"
+            );
+
+
+          button.textContent =
+            "Envoi en cours...";
+
+
+          button.disabled =
+            true;
+
+        }
+      );
+
+    }
+
+  </script>
 
 </body>
+
 </html>
