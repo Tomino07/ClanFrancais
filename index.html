@@ -459,6 +459,97 @@
       z-index: 1;
     }
 
+    /* =========================
+   TEXTE SUR LA VIDÉO
+========================= */
+
+.hero-video-text {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px;
+
+  pointer-events: none;
+}
+
+.hero-video-text h1 {
+  margin: 0;
+
+  font-family: 'Luckiest Guy', cursive;
+
+  font-size: clamp(48px, 7vw, 90px);
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+
+  color: #fff;
+
+  text-shadow:
+    0 5px 0 rgba(0,0,0,.35),
+    0 8px 25px rgba(0,0,0,.65),
+    0 0 45px rgba(255,255,255,.15);
+
+  animation: heroTextAppear 1s ease both;
+}
+
+.hero-video-text p {
+  margin-top: 18px;
+
+  font-family: 'Baloo 2', sans-serif;
+
+  font-size: clamp(18px, 2.2vw, 28px);
+
+  font-weight: 700;
+
+  color: rgba(255,255,255,.92);
+
+  letter-spacing: .5px;
+
+  text-shadow:
+    0 3px 15px rgba(0,0,0,.75);
+
+  animation: heroTextAppear 1s .15s ease both;
+}
+
+@keyframes heroTextAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(max-width:500px) {
+
+  .hero-video-text {
+    padding: 20px;
+  }
+
+  .hero-video-text h1 {
+    font-size: 45px;
+  }
+
+  .hero-video-text p {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+}
+
 
     .hero::before {
       content: "";
@@ -3242,19 +3333,32 @@
 
       <div class="hero-video-wrap">
 
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          poster="images-Photoroom.png"
-        >
-          <source src="videoplayback (2) (1).mp4" type="video/mp4">
-        </video>
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="images-Photoroom.png"
+  >
+    <source src="videoplayback (2) (1).mp4" type="video/mp4">
+  </video>
 
-        <div class="hero-video-overlay"></div>
+  <div class="hero-video-overlay"></div>
 
-      </div>
+  <!-- TEXTE AU CENTRE DE LA VIDÉO -->
+  <div class="hero-video-text">
+
+    <h1>
+      Rejoins le Clan Francais
+    </h1>
+
+    <p>
+      Clan classé dans le top France
+    </p>
+
+  </div>
+
+</div>
 
     <!-- =========================
          STATISTIQUES
