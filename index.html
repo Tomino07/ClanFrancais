@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -522,153 +523,71 @@
   animation: heroTextAppear 1s .15s ease both;
 }
 
-    /* =========================
-   BOUTONS HERO VIDÉO
-========================= */
-
-.hero-video-buttons {
+.hero-actions {
   display: flex;
-
   align-items: center;
   justify-content: center;
-
-  gap: 14px;
-
+  gap: 16px;
   margin-top: 28px;
-
   pointer-events: auto;
-
-  animation:
-    heroTextAppear 1s .3s ease both;
+  animation: heroTextAppear 1s .3s ease both;
 }
 
-
-.hero-btn {
+.hero-action {
   display: inline-flex;
-
   align-items: center;
   justify-content: center;
-
-  min-height: 52px;
-
-  padding: 13px 22px;
-
-  border-radius: 13px;
-
+  min-width: 205px;
+  padding: 14px 24px;
+  border-radius: 12px;
   font-family: 'Baloo 2', sans-serif;
-
   font-size: 16px;
-
   font-weight: 800;
-
-  letter-spacing: .2px;
-
-  transition:
-    transform .25s ease,
-    box-shadow .25s ease,
-    background .25s ease,
-    border-color .25s ease;
+  line-height: 1.2;
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
 }
 
-
-/* =========================
-   BOUTON REJOINDRE LE CLAN
-========================= */
-
-.hero-btn-clan {
-  color: #fff;
-
-  background:
-    linear-gradient(
-      135deg,
-      #1647d8,
-      #002395
-    );
-
-  border: 1px solid rgba(255,255,255,.12);
-
-  box-shadow:
-    0 10px 30px rgba(0,35,149,.35);
-}
-
-
-.hero-btn-clan:hover {
+.hero-action:hover {
   transform: translateY(-3px);
-
-  background:
-    linear-gradient(
-      135deg,
-      #2860ed,
-      #0032bd
-    );
-
-  box-shadow:
-    0 15px 40px rgba(0,35,149,.5);
 }
 
-
-/* =========================
-   BOUTON DISCORD
-========================= */
-
-.hero-btn-discord {
-  color: #5d82ff;
-
-  background:
-    rgba(0,0,0,.12);
-
-  border:
-    2px solid #5d82ff;
-
-  box-shadow:
-    0 8px 25px rgba(0,35,149,.12);
-}
-
-
-.hero-btn-discord:hover {
-  transform: translateY(-3px);
-
+.hero-action-primary {
   color: #fff;
-
-  background:
-    rgba(0,35,149,.25);
-
-  border-color:
-    #7b9aff;
-
-  box-shadow:
-    0 12px 35px rgba(0,35,149,.3);
+  background: var(--blue-light);
+  border: 1px solid var(--blue-light);
+  box-shadow: 0 10px 25px rgba(22,71,216,.35);
 }
 
+.hero-action-primary:hover {
+  background: #2859ed;
+  box-shadow: 0 14px 30px rgba(22,71,216,.5);
+}
 
-/* =========================
-   MOBILE
-========================= */
+.hero-action-secondary {
+  color: #8fb1ff;
+  background: transparent;
+  border: 2px solid var(--blue-light);
+  box-shadow: 0 0 18px rgba(22,71,216,.12);
+}
+
+.hero-action-secondary:hover {
+  color: #fff;
+  background: rgba(22,71,216,.14);
+  box-shadow: 0 10px 25px rgba(22,71,216,.25);
+}
 
 @media(max-width:600px) {
-
-  .hero-video-buttons {
+  .hero-actions {
     width: 100%;
-
     flex-direction: column;
-
-    gap: 10px;
-
-    margin-top: 22px;
+    gap: 12px;
   }
 
-
-  .hero-btn {
-    width: min(330px, 100%);
-
-    min-height: 50px;
-
-    padding: 12px 18px;
-
-    font-size: 15px;
+  .hero-action {
+    width: min(280px, 100%);
   }
-
 }
+
 @keyframes heroTextAppear {
   from {
     opacity: 0;
@@ -3485,33 +3404,28 @@
   <!-- TEXTE AU CENTRE DE LA VIDÉO -->
   <div class="hero-video-text">
 
-  <h1>
-    Rejoins le Clan Francais
-  </h1>
+    <h1>
+      Rejoins le Clan Francais
+    </h1>
 
-  <p>
-    Clan classé dans le top France
-  </p>
+    <p>
+      Clan classé dans le top France
+    </p>
 
-  <div class="hero-video-buttons">
+    <div class="hero-actions" aria-label="Actions du clan">
+      <a class="hero-action hero-action-primary" href="#equipe">
+        Découvrir notre clan
+      </a>
 
-    <a
-      href="https://link.clashroyale.com/invite/clan/fr?tag=LJ8GVLQC"
-      class="hero-btn hero-btn-clan"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ⚔️ Rejoindre le Clan
-    </a>
-
-    <a
-      href="https://discord.gg/yW4KV3GcN"
-      class="hero-btn hero-btn-discord"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      💬 Rejoindre notre Discord
-    </a>
+      <a
+        class="hero-action hero-action-secondary"
+        href="https://link.clashroyale.com/invite/clan/fr?tag=LJ8GVLQC"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Rejoindre le clan
+      </a>
+    </div>
 
   </div>
 
