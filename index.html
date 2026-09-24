@@ -49,56 +49,62 @@
       }
 
       body {
-        font-family: "Baloo 2", sans-serif;
-        color: var(--text);
-        overflow-x: hidden;
+  font-family: "Baloo 2", sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
 
-        background:
-          radial-gradient(
-            ellipse 650px 900px at -5% 50%,
-            rgba(0, 35, 149, 0.85) 0%,
-            rgba(0, 35, 149, 0.45) 35%,
-            transparent 72%
-          ),
-          radial-gradient(
-            ellipse 500px 850px at 50% 50%,
-            rgba(255, 255, 255, 0.16) 0%,
-            rgba(255, 255, 255, 0.06) 35%,
-            transparent 72%
-          ),
-          radial-gradient(
-            ellipse 650px 900px at 105% 50%,
-            rgba(237, 41, 57, 0.85) 0%,
-            rgba(237, 41, 57, 0.45) 35%,
-            transparent 72%
-          ),
-          linear-gradient(180deg, #080718 0%, #100c2b 45%, #080718 100%);
+  background:
+    radial-gradient(
+      ellipse 650px 900px at -5% 50%,
+      rgba(107, 102, 255, 0.85) 0%,
+      rgba(107, 102, 255, 0.45) 35%,
+      transparent 72%
+    ),
 
-        background-attachment: fixed;
-      }
+    radial-gradient(
+      ellipse 500px 850px at 50% 50%,
+      rgba(107, 102, 255, 0.22) 0%,
+      rgba(107, 102, 255, 0.08) 35%,
+      transparent 72%
+    ),
+
+    radial-gradient(
+      ellipse 650px 900px at 105% 50%,
+      rgba(107, 102, 255, 0.85) 0%,
+      rgba(107, 102, 255, 0.45) 35%,
+      transparent 72%
+    ),
+
+    linear-gradient(
+      180deg,
+      #080718 0%,
+      #100c2b 45%,
+      #080718 100%
+    );
+
+  background-attachment: fixed;
+}
 
       body::before {
-        content: "";
+  content: "";
 
-        position: fixed;
-        inset: 0;
+  position: fixed;
+  inset: 0;
 
-        pointer-events: none;
+  pointer-events: none;
 
-        background: linear-gradient(
-          90deg,
-          rgba(0, 35, 149, 0.08) 0%,
-          transparent 35%,
-          rgba(255, 255, 255, 0.025) 50%,
-          transparent 65%,
-          rgba(237, 41, 57, 0.08) 100%
-        );
+  background:
+    linear-gradient(
+      90deg,
+      rgba(107, 102, 255, 0.08) 0%,
+      transparent 35%,
+      rgba(107, 102, 255, 0.025) 50%,
+      transparent 65%,
+      rgba(107, 102, 255, 0.08) 100%
+    );
 
-        z-index: 0;
-      }
-
-      body::after {
-        content: "";
+  z-index: 0;
+}
 
         position: fixed;
 
