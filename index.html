@@ -49,62 +49,37 @@
       }
 
       body {
-  font-family: "Baloo 2", sans-serif;
-  color: var(--text);
-  overflow-x: hidden;
+        font-family: "Baloo 2", sans-serif;
+        color: var(--text);
+        overflow-x: hidden;
 
-  background:
-    radial-gradient(
-      ellipse 650px 900px at -5% 50%,
-      rgba(107, 102, 255, 0.85) 0%,
-      rgba(107, 102, 255, 0.45) 35%,
-      transparent 72%
-    ),
-
-    radial-gradient(
-      ellipse 500px 850px at 50% 50%,
-      rgba(107, 102, 255, 0.22) 0%,
-      rgba(107, 102, 255, 0.08) 35%,
-      transparent 72%
-    ),
-
-    radial-gradient(
-      ellipse 650px 900px at 105% 50%,
-      rgba(107, 102, 255, 0.85) 0%,
-      rgba(107, 102, 255, 0.45) 35%,
-      transparent 72%
-    ),
-
-    linear-gradient(
-      180deg,
-      #080718 0%,
-      #100c2b 45%,
-      #080718 100%
-    );
-
-  background-attachment: fixed;
-}
+        background: rgba(29, 33, 4);
+      }
 
       body::before {
-  content: "";
+        content: "";
+        display: none;
 
-  position: fixed;
-  inset: 0;
+        position: fixed;
+        inset: 0;
 
-  pointer-events: none;
+        pointer-events: none;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(107, 102, 255, 0.08) 0%,
-      transparent 35%,
-      rgba(107, 102, 255, 0.025) 50%,
-      transparent 65%,
-      rgba(107, 102, 255, 0.08) 100%
-    );
+        background: linear-gradient(
+          90deg,
+          rgba(107, 102, 255, 0.08) 0%,
+          transparent 35%,
+          rgba(107, 102, 255, 0.025) 50%,
+          transparent 65%,
+          rgba(107, 102, 255, 0.08) 100%
+        );
 
-  z-index: 0;
-}
+        z-index: 0;
+      }
+
+      body::after {
+        content: "";
+        display: none;
 
         position: fixed;
 
