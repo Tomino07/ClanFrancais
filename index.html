@@ -491,6 +491,45 @@
         box-shadow: 0 10px 25px rgba(107, 102, 255, 0.25);
       }
 
+      @media (max-width: 900px) {
+        .news-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .news-side {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 600px) {
+        .news-heading {
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 22px;
+        }
+
+        .news-heading .section-heading {
+          text-align: left;
+        }
+
+        .news-heading .section-description {
+          font-size: 15px;
+        }
+
+        .news-all-link {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        .news-side {
+          grid-template-columns: 1fr;
+        }
+
+        .news-featured .news-media {
+          min-height: 285px;
+        }
+      }
+
       @media (max-width: 600px) {
         .hero-actions {
           width: 100%;
@@ -1088,6 +1127,252 @@
         font-size: 17px;
 
         line-height: 1.6;
+      }
+
+      /* =========================
+       ACTUALITÉS
+    ========================= */
+
+      .news-section {
+        padding-top: 100px;
+        padding-bottom: 105px;
+        background:
+          radial-gradient(circle at 8% 20%, rgba(107, 102, 255, 0.07), transparent 32%),
+          radial-gradient(circle at 92% 72%, rgba(237, 41, 57, 0.06), transparent 30%);
+      }
+
+      .news-heading {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 42px;
+      }
+
+      .news-heading .section-heading {
+        margin: 0;
+        text-align: left;
+      }
+
+      .news-heading .section-description {
+        margin-left: 0;
+        max-width: 510px;
+      }
+
+      .news-heading h2 {
+        font-family: "Baloo 2", sans-serif;
+        font-size: clamp(42px, 5vw, 62px);
+        line-height: 0.95;
+        letter-spacing: -1px;
+      }
+
+      .news-heading .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        padding: 5px 12px;
+        margin-bottom: 14px;
+        border-radius: 999px;
+        color: #d9d7ff;
+        background: rgba(107, 102, 255, 0.16);
+        border: 1px solid rgba(143, 138, 255, 0.25);
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        text-transform: none;
+      }
+
+      .news-all-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+        padding: 13px 18px;
+        border: 1px solid rgba(123, 116, 255, 0.4);
+        border-radius: 11px;
+        color: #aaa6ff;
+        font-size: 14px;
+        font-weight: 800;
+        transition: 0.25s ease;
+      }
+
+      .news-all-link span {
+        font-size: 20px;
+        line-height: 0;
+        transition: transform 0.25s ease;
+      }
+
+      .news-all-link:hover {
+        color: #fff;
+        background: rgba(107, 102, 255, 0.12);
+        border-color: rgba(143, 138, 255, 0.75);
+        transform: translateY(-2px);
+      }
+
+      .news-all-link:hover span {
+        transform: translateX(4px);
+      }
+
+      .news-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.8fr);
+        gap: 28px;
+        align-items: stretch;
+      }
+
+      .news-card {
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 16px;
+        background: #272a36;
+        box-shadow: 0 22px 55px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .news-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(143, 138, 255, 0.45);
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
+      }
+
+      .news-media {
+        position: relative;
+        min-height: 245px;
+        overflow: hidden;
+        background-color: #343b55;
+        background-position: center;
+        background-size: cover;
+      }
+
+      .news-featured .news-media {
+        min-height: 334px;
+      }
+
+      .news-media::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(8, 9, 18, 0.02) 26%, rgba(10, 11, 22, 0.88) 100%);
+      }
+
+      .news-featured .news-media {
+        background-image: url("https://files.manuscdn.com/search-media/310519663951604504/q51y1eyfAETpJonKAKoQs/nyhiimULrXMgvTtUUm5hJP.webp");
+      }
+
+      .news-ruby .news-media {
+        background-image: url("https://files.manuscdn.com/search-media/310519663951604504/q51y1eyfAETpYJonKAKoQs/n4TGVKY2oSggR8e88L3fuH.jpg");
+      }
+
+      .news-community .news-media {
+        background-image: url("https://files.manuscdn.com/search-media/310519663951604504/q51y1eyfAETpYJonKAKoQs/X98F684zGzBL8bk559HjBZ.jpg");
+      }
+
+      .news-badges {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        right: 16px;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+
+      .news-badge, .news-reading-time {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 10px;
+        border-radius: 8px;
+        color: #fff;
+        background: rgba(107, 102, 255, 0.82);
+        backdrop-filter: blur(8px);
+        font-size: 12px;
+        font-weight: 800;
+      }
+
+      .news-badge.hot {
+        color: #f3eaaa;
+        background: rgba(221, 201, 74, 0.72);
+      }
+
+      .news-badge.java {
+        background: rgba(210, 54, 50, 0.82);
+      }
+
+      .news-reading-time {
+        background: rgba(93, 101, 126, 0.76);
+      }
+
+      .news-media-content {
+        position: absolute;
+        right: 22px;
+        bottom: 20px;
+        left: 22px;
+        z-index: 1;
+      }
+
+      .news-media-content h3 {
+        max-width: 620px;
+        color: #fff;
+        font-size: clamp(23px, 3vw, 34px);
+        line-height: 1.05;
+        text-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
+      }
+
+      .news-card-body {
+        min-height: 164px;
+        padding: 20px 22px 24px;
+      }
+
+      .news-date {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        color: #7776ff;
+        font-size: 13px;
+        font-weight: 800;
+      }
+
+      .news-date::before {
+        content: "▣";
+        font-size: 14px;
+      }
+
+      .news-card-body p {
+        margin-top: 14px;
+        color: #aaa7c4;
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .news-side {
+        display: grid;
+        gap: 20px;
+      }
+
+      .news-side .news-media {
+        min-height: 190px;
+      }
+
+      .news-side .news-media-content {
+        bottom: 16px;
+      }
+
+      .news-side .news-media-content h3 {
+        font-size: 22px;
+      }
+
+      .news-side .news-card-body {
+        min-height: 125px;
+        padding: 16px 20px 20px;
+      }
+
+      .news-side .news-card-body p {
+        margin-top: 10px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
       }
 
       /* =========================
@@ -2974,43 +3259,78 @@
 ========================= -->
       </section>
 
-      <section id="statistiques">
+      <section id="statistiques" class="news-section">
         <div class="container">
-          <div class="section-heading">
-            <div class="eyebrow">Statistiques</div>
+          <div class="news-heading">
+            <div class="section-heading">
+              <div class="eyebrow">Articles</div>
 
-            <h2>LES INFORMATIONS PRINCIPALES 🇫🇷</h2>
+              <h2>Actualités</h2>
 
-            <p class="section-description">
-              Des statistiques qui montrent à quel point le clan évolue.
-            </p>
+              <p class="section-description">
+                Reste informé des dernières mises à jour, événements et nouveautés de NationsGlory.
+              </p>
+            </div>
+
+            <a class="news-all-link" href="#actus">
+              Tout afficher <span>→</span>
+            </a>
           </div>
 
-          <div class="stats">
-            <div class="stats-grid">
-              <div class="stat-pill">
-                <div class="stat-number animated-stat" data-target="1000">
-                  TOP 1000
+          <div class="news-grid">
+            <article class="news-card news-featured">
+              <div class="news-media">
+                <div class="news-badges">
+                  <span class="news-badge">Histoire</span>
                 </div>
 
-                <div class="stat-label">Classement France</div>
+                <div class="news-media-content">
+                  <h3>Création du Clan Francais</h3>
+                </div>
               </div>
 
-              <div class="stat-pill">
-                <div class="stat-number animated-stat" data-target="9000">
-                  9 000+
+              <div class="news-card-body">
+                <div class="news-date">2021</div>
+                <p>
+                  Le clan est créé avec l'ambition de réunir des joueurs français actifs et motivés.
+                </p>
+              </div>
+            </article>
+
+            <div class="news-side">
+              <article class="news-card news-ruby">
+                <div class="news-media">
+                  <div class="news-badges">
+                    <span class="news-badge java">Classement</span>
+                  </div>
+
+                  <div class="news-media-content">
+                    <h3>243e au classement national</h3>
+                  </div>
                 </div>
 
-                <div class="stat-label">Trophées minimum</div>
-              </div>
+                <div class="news-card-body">
+                  <div class="news-date">Janvier 2025</div>
+                  <p>Une progression importante qui confirme les ambitions du clan.</p>
+                </div>
+              </article>
 
-              <div class="stat-pill">
-                <div class="stat-number animated-stat" data-target="2021">
-                  2021
+              <article class="news-card news-community">
+                <div class="news-media">
+                  <div class="news-badges">
+                    <span class="news-badge">Performance</span>
+                  </div>
+
+                  <div class="news-media-content">
+                    <h3>TOP 1000 France</h3>
+                  </div>
                 </div>
 
-                <div class="stat-label">Année de création</div>
-              </div>
+                <div class="news-card-body">
+                  <div class="news-date">Novembre 2025</div>
+                  <p>Le Clan Francais atteint le TOP 1000 national. Une étape importante dans notre progression.</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
