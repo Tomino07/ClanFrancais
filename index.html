@@ -3418,6 +3418,41 @@
         }
       }
 
+    
+
+      /* Drapeaux de nationalité sur les fiches leaders */
+      .leaders-section .player-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .leader-name {
+        min-width: 0;
+        overflow-wrap: anywhere;
+      }
+
+      .leader-country {
+        display: inline-flex;
+        width: 27px;
+        height: 18px;
+        flex: 0 0 27px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.28);
+        border-radius: 2px;
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.45);
+      }
+
+      .leader-country span {
+        width: 33.333%;
+        height: 100%;
+      }
+
+      .leader-country span:nth-child(1) { background: #0055a4; }
+      .leader-country span:nth-child(2) { background: #ffffff; }
+      .leader-country span:nth-child(3) { background: #ef4135; }
+
     </style>
   </head>
 
@@ -3695,7 +3730,12 @@
 
               <div class="role-badge chef">👑 CHEF</div>
 
-              <div class="player-name">Tom07</div>
+              <div class="player-name">
+                <span class="leader-name">Tom07</span>
+                <span class="leader-country" role="img" aria-label="Nationalité française" title="Français">
+                  <span></span><span></span><span></span>
+                </span>
+              </div>
 
               <div class="player-stats">
                 <div class="player-stat">
@@ -3721,7 +3761,12 @@
 
               <div class="role-badge adjoint">⚔️ CHEF ADJOINT</div>
 
-              <div class="player-name">ExAnoVa</div>
+              <div class="player-name">
+                <span class="leader-name">ExAnoVa</span>
+                <span class="leader-country" role="img" aria-label="Nationalité française" title="Français">
+                  <span></span><span></span><span></span>
+                </span>
+              </div>
 
               <div class="player-stats">
                 <div class="player-stat">
@@ -3747,7 +3792,12 @@
 
               <div class="role-badge adjoint">⚔️ CHEF ADJOINT</div>
 
-              <div class="player-name">HyperLoop-2000</div>
+              <div class="player-name">
+                <span class="leader-name">HyperLoop-2000</span>
+                <span class="leader-country" role="img" aria-label="Nationalité française" title="Français">
+                  <span></span><span></span><span></span>
+                </span>
+              </div>
 
               <div class="player-stats">
                 <div class="player-stat">
