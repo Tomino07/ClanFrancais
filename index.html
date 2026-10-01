@@ -3211,6 +3211,213 @@
         }
       }
 
+    
+
+      /* =========================
+         LEADERS — CARTES ÉDITORIALES
+      ========================= */
+      .leaders-section {
+        padding: clamp(68px, 8vw, 106px) 0 96px;
+        color: #f7f7f7;
+        background: #141414;
+      }
+
+      .leaders-section .container {
+        width: min(1280px, 92%);
+      }
+
+      .leaders-section .section-heading {
+        max-width: 850px;
+        margin: 0 auto 48px;
+        text-align: center;
+      }
+
+      .leaders-section .eyebrow {
+        margin-bottom: 8px;
+        color: #c4c4c4;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 12px;
+        letter-spacing: 2.4px;
+      }
+
+      .leaders-section .section-heading h2 {
+        color: #f6f6f6;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(42px, 6vw, 70px);
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -2.5px;
+        text-transform: none;
+        animation: none;
+      }
+
+      .leaders-title-accent {
+        color: #f3f3f0;
+      }
+
+      .leaders-section .section-description {
+        max-width: 780px;
+        margin: 16px auto 0;
+        color: #d0d0d0;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      .leaders-section .section-heading::after {
+        content: "";
+        display: block;
+        width: 54px;
+        height: 4px;
+        margin: 24px auto 0;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+      }
+
+      .leaders-section .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .leaders-section .team-card {
+        min-width: 0;
+        min-height: 440px;
+        padding: 0 22px 22px;
+        overflow: hidden;
+        border: 1px solid #303034;
+        border-radius: 4px;
+        background: #171719;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
+        text-align: left;
+        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .leaders-section .team-card::before {
+        z-index: 2;
+        height: 4px;
+        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #e91515 66%);
+      }
+
+      .leaders-section .team-card::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 235px;
+        pointer-events: none;
+        background:
+          linear-gradient(135deg, transparent 0 17%, rgba(36, 72, 232, 0.76) 17.5% 19%, transparent 19.5% 31%, rgba(36, 72, 232, 0.5) 31.5% 33%, transparent 33.5%),
+          linear-gradient(115deg, transparent 0 55%, rgba(255, 18, 18, 0.68) 55.5% 57%, transparent 57.5% 72%, rgb(238, 22, 22) 72.5% 74%, transparent 74.5%),
+          linear-gradient(180deg, #101014, #19191c);
+        opacity: 0.95;
+      }
+
+      .leaders-section .team-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .leaders-section .team-card:hover {
+        transform: translateY(-5px);
+        border-color: rgba(255, 223, 36, 0.52);
+        box-shadow: 0 20px 42px rgba(0, 0, 0, 0.4);
+      }
+
+      .leaders-section .avatar {
+        width: 136px;
+        height: 136px;
+        margin: 38px auto 16px;
+        border: 3px solid rgba(255, 255, 255, 0.9);
+        border-radius: 50%;
+        background: #f4f4f4;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.48);
+      }
+
+      .leaders-section .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .leaders-section .role-badge {
+        margin: 4px 0 8px;
+        padding: 5px 10px;
+        border-width: 1px;
+        border-radius: 3px;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+      }
+
+      .leaders-section .player-name {
+        margin: 0 0 14px;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(21px, 2.2vw, 27px);
+        font-weight: 800;
+        line-height: 1.15;
+        overflow-wrap: anywhere;
+      }
+
+      .leaders-section .player-stats {
+        gap: 8px;
+      }
+
+      .leaders-section .player-stat {
+        padding: 10px 11px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.045);
+      }
+
+      .leaders-section .player-stat strong {
+        font-size: 17px;
+      }
+
+      .leaders-section .player-stat span {
+        color: #bcbcc3;
+        font-size: 11px;
+      }
+
+      @media (max-width: 950px) {
+        .leaders-section .team-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 600px) {
+        .leaders-section {
+          padding: 60px 0 72px;
+        }
+
+        .leaders-section .section-heading {
+          margin-bottom: 34px;
+        }
+
+        .leaders-section .section-heading h2 {
+          font-size: clamp(42px, 12vw, 58px);
+          letter-spacing: -1.5px;
+        }
+
+        .leaders-section .section-description {
+          font-size: 14px;
+        }
+
+        .leaders-section .team-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+          width: min(420px, 100%);
+          margin-inline: auto;
+        }
+
+        .leaders-section .team-card {
+          min-height: 410px;
+          padding-inline: 20px;
+        }
+      }
+
     </style>
   </head>
 
@@ -3447,19 +3654,12 @@
 
         <p>
           Le Clan Francais rassemble des joueurs français sérieux, motivés et
-          respectueux, réunis par une même envie : progresser ensemble et viser
-          les meilleures places du classement national.
+          respectueux, réunis par une même envie : progresser ensemble et faire en sorte que le clan prenne la meilleure place dans le classement national.
         </p>
         <p>
-          Chaque semaine, les membres prennent part aux guerres de clans. Une
-          participation régulière et une organisation collective permettent à
-          chacun de contribuer aux objectifs communs.
+          Chaque semaine, les membres participent aux guerres de clans, partagent leurs decks, donnent des conseils et tout ça, dans un esprit d'entraide et de bonne ambiance
         </p>
-        <p>
-          La communauté continue aussi sur Discord : on y partage des decks,
-          des conseils et de bons moments, dans un esprit d’entraide et de bonne
-          ambiance.
-        </p>
+        
 
         <a class="story-join" href="#recrutement">
           <span>Nous rejoindre</span><span class="story-join-arrow" aria-hidden="true">→</span>
@@ -3472,12 +3672,12 @@
      ÉQUIPE
 ========================= -->
 
-      <section id="equipe">
+      <section id="equipe" class="leaders-section">
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">Notre équipe</div>
 
-            <h2>LES LEADERS 🇫🇷</h2>
+            <h2>LES <span class="leaders-title-accent">LEADERS</span></h2>
 
             <p class="section-description">
               Une équipe présente pour faire vivre le clan, organiser les
