@@ -1,23 +1,20 @@
-
-
-Index · HTML
 <!doctype html>
- 
+
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+
     <title>Clan Francais</title>
- 
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
- 
+
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Luckiest+Guy&display=swap"
       rel="stylesheet"
     />
- 
+
     <style>
       :root {
         --blue: #002395;
@@ -26,38 +23,38 @@ Index · HTML
         --red: #ed2939;
         --gold: #ffd700;
         --gold-dark: #c99b00;
- 
+
         --bg: #080718;
         --bg-2: #100c2b;
         --purple: #17113d;
         --purple-light: #211854;
- 
+
         --text: #ffffff;
         --muted: #aaa7c4;
- 
+
         --border: rgba(255, 255, 255, 0.12);
         --glass: rgba(255, 255, 255, 0.055);
- 
+
         --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
       }
- 
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
- 
+
       html {
         scroll-behavior: smooth;
       }
- 
+
       body {
         font-family: "Baloo 2", sans-serif;
         color: var(--text);
         overflow-x: hidden;
         background: rgba(29, 33, 42, 1);
       }
- 
+
       body::before {
         content: "";
         display: none;
@@ -74,7 +71,7 @@ Index · HTML
         );
         z-index: 0;
       }
- 
+
       body::after {
         content: "";
         display: none;
@@ -92,28 +89,28 @@ Index · HTML
         pointer-events: none;
         z-index: 0;
       }
- 
+
       a {
         color: inherit;
         text-decoration: none;
       }
- 
+
       img {
         max-width: 100%;
         display: block;
       }
- 
+
       .container {
         width: min(1180px, 92%);
         margin: auto;
         position: relative;
         z-index: 2;
       }
- 
+
       /* =========================
        HEADER (base, remplacé plus bas par le style Solary)
     ========================= */
- 
+
       .logo {
         display: flex;
         align-items: center;
@@ -127,7 +124,7 @@ Index · HTML
         color: transparent;
         white-space: nowrap;
       }
- 
+
       .logo img {
         width: 48px;
         height: 48px;
@@ -135,17 +132,17 @@ Index · HTML
         filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
         transition: 0.25s ease;
       }
- 
+
       .logo:hover img {
         transform: scale(1.08) rotate(-3deg);
       }
- 
+
       nav {
         display: flex;
         align-items: center;
         gap: 22px;
       }
- 
+
       nav a {
         color: #d6d3e7;
         font-weight: 600;
@@ -153,15 +150,15 @@ Index · HTML
         transition: 0.25s ease;
         position: relative;
       }
- 
+
       nav a:hover {
         color: #fff;
       }
- 
+
       /* =========================
        MENU MOBILE (bouton)
     ========================= */
- 
+
       .menu-toggle {
         display: none;
         border: 1px solid rgba(255, 255, 255, 0.15);
@@ -176,16 +173,16 @@ Index · HTML
           background 0.25s ease,
           transform 0.25s ease;
       }
- 
+
       .menu-toggle:hover {
         background: rgba(255, 255, 255, 0.12);
         transform: scale(1.05);
       }
- 
+
       .menu-toggle:active {
         transform: scale(0.95);
       }
- 
+
       .discord-btn {
         padding: 11px 18px;
         border-radius: 12px;
@@ -195,27 +192,27 @@ Index · HTML
         box-shadow: 0 8px 25px rgba(88, 101, 242, 0.25);
         transition: 0.25s ease;
       }
- 
+
       .discord-btn:hover {
         transform: translateY(-2px);
         box-shadow: 0 12px 30px rgba(88, 101, 242, 0.4);
       }
- 
+
       /* =========================
        HERO
     ========================= */
- 
+
       .hero {
         position: relative;
         z-index: 1;
         padding: 0 0 85px;
         overflow: hidden;
       }
- 
+
       .hero .container {
         padding-top: 0;
       }
- 
+
       .hero-video-wrap {
         position: relative;
         width: 100%;
@@ -223,7 +220,7 @@ Index · HTML
         overflow: hidden;
         z-index: 1;
       }
- 
+
       .hero-video-wrap video {
         position: absolute;
         top: 50%;
@@ -235,7 +232,7 @@ Index · HTML
         filter: blur(4px);
         transition: filter 0.3s ease;
       }
- 
+
       .hero-video-overlay {
         position: absolute;
         inset: 0;
@@ -260,11 +257,11 @@ Index · HTML
           );
         z-index: 1;
       }
- 
+
       /* =========================
    TEXTE SUR LA VIDÉO
 ========================= */
- 
+
       .hero-video-text {
         position: absolute;
         inset: 0;
@@ -277,7 +274,7 @@ Index · HTML
         padding: 30px;
         pointer-events: none;
       }
- 
+
       .hero-video-text h1 {
         margin: 0;
         font-family: "Luckiest Guy", cursive;
@@ -291,7 +288,7 @@ Index · HTML
           0 0 45px rgba(107, 102, 255, 0.35);
         animation: heroTextAppear 1s ease both;
       }
- 
+
       .hero-video-text p {
         margin-top: 18px;
         font-family: "Baloo 2", sans-serif;
@@ -302,7 +299,7 @@ Index · HTML
         text-shadow: 0 3px 15px rgba(0, 0, 0, 0.75);
         animation: heroTextAppear 1s 0.15s ease both;
       }
- 
+
       .hero-actions {
         display: flex;
         align-items: center;
@@ -312,7 +309,7 @@ Index · HTML
         pointer-events: auto;
         animation: heroTextAppear 1s 0.3s ease both;
       }
- 
+
       .hero-action {
         display: inline-flex;
         align-items: center;
@@ -329,116 +326,116 @@ Index · HTML
           box-shadow 0.25s ease,
           background 0.25s ease;
       }
- 
+
       .hero-action:hover {
         transform: translateY(-3px);
       }
- 
+
       .hero-action-primary {
         color: #fff;
         background: #6b66ff;
         border: 1px solid #6b66ff;
         box-shadow: 0 10px 25px rgba(107, 102, 255, 0.35);
       }
- 
+
       .hero-action-primary:hover {
         background: #8581ff;
         border-color: #8581ff;
         box-shadow: 0 14px 30px rgba(107, 102, 255, 0.5);
       }
- 
+
       .hero-action-secondary {
         color: #6b66ff;
         background: transparent;
         border: 2px solid #6b66ff;
         box-shadow: 0 0 18px rgba(107, 102, 255, 0.12);
       }
- 
+
       .hero-action-secondary:hover {
         color: #fff;
         background: rgba(107, 102, 255, 0.14);
         border-color: #8581ff;
         box-shadow: 0 10px 25px rgba(107, 102, 255, 0.25);
       }
- 
+
       @media (max-width: 900px) {
         .news-grid {
           grid-template-columns: 1fr;
         }
- 
+
         .news-side {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
       }
- 
+
       @media (max-width: 600px) {
         .news-heading {
           align-items: flex-start;
           flex-direction: column;
           gap: 22px;
         }
- 
+
         .news-heading .section-heading {
           text-align: left;
         }
- 
+
         .news-heading .section-description {
           font-size: 15px;
         }
- 
+
         .news-all-link {
           width: 100%;
           justify-content: space-between;
         }
- 
+
         .news-side {
           grid-template-columns: 1fr;
         }
- 
+
         .news-featured .news-media {
           min-height: 285px;
         }
       }
- 
+
       @media (max-width: 600px) {
         .hero-actions {
           width: 100%;
           flex-direction: column;
           gap: 12px;
         }
- 
+
         .hero-action {
           width: min(280px, 100%);
         }
       }
- 
+
       @keyframes heroTextAppear {
         from {
           opacity: 0;
           transform: translateY(25px);
         }
- 
+
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
- 
+
       @media (max-width: 500px) {
         .hero-video-text {
           padding: 20px;
         }
- 
+
         .hero-video-text h1 {
           font-size: 45px;
         }
- 
+
         .hero-video-text p {
           margin-top: 12px;
           font-size: 18px;
         }
       }
- 
+
       .hero::before {
         content: "";
         position: absolute;
@@ -459,7 +456,7 @@ Index · HTML
         pointer-events: none;
         z-index: -1;
       }
- 
+
       .hero-content {
         display: flex;
         align-items: center;
@@ -467,12 +464,12 @@ Index · HTML
         gap: 60px;
         width: 100%;
       }
- 
+
       .hero-text {
         flex: 1;
         min-width: 0;
       }
- 
+
       .hero-logo-container {
         flex-shrink: 0;
         width: 330px;
@@ -481,7 +478,7 @@ Index · HTML
         justify-content: center;
         position: relative;
       }
- 
+
       .hero-logo-container::before {
         content: "";
         position: absolute;
@@ -500,7 +497,7 @@ Index · HTML
         animation: heroGlow 8s linear infinite;
         z-index: -1;
       }
- 
+
       .hero-logo {
         width: 300px;
         height: 300px;
@@ -510,7 +507,7 @@ Index · HTML
         transition: 0.4s ease;
         animation: heroFloat 4s ease-in-out infinite;
       }
- 
+
       .hero-logo:hover {
         animation-play-state: paused;
         transform: scale(1.08) rotate(3deg);
@@ -518,7 +515,7 @@ Index · HTML
           drop-shadow(0 0 30px rgba(0, 80, 255, 0.25))
           drop-shadow(0 0 35px rgba(255, 0, 50, 0.2));
       }
- 
+
       .hero::after {
         content: "";
         position: absolute;
@@ -539,11 +536,11 @@ Index · HTML
         border-radius: 999px;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
       }
- 
+
       /* =========================
        NOUVEAU BADGE MEMBRES
     ========================= */
- 
+
       .member-status {
         display: inline-flex;
         flex-direction: column;
@@ -565,14 +562,14 @@ Index · HTML
         -webkit-backdrop-filter: blur(14px);
         animation: memberPulse 3s ease-in-out infinite;
       }
- 
+
       .member-status-top {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 15px;
       }
- 
+
       .member-label {
         display: flex;
         align-items: center;
@@ -583,7 +580,7 @@ Index · HTML
         letter-spacing: 1.2px;
         text-transform: uppercase;
       }
- 
+
       .member-dot {
         width: 9px;
         height: 9px;
@@ -595,7 +592,7 @@ Index · HTML
           0 0 20px rgba(54, 227, 109, 0.5);
         animation: onlinePulse 1.8s ease-in-out infinite;
       }
- 
+
       .member-count {
         color: #fff;
         font-size: 20px;
@@ -603,12 +600,12 @@ Index · HTML
         line-height: 1;
         white-space: nowrap;
       }
- 
+
       .member-count strong {
         color: #36e36d;
         font-size: 25px;
       }
- 
+
       .member-progress {
         width: 100%;
         height: 9px;
@@ -618,7 +615,7 @@ Index · HTML
         border: 1px solid rgba(255, 255, 255, 0.08);
         overflow: hidden;
       }
- 
+
       .member-progress-bar {
         width: 98%;
         height: 100%;
@@ -630,7 +627,7 @@ Index · HTML
         position: relative;
         overflow: hidden;
       }
- 
+
       .member-progress-bar::after {
         content: "";
         position: absolute;
@@ -647,7 +644,7 @@ Index · HTML
         transform: skewX(-20deg);
         animation: progressShine 2.5s ease-in-out infinite;
       }
- 
+
       .member-bottom {
         display: flex;
         align-items: center;
@@ -656,16 +653,16 @@ Index · HTML
         font-size: 12px;
         font-weight: 800;
       }
- 
+
       .member-bottom .available {
         color: #36e36d;
         letter-spacing: 0.4px;
       }
- 
+
       .member-bottom .capacity {
         color: #77748d;
       }
- 
+
       h1 {
         font-family: "Luckiest Guy", cursive;
         font-size: clamp(50px, 7vw, 88px);
@@ -676,30 +673,30 @@ Index · HTML
           0 15px 45px rgba(0, 0, 0, 0.35);
         animation: titleAppear 0.9s ease both;
       }
- 
+
       h1 .blue {
         color: #5d82ff;
       }
- 
+
       h1 .white {
         color: #fff;
       }
- 
+
       h1 .red {
         color: #ff5966;
       }
- 
+
       .hero-actions {
         display: flex;
         gap: 15px;
         margin-top: 30px;
         flex-wrap: wrap;
       }
- 
+
       /* =========================
        BOUTONS
     ========================= */
- 
+
       .btn {
         display: inline-flex;
         align-items: center;
@@ -713,47 +710,47 @@ Index · HTML
           box-shadow 0.25s ease,
           filter 0.25s ease;
       }
- 
+
       .btn-primary {
         background: linear-gradient(135deg, #ffd700, #e2ae00);
         color: #16120a;
         box-shadow: 0 10px 30px rgba(255, 215, 0, 0.18);
       }
- 
+
       .btn-primary:hover {
         transform: translateY(-3px);
         box-shadow: 0 15px 40px rgba(255, 215, 0, 0.28);
       }
- 
+
       .btn-secondary {
         border: 1px solid rgba(255, 255, 255, 0.14);
         background: rgba(255, 255, 255, 0.045);
         color: #fff;
       }
- 
+
       .btn-secondary:hover {
         background: rgba(255, 255, 255, 0.09);
         transform: translateY(-3px);
       }
- 
+
       .btn:active {
         transform: scale(0.96);
       }
- 
+
       /* =========================
        STATS
     ========================= */
- 
+
       .stats {
         padding: 10px 0 90px;
       }
- 
+
       .stats-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 18px;
       }
- 
+
       .stat-pill,
       .team-card,
       .tl-item,
@@ -775,13 +772,13 @@ Index · HTML
           box-shadow 0.35s ease,
           border-color 0.35s ease;
       }
- 
+
       .stat-pill {
         padding: 25px;
         border-radius: 18px;
         text-align: center;
       }
- 
+
       .stat-pill::before,
       .team-card::before,
       .contact-block::before {
@@ -801,35 +798,35 @@ Index · HTML
           #ed2939 100%
         );
       }
- 
+
       .stat-number {
         font-family: "Luckiest Guy", cursive;
         color: #ffd700;
         font-size: 42px;
         line-height: 1;
       }
- 
+
       .stat-label {
         color: #aaa7c4;
         margin-top: 8px;
         font-weight: 700;
       }
- 
+
       /* =========================
        SECTIONS
     ========================= */
- 
+
       section {
         padding: 95px 0;
         position: relative;
         z-index: 1;
       }
- 
+
       .section-heading {
         text-align: center;
         margin-bottom: 55px;
       }
- 
+
       .eyebrow {
         color: #ffd700;
         text-transform: uppercase;
@@ -838,14 +835,14 @@ Index · HTML
         letter-spacing: 3px;
         margin-bottom: 10px;
       }
- 
+
       h2 {
         font-family: "Luckiest Guy", cursive;
         font-size: 48px;
         letter-spacing: 1px;
         animation: titleAppear 0.9s ease both;
       }
- 
+
       .section-description {
         max-width: 650px;
         margin: 15px auto 0;
@@ -853,11 +850,11 @@ Index · HTML
         font-size: 17px;
         line-height: 1.6;
       }
- 
+
       /* =========================
        ACTUALITÉS
     ========================= */
- 
+
       .news-section {
         padding-top: 100px;
         padding-bottom: 105px;
@@ -865,7 +862,7 @@ Index · HTML
           radial-gradient(circle at 8% 20%, rgba(107, 102, 255, 0.07), transparent 32%),
           radial-gradient(circle at 92% 72%, rgba(237, 41, 57, 0.06), transparent 30%);
       }
- 
+
       .news-heading {
         display: flex;
         align-items: flex-end;
@@ -873,24 +870,24 @@ Index · HTML
         gap: 30px;
         margin-bottom: 42px;
       }
- 
+
       .news-heading .section-heading {
         margin: 0;
         text-align: left;
       }
- 
+
       .news-heading .section-description {
         margin-left: 0;
         max-width: 510px;
       }
- 
+
       .news-heading h2 {
         font-family: "Baloo 2", sans-serif;
         font-size: clamp(42px, 5vw, 62px);
         line-height: 0.95;
         letter-spacing: -1px;
       }
- 
+
       .news-heading .eyebrow {
         display: inline-flex;
         align-items: center;
@@ -904,7 +901,7 @@ Index · HTML
         letter-spacing: 0.2px;
         text-transform: none;
       }
- 
+
       .news-all-link {
         display: inline-flex;
         align-items: center;
@@ -918,31 +915,31 @@ Index · HTML
         font-weight: 800;
         transition: 0.25s ease;
       }
- 
+
       .news-all-link span {
         font-size: 20px;
         line-height: 0;
         transition: transform 0.25s ease;
       }
- 
+
       .news-all-link:hover {
         color: #fff;
         background: rgba(107, 102, 255, 0.12);
         border-color: rgba(143, 138, 255, 0.75);
         transform: translateY(-2px);
       }
- 
+
       .news-all-link:hover span {
         transform: translateX(4px);
       }
- 
+
       .news-grid {
         display: grid;
         grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.8fr);
         gap: 28px;
         align-items: stretch;
       }
- 
+
       .news-card {
         position: relative;
         overflow: hidden;
@@ -952,13 +949,13 @@ Index · HTML
         box-shadow: 0 22px 55px rgba(0, 0, 0, 0.25);
         transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
       }
- 
+
       .news-card:hover {
         transform: translateY(-6px);
         border-color: rgba(143, 138, 255, 0.45);
         box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
       }
- 
+
       .news-media {
         position: relative;
         min-height: 245px;
@@ -967,30 +964,30 @@ Index · HTML
         background-position: center;
         background-size: cover;
       }
- 
+
       .news-featured .news-media {
         min-height: 334px;
       }
- 
+
       .news-media::after {
         content: "";
         position: absolute;
         inset: 0;
         background: linear-gradient(180deg, rgba(8, 9, 18, 0.02) 26%, rgba(10, 11, 22, 0.88) 100%);
       }
- 
+
       .news-featured .news-media {
         background-image: url("clash-royale-banniere.jpg");
       }
- 
+
       .news-ruby .news-media {
         background-image: url("classement_clash.png");
       }
- 
+
       .news-community .news-media {
         background-image: url("france.png");
       }
- 
+
       .news-badges {
         position: absolute;
         top: 16px;
@@ -1002,7 +999,7 @@ Index · HTML
         justify-content: space-between;
         gap: 10px;
       }
- 
+
       .news-badge, .news-reading-time {
         display: inline-flex;
         align-items: center;
@@ -1014,20 +1011,20 @@ Index · HTML
         font-size: 12px;
         font-weight: 800;
       }
- 
+
       .news-badge.hot {
         color: #f3eaaa;
         background: rgba(221, 201, 74, 0.72);
       }
- 
+
       .news-badge.java {
         background: rgba(210, 54, 50, 0.82);
       }
- 
+
       .news-reading-time {
         background: rgba(93, 101, 126, 0.76);
       }
- 
+
       .news-media-content {
         position: absolute;
         right: 22px;
@@ -1035,7 +1032,7 @@ Index · HTML
         left: 22px;
         z-index: 1;
       }
- 
+
       .news-media-content h3 {
         max-width: 620px;
         color: #fff;
@@ -1043,12 +1040,12 @@ Index · HTML
         line-height: 1.05;
         text-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
       }
- 
+
       .news-card-body {
         min-height: 164px;
         padding: 20px 22px 24px;
       }
- 
+
       .news-date {
         display: inline-flex;
         align-items: center;
@@ -1057,41 +1054,41 @@ Index · HTML
         font-size: 13px;
         font-weight: 800;
       }
- 
+
       .news-date::before {
         content: "▣";
         font-size: 14px;
       }
- 
+
       .news-card-body p {
         margin-top: 14px;
         color: #aaa7c4;
         font-size: 14px;
         line-height: 1.55;
       }
- 
+
       .news-side {
         display: grid;
         gap: 20px;
       }
- 
+
       .news-side .news-media {
         min-height: 190px;
       }
- 
+
       .news-side .news-media-content {
         bottom: 16px;
       }
- 
+
       .news-side .news-media-content h3 {
         font-size: 22px;
       }
- 
+
       .news-side .news-card-body {
         min-height: 125px;
         padding: 16px 20px 20px;
       }
- 
+
       .news-side .news-card-body p {
         margin-top: 10px;
         display: -webkit-box;
@@ -1099,27 +1096,27 @@ Index · HTML
         -webkit-line-clamp: 2;
         overflow: hidden;
       }
- 
+
       /* =========================
        TEAM
     ========================= */
- 
+
       .team-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 22px;
       }
- 
+
       .team-card {
         border-radius: 20px;
         padding: 30px;
       }
- 
+
       .team-card:hover {
         transform: translateY(-7px);
         border-color: rgba(255, 215, 0, 0.25);
       }
- 
+
       .avatar {
         width: 80px;
         height: 80px;
@@ -1138,13 +1135,13 @@ Index · HTML
         font-size: 32px;
         overflow: hidden;
       }
- 
+
       .avatar img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
- 
+
       .role {
         color: #ffd700;
         font-size: 12px;
@@ -1152,47 +1149,47 @@ Index · HTML
         letter-spacing: 1px;
         text-transform: uppercase;
       }
- 
+
       .player-name {
         font-size: 26px;
         font-weight: 800;
         margin: 5px 0 18px;
       }
- 
+
       .player-stats {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
       }
- 
+
       .player-stat {
         padding: 12px;
         border-radius: 12px;
         background: rgba(0, 0, 0, 0.16);
         border: 1px solid rgba(255, 255, 255, 0.07);
       }
- 
+
       .player-stat strong {
         display: block;
         font-size: 19px;
         color: #fff;
       }
- 
+
       .player-stat span {
         color: #8f8ca8;
         font-size: 12px;
       }
- 
+
       /* =========================
        TIMELINE / ACTUS
     ========================= */
- 
+
       .timeline {
         max-width: 850px;
         margin: auto;
         position: relative;
       }
- 
+
       .timeline::before {
         content: "";
         position: absolute;
@@ -1203,14 +1200,14 @@ Index · HTML
         background: linear-gradient(180deg, var(--blue), #fff, var(--red));
         opacity: 0.7;
       }
- 
+
       .tl-item {
         margin-left: 60px;
         margin-bottom: 22px;
         padding: 25px;
         border-radius: 18px;
       }
- 
+
       .tl-dot {
         position: absolute;
         left: -50px;
@@ -1222,7 +1219,7 @@ Index · HTML
         border: 5px solid #100c2b;
         box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
       }
- 
+
       .tl-date {
         color: #ffd700;
         font-weight: 900;
@@ -1230,55 +1227,55 @@ Index · HTML
         text-transform: uppercase;
         letter-spacing: 1px;
       }
- 
+
       .tl-title {
         font-size: 22px;
         font-weight: 800;
         margin-top: 5px;
       }
- 
+
       .tl-text {
         color: #aaa7c4;
         margin-top: 5px;
         line-height: 1.5;
       }
- 
+
       /* =========================
        RECRUTEMENT
     ========================= */
- 
+
       .icons-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 18px;
       }
- 
+
       .icon-card {
         padding: 28px 22px;
         border-radius: 18px;
         text-align: center;
       }
- 
+
       .icon {
         font-size: 38px;
         margin-bottom: 12px;
       }
- 
+
       .icon-card h3 {
         font-size: 19px;
         margin-bottom: 7px;
       }
- 
+
       .icon-card p {
         color: #aaa7c4;
         font-size: 14px;
         line-height: 1.5;
       }
- 
+
       /* =========================
        OBJECTIFS
     ========================= */
- 
+
       .objectives {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1286,7 +1283,7 @@ Index · HTML
         max-width: 900px;
         margin: auto;
       }
- 
+
       .objective {
         padding: 25px;
         border-radius: 18px;
@@ -1300,7 +1297,7 @@ Index · HTML
           box-shadow 0.35s ease,
           border-color 0.35s ease;
       }
- 
+
       .objective-number {
         min-width: 42px;
         height: 42px;
@@ -1316,26 +1313,26 @@ Index · HTML
         font-weight: 900;
         color: #fff;
       }
- 
+
       .objective h3 {
         font-size: 19px;
       }
- 
+
       .objective p {
         color: #aaa7c4;
         margin-top: 4px;
         line-height: 1.5;
         font-size: 14px;
       }
- 
+
       /* =========================
        FAQ
     ========================= */
- 
+
       .faq-section {
         position: relative;
       }
- 
+
       .faq-container {
         width: min(900px, 92%);
         margin: 0 auto;
@@ -1343,7 +1340,7 @@ Index · HTML
         flex-direction: column;
         gap: 14px;
       }
- 
+
       .faq-item {
         position: relative;
         background: linear-gradient(
@@ -1362,18 +1359,18 @@ Index · HTML
           border-color 0.3s ease,
           box-shadow 0.3s ease;
       }
- 
+
       .faq-item:hover {
         transform: translateY(-2px);
         border-color: rgba(255, 215, 0, 0.35);
         box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
       }
- 
+
       .faq-item.active {
         border-color: rgba(255, 215, 0, 0.45);
         box-shadow: 0 18px 50px rgba(255, 215, 0, 0.08);
       }
- 
+
       .faq-question {
         width: 100%;
         padding: 22px 25px;
@@ -1390,16 +1387,16 @@ Index · HTML
         font-size: 1.05rem;
         font-weight: 800;
       }
- 
+
       .faq-question:hover {
         color: #ffd700;
       }
- 
+
       .faq-question:focus-visible {
         outline: 2px solid #ffd700;
         outline-offset: -3px;
       }
- 
+
       .faq-icon {
         min-width: 34px;
         width: 34px;
@@ -1416,45 +1413,45 @@ Index · HTML
           transform 0.3s ease,
           background 0.3s ease;
       }
- 
+
       .faq-item.active .faq-icon {
         transform: rotate(45deg);
         background: rgba(255, 215, 0, 0.08);
       }
- 
+
       .faq-answer {
         display: grid;
         grid-template-rows: 0fr;
         transition: grid-template-rows 0.4s ease;
       }
- 
+
       .faq-answer-inner {
         overflow: hidden;
       }
- 
+
       .faq-answer p {
         padding: 0 25px 22px;
         margin: 0;
         color: rgba(255, 255, 255, 0.72);
         line-height: 1.7;
       }
- 
+
       .faq-answer strong {
         color: #ffd700;
       }
- 
+
       .faq-item.active .faq-answer {
         grid-template-rows: 1fr;
       }
- 
+
       /* =========================
        DISCORD
     ========================= */
- 
+
       .discord-cta {
         padding: 50px 0 95px;
       }
- 
+
       .discord-box {
         position: relative;
         overflow: hidden;
@@ -1483,7 +1480,7 @@ Index · HTML
         gap: 35px;
         transition: 0.35s ease;
       }
- 
+
       .discord-box:hover {
         transform: translateY(-6px);
         border-color: rgba(88, 101, 242, 0.65);
@@ -1491,7 +1488,7 @@ Index · HTML
           0 30px 80px rgba(0, 0, 0, 0.45),
           0 0 60px rgba(88, 101, 242, 0.18);
       }
- 
+
       .discord-box::before {
         content: "";
         position: absolute;
@@ -1504,7 +1501,7 @@ Index · HTML
         filter: blur(70px);
         pointer-events: none;
       }
- 
+
       .discord-content {
         display: flex;
         align-items: center;
@@ -1512,7 +1509,7 @@ Index · HTML
         position: relative;
         z-index: 1;
       }
- 
+
       .discord-icon {
         width: 85px;
         height: 85px;
@@ -1526,19 +1523,19 @@ Index · HTML
         box-shadow: 0 15px 35px rgba(88, 101, 242, 0.3);
         animation: discordPulse 2.5s ease-in-out infinite;
       }
- 
+
       .discord-content h2 {
         font-size: 38px;
         margin: 0;
       }
- 
+
       .discord-content p {
         max-width: 600px;
         margin-top: 8px;
         color: #aaa7c4;
         line-height: 1.5;
       }
- 
+
       .discord-big-btn {
         position: relative;
         z-index: 1;
@@ -1555,25 +1552,25 @@ Index · HTML
         box-shadow: 0 12px 30px rgba(88, 101, 242, 0.3);
         transition: 0.25s ease;
       }
- 
+
       .discord-big-btn span {
         font-size: 22px;
         transition: 0.25s ease;
       }
- 
+
       .discord-big-btn:hover {
         transform: translateY(-3px) scale(1.03);
         box-shadow: 0 18px 40px rgba(88, 101, 242, 0.45);
       }
- 
+
       .discord-big-btn:hover span {
         transform: translateX(5px);
       }
- 
+
       /* =========================
        CONTACT
     ========================= */
- 
+
       .contact-block {
         border-radius: 25px;
         padding: 50px;
@@ -1581,25 +1578,25 @@ Index · HTML
         max-width: 900px;
         margin: auto;
       }
- 
+
       .contact-block h2 {
         margin-bottom: 12px;
       }
- 
+
       .contact-block p {
         color: #aaa7c4;
         max-width: 600px;
         margin: 0 auto 25px;
         line-height: 1.6;
       }
- 
+
       .contact-actions {
         display: flex;
         justify-content: center;
         gap: 15px;
         flex-wrap: wrap;
       }
- 
+
       form {
         max-width: 550px;
         margin: 30px auto 0;
@@ -1607,12 +1604,12 @@ Index · HTML
         gap: 12px;
         text-align: left;
       }
- 
+
       form label {
         font-weight: 700;
         color: #ddd;
       }
- 
+
       input,
       textarea {
         width: 100%;
@@ -1626,21 +1623,21 @@ Index · HTML
         font-family: inherit;
         font-size: 15px;
       }
- 
+
       textarea {
         min-height: 120px;
         resize: vertical;
       }
- 
+
       input::placeholder,
       textarea::placeholder {
         color: #77748d;
       }
- 
+
       /* =========================
        FOOTER
     ========================= */
- 
+
       footer {
         position: relative;
         z-index: 2;
@@ -1648,14 +1645,14 @@ Index · HTML
         border-top: 1px solid rgba(255, 255, 255, 0.08);
         background: rgba(4, 4, 14, 0.55);
       }
- 
+
       .footer-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
       }
- 
+
       .footer-brand {
         font-family: "Luckiest Guy", cursive;
         font-size: 21px;
@@ -1665,21 +1662,21 @@ Index · HTML
         background-clip: text;
         color: transparent;
       }
- 
+
       .footer-text {
         color: #77748d;
         font-size: 14px;
       }
- 
+
       .footer-discord {
         color: #8f9aff;
         font-weight: 800;
       }
- 
+
       /* =========================
        ANIMATIONS
     ========================= */
- 
+
       .reveal {
         opacity: 0;
         transform: translateY(45px);
@@ -1687,24 +1684,24 @@ Index · HTML
           opacity 0.8s ease,
           transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
       }
- 
+
       .reveal.active {
         opacity: 1;
         transform: translateY(0);
       }
- 
+
       .reveal-delay-1 {
         transition-delay: 0.1s;
       }
- 
+
       .reveal-delay-2 {
         transition-delay: 0.2s;
       }
- 
+
       .reveal-delay-3 {
         transition-delay: 0.3s;
       }
- 
+
       .stat-pill:hover,
       .tl-item:hover,
       .icon-card:hover,
@@ -1715,20 +1712,20 @@ Index · HTML
           0 15px 45px rgba(80, 50, 255, 0.25),
           0 0 25px rgba(255, 255, 255, 0.05);
       }
- 
+
       @keyframes badgePulse {
         0%,
         100% {
           box-shadow: 0 0 0 rgba(255, 255, 255, 0);
         }
- 
+
         50% {
           box-shadow:
             0 0 18px rgba(255, 255, 255, 0.15),
             0 0 35px rgba(50, 80, 255, 0.15);
         }
       }
- 
+
       @keyframes memberPulse {
         0%,
         100% {
@@ -1737,7 +1734,7 @@ Index · HTML
             0 10px 30px rgba(0, 0, 0, 0.2),
             0 0 15px rgba(54, 227, 109, 0.04);
         }
- 
+
         50% {
           transform: translateY(-2px);
           box-shadow:
@@ -1745,83 +1742,83 @@ Index · HTML
             0 0 28px rgba(54, 227, 109, 0.1);
         }
       }
- 
+
       @keyframes onlinePulse {
         0%,
         100% {
           transform: scale(1);
           opacity: 1;
         }
- 
+
         50% {
           transform: scale(1.25);
           opacity: 0.65;
         }
       }
- 
+
       @keyframes progressShine {
         0% {
           left: -100px;
         }
- 
+
         55%,
         100% {
           left: 120%;
         }
       }
- 
+
       @keyframes titleAppear {
         from {
           opacity: 0;
           transform: translateY(25px);
         }
- 
+
         to {
           opacity: 1;
           transform: translateY(0);
         }
       }
- 
+
       @keyframes discordPulse {
         0%,
         100% {
           transform: scale(1);
         }
- 
+
         50% {
           transform: scale(1.05);
         }
       }
- 
+
       @keyframes heroFloat {
         0%,
         100% {
           transform: translateY(0) rotate(0deg);
         }
- 
+
         50% {
           transform: translateY(-12px) rotate(1.5deg);
         }
       }
- 
+
       @keyframes heroGlow {
         0% {
           transform: rotate(0deg) scale(1);
         }
- 
+
         50% {
           transform: rotate(180deg) scale(1.08);
         }
- 
+
         100% {
           transform: rotate(360deg) scale(1);
         }
       }
- 
+
       /* =========================
        PARTICULES
     ========================= */
- 
+
       .particle {
         position: fixed;
         width: 3px;
@@ -1832,48 +1829,48 @@ Index · HTML
         z-index: -1;
         animation: particleFloat linear infinite;
       }
- 
+
       @keyframes particleFloat {
         from {
           transform: translateY(110vh);
           opacity: 0;
         }
- 
+
         10% {
           opacity: 1;
         }
- 
+
         90% {
           opacity: 1;
         }
- 
+
         to {
           transform: translateY(-10vh);
           opacity: 0;
         }
       }
- 
+
       /* =========================
        RETOUR EN HAUT
     ========================= */
- 
+
       #backToTop {
         opacity: 0;
         visibility: hidden;
         transform: translateY(20px);
         transition: 0.3s ease;
       }
- 
+
       #backToTop.show {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
       }
- 
+
       /* =========================
        BADGES DES RÔLES
     ========================= */
- 
+
       .role-badge {
         display: inline-flex;
         align-items: center;
@@ -1891,7 +1888,7 @@ Index · HTML
         overflow: hidden;
         transition: all 0.3s ease;
       }
- 
+
       .role-badge::before {
         content: "";
         position: absolute;
@@ -1908,17 +1905,17 @@ Index · HTML
         transform: skewX(-20deg);
         transition: left 0.5s ease;
       }
- 
+
       .role-badge:hover::before {
         left: 140%;
       }
- 
+
       .role-badge:hover {
         transform: translateY(-2px) scale(1.05);
       }
- 
+
       /* CHEF */
- 
+
       .role-badge.chef {
         color: #fff;
         border-color: #ffd700;
@@ -1932,9 +1929,9 @@ Index · HTML
           inset 0 0 12px rgba(255, 215, 0, 0.08);
         animation: chefGlow 2.5s infinite alternate;
       }
- 
+
       /* CHEF ADJOINT */
- 
+
       .role-badge.adjoint {
         color: #fff;
         border-color: #ed2939;
@@ -1947,201 +1944,201 @@ Index · HTML
           0 0 10px rgba(237, 41, 57, 0.35),
           inset 0 0 12px rgba(237, 41, 57, 0.08);
       }
- 
+
       @keyframes chefGlow {
         from {
           box-shadow:
             0 0 8px rgba(255, 215, 0, 0.25),
             inset 0 0 10px rgba(255, 215, 0, 0.05);
         }
- 
+
         to {
           box-shadow:
             0 0 18px rgba(255, 215, 0, 0.55),
             inset 0 0 15px rgba(255, 215, 0, 0.12);
         }
       }
- 
+
       /* =========================
        TABLETTE
     ========================= */
- 
+
       @media (max-width: 950px) {
         .hero-content {
           flex-direction: column;
           text-align: center;
           gap: 35px;
         }
- 
+
         .hero-text {
           width: 100%;
         }
- 
+
         .hero-actions {
           justify-content: center;
         }
- 
+
         .hero-logo-container {
           width: auto;
         }
- 
+
         .hero-logo {
           width: 220px;
           height: 220px;
         }
- 
+
         .member-status {
           margin-left: auto;
           margin-right: auto;
           text-align: left;
         }
- 
+
         .team-grid {
           grid-template-columns: 1fr;
         }
- 
+
         .icons-grid {
           grid-template-columns: repeat(2, 1fr);
         }
       }
- 
+
       /* =========================
        MOBILE (hors header)
     ========================= */
- 
+
       @media (max-width: 750px) {
         .stats-grid {
           grid-template-columns: 1fr;
         }
- 
+
         .objectives {
           grid-template-columns: 1fr;
         }
- 
+
         h2 {
           font-size: 40px;
         }
- 
+
         .contact-block {
           padding: 35px 22px;
         }
- 
+
         .footer-inner {
           flex-direction: column;
           text-align: center;
         }
- 
+
         .discord-box {
           padding: 32px 24px;
           flex-direction: column;
           text-align: center;
         }
- 
+
         .discord-content {
           flex-direction: column;
         }
- 
+
         .discord-content h2 {
           font-size: 32px;
         }
- 
+
         .discord-big-btn {
           width: 100%;
           justify-content: center;
         }
- 
+
         .faq-question {
           padding: 19px 18px;
           font-size: 1rem;
         }
- 
+
         .faq-answer p {
           padding: 0 18px 20px;
         }
- 
+
         .faq-icon {
           min-width: 32px;
           width: 32px;
           height: 32px;
         }
- 
+
         .member-status {
           width: min(390px, 100%);
         }
- 
+
         .member-count {
           font-size: 18px;
         }
- 
+
         .member-count strong {
           font-size: 23px;
         }
       }
- 
+
       /* =========================
        PETIT MOBILE
     ========================= */
- 
+
       @media (max-width: 500px) {
         h1 {
           font-size: 48px;
         }
- 
+
         .hero-logo {
           width: 160px;
           height: 160px;
         }
- 
+
         .icons-grid {
           grid-template-columns: 1fr;
         }
- 
+
         .timeline::before {
           left: 10px;
         }
- 
+
         .tl-item {
           margin-left: 35px;
         }
- 
+
         .tl-dot {
           left: -36px;
         }
- 
+
         .faq-container {
           width: 94%;
         }
- 
+
         .member-status {
           padding: 13px 14px;
         }
- 
+
         .member-status-top {
           gap: 8px;
         }
- 
+
         .member-label {
           font-size: 10px;
           letter-spacing: 0.8px;
         }
- 
+
         .member-count {
           font-size: 16px;
         }
- 
+
         .member-count strong {
           font-size: 21px;
         }
- 
+
         .member-bottom {
           font-size: 11px;
         }
       }
- 
+
       /* =========================
        REDUCTION ANIMATIONS
     ========================= */
- 
+
       @media (prefers-reduced-motion: reduce) {
         *,
         *::before,
@@ -2151,7 +2148,7 @@ Index · HTML
           transition-duration: 0.01ms !important;
         }
       }
- 
+
       /* =========================
        AUTHENTIFICATION SUPABASE
     ========================= */
@@ -2164,7 +2161,7 @@ Index · HTML
         flex-wrap: nowrap;
         white-space: nowrap;
       }
- 
+
       .auth-button {
         border: none;
         border-radius: 10px;
@@ -2176,17 +2173,17 @@ Index · HTML
         cursor: pointer;
         transition: 0.25s ease;
       }
- 
+
       .auth-button:hover {
         transform: translateY(-2px);
         box-shadow: 0 8px 22px rgba(22, 71, 216, 0.35);
       }
- 
+
       .auth-button-secondary {
         background: rgba(255, 255, 255, 0.08);
         border: 1px solid rgba(255, 255, 255, 0.15);
       }
- 
+
       .auth-overlay {
         display: none;
         position: fixed;
@@ -2198,11 +2195,11 @@ Index · HTML
         background: rgba(0, 0, 0, 0.75);
         backdrop-filter: blur(8px);
       }
- 
+
       .auth-overlay.active {
         display: flex;
       }
- 
+
       .auth-modal {
         position: relative;
         width: min(440px, 100%);
@@ -2214,7 +2211,7 @@ Index · HTML
         background: linear-gradient(145deg, #17113d, #100c2b);
         box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
       }
- 
+
       .auth-modal h2 {
         margin-bottom: 8px;
         color: #ffd700;
@@ -2222,12 +2219,12 @@ Index · HTML
         font-size: 30px;
         letter-spacing: 1px;
       }
- 
+
       .auth-description {
         margin-bottom: 20px;
         color: #aaa7c4;
       }
- 
+
       .auth-close {
         position: absolute;
         top: 10px;
@@ -2239,7 +2236,7 @@ Index · HTML
         line-height: 1;
         cursor: pointer;
       }
- 
+
       .auth-submit {
         width: 100%;
         margin-top: 8px;
@@ -2253,29 +2250,29 @@ Index · HTML
         font-weight: 800;
         cursor: pointer;
       }
- 
+
       .auth-submit:disabled {
         cursor: wait;
         opacity: 0.6;
       }
- 
+
       .auth-message {
         min-height: 24px;
         margin-top: 5px;
         color: #ff9292;
         font-weight: 600;
       }
- 
+
       .auth-message.success {
         color: #84e6a4;
       }
- 
+
       .auth-switch {
         margin-top: 20px;
         color: #aaa7c4;
         text-align: center;
       }
- 
+
       .auth-switch button {
         border: none;
         background: transparent;
@@ -2284,16 +2281,16 @@ Index · HTML
         font-weight: 800;
         cursor: pointer;
       }
- 
+
       /* =========================
        HEADER STYLE SOLARY
        (placé en dernier pour l'emporter sur le reste)
     ========================= */
- 
+
       html {
         scroll-padding-top: 110px;
       }
- 
+
       header {
         position: fixed;
         top: 0;
@@ -2304,7 +2301,7 @@ Index · HTML
         background: #0d0d0d;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
- 
+
       /* Bandeau d'annonce */
       .topbar {
         height: 20px;
@@ -2320,7 +2317,7 @@ Index · HTML
         overflow: hidden;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
- 
+
       /* Barre principale */
       header > .nav {
         position: relative;
@@ -2333,7 +2330,7 @@ Index · HTML
         align-items: center;
         gap: 36px;
       }
- 
+
       header .logo {
         gap: 10px;
         font-family: "Baloo 2", sans-serif;
@@ -2344,12 +2341,12 @@ Index · HTML
         background: none;
         -webkit-text-fill-color: #fff;
       }
- 
+
       header .logo img {
         width: 44px;
         height: 44px;
       }
- 
+
       header nav {
         flex: 1;
         display: flex;
@@ -2357,7 +2354,7 @@ Index · HTML
         justify-content: flex-start;
         gap: 30px;
       }
- 
+
       header nav > a {
         position: relative;
         padding: 6px 0;
@@ -2366,11 +2363,11 @@ Index · HTML
         font-weight: 600;
         transition: color 0.25s ease;
       }
- 
+
       header nav > a:hover {
         color: #8fa8ff;
       }
- 
+
       /* Lien actif : trait tricolore */
       header nav > a::after {
         content: "";
@@ -2388,38 +2385,38 @@ Index · HTML
         );
         transition: width 0.25s ease;
       }
- 
+
       header nav > a:hover::after,
       header nav > a.active::after {
         width: 100%;
       }
- 
+
       /* Boutons à droite */
       header .auth-actions {
         margin-left: auto;
       }
- 
+
       header .auth-button {
         border-radius: 8px;
         padding: 10px 16px;
         font-size: 13px;
       }
- 
+
       /* Le hero commence sous le header */
       .hero {
         padding-top: 100px;
       }
- 
+
       .hero-video-wrap {
         height: calc(100dvh - 100px);
       }
- 
+
       /* ---------- MENUS DÉROULANTS ---------- */
- 
+
       .nav-item {
         position: relative;
       }
- 
+
       .nav-link {
         position: relative;
         display: inline-flex;
@@ -2435,12 +2432,12 @@ Index · HTML
         cursor: pointer;
         transition: color 0.25s ease;
       }
- 
+
       .nav-link:hover,
       .nav-item.open > .nav-link {
         color: #8fa8ff;
       }
- 
+
       .nav-link::after {
         content: "";
         position: absolute;
@@ -2457,11 +2454,11 @@ Index · HTML
         );
         transition: width 0.25s ease;
       }
- 
+
       .nav-item.active > .nav-link::after {
         width: 100%;
       }
- 
+
       .chevron {
         width: 7px;
         height: 7px;
@@ -2471,12 +2468,12 @@ Index · HTML
         transform: rotate(45deg);
         transition: transform 0.25s ease;
       }
- 
+
       .nav-item.open > .nav-link .chevron {
         margin-top: 3px;
         transform: rotate(225deg);
       }
- 
+
       .dropdown {
         position: absolute;
         top: calc(100% + 18px);
@@ -2495,7 +2492,7 @@ Index · HTML
           transform 0.2s ease,
           visibility 0.2s ease;
       }
- 
+
       /* pont invisible pour ne pas perdre le survol */
       .dropdown::before {
         content: "";
@@ -2505,7 +2502,7 @@ Index · HTML
         top: -20px;
         height: 20px;
       }
- 
+
       .dropdown a {
         display: block;
         padding: 10px 14px;
@@ -2515,65 +2512,65 @@ Index · HTML
         font-weight: 600;
         white-space: nowrap;
       }
- 
+
       .dropdown a::after {
         display: none;
       }
- 
+
       .dropdown a:hover {
         background: rgba(255, 255, 255, 0.08);
         color: #8fa8ff;
       }
- 
+
       .dropdown a.active {
         background: rgba(255, 255, 255, 0.1);
       }
- 
+
       .nav-item.open > .dropdown {
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
       }
- 
+
       @media (min-width: 751px) {
         .nav-item:hover > .dropdown {
           opacity: 1;
           visibility: visible;
           transform: translateY(0);
         }
- 
+
         .nav-item:hover > .nav-link {
           color: #8fa8ff;
         }
- 
+
         .nav-item:hover > .nav-link .chevron {
           margin-top: 3px;
           transform: rotate(225deg);
         }
       }
- 
+
       /* ---------- HEADER MOBILE ---------- */
- 
+
       @media (max-width: 750px) {
         html {
           scroll-padding-top: 90px;
         }
- 
+
         header > .nav {
           min-height: 64px;
           padding: 0 14px;
           gap: 12px;
         }
- 
+
         header .logo {
           font-size: 18px;
         }
- 
+
         header .logo img {
           width: 36px;
           height: 36px;
         }
- 
+
         .menu-toggle {
           display: flex;
           align-items: center;
@@ -2582,7 +2579,7 @@ Index · HTML
           height: 40px;
           margin-left: auto;
         }
- 
+
         header nav {
           position: absolute;
           top: 100%;
@@ -2604,55 +2601,55 @@ Index · HTML
             visibility 0.25s ease,
             transform 0.25s ease;
         }
- 
+
         header nav.open {
           opacity: 1;
           visibility: visible;
           pointer-events: auto;
           transform: translateY(0);
         }
- 
+
         header nav > a {
           padding: 13px 10px;
           border-radius: 8px;
         }
- 
+
         header nav > a::after {
           display: none;
         }
- 
+
         header nav > a.active {
           background: rgba(255, 255, 255, 0.08);
         }
- 
+
         header .auth-actions {
           margin: 10px 0 0;
           justify-content: stretch;
         }
- 
+
         header .auth-button {
           flex: 1;
         }
- 
+
         .nav-item {
           width: 100%;
         }
- 
+
         .nav-link {
           width: 100%;
           justify-content: space-between;
           padding: 13px 10px;
           border-radius: 8px;
         }
- 
+
         .nav-link::after {
           display: none;
         }
- 
+
         .nav-item.active > .nav-link {
           background: rgba(255, 255, 255, 0.08);
         }
- 
+
         .dropdown {
           position: static;
           display: none;
@@ -2665,48 +2662,576 @@ Index · HTML
           visibility: visible;
           transform: none;
         }
- 
+
         .dropdown::before {
           display: none;
         }
- 
+
         .nav-item.open > .dropdown {
           display: block;
         }
- 
+
         .dropdown a {
           padding: 11px 10px;
         }
- 
+
         .hero {
           padding-top: 84px;
         }
- 
+
         .hero-video-wrap {
           height: calc(100dvh - 84px);
         }
       }
+    
+      /* =========================
+       ACTUALITÉS STYLE SOLARY
+    ========================= */
+
+      .actu-section {
+        padding: 70px 0 80px;
+        background: #0f0f13;
+      }
+
+      .actu-wrap {
+        width: min(1500px, 94%);
+        margin: 0 auto;
+      }
+
+      .actu-title {
+        margin-bottom: 42px;
+        text-align: center;
+        font-family: "Baloo 2", sans-serif;
+        font-size: clamp(48px, 6.5vw, 88px);
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -2px;
+        color: #fff;
+      }
+
+      .actu-title span {
+        color: #5d82ff;
+      }
+
+      .actu-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.92fr);
+        gap: 32px;
+      }
+
+      /* ----- cartes d'articles ----- */
+
+      .actu-card {
+        display: block;
+        background: #141418;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        transition: border-color 0.25s ease, transform 0.25s ease;
+      }
+
+      .actu-card:hover {
+        border-color: #5d82ff;
+        transform: translateY(-4px);
+      }
+
+      .actu-img {
+        aspect-ratio: 16 / 9;
+        background-color: #232736;
+        background-position: center;
+        background-size: cover;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        transition: filter 0.3s ease;
+      }
+
+      .actu-card:hover .actu-img {
+        filter: brightness(1.12);
+      }
+
+      .actu-caption {
+        padding: 16px 16px 14px;
+      }
+
+      .actu-caption h3 {
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 1.25;
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      .actu-caption time {
+        display: block;
+        margin-top: 4px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #b9b7c9;
+      }
+
+      /* ----- calendrier ----- */
+
+      .calendar {
+        position: relative;
+        grid-column: 3;
+        grid-row: 1 / span 2;
+        min-height: 560px;
+        background: #141418;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .calendar-inner {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .cal-head {
+        padding: 16px;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .cal-tabs {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      .cal-arrow {
+        width: 44px;
+        height: 46px;
+        flex-shrink: 0;
+        border: none;
+        background: transparent;
+        color: #b9b7c9;
+        font-size: 26px;
+        cursor: pointer;
+        transition: color 0.2s ease;
+      }
+
+      .cal-arrow:hover {
+        color: #fff;
+      }
+
+      .cal-tab-list {
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .cal-tab {
+        position: relative;
+        padding: 8px 14px;
+        border: none;
+        background: transparent;
+        font-size: 24px;
+        cursor: pointer;
+        opacity: 0.4;
+        filter: grayscale(1);
+        transition: opacity 0.2s ease, filter 0.2s ease;
+      }
+
+      .cal-tab:hover {
+        opacity: 0.8;
+      }
+
+      .cal-tab.active {
+        opacity: 1;
+        filter: none;
+      }
+
+      .cal-tab.active::after {
+        content: "";
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 0;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          #002395 33%,
+          #fff 33% 66%,
+          #ed2939 66%
+        );
+      }
+
+      .cal-list {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #4a4a55 transparent;
+      }
+
+      .cal-item {
+        display: grid;
+        grid-template-columns: 118px 1fr 56px;
+        align-items: center;
+        gap: 10px;
+        padding: 18px 22px;
+        border-bottom: 3px solid #0f0f13;
+        min-height: 98px;
+      }
+
+      .cal-date strong {
+        display: block;
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+      }
+
+      .cal-date span {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #b9b7c9;
+      }
+
+      .cal-badge {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 2px 8px;
+        border-radius: 4px;
+        background: #ed2939;
+        color: #fff;
+        font-size: 11px;
+        font-weight: 800;
+        font-style: normal;
+      }
+
+      .cal-info {
+        text-align: center;
+      }
+
+      .cal-info b {
+        display: block;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 1.2;
+        color: #6f8dff;
+      }
+
+      .cal-info span {
+        display: block;
+        margin-top: 3px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #d6d3e7;
+      }
+
+      .cal-ico {
+        text-align: center;
+        font-size: 34px;
+      }
+
+      .cal-empty {
+        padding: 40px 20px;
+        text-align: center;
+        color: #b9b7c9;
+        font-weight: 600;
+      }
+
+      /* ----- boutons du bas ----- */
+
+      .actu-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-top: 34px;
+      }
+
+      .actu-btn {
+        padding: 16px 24px;
+        background: #232328;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: -0.3px;
+        transition: background 0.25s ease, transform 0.25s ease;
+      }
+
+      .actu-btn:hover {
+        background: #2f3550;
+        transform: translateY(-2px);
+      }
+
+      @media (max-width: 1100px) {
+        .actu-layout {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .calendar {
+          grid-column: 1 / -1;
+          grid-row: auto;
+          height: 560px;
+          min-height: 0;
+        }
+      }
+
+      @media (max-width: 650px) {
+        .actu-layout {
+          grid-template-columns: 1fr;
+          gap: 22px;
+        }
+
+        .actu-title {
+          letter-spacing: -1px;
+        }
+
+        .cal-item {
+          grid-template-columns: 100px 1fr 44px;
+          padding: 16px 14px;
+        }
+
+        .actu-buttons {
+          gap: 14px;
+        }
+      }
+    
+
+      /* =========================
+         PRÉSENTATION ÉDITORIALE DU CLAN
+      ========================= */
+      .clan-story {
+        padding: clamp(62px, 8vw, 112px) 0;
+        color: #f7f7f7;
+        background: #141414;
+      }
+
+      .clan-story .container {
+        width: min(1450px, 92%);
+      }
+
+      .story-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+        align-items: center;
+        gap: clamp(42px, 6vw, 86px);
+      }
+
+      .story-visual {
+        min-width: 0;
+        margin: 0;
+      }
+
+      .story-image-frame {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1.08 / 1;
+        overflow: hidden;
+        background: #202020;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+      }
+
+      .story-image-frame::after {
+        content: "";
+        position: absolute;
+        inset: 45% 0 0;
+        pointer-events: none;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+      }
+
+      .story-image-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.7s ease;
+      }
+
+      .story-image-frame:hover img {
+        transform: scale(1.035);
+      }
+
+      .story-image-caption {
+        position: absolute;
+        z-index: 1;
+        right: 18px;
+        bottom: 18px;
+        left: 18px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        color: #fff;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 14px;
+      }
+
+      .story-caption-label {
+        padding: 7px 12px;
+        color: #171717;
+        background: #f4f4f4;
+        font-weight: 700;
+      }
+
+      .story-caption-detail {
+        font-weight: 700;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      }
+
+      .story-copy {
+        max-width: 650px;
+      }
+
+      .story-kicker {
+        margin-bottom: 12px;
+        color: #b9b9b9;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .story-copy h2 {
+        margin: 0;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(30px, 3.3vw, 48px);
+        font-weight: 800;
+        line-height: 1.08;
+        letter-spacing: -1.5px;
+        text-transform: uppercase;
+        animation: none;
+      }
+
+      .story-tricolour {
+        display: flex;
+        gap: 7px;
+        margin: 22px 0 27px;
+      }
+
+      .story-tricolour span {
+        width: 15px;
+        height: 5px;
+        border-radius: 999px;
+      }
+
+      .story-tricolour span:nth-child(1) { background: #2448e8; }
+      .story-tricolour span:nth-child(2) { background: #f2f2f2; }
+      .story-tricolour span:nth-child(3) { background: #ec1010; }
+
+      .story-copy p {
+        margin: 0 0 22px;
+        color: #dedede;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1.8;
+      }
+
+      .story-copy p:last-of-type {
+        margin-bottom: 29px;
+      }
+
+      .story-join {
+        display: inline-flex;
+        align-items: center;
+        gap: 22px;
+        padding: 12px 0;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+        font-family: "Baloo 2", sans-serif;
+        font-size: 15px;
+        font-weight: 800;
+        transition: color 0.25s ease, border-color 0.25s ease;
+      }
+
+      .story-join:hover {
+        color: #ffd72f;
+        border-color: #ffd72f;
+      }
+
+      .story-join-arrow {
+        font-size: 21px;
+        line-height: 1;
+        transition: transform 0.25s ease;
+      }
+
+      .story-join:hover .story-join-arrow {
+        transform: translateX(5px);
+      }
+
+      @media (max-width: 900px) {
+        .story-layout {
+          grid-template-columns: 1fr;
+          gap: 38px;
+        }
+
+        .story-visual,
+        .story-copy {
+          width: min(720px, 100%);
+          margin-inline: auto;
+        }
+
+        .story-image-frame {
+          aspect-ratio: 1.3 / 1;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .clan-story {
+          padding: 58px 0 68px;
+        }
+
+        .story-layout {
+          gap: 29px;
+        }
+
+        .story-image-frame {
+          aspect-ratio: 1 / 0.88;
+        }
+
+        .story-image-caption {
+          right: 12px;
+          bottom: 12px;
+          left: 12px;
+          gap: 8px;
+          font-size: 12px;
+        }
+
+        .story-copy h2 {
+          font-size: clamp(29px, 8vw, 40px);
+          letter-spacing: -0.8px;
+        }
+
+        .story-tricolour {
+          margin: 17px 0 21px;
+        }
+
+        .story-copy p {
+          font-size: 14px;
+          line-height: 1.75;
+        }
+      }
+
     </style>
   </head>
- 
+
   <body>
     <!-- =========================
        HEADER
   ========================= -->
- 
+
     <header>
       <div class="topbar">
-       Rejoins le Clan Francais · 9 000 trophées minimum · Discord ouvert à
+        Rejoins le Clan Francais · 9 000 trophées minimum · Discord ouvert à
         tous 💙🤍❤️
       </div>
- 
+
       <div class="nav">
         <a href="#accueil" class="logo">
           <img src="images-Photoroom.png" alt="Logo Clan Français" />
- 
+
           <span>CLAN FRANCAIS</span>
         </a>
- 
+
         <button
           class="menu-toggle"
           id="menuToggle"
@@ -2717,21 +3242,22 @@ Index · HTML
         >
           ☰
         </button>
- 
+
         <nav id="mobileNav">
           <a href="#accueil">Accueil</a>
- 
+
           <div class="nav-item">
             <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">
               Le clan <span class="chevron" aria-hidden="true"></span>
             </button>
             <div class="dropdown">
+              <a href="#statistiques">Actualités</a>
               <a href="#decouvrir">Découvrir le clan</a>
               <a href="#equipe">Les leaders</a>
               <a href="#objectifs">Objectifs</a>
             </div>
           </div>
- 
+
           <div class="nav-item">
             <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">
               Actus <span class="chevron" aria-hidden="true"></span>
@@ -2741,7 +3267,7 @@ Index · HTML
               <a href="#actus">Notre histoire</a>
             </div>
           </div>
- 
+
           <div class="nav-item">
             <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">
               Recrutement <span class="chevron" aria-hidden="true"></span>
@@ -2751,7 +3277,7 @@ Index · HTML
               <a href="#faq">FAQ</a>
             </div>
           </div>
- 
+
           <div class="nav-item">
             <button type="button" class="nav-link" aria-haspopup="true" aria-expanded="false">
               Contact <span class="chevron" aria-hidden="true"></span>
@@ -2761,7 +3287,7 @@ Index · HTML
               <a href="https://discord.gg/yW4KV3GcN" target="_blank" rel="noopener noreferrer">Discord</a>
             </div>
           </div>
- 
+
           <div class="auth-actions">
             <button
               type="button"
@@ -2770,11 +3296,11 @@ Index · HTML
             >
               Connexion
             </button>
- 
+
             <button type="button" class="auth-button" id="openSignupButton">
               Inscription
             </button>
- 
+
             <button
               type="button"
               class="auth-button"
@@ -2787,29 +3313,29 @@ Index · HTML
         </nav>
       </div>
     </header>
- 
+
     <!-- =========================
        HERO
   ========================= -->
- 
+
     <main id="accueil">
       <section class="hero">
         <!-- VIDEO DE FOND (uniquement dans le hero) -->
- 
+
         <div class="hero-video-wrap">
           <video autoplay muted loop playsinline poster="images-Photoroom.png">
             <source src="videoplayback (2) (1).mp4" type="video/mp4" />
           </video>
- 
+
           <div class="hero-video-overlay"></div>
- 
+
           <!-- TEXTE AU CENTRE DE LA VIDÉO -->
- 
+
           <div class="hero-video-text">
             <h1>Rejoins le Clan Francais</h1>
- 
+
             <p>Clan classé dans le top France</p>
- 
+
             <div class="hero-actions" aria-label="Actions du clan">
               <a
                 class="hero-action hero-action-primary"
@@ -2817,7 +3343,7 @@ Index · HTML
               >
                 Découvrir notre clan
               </a>
- 
+
               <a
                 class="hero-action hero-action-secondary"
                 href="https://discord.gg/Rrt8cs7RJ"
@@ -2833,163 +3359,111 @@ Index · HTML
      STATISTIQUES
 ========================= -->
       </section>
- 
-      <section id="statistiques" class="news-section">
-        <div class="container">
-          <div class="news-heading">
-            <div class="section-heading">
-              <div class="eyebrow">Informations</div>
- 
-              <h2>Actualités</h2>
- 
-              <p class="section-description">
-                Reste informé des dernières actualités de notre clan.
-              </p>
-            </div>
- 
-            <a class="news-all-link" href="#actus">
-              Tout afficher <span>→</span>
+
+      <section id="statistiques" class="actu-section">
+        <div class="actu-wrap">
+          <h2 class="actu-title"><span>ACTUALITÉS</span></h2>
+
+          <div class="actu-layout">
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
+              <div class="actu-caption">
+                <h3>Création du Clan Francais</h3>
+                <time>2021</time>
+              </div>
             </a>
+
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('classement_clash.png')"></div>
+              <div class="actu-caption">
+                <h3>TOP 1000 France</h3>
+                <time>Janvier 2025</time>
+              </div>
+            </a>
+
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('france.png')"></div>
+              <div class="actu-caption">
+                <h3>243e au classement national</h3>
+                <time>Novembre 2025</time>
+              </div>
+            </a>
+
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
+              <div class="actu-caption">
+                <h3>Recrutement ouvert : 9 000 trophées minimum</h3>
+                <time>Toujours ouvert</time>
+              </div>
+            </a>
+
+            <aside class="calendar" aria-label="Calendrier du clan">
+              <div class="calendar-inner">
+                <div class="cal-head">Calendrier</div>
+
+                <div class="cal-tabs">
+                  <button type="button" class="cal-arrow" id="calPrev" aria-label="Catégorie précédente">‹</button>
+
+                  <div class="cal-tab-list">
+                    <button type="button" class="cal-tab active" data-filter="all" aria-label="Tout">🗓️</button>
+            
+                  </div>
+
+                  <button type="button" class="cal-arrow" id="calNext" aria-label="Catégorie suivante">›</button>
+                </div>
+
+                <div class="cal-list" id="calList"></div>
+              </div>
+            </aside>
           </div>
- 
-          <div class="news-grid">
-            <article class="news-card news-featured">
-              <div class="news-media">
-                <div class="news-badges">
-                  <span class="news-badge">Histoire</span>
-                </div>
- 
-                <div class="news-media-content">
-                  <h3>Création du Clan Francais</h3>
-                </div>
-              </div>
- 
-              <div class="news-card-body">
-                <div class="news-date">2021</div>
-                <p>
-                  Le clan est créé avec l'ambition de réunir des joueurs français actifs et motivés.
-                </p>
-              </div>
-            </article>
- 
-            <div class="news-side">
-              <article class="news-card news-ruby">
-                <div class="news-media">
-                  <div class="news-badges">
-                    <span class="news-badge java">Classement</span>
-                  </div>
- 
-                  <div class="news-media-content">
-                    <h3>TOP 1000 France</h3> TOP 1000 France
-                  </div>
-                </div>
- 
-                <div class="news-card-body">
-                  <div class="news-date">Janvier 2025</div>
-                  <p>Le Clan Francais atteint le TOP 1000 national. Une étape importante dans notre progression.</p>
-                </div>
-              </article>
- 
-              <article class="news-card news-community">
-                <div class="news-media">
-                  <div class="news-badges">
-                    <span class="news-badge">Performance</span>
-                  </div>
- 
-                  <div class="news-media-content">
-                    <h3>243e au classement national</h3>
-                  </div>
-                </div>
- 
-                <div class="news-card-body">
-                  <div class="news-date">Novembre 2025</div>
-                  <p>Une progression importante qui confirme les ambitions du clan.</p>
-                </div>
-              </article>
-            </div>
+
+          
           </div>
         </div>
       </section>
 <!-- =========================
-     DÉCOUVRIR NOTRE CLAN
+     PRÉSENTATION DU CLAN — MISE EN PAGE ÉDITORIALE
 ========================= -->
- 
-<section id="decouvrir" class="news-section">
+<section id="decouvrir" class="clan-story">
   <div class="container">
-    <div class="news-heading">
-      <div class="section-heading">
-        <div class="eyebrow">Présentation</div>
- 
-        <h2>Découvrir notre clan</h2>
- 
-        <p class="section-description">
-          Tout ce qu'il faut savoir sur le Clan Francais avant de nous rejoindre.
+    <div class="story-layout">
+      <figure class="story-visual">
+        <div class="story-image-frame">
+          <img
+            src="clash-royale-banniere.jpg"
+            alt="Illustration de l’univers Clash Royale et du Clan Français"
+            loading="lazy"
+          />
+          
+        </div>
+      </figure>
+
+      <div class="story-copy">
+        <div class="story-kicker">Présentation du clan</div>
+        <h2>DÉCOUVRIR LE CLAN</h2>
+        <div class="story-tricolour" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+
+        <p>
+          Le Clan Francais rassemble des joueurs français sérieux, motivés et
+          respectueux, réunis par une même envie : progresser ensemble et viser
+          les meilleures places du classement national.
         </p>
-      </div>
- 
-      <a class="news-all-link" href="#recrutement">
-        Nous rejoindre <span>→</span>
-      </a>
-    </div>
- 
-    <div class="news-grid">
-      <!-- Grande carte -->
-      <article class="news-card news-featured discover-clan">
-        <div class="news-media">
-          <div class="news-badges">
-            <span class="news-badge">Le clan</span>
-          </div>
- 
-          <div class="news-media-content">
-            <h3>Un clan français actif et ambitieux</h3>
-          </div>
-        </div>
- 
-        <div class="news-card-body">
-          <div class="news-date">Clash Royale</div>
-          <p>
-            Le Clan Francais réunit des joueurs sérieux, motivés et
-            respectueux, avec un objectif commun : progresser ensemble dans
-            le classement national.
-          </p>
-        </div>
-      </article>
- 
-      <!-- Cartes de droite -->
-      <div class="news-side">
-        <article class="news-card discover-war">
-          <div class="news-media">
-            <div class="news-badges">
-              <span class="news-badge java">Guerres</span>
-            </div>
- 
-            <div class="news-media-content">
-              <h3>Guerres de clans</h3>
-            </div>
-          </div>
- 
-          <div class="news-card-body">
-            <div class="news-date">Chaque semaine</div>
-            <p>Participation régulière et organisation collective pour viser les meilleures places.</p>
-          </div>
-        </article>
- 
-        <article class="news-card discover-discord">
-          <div class="news-media">
-            <div class="news-badges">
-              <span class="news-badge">Communauté</span>
-            </div>
- 
-            <div class="news-media-content">
-              <h3>Un Discord pour échanger</h3>
-            </div>
-          </div>
- 
-          <div class="news-card-body">
-            <div class="news-date">Entraide</div>
-            <p>Partage de decks, conseils et bonne ambiance entre tous les membres.</p>
-          </div>
-        </article>
+        <p>
+          Chaque semaine, les membres prennent part aux guerres de clans. Une
+          participation régulière et une organisation collective permettent à
+          chacun de contribuer aux objectifs communs.
+        </p>
+        <p>
+          La communauté continue aussi sur Discord : on y partage des decks,
+          des conseils et de bons moments, dans un esprit d’entraide et de bonne
+          ambiance.
+        </p>
+
+        <a class="story-join" href="#recrutement">
+          <span>Nous rejoindre</span><span class="story-join-arrow" aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
   </div>
@@ -2997,94 +3471,94 @@ Index · HTML
       <!-- =========================
      ÉQUIPE
 ========================= -->
- 
+
       <section id="equipe">
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">Notre équipe</div>
- 
+
             <h2>LES LEADERS 🇫🇷</h2>
- 
+
             <p class="section-description">
               Une équipe présente pour faire vivre le clan, organiser les
               guerres et accompagner chaque membre.
             </p>
           </div>
- 
+
           <div class="team-grid">
             <!-- TOM07 — CHEF -->
- 
+
             <div class="team-card">
               <div class="avatar">
                 <img src="images-Photoroom.png" alt="Tom07" />
               </div>
- 
+
               <div class="role-badge chef">👑 CHEF</div>
- 
+
               <div class="player-name">Tom07</div>
- 
+
               <div class="player-stats">
                 <div class="player-stat">
                   <strong> 8 566 </strong>
- 
+
                   <span> 🏆 Trophées </span>
                 </div>
- 
+
                 <div class="player-stat">
                   <strong> 2 272 </strong>
- 
+
                   <span> ⚔️ Victoires </span>
                 </div>
               </div>
             </div>
- 
+
             <!-- EXANOVA — CHEF ADJOINT -->
- 
+
             <div class="team-card">
               <div class="avatar">
                 <img src="images-Photoroom.png" alt="ExAnoVa" />
               </div>
- 
+
               <div class="role-badge adjoint">⚔️ CHEF ADJOINT</div>
- 
+
               <div class="player-name">ExAnoVa</div>
- 
+
               <div class="player-stats">
                 <div class="player-stat">
                   <strong> 11 359 </strong>
- 
+
                   <span> 🏆 Trophées </span>
                 </div>
- 
+
                 <div class="player-stat">
                   <strong> 1 659 </strong>
- 
+
                   <span> ⚔️ Victoires </span>
                 </div>
               </div>
             </div>
- 
+
             <!-- HYPERLOOP-2000 — CHEF ADJOINT -->
- 
+
             <div class="team-card">
               <div class="avatar">
                 <img src="images-Photoroom.png" alt="HyperLoop-2000" />
               </div>
- 
+
               <div class="role-badge adjoint">⚔️ CHEF ADJOINT</div>
- 
+
               <div class="player-name">HyperLoop-2000</div>
- 
+
               <div class="player-stats">
                 <div class="player-stat">
                   <strong> 12 559 </strong>
- 
+
                   <span> 🏆 Trophées </span>
                 </div>
- 
+
                 <div class="player-stat">
                   <strong> 3 551 </strong>
- 
+
                   <span> ⚔️ Victoires </span>
                 </div>
               </div>
@@ -3092,57 +3566,57 @@ Index · HTML
           </div>
         </div>
       </section>
- 
+
       <!-- =========================
      ACTUS / HISTOIRE
 ========================= -->
- 
+
       <section id="actus">
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">Notre histoire</div>
- 
+
             <h2>LES GRANDES ÉTAPES</h2>
- 
+
             <p class="section-description">
               Quelques moments importants qui ont marqué l'histoire du Clan
               Francais.
             </p>
           </div>
- 
+
           <div class="timeline">
             <div class="tl-item">
               <div class="tl-dot"></div>
- 
+
               <div class="tl-date">2021</div>
- 
+
               <div class="tl-title">Création du Clan Francais</div>
- 
+
               <div class="tl-text">
                 Le clan est créé avec l'ambition de réunir des joueurs français
                 actifs et motivés.
               </div>
             </div>
- 
+
             <div class="tl-item">
               <div class="tl-dot"></div>
- 
+
               <div class="tl-date">Janvier 2025</div>
- 
+
               <div class="tl-title">243e au classement national</div>
- 
+
               <div class="tl-text">
                 Une progression importante qui confirme les ambitions du clan.
               </div>
             </div>
- 
+
             <div class="tl-item">
               <div class="tl-dot"></div>
- 
+
               <div class="tl-date">Novembre 2025</div>
- 
+
               <div class="tl-title">TOP 1000 France</div>
- 
+
               <div class="tl-text">
                 Le Clan Francais atteint le TOP 1000 national. Une étape
                 importante dans notre progression.
@@ -3151,57 +3625,57 @@ Index · HTML
           </div>
         </div>
       </section>
- 
+
       <!-- =========================
      RECRUTEMENT
 ========================= -->
- 
+
       <section id="recrutement">
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">Recrutement</div>
- 
+
             <h2>REJOINDRE LE CLAN</h2>
- 
+
             <p class="section-description">
               Nous recherchons des joueurs sérieux, actifs et prêts à participer
               à la vie du clan.
             </p>
           </div>
- 
+
           <div class="icons-grid">
             <div class="icon-card">
               <div class="icon">⚡</div>
- 
+
               <h3>Activité</h3>
- 
+
               <p>Être actif régulièrement et participer à la vie du clan.</p>
             </div>
- 
+
             <div class="icon-card">
               <div class="icon">🤝</div>
- 
+
               <h3>Bon comportement</h3>
- 
+
               <p>Respect, entraide et bonne ambiance entre tous les membres.</p>
             </div>
- 
+
             <div class="icon-card">
               <div class="icon">⚔️</div>
- 
+
               <h3>Guerres de clans</h3>
- 
+
               <p>
                 Participer sérieusement aux guerres et aux activités
                 collectives.
               </p>
             </div>
- 
+
             <div class="icon-card">
               <div class="icon">🏆</div>
- 
+
               <h3>9000 trophées</h3>
- 
+
               <p>
                 Un minimum de 9000 trophées est demandé pour rejoindre le clan.
               </p>
@@ -3209,70 +3683,70 @@ Index · HTML
           </div>
         </div>
       </section>
- 
+
       <!-- =========================
      OBJECTIFS
 ========================= -->
- 
+
       <section id="objectifs">
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">Nos ambitions</div>
- 
+
             <h2>OBJECTIFS DU CLAN</h2>
- 
+
             <p class="section-description">
               Notre vision pour continuer à progresser et construire une
               communauté solide.
             </p>
           </div>
- 
+
           <div class="objectives">
             <div class="objective">
               <div class="objective-number">01</div>
- 
+
               <div>
                 <h3>Progression</h3>
- 
+
                 <p>
                   Continuer à monter dans le classement national et améliorer
                   nos performances.
                 </p>
               </div>
             </div>
- 
+
             <div class="objective">
               <div class="objective-number">02</div>
- 
+
               <div>
                 <h3>Entraide</h3>
- 
+
                 <p>
                   Partager nos conseils, nos decks et aider les membres à
                   progresser.
                 </p>
               </div>
             </div>
- 
+
             <div class="objective">
               <div class="objective-number">03</div>
- 
+
               <div>
                 <h3>Recrutement ciblé</h3>
- 
+
                 <p>
                   Recruter des joueurs actifs, motivés et compatibles avec
                   l'esprit du clan.
                 </p>
               </div>
             </div>
- 
+
             <div class="objective">
               <div class="objective-number">04</div>
- 
+
               <div>
                 <h3>Participation</h3>
- 
+
                 <p>
                   Maintenir une forte participation aux guerres et aux
                   événements.
@@ -3282,22 +3756,22 @@ Index · HTML
           </div>
         </div>
       </section>
- 
+
       <!-- =========================
      DISCORD
 ========================= -->
- 
+
       <section class="discord-cta">
         <div class="container">
           <div class="discord-box">
             <div class="discord-content">
               <div class="discord-icon">💬</div>
- 
+
               <div>
                 <div class="eyebrow">Rejoins-nous</div>
- 
+
                 <h2>🇫🇷 REJOINS NOTRE DISCORD</h2>
- 
+
                 <p>
                   Discute avec les membres du Clan Français, organise tes
                   guerres, partage tes decks et reste au courant de toutes les
@@ -3305,7 +3779,7 @@ Index · HTML
                 </p>
               </div>
             </div>
- 
+
             <a
               href="https://discord.gg/yW4KV3GcN"
               target="_blank"
@@ -3313,37 +3787,37 @@ Index · HTML
               class="discord-big-btn"
             >
               💬 Rejoindre le Discord
- 
+
               <span> → </span>
             </a>
           </div>
         </div>
       </section>
- 
+
       <!-- =========================
      FAQ
 ========================= -->
- 
+
       <section id="faq" class="faq-section">
         <div class="container">
           <div class="section-heading">
             <div class="eyebrow">❓ Questions</div>
- 
+
             <h2>FAQ DU CLAN</h2>
- 
+
             <p class="section-description">
               Tout ce qu'il faut savoir avant de rejoindre Clan Francais.
             </p>
           </div>
- 
+
           <div class="faq-container">
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Comment rejoindre Clan Francais ? </span>
- 
+
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
- 
+
               <div class="faq-answer">
                 <div class="faq-answer-inner">
                   <p>
@@ -3356,14 +3830,14 @@ Index · HTML
                 </div>
               </div>
             </div>
- 
+
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Combien de trophées faut-il avoir ? </span>
- 
+
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
- 
+
               <div class="faq-answer">
                 <div class="faq-answer-inner">
                   <p>
@@ -3374,14 +3848,14 @@ Index · HTML
                 </div>
               </div>
             </div>
- 
+
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Faut-il participer aux guerres de clans ? </span>
- 
+
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
- 
+
               <div class="faq-answer">
                 <div class="faq-answer-inner">
                   <p>
@@ -3392,14 +3866,14 @@ Index · HTML
                 </div>
               </div>
             </div>
- 
+
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Le Discord est-il obligatoire ? </span>
- 
+
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
- 
+
               <div class="faq-answer">
                 <div class="faq-answer-inner">
                   <p>
@@ -3410,14 +3884,14 @@ Index · HTML
                 </div>
               </div>
             </div>
- 
+
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Que se passe-t-il si je suis inactif ? </span>
- 
+
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
- 
+
               <div class="faq-answer">
                 <div class="faq-answer-inner">
                   <p>
@@ -3428,14 +3902,14 @@ Index · HTML
                 </div>
               </div>
             </div>
- 
+
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Quel est l'objectif du clan ? </span>
- 
+
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
- 
+
               <div class="faq-answer">
                 <div class="faq-answer-inner">
                   <p>
@@ -3449,24 +3923,24 @@ Index · HTML
           </div>
         </div>
       </section>
- 
+
       <!-- =========================
      CONTACT
 ========================= -->
- 
+
       <section id="contact">
         <div class="container">
           <div class="contact-block">
             <div class="eyebrow">Une question ?</div>
- 
+
             <h2>CONTACTE-NOUS</h2>
- 
+
             <p>
               Tu souhaites rejoindre le Clan Francais, obtenir plus
               d'informations ou simplement discuter avec nous ? Rejoins notre
               Discord ou utilise le formulaire ci-dessous.
             </p>
- 
+
             <div class="contact-actions">
               <a
                 href="https://discord.gg/yW4KV3GcN"
@@ -3477,14 +3951,14 @@ Index · HTML
                 💬 Rejoindre le Discord
               </a>
             </div>
- 
+
             <form
               id="contactForm"
               action="https://formspree.io/f/xppzjnrq"
               method="POST"
             >
               <label for="pseudo"> Ton pseudo </label>
- 
+
               <input
                 id="pseudo"
                 name="pseudo"
@@ -3492,9 +3966,9 @@ Index · HTML
                 placeholder="Ton pseudo"
                 required
               />
- 
+
               <label for="email"> Ton email </label>
- 
+
               <input
                 id="email"
                 name="email"
@@ -3502,16 +3976,16 @@ Index · HTML
                 placeholder="Ton email"
                 required
               />
- 
+
               <label for="message"> Ton message </label>
- 
+
               <textarea
                 id="message"
                 name="message"
                 placeholder="Ton message..."
                 required
               ></textarea>
- 
+
               <button type="submit" class="btn btn-secondary">
                 Envoyer le message
               </button>
@@ -3523,13 +3997,13 @@ Index · HTML
     <!-- =========================
        FOOTER
   ========================= -->
- 
+
     <footer>
       <div class="container footer-inner">
         <div class="footer-brand">CLAN FRANCAIS</div>
- 
+
         <div class="footer-text">© 2025 Clan Francais — Clash Royale</div>
- 
+
         <a
           href="https://discord.gg/yW4KV3GcN"
           target="_blank"
@@ -3540,11 +4014,11 @@ Index · HTML
         </a>
       </div>
     </footer>
- 
+
     <!-- =========================
        FENETRES CONNEXION / INSCRIPTION
   ========================= -->
- 
+
     <div class="auth-overlay" id="authOverlay" aria-hidden="true">
       <div
         class="auth-modal"
@@ -3565,7 +4039,7 @@ Index · HTML
           <p class="auth-description">
             Connectez-vous à votre compte Clan Français.
           </p>
- 
+
           <form id="loginForm">
             <label for="loginEmail">E-mail</label>
             <input
@@ -3575,7 +4049,7 @@ Index · HTML
               autocomplete="email"
               required
             />
- 
+
             <label for="loginPassword">Mot de passe</label>
             <input
               id="loginPassword"
@@ -3584,22 +4058,22 @@ Index · HTML
               autocomplete="current-password"
               required
             />
- 
+
             <p class="auth-message" id="loginMessage" role="alert"></p>
- 
+
             <button type="submit" class="auth-submit">Se connecter</button>
           </form>
- 
+
           <p class="auth-switch">
             Vous n’avez pas encore de compte ?
             <button type="button" id="showSignupButton">Créer un compte</button>
           </p>
         </div>
- 
+
         <div id="signupPanel" style="display: none">
           <h2>Inscription</h2>
           <p class="auth-description">Créez votre compte Clan Français.</p>
- 
+
           <form id="signupForm">
             <label for="signupPseudo">Pseudo Clash Royale</label>
             <input
@@ -3610,7 +4084,7 @@ Index · HTML
               maxlength="30"
               required
             />
- 
+
             <label for="signupEmail">E-mail</label>
             <input
               id="signupEmail"
@@ -3619,7 +4093,7 @@ Index · HTML
               autocomplete="email"
               required
             />
- 
+
             <label for="signupPassword">Mot de passe</label>
             <input
               id="signupPassword"
@@ -3629,12 +4103,12 @@ Index · HTML
               autocomplete="new-password"
               required
             />
- 
+
             <p class="auth-message" id="signupMessage" role="alert"></p>
- 
+
             <button type="submit" class="auth-submit">S’inscrire</button>
           </form>
- 
+
           <p class="auth-switch">
             Vous avez déjà un compte ?
             <button type="button" id="showLoginButton">Se connecter</button>
@@ -3642,148 +4116,223 @@ Index · HTML
         </div>
       </div>
     </div>
- 
+
     <!-- =========================
        JAVASCRIPT
   ========================= -->
- 
+
     <script>
       /* =========================
        MENU MOBILE
     ========================= */
- 
+
       const menuToggle = document.getElementById("menuToggle");
- 
+
       const mobileNav = document.getElementById("mobileNav");
- 
+
       menuToggle.addEventListener("click", () => {
         const isOpen = mobileNav.classList.toggle("open");
- 
+
         menuToggle.setAttribute("aria-expanded", isOpen);
- 
+
         menuToggle.setAttribute(
           "aria-label",
           isOpen ? "Fermer le menu" : "Ouvrir le menu",
         );
- 
+
         menuToggle.textContent = isOpen ? "✕" : "☰";
       });
- 
+
       mobileNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
           mobileNav.classList.remove("open");
- 
+
           menuToggle.setAttribute("aria-expanded", "false");
- 
+
           menuToggle.setAttribute("aria-label", "Ouvrir le menu");
- 
+
           menuToggle.textContent = "☰";
         });
       });
- 
+
       /* =========================
        MENUS DÉROULANTS
     ========================= */
- 
+
       const navItems = document.querySelectorAll(".nav-item");
- 
+
       navItems.forEach((item) => {
         const btn = item.querySelector(".nav-link");
- 
+
         btn.addEventListener("click", (e) => {
           e.stopPropagation();
- 
+
           const willOpen = !item.classList.contains("open");
- 
+
           navItems.forEach((i) => {
             i.classList.remove("open");
             i.querySelector(".nav-link").setAttribute("aria-expanded", "false");
           });
- 
+
           if (willOpen) {
             item.classList.add("open");
             btn.setAttribute("aria-expanded", "true");
           }
         });
       });
- 
+
       function closeDropdowns() {
         navItems.forEach((i) => {
           i.classList.remove("open");
           i.querySelector(".nav-link").setAttribute("aria-expanded", "false");
         });
       }
- 
+
       document.addEventListener("click", closeDropdowns);
- 
+
       document.addEventListener("keydown", (e) => {
         if (e.key === "Escape") closeDropdowns();
       });
- 
+
       mobileNav.querySelectorAll(".dropdown a").forEach((a) => {
         a.addEventListener("click", closeDropdowns);
       });
- 
+
       /* =========================
        LIEN ACTIF AU SCROLL
     ========================= */
- 
+
       const sectionLinks = [...mobileNav.querySelectorAll('a[href^="#"]')]
         .map((a) => ({ a, el: document.querySelector(a.getAttribute("href")) }))
         .filter((x) => x.el);
- 
+
       function updateActiveLink() {
         const y = window.scrollY + 140;
- 
+
         let current = sectionLinks[0].el;
         let best = -1;
- 
+
         sectionLinks.forEach(({ el }) => {
           if (el.offsetTop <= y && el.offsetTop >= best) {
             current = el;
             best = el.offsetTop;
           }
         });
- 
+
         sectionLinks.forEach(({ a, el }) =>
           a.classList.toggle("active", el === current),
         );
- 
+
         navItems.forEach((item) =>
           item.classList.toggle("active", !!item.querySelector("a.active")),
         );
       }
- 
+
       window.addEventListener("scroll", updateActiveLink);
- 
+
       updateActiveLink();
- 
+
+      /* =========================
+       CALENDRIER (modifie les lignes ci-dessous)
+    ========================= */
+
+      const calendarEvents = [
+        { date: "Aujourd'hui", title: "Aucun évènement", icon: "❌", cat: "guerre" },
+        
+      ];
+
+      const calTabs = [...document.querySelectorAll(".cal-tab")];
+      const calList = document.getElementById("calList");
+      let calIndex = 0;
+
+      function calEl(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text) node.textContent = text;
+        return node;
+      }
+
+      function renderCalendar() {
+        const filter = calTabs[calIndex].dataset.filter;
+
+        calTabs.forEach((tab, i) => tab.classList.toggle("active", i === calIndex));
+
+        calList.innerHTML = "";
+
+        const items = calendarEvents.filter(
+          (e) => filter === "all" || e.cat === filter,
+        );
+
+        if (!items.length) {
+          calList.appendChild(calEl("div", "cal-empty", "Aucun évènement pour le moment."));
+          return;
+        }
+
+        items.forEach((e) => {
+          const row = calEl("div", "cal-item");
+
+          const date = calEl("div", "cal-date");
+          date.appendChild(calEl("strong", "", e.date));
+          date.appendChild(calEl("span", "", e.time));
+          if (e.badge) date.appendChild(calEl("em", "cal-badge", e.badge));
+
+          const info = calEl("div", "cal-info");
+          info.appendChild(calEl("b", "", e.title));
+          info.appendChild(calEl("span", "", e.sub));
+
+          row.appendChild(date);
+          row.appendChild(info);
+          row.appendChild(calEl("div", "cal-ico", e.icon));
+
+          calList.appendChild(row);
+        });
+      }
+
+      calTabs.forEach((tab, i) => {
+        tab.addEventListener("click", () => {
+          calIndex = i;
+          renderCalendar();
+        });
+      });
+
+      document.getElementById("calPrev").addEventListener("click", () => {
+        calIndex = (calIndex - 1 + calTabs.length) % calTabs.length;
+        renderCalendar();
+      });
+
+      document.getElementById("calNext").addEventListener("click", () => {
+        calIndex = (calIndex + 1) % calTabs.length;
+        renderCalendar();
+      });
+
+      renderCalendar();
+
       /* =========================
        COMPTEURS
     ========================= */
- 
+
       const animatedStats = document.querySelectorAll(".animated-stat");
- 
+
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               animatedStats.forEach((stat) => {
                 const target = Number(stat.dataset.target);
- 
+
                 const duration = 1000;
- 
+
                 const startTime = performance.now();
- 
+
                 function updateCounter(currentTime) {
                   const elapsed = currentTime - startTime;
- 
+
                   const progress = Math.min(elapsed / duration, 1);
- 
+
                   const ease = 1 - Math.pow(1 - progress, 3);
- 
+
                   const value = Math.floor(target * ease);
- 
+
                   if (target === 1000) {
                     stat.textContent = value > 0 ? "TOP " + value : "TOP 1000";
                   } else if (target === 9000) {
@@ -3791,7 +4340,7 @@ Index · HTML
                   } else if (target === 2021) {
                     stat.textContent = value;
                   }
- 
+
                   if (progress < 1) {
                     requestAnimationFrame(updateCounter);
                   } else {
@@ -3804,10 +4353,10 @@ Index · HTML
                     }
                   }
                 }
- 
+
                 requestAnimationFrame(updateCounter);
               });
- 
+
               observer.disconnect();
             }
           });
@@ -3816,39 +4365,39 @@ Index · HTML
           threshold: 0.2,
         },
       );
- 
+
       const statistiques = document.getElementById("statistiques");
- 
+
       if (statistiques) {
         observer.observe(statistiques);
       }
- 
+
       /* =========================
        APPARITION AU SCROLL
     ========================= */
- 
+
       const revealElements = document.querySelectorAll(
         "section, .stat-pill, .team-card, .tl-item, .icon-card, .objective, .contact-block, .faq-item",
       );
- 
+
       revealElements.forEach((element, index) => {
         element.classList.add("reveal");
- 
+
         if (index % 3 === 1) {
           element.classList.add("reveal-delay-1");
         }
- 
+
         if (index % 3 === 2) {
           element.classList.add("reveal-delay-2");
         }
       });
- 
+
       const revealObserver = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add("active");
- 
+
               revealObserver.unobserve(entry.target);
             }
           });
@@ -3857,77 +4406,77 @@ Index · HTML
           threshold: 0.12,
         },
       );
- 
+
       revealElements.forEach((element) => {
         revealObserver.observe(element);
       });
- 
+
       /* =========================
        FAQ ACCORDÉON
     ========================= */
- 
+
       const faqQuestions = document.querySelectorAll(".faq-question");
- 
+
       faqQuestions.forEach((question) => {
         question.addEventListener("click", () => {
           const currentItem = question.closest(".faq-item");
- 
+
           const isCurrentlyOpen = currentItem.classList.contains("active");
- 
+
           document.querySelectorAll(".faq-item").forEach((item) => {
             item.classList.remove("active");
- 
+
             const button = item.querySelector(".faq-question");
- 
+
             button.setAttribute("aria-expanded", "false");
           });
- 
+
           if (!isCurrentlyOpen) {
             currentItem.classList.add("active");
- 
+
             question.setAttribute("aria-expanded", "true");
           }
         });
       });
- 
+
       /* =========================
        RETOUR EN HAUT
     ========================= */
- 
+
       const backToTop = document.createElement("button");
- 
+
       backToTop.id = "backToTop";
- 
+
       backToTop.innerHTML = "↑";
- 
+
       backToTop.setAttribute("aria-label", "Retour en haut");
- 
+
       backToTop.style.position = "fixed";
- 
+
       backToTop.style.bottom = "25px";
- 
+
       backToTop.style.right = "25px";
- 
+
       backToTop.style.width = "50px";
- 
+
       backToTop.style.height = "50px";
- 
+
       backToTop.style.borderRadius = "50%";
- 
+
       backToTop.style.border = "1px solid rgba(255,255,255,.2)";
- 
+
       backToTop.style.background = "rgba(20,15,40,.85)";
- 
+
       backToTop.style.color = "white";
- 
+
       backToTop.style.fontSize = "24px";
- 
+
       backToTop.style.cursor = "pointer";
- 
+
       backToTop.style.zIndex = "999";
- 
+
       document.body.appendChild(backToTop);
- 
+
       window.addEventListener("scroll", () => {
         if (window.scrollY > 500) {
           backToTop.classList.add("show");
@@ -3935,39 +4484,39 @@ Index · HTML
           backToTop.classList.remove("show");
         }
       });
- 
+
       backToTop.addEventListener("click", () => {
         window.scrollTo({
           top: 0,
- 
+
           behavior: "smooth",
         });
       });
- 
+
       /* =========================
        PARTICULES
     ========================= */
- 
+
       for (let i = 0; i < 25; i++) {
         const particle = document.createElement("div");
- 
+
         particle.className = "particle";
- 
+
         particle.style.left = Math.random() * 100 + "vw";
- 
+
         particle.style.animationDuration = 8 + Math.random() * 15 + "s";
- 
+
         particle.style.animationDelay = Math.random() * 10 + "s";
- 
+
         particle.style.opacity = 0.2 + Math.random() * 0.6;
- 
+
         document.body.appendChild(particle);
       }
- 
+
       /* =========================
        EFFET 3D DES CARTES
     ========================= */
- 
+
       document
         .querySelectorAll(
           ".stat-pill, .team-card, .tl-item, .icon-card, .objective, .contact-block",
@@ -3975,64 +4524,64 @@ Index · HTML
         .forEach((card) => {
           card.addEventListener("mousemove", (e) => {
             const rect = card.getBoundingClientRect();
- 
+
             const x = e.clientX - rect.left;
- 
+
             const y = e.clientY - rect.top;
- 
+
             const centerX = rect.width / 2;
- 
+
             const centerY = rect.height / 2;
- 
+
             const rotateX = ((y - centerY) / centerY) * -3;
- 
+
             const rotateY = ((x - centerX) / centerX) * 3;
- 
+
             card.style.transform = `perspective(800px)
              rotateX(${rotateX}deg)
              rotateY(${rotateY}deg)
              translateY(-8px)
              scale(1.02)`;
           });
- 
+
           card.addEventListener("mouseleave", () => {
             card.style.transform = "";
           });
         });
- 
+
       /* =========================
        FORMULAIRE FORMSPREE
     ========================= */
- 
+
       const contactForm = document.getElementById("contactForm");
- 
+
       if (contactForm) {
         contactForm.addEventListener("submit", () => {
           const button = contactForm.querySelector("button");
- 
+
           button.textContent = "Envoi en cours...";
- 
+
           button.disabled = true;
         });
       }
     </script>
- 
+
     <!-- Bibliothèque Supabase -->
- 
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
- 
+
     <!-- AUTHENTIFICATION SUPABASE -->
- 
+
     <script>
       const SUPABASE_URL = "https://xteveyeqbobwnuiivhkn.supabase.co";
       const SUPABASE_ANON_KEY =
         "sb_publishable_4_yLyj0jurLUi-TKXpG9Pg_BAzlkN5W";
- 
+
       const supabaseClient = supabase.createClient(
         SUPABASE_URL,
         SUPABASE_ANON_KEY,
       );
- 
+
       const authOverlay = document.getElementById("authOverlay");
       const loginPanel = document.getElementById("loginPanel");
       const signupPanel = document.getElementById("signupPanel");
@@ -4046,7 +4595,7 @@ Index · HTML
       const loginMessage = document.getElementById("loginMessage");
       const signupMessage = document.getElementById("signupMessage");
       const logoutButton = document.getElementById("logoutButton");
- 
+
       function openAuthModal(mode = "login") {
         authOverlay.classList.add("active");
         authOverlay.setAttribute("aria-hidden", "false");
@@ -4055,53 +4604,53 @@ Index · HTML
         loginMessage.textContent = "";
         signupMessage.textContent = "";
       }
- 
+
       function closeAuthModal() {
         authOverlay.classList.remove("active");
         authOverlay.setAttribute("aria-hidden", "true");
       }
- 
+
       function setButtonLoading(form, loading, normalText) {
         const button = form.querySelector("button[type='submit']");
         button.disabled = loading;
         button.textContent = loading ? "Chargement..." : normalText;
       }
- 
+
       function showError(element, message) {
         element.className = "auth-message";
         element.textContent = message;
       }
- 
+
       function showSuccess(element, message) {
         element.className = "auth-message success";
         element.textContent = message;
       }
- 
+
       openLoginButton.addEventListener("click", () => openAuthModal("login"));
       openSignupButton.addEventListener("click", () => openAuthModal("signup"));
       closeAuthButton.addEventListener("click", closeAuthModal);
       showSignupButton.addEventListener("click", () => openAuthModal("signup"));
       showLoginButton.addEventListener("click", () => openAuthModal("login"));
- 
+
       authOverlay.addEventListener("click", (event) => {
         if (event.target === authOverlay) closeAuthModal();
       });
- 
+
       document.addEventListener("keydown", (event) => {
         if (event.key === "Escape") closeAuthModal();
       });
- 
+
       signupForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         signupMessage.textContent = "";
- 
+
         const pseudo = document.getElementById("signupPseudo").value.trim();
         const email = document
           .getElementById("signupEmail")
           .value.trim()
           .toLowerCase();
         const password = document.getElementById("signupPassword").value;
- 
+
         if (pseudo.length < 2) {
           showError(
             signupMessage,
@@ -4109,7 +4658,7 @@ Index · HTML
           );
           return;
         }
- 
+
         if (password.length < 6) {
           showError(
             signupMessage,
@@ -4117,9 +4666,9 @@ Index · HTML
           );
           return;
         }
- 
+
         setButtonLoading(signupForm, true, "S’inscrire");
- 
+
         const { data, error } = await supabaseClient.auth.signUp({
           email,
           password,
@@ -4129,12 +4678,12 @@ Index · HTML
             },
           },
         });
- 
+
         setButtonLoading(signupForm, false, "S’inscrire");
- 
+
         if (error) {
           const errorMessage = error.message.toLowerCase();
- 
+
           if (
             errorMessage.includes("already registered") ||
             errorMessage.includes("already exists") ||
@@ -4151,7 +4700,7 @@ Index · HTML
           }
           return;
         }
- 
+
         // Avec la confirmation e-mail activée, Supabase peut masquer
         // l'existence d'un compte en renvoyant un utilisateur sans identité.
         if (
@@ -4162,9 +4711,9 @@ Index · HTML
           showError(signupMessage, "Cette adresse e-mail est déjà utilisée.");
           return;
         }
- 
+
         signupForm.reset();
- 
+
         if (data.session) {
           showSuccess(
             signupMessage,
@@ -4181,26 +4730,26 @@ Index · HTML
           );
         }
       });
- 
+
       loginForm.addEventListener("submit", async (event) => {
         event.preventDefault();
         loginMessage.textContent = "";
- 
+
         const email = document.getElementById("loginEmail").value.trim();
         const password = document.getElementById("loginPassword").value;
- 
+
         setButtonLoading(loginForm, true, "Se connecter");
- 
+
         const { error } = await supabaseClient.auth.signInWithPassword({
           email,
           password,
         });
- 
+
         setButtonLoading(loginForm, false, "Se connecter");
- 
+
         if (error) {
           const errorMessage = error.message.toLowerCase();
- 
+
           if (errorMessage.includes("email not confirmed")) {
             showError(
               loginMessage,
@@ -4214,43 +4763,38 @@ Index · HTML
           }
           return;
         }
- 
+
         showSuccess(loginMessage, "Connexion réussie.");
         loginForm.reset();
- 
+
         setTimeout(() => {
           closeAuthModal();
           updateAuthInterface();
         }, 700);
       });
- 
+
       logoutButton.addEventListener("click", async () => {
         const { error } = await supabaseClient.auth.signOut();
         if (error) console.error("Erreur Supabase déconnexion :", error);
         updateAuthInterface();
       });
- 
+
       async function updateAuthInterface() {
         const {
           data: { session },
         } = await supabaseClient.auth.getSession();
         const connected = Boolean(session);
- 
+
         openLoginButton.style.display = connected ? "none" : "inline-block";
         openSignupButton.style.display = connected ? "none" : "inline-block";
         logoutButton.style.display = connected ? "inline-block" : "none";
       }
- 
+
       supabaseClient.auth.onAuthStateChange(() => {
         updateAuthInterface();
       });
- 
+
       updateAuthInterface();
     </script>
   </body>
 </html>
- 
-
-
-
-
