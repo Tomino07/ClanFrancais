@@ -4026,6 +4026,101 @@
         }
       }
 
+/* =========================
+   FOOTER — STYLE ÉDITORIAL
+========================= */
+
+footer {
+  position: relative;
+  padding: 64px 0 28px;
+  background: #111111;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Trait tricolore en haut du footer */
+footer::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 54px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+}
+
+footer .container {
+  width: min(1320px, 90%);
+}
+
+.footer-top {
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-brand img {
+  width: 100px;
+}
+
+.footer-column h3 {
+  margin: 0 0 14px;
+  color: #e9e8e1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-column {
+  gap: 12px;
+}
+
+.footer-column a {
+  color: #a9a9a9;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.footer-bottom {
+  margin-top: 28px;
+}
+
+.footer-text {
+  color: #77748d;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 13px;
+}
+
+@media (max-width: 750px) {
+  footer {
+    padding-top: 52px;
+  }
+
+  .footer-top {
+    padding-bottom: 36px;
+  }
+
+  .footer-bottom {
+    margin-top: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-brand {
+    justify-self: center;
+  }
+}
     </style>
 
   </head>
