@@ -1315,7 +1315,7 @@
         box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
       }
 
-      .faq-item.active {
+      .faq-item.faq-open {
         border-color: rgba(255, 215, 0, 0.45);
         box-shadow: 0 18px 50px rgba(255, 215, 0, 0.08);
       }
@@ -1363,7 +1363,7 @@
           background 0.3s ease;
       }
 
-      .faq-item.active .faq-icon {
+      .faq-item.faq-open .faq-icon {
         transform: rotate(45deg);
         background: rgba(255, 215, 0, 0.08);
       }
@@ -1389,7 +1389,7 @@
         color: #ffd700;
       }
 
-      .faq-item.active .faq-answer {
+      .faq-item.faq-open .faq-answer {
         grid-template-rows: 1fr;
       }
 
@@ -3703,6 +3703,236 @@
         }
       }
 
+      /* =========================
+         FAQ + CONTACT — STYLE ÉDITORIAL
+      ========================= */
+      #faq.faq-section,
+      #contact {
+        background: #111111;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0 0 74px;
+      }
+
+      #faq.faq-section .container,
+      #contact .container {
+        width: min(1320px, 90%);
+      }
+
+      #faq .section-heading,
+      #contact .contact-block {
+        max-width: 900px;
+        margin: 0 auto;
+        padding-top: 58px;
+        text-align: center;
+      }
+
+      #contact .contact-block .eyebrow {
+        margin-bottom: 14px;
+        color: #e9e8e1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      #faq .section-heading .eyebrow {
+        margin-bottom: 12px;
+        color: #b9b9b9;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      #faq .section-heading h2,
+      #contact .contact-block h2 {
+        margin: 0;
+        color: #f4f4f4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(30px, 3.3vw, 48px);
+        font-weight: 800;
+        letter-spacing: -3px;
+        line-height: 1;
+      }
+
+      #faq .section-description,
+      #contact .contact-block > p {
+        max-width: 780px;
+        margin: 18px auto 0;
+        color: #d0d0d0;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      #faq .faq-container {
+        width: 100%;
+        max-width: 920px;
+        margin: 0 auto;
+        gap: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+      }
+
+      #faq .faq-item {
+        border: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+
+      #faq .faq-item:hover,
+      #faq .faq-item.faq-open {
+        transform: none;
+        border-color: rgba(255, 255, 255, 0.28);
+        box-shadow: none;
+      }
+
+      #faq .faq-question {
+        padding: 24px 0;
+        color: #f4f4f4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+
+      #faq .faq-question:hover {
+        color: #ffffff;
+      }
+
+      #faq .faq-icon {
+        color: #f4f4f4;
+        border-color: rgba(255, 255, 255, 0.55);
+      }
+
+      #faq .faq-item.faq-open .faq-icon {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      #faq .faq-answer p {
+        padding: 0 0 24px;
+        color: #a9a9a9;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      #faq .faq-answer strong {
+        color: #f4f4f4;
+      }
+
+      #contact .contact-block {
+        max-width: 900px;
+        padding-right: 0;
+        padding-bottom: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+      }
+
+      #contact .contact-block::before {
+        display: none;
+      }
+
+      #contact .contact-block:hover {
+        transform: none;
+        box-shadow: none;
+      }
+
+      #contact .contact-block > p {
+        max-width: 650px;
+      }
+
+      #contact .contact-actions {
+        margin-top: 28px;
+      }
+
+      #contact .contact-actions .btn-primary {
+        border: 1px solid #f4f4f4;
+        border-radius: 0;
+        background: #f4f4f4;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: none;
+      }
+
+      #contact .contact-actions .btn-primary:hover {
+        background: transparent;
+        color: #f4f4f4;
+        box-shadow: none;
+      }
+
+      #contact form {
+        max-width: 650px;
+        margin-top: 42px;
+        gap: 10px;
+      }
+
+      #contact form label {
+        color: #e9e8e1;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+
+      #contact input,
+      #contact textarea {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 0;
+        background: #1b1b1b;
+        color: #f4f4f4;
+        font-family: "Baloo 2", sans-serif;
+      }
+
+      #contact input:focus,
+      #contact textarea:focus {
+        border-color: rgba(255, 255, 255, 0.65);
+      }
+
+      #contact form button[type="submit"] {
+        border: 1px solid #f4f4f4;
+        border-radius: 0;
+        background: #f4f4f4;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 800;
+        box-shadow: none;
+      }
+
+      #contact form button[type="submit"]:hover {
+        background: transparent;
+        color: #f4f4f4;
+      }
+
+      @media (max-width: 600px) {
+        #faq .section-heading,
+        #contact .contact-block {
+          padding-top: 42px;
+        }
+
+        #faq .section-heading h2,
+        #contact .contact-block h2 {
+          font-size: clamp(29px, 8vw, 40px);
+          letter-spacing: -1.5px;
+        }
+
+        #faq .faq-question {
+          padding: 20px 0;
+        }
+
+        #contact form {
+          margin-top: 32px;
+        }
+      }
+
     </style>
 
   </head>
@@ -4149,7 +4379,7 @@
       <section id="faq" class="faq-section">
         <div class="container">
           <div class="section-heading">
-            <div class="eyebrow">❓ Questions</div>
+            <div class="eyebrow">Questions</div>
 
             <h2>FAQ DU CLAN</h2>
 
@@ -4296,7 +4526,7 @@
                 rel="noopener noreferrer"
                 class="btn btn-primary"
               >
-                💬 Rejoindre le Discord
+                Rejoindre le Discord
               </a>
             </div>
 
@@ -4769,21 +4999,10 @@
         question.addEventListener("click", () => {
           const currentItem = question.closest(".faq-item");
 
-          const isCurrentlyOpen = currentItem.classList.contains("active");
+          const willOpen = !currentItem.classList.contains("faq-open");
 
-          document.querySelectorAll(".faq-item").forEach((item) => {
-            item.classList.remove("active");
-
-            const button = item.querySelector(".faq-question");
-
-            button.setAttribute("aria-expanded", "false");
-          });
-
-          if (!isCurrentlyOpen) {
-            currentItem.classList.add("active");
-
-            question.setAttribute("aria-expanded", "true");
-          }
+          currentItem.classList.toggle("faq-open", willOpen);
+          question.setAttribute("aria-expanded", String(willOpen));
         });
       });
 
