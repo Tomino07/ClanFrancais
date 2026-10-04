@@ -1603,14 +1603,20 @@
       }
 
       .footer-brand {
-        font-family: "Luckiest Guy", cursive;
-        font-size: 21px;
-        letter-spacing: 1px;
-        background: linear-gradient(90deg, #fff 0%, #ffd700 45%, #fff 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-      }
+  display: inline-block;
+}
+
+.footer-brand img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+  transition: transform 0.25s ease;
+}
+
+.footer-brand:hover img {
+  transform: scale(1.06) rotate(-3deg);
+}
 
       .footer-text {
         color: #77748d;
@@ -3960,6 +3966,66 @@
         align-self: center;
       }
 
+
+
+      /* Nouveau pied de page organisé par catégories */
+      .footer-inner { display: block; }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: minmax(180px, 1.25fr) repeat(3, minmax(150px, 1fr));
+        gap: 48px;
+        align-items: start;
+      }
+
+      .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .footer-column h3 {
+        margin: 0 0 8px;
+        color: #f4f4f4;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.7px;
+      }
+
+      .footer-column a {
+        color: #aaa7c4;
+        font-size: 14px;
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+
+      .footer-column a:hover {
+        color: #ffffff;
+        transform: translateX(3px);
+      }
+
+      .footer-bottom { margin-top: 58px; }
+
+      @media (max-width: 750px) {
+        .footer-top {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 36px 24px;
+        }
+        .footer-brand { grid-column: 1 / -1; }
+        .footer-bottom { margin-top: 42px; text-align: center; }
+      }
+
+      @media (max-width: 480px) {
+        .footer-top { grid-template-columns: 1fr; }
+        .footer-brand { grid-column: auto; }
+        .footer-column {
+          align-items: center;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
     </style>
 
   </head>
@@ -4605,18 +4671,36 @@
 
     <footer>
       <div class="container footer-inner">
-        <div class="footer-brand">CLAN FRANCAIS</div>
+        <div class="footer-top">
+          <a href="#accueil" class="footer-brand">
+  <img src="images-Photoroom.png" alt="Logo Clan Français" />
+</a>
 
-        <div class="footer-text">© 2025 Clan Francais — Clash Royale</div>
+          <div class="footer-column">
+            <h3>LE CLAN</h3>
+            <a href="#statistiques">ACTUALITÉS</a>
+            <a href="#decouvrir">DÉCOUVRIR LE CLAN</a>
+            <a href="#equipe">LES LEADERS</a>
+            <a href="#recrutement">RECRUTEMENTS</a>
+            <a href="#discord">DISCORD</a>
+          </div>
 
-        <a
-          href="https://discord.gg/yW4KV3GcN"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="footer-discord"
-        >
-          Discord
-        </a>
+          <div class="footer-column">
+            <h3>INFORMATIONS</h3>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">FORMULAIRE DE CONTACT</a>
+          </div>
+
+          <div class="footer-column">
+            <h3>LIENS UTILES</h3>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-text">© 2025 Clan Français — Clash Royale</div>
+        </div>
       </div>
     </footer>
 
