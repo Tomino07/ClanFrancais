@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Luckiest+Guy&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Luckiest+Guy&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="images-Photoroom.png" />
 
     <style>
       :root {
+        --page-bg: #0e0f12; /* même couleur que la bannière */
         --blue: #002395;
         --blue-light: #1647d8;
         --white: #ffffff;
@@ -52,42 +53,7 @@
         font-family: "Baloo 2", sans-serif;
         color: var(--text);
         overflow-x: hidden;
-        background: rgba(29, 33, 42, 1);
-      }
-
-      body::before {
-        content: "";
-        display: none;
-        position: fixed;
-        inset: 0;
-        pointer-events: none;
-        background: linear-gradient(
-          90deg,
-          rgba(107, 102, 255, 0.08) 0%,
-          transparent 35%,
-          rgba(107, 102, 255, 0.025) 50%,
-          transparent 65%,
-          rgba(107, 102, 255, 0.08) 100%
-        );
-        z-index: 0;
-      }
-
-      body::after {
-        content: "";
-        display: none;
-        position: fixed;
-        width: 900px;
-        height: 900px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background: radial-gradient(
-          circle,
-          rgba(255, 255, 255, 0.035) 0%,
-          transparent 65%
-        );
-        pointer-events: none;
-        z-index: 0;
+        background: var(--page-bg);
       }
 
       a {
@@ -169,9 +135,7 @@
         border-radius: 12px;
         font-size: 24px;
         cursor: pointer;
-        transition:
-          background 0.25s ease,
-          transform 0.25s ease;
+        transition: background 0.25s ease, transform 0.25s ease;
       }
 
       .menu-toggle:hover {
@@ -183,514 +147,13 @@
         transform: scale(0.95);
       }
 
-      .discord-btn {
-        padding: 11px 18px;
-        border-radius: 12px;
-        background: linear-gradient(135deg, #5865f2, #4752c4);
-        color: #fff;
-        font-weight: 800;
-        box-shadow: 0 8px 25px rgba(88, 101, 242, 0.25);
-        transition: 0.25s ease;
-      }
-
-      .discord-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 30px rgba(88, 101, 242, 0.4);
-      }
-
-      /* =========================
-       HERO
-    ========================= */
-
-      .hero {
-        position: relative;
-        z-index: 1;
-        padding: 0 0 85px;
-        overflow: hidden;
-      }
-
-      .hero .container {
-        padding-top: 0;
-      }
-
-      .hero-video-wrap {
-        position: relative;
-        width: 100%;
-        height: 100dvh;
-        overflow: hidden;
-        z-index: 1;
-      }
-
-      .hero-video-wrap video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transform: translate(-50%, -50%) scale(1.04);
-        filter: blur(4px);
-        transition: filter 0.3s ease;
-      }
-
-      .hero-video-overlay {
-        position: absolute;
-        inset: 0;
-        background:
-          linear-gradient(
-            180deg,
-            rgba(8, 7, 24, 0) 0%,
-            rgba(8, 7, 24, 0.35) 70%,
-            rgba(8, 7, 24, 0.85) 100%
-          ),
-          radial-gradient(
-            ellipse 650px 900px at -5% 50%,
-            rgba(0, 35, 149, 0.35) 0%,
-            rgba(0, 35, 149, 0.15) 35%,
-            transparent 72%
-          ),
-          radial-gradient(
-            ellipse 650px 900px at 105% 50%,
-            rgba(237, 41, 57, 0.35) 0%,
-            rgba(237, 41, 57, 0.15) 35%,
-            transparent 72%
-          );
-        z-index: 1;
-      }
-
-      /* =========================
-   TEXTE SUR LA VIDÉO
-========================= */
-
-      .hero-video-text {
-        position: absolute;
-        inset: 0;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 30px;
-        pointer-events: none;
-      }
-
-      .hero-video-text h1 {
-        margin: 0;
-        font-family: "Luckiest Guy", cursive;
-        font-size: clamp(48px, 7vw, 90px);
-        line-height: 1;
-        letter-spacing: 1px;
-        color: #6b66ff;
-        text-shadow:
-          0 5px 0 rgba(0, 0, 0, 0.35),
-          0 8px 25px rgba(0, 0, 0, 0.65),
-          0 0 45px rgba(107, 102, 255, 0.35);
-        animation: heroTextAppear 1s ease both;
-      }
-
-      .hero-video-text p {
-        margin-top: 18px;
-        font-family: "Baloo 2", sans-serif;
-        font-size: clamp(18px, 2.2vw, 28px);
-        font-weight: 700;
-        color: rgba(255, 255, 255, 0.92);
-        letter-spacing: 0.5px;
-        text-shadow: 0 3px 15px rgba(0, 0, 0, 0.75);
-        animation: heroTextAppear 1s 0.15s ease both;
-      }
-
-      .hero-actions {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        margin-top: 28px;
-        pointer-events: auto;
-        animation: heroTextAppear 1s 0.3s ease both;
-      }
-
-      .hero-action {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 205px;
-        padding: 14px 24px;
-        border-radius: 12px;
-        font-family: "Baloo 2", sans-serif;
-        font-size: 16px;
-        font-weight: 800;
-        line-height: 1.2;
-        transition:
-          transform 0.25s ease,
-          box-shadow 0.25s ease,
-          background 0.25s ease;
-      }
-
-      .hero-action:hover {
-        transform: translateY(-3px);
-      }
-
-      .hero-action-primary {
-        color: #fff;
-        background: #6b66ff;
-        border: 1px solid #6b66ff;
-        box-shadow: 0 10px 25px rgba(107, 102, 255, 0.35);
-      }
-
-      .hero-action-primary:hover {
-        background: #8581ff;
-        border-color: #8581ff;
-        box-shadow: 0 14px 30px rgba(107, 102, 255, 0.5);
-      }
-
-      .hero-action-secondary {
-        color: #6b66ff;
-        background: transparent;
-        border: 2px solid #6b66ff;
-        box-shadow: 0 0 18px rgba(107, 102, 255, 0.12);
-      }
-
-      .hero-action-secondary:hover {
-        color: #fff;
-        background: rgba(107, 102, 255, 0.14);
-        border-color: #8581ff;
-        box-shadow: 0 10px 25px rgba(107, 102, 255, 0.25);
-      }
-
-      @media (max-width: 900px) {
-        .news-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .news-side {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-      @media (max-width: 600px) {
-        .news-heading {
-          align-items: flex-start;
-          flex-direction: column;
-          gap: 22px;
-        }
-
-        .news-heading .section-heading {
-          text-align: left;
-        }
-
-        .news-heading .section-description {
-          font-size: 15px;
-        }
-
-        .news-all-link {
-          width: 100%;
-          justify-content: space-between;
-        }
-
-        .news-side {
-          grid-template-columns: 1fr;
-        }
-
-        .news-featured .news-media {
-          min-height: 285px;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .hero-actions {
-          width: 100%;
-          flex-direction: column;
-          gap: 12px;
-        }
-
-        .hero-action {
-          width: min(280px, 100%);
-        }
-      }
-
-      @keyframes heroTextAppear {
-        from {
-          opacity: 0;
-          transform: translateY(25px);
-        }
-
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @media (max-width: 500px) {
-        .hero-video-text {
-          padding: 20px;
-        }
-
-        .hero-video-text h1 {
-          font-size: 45px;
-        }
-
-        .hero-video-text p {
-          margin-top: 12px;
-          font-size: 18px;
-        }
-      }
-
-      .hero::before {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 1100px;
-        height: 600px;
-        transform: translate(-50%, -50%);
-        background: linear-gradient(
-          90deg,
-          rgba(0, 35, 149, 0.28) 0%,
-          rgba(0, 35, 149, 0.08) 28%,
-          rgba(255, 255, 255, 0.05) 50%,
-          rgba(237, 41, 57, 0.08) 72%,
-          rgba(237, 41, 57, 0.28) 100%
-        );
-        filter: blur(45px);
-        pointer-events: none;
-        z-index: -1;
-      }
-
-      .hero-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 60px;
-        width: 100%;
-      }
-
-      .hero-text {
-        flex: 1;
-        min-width: 0;
-      }
-
-      .hero-logo-container {
-        flex-shrink: 0;
-        width: 330px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-      }
-
-      .hero-logo-container::before {
-        content: "";
-        position: absolute;
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        background: conic-gradient(
-          from 0deg,
-          rgba(0, 35, 149, 0.35),
-          rgba(255, 255, 255, 0.15),
-          rgba(237, 41, 57, 0.35),
-          rgba(0, 35, 149, 0.35)
-        );
-        filter: blur(45px);
-        opacity: 0.45;
-        animation: heroGlow 8s linear infinite;
-        z-index: -1;
-      }
-
-      .hero-logo {
-        width: 300px;
-        height: 300px;
-        object-fit: contain;
-        filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.5))
-          drop-shadow(0 0 30px rgba(255, 255, 255, 0.08));
-        transition: 0.4s ease;
-        animation: heroFloat 4s ease-in-out infinite;
-      }
-
-      .hero-logo:hover {
-        animation-play-state: paused;
-        transform: scale(1.08) rotate(3deg);
-        filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.55))
-          drop-shadow(0 0 30px rgba(0, 80, 255, 0.25))
-          drop-shadow(0 0 35px rgba(255, 0, 50, 0.2));
-      }
-
-      .hero::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: min(700px, 80%);
-        height: 3px;
-        background: linear-gradient(
-          90deg,
-          #002395 0%,
-          #002395 33.33%,
-          #ffffff 33.33%,
-          #ffffff 66.66%,
-          #ed2939 66.66%,
-          #ed2939 100%
-        );
-        border-radius: 999px;
-        box-shadow: 0 0 20px rgba(255, 255, 255, 0.12);
-      }
-
-      /* =========================
-       NOUVEAU BADGE MEMBRES
-    ========================= */
-
-      .member-status {
-        display: inline-flex;
-        flex-direction: column;
-        gap: 9px;
-        width: min(390px, 100%);
-        padding: 14px 17px;
-        margin-bottom: 22px;
-        border-radius: 17px;
-        background: linear-gradient(
-          135deg,
-          rgba(54, 227, 109, 0.1),
-          rgba(255, 255, 255, 0.055)
-        );
-        border: 1px solid rgba(54, 227, 109, 0.28);
-        box-shadow:
-          0 10px 30px rgba(0, 0, 0, 0.2),
-          0 0 25px rgba(54, 227, 109, 0.07);
-        backdrop-filter: blur(14px);
-        -webkit-backdrop-filter: blur(14px);
-        animation: memberPulse 3s ease-in-out infinite;
-      }
-
-      .member-status-top {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 15px;
-      }
-
-      .member-label {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: #c9c7d8;
-        font-size: 12px;
-        font-weight: 900;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
-      }
-
-      .member-dot {
-        width: 9px;
-        height: 9px;
-        flex-shrink: 0;
-        border-radius: 50%;
-        background: #36e36d;
-        box-shadow:
-          0 0 10px #36e36d,
-          0 0 20px rgba(54, 227, 109, 0.5);
-        animation: onlinePulse 1.8s ease-in-out infinite;
-      }
-
-      .member-count {
-        color: #fff;
-        font-size: 20px;
-        font-weight: 900;
-        line-height: 1;
-        white-space: nowrap;
-      }
-
-      .member-count strong {
-        color: #36e36d;
-        font-size: 25px;
-      }
-
-      .member-progress {
-        width: 100%;
-        height: 9px;
-        padding: 2px;
-        border-radius: 999px;
-        background: rgba(0, 0, 0, 0.35);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        overflow: hidden;
-      }
-
-      .member-progress-bar {
-        width: 98%;
-        height: 100%;
-        border-radius: inherit;
-        background: linear-gradient(90deg, #1bb954, #36e36d, #8affaa);
-        box-shadow:
-          0 0 12px rgba(54, 227, 109, 0.65),
-          0 0 25px rgba(54, 227, 109, 0.25);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .member-progress-bar::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 80px;
-        left: -100px;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.65),
-          transparent
-        );
-        transform: skewX(-20deg);
-        animation: progressShine 2.5s ease-in-out infinite;
-      }
-
-      .member-bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-        font-size: 12px;
-        font-weight: 800;
-      }
-
-      .member-bottom .available {
-        color: #36e36d;
-        letter-spacing: 0.4px;
-      }
-
-      .member-bottom .capacity {
-        color: #77748d;
-      }
-
       h1 {
         font-family: "Luckiest Guy", cursive;
         font-size: clamp(50px, 7vw, 88px);
         line-height: 0.98;
         letter-spacing: 1px;
-        text-shadow:
-          0 5px 0 rgba(0, 0, 0, 0.3),
-          0 15px 45px rgba(0, 0, 0, 0.35);
+        text-shadow: 0 5px 0 rgba(0, 0, 0, 0.3), 0 15px 45px rgba(0, 0, 0, 0.35);
         animation: titleAppear 0.9s ease both;
-      }
-
-      h1 .blue {
-        color: #5d82ff;
-      }
-
-      h1 .white {
-        color: #fff;
-      }
-
-      h1 .red {
-        color: #ff5966;
-      }
-
-      .hero-actions {
-        display: flex;
-        gap: 15px;
-        margin-top: 30px;
-        flex-wrap: wrap;
       }
 
       /* =========================
@@ -705,10 +168,7 @@
         padding: 14px 22px;
         border-radius: 13px;
         font-weight: 800;
-        transition:
-          transform 0.25s ease,
-          box-shadow 0.25s ease,
-          filter 0.25s ease;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
       }
 
       .btn-primary {
@@ -737,49 +197,18 @@
         transform: scale(0.96);
       }
 
-      /* =========================
-       STATS
-    ========================= */
-
-      .stats {
-        padding: 10px 0 90px;
-      }
-
-      .stats-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 18px;
-      }
-
-      .stat-pill,
       .team-card,
-      .tl-item,
-      .icon-card,
       .contact-block {
         position: relative;
         overflow: hidden;
-        background: linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 0.075),
-          rgba(255, 255, 255, 0.025)
-        );
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.14);
         box-shadow: var(--shadow);
-        transition:
-          transform 0.35s ease,
-          box-shadow 0.35s ease,
-          border-color 0.35s ease;
+        transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
       }
 
-      .stat-pill {
-        padding: 25px;
-        border-radius: 18px;
-        text-align: center;
-      }
-
-      .stat-pill::before,
       .team-card::before,
       .contact-block::before {
         content: "";
@@ -788,28 +217,7 @@
         left: 0;
         right: 0;
         height: 3px;
-        background: linear-gradient(
-          90deg,
-          #002395 0%,
-          #002395 33.33%,
-          #ffffff 33.33%,
-          #ffffff 66.66%,
-          #ed2939 66.66%,
-          #ed2939 100%
-        );
-      }
-
-      .stat-number {
-        font-family: "Luckiest Guy", cursive;
-        color: #ffd700;
-        font-size: 42px;
-        line-height: 1;
-      }
-
-      .stat-label {
-        color: #aaa7c4;
-        margin-top: 8px;
-        font-weight: 700;
+        background: linear-gradient(90deg, #002395 0%, #002395 33.33%, #ffffff 33.33%, #ffffff 66.66%, #ed2939 66.66%, #ed2939 100%);
       }
 
       /* =========================
@@ -852,252 +260,6 @@
       }
 
       /* =========================
-       ACTUALITÉS
-    ========================= */
-
-      .news-section {
-        padding-top: 100px;
-        padding-bottom: 105px;
-        background:
-          radial-gradient(circle at 8% 20%, rgba(107, 102, 255, 0.07), transparent 32%),
-          radial-gradient(circle at 92% 72%, rgba(237, 41, 57, 0.06), transparent 30%);
-      }
-
-      .news-heading {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        gap: 30px;
-        margin-bottom: 42px;
-      }
-
-      .news-heading .section-heading {
-        margin: 0;
-        text-align: left;
-      }
-
-      .news-heading .section-description {
-        margin-left: 0;
-        max-width: 510px;
-      }
-
-      .news-heading h2 {
-        font-family: "Baloo 2", sans-serif;
-        font-size: clamp(42px, 5vw, 62px);
-        line-height: 0.95;
-        letter-spacing: -1px;
-      }
-
-      .news-heading .eyebrow {
-        display: inline-flex;
-        align-items: center;
-        padding: 5px 12px;
-        margin-bottom: 14px;
-        border-radius: 999px;
-        color: #d9d7ff;
-        background: rgba(107, 102, 255, 0.16);
-        border: 1px solid rgba(143, 138, 255, 0.25);
-        font-size: 12px;
-        letter-spacing: 0.2px;
-        text-transform: none;
-      }
-
-      .news-all-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        flex-shrink: 0;
-        padding: 13px 18px;
-        border: 1px solid rgba(123, 116, 255, 0.4);
-        border-radius: 11px;
-        color: #aaa6ff;
-        font-size: 14px;
-        font-weight: 800;
-        transition: 0.25s ease;
-      }
-
-      .news-all-link span {
-        font-size: 20px;
-        line-height: 0;
-        transition: transform 0.25s ease;
-      }
-
-      .news-all-link:hover {
-        color: #fff;
-        background: rgba(107, 102, 255, 0.12);
-        border-color: rgba(143, 138, 255, 0.75);
-        transform: translateY(-2px);
-      }
-
-      .news-all-link:hover span {
-        transform: translateX(4px);
-      }
-
-      .news-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.8fr);
-        gap: 28px;
-        align-items: stretch;
-      }
-
-      .news-card {
-        position: relative;
-        overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 16px;
-        background: #272a36;
-        box-shadow: 0 22px 55px rgba(0, 0, 0, 0.25);
-        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-      }
-
-      .news-card:hover {
-        transform: translateY(-6px);
-        border-color: rgba(143, 138, 255, 0.45);
-        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
-      }
-
-      .news-media {
-        position: relative;
-        min-height: 245px;
-        overflow: hidden;
-        background-color: #343b55;
-        background-position: center;
-        background-size: cover;
-      }
-
-      .news-featured .news-media {
-        min-height: 334px;
-      }
-
-      .news-media::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(180deg, rgba(8, 9, 18, 0.02) 26%, rgba(10, 11, 22, 0.88) 100%);
-      }
-
-      .news-featured .news-media {
-        background-image: url("clash-royale-banniere.jpg");
-      }
-
-      .news-ruby .news-media {
-        background-image: url("classement_clash.png");
-      }
-
-      .news-community .news-media {
-        background-image: url("france.png");
-      }
-
-      .news-badges {
-        position: absolute;
-        top: 16px;
-        left: 16px;
-        right: 16px;
-        z-index: 1;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 10px;
-      }
-
-      .news-badge, .news-reading-time {
-        display: inline-flex;
-        align-items: center;
-        padding: 6px 10px;
-        border-radius: 8px;
-        color: #fff;
-        background: rgba(107, 102, 255, 0.82);
-        backdrop-filter: blur(8px);
-        font-size: 12px;
-        font-weight: 800;
-      }
-
-      .news-badge.hot {
-        color: #f3eaaa;
-        background: rgba(221, 201, 74, 0.72);
-      }
-
-      .news-badge.java {
-        background: rgba(210, 54, 50, 0.82);
-      }
-
-      .news-reading-time {
-        background: rgba(93, 101, 126, 0.76);
-      }
-
-      .news-media-content {
-        position: absolute;
-        right: 22px;
-        bottom: 20px;
-        left: 22px;
-        z-index: 1;
-      }
-
-      .news-media-content h3 {
-        max-width: 620px;
-        color: #fff;
-        font-size: clamp(23px, 3vw, 34px);
-        line-height: 1.05;
-        text-shadow: 0 3px 14px rgba(0, 0, 0, 0.5);
-      }
-
-      .news-card-body {
-        min-height: 164px;
-        padding: 20px 22px 24px;
-      }
-
-      .news-date {
-        display: inline-flex;
-        align-items: center;
-        gap: 7px;
-        color: #7776ff;
-        font-size: 13px;
-        font-weight: 800;
-      }
-
-      .news-date::before {
-        content: "▣";
-        font-size: 14px;
-      }
-
-      .news-card-body p {
-        margin-top: 14px;
-        color: #aaa7c4;
-        font-size: 14px;
-        line-height: 1.55;
-      }
-
-      .news-side {
-        display: grid;
-        gap: 20px;
-      }
-
-      .news-side .news-media {
-        min-height: 190px;
-      }
-
-      .news-side .news-media-content {
-        bottom: 16px;
-      }
-
-      .news-side .news-media-content h3 {
-        font-size: 22px;
-      }
-
-      .news-side .news-card-body {
-        min-height: 125px;
-        padding: 16px 20px 20px;
-      }
-
-      .news-side .news-card-body p {
-        margin-top: 10px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-      }
-
-      /* =========================
        TEAM
     ========================= */
 
@@ -1125,12 +287,7 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
-        background: linear-gradient(
-          135deg,
-          rgba(0, 35, 149, 0.8),
-          rgba(255, 255, 255, 0.1),
-          rgba(237, 41, 57, 0.8)
-        );
+        background: linear-gradient(135deg, rgba(0, 35, 149, 0.8), rgba(255, 255, 255, 0.1), rgba(237, 41, 57, 0.8));
         border: 2px solid rgba(255, 255, 255, 0.2);
         font-size: 32px;
         overflow: hidden;
@@ -1140,14 +297,6 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-      }
-
-      .role {
-        color: #ffd700;
-        font-size: 12px;
-        font-weight: 900;
-        letter-spacing: 1px;
-        text-transform: uppercase;
       }
 
       .player-name {
@@ -1181,100 +330,6 @@
       }
 
       /* =========================
-       TIMELINE / ACTUS
-    ========================= */
-
-      .timeline {
-        max-width: 850px;
-        margin: auto;
-        position: relative;
-      }
-
-      .timeline::before {
-        content: "";
-        position: absolute;
-        left: 20px;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: linear-gradient(180deg, var(--blue), #fff, var(--red));
-        opacity: 0.7;
-      }
-
-      .tl-item {
-        margin-left: 60px;
-        margin-bottom: 22px;
-        padding: 25px;
-        border-radius: 18px;
-      }
-
-      .tl-dot {
-        position: absolute;
-        left: -50px;
-        top: 28px;
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        background: #ffd700;
-        border: 5px solid #100c2b;
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.35);
-      }
-
-      .tl-date {
-        color: #ffd700;
-        font-weight: 900;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-
-      .tl-title {
-        font-size: 22px;
-        font-weight: 800;
-        margin-top: 5px;
-      }
-
-      .tl-text {
-        color: #aaa7c4;
-        margin-top: 5px;
-        line-height: 1.5;
-      }
-
-      /* =========================
-       RECRUTEMENT
-    ========================= */
-
-      .icons-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 18px;
-      }
-
-      .icon-card {
-        padding: 28px 22px;
-        border-radius: 18px;
-        text-align: center;
-      }
-
-      .icon {
-        font-size: 38px;
-        margin-bottom: 12px;
-      }
-
-      .icon-card h3 {
-        font-size: 19px;
-        margin-bottom: 7px;
-      }
-
-      .icon-card p {
-        color: #aaa7c4;
-        font-size: 14px;
-        line-height: 1.5;
-      }
-
-      
-
-      /* =========================
        FAQ
     ========================= */
 
@@ -1292,21 +347,14 @@
 
       .faq-item {
         position: relative;
-        background: linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 0.075),
-          rgba(255, 255, 255, 0.025)
-        );
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.025));
         border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 18px;
         overflow: hidden;
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-        transition:
-          transform 0.3s ease,
-          border-color 0.3s ease,
-          box-shadow 0.3s ease;
+        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
       }
 
       .faq-item:hover {
@@ -1358,9 +406,7 @@
         border: 1px solid rgba(255, 215, 0, 0.45);
         font-size: 1.35rem;
         line-height: 1;
-        transition:
-          transform 0.3s ease,
-          background 0.3s ease;
+        transition: transform 0.3s ease, background 0.3s ease;
       }
 
       .faq-item.faq-open .faq-icon {
@@ -1408,47 +454,11 @@
         margin: auto;
         padding: 40px 45px;
         border-radius: 25px;
-        background:
-          radial-gradient(
-            circle at 0% 50%,
-            rgba(88, 101, 242, 0.3),
-            transparent 45%
-          ),
-          linear-gradient(
-            135deg,
-            rgba(88, 101, 242, 0.18),
-            rgba(255, 255, 255, 0.045)
-          );
-        border: 1px solid rgba(88, 101, 242, 0.35);
-        box-shadow:
-          0 25px 70px rgba(0, 0, 0, 0.35),
-          0 0 45px rgba(88, 101, 242, 0.1);
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 35px;
         transition: 0.35s ease;
-      }
-
-      .discord-box:hover {
-        transform: translateY(-6px);
-        border-color: rgba(88, 101, 242, 0.65);
-        box-shadow:
-          0 30px 80px rgba(0, 0, 0, 0.45),
-          0 0 60px rgba(88, 101, 242, 0.18);
-      }
-
-      .discord-box::before {
-        content: "";
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        left: -100px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(88, 101, 242, 0.18);
-        filter: blur(70px);
-        pointer-events: none;
       }
 
       .discord-content {
@@ -1457,20 +467,6 @@
         gap: 25px;
         position: relative;
         z-index: 1;
-      }
-
-      .discord-icon {
-        width: 85px;
-        height: 85px;
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 22px;
-        background: linear-gradient(135deg, #5865f2, #4752c4);
-        font-size: 42px;
-        box-shadow: 0 15px 35px rgba(88, 101, 242, 0.3);
-        animation: discordPulse 2.5s ease-in-out infinite;
       }
 
       .discord-content h2 {
@@ -1494,22 +490,15 @@
         gap: 14px;
         padding: 17px 25px;
         border-radius: 14px;
-        background: linear-gradient(135deg, #5865f2, #4752c4);
         color: white;
         font-size: 16px;
         font-weight: 800;
-        box-shadow: 0 12px 30px rgba(88, 101, 242, 0.3);
         transition: 0.25s ease;
       }
 
       .discord-big-btn span {
         font-size: 22px;
         transition: 0.25s ease;
-      }
-
-      .discord-big-btn:hover {
-        transform: translateY(-3px) scale(1.03);
-        box-shadow: 0 18px 40px rgba(88, 101, 242, 0.45);
       }
 
       .discord-big-btn:hover span {
@@ -1562,7 +551,6 @@
       input,
       textarea {
         width: 100%;
-        border: none;
         outline: none;
         padding: 14px 16px;
         border-radius: 12px;
@@ -1584,48 +572,28 @@
       }
 
       /* =========================
-       FOOTER
+       FOOTER (base)
     ========================= */
 
       footer {
         position: relative;
         z-index: 2;
-        padding: 35px 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-        background: rgba(4, 4, 14, 0.55);
-      }
-
-      .footer-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
       }
 
       .footer-brand {
-  display: inline-block;
-}
-
-.footer-brand img {
-  width: 90px;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
-  transition: transform 0.25s ease;
-}
-
-.footer-brand:hover img {
-  transform: scale(1.06) rotate(-3deg);
-}
-
-      .footer-text {
-        color: #77748d;
-        font-size: 14px;
+        display: inline-block;
       }
 
-      .footer-discord {
-        color: #8f9aff;
-        font-weight: 800;
+      .footer-brand img {
+        width: 90px;
+        height: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+        transition: transform 0.25s ease;
+      }
+
+      .footer-brand:hover img {
+        transform: scale(1.06) rotate(-3deg);
       }
 
       /* =========================
@@ -1635,9 +603,7 @@
       .reveal {
         opacity: 0;
         transform: translateY(45px);
-        transition:
-          opacity 0.8s ease,
-          transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
       }
 
       .reveal.active {
@@ -1653,73 +619,9 @@
         transition-delay: 0.2s;
       }
 
-      .reveal-delay-3 {
-        transition-delay: 0.3s;
-      }
-
-      .stat-pill:hover,
-      .tl-item:hover,
-      .icon-card:hover,
-      .objective:hover,
       .contact-block:hover {
         transform: translateY(-8px) scale(1.02);
-        box-shadow:
-          0 15px 45px rgba(80, 50, 255, 0.25),
-          0 0 25px rgba(255, 255, 255, 0.05);
-      }
-
-      @keyframes badgePulse {
-        0%,
-        100% {
-          box-shadow: 0 0 0 rgba(255, 255, 255, 0);
-        }
-
-        50% {
-          box-shadow:
-            0 0 18px rgba(255, 255, 255, 0.15),
-            0 0 35px rgba(50, 80, 255, 0.15);
-        }
-      }
-
-      @keyframes memberPulse {
-        0%,
-        100% {
-          transform: translateY(0);
-          box-shadow:
-            0 10px 30px rgba(0, 0, 0, 0.2),
-            0 0 15px rgba(54, 227, 109, 0.04);
-        }
-
-        50% {
-          transform: translateY(-2px);
-          box-shadow:
-            0 14px 35px rgba(0, 0, 0, 0.25),
-            0 0 28px rgba(54, 227, 109, 0.1);
-        }
-      }
-
-      @keyframes onlinePulse {
-        0%,
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
-
-        50% {
-          transform: scale(1.25);
-          opacity: 0.65;
-        }
-      }
-
-      @keyframes progressShine {
-        0% {
-          left: -100px;
-        }
-
-        55%,
-        100% {
-          left: 120%;
-        }
+        box-shadow: 0 15px 45px rgba(80, 50, 255, 0.25), 0 0 25px rgba(255, 255, 255, 0.05);
       }
 
       @keyframes titleAppear {
@@ -1731,42 +633,6 @@
         to {
           opacity: 1;
           transform: translateY(0);
-        }
-      }
-
-      @keyframes discordPulse {
-        0%,
-        100% {
-          transform: scale(1);
-        }
-
-        50% {
-          transform: scale(1.05);
-        }
-      }
-
-      @keyframes heroFloat {
-        0%,
-        100% {
-          transform: translateY(0) rotate(0deg);
-        }
-
-        50% {
-          transform: translateY(-12px) rotate(1.5deg);
-        }
-      }
-
-      @keyframes heroGlow {
-        0% {
-          transform: rotate(0deg) scale(1);
-        }
-
-        50% {
-          transform: rotate(180deg) scale(1.08);
-        }
-
-        100% {
-          transform: rotate(360deg) scale(1);
         }
       }
 
@@ -1823,96 +689,12 @@
       }
 
       /* =========================
-       BADGES DES RÔLES
-    ========================= */
-
-      .role-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 7px;
-        padding: 7px 14px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-        border-radius: 999px;
-        font-family: "Baloo 2", sans-serif;
-        font-size: 0.78rem;
-        font-weight: 900;
-        letter-spacing: 0.5px;
-        border: 2px solid;
-        position: relative;
-        overflow: hidden;
-        transition: all 0.3s ease;
-      }
-
-      .role-badge::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 60%;
-        height: 100%;
-        background: linear-gradient(
-          90deg,
-          transparent,
-          rgba(255, 255, 255, 0.5),
-          transparent
-        );
-        transform: skewX(-20deg);
-        transition: left 0.5s ease;
-      }
-
-      .role-badge:hover::before {
-        left: 140%;
-      }
-
-      .role-badge:hover {
-        transform: translateY(-2px) scale(1.05);
-      }
-
-      
-
-      
-
-      /* =========================
        TABLETTE
     ========================= */
 
       @media (max-width: 950px) {
-        .hero-content {
-          flex-direction: column;
-          text-align: center;
-          gap: 35px;
-        }
-
-        .hero-text {
-          width: 100%;
-        }
-
-        .hero-actions {
-          justify-content: center;
-        }
-
-        .hero-logo-container {
-          width: auto;
-        }
-
-        .hero-logo {
-          width: 220px;
-          height: 220px;
-        }
-
-        .member-status {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: left;
-        }
-
         .team-grid {
           grid-template-columns: 1fr;
-        }
-
-        .icons-grid {
-          grid-template-columns: repeat(2, 1fr);
         }
       }
 
@@ -1921,25 +703,12 @@
     ========================= */
 
       @media (max-width: 750px) {
-        .stats-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .objectives {
-          grid-template-columns: 1fr;
-        }
-
         h2 {
           font-size: 40px;
         }
 
         .contact-block {
           padding: 35px 22px;
-        }
-
-        .footer-inner {
-          flex-direction: column;
-          text-align: center;
         }
 
         .discord-box {
@@ -1975,77 +744,15 @@
           width: 32px;
           height: 32px;
         }
-
-        .member-status {
-          width: min(390px, 100%);
-        }
-
-        .member-count {
-          font-size: 18px;
-        }
-
-        .member-count strong {
-          font-size: 23px;
-        }
       }
-
-      /* =========================
-       PETIT MOBILE
-    ========================= */
 
       @media (max-width: 500px) {
         h1 {
           font-size: 48px;
         }
 
-        .hero-logo {
-          width: 160px;
-          height: 160px;
-        }
-
-        .icons-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .timeline::before {
-          left: 10px;
-        }
-
-        .tl-item {
-          margin-left: 35px;
-        }
-
-        .tl-dot {
-          left: -36px;
-        }
-
         .faq-container {
           width: 94%;
-        }
-
-        .member-status {
-          padding: 13px 14px;
-        }
-
-        .member-status-top {
-          gap: 8px;
-        }
-
-        .member-label {
-          font-size: 10px;
-          letter-spacing: 0.8px;
-        }
-
-        .member-count {
-          font-size: 16px;
-        }
-
-        .member-count strong {
-          font-size: 21px;
-        }
-
-        .member-bottom {
-          font-size: 11px;
         }
       }
 
@@ -2198,7 +905,6 @@
 
       /* =========================
        HEADER STYLE SOLARY
-       (placé en dernier pour l'emporter sur le reste)
     ========================= */
 
       html {
@@ -2212,18 +918,17 @@
         right: 0;
         z-index: 1000;
         padding: 0;
-        background: #0d0d0d;
+        background: var(--page-bg);
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
       }
 
-      /* Bandeau d'annonce */
       .topbar {
         height: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0 10px;
-        background: #000;
+        background: var(--page-bg);
         color: #fff;
         font-size: 11px;
         font-weight: 700;
@@ -2232,7 +937,6 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
 
-      /* Barre principale */
       header > .nav {
         position: relative;
         width: 100%;
@@ -2282,7 +986,6 @@
         color: #8fa8ff;
       }
 
-      /* Lien actif : trait tricolore */
       header nav > a::after {
         content: "";
         position: absolute;
@@ -2291,12 +994,7 @@
         width: 0;
         height: 3px;
         border-radius: 3px;
-        background: linear-gradient(
-          90deg,
-          #002395 33%,
-          #fff 33% 66%,
-          #ed2939 66%
-        );
+        background: linear-gradient(90deg, #002395 33%, #fff 33% 66%, #ed2939 66%);
         transition: width 0.25s ease;
       }
 
@@ -2305,7 +1003,6 @@
         width: 100%;
       }
 
-      /* Boutons à droite */
       header .auth-actions {
         margin-left: auto;
       }
@@ -2314,15 +1011,6 @@
         border-radius: 8px;
         padding: 10px 16px;
         font-size: 13px;
-      }
-
-      /* Le hero commence sous le header */
-      .hero {
-        padding-top: 100px;
-      }
-
-      .hero-video-wrap {
-        height: calc(100dvh - 100px);
       }
 
       /* ---------- MENUS DÉROULANTS ---------- */
@@ -2360,12 +1048,7 @@
         width: 0;
         height: 3px;
         border-radius: 3px;
-        background: linear-gradient(
-          90deg,
-          #002395 33%,
-          #fff 33% 66%,
-          #ed2939 66%
-        );
+        background: linear-gradient(90deg, #002395 33%, #fff 33% 66%, #ed2939 66%);
         transition: width 0.25s ease;
       }
 
@@ -2401,13 +1084,9 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(8px);
-        transition:
-          opacity 0.2s ease,
-          transform 0.2s ease,
-          visibility 0.2s ease;
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
       }
 
-      /* pont invisible pour ne pas perdre le survol */
       .dropdown::before {
         content: "";
         position: absolute;
@@ -2504,16 +1183,13 @@
           align-items: stretch;
           gap: 2px;
           padding: 10px 14px 16px;
-          background: #0d0d0d;
+          background: var(--page-bg);
           border-bottom: 1px solid rgba(255, 255, 255, 0.1);
           opacity: 0;
           visibility: hidden;
           pointer-events: none;
           transform: translateY(-8px);
-          transition:
-            opacity 0.25s ease,
-            visibility 0.25s ease,
-            transform 0.25s ease;
+          transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
         }
 
         header nav.open {
@@ -2588,23 +1264,15 @@
         .dropdown a {
           padding: 11px 10px;
         }
-
-        .hero {
-          padding-top: 84px;
-        }
-
-        .hero-video-wrap {
-          height: calc(100dvh - 84px);
-        }
       }
-    
+
       /* =========================
        ACTUALITÉS STYLE SOLARY
     ========================= */
 
       .actu-section {
         padding: 70px 0 80px;
-        background: #0f0f13;
+        background: var(--page-bg);
       }
 
       .actu-wrap {
@@ -2612,11 +1280,16 @@
         margin: 0 auto;
       }
 
+      .actu-heading {
+        max-width: 820px;
+        margin: 0 auto 42px;
+        text-align: center;
+      }
+
       .actu-title {
-        margin-bottom: 42px;
+        margin-bottom: 0;
         text-align: center;
         font-family: "Baloo 2", sans-serif;
-        font-size: clamp(48px, 6.5vw, 88px);
         font-weight: 800;
         line-height: 1;
         letter-spacing: -2px;
@@ -2627,13 +1300,20 @@
         color: #e0e1e6;
       }
 
+      .actu-description {
+        max-width: 780px;
+        margin: 14px auto 0;
+        color: #d0d0d0;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
       .actu-layout {
         display: grid;
         grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.92fr);
         gap: 32px;
       }
-
-      /* ----- cartes d'articles ----- */
 
       .actu-card {
         display: block;
@@ -2765,12 +1445,7 @@
         right: 12px;
         bottom: 0;
         height: 3px;
-        background: linear-gradient(
-          90deg,
-          #002395 33%,
-          #fff 33% 66%,
-          #ed2939 66%
-        );
+        background: linear-gradient(90deg, #002395 33%, #fff 33% 66%, #ed2939 66%);
       }
 
       .cal-list {
@@ -2850,30 +1525,6 @@
         font-weight: 600;
       }
 
-      /* ----- boutons du bas ----- */
-
-      .actu-buttons {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 32px;
-        margin-top: 34px;
-      }
-
-      .actu-btn {
-        padding: 16px 24px;
-        background: #232328;
-        font-size: 15px;
-        font-weight: 800;
-        letter-spacing: -0.3px;
-        transition: background 0.25s ease, transform 0.25s ease;
-      }
-
-      .actu-btn:hover {
-        background: #2f3550;
-        transform: translateY(-2px);
-      }
-
       @media (max-width: 1100px) {
         .actu-layout {
           grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2901,12 +1552,13 @@
           grid-template-columns: 100px 1fr 44px;
           padding: 16px 14px;
         }
+      }
 
-        .actu-buttons {
-          gap: 14px;
+      @media (max-width: 600px) {
+        .actu-heading {
+          margin-bottom: 30px;
         }
       }
-    
 
       /* =========================
          PRÉSENTATION ÉDITORIALE DU CLAN
@@ -2914,7 +1566,7 @@
       .clan-story {
         padding: clamp(62px, 8vw, 112px) 0;
         color: #f7f7f7;
-        background: #141414;
+        background: var(--page-bg);
       }
 
       .clan-story .container {
@@ -2962,33 +1614,6 @@
         transform: scale(1.035);
       }
 
-      .story-image-caption {
-        position: absolute;
-        z-index: 1;
-        right: 18px;
-        bottom: 18px;
-        left: 18px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 12px;
-        color: #fff;
-        font-family: "Baloo 2", sans-serif;
-        font-size: 14px;
-      }
-
-      .story-caption-label {
-        padding: 7px 12px;
-        color: #171717;
-        background: #f4f4f4;
-        font-weight: 700;
-      }
-
-      .story-caption-detail {
-        font-weight: 700;
-        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-      }
-
       .story-copy {
         max-width: 650px;
       }
@@ -3007,7 +1632,6 @@
         margin: 0;
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(30px, 3.3vw, 48px);
         font-weight: 800;
         line-height: 1.08;
         letter-spacing: -1.5px;
@@ -3102,16 +1726,7 @@
           aspect-ratio: 1 / 0.88;
         }
 
-        .story-image-caption {
-          right: 12px;
-          bottom: 12px;
-          left: 12px;
-          gap: 8px;
-          font-size: 12px;
-        }
-
         .story-copy h2 {
-          font-size: clamp(29px, 8vw, 40px);
           letter-spacing: -0.8px;
         }
 
@@ -3125,15 +1740,13 @@
         }
       }
 
-    
-
       /* =========================
          LEADERS — CARTES ÉDITORIALES
       ========================= */
       .leaders-section {
         padding: clamp(68px, 8vw, 106px) 0 96px;
         color: #f7f7f7;
-        background: #141414;
+        background: var(--page-bg);
       }
 
       .leaders-section .container {
@@ -3157,7 +1770,6 @@
       .leaders-section .section-heading h2 {
         color: #f6f6f6;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(42px, 6vw, 70px);
         font-weight: 900;
         line-height: 1;
         letter-spacing: -2.5px;
@@ -3250,22 +1862,11 @@
         box-shadow: 0 6px 24px rgba(0, 0, 0, 0.48);
       }
 
-      .leaders-section .avatar img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-
-      .leaders-section .role-badge {
-        margin: 4px 0 8px;
-        padding: 5px 10px;
-        border-width: 1px;
-        border-radius: 3px;
-        font-size: 11px;
-        letter-spacing: 0.7px;
-      }
-
       .leaders-section .player-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
         margin: 0 0 14px;
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
@@ -3295,53 +1896,6 @@
         font-size: 11px;
       }
 
-      @media (max-width: 950px) {
-        .leaders-section .team-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-      }
-
-      @media (max-width: 600px) {
-        .leaders-section {
-          padding: 60px 0 72px;
-        }
-
-        .leaders-section .section-heading {
-          margin-bottom: 34px;
-        }
-
-        .leaders-section .section-heading h2 {
-          font-size: clamp(42px, 12vw, 58px);
-          letter-spacing: -1.5px;
-        }
-
-        .leaders-section .section-description {
-          font-size: 14px;
-        }
-
-        .leaders-section .team-grid {
-          grid-template-columns: 1fr;
-          gap: 16px;
-          width: min(420px, 100%);
-          margin-inline: auto;
-        }
-
-        .leaders-section .team-card {
-          min-height: 410px;
-          padding-inline: 20px;
-        }
-      }
-
-    
-
-      /* Drapeaux de nationalité sur les fiches leaders */
-      .leaders-section .player-name {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 12px;
-      }
-
       .leader-name {
         min-width: 0;
         overflow-wrap: anywhere;
@@ -3367,13 +1921,47 @@
       .leader-country span:nth-child(2) { background: #ffffff; }
       .leader-country span:nth-child(3) { background: #ef4135; }
 
+      @media (max-width: 950px) {
+        .leaders-section .team-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
 
+      @media (max-width: 600px) {
+        .leaders-section {
+          padding: 60px 0 72px;
+        }
+
+        .leaders-section .section-heading {
+          margin-bottom: 34px;
+        }
+
+        .leaders-section .section-heading h2 {
+          letter-spacing: -1.5px;
+        }
+
+        .leaders-section .section-description {
+          font-size: 14px;
+        }
+
+        .leaders-section .team-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+          width: min(420px, 100%);
+          margin-inline: auto;
+        }
+
+        .leaders-section .team-card {
+          min-height: 410px;
+          padding-inline: 20px;
+        }
+      }
 
       /* =========================
          REJOINDRE NOTRE CLAN — STYLE SOLARY
       ========================= */
       #recrutement.solary-recruitment {
-        background: #111111;
+        background: var(--page-bg);
         border-top: 1px solid rgba(255,255,255,.12);
         border-bottom: 1px solid rgba(255,255,255,.08);
         padding: 0 0 74px;
@@ -3385,20 +1973,33 @@
         margin: 0 auto;
       }
 
+      #recrutement .solary-recruitment-intro {
+        max-width: 900px;
+        margin: 0 auto 44px;
+        padding-top: 26px;
+        text-align: center;
+      }
+
       #recrutement .solary-recruitment-title {
         margin: 0;
-        padding: 26px 0 56px;
+        padding: 0;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(2.7rem, 5vw, 4.2rem);
         font-weight: 800;
         letter-spacing: -3px;
         line-height: 1;
       }
 
       #recrutement .solary-word-yellow { color: #e9e8e1; }
-      #recrutement .solary-word-blue { color: #e9e8e1; }
-      #recrutement .solary-word-white { color: #e9e8e1; }
+
+      #recrutement .solary-recruitment-intro-text {
+        max-width: 780px;
+        margin: 14px auto 0;
+        color: #d0d0d0;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
 
       #recrutement .solary-recruitment-main {
         display: grid;
@@ -3418,6 +2019,7 @@
       }
 
       #recrutement .solary-stat { text-align: center; }
+
       #recrutement .solary-stat strong {
         display: block;
         color: #f4f4f4;
@@ -3425,6 +2027,7 @@
         font-size: clamp(1.5rem, 2.2vw, 2rem);
         line-height: 1;
       }
+
       #recrutement .solary-stat span {
         display: block;
         margin-top: 6px;
@@ -3432,19 +2035,6 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: .95rem;
         font-style: italic;
-      }
-
-      #recrutement .solary-recruitment-text {
-        max-width: 640px;
-        color: #f2f2f2;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(1rem, 1.35vw, 1.25rem);
-        line-height: 1.45;
-      }
-
-      #recrutement .solary-recruitment-mail {
-        margin-top: 12px;
-        font-weight: 700;
       }
 
       #recrutement .solary-recruitment-photo-wrap {
@@ -3461,178 +2051,118 @@
         object-position: center;
       }
 
-      #recrutement .solary-recruitment-footer {
-        padding-top: 58px;
+      @media (max-width: 760px) {
+        #recrutement .solary-recruitment-title { letter-spacing: -1.5px; }
+        #recrutement .solary-recruitment-main { grid-template-columns: 1fr; gap: 28px; }
+        #recrutement .solary-recruitment-copy { padding-top: 0; }
+        #recrutement .solary-stats { justify-content: center; margin-bottom: 28px; }
+      }
+
+      @media (max-width: 600px) {
+        #recrutement .solary-recruitment-intro {
+          margin-bottom: 30px;
+          padding-top: 22px;
+        }
+      }
+
+      /* =========================
+         DISCORD — STYLE IDENTIQUE AU RESTE DU SITE
+      ========================= */
+
+      #discord.discord-cta {
+        background: var(--page-bg);
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding: 0 0 74px;
+      }
+
+      #discord .container {
+        width: min(1320px, 90%);
+      }
+
+      #discord .discord-box {
+        max-width: none;
+        width: 100%;
+        margin: 0 auto;
+        padding: 58px 0 0;
+        border-radius: 0;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
         text-align: center;
       }
 
-      #recrutement .solary-recruitment-footer h3 {
+      #discord .discord-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      #discord .discord-icon {
+        display: none;
+      }
+
+      #discord .discord-content h2 {
         margin: 0;
+        color: #f4f4f4;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(2.25rem, 5vw, 4.2rem);
         font-weight: 800;
         letter-spacing: -3px;
         line-height: 1;
       }
 
-      #recrutement .solary-recruitment-footer p {
-        margin-top: 28px;
-        color: #a9a9a9;
+      #discord .discord-content p {
+        max-width: 650px;
+        margin: 18px auto 0;
+        color: #d0d0d0;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      #discord .discord-big-btn {
+        align-self: center;
+        gap: 14px;
+        padding: 15px 22px;
+        border: 1px solid #f4f4f4;
+        border-radius: 0;
+        background: #f4f4f4;
+        color: #111111;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(1rem, 1.8vw, 1.45rem);
+        font-size: 1rem;
         font-weight: 800;
-        letter-spacing: .5px;
+        box-shadow: none;
+        transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+      }
+
+      #discord .discord-big-btn:hover {
+        transform: translateY(-3px);
+        background: transparent;
+        color: #f4f4f4;
+        box-shadow: none;
       }
 
       @media (max-width: 760px) {
-        #recrutement .solary-recruitment-title { padding-bottom: 34px; letter-spacing: -1.5px; }
-        #recrutement .solary-recruitment-main { grid-template-columns: 1fr; gap: 28px; }
-        #recrutement .solary-recruitment-copy { padding-top: 0; }
-        #recrutement .solary-stats { justify-content: center; margin-bottom: 28px; }
-        #recrutement .solary-recruitment-text { max-width: none; }
-        #recrutement .solary-recruitment-footer { padding-top: 42px; }
+        #discord .discord-box {
+          padding-top: 42px;
+        }
+
+        #discord .discord-content h2 {
+          letter-spacing: -1.5px;
+        }
+
+        #discord .discord-big-btn {
+          width: 100%;
+          justify-content: center;
+        }
       }
-
-      /* =========================
-   DISCORD — STYLE IDENTIQUE AU RESTE DU SITE
-========================= */
-
-#discord.discord-cta {
-  background: #111111;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 0 0 74px;
-}
-
-#discord .container {
-  width: min(1320px, 90%);
-}
-
-/* Suppression de l'ancien cadre violet */
-#discord .discord-box {
-  max-width: none;
-  width: 100%;
-  margin: 0 auto;
-  padding: 58px 0 0;
-  border-radius: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-#discord .discord-box:hover {
-  transform: none;
-  border-color: transparent;
-  box-shadow: none;
-}
-
-/* Désactivation de l'ancien halo bleu */
-#discord .discord-box::before {
-  display: none;
-}
-
-#discord .discord-content {
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-#discord .discord-icon {
-  display: none;
-}
-
-/* Même typographie que la section Rejoindre le Clan */
-#discord .eyebrow {
-  margin-bottom: 14px;
-  color: #e9e8e1;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-#discord .discord-content h2 {
-  margin: 0;
-  color: #f4f4f4;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(2.3rem, 5vw, 4.2rem);
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-}
-
-#discord .discord-content p {
-  max-width: 650px;
-  margin-top: 24px;
-  color: #a9a9a9;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(1rem, 1.35vw, 1.25rem);
-  line-height: 1.45;
-}
-
-/* Bouton sobre, cohérent avec le reste du site */
-#discord .discord-big-btn {
-  position: relative;
-  z-index: 1;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  padding: 15px 22px;
-  border: 1px solid #f4f4f4;
-  border-radius: 0;
-  background: #f4f4f4;
-  color: #111111;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  font-weight: 800;
-  box-shadow: none;
-  transition:
-    background 0.25s ease,
-    color 0.25s ease,
-    transform 0.25s ease;
-}
-
-#discord .discord-big-btn:hover {
-  transform: translateY(-3px);
-  background: transparent;
-  color: #f4f4f4;
-  box-shadow: none;
-}
-
-#discord .discord-big-btn span {
-  font-size: 22px;
-}
-
-/* Version mobile */
-@media (max-width: 760px) {
-  #discord .discord-box {
-    padding-top: 42px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-
-  #discord .discord-content h2 {
-    font-size: clamp(2.2rem, 11vw, 3.5rem);
-    letter-spacing: -1.5px;
-  }
-
-  #discord .discord-content p {
-    margin-top: 18px;
-  }
-
-  #discord .discord-big-btn {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
 
       /* Même taille responsive pour les titres des sections */
       .story-copy h2,
@@ -3653,68 +2183,12 @@
         }
       }
 
-
-      /* Surtitres et descriptions des sections */
-      .actu-heading {
-        max-width: 820px;
-        margin: 0 auto 42px;
-        text-align: center;
-      }
-
-      .actu-title {
-        margin-bottom: 0;
-      }
-
-      .actu-description,
-      #recrutement .solary-recruitment-intro-text {
-        max-width: 780px;
-        margin: 14px auto 0;
-        color: #d0d0d0;
-        font-family: "Baloo 2", sans-serif;
-        font-size: 16px;
-        line-height: 1.65;
-      }
-
-      #recrutement .solary-recruitment-intro {
-        max-width: 900px;
-        margin: 0 auto 44px;
-        padding-top: 26px;
-        text-align: center;
-      }
-
-      #recrutement .solary-recruitment-title {
-        padding: 0;
-      }
-
-      #discord .discord-content p {
-        color: #d0d0d0;
-        font-family: "Baloo 2", sans-serif;
-        font-size: 16px;
-        line-height: 1.65;
-      }
-
-      @media (max-width: 600px) {
-        .actu-heading {
-          margin-bottom: 30px;
-        }
-
-        #recrutement .solary-recruitment-intro {
-          margin-bottom: 30px;
-          padding-top: 22px;
-        }
-
-        .actu-description,
-        #recrutement .solary-recruitment-intro-text {
-          font-size: 16px;
-        }
-      }
-
       /* =========================
          FAQ + CONTACT — STYLE ÉDITORIAL
       ========================= */
       #faq.faq-section,
       #contact {
-        background: #111111;
+        background: var(--page-bg);
         border-top: 1px solid rgba(255, 255, 255, 0.12);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         padding: 0 0 74px;
@@ -3731,15 +2205,6 @@
         margin: 0 auto;
         padding-top: 58px;
         text-align: center;
-      }
-
-      #contact .contact-block .eyebrow {
-        margin-bottom: 14px;
-        color: #e9e8e1;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 0.85rem;
-        font-weight: 700;
-        letter-spacing: 2px;
       }
 
       #faq .section-heading .eyebrow {
@@ -3832,7 +2297,6 @@
       }
 
       #contact .contact-block {
-        max-width: 900px;
         padding-right: 0;
         padding-bottom: 0;
         border: 0;
@@ -3939,36 +2403,33 @@
         }
       }
 
+      /* =========================
+         FOOTER — STYLE ÉDITORIAL
+      ========================= */
 
-
-      /* Centrage de la section Discord */
-      #discord .discord-box {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        text-align: center;
+      footer {
+        position: relative;
+        padding: 64px 0 28px;
+        background: var(--page-bg);
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
       }
 
-      #discord .discord-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+      footer::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 4px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
       }
 
-      #discord .discord-content p {
-        margin: 18px auto 0;
-        max-width: 650px;
+      footer .container {
+        width: min(1320px, 90%);
       }
 
-      #discord .discord-big-btn {
-        align-self: center;
-      }
-
-
-
-      /* Nouveau pied de page organisé par catégories */
       .footer-inner { display: block; }
 
       .footer-top {
@@ -3976,49 +2437,81 @@
         grid-template-columns: minmax(180px, 1.25fr) repeat(3, minmax(150px, 1fr));
         gap: 48px;
         align-items: start;
+        padding-bottom: 48px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      .footer-brand img {
+        width: 100px;
       }
 
       .footer-column {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 12px;
       }
 
       .footer-column h3 {
-        margin: 0 0 8px;
-        color: #f4f4f4;
+        margin: 0 0 14px;
+        color: #e9e8e1;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 800;
-        letter-spacing: 0.7px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
       }
 
       .footer-column a {
-        color: #aaa7c4;
-        font-size: 14px;
+        color: #a9a9a9;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
         transition: color 0.2s ease, transform 0.2s ease;
       }
 
       .footer-column a:hover {
         color: #ffffff;
-        transform: translateX(3px);
+        transform: translateX(4px);
       }
 
-      .footer-bottom { margin-top: 58px; }
+      .footer-bottom {
+        margin-top: 28px;
+      }
+
+      .footer-text {
+        color: #77748d;
+        font-family: "Baloo 2", sans-serif;
+        font-size: 13px;
+      }
 
       @media (max-width: 750px) {
+        footer {
+          padding-top: 52px;
+        }
+
         .footer-top {
           grid-template-columns: repeat(2, minmax(0, 1fr));
           gap: 36px 24px;
+          padding-bottom: 36px;
         }
+
         .footer-brand { grid-column: 1 / -1; }
-        .footer-bottom { margin-top: 42px; text-align: center; }
+
+        .footer-bottom {
+          margin-top: 24px;
+          text-align: center;
+        }
       }
 
       @media (max-width: 480px) {
         .footer-top { grid-template-columns: 1fr; }
-        .footer-brand { grid-column: auto; }
+
+        .footer-brand {
+          grid-column: auto;
+          justify-self: center;
+        }
+
         .footer-column {
           align-items: center;
           width: 100%;
@@ -4026,104 +2519,161 @@
         }
       }
 
-/* =========================
-   FOOTER — STYLE ÉDITORIAL
-========================= */
+      /* =========================
+         HERO AFFICHE + BANDEAU DÉFILANT
+      ========================= */
+      .cf-hero {
+        position: relative;
+        padding: calc(100px + clamp(40px, 7vw, 90px)) 0 0; /* 100px = hauteur du header fixe */
+        overflow: hidden;
+        background: var(--page-bg);
+        color: #f1ece1;
+      }
 
-footer {
-  position: relative;
-  padding: 64px 0 28px;
-  background: #111111;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-}
+      .cf-hero-bg {
+        position: absolute;
+        inset: 0;
+        background: url("clash-royale-banniere.jpg") center / cover;
+        filter: grayscale(1) contrast(1.2);
+        opacity: 0.16;
+      }
 
-/* Trait tricolore en haut du footer */
-footer::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 54px;
-  height: 4px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
-}
+      .cf-hero-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent 40%, var(--page-bg));
+      }
 
-footer .container {
-  width: min(1320px, 90%);
-}
+      .cf-hero-inner {
+        position: relative;
+        width: min(1240px, 92%);
+        margin: 0 auto;
+      }
 
-.footer-top {
-  gap: 48px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
+      .cf-hero .cf-title {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(64px, 15vw, 210px);
+        line-height: 0.88;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #f1ece1;
+        text-shadow: none;
+        animation: none;
+      }
 
-.footer-brand img {
-  width: 100px;
-}
+      .cf-title .cf-outline {
+        color: transparent;
+        -webkit-text-stroke: 2px #f1ece1;
+      }
 
-.footer-column h3 {
-  margin: 0 0 14px;
-  color: #e9e8e1;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
+      .cf-title .cf-dot { color: #e63027; }
 
-.footer-column {
-  gap: 12px;
-}
+      .cf-hero-row {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 40px;
+        align-items: end;
+        margin-top: 36px;
+        padding-bottom: 56px;
+      }
 
-.footer-column a {
-  color: #a9a9a9;
-  font-family: "Baloo 2", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
+      .cf-hero-row p {
+        max-width: 520px;
+        font-size: clamp(17px, 1.6vw, 21px);
+        color: #b9b3a6;
+      }
 
-.footer-column a:hover {
-  color: #ffffff;
-  transform: translateX(4px);
-}
+      .cf-hero-row p strong { color: #f1ece1; }
 
-.footer-bottom {
-  margin-top: 28px;
-}
+      .cf-ctas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        justify-content: flex-end;
+      }
 
-.footer-text {
-  color: #77748d;
-  font-family: "Baloo 2", sans-serif;
-  font-size: 13px;
-}
+      .cf-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 14px 22px;
+        border: 2px solid #f1ece1;
+        color: #f1ece1;
+        font-weight: 800;
+        font-size: 14px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        transition: transform 0.12s, box-shadow 0.12s;
+      }
 
-@media (max-width: 750px) {
-  footer {
-    padding-top: 52px;
-  }
+      .cf-btn:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 3px 3px 0 #f1ece1;
+      }
 
-  .footer-top {
-    padding-bottom: 36px;
-  }
+      .cf-btn.cf-solid {
+        background: #f1ece1;
+        color: #0e0f12;
+      }
 
-  .footer-bottom {
-    margin-top: 24px;
-    text-align: center;
-  }
-}
+      .cf-btn.cf-solid:hover { box-shadow: 3px 3px 0 #e63027; }
 
-@media (max-width: 480px) {
-  .footer-brand {
-    justify-self: center;
-  }
-}
+      .cf-crest {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: clamp(90px, 14vw, 190px);
+        transform: rotate(8deg);
+        filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.6));
+      }
+
+      /* bandeau qui défile */
+      .cf-ticker {
+        position: relative;
+        z-index: 2;
+        margin: 0 -20px;
+        overflow: hidden;
+        background: #f2b632;
+        color: #0e0f12;
+        border-block: 2px solid #0e0f12;
+        transform: rotate(-1.2deg);
+      }
+
+      .cf-ticker div {
+        display: flex;
+        gap: 42px;
+        width: max-content;
+        padding: 12px 0;
+        white-space: nowrap;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        animation: cfTick 32s linear infinite;
+      }
+
+      .cf-ticker span::after {
+        content: "✦";
+        margin-left: 42px;
+      }
+
+      @keyframes cfTick {
+        to { transform: translateX(-50%); }
+      }
+
+      @media (max-width: 800px) {
+        .cf-hero-row { grid-template-columns: 1fr; }
+        .cf-ctas { justify-content: flex-start; }
+      }
+
+      @media (max-width: 750px) {
+        .cf-hero { padding-top: calc(84px + 40px); } /* header mobile = 84px */
+      }
+
+      @media (max-width: 640px) {
+        .cf-crest { display: none; }
+      }
     </style>
-<link rel="icon" type="image/png" href="images-Photoroom.png">
-
   </head>
 
   <body>
@@ -4140,7 +2690,6 @@ footer .container {
       <div class="nav">
         <a href="#accueil" class="logo">
           <img src="images-Photoroom.png" alt="Logo Clan Français" />
-
           <span>CLAN FRANCAIS</span>
         </a>
 
@@ -4182,11 +2731,7 @@ footer .container {
           </div>
 
           <div class="auth-actions">
-            <button
-              type="button"
-              class="auth-button auth-button-secondary"
-              id="openLoginButton"
-            >
+            <button type="button" class="auth-button auth-button-secondary" id="openLoginButton">
               Connexion
             </button>
 
@@ -4194,12 +2739,7 @@ footer .container {
               Inscription
             </button>
 
-            <button
-              type="button"
-              class="auth-button"
-              id="logoutButton"
-              style="display: none"
-            >
+            <button type="button" class="auth-button" id="logoutButton" style="display: none">
               Déconnexion
             </button>
           </div>
@@ -4212,46 +2752,35 @@ footer .container {
   ========================= -->
 
     <main id="accueil">
-      <section class="hero">
-        <!-- VIDEO DE FOND (uniquement dans le hero) -->
+      <section class="cf-hero">
+        <div class="cf-hero-bg"></div>
 
-        <div class="hero-video-wrap">
-          <video autoplay muted loop playsinline poster="images-Photoroom.png">
-            <source src="videoplayback (2) (1).mp4" type="video/mp4" />
-          </video>
+        <div class="cf-hero-inner">
+          <img class="cf-crest" src="images-Photoroom.png" alt="Blason du Clan Francais" />
 
-          <div class="hero-video-overlay"></div>
+          <h1 class="cf-title">Clan<br /><span class="cf-outline">Fran</span>cais<span class="cf-dot">.</span></h1>
 
-          <!-- TEXTE AU CENTRE DE LA VIDÉO -->
+          <div class="cf-hero-row">
+            <p>Rejoins le Clan Francais, ici on parle français, mais on accueille tout le monde. <strong>Record : 243<sup>e</sup> au classement national</strong> et on vise plus haut.</p>
 
-          <div class="hero-video-text">
-            <h1>Rejoins le Clan Francais</h1>
-
-            <p>Clan classé dans le top France</p>
-
-            <div class="hero-actions" aria-label="Actions du clan">
-              <a
-                class="hero-action hero-action-primary"
-                href="https://link.clashroyale.com/invite/clan/fr?tag=LJ8GVLQC"
-              >
-                Découvrir notre clan
-              </a>
-
-              <a
-                class="hero-action hero-action-secondary"
-                href="https://discord.gg/Rrt8cs7RJ"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Rejoindre le Discord
-              </a>
+            <div class="cf-ctas">
+              <a class="cf-btn cf-solid" href="https://link.clashroyale.com/invite/clan/fr?tag=LJ8GVLQC">Rejoindre le clan →</a>
+              <a class="cf-btn" href="https://discord.gg/yW4KV3GcN" target="_blank" rel="noopener noreferrer">Discord</a>
             </div>
           </div>
         </div>
-        <!-- =========================
-     STATISTIQUES
-========================= -->
+
+        <div class="cf-ticker" aria-hidden="true">
+          <div>
+            <span>Top France</span><span>Depuis 2021</span><span>Top France</span><span>Depuis 2021</span><span>Top France</span><span>Depuis 2021</span><span>Top France</span><span>Depuis 2021</span>
+            <span>Top France</span><span>Depuis 2021</span><span>Top France</span><span>Depuis 2021</span><span>Top France</span><span>Depuis 2021</span><span>Top France</span><span>Depuis 2021</span>
+          </div>
+        </div>
       </section>
+
+      <!-- =========================
+     ACTUALITÉS
+========================= -->
 
       <section id="statistiques" class="actu-section">
         <div class="actu-wrap">
@@ -4305,7 +2834,6 @@ footer .container {
 
                   <div class="cal-tab-list">
                     <button type="button" class="cal-tab active" data-filter="all" aria-label="Tout">🗓️</button>
-            
                   </div>
 
                   <button type="button" class="cal-arrow" id="calNext" aria-label="Catégorie suivante">›</button>
@@ -4315,51 +2843,49 @@ footer .container {
               </div>
             </aside>
           </div>
+        </div>
+      </section>
 
-          
+      <!-- =========================
+     PRÉSENTATION DU CLAN
+========================= -->
+
+      <section id="decouvrir" class="clan-story">
+        <div class="container">
+          <div class="story-layout">
+            <figure class="story-visual">
+              <div class="story-image-frame">
+                <img
+                  src="clash-royale-banniere.jpg"
+                  alt="Illustration de l’univers Clash Royale et du Clan Français"
+                  loading="lazy"
+                />
+              </div>
+            </figure>
+
+            <div class="story-copy">
+              <div class="story-kicker">Présentation du clan</div>
+              <h2>DÉCOUVRIR LE CLAN</h2>
+              <div class="story-tricolour" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+
+              <p>
+                Le Clan Francais rassemble des joueurs français sérieux, motivés et
+                respectueux, réunis par une même envie : progresser ensemble et faire en sorte que le clan prenne la meilleure place dans le classement national.
+              </p>
+              <p>
+                Chaque semaine, les membres participent aux guerres de clans, partagent leurs decks, donnent des conseils et tout ça, dans un esprit d'entraide et de bonne ambiance
+              </p>
+
+              <a class="story-join" href="#recrutement">
+                <span>Nous rejoindre</span><span class="story-join-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
-<!-- =========================
-     PRÉSENTATION DU CLAN — MISE EN PAGE ÉDITORIALE
-========================= -->
-<section id="decouvrir" class="clan-story">
-  <div class="container">
-    <div class="story-layout">
-      <figure class="story-visual">
-        <div class="story-image-frame">
-          <img
-            src="clash-royale-banniere.jpg"
-            alt="Illustration de l’univers Clash Royale et du Clan Français"
-            loading="lazy"
-          />
-          
-        </div>
-      </figure>
 
-      <div class="story-copy">
-        <div class="story-kicker">Présentation du clan</div>
-        <h2>DÉCOUVRIR LE CLAN</h2>
-        <div class="story-tricolour" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-
-        <p>
-          Le Clan Francais rassemble des joueurs français sérieux, motivés et
-          respectueux, réunis par une même envie : progresser ensemble et faire en sorte que le clan prenne la meilleure place dans le classement national.
-        </p>
-        <p>
-          Chaque semaine, les membres participent aux guerres de clans, partagent leurs decks, donnent des conseils et tout ça, dans un esprit d'entraide et de bonne ambiance
-        </p>
-        
-
-        <a class="story-join" href="#recrutement">
-          <span>Nous rejoindre</span><span class="story-join-arrow" aria-hidden="true">→</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
       <!-- =========================
      ÉQUIPE
 ========================= -->
@@ -4379,7 +2905,6 @@ footer .container {
 
           <div class="team-grid">
             <!-- TOM07 — CHEF -->
-
             <div class="team-card">
               <div class="avatar">
                 <img src="images-Photoroom.png" alt="Tom07" />
@@ -4395,20 +2920,17 @@ footer .container {
               <div class="player-stats">
                 <div class="player-stat">
                   <strong> 8 566 </strong>
-
                   <span> 🏆 Trophées </span>
                 </div>
 
                 <div class="player-stat">
                   <strong> 2 272 </strong>
-
                   <span> ⚔️ Victoires </span>
                 </div>
               </div>
             </div>
 
             <!-- EXANOVA — CHEF ADJOINT -->
-
             <div class="team-card">
               <div class="avatar">
                 <img src="images-Photoroom.png" alt="ExAnoVa" />
@@ -4424,20 +2946,17 @@ footer .container {
               <div class="player-stats">
                 <div class="player-stat">
                   <strong> 11 359 </strong>
-
                   <span> 🏆 Trophées </span>
                 </div>
 
                 <div class="player-stat">
                   <strong> 1 659 </strong>
-
                   <span> ⚔️ Victoires </span>
                 </div>
               </div>
             </div>
 
             <!-- HYPERLOOP-2000 — CHEF ADJOINT -->
-
             <div class="team-card">
               <div class="avatar">
                 <img src="images-Photoroom.png" alt="HyperLoop-2000" />
@@ -4453,13 +2972,11 @@ footer .container {
               <div class="player-stats">
                 <div class="player-stat">
                   <strong> 12 559 </strong>
-
                   <span> 🏆 Trophées </span>
                 </div>
 
                 <div class="player-stat">
                   <strong> 3 551 </strong>
-
                   <span> ⚔️ Victoires </span>
                 </div>
               </div>
@@ -4467,8 +2984,6 @@ footer .container {
           </div>
         </div>
       </section>
-
-     
 
       <!-- =========================
      RECRUTEMENT
@@ -4488,7 +3003,7 @@ footer .container {
 
           <div class="solary-recruitment-main">
             <div class="solary-recruitment-copy">
-              <div class="solary-stats" aria-label="Chiffres clés de Solary">
+              <div class="solary-stats" aria-label="Infos de recrutement">
                 <div class="solary-stat">
                   <strong>Tag</strong>
                   <span>#LJ8GVLQC</span>
@@ -4506,20 +3021,15 @@ footer .container {
                   <span>9000-11000</span>
                 </div>
               </div>
-
-            
             </div>
 
             <div class="solary-recruitment-photo-wrap">
               <img
                 class="solary-recruitment-photo"
                 src="recrutement2.png"
-                alt="L'équipe Solary réunie"
+                alt="Recrutement du Clan Francais"
               />
             </div>
-          </div>
-
-      
           </div>
         </div>
       </section>
@@ -4535,7 +3045,7 @@ footer .container {
               <div class="discord-icon">💬</div>
 
               <div>
-                <div class="eyebrow">Rejoins-nous</div>
+                <div class="story-kicker">Rejoins-nous</div>
 
                 <h2>REJOINS NOTRE DISCORD</h2>
 
@@ -4554,7 +3064,6 @@ footer .container {
               class="discord-big-btn"
             >
               Rejoindre le Discord
-
               <span> → </span>
             </a>
           </div>
@@ -4581,7 +3090,6 @@ footer .container {
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Comment rejoindre Clan Francais ? </span>
-
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
 
@@ -4601,7 +3109,6 @@ footer .container {
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Combien de trophées faut-il avoir ? </span>
-
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
 
@@ -4619,7 +3126,6 @@ footer .container {
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Faut-il participer aux guerres de clans ? </span>
-
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
 
@@ -4637,7 +3143,6 @@ footer .container {
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Le Discord est-il obligatoire ? </span>
-
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
 
@@ -4655,7 +3160,6 @@ footer .container {
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Que se passe-t-il si je suis inactif ? </span>
-
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
 
@@ -4673,7 +3177,6 @@ footer .container {
             <div class="faq-item">
               <button class="faq-question" type="button" aria-expanded="false">
                 <span> Quel est l'objectif du clan ? </span>
-
                 <span class="faq-icon" aria-hidden="true"> + </span>
               </button>
 
@@ -4698,7 +3201,7 @@ footer .container {
       <section id="contact">
         <div class="container">
           <div class="contact-block">
-            <div class="eyebrow">Une question ?</div>
+            <div class="story-kicker">Une question ?</div>
 
             <h2>CONTACTE-NOUS</h2>
 
@@ -4719,39 +3222,15 @@ footer .container {
               </a>
             </div>
 
-            <form
-              id="contactForm"
-              action="https://formspree.io/f/xppzjnrq"
-              method="POST"
-            >
+            <form id="contactForm" action="https://formspree.io/f/xppzjnrq" method="POST">
               <label for="pseudo"> Ton pseudo </label>
-
-              <input
-                id="pseudo"
-                name="pseudo"
-                type="text"
-                placeholder="Ton pseudo"
-                required
-              />
+              <input id="pseudo" name="pseudo" type="text" placeholder="Ton pseudo" required />
 
               <label for="email"> Ton email </label>
-
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Ton email"
-                required
-              />
+              <input id="email" name="email" type="email" placeholder="Ton email" required />
 
               <label for="message"> Ton message </label>
-
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Ton message..."
-                required
-              ></textarea>
+              <textarea id="message" name="message" placeholder="Ton message..." required></textarea>
 
               <button type="submit" class="btn btn-secondary">
                 Envoyer le message
@@ -4761,6 +3240,7 @@ footer .container {
         </div>
       </section>
     </main>
+
     <!-- =========================
        FOOTER
   ========================= -->
@@ -4769,8 +3249,8 @@ footer .container {
       <div class="container footer-inner">
         <div class="footer-top">
           <a href="#accueil" class="footer-brand">
-  <img src="images-Photoroom.png" alt="Logo Clan Français" />
-</a>
+            <img src="images-Photoroom.png" alt="Logo Clan Français" />
+          </a>
 
           <div class="footer-column">
             <h3>LE CLAN</h3>
@@ -4805,44 +3285,19 @@ footer .container {
   ========================= -->
 
     <div class="auth-overlay" id="authOverlay" aria-hidden="true">
-      <div
-        class="auth-modal"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="authTitle"
-      >
-        <button
-          type="button"
-          class="auth-close"
-          id="closeAuthButton"
-          aria-label="Fermer"
-        >
-          ×
-        </button>
+      <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+        <button type="button" class="auth-close" id="closeAuthButton" aria-label="Fermer">×</button>
+
         <div id="loginPanel">
           <h2 id="authTitle">Connexion</h2>
-          <p class="auth-description">
-            Connectez-vous à votre compte Clan Français.
-          </p>
+          <p class="auth-description">Connectez-vous à votre compte Clan Français.</p>
 
           <form id="loginForm">
             <label for="loginEmail">E-mail</label>
-            <input
-              id="loginEmail"
-              type="email"
-              placeholder="Votre adresse e-mail"
-              autocomplete="email"
-              required
-            />
+            <input id="loginEmail" type="email" placeholder="Votre adresse e-mail" autocomplete="email" required />
 
             <label for="loginPassword">Mot de passe</label>
-            <input
-              id="loginPassword"
-              type="password"
-              placeholder="Votre mot de passe"
-              autocomplete="current-password"
-              required
-            />
+            <input id="loginPassword" type="password" placeholder="Votre mot de passe" autocomplete="current-password" required />
 
             <p class="auth-message" id="loginMessage" role="alert"></p>
 
@@ -4861,33 +3316,13 @@ footer .container {
 
           <form id="signupForm">
             <label for="signupPseudo">Pseudo Clash Royale</label>
-            <input
-              id="signupPseudo"
-              type="text"
-              placeholder="Votre pseudo Clash Royale"
-              minlength="2"
-              maxlength="30"
-              required
-            />
+            <input id="signupPseudo" type="text" placeholder="Votre pseudo Clash Royale" minlength="2" maxlength="30" required />
 
             <label for="signupEmail">E-mail</label>
-            <input
-              id="signupEmail"
-              type="email"
-              placeholder="Votre adresse e-mail"
-              autocomplete="email"
-              required
-            />
+            <input id="signupEmail" type="email" placeholder="Votre adresse e-mail" autocomplete="email" required />
 
             <label for="signupPassword">Mot de passe</label>
-            <input
-              id="signupPassword"
-              type="password"
-              placeholder="Au moins 6 caractères"
-              minlength="6"
-              autocomplete="new-password"
-              required
-            />
+            <input id="signupPassword" type="password" placeholder="Au moins 6 caractères" minlength="6" autocomplete="new-password" required />
 
             <p class="auth-message" id="signupMessage" role="alert"></p>
 
@@ -4912,30 +3347,20 @@ footer .container {
     ========================= */
 
       const menuToggle = document.getElementById("menuToggle");
-
       const mobileNav = document.getElementById("mobileNav");
 
       menuToggle.addEventListener("click", () => {
         const isOpen = mobileNav.classList.toggle("open");
-
         menuToggle.setAttribute("aria-expanded", isOpen);
-
-        menuToggle.setAttribute(
-          "aria-label",
-          isOpen ? "Fermer le menu" : "Ouvrir le menu",
-        );
-
+        menuToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
         menuToggle.textContent = isOpen ? "✕" : "☰";
       });
 
       mobileNav.querySelectorAll("a").forEach((link) => {
         link.addEventListener("click", () => {
           mobileNav.classList.remove("open");
-
           menuToggle.setAttribute("aria-expanded", "false");
-
           menuToggle.setAttribute("aria-label", "Ouvrir le menu");
-
           menuToggle.textContent = "☰";
         });
       });
@@ -5004,9 +3429,7 @@ footer .container {
           }
         });
 
-        sectionLinks.forEach(({ a, el }) =>
-          a.classList.toggle("active", el === current),
-        );
+        sectionLinks.forEach(({ a, el }) => a.classList.toggle("active", el === current));
 
         navItems.forEach((item) =>
           item.classList.toggle("active", !!item.querySelector("a.active")),
@@ -5014,7 +3437,6 @@ footer .container {
       }
 
       window.addEventListener("scroll", updateActiveLink);
-
       updateActiveLink();
 
       /* =========================
@@ -5023,7 +3445,6 @@ footer .container {
 
       const calendarEvents = [
         { date: "Aujourd'hui", title: "Aucun évènement", icon: "❌", cat: "guerre" },
-        
       ];
 
       const calTabs = [...document.querySelectorAll(".cal-tab")];
@@ -5044,9 +3465,7 @@ footer .container {
 
         calList.innerHTML = "";
 
-        const items = calendarEvents.filter(
-          (e) => filter === "all" || e.cat === filter,
-        );
+        const items = calendarEvents.filter((e) => filter === "all" || e.cat === filter);
 
         if (!items.length) {
           calList.appendChild(calEl("div", "cal-empty", "Aucun évènement pour le moment."));
@@ -5093,88 +3512,17 @@ footer .container {
       renderCalendar();
 
       /* =========================
-       COMPTEURS
-    ========================= */
-
-      const animatedStats = document.querySelectorAll(".animated-stat");
-
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animatedStats.forEach((stat) => {
-                const target = Number(stat.dataset.target);
-
-                const duration = 1000;
-
-                const startTime = performance.now();
-
-                function updateCounter(currentTime) {
-                  const elapsed = currentTime - startTime;
-
-                  const progress = Math.min(elapsed / duration, 1);
-
-                  const ease = 1 - Math.pow(1 - progress, 3);
-
-                  const value = Math.floor(target * ease);
-
-                  if (target === 1000) {
-                    stat.textContent = value > 0 ? "TOP " + value : "TOP 1000";
-                  } else if (target === 9000) {
-                    stat.textContent = value.toLocaleString("fr-FR") + "+";
-                  } else if (target === 2021) {
-                    stat.textContent = value;
-                  }
-
-                  if (progress < 1) {
-                    requestAnimationFrame(updateCounter);
-                  } else {
-                    if (target === 1000) {
-                      stat.textContent = "TOP 1000";
-                    } else if (target === 9000) {
-                      stat.textContent = "9 000+";
-                    } else if (target === 2021) {
-                      stat.textContent = "2021";
-                    }
-                  }
-                }
-
-                requestAnimationFrame(updateCounter);
-              });
-
-              observer.disconnect();
-            }
-          });
-        },
-        {
-          threshold: 0.2,
-        },
-      );
-
-      const statistiques = document.getElementById("statistiques");
-
-      if (statistiques) {
-        observer.observe(statistiques);
-      }
-
-      /* =========================
        APPARITION AU SCROLL
     ========================= */
 
       const revealElements = document.querySelectorAll(
-        "section, .stat-pill, .team-card, .tl-item, .icon-card, .objective, .contact-block, .faq-item",
+        "section, .team-card, .contact-block, .faq-item",
       );
 
       revealElements.forEach((element, index) => {
         element.classList.add("reveal");
-
-        if (index % 3 === 1) {
-          element.classList.add("reveal-delay-1");
-        }
-
-        if (index % 3 === 2) {
-          element.classList.add("reveal-delay-2");
-        }
+        if (index % 3 === 1) element.classList.add("reveal-delay-1");
+        if (index % 3 === 2) element.classList.add("reveal-delay-2");
       });
 
       const revealObserver = new IntersectionObserver(
@@ -5182,30 +3530,22 @@ footer .container {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               entry.target.classList.add("active");
-
               revealObserver.unobserve(entry.target);
             }
           });
         },
-        {
-          threshold: 0.12,
-        },
+        { threshold: 0.12 },
       );
 
-      revealElements.forEach((element) => {
-        revealObserver.observe(element);
-      });
+      revealElements.forEach((element) => revealObserver.observe(element));
 
       /* =========================
        FAQ ACCORDÉON
     ========================= */
 
-      const faqQuestions = document.querySelectorAll(".faq-question");
-
-      faqQuestions.forEach((question) => {
+      document.querySelectorAll(".faq-question").forEach((question) => {
         question.addEventListener("click", () => {
           const currentItem = question.closest(".faq-item");
-
           const willOpen = !currentItem.classList.contains("faq-open");
 
           currentItem.classList.toggle("faq-open", willOpen);
@@ -5220,51 +3560,29 @@ footer .container {
       const backToTop = document.createElement("button");
 
       backToTop.id = "backToTop";
-
       backToTop.innerHTML = "↑";
-
       backToTop.setAttribute("aria-label", "Retour en haut");
-
       backToTop.style.position = "fixed";
-
       backToTop.style.bottom = "25px";
-
       backToTop.style.right = "25px";
-
       backToTop.style.width = "50px";
-
       backToTop.style.height = "50px";
-
       backToTop.style.borderRadius = "50%";
-
       backToTop.style.border = "1px solid rgba(255,255,255,.2)";
-
       backToTop.style.background = "rgba(20,15,40,.85)";
-
       backToTop.style.color = "white";
-
       backToTop.style.fontSize = "24px";
-
       backToTop.style.cursor = "pointer";
-
       backToTop.style.zIndex = "999";
 
       document.body.appendChild(backToTop);
 
       window.addEventListener("scroll", () => {
-        if (window.scrollY > 500) {
-          backToTop.classList.add("show");
-        } else {
-          backToTop.classList.remove("show");
-        }
+        backToTop.classList.toggle("show", window.scrollY > 500);
       });
 
       backToTop.addEventListener("click", () => {
-        window.scrollTo({
-          top: 0,
-
-          behavior: "smooth",
-        });
+        window.scrollTo({ top: 0, behavior: "smooth" });
       });
 
       /* =========================
@@ -5275,13 +3593,9 @@ footer .container {
         const particle = document.createElement("div");
 
         particle.className = "particle";
-
         particle.style.left = Math.random() * 100 + "vw";
-
         particle.style.animationDuration = 8 + Math.random() * 15 + "s";
-
         particle.style.animationDelay = Math.random() * 10 + "s";
-
         particle.style.opacity = 0.2 + Math.random() * 0.6;
 
         document.body.appendChild(particle);
@@ -5291,37 +3605,23 @@ footer .container {
        EFFET 3D DES CARTES
     ========================= */
 
-      document
-        .querySelectorAll(
-          ".stat-pill, .team-card, .tl-item, .icon-card, .objective, .contact-block",
-        )
-        .forEach((card) => {
-          card.addEventListener("mousemove", (e) => {
-            const rect = card.getBoundingClientRect();
+      document.querySelectorAll(".team-card, .contact-block").forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -3;
+          const rotateY = ((x - centerX) / centerX) * 3;
 
-            const x = e.clientX - rect.left;
-
-            const y = e.clientY - rect.top;
-
-            const centerX = rect.width / 2;
-
-            const centerY = rect.height / 2;
-
-            const rotateX = ((y - centerY) / centerY) * -3;
-
-            const rotateY = ((x - centerX) / centerX) * 3;
-
-            card.style.transform = `perspective(800px)
-             rotateX(${rotateX}deg)
-             rotateY(${rotateY}deg)
-             translateY(-8px)
-             scale(1.02)`;
-          });
-
-          card.addEventListener("mouseleave", () => {
-            card.style.transform = "";
-          });
+          card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
         });
+
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "";
+        });
+      });
 
       /* =========================
        FORMULAIRE FORMSPREE
@@ -5332,29 +3632,21 @@ footer .container {
       if (contactForm) {
         contactForm.addEventListener("submit", () => {
           const button = contactForm.querySelector("button");
-
           button.textContent = "Envoi en cours...";
-
           button.disabled = true;
         });
       }
     </script>
 
     <!-- Bibliothèque Supabase -->
-
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
     <!-- AUTHENTIFICATION SUPABASE -->
-
     <script>
       const SUPABASE_URL = "https://xteveyeqbobwnuiivhkn.supabase.co";
-      const SUPABASE_ANON_KEY =
-        "sb_publishable_4_yLyj0jurLUi-TKXpG9Pg_BAzlkN5W";
+      const SUPABASE_ANON_KEY = "sb_publishable_4_yLyj0jurLUi-TKXpG9Pg_BAzlkN5W";
 
-      const supabaseClient = supabase.createClient(
-        SUPABASE_URL,
-        SUPABASE_ANON_KEY,
-      );
+      const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
       const authOverlay = document.getElementById("authOverlay");
       const loginPanel = document.getElementById("loginPanel");
@@ -5419,25 +3711,16 @@ footer .container {
         signupMessage.textContent = "";
 
         const pseudo = document.getElementById("signupPseudo").value.trim();
-        const email = document
-          .getElementById("signupEmail")
-          .value.trim()
-          .toLowerCase();
+        const email = document.getElementById("signupEmail").value.trim().toLowerCase();
         const password = document.getElementById("signupPassword").value;
 
         if (pseudo.length < 2) {
-          showError(
-            signupMessage,
-            "Le pseudo doit contenir au moins 2 caractères.",
-          );
+          showError(signupMessage, "Le pseudo doit contenir au moins 2 caractères.");
           return;
         }
 
         if (password.length < 6) {
-          showError(
-            signupMessage,
-            "Le mot de passe doit contenir au moins 6 caractères.",
-          );
+          showError(signupMessage, "Le mot de passe doit contenir au moins 6 caractères.");
           return;
         }
 
@@ -5466,10 +3749,7 @@ footer .container {
           ) {
             showError(signupMessage, "Cette adresse e-mail est déjà utilisée.");
           } else {
-            showError(
-              signupMessage,
-              "Inscription impossible. Vérifiez les informations saisies.",
-            );
+            showError(signupMessage, "Inscription impossible. Vérifiez les informations saisies.");
             console.error("Erreur Supabase inscription :", error);
           }
           return;
@@ -5477,11 +3757,7 @@ footer .container {
 
         // Avec la confirmation e-mail activée, Supabase peut masquer
         // l'existence d'un compte en renvoyant un utilisateur sans identité.
-        if (
-          data.user &&
-          Array.isArray(data.user.identities) &&
-          data.user.identities.length === 0
-        ) {
+        if (data.user && Array.isArray(data.user.identities) && data.user.identities.length === 0) {
           showError(signupMessage, "Cette adresse e-mail est déjà utilisée.");
           return;
         }
@@ -5489,19 +3765,13 @@ footer .container {
         signupForm.reset();
 
         if (data.session) {
-          showSuccess(
-            signupMessage,
-            "Inscription réussie. Vous êtes connecté.",
-          );
+          showSuccess(signupMessage, "Inscription réussie. Vous êtes connecté.");
           setTimeout(() => {
             closeAuthModal();
             updateAuthInterface();
           }, 900);
         } else {
-          showSuccess(
-            signupMessage,
-            "Inscription réussie. Consultez votre boîte mail pour confirmer votre adresse.",
-          );
+          showSuccess(signupMessage, "Inscription réussie. Consultez votre boîte mail pour confirmer votre adresse.");
         }
       });
 
@@ -5514,10 +3784,7 @@ footer .container {
 
         setButtonLoading(loginForm, true, "Se connecter");
 
-        const { error } = await supabaseClient.auth.signInWithPassword({
-          email,
-          password,
-        });
+        const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
 
         setButtonLoading(loginForm, false, "Se connecter");
 
@@ -5525,15 +3792,9 @@ footer .container {
           const errorMessage = error.message.toLowerCase();
 
           if (errorMessage.includes("email not confirmed")) {
-            showError(
-              loginMessage,
-              "Vous devez confirmer votre adresse e-mail avant de vous connecter.",
-            );
+            showError(loginMessage, "Vous devez confirmer votre adresse e-mail avant de vous connecter.");
           } else {
-            showError(
-              loginMessage,
-              "L’e-mail ou le mot de passe est incorrect.",
-            );
+            showError(loginMessage, "L’e-mail ou le mot de passe est incorrect.");
           }
           return;
         }
