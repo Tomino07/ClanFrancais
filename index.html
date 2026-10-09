@@ -1741,7 +1741,7 @@
       }
 
       /* =========================
-         LEADERS — CARTES ÉDITORIALES
+         LEADERS — STYLE AFFICHE
       ========================= */
       .leaders-section {
         padding: clamp(68px, 8vw, 106px) 0 96px;
@@ -1800,130 +1800,170 @@
         background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
       }
 
-      .leaders-section .team-grid {
+      .leaders-grid {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-        align-items: stretch;
+        grid-template-columns: 1.25fr 1fr 1fr;
+        gap: 24px;
       }
 
-      .leaders-section .team-card {
-        min-width: 0;
-        min-height: 440px;
-        padding: 0 22px 22px;
+      /* ----- carte ----- */
+      .leader-card {
+        position: relative;
         overflow: hidden;
-        border: 1px solid #303034;
-        border-radius: 4px;
-        background: #171719;
-        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
-        text-align: left;
-        transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: 22px;
+        background: #15161a;
+        border: 2px solid #f1ece1;
+        color: #f1ece1;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
       }
 
-      .leaders-section .team-card::before {
-        z-index: 2;
-        height: 4px;
-        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #e91515 66%);
+      .leader-card:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 6px 6px 0 #e63027;
       }
 
-      .leaders-section .team-card::after {
-        content: "";
+      /* gros numéro en contour derrière */
+      .leader-card::after {
+        content: attr(data-num);
         position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        height: 235px;
+        right: -8px;
+        bottom: -38px;
+        font-family: "Archivo Black", sans-serif;
+        font-size: 190px;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke: 1.5px rgba(241, 236, 225, 0.13);
         pointer-events: none;
-        background:
-          linear-gradient(135deg, transparent 0 17%, rgba(36, 72, 232, 0.76) 17.5% 19%, transparent 19.5% 31%, rgba(36, 72, 232, 0.5) 31.5% 33%, transparent 33.5%),
-          linear-gradient(115deg, transparent 0 55%, rgba(255, 18, 18, 0.68) 55.5% 57%, transparent 57.5% 72%, rgb(238, 22, 22) 72.5% 74%, transparent 74.5%),
-          linear-gradient(180deg, #101014, #19191c);
-        opacity: 0.95;
       }
 
-      .leaders-section .team-card > * {
+      .leader-card > * {
         position: relative;
         z-index: 1;
       }
 
-      .leaders-section .team-card:hover {
-        transform: translateY(-5px);
-        border-color: rgba(255, 223, 36, 0.52);
-        box-shadow: 0 20px 42px rgba(0, 0, 0, 0.4);
-      }
-
-      .leaders-section .avatar {
-        width: 136px;
-        height: 136px;
-        margin: 38px auto 16px;
-        border: 3px solid rgba(255, 255, 255, 0.9);
-        border-radius: 50%;
-        background: #f4f4f4;
-        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.48);
-      }
-
-      .leaders-section .player-name {
+      .leader-top {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        gap: 12px;
-        margin: 0 0 14px;
-        color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(21px, 2.2vw, 27px);
-        font-weight: 800;
-        line-height: 1.15;
-        overflow-wrap: anywhere;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 14px;
+        border-bottom: 1px dashed currentColor;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
       }
 
-      .leaders-section .player-stats {
-        gap: 8px;
+      .leader-fr {
+        display: inline-flex;
+        align-items: center;
+        gap: 2px;
       }
 
-      .leaders-section .player-stat {
-        padding: 10px 11px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 3px;
-        background: rgba(255, 255, 255, 0.045);
+      .leader-fr i {
+        width: 6px;
+        height: 12px;
       }
 
-      .leaders-section .player-stat strong {
-        font-size: 17px;
+      .leader-fr i:nth-child(1) { background: #0055a4; }
+      .leader-fr i:nth-child(2) { background: #ffffff; }
+      .leader-fr i:nth-child(3) { background: #ef4135; margin-right: 6px; }
+
+      .leader-avatar {
+        width: 96px;
+        height: 96px;
+        margin: 28px 0 18px;
+        padding: 10px;
+        background: #f1ece1;
+        border: 2px solid #0e0f12;
+        box-shadow: 5px 5px 0 #e63027;
       }
 
-      .leaders-section .player-stat span {
-        color: #bcbcc3;
-        font-size: 11px;
+      .leader-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       .leader-name {
-        min-width: 0;
+        margin: 0 0 28px;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(26px, 2.5vw, 36px);
+        font-weight: 400;
+        line-height: 1;
+        text-transform: uppercase;
         overflow-wrap: anywhere;
       }
 
-      .leader-country {
-        display: inline-flex;
-        width: 27px;
-        height: 18px;
-        flex: 0 0 27px;
-        overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.28);
-        border-radius: 2px;
-        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.45);
+      .leader-stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: auto;
+        border-top: 2px solid currentColor;
       }
 
-      .leader-country span {
-        width: 33.333%;
-        height: 100%;
+      .leader-stats div {
+        padding-top: 14px;
       }
 
-      .leader-country span:nth-child(1) { background: #0055a4; }
-      .leader-country span:nth-child(2) { background: #ffffff; }
-      .leader-country span:nth-child(3) { background: #ef4135; }
+      .leader-stats div + div {
+        padding-left: 16px;
+        border-left: 1px dashed currentColor;
+      }
 
+      .leader-stats dt {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.65;
+      }
+
+      .leader-stats dd {
+        margin: 4px 0 0;
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(24px, 2.3vw, 32px);
+        line-height: 1;
+      }
+
+      /* ----- le chef ressort en jaune ----- */
+      .leader-card.is-chef {
+        background: #f2b632;
+        border-color: #f2b632;
+        color: #0e0f12;
+      }
+
+      .leader-card.is-chef:hover {
+        box-shadow: 6px 6px 0 #f1ece1;
+      }
+
+      .leader-card.is-chef::after {
+        -webkit-text-stroke-color: rgba(14, 15, 18, 0.16);
+      }
+
+      .leader-card.is-chef .leader-avatar {
+        width: 120px;
+        height: 120px;
+        box-shadow: 5px 5px 0 #0e0f12;
+      }
+
+      .leader-card.is-chef .leader-name {
+        font-size: clamp(32px, 3.4vw, 48px);
+      }
+
+      /* ----- responsive ----- */
       @media (max-width: 950px) {
-        .leaders-section .team-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
+        .leaders-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .leader-card.is-chef {
+          grid-column: 1 / -1;
         }
       }
 
@@ -1943,17 +1983,17 @@
         .leaders-section .section-description {
           font-size: 14px;
         }
+      }
 
-        .leaders-section .team-grid {
+      @media (max-width: 650px) {
+        .leaders-grid {
           grid-template-columns: 1fr;
-          gap: 16px;
-          width: min(420px, 100%);
-          margin-inline: auto;
+          gap: 18px;
         }
 
-        .leaders-section .team-card {
-          min-height: 410px;
-          padding-inline: 20px;
+        .leader-card::after {
+          font-size: 150px;
+          bottom: -30px;
         }
       }
 
@@ -2903,84 +2943,54 @@
             </p>
           </div>
 
-          <div class="team-grid">
+          <div class="leaders-grid">
             <!-- TOM07 — CHEF -->
-            <div class="team-card">
-              <div class="avatar">
+            <article class="leader-card is-chef" data-num="01">
+              <div class="leader-top">
+                <span>01 — Chef</span>
+                <span class="leader-fr"><i></i><i></i><i></i>FR</span>
+              </div>
+              <div class="leader-avatar">
                 <img src="images-Photoroom.png" alt="Tom07" />
               </div>
-
-              <div class="player-name">
-                <span class="leader-name">Tom07</span>
-                <span class="leader-country" role="img" aria-label="Nationalité française" title="Français">
-                  <span></span><span></span><span></span>
-                </span>
-              </div>
-
-              <div class="player-stats">
-                <div class="player-stat">
-                  <strong> 8 566 </strong>
-                  <span> 🏆 Trophées </span>
-                </div>
-
-                <div class="player-stat">
-                  <strong> 2 272 </strong>
-                  <span> ⚔️ Victoires </span>
-                </div>
-              </div>
-            </div>
+              <h3 class="leader-name">Tom07</h3>
+              <dl class="leader-stats">
+                <div><dt>Trophées</dt><dd>8 566</dd></div>
+                <div><dt>Victoires</dt><dd>2 272</dd></div>
+              </dl>
+            </article>
 
             <!-- EXANOVA — CHEF ADJOINT -->
-            <div class="team-card">
-              <div class="avatar">
+            <article class="leader-card" data-num="02">
+              <div class="leader-top">
+                <span>02 — Chef adjoint</span>
+                <span class="leader-fr"><i></i><i></i><i></i>FR</span>
+              </div>
+              <div class="leader-avatar">
                 <img src="images-Photoroom.png" alt="ExAnoVa" />
               </div>
-
-              <div class="player-name">
-                <span class="leader-name">ExAnoVa</span>
-                <span class="leader-country" role="img" aria-label="Nationalité française" title="Français">
-                  <span></span><span></span><span></span>
-                </span>
-              </div>
-
-              <div class="player-stats">
-                <div class="player-stat">
-                  <strong> 11 359 </strong>
-                  <span> 🏆 Trophées </span>
-                </div>
-
-                <div class="player-stat">
-                  <strong> 1 659 </strong>
-                  <span> ⚔️ Victoires </span>
-                </div>
-              </div>
-            </div>
+              <h3 class="leader-name">ExAnoVa</h3>
+              <dl class="leader-stats">
+                <div><dt>Trophées</dt><dd>11 359</dd></div>
+                <div><dt>Victoires</dt><dd>1 659</dd></div>
+              </dl>
+            </article>
 
             <!-- HYPERLOOP-2000 — CHEF ADJOINT -->
-            <div class="team-card">
-              <div class="avatar">
+            <article class="leader-card" data-num="03">
+              <div class="leader-top">
+                <span>03 — Chef adjoint</span>
+                <span class="leader-fr"><i></i><i></i><i></i>FR</span>
+              </div>
+              <div class="leader-avatar">
                 <img src="images-Photoroom.png" alt="HyperLoop-2000" />
               </div>
-
-              <div class="player-name">
-                <span class="leader-name">HyperLoop-2000</span>
-                <span class="leader-country" role="img" aria-label="Nationalité française" title="Français">
-                  <span></span><span></span><span></span>
-                </span>
-              </div>
-
-              <div class="player-stats">
-                <div class="player-stat">
-                  <strong> 12 559 </strong>
-                  <span> 🏆 Trophées </span>
-                </div>
-
-                <div class="player-stat">
-                  <strong> 3 551 </strong>
-                  <span> ⚔️ Victoires </span>
-                </div>
-              </div>
-            </div>
+              <h3 class="leader-name">HyperLoop-2000</h3>
+              <dl class="leader-stats">
+                <div><dt>Trophées</dt><dd>12 559</dd></div>
+                <div><dt>Victoires</dt><dd>3 551</dd></div>
+              </dl>
+            </article>
           </div>
         </div>
       </section>
