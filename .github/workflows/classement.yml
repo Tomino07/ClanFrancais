@@ -1,0 +1,39 @@
+name: Mise à jour du classement
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # toutes les 30 min
+  workflow_dispatch:          # bouton pour lancer à la main
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Récupérer les données
+        env:
+          CR_TOKEN: ${{ secrets.CR_TOKEN }}
+        run: |
+          API="https://proxy.royaleapi.dev/v1"
+          AUTH="Authorization: Bearer $CR_TOKEN"
+          mkdir -p data
+          curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC" > clan.json
+          curl -sf -H "$AUTH" "$API/locations/57000087/rankings/clans?limit=1000" > rank.json
+          jq -n --slurpfile c clan.json --slurpfile r rank.json '
+            ($r[0].items | map(select(.tag == "#LJ8GVLQC")) | first) as $me |
+            {
+              majAt: (now | todate),
+              rang: ($me.rank // null),
+              rangPrecedent: ($me.previousRank // null),
+              score: $c[0].clanScore,
+              tropheesGuerre: $c[0].clanWarTrophies,
+              membres: $c[0].members,
+              joueurs: [$c[0].memberList[] | {nom: .name, role, trophees: .trophies, dons: .donations}]
+            }' > data/clan.json
+          rm clan.json rank.json
+      - name: Enregistrer
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data/clan.json
+          git diff --cached --quiet || (git commit -m "Mise à jour du classement" && git push)
