@@ -2843,35 +2843,329 @@
             </p>
           </div>
 
-          <div id="classement">
-  <strong id="rang">Chargement…</strong>
-  <span id="evolution"></span>
-  <p><span id="score"></span> trophées · <span id="membres"></span>/50 membres</p>
-  <small id="maj"></small>
-</div>
+                    <!-- Classement en direct (données : data/clan.json, mises à jour par GitHub Actions) -->
+          <style>
+            .clan-live {
+              margin: 0 0 32px;
+              background: #141418;
+              border: 1px solid rgba(255, 255, 255, 0.18);
+              position: relative;
+            }
 
-<script>
-fetch('/data/clan.json?' + Date.now())
-  .then(r => r.json())
-  .then(d => {
-    document.getElementById('rang').textContent =
-      d.rang ? d.rang + 'e au classement national' : 'Hors top 1000 France';
+            /* liseré tricolore en haut */
+            .clan-live::before {
+              content: "";
+              position: absolute;
+              top: -1px;
+              left: -1px;
+              right: -1px;
+              height: 4px;
+              background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+            }
 
-    if (d.rang && d.rangPrecedent > 0) {
-      const diff = d.rangPrecedent - d.rang;
-      document.getElementById('evolution').textContent =
-        diff > 0 ? '▲ +' + diff : diff < 0 ? '▼ ' + diff : '=';
-    }
+            .clan-live-head {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 12px;
+              padding: 18px 24px 0;
+              color: #b9b3a6;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.16em;
+              text-transform: uppercase;
+            }
 
-    document.getElementById('score').textContent = d.score.toLocaleString('fr-FR');
-    document.getElementById('membres').textContent = d.membres;
-    document.getElementById('maj').textContent =
-      'Mis à jour le ' + new Date(d.majAt).toLocaleString('fr-FR');
-  })
-  .catch(() => {
-    document.getElementById('rang').textContent = 'Classement indisponible';
-  });
-</script>
+            .clan-live-badge {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              color: #f1ece1;
+            }
+
+            .clan-live-dot {
+              width: 8px;
+              height: 8px;
+              background: #e63027;
+              animation: clan-live-pulse 1.6s ease-in-out infinite;
+            }
+
+            @keyframes clan-live-pulse {
+              50% { opacity: 0.25; }
+            }
+
+            .clan-live-maj {
+              font-size: 11px;
+              letter-spacing: 0.1em;
+              text-transform: none;
+              color: #8f8a80;
+            }
+
+            .clan-live-stats {
+              display: grid;
+              grid-template-columns: repeat(4, minmax(0, 1fr));
+              padding: 22px 0 26px;
+            }
+
+            .clan-live-stats > div {
+              padding: 6px 20px;
+              text-align: center;
+              color: #f1ece1;
+            }
+
+            .clan-live-stats > div + div {
+              border-left: 1px solid rgba(241, 236, 225, 0.18);
+            }
+
+            .clan-live-stats strong {
+              display: block;
+              font-family: "Archivo Black", sans-serif;
+              font-size: clamp(26px, 3vw, 40px);
+              font-weight: 400;
+              line-height: 1;
+            }
+
+            .clan-live-stats sup {
+              font-size: 0.45em;
+              vertical-align: top;
+              margin-left: 2px;
+            }
+
+            .clan-live-stats span {
+              display: block;
+              margin-top: 8px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+            }
+
+            .clan-live-evo {
+              display: inline-block;
+              font-style: normal;
+              margin-top: 8px;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 12px;
+              font-weight: 700;
+              color: #8f8a80;
+            }
+
+            .clan-live-evo.up { color: #3ddc84; }
+            .clan-live-evo.down { color: #ff5a4f; }
+
+
+            /* ===== Classement des membres ===== */
+            .clan-members {
+              border-top: 1px solid rgba(241, 236, 225, 0.18);
+              padding: 22px 24px 26px;
+            }
+
+            .clan-members-title {
+              margin: 0 0 14px;
+              color: #f1ece1;
+              font-family: "Archivo Black", sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+
+            .clan-members table {
+              width: 100%;
+              border-collapse: collapse;
+              color: #f1ece1;
+              font-family: "Baloo 2", sans-serif;
+              font-size: 15px;
+            }
+
+            .clan-members th {
+              padding: 0 10px 10px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.14em;
+              text-align: left;
+              text-transform: uppercase;
+              border-bottom: 1px solid rgba(241, 236, 225, 0.18);
+            }
+
+            .clan-members td {
+              padding: 9px 10px;
+              border-bottom: 1px solid rgba(241, 236, 225, 0.07);
+            }
+
+            .clan-members tr:hover td { background: rgba(255, 255, 255, 0.03); }
+
+            .clan-members .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+            .clan-members .pos {
+              width: 44px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 13px;
+              font-weight: 700;
+            }
+
+            .clan-members tbody tr:nth-child(1) .pos { color: #ffd700; }
+            .clan-members tbody tr:nth-child(2) .pos { color: #d7d7e0; }
+            .clan-members tbody tr:nth-child(3) .pos { color: #e09a5a; }
+
+            .clan-members .nom { font-weight: 700; overflow-wrap: anywhere; }
+
+            .clan-members .role {
+              color: #b9b3a6;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+            }
+
+            .clan-members .role.chef { color: #e63027; }
+            .clan-members .role.adjoint { color: #5d82ff; }
+
+            .clan-members-more {
+              display: block;
+              margin: 18px auto 0;
+              padding: 10px 22px;
+              background: transparent;
+              border: 1px solid rgba(241, 236, 225, 0.35);
+              color: #f1ece1;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              cursor: pointer;
+            }
+
+            .clan-members-more:hover { border-color: #5d82ff; }
+
+            @media (max-width: 700px) {
+              .clan-members { padding: 18px 12px 22px; }
+              .clan-members table { font-size: 14px; }
+              .clan-members th, .clan-members td { padding-left: 6px; padding-right: 6px; }
+              .clan-members .col-role { display: none; }
+              .clan-live-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+              .clan-live-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 22px; }
+              .clan-live-stats > div:nth-child(3) { border-left: 0; }
+            }
+          </style>
+
+          <div class="clan-live" id="classement">
+            <div class="clan-live-head">
+              <div class="clan-live-badge"><span class="clan-live-dot"></span>Classement en direct</div>
+              <div class="clan-live-maj" id="maj">Chargement…</div>
+            </div>
+            <div class="clan-live-stats">
+              <div>
+                <strong id="rang">—</strong>
+                <span>Rang national</span>
+                <em class="clan-live-evo" id="evolution"></em>
+              </div>
+              <div>
+                <strong id="score">—</strong>
+                <span>Trophées du clan</span>
+              </div>
+              <div>
+                <strong id="guerre">—</strong>
+                <span>Trophées de guerre</span>
+              </div>
+              <div>
+                <strong id="membres">—</strong>
+                <span>Membres</span>
+              </div>
+            </div>
+
+            <div class="clan-members">
+              <h3 class="clan-members-title">Classement des membres</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Joueur</th>
+                    <th class="col-role">Rôle</th>
+                    <th class="num">Trophées</th>
+                    <th class="num">Dons</th>
+                  </tr>
+                </thead>
+                <tbody id="liste-membres"></tbody>
+              </table>
+              <button class="clan-members-more" id="voir-membres" hidden></button>
+            </div>
+          </div>
+
+          <script>
+            fetch('/data/clan.json?' + Date.now())
+              .then(r => r.json())
+              .then(d => {
+                const fr = n => n.toLocaleString('fr-FR');
+
+                document.getElementById('rang').innerHTML =
+                  d.rang ? d.rang + '<sup>e</sup>' : 'Hors top';
+
+                const evo = document.getElementById('evolution');
+                if (d.rang && d.rangPrecedent > 0) {
+                  const diff = d.rangPrecedent - d.rang;
+                  evo.textContent = diff > 0 ? '▲ ' + diff + ' places' : diff < 0 ? '▼ ' + -diff + ' places' : '= stable';
+                  evo.className = 'clan-live-evo' + (diff > 0 ? ' up' : diff < 0 ? ' down' : '');
+                }
+
+                document.getElementById('score').textContent = fr(d.score);
+                document.getElementById('guerre').textContent = fr(d.tropheesGuerre);
+                document.getElementById('membres').textContent = d.membres + '/50';
+
+                // Classement des membres
+                const roles = {
+                  leader: ['Chef', 'chef'],
+                  coLeader: ['Chef adjoint', 'adjoint'],
+                  elder: ['Aîné', ''],
+                  member: ['Membre', '']
+                };
+                const esc = t => t.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+                const joueurs = [...d.joueurs].sort((a, b) => b.trophees - a.trophees);
+                const tbody = document.getElementById('liste-membres');
+                const bouton = document.getElementById('voir-membres');
+
+                const afficher = nb => {
+                  tbody.innerHTML = joueurs.slice(0, nb).map((j, i) => {
+                    const [role, cls] = roles[j.role] || [j.role, ''];
+                    return '<tr>' +
+                      '<td class="pos">' + (i + 1) + '</td>' +
+                      '<td class="nom">' + esc(j.nom) + '</td>' +
+                      '<td class="role col-role ' + cls + '">' + role + '</td>' +
+                      '<td class="num">' + fr(j.trophees) + '</td>' +
+                      '<td class="num">' + fr(j.dons) + '</td>' +
+                    '</tr>';
+                  }).join('');
+                };
+
+                afficher(10);
+                if (joueurs.length > 10) {
+                  let ouvert = false;
+                  bouton.hidden = false;
+                  bouton.textContent = 'Voir les ' + joueurs.length + ' membres';
+                  bouton.onclick = () => {
+                    ouvert = !ouvert;
+                    afficher(ouvert ? joueurs.length : 10);
+                    bouton.textContent = ouvert ? 'Réduire' : 'Voir les ' + joueurs.length + ' membres';
+                  };
+                }
+
+                const min = Math.round((Date.now() - new Date(d.majAt)) / 60000);
+                document.getElementById('maj').textContent =
+                  min < 1 ? 'Mis à jour à l’instant'
+                  : min < 60 ? 'Mis à jour il y a ' + min + ' min'
+                  : 'Mis à jour le ' + new Date(d.majAt).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
+              })
+              .catch(() => {
+                document.getElementById('maj').textContent = 'Classement indisponible';
+              });
+          </script>
+
 
           <div class="actu-layout">
             <a class="actu-card">
