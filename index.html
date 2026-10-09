@@ -2843,6 +2843,36 @@
             </p>
           </div>
 
+          <div id="classement">
+  <strong id="rang">Chargement…</strong>
+  <span id="evolution"></span>
+  <p><span id="score"></span> trophées · <span id="membres"></span>/50 membres</p>
+  <small id="maj"></small>
+</div>
+
+<script>
+fetch('/data/clan.json?' + Date.now())
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('rang').textContent =
+      d.rang ? d.rang + 'e au classement national' : 'Hors top 1000 France';
+
+    if (d.rang && d.rangPrecedent > 0) {
+      const diff = d.rangPrecedent - d.rang;
+      document.getElementById('evolution').textContent =
+        diff > 0 ? '▲ +' + diff : diff < 0 ? '▼ ' + diff : '=';
+    }
+
+    document.getElementById('score').textContent = d.score.toLocaleString('fr-FR');
+    document.getElementById('membres').textContent = d.membres;
+    document.getElementById('maj').textContent =
+      'Mis à jour le ' + new Date(d.majAt).toLocaleString('fr-FR');
+  })
+  .catch(() => {
+    document.getElementById('rang').textContent = 'Classement indisponible';
+  });
+</script>
+
           <div class="actu-layout">
             <a class="actu-card">
               <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
