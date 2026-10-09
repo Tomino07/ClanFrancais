@@ -1800,170 +1800,180 @@
         background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
       }
 
+      /* ----- joueurs sans cadre, façon line-up ----- */
       .leaders-grid {
         display: grid;
-        grid-template-columns: 1.25fr 1fr 1fr;
-        gap: 24px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        border-top: 1px solid rgba(241, 236, 225, 0.18);
+        border-bottom: 1px solid rgba(241, 236, 225, 0.18);
       }
 
-      /* ----- carte ----- */
       .leader-card {
         position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
         min-width: 0;
-        padding: 22px;
-        background: #15161a;
-        border: 2px solid #f1ece1;
+        padding: 44px 24px 40px;
+        text-align: center;
         color: #f1ece1;
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
       }
 
-      .leader-card:hover {
-        transform: translate(-4px, -4px);
-        box-shadow: 6px 6px 0 #e63027;
+      .leader-card + .leader-card {
+        border-left: 1px solid rgba(241, 236, 225, 0.18);
       }
 
-      /* gros numéro en contour derrière */
-      .leader-card::after {
-        content: attr(data-num);
+      .leader-visual {
+        position: relative;
+        display: grid;
+        place-items: center;
+        height: 200px;
+        margin-bottom: 26px;
+      }
+
+      /* numéro géant en contour derrière le joueur */
+      .leader-num {
         position: absolute;
-        right: -8px;
-        bottom: -38px;
+        inset: 0;
+        display: grid;
+        place-items: center;
         font-family: "Archivo Black", sans-serif;
-        font-size: 190px;
+        font-size: 210px;
         line-height: 1;
         color: transparent;
-        -webkit-text-stroke: 1.5px rgba(241, 236, 225, 0.13);
-        pointer-events: none;
+        -webkit-text-stroke: 2px rgba(241, 236, 225, 0.12);
+        transition: -webkit-text-stroke-color 0.25s ease;
+        user-select: none;
       }
 
-      .leader-card > * {
+      .leader-img {
         position: relative;
-        z-index: 1;
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.6));
+        transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
       }
 
-      .leader-top {
+      .leader-card:hover .leader-img {
+        transform: translateY(-10px) rotate(-4deg) scale(1.05);
+      }
+
+      .leader-card:hover .leader-num {
+        -webkit-text-stroke-color: rgba(230, 48, 39, 0.55);
+      }
+
+      .leader-role {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        gap: 10px;
-        padding-bottom: 14px;
-        border-bottom: 1px dashed currentColor;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 10px;
+        color: #b9b3a6;
         font-family: "JetBrains Mono", monospace;
         font-size: 12px;
         font-weight: 700;
-        letter-spacing: 0.12em;
+        letter-spacing: 0.16em;
         text-transform: uppercase;
       }
 
-      .leader-fr {
-        display: inline-flex;
-        align-items: center;
-        gap: 2px;
-      }
-
-      .leader-fr i {
-        width: 6px;
-        height: 12px;
-      }
-
-      .leader-fr i:nth-child(1) { background: #0055a4; }
-      .leader-fr i:nth-child(2) { background: #ffffff; }
-      .leader-fr i:nth-child(3) { background: #ef4135; margin-right: 6px; }
-
-      .leader-avatar {
-        width: 96px;
-        height: 96px;
-        margin: 28px 0 18px;
-        padding: 10px;
-        background: #f1ece1;
-        border: 2px solid #0e0f12;
-        box-shadow: 5px 5px 0 #e63027;
-      }
-
-      .leader-avatar img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+      .leader-role::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #e63027;
       }
 
       .leader-name {
-        margin: 0 0 28px;
+        position: relative;
+        display: inline-block;
+        margin: 0 0 30px;
+        padding-bottom: 14px;
         font-family: "Archivo Black", sans-serif;
-        font-size: clamp(26px, 2.5vw, 36px);
+        font-size: clamp(26px, 2.6vw, 38px);
         font-weight: 400;
         line-height: 1;
         text-transform: uppercase;
         overflow-wrap: anywhere;
       }
 
+      /* trait tricolore qui s'allonge au survol */
+      .leader-name::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 36px;
+        height: 4px;
+        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+      }
+
+      .leader-card:hover .leader-name::after {
+        width: 100%;
+      }
+
       .leader-stats {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: auto;
-        border-top: 2px solid currentColor;
+        display: flex;
+        justify-content: center;
       }
 
       .leader-stats div {
-        padding-top: 14px;
+        padding: 0 22px;
       }
 
       .leader-stats div + div {
-        padding-left: 16px;
-        border-left: 1px dashed currentColor;
+        border-left: 1px solid rgba(241, 236, 225, 0.25);
       }
 
-      .leader-stats dt {
-        font-family: "JetBrains Mono", monospace;
-        font-size: 11px;
-        font-weight: 700;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        opacity: 0.65;
-      }
-
-      .leader-stats dd {
-        margin: 4px 0 0;
+      .leader-stats strong {
+        display: block;
         font-family: "Archivo Black", sans-serif;
-        font-size: clamp(24px, 2.3vw, 32px);
+        font-size: clamp(22px, 2.2vw, 30px);
+        font-weight: 400;
         line-height: 1;
       }
 
-      /* ----- le chef ressort en jaune ----- */
-      .leader-card.is-chef {
-        background: #f2b632;
-        border-color: #f2b632;
-        color: #0e0f12;
+      .leader-stats span {
+        display: block;
+        margin-top: 6px;
+        color: #8f8a80;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
       }
 
-      .leader-card.is-chef:hover {
-        box-shadow: 6px 6px 0 #f1ece1;
+      /* ----- entrée des joueurs un par un ----- */
+      .leaders-section.reveal:not(.active) .leader-card {
+        opacity: 0;
       }
 
-      .leader-card.is-chef::after {
-        -webkit-text-stroke-color: rgba(14, 15, 18, 0.16);
+      .leaders-section.active .leader-card {
+        animation: leaderIn 0.7s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+        animation-delay: calc(var(--i) * 0.12s + 0.15s);
       }
 
-      .leader-card.is-chef .leader-avatar {
-        width: 120px;
-        height: 120px;
-        box-shadow: 5px 5px 0 #0e0f12;
-      }
+      @keyframes leaderIn {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
 
-      .leader-card.is-chef .leader-name {
-        font-size: clamp(32px, 3.4vw, 48px);
+        to {
+          opacity: 1;
+          transform: none;
+        }
       }
 
       /* ----- responsive ----- */
-      @media (max-width: 950px) {
+      @media (max-width: 800px) {
         .leaders-grid {
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
         }
 
-        .leader-card.is-chef {
-          grid-column: 1 / -1;
+        .leader-card + .leader-card {
+          border-left: 0;
+          border-top: 1px solid rgba(241, 236, 225, 0.18);
         }
       }
 
@@ -1983,17 +1993,18 @@
         .leaders-section .section-description {
           font-size: 14px;
         }
-      }
 
-      @media (max-width: 650px) {
-        .leaders-grid {
-          grid-template-columns: 1fr;
-          gap: 18px;
+        .leader-visual {
+          height: 170px;
         }
 
-        .leader-card::after {
-          font-size: 150px;
-          bottom: -30px;
+        .leader-num {
+          font-size: 170px;
+        }
+
+        .leader-img {
+          width: 124px;
+          height: 124px;
         }
       }
 
@@ -2945,51 +2956,45 @@
 
           <div class="leaders-grid">
             <!-- TOM07 — CHEF -->
-            <article class="leader-card is-chef" data-num="01">
-              <div class="leader-top">
-                <span>01 — Chef</span>
-                <span class="leader-fr"><i></i><i></i><i></i>FR</span>
+            <article class="leader-card" style="--i: 0">
+              <div class="leader-visual">
+                <span class="leader-num" aria-hidden="true">01</span>
+                <img class="leader-img" src="images-Photoroom.png" alt="Tom07" />
               </div>
-              <div class="leader-avatar">
-                <img src="images-Photoroom.png" alt="Tom07" />
-              </div>
+              <p class="leader-role">Chef</p>
               <h3 class="leader-name">Tom07</h3>
-              <dl class="leader-stats">
-                <div><dt>Trophées</dt><dd>8 566</dd></div>
-                <div><dt>Victoires</dt><dd>2 272</dd></div>
-              </dl>
+              <div class="leader-stats">
+                <div><strong>8 566</strong><span>Trophées</span></div>
+                <div><strong>2 272</strong><span>Victoires</span></div>
+              </div>
             </article>
 
             <!-- EXANOVA — CHEF ADJOINT -->
-            <article class="leader-card" data-num="02">
-              <div class="leader-top">
-                <span>02 — Chef adjoint</span>
-                <span class="leader-fr"><i></i><i></i><i></i>FR</span>
+            <article class="leader-card" style="--i: 1">
+              <div class="leader-visual">
+                <span class="leader-num" aria-hidden="true">02</span>
+                <img class="leader-img" src="images-Photoroom.png" alt="ExAnoVa" />
               </div>
-              <div class="leader-avatar">
-                <img src="images-Photoroom.png" alt="ExAnoVa" />
-              </div>
+              <p class="leader-role">Chef adjoint</p>
               <h3 class="leader-name">ExAnoVa</h3>
-              <dl class="leader-stats">
-                <div><dt>Trophées</dt><dd>11 359</dd></div>
-                <div><dt>Victoires</dt><dd>1 659</dd></div>
-              </dl>
+              <div class="leader-stats">
+                <div><strong>11 359</strong><span>Trophées</span></div>
+                <div><strong>1 659</strong><span>Victoires</span></div>
+              </div>
             </article>
 
             <!-- HYPERLOOP-2000 — CHEF ADJOINT -->
-            <article class="leader-card" data-num="03">
-              <div class="leader-top">
-                <span>03 — Chef adjoint</span>
-                <span class="leader-fr"><i></i><i></i><i></i>FR</span>
+            <article class="leader-card" style="--i: 2">
+              <div class="leader-visual">
+                <span class="leader-num" aria-hidden="true">03</span>
+                <img class="leader-img" src="images-Photoroom.png" alt="HyperLoop-2000" />
               </div>
-              <div class="leader-avatar">
-                <img src="images-Photoroom.png" alt="HyperLoop-2000" />
-              </div>
+              <p class="leader-role">Chef adjoint</p>
               <h3 class="leader-name">HyperLoop-2000</h3>
-              <dl class="leader-stats">
-                <div><dt>Trophées</dt><dd>12 559</dd></div>
-                <div><dt>Victoires</dt><dd>3 551</dd></div>
-              </dl>
+              <div class="leader-stats">
+                <div><strong>12 559</strong><span>Trophées</span></div>
+                <div><strong>3 551</strong><span>Victoires</span></div>
+              </div>
             </article>
           </div>
         </div>
