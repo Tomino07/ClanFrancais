@@ -1,8 +1,8 @@
 {
-  "majAt": "2026-10-10T15:31:24Z",
-  "rang": 697,
+  "majAt": "2026-10-10T19:46:40Z",
+  "rang": 698,
   "rangPrecedent": 535,
-  "score": 136857,
+  "score": 136863,
   "tropheesGuerre": 1792,
   "membres": 49,
   "joueurs": [
@@ -16,7 +16,19 @@
       "nom": "Swarander",
       "role": "member",
       "trophees": 14000,
-      "dons": 42
+      "dons": 50
+    },
+    {
+      "nom": "axou",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 36
+    },
+    {
+      "nom": "eddy",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 26
     },
     {
       "nom": "sa_chate",
@@ -29,12 +41,6 @@
       "role": "member",
       "trophees": 14000,
       "dons": 130
-    },
-    {
-      "nom": "axou",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 36
     },
     {
       "nom": "Litrode",
@@ -103,12 +109,6 @@
       "dons": 0
     },
     {
-      "nom": "eddy",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0
-    },
-    {
       "nom": "helicoptere",
       "role": "member",
       "trophees": 14000,
@@ -142,7 +142,7 @@
       "nom": "benoit82",
       "role": "member",
       "trophees": 13510,
-      "dons": 85
+      "dons": 93
     },
     {
       "nom": "sky",
@@ -208,13 +208,13 @@
       "nom": "grand-père",
       "role": "member",
       "trophees": 13000,
-      "dons": 355
+      "dons": 395
     },
     {
       "nom": "baboon",
       "role": "member",
       "trophees": 12866,
-      "dons": 172
+      "dons": 198
     },
     {
       "nom": "méchant loup",
@@ -225,7 +225,7 @@
     {
       "nom": "FIRE ALPHA YTB",
       "role": "member",
-      "trophees": 12737,
+      "trophees": 12797,
       "dons": 180
     },
     {
@@ -250,7 +250,7 @@
       "nom": "buzz",
       "role": "member",
       "trophees": 12375,
-      "dons": 478
+      "dons": 518
     },
     {
       "nom": "ExAnoVa",
