@@ -1,11 +1,41 @@
 {
-  "majAt": "2026-10-11T19:55:09Z",
-  "rang": 705,
+  "majAt": "2026-10-11T23:27:17Z",
+  "rang": 529,
   "rangPrecedent": 705,
-  "score": 136872,
+  "score": 137423,
   "tropheesGuerre": 1792,
-  "membres": 49,
+  "membres": 50,
   "joueurs": [
+    {
+      "nom": "The Legend",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 10
+    },
+    {
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 302
+    },
+    {
+      "nom": "axou",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 36
+    },
+    {
+      "nom": "Spank",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 24
+    },
+    {
+      "nom": "Litrode",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 20
+    },
     {
       "nom": "samuel",
       "role": "member",
@@ -31,24 +61,6 @@
       "dons": 140
     },
     {
-      "nom": "axou",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 36
-    },
-    {
-      "nom": "Litrode",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0
-    },
-    {
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 302
-    },
-    {
       "nom": "akkabouz9",
       "role": "member",
       "trophees": 14000,
@@ -59,12 +71,6 @@
       "role": "member",
       "trophees": 14000,
       "dons": 54
-    },
-    {
-      "nom": "Spank",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 24
     },
     {
       "nom": "I love chloéé",
@@ -286,7 +292,7 @@
       "nom": "arthur morgane",
       "role": "member",
       "trophees": 11294,
-      "dons": 228
+      "dons": 248
     },
     {
       "nom": "Juba90",
