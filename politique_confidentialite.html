@@ -1,0 +1,716 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Politique de confidentialité — Clan Francais</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Archivo+Black&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="images-Photoroom.png" />
+
+    <style>
+      :root {
+        --page-bg: #0e0f12;
+        --text: #f1ece1;
+        --muted: #b9b3a6;
+        --dim: #8f8a80;
+        --line: rgba(241, 236, 225, 0.18);
+        --red: #e63027;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 110px;
+      }
+
+      body {
+        font-family: "Baloo 2", sans-serif;
+        color: var(--text);
+        background: var(--page-bg);
+        overflow-x: hidden;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* =========================
+         HEADER (identique au site)
+      ========================= */
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: var(--page-bg);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .topbar {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        font-size: 11px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .nav {
+        min-height: 80px;
+        padding: 0 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 22px;
+        font-weight: 800;
+        color: #fff;
+        white-space: nowrap;
+      }
+
+      .logo img {
+        width: 44px;
+        height: 44px;
+        object-fit: contain;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+        transition: transform 0.25s ease;
+      }
+
+      .logo:hover img {
+        transform: scale(1.08) rotate(-3deg);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border: 2px solid var(--text);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        transition: transform 0.12s, box-shadow 0.12s;
+      }
+
+      .back-link:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 3px 3px 0 var(--text);
+      }
+
+      /* =========================
+         CONTENU
+      ========================= */
+
+      .legal {
+        width: min(920px, 90%);
+        margin: 0 auto;
+        padding: calc(100px + clamp(48px, 7vw, 90px)) 0 90px;
+      }
+
+      .kicker {
+        margin-bottom: 12px;
+        color: #b9b9b9;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .legal h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(40px, 7vw, 84px);
+        font-weight: 400;
+        line-height: 0.95;
+        text-transform: uppercase;
+      }
+
+      .tricolour {
+        display: flex;
+        gap: 7px;
+        margin: 24px 0 18px;
+      }
+
+      .tricolour span {
+        width: 15px;
+        height: 5px;
+        border-radius: 999px;
+      }
+
+      .tricolour span:nth-child(1) { background: #2448e8; }
+      .tricolour span:nth-child(2) { background: #f2f2f2; }
+      .tricolour span:nth-child(3) { background: #ec1010; }
+
+      .updated {
+        color: var(--dim);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .intro {
+        max-width: 720px;
+        margin-top: 22px;
+        color: #d0d0d0;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      .legal-section {
+        display: grid;
+        grid-template-columns: 70px minmax(0, 1fr);
+        gap: 10px 24px;
+        padding: 38px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .legal-num {
+        font-family: "Archivo Black", sans-serif;
+        font-size: 44px;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke: 1.5px rgba(241, 236, 225, 0.3);
+      }
+
+      .legal-section h2 {
+        margin-bottom: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(20px, 2.4vw, 26px);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+      }
+
+      .legal-section p,
+      .legal-section li {
+        color: #cfcac0;
+        font-size: 15.5px;
+        line-height: 1.75;
+      }
+
+      .legal-section p + p,
+      .legal-section p + ul,
+      .legal-section ul + p {
+        margin-top: 12px;
+      }
+
+      .legal-section ul {
+        list-style: none;
+      }
+
+      .legal-section li {
+        position: relative;
+        padding-left: 18px;
+      }
+
+      .legal-section li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.72em;
+        width: 7px;
+        height: 7px;
+        background: var(--red);
+      }
+
+      .legal-section strong {
+        color: #fff;
+      }
+
+      .legal-section a {
+        color: #8fa8ff;
+        border-bottom: 1px solid rgba(143, 168, 255, 0.4);
+        transition: color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .legal-section a:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+
+      /* fiche d'identité */
+      .info-list {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        border-top: 1px solid var(--line);
+      }
+
+      .info-list dt,
+      .info-list dd {
+        padding: 11px 0;
+        border-bottom: 1px solid rgba(241, 236, 225, 0.08);
+      }
+
+      .info-list dt {
+        color: var(--dim);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding-top: 14px;
+      }
+
+      .info-list dd {
+        color: #e9e5dc;
+        font-size: 15.5px;
+        overflow-wrap: anywhere;
+      }
+
+      .disclaimer {
+        margin-top: 16px;
+        padding: 16px 18px;
+        border-left: 4px solid #f2b632;
+        background: rgba(255, 255, 255, 0.03);
+        font-style: italic;
+      }
+
+      /* tableau des cookies */
+      .table-wrap {
+        margin-top: 16px;
+        overflow-x: auto;
+        border-top: 1px solid var(--line);
+      }
+
+      .legal-section table {
+        width: 100%;
+        min-width: 520px;
+        border-collapse: collapse;
+        font-size: 14.5px;
+      }
+
+      .legal-section th {
+        padding: 12px 10px 10px 0;
+        color: var(--dim);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-align: left;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .legal-section td {
+        padding: 12px 10px 12px 0;
+        color: #cfcac0;
+        line-height: 1.5;
+        vertical-align: top;
+        border-bottom: 1px solid rgba(241, 236, 225, 0.08);
+      }
+
+      .legal-section td code {
+        color: #fff;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12.5px;
+        overflow-wrap: anywhere;
+      }
+
+      /* =========================
+         FOOTER
+      ========================= */
+
+      footer {
+        position: relative;
+        padding: 40px 0 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        text-align: center;
+      }
+
+      footer::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 4px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 26px;
+        margin-bottom: 16px;
+      }
+
+      .footer-links a {
+        color: #a9a9a9;
+        font-size: 15px;
+        transition: color 0.2s ease;
+      }
+
+      .footer-links a:hover,
+      .footer-links a[aria-current="page"] {
+        color: #fff;
+      }
+
+      .footer-text {
+        color: #77748d;
+        font-size: 13px;
+      }
+
+      @media (max-width: 750px) {
+        html {
+          scroll-padding-top: 90px;
+        }
+
+        .nav {
+          min-height: 64px;
+          padding: 0 14px;
+        }
+
+        .logo {
+          font-size: 18px;
+        }
+
+        .logo img {
+          width: 36px;
+          height: 36px;
+        }
+
+        .back-link {
+          padding: 8px 12px;
+          font-size: 12px;
+        }
+
+        .legal {
+          padding-top: calc(84px + 40px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .logo span {
+          display: none;
+        }
+
+        .legal-section {
+          grid-template-columns: 1fr;
+          padding: 30px 0;
+        }
+
+        .legal-num {
+          font-size: 34px;
+        }
+
+        .info-list {
+          grid-template-columns: 1fr;
+        }
+
+        .info-list dt {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+
+        .info-list dd {
+          padding-top: 4px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================
+       HEADER
+  ========================= -->
+
+    <header>
+      <div class="topbar">
+        Rejoins le Clan Francais · 9 000 trophées minimum · Discord ouvert à tous 💙🤍❤️
+      </div>
+
+      <div class="nav">
+        <a href="index.html#accueil" class="logo">
+          <img src="images-Photoroom.png" alt="Logo Clan Français" />
+          <span>CLAN FRANCAIS</span>
+        </a>
+
+        <a href="index.html" class="back-link">← Retour au site</a>
+      </div>
+    </header>
+
+    <!-- =========================
+       MENTIONS LÉGALES
+  ========================= -->
+
+    <main class="legal">
+      <div class="kicker">Tes données</div>
+      <h1>Politique de<br />confidentialité</h1>
+
+      <div class="tricolour" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <p class="updated">Dernière mise à jour : 12 octobre 2026</p>
+
+      <p class="intro">
+        Cette page explique quelles données personnelles le site Clan Francais collecte, pourquoi,
+        combien de temps elles sont gardées et comment tu peux exercer tes droits, conformément au
+        Règlement général sur la protection des données (RGPD) et à la loi « Informatique et Libertés ».
+      </p>
+
+      <!-- 01 -->
+      <section class="legal-section" id="responsable">
+        <span class="legal-num" aria-hidden="true">01</span>
+        <div>
+          <h2>Responsable du traitement</h2>
+          <dl class="info-list">
+            <dt>Responsable</dt>
+            <dd>Tom07</dd>
+
+            <dt>Contact</dt>
+            <dd><a href="mailto:tom.marmon07@gmail.com">tom.marmon07@gmail.com</a></dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="legal-section" id="donnees">
+        <span class="legal-num" aria-hidden="true">02</span>
+        <div>
+          <h2>Données collectées</h2>
+          <p>Le site collecte uniquement les données dont il a besoin :</p>
+          <ul>
+            <li><strong>Création de compte :</strong> adresse e-mail, mot de passe (jamais stocké en clair) et pseudo Clash Royale.</li>
+            <li><strong>Connexion avec Discord :</strong> identifiant Discord, pseudo, photo de profil et adresse e-mail liée au compte Discord.</li>
+            <li><strong>Formulaire de contact :</strong> pseudo, adresse e-mail et contenu du message.</li>
+            <li><strong>Classement en direct :</strong> pseudos, rôles, trophées et dons des membres du clan, récupérés automatiquement depuis les données publiques de Clash Royale.</li>
+            <li><strong>Données techniques :</strong> adresse IP et informations de navigation, enregistrées par l’hébergeur et les services tiers lors du chargement des pages.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 03 -->
+      <section class="legal-section" id="finalites">
+        <span class="legal-num" aria-hidden="true">03</span>
+        <div>
+          <h2>Pourquoi ces données ?</h2>
+          <ul>
+            <li><strong>Gérer ton compte</strong> et te permettre de te connecter — base légale : exécution du service que tu demandes.</li>
+            <li><strong>Répondre à tes messages</strong> envoyés via le formulaire — base légale : ton consentement.</li>
+            <li><strong>Afficher le classement du clan</strong> — base légale : intérêt légitime à présenter l’activité du clan, à partir de données déjà publiques dans le jeu.</li>
+            <li><strong>Faire fonctionner et sécuriser le site</strong> — base légale : intérêt légitime.</li>
+          </ul>
+          <p>Tes données ne sont <strong>jamais vendues</strong>, ni utilisées à des fins publicitaires.</p>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="legal-section" id="destinataires">
+        <span class="legal-num" aria-hidden="true">04</span>
+        <div>
+          <h2>Qui y a accès ?</h2>
+          <p>
+            Seuls les responsables du clan ont accès à tes données. Elles sont hébergées ou traitées par
+            les prestataires suivants, uniquement pour faire fonctionner le site :
+          </p>
+          <ul>
+            <li><strong>Supabase</strong> — comptes et authentification.</li>
+            <li><strong>Formspree</strong> — réception des messages du formulaire de contact.</li>
+            <li><strong>Discord</strong> — connexion avec un compte Discord.</li>
+            <li><strong>GitHub (GitHub Pages)</strong> — hébergement du site.</li>
+            <li><strong>Google Fonts</strong> et <strong>jsDelivr</strong> — chargement des polices et des bibliothèques.</li>
+          </ul>
+          <p>
+            Certains de ces prestataires sont situés hors de l’Union européenne, notamment aux
+            États-Unis. Ces transferts sont encadrés par les garanties prévues par le RGPD (clauses
+            contractuelles types de la Commission européenne ou Data Privacy Framework).
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="legal-section" id="conservation">
+        <span class="legal-num" aria-hidden="true">05</span>
+        <div>
+          <h2>Durée de conservation</h2>
+          <ul>
+            <li><strong>Compte :</strong> tant que ton compte existe. Il est supprimé sur simple demande, ou après 3 ans d’inactivité.</li>
+            <li><strong>Messages de contact :</strong> 12 mois maximum après le dernier échange.</li>
+            <li><strong>Classement des membres :</strong> mis à jour automatiquement ; un joueur qui quitte le clan disparaît du classement à la mise à jour suivante.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 06 -->
+      <section class="legal-section" id="cookies">
+        <span class="legal-num" aria-hidden="true">06</span>
+        <div>
+          <h2>Cookies</h2>
+          <p>
+            Le site utilise des cookies et des éléments de stockage local dans ton navigateur. Il
+            n’utilise <strong>aucun cookie publicitaire ni de mesure d’audience</strong>. Voici la liste
+            des éléments présents :
+          </p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nom</th>
+                  <th>Fournisseur</th>
+                  <th>Finalité</th>
+                  <th>Durée</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>sb-xteveyeqbobwnuiivhkn-auth-token</code></td>
+                  <td>Supabase</td>
+                  <td>Garder ta session ouverte quand tu es connecté à ton compte (stockage local, nécessaire).</td>
+                  <td>Jusqu’à la déconnexion</td>
+                </tr>
+                <tr>
+                  <td><code>sb-xteveyeqbobwnuiivhkn-auth-token-code-verifier</code></td>
+                  <td>Supabase</td>
+                  <td>Sécuriser la connexion avec Discord pendant le retour sur le site (stockage local, nécessaire).</td>
+                  <td>Le temps de la connexion</td>
+                </tr>
+                <tr>
+                  <td>Cookies de connexion Discord</td>
+                  <td>Discord</td>
+                  <td>Déposés sur le site de Discord uniquement si tu choisis « Continuer avec Discord ».</td>
+                  <td>Voir la politique de Discord</td>
+                </tr>
+                <tr>
+                  <td>Cookies du formulaire</td>
+                  <td>Formspree</td>
+                  <td>Déposés sur le site de Formspree uniquement lors de l’envoi du formulaire de contact (protection anti-spam).</td>
+                  <td>Voir la politique de Formspree</td>
+                </tr>
+                <!-- Pour ajouter un cookie : copie un bloc <tr>…</tr> ci-dessus et modifie-le -->
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Ces cookies et éléments de stockage sont strictement nécessaires au fonctionnement du site
+            (connexion, formulaire) et ne demandent donc pas de consentement. Tu peux à tout moment les
+            supprimer depuis les réglages de ton navigateur, mais tu seras alors déconnecté.
+          </p>
+          <p>
+            Pour plus d’informations sur les cookies déposés par les services tiers, consulte la
+            <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer">politique de confidentialité de Discord</a>
+            et celle de
+            <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Formspree</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- 07 -->
+      <section class="legal-section" id="droits">
+        <span class="legal-num" aria-hidden="true">07</span>
+        <div>
+          <h2>Tes droits</h2>
+          <p>Tu disposes à tout moment des droits suivants sur tes données :</p>
+          <ul>
+            <li><strong>Accès</strong> — savoir quelles données sont conservées sur toi.</li>
+            <li><strong>Rectification</strong> — corriger des données inexactes.</li>
+            <li><strong>Effacement</strong> — demander la suppression de ton compte et de tes données.</li>
+            <li><strong>Opposition et limitation</strong> — t’opposer à un traitement ou le limiter.</li>
+            <li><strong>Portabilité</strong> — récupérer tes données dans un format lisible.</li>
+            <li><strong>Retrait du consentement</strong> — à tout moment, sans justification.</li>
+          </ul>
+          <p>
+            Pour exercer ces droits, écris à <a href="mailto:tom.marmon07@gmail.com">tom.marmon07@gmail.com</a>. Une réponse te sera apportée dans un délai
+            d’un mois maximum.
+          </p>
+          <p>
+            Si tu estimes que tes droits ne sont pas respectés, tu peux adresser une réclamation à la
+            <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer">CNIL</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- 08 -->
+      <section class="legal-section" id="mineurs">
+        <span class="legal-num" aria-hidden="true">08</span>
+        <div>
+          <h2>Joueurs mineurs</h2>
+          <p>
+            Si tu as moins de 15 ans, tu dois avoir l’accord d’un de tes parents (ou de ton
+            représentant légal) avant de créer un compte ou d’envoyer des informations via le site.
+            Un parent peut à tout moment demander la suppression des données de son enfant.
+          </p>
+        </div>
+      </section>
+
+      <!-- 09 -->
+      <section class="legal-section" id="securite">
+        <span class="legal-num" aria-hidden="true">09</span>
+        <div>
+          <h2>Sécurité</h2>
+          <p>
+            Le site est accessible uniquement en HTTPS. Les mots de passe sont chiffrés par Supabase et
+            ne sont jamais visibles, même par les responsables du clan. Aucune méthode n’étant
+            infaillible, pense à utiliser un mot de passe unique pour ton compte.
+          </p>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section class="legal-section" id="modifications">
+        <span class="legal-num" aria-hidden="true">10</span>
+        <div>
+          <h2>Modifications</h2>
+          <p>
+            Cette politique peut être mise à jour, par exemple lors de l’ajout d’un nouveau service.
+            La date de dernière mise à jour est indiquée en haut de la page.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================= -->
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html" aria-current="page">Politique de confidentialité</a>
+      </div>
+      <div class="footer-text">© 2025 Clan Français — Clash Royale</div>
+    </footer>
+  </body>
+</html>
