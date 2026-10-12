@@ -579,9 +579,19 @@
           <h2>Cookies</h2>
           <p>
             Le site utilise des cookies et des éléments de stockage local dans ton navigateur. Il
-            n’utilise <strong>aucun cookie publicitaire ni de mesure d’audience</strong>. Voici la liste
-            des éléments présents :
+            n’utilise <strong>aucun cookie publicitaire</strong>.
           </p>
+          <p>
+            Lors de ta première visite, un bandeau te permet de <strong>tout accepter</strong>,
+            de <strong>tout refuser</strong> ou de <strong>choisir catégorie par catégorie</strong>
+            (mesure d’audience, contenus externes). Aucun cookie optionnel n’est déposé sans ton
+            accord. Ton choix est gardé 6 mois, puis le bandeau te sera de nouveau proposé. Tu peux
+            changer d’avis à tout moment :
+          </p>
+          <p>
+            <a href="#" data-cookie-settings>Gérer mes préférences cookies</a>
+          </p>
+          <p>Voici les éléments utilisés :</p>
           <div class="table-wrap">
             <table>
               <thead>
@@ -593,6 +603,12 @@
                 </tr>
               </thead>
               <tbody>
+                <tr>
+                  <td><code>cf_cookie_consent</code></td>
+                  <td>Clan Francais</td>
+                  <td>Mémoriser tes choix de cookies (stockage local, nécessaire).</td>
+                  <td>6 mois</td>
+                </tr>
                 <tr>
                   <td><code>sb-xteveyeqbobwnuiivhkn-auth-token</code></td>
                   <td>Supabase</td>
@@ -622,9 +638,10 @@
             </table>
           </div>
           <p>
-            Ces cookies et éléments de stockage sont strictement nécessaires au fonctionnement du site
-            (connexion, formulaire) et ne demandent donc pas de consentement. Tu peux à tout moment les
-            supprimer depuis les réglages de ton navigateur, mais tu seras alors déconnecté.
+            Les éléments marqués « nécessaire » sont indispensables au fonctionnement du site
+            (connexion, formulaire, mémorisation de tes choix) et ne demandent donc pas de consentement.
+            Tu peux à tout moment les supprimer depuis les réglages de ton navigateur, mais tu seras
+            alors déconnecté.
           </p>
           <p>
             Pour plus d’informations sur les cookies déposés par les services tiers, consulte la
@@ -709,8 +726,11 @@
         <a href="index.html#contact">Contact</a>
         <a href="mentions-legales.html">Mentions légales</a>
         <a href="politique-confidentialite.html" aria-current="page">Politique de confidentialité</a>
+        <a href="#" data-cookie-settings>Gérer les cookies</a>
       </div>
       <div class="footer-text">© 2025 Clan Français — Clash Royale</div>
     </footer>
+
+    <script src="cookies.js" defer></script>
   </body>
 </html>
