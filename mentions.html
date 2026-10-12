@@ -1,0 +1,679 @@
+<!doctype html>
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mentions légales — Clan Francais</title>
+    <meta name="robots" content="noindex" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Archivo+Black&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="images-Photoroom.png" />
+
+    <style>
+      :root {
+        --page-bg: #0e0f12;
+        --text: #f1ece1;
+        --muted: #b9b3a6;
+        --dim: #8f8a80;
+        --line: rgba(241, 236, 225, 0.18);
+        --red: #e63027;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 110px;
+      }
+
+      body {
+        font-family: "Baloo 2", sans-serif;
+        color: var(--text);
+        background: var(--page-bg);
+        overflow-x: hidden;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      /* =========================
+         HEADER (identique au site)
+      ========================= */
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: var(--page-bg);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .topbar {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        font-size: 11px;
+        font-weight: 700;
+        white-space: nowrap;
+        overflow: hidden;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .nav {
+        min-height: 80px;
+        padding: 0 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 22px;
+        font-weight: 800;
+        color: #fff;
+        white-space: nowrap;
+      }
+
+      .logo img {
+        width: 44px;
+        height: 44px;
+        object-fit: contain;
+        filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+        transition: transform 0.25s ease;
+      }
+
+      .logo:hover img {
+        transform: scale(1.08) rotate(-3deg);
+      }
+
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        border: 2px solid var(--text);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        transition: transform 0.12s, box-shadow 0.12s;
+      }
+
+      .back-link:hover {
+        transform: translate(-3px, -3px);
+        box-shadow: 3px 3px 0 var(--text);
+      }
+
+      /* =========================
+         CONTENU
+      ========================= */
+
+      .legal {
+        width: min(920px, 90%);
+        margin: 0 auto;
+        padding: calc(100px + clamp(48px, 7vw, 90px)) 0 90px;
+      }
+
+      .kicker {
+        margin-bottom: 12px;
+        color: #b9b9b9;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 2.2px;
+        text-transform: uppercase;
+      }
+
+      .legal h1 {
+        font-family: "Archivo Black", sans-serif;
+        font-size: clamp(40px, 7vw, 84px);
+        font-weight: 400;
+        line-height: 0.95;
+        text-transform: uppercase;
+      }
+
+      .legal h1 .dot {
+        color: var(--red);
+      }
+
+      .tricolour {
+        display: flex;
+        gap: 7px;
+        margin: 24px 0 18px;
+      }
+
+      .tricolour span {
+        width: 15px;
+        height: 5px;
+        border-radius: 999px;
+      }
+
+      .tricolour span:nth-child(1) { background: #2448e8; }
+      .tricolour span:nth-child(2) { background: #f2f2f2; }
+      .tricolour span:nth-child(3) { background: #ec1010; }
+
+      .updated {
+        color: var(--dim);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .intro {
+        max-width: 720px;
+        margin-top: 22px;
+        color: #d0d0d0;
+        font-size: 16px;
+        line-height: 1.7;
+      }
+
+      /* sommaire */
+      .toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 22px;
+        margin: 40px 0 10px;
+        padding: 18px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .toc a {
+        color: var(--muted);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        transition: color 0.2s ease;
+      }
+
+      .toc a:hover {
+        color: #fff;
+      }
+
+      .legal-section {
+        display: grid;
+        grid-template-columns: 70px minmax(0, 1fr);
+        gap: 10px 24px;
+        padding: 38px 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .legal-num {
+        font-family: "Archivo Black", sans-serif;
+        font-size: 44px;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke: 1.5px rgba(241, 236, 225, 0.3);
+      }
+
+      .legal-section h2 {
+        margin-bottom: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(20px, 2.4vw, 26px);
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        text-transform: uppercase;
+      }
+
+      .legal-section p,
+      .legal-section li {
+        color: #cfcac0;
+        font-size: 15.5px;
+        line-height: 1.75;
+      }
+
+      .legal-section p + p,
+      .legal-section p + ul,
+      .legal-section ul + p {
+        margin-top: 12px;
+      }
+
+      .legal-section ul {
+        list-style: none;
+      }
+
+      .legal-section li {
+        position: relative;
+        padding-left: 18px;
+      }
+
+      .legal-section li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.72em;
+        width: 7px;
+        height: 7px;
+        background: var(--red);
+      }
+
+      .legal-section strong {
+        color: #fff;
+      }
+
+      .legal-section a {
+        color: #8fa8ff;
+        border-bottom: 1px solid rgba(143, 168, 255, 0.4);
+        transition: color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .legal-section a:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+
+      /* fiche d'identité */
+      .info-list {
+        display: grid;
+        grid-template-columns: 170px minmax(0, 1fr);
+        border-top: 1px solid var(--line);
+      }
+
+      .info-list dt,
+      .info-list dd {
+        padding: 11px 0;
+        border-bottom: 1px solid rgba(241, 236, 225, 0.08);
+      }
+
+      .info-list dt {
+        color: var(--dim);
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        padding-top: 14px;
+      }
+
+      .info-list dd {
+        color: #e9e5dc;
+        font-size: 15.5px;
+        overflow-wrap: anywhere;
+      }
+
+      .todo {
+        padding: 1px 6px;
+        background: rgba(242, 182, 50, 0.15);
+        color: #f2b632;
+        font-weight: 700;
+      }
+
+      .disclaimer {
+        margin-top: 16px;
+        padding: 16px 18px;
+        border-left: 4px solid #f2b632;
+        background: rgba(255, 255, 255, 0.03);
+        font-style: italic;
+      }
+
+      /* =========================
+         FOOTER
+      ========================= */
+
+      footer {
+        position: relative;
+        padding: 40px 0 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        text-align: center;
+      }
+
+      footer::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 54px;
+        height: 4px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 26px;
+        margin-bottom: 16px;
+      }
+
+      .footer-links a {
+        color: #a9a9a9;
+        font-size: 15px;
+        transition: color 0.2s ease;
+      }
+
+      .footer-links a:hover,
+      .footer-links a[aria-current="page"] {
+        color: #fff;
+      }
+
+      .footer-text {
+        color: #77748d;
+        font-size: 13px;
+      }
+
+      @media (max-width: 750px) {
+        html {
+          scroll-padding-top: 90px;
+        }
+
+        .nav {
+          min-height: 64px;
+          padding: 0 14px;
+        }
+
+        .logo {
+          font-size: 18px;
+        }
+
+        .logo img {
+          width: 36px;
+          height: 36px;
+        }
+
+        .back-link {
+          padding: 8px 12px;
+          font-size: 12px;
+        }
+
+        .legal {
+          padding-top: calc(84px + 40px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .logo span {
+          display: none;
+        }
+
+        .legal-section {
+          grid-template-columns: 1fr;
+          padding: 30px 0;
+        }
+
+        .legal-num {
+          font-size: 34px;
+        }
+
+        .info-list {
+          grid-template-columns: 1fr;
+        }
+
+        .info-list dt {
+          padding-bottom: 0;
+          border-bottom: 0;
+        }
+
+        .info-list dd {
+          padding-top: 4px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =========================
+       HEADER
+  ========================= -->
+
+    <header>
+      <div class="topbar">
+        Rejoins le Clan Francais · 9 000 trophées minimum · Discord ouvert à tous 💙🤍❤️
+      </div>
+
+      <div class="nav">
+        <a href="index.html#accueil" class="logo">
+          <img src="images-Photoroom.png" alt="Logo Clan Français" />
+          <span>CLAN FRANCAIS</span>
+        </a>
+
+        <a href="index.html" class="back-link">← Retour au site</a>
+      </div>
+    </header>
+
+    <!-- =========================
+       MENTIONS LÉGALES
+  ========================= -->
+
+    <main class="legal">
+      <div class="kicker">Informations légales</div>
+      <h1>Mentions<br />légales<span class="dot">.</span></h1>
+
+      <div class="tricolour" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <p class="updated">Dernière mise à jour : 12 octobre 2026</p>
+
+      <p class="intro">
+        Conformément aux articles 6-III et 19 de la loi n° 2004-575 du 21 juin 2004 pour la confiance
+        dans l’économie numérique (LCEN), les informations suivantes sont portées à la connaissance des
+        utilisateurs du site Clan Francais.
+      </p>
+
+      <nav class="toc" aria-label="Sommaire">
+        <a href="#editeur">Éditeur</a>
+        <a href="#hebergement">Hébergement</a>
+        <a href="#propriete">Propriété intellectuelle</a>
+        <a href="#supercell">Supercell</a>
+        <a href="#donnees">Données personnelles</a>
+        <a href="#cookies">Cookies</a>
+        <a href="#responsabilite">Responsabilité</a>
+        <a href="#droit">Droit applicable</a>
+      </nav>
+
+      <!-- 01 ÉDITEUR -->
+      <section class="legal-section" id="editeur">
+        <span class="legal-num" aria-hidden="true">01</span>
+        <div>
+          <h2>Éditeur du site</h2>
+          <p>
+            Le site Clan Francais est un site communautaire non commercial, édité à titre personnel et
+            bénévole par le chef du clan Clash Royale « Clan Francais » (tag <strong>#LJ8GVLQC</strong>).
+          </p>
+          <dl class="info-list" style="margin-top: 18px">
+            <dt>Responsable</dt>
+            <dd>Tom07 — <span class="todo">[Nom et prénom à compléter]</span></dd>
+
+            <dt>Statut</dt>
+            <dd>Particulier — site non professionnel</dd>
+
+            <dt>Contact</dt>
+            <dd>
+              Via le <a href="index.html#contact">formulaire de contact</a> ou
+              <span class="todo">[adresse e-mail à compléter]</span>
+            </dd>
+
+            <dt>Directeur de publication</dt>
+            <dd>Tom07</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 02 HÉBERGEMENT -->
+      <section class="legal-section" id="hebergement">
+        <span class="legal-num" aria-hidden="true">02</span>
+        <div>
+          <h2>Hébergement</h2>
+          <dl class="info-list">
+            <dt>Hébergeur</dt>
+            <dd><span class="todo">[Nom de l’hébergeur — ex. GitHub, Inc. (GitHub Pages)]</span></dd>
+
+            <dt>Adresse</dt>
+            <dd><span class="todo">[Adresse — ex. 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis]</span></dd>
+
+            <dt>Site</dt>
+            <dd><span class="todo">[Site web de l’hébergeur — ex. https://github.com]</span></dd>
+          </dl>
+          <p style="margin-top: 18px">Le site s’appuie également sur les services tiers suivants :</p>
+          <ul>
+            <li><strong>Supabase</strong> — gestion des comptes et de l’authentification (connexion par e-mail ou Discord).</li>
+            <li><strong>Formspree</strong> — réception des messages envoyés via le formulaire de contact.</li>
+            <li><strong>Discord</strong> — connexion avec un compte Discord et serveur communautaire.</li>
+            <li><strong>Google Fonts</strong> et <strong>jsDelivr</strong> — chargement des polices et des bibliothèques du site.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 03 PROPRIÉTÉ INTELLECTUELLE -->
+      <section class="legal-section" id="propriete">
+        <span class="legal-num" aria-hidden="true">03</span>
+        <div>
+          <h2>Propriété intellectuelle</h2>
+          <p>
+            Les textes, la mise en page et le logo propres au Clan Francais sont la propriété de leur
+            éditeur. Toute reproduction, totale ou partielle, sans autorisation préalable est interdite,
+            sauf pour un usage strictement personnel et non commercial.
+          </p>
+          <p>
+            Les pseudos, statistiques et classements affichés proviennent du jeu Clash Royale et restent
+            la propriété de leurs auteurs et de Supercell.
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 SUPERCELL -->
+      <section class="legal-section" id="supercell">
+        <span class="legal-num" aria-hidden="true">04</span>
+        <div>
+          <h2>Clash Royale &amp; Supercell</h2>
+          <p>
+            Clash Royale, ses noms, logos, images et éléments graphiques sont des marques et des contenus
+            appartenant à <strong>Supercell Oy</strong>. Ils sont utilisés ici conformément à la politique
+            de contenu des fans de Supercell.
+          </p>
+          <p class="disclaimer">
+            Ce contenu n’est pas affilié à, approuvé, sponsorisé ou spécifiquement validé par Supercell, et
+            Supercell n’en est pas responsable. Pour plus d’informations, consultez la politique de contenu
+            des fans de Supercell :
+            <a href="https://www.supercell.com/fan-content-policy" target="_blank" rel="noopener noreferrer">www.supercell.com/fan-content-policy</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 DONNÉES PERSONNELLES -->
+      <section class="legal-section" id="donnees">
+        <span class="legal-num" aria-hidden="true">05</span>
+        <div>
+          <h2>Données personnelles</h2>
+          <p>Le site peut collecter les données suivantes, uniquement lorsque tu les fournis :</p>
+          <ul>
+            <li><strong>Création de compte :</strong> adresse e-mail, mot de passe (chiffré par Supabase) et pseudo Clash Royale.</li>
+            <li><strong>Connexion Discord :</strong> identifiant, pseudo et photo de profil Discord.</li>
+            <li><strong>Formulaire de contact :</strong> pseudo, adresse e-mail et contenu du message.</li>
+          </ul>
+          <p>
+            Ces données servent uniquement au fonctionnement du site et à la vie du clan. Elles ne sont
+            ni vendues ni cédées à des tiers.
+          </p>
+          <p>
+            Conformément au Règlement général sur la protection des données (RGPD) et à la loi
+            « Informatique et Libertés », tu disposes d’un droit d’accès, de rectification,
+            d’effacement, d’opposition et de portabilité de tes données. Pour l’exercer, utilise le
+            <a href="index.html#contact">formulaire de contact</a>. Tu peux aussi introduire une
+            réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.
+          </p>
+          <p>
+            Pour tous les détails, consulte la
+            <a href="politique-confidentialite.html">politique de confidentialité</a>.
+          </p>
+        </div>
+      </section>
+
+      <!-- 06 COOKIES -->
+      <section class="legal-section" id="cookies">
+        <span class="legal-num" aria-hidden="true">06</span>
+        <div>
+          <h2>Cookies et stockage local</h2>
+          <p>
+            Le site n’utilise <strong>aucun cookie publicitaire ni outil de mesure d’audience</strong>.
+            Seul un stockage technique est utilisé par Supabase dans ton navigateur afin de garder ta
+            session ouverte lorsque tu es connecté. Ce stockage est strictement nécessaire au service et
+            ne nécessite pas de consentement préalable.
+          </p>
+          <p>
+            Le chargement des polices (Google Fonts) et des bibliothèques (jsDelivr) peut transmettre ton
+            adresse IP à ces prestataires.
+          </p>
+        </div>
+      </section>
+
+      <!-- 07 RESPONSABILITÉ -->
+      <section class="legal-section" id="responsabilite">
+        <span class="legal-num" aria-hidden="true">07</span>
+        <div>
+          <h2>Responsabilité</h2>
+          <p>
+            L’éditeur s’efforce de fournir des informations exactes et à jour, notamment pour le
+            classement en direct, mais ne peut garantir l’absence d’erreur ou d’interruption. Les données
+            de classement sont mises à jour automatiquement et peuvent présenter un léger décalage.
+          </p>
+          <p>
+            Le site contient des liens vers des sites externes (Discord, Clash Royale, Supercell…).
+            L’éditeur n’exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur
+            contenu.
+          </p>
+        </div>
+      </section>
+
+      <!-- 08 DROIT APPLICABLE -->
+      <section class="legal-section" id="droit">
+        <span class="legal-num" aria-hidden="true">08</span>
+        <div>
+          <h2>Droit applicable</h2>
+          <p>
+            Les présentes mentions légales sont régies par le droit français. En cas de litige, et à
+            défaut de solution amiable, les tribunaux français seront seuls compétents.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+       FOOTER
+  ========================= -->
+
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="mentions-legales.html" aria-current="page">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
+      <div class="footer-text">© 2025 Clan Français — Clash Royale</div>
+    </footer>
+  </body>
+</html>
