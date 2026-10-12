@@ -150,10 +150,6 @@
         text-transform: uppercase;
       }
 
-      .legal h1 .dot {
-        color: var(--red);
-      }
-
       .tricolour {
         display: flex;
         gap: 7px;
@@ -185,31 +181,6 @@
         color: #d0d0d0;
         font-size: 16px;
         line-height: 1.7;
-      }
-
-      /* sommaire */
-      .toc {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px 22px;
-        margin: 40px 0 10px;
-        padding: 18px 0;
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-      }
-
-      .toc a {
-        color: var(--muted);
-        font-family: "JetBrains Mono", monospace;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-        transition: color 0.2s ease;
-      }
-
-      .toc a:hover {
-        color: #fff;
       }
 
       .legal-section {
@@ -311,13 +282,6 @@
         color: #e9e5dc;
         font-size: 15.5px;
         overflow-wrap: anywhere;
-      }
-
-      .todo {
-        padding: 1px 6px;
-        background: rgba(242, 182, 50, 0.15);
-        color: #f2b632;
-        font-weight: 700;
       }
 
       .disclaimer {
@@ -472,7 +436,7 @@
 
     <main class="legal">
       <div class="kicker">Informations légales</div>
-      <h1>Mentions<br />légales<span class="dot">.</span></h1>
+      <h1>Mentions<br />légales</h1>
 
       <div class="tricolour" aria-hidden="true"><span></span><span></span><span></span></div>
 
@@ -483,17 +447,6 @@
         dans l’économie numérique (LCEN), les informations suivantes sont portées à la connaissance des
         utilisateurs du site Clan Francais.
       </p>
-
-      <nav class="toc" aria-label="Sommaire">
-        <a href="#editeur">Éditeur</a>
-        <a href="#hebergement">Hébergement</a>
-        <a href="#propriete">Propriété intellectuelle</a>
-        <a href="#supercell">Supercell</a>
-        <a href="#donnees">Données personnelles</a>
-        <a href="#cookies">Cookies</a>
-        <a href="#responsabilite">Responsabilité</a>
-        <a href="#droit">Droit applicable</a>
-      </nav>
 
       <!-- 01 ÉDITEUR -->
       <section class="legal-section" id="editeur">
@@ -506,16 +459,13 @@
           </p>
           <dl class="info-list" style="margin-top: 18px">
             <dt>Responsable</dt>
-            <dd>Tom07 — <span class="todo">[Nom et prénom à compléter]</span></dd>
+            <dd>Tom07</dd>
 
             <dt>Statut</dt>
             <dd>Particulier — site non professionnel</dd>
 
             <dt>Contact</dt>
-            <dd>
-              Via le <a href="index.html#contact">formulaire de contact</a> ou
-              <span class="todo">[adresse e-mail à compléter]</span>
-            </dd>
+            <dd><a href="mailto:tom.marmon07@gmail.com">tom.marmon07@gmail.com</a></dd>
 
             <dt>Directeur de publication</dt>
             <dd>Tom07</dd>
@@ -530,13 +480,13 @@
           <h2>Hébergement</h2>
           <dl class="info-list">
             <dt>Hébergeur</dt>
-            <dd><span class="todo">[Nom de l’hébergeur — ex. GitHub, Inc. (GitHub Pages)]</span></dd>
+            <dd>GitHub, Inc. (GitHub Pages)</dd>
 
             <dt>Adresse</dt>
-            <dd><span class="todo">[Adresse — ex. 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis]</span></dd>
+            <dd>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</dd>
 
             <dt>Site</dt>
-            <dd><span class="todo">[Site web de l’hébergeur — ex. https://github.com]</span></dd>
+            <dd><a href="https://github.com" target="_blank" rel="noopener noreferrer">https://github.com</a></dd>
           </dl>
           <p style="margin-top: 18px">Le site s’appuie également sur les services tiers suivants :</p>
           <ul>
@@ -584,56 +534,25 @@
         </div>
       </section>
 
-      <!-- 05 DONNÉES PERSONNELLES -->
-      <section class="legal-section" id="donnees">
+      <!-- 05 COOKIES -->
+      <section class="legal-section" id="cookies">
         <span class="legal-num" aria-hidden="true">05</span>
         <div>
-          <h2>Données personnelles</h2>
-          <p>Le site peut collecter les données suivantes, uniquement lorsque tu les fournis :</p>
-          <ul>
-            <li><strong>Création de compte :</strong> adresse e-mail, mot de passe (chiffré par Supabase) et pseudo Clash Royale.</li>
-            <li><strong>Connexion Discord :</strong> identifiant, pseudo et photo de profil Discord.</li>
-            <li><strong>Formulaire de contact :</strong> pseudo, adresse e-mail et contenu du message.</li>
-          </ul>
+          <h2>Cookies</h2>
           <p>
-            Ces données servent uniquement au fonctionnement du site et à la vie du clan. Elles ne sont
-            ni vendues ni cédées à des tiers.
+            Le site utilise des cookies et un stockage local dans ton navigateur, notamment pour
+            garder ta session ouverte lorsque tu es connecté.
           </p>
           <p>
-            Conformément au Règlement général sur la protection des données (RGPD) et à la loi
-            « Informatique et Libertés », tu disposes d’un droit d’accès, de rectification,
-            d’effacement, d’opposition et de portabilité de tes données. Pour l’exercer, utilise le
-            <a href="index.html#contact">formulaire de contact</a>. Tu peux aussi introduire une
-            réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer">CNIL</a>.
-          </p>
-          <p>
-            Pour tous les détails, consulte la
-            <a href="politique-confidentialite.html">politique de confidentialité</a>.
+            La liste des cookies utilisés, leur finalité et leur durée de conservation sont détaillées
+            dans la <a href="politique-confidentialite.html">politique de confidentialité</a>.
           </p>
         </div>
       </section>
 
-      <!-- 06 COOKIES -->
-      <section class="legal-section" id="cookies">
-        <span class="legal-num" aria-hidden="true">06</span>
-        <div>
-          <h2>Cookies et stockage local</h2>
-          <p>
-            Le site n’utilise <strong>aucun cookie publicitaire ni outil de mesure d’audience</strong>.
-            Seul un stockage technique est utilisé par Supabase dans ton navigateur afin de garder ta
-            session ouverte lorsque tu es connecté. Ce stockage est strictement nécessaire au service et
-            ne nécessite pas de consentement préalable.
-          </p>
-          <p>
-            Le chargement des polices (Google Fonts) et des bibliothèques (jsDelivr) peut transmettre ton
-            adresse IP à ces prestataires.
-          </p>
-        </div>
-      </section>
-
-      <!-- 07 RESPONSABILITÉ -->
+      <!-- 06 RESPONSABILITÉ -->
       <section class="legal-section" id="responsabilite">
-        <span class="legal-num" aria-hidden="true">07</span>
+        <span class="legal-num" aria-hidden="true">06</span>
         <div>
           <h2>Responsabilité</h2>
           <p>
@@ -649,9 +568,9 @@
         </div>
       </section>
 
-      <!-- 08 DROIT APPLICABLE -->
+      <!-- 07 DROIT APPLICABLE -->
       <section class="legal-section" id="droit">
-        <span class="legal-num" aria-hidden="true">08</span>
+        <span class="legal-num" aria-hidden="true">07</span>
         <div>
           <h2>Droit applicable</h2>
           <p>
