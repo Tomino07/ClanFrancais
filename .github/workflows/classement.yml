@@ -81,11 +81,15 @@ jobs:
 
           # Rivaux en guerre : même chose avec le classement national des trophées de guerre
           curl -sf -H "$AUTH" "$API/locations/57000087/rankings/clanwars?limit=1000" > rankwar.json || echo '{"items":[]}' > rankwar.json
-          jq '(.items | map(.tag) | index("#LJ8GVLQC")) as $i
-            | if $i == null then {clans: []}
-              else {clans: [.items[([$i - 5, 0] | max):($i + 6)][] | {
-                rang: .rank, nom: .name, trophees: .clanScore, nous: (.tag == "#LJ8GVLQC")
-              }]} end' rankwar.json > data/rivaux-guerre.json || true
+                    jq --slurpfile c clan.json '(.items | map(.tag) | index("#LJ8GVLQC")) as $i
+            | {
+                total: (.items | length),                 # nombre de clans renvoyés par l API
+                seuil: (.items[-1].clanScore // null),    # trophées de guerre du dernier du classement
+                nous: $c[0].clanWarTrophies,
+                clans: (if $i == null then [] else [.items[([$i - 5, 0] | max):($i + 6)][] | {
+                  rang: .rank, nom: .name, trophees: .clanScore, nous: (.tag == "#LJ8GVLQC")
+                }] end)
+              }' rankwar.json > data/rivaux-guerre.json || true
 
           # Une fiche par joueur : data/joueurs/<TAG>.json
           rm -f data/joueurs/*.json
