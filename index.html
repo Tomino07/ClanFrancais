@@ -3411,7 +3411,7 @@
     .catch(() => {});
 </script>
 <!-- ===== FIN MVP ===== -->
-<!-- ===== GUERRE EN DIRECT + RIVAUX ===== -->
+<!-- ===== GUERRE EN DIRECT ===== -->
 <style>
   .bloc-live {
     position: relative;
@@ -3451,7 +3451,6 @@
   .bloc-live-head b { color: #f1ece1; }
   .bloc-live-info { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
 
-  /* ----- Guerre en direct ----- */
   .course-ligne {
     display: grid;
     grid-template-columns: 34px minmax(0, 1.2fr) minmax(0, 2fr) 110px;
@@ -3481,37 +3480,11 @@
 
   .course-attente { padding: 22px 0; text-align: center; color: #b9b3a6; }
 
-  /* ----- Rivaux ----- */
-  .rivaux table { width: 100%; border-collapse: collapse; font-size: 15px; }
-
-  .rivaux th {
-    padding: 0 10px 10px;
-    color: #8f8a80;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-align: left;
-    text-transform: uppercase;
-    border-bottom: 1px solid rgba(241, 236, 225, 0.18);
-  }
-
-  .rivaux td { padding: 9px 10px; border-bottom: 1px solid rgba(241, 236, 225, 0.07); }
-  .rivaux .num { text-align: right; font-variant-numeric: tabular-nums; }
-  .rivaux .rang { width: 60px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-weight: 700; }
-  .rivaux .nom { font-weight: 700; overflow-wrap: anywhere; }
-  .rivaux tr.nous td { background: rgba(255, 215, 0, 0.07); color: #ffd700; }
-  .rivaux .devant { color: #ff5a4f; }
-  .rivaux .derriere { color: #3ddc84; }
-
   @media (max-width: 650px) {
     .bloc-live { padding: 18px 12px 22px; }
     .bloc-live-head { flex-direction: column; align-items: flex-start; gap: 4px; }
     .course-ligne { grid-template-columns: 26px minmax(0, 1fr) 90px; row-gap: 8px; }
     .course-barre { grid-column: 2 / -1; grid-row: 2; }
-    .rivaux table { font-size: 14px; }
-    .rivaux th, .rivaux td { padding-left: 6px; padding-right: 6px; }
-    .rivaux .col-membres { display: none; }
   }
 </style>
 
@@ -3523,31 +3496,11 @@
   <div id="guerre-course"></div>
 </div>
 
-<div class="bloc-live rivaux" id="rivaux" hidden>
-  <div class="bloc-live-head">
-    <b>🎯 Nos rivaux au classement</b>
-    <span class="bloc-live-info" id="rivaux-info"></span>
-  </div>
-  <table>
-    <thead>
-      <tr>
-        <th>Rang</th>
-        <th>Clan</th>
-        <th class="num col-membres">Membres</th>
-        <th class="num">Trophées</th>
-        <th class="num">Écart</th>
-      </tr>
-    </thead>
-    <tbody id="rivaux-liste"></tbody>
-  </table>
-</div>
-
 <script>
   (() => {
     const fr = n => n.toLocaleString('fr-FR');
     const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-    // ----- Guerre en direct -----
     fetch('/data/guerre.json?' + Date.now())
       .then(r => r.json())
       .then(g => {
@@ -3575,38 +3528,9 @@
         document.getElementById('guerre-live').hidden = false;
       })
       .catch(() => {});
-
-    // ----- Rivaux -----
-    fetch('/data/rivaux.json?' + Date.now())
-      .then(r => r.json())
-      .then(d => {
-        const nous = (d.clans || []).find(c => c.nous);
-        if (!nous) return;
-
-        document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
-          const ecart = c.trophees - nous.trophees;
-          const cellule = c.nous ? '—'
-            : '<span class="' + (ecart > 0 ? 'devant' : 'derriere') + '">' + (ecart > 0 ? '+' : '−') + fr(Math.abs(ecart)) + '</span>';
-          return '<tr' + (c.nous ? ' class="nous"' : '') + '>' +
-            '<td class="rang">' + c.rang + '<sup>e</sup></td>' +
-            '<td class="nom">' + esc(c.nom) + '</td>' +
-            '<td class="num col-membres">' + c.membres + '/50</td>' +
-            '<td class="num">' + fr(c.trophees) + '</td>' +
-            '<td class="num">' + cellule + '</td>' +
-          '</tr>';
-        }).join('');
-
-        const devant = d.clans.filter(c => c.rang < nous.rang).pop();
-        document.getElementById('rivaux-info').textContent = devant
-          ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + ' trophées pour passer ' + devant.rang + 'e'
-          : '';
-
-        document.getElementById('rivaux').hidden = false;
-      })
-      .catch(() => {});
   })();
 </script>
-<!-- ===== FIN GUERRE EN DIRECT + RIVAUX ===== -->
+<!-- ===== FIN GUERRE EN DIRECT ===== -->
           <div class="actu-layout">
             <a class="actu-card">
               <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
