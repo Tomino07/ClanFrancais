@@ -4060,9 +4060,70 @@
        CALENDRIER (modifie les lignes ci-dessous)
     ========================= */
 
-      const calendarEvents = [
-        { date: "Aujourd'hui", title: "Aucun évènement", icon: "❌", cat: "guerre" },
-      ];
+      // Calendrier automatique : rythme de Clash Royale
+      // Entraînement lundi → mercredi, guerre jeudi → dimanche, nouvelle saison le 1er lundi du mois.
+      // Le jour change dans le jeu vers 10 h UTC (11 h ou 12 h en France).
+      const RESET_UTC = 10;
+      const JOUR = 86400000;
+
+      // Début du « jour de jeu » qui contient la date d
+      function debutJourJeu(d) {
+        const r = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate(), RESET_UTC));
+        if (d < r) r.setUTCDate(r.getUTCDate() - 1);
+        return r;
+      }
+
+      // Fin de saison = 1er lundi du mois (au changement de jour), le prochain après d
+      function finDeSaison(d) {
+        for (let m = 0; m < 3; m++) {
+          const r = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + m, 1, RESET_UTC));
+          while (r.getUTCDay() !== 1) r.setUTCDate(r.getUTCDate() + 1);
+          if (r > d) return r;
+        }
+      }
+
+      const fmtJour = d => d.toLocaleDateString("fr-FR", { weekday: "short", day: "numeric", month: "short" });
+      const fmtHeure = d => d.toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+      const fmtDuree = ms => {
+        const h = Math.max(0, Math.floor(ms / 3600000));
+        return h >= 24 ? Math.floor(h / 24) + " j " + (h % 24) + " h" : h + " h " + Math.floor((ms % 3600000) / 60000) + " min";
+      };
+
+      function genererCalendrier() {
+        const now = new Date();
+        const jour = debutJourJeu(now);
+        const lundi = new Date(jour.getTime() - ((jour.getUTCDay() + 6) % 7) * JOUR);
+        const saison = finDeSaison(now);
+        const evenements = [];
+
+        // Compte à rebours en tête de liste
+        const debutGuerre = new Date(lundi.getTime() + 3 * JOUR);
+        const finGuerre = new Date(lundi.getTime() + 7 * JOUR);
+        if (now >= debutGuerre) {
+          evenements.push({ date: "En ce moment", time: "Guerre en cours", title: "⚔️ Fin dans " + fmtDuree(finGuerre - now), sub: "Joue tes 4 combats chaque jour !", icon: "⏳", badge: "EN DIRECT", cat: "guerre" });
+        } else {
+          evenements.push({ date: "Prochaine guerre", time: fmtJour(debutGuerre) + " · " + fmtHeure(debutGuerre), title: "Dans " + fmtDuree(debutGuerre - now), sub: "Prépare tes decks de guerre", icon: "⏳", cat: "guerre" });
+        }
+
+        // Les 3 prochaines semaines
+        for (let s = 0; s < 3; s++) {
+          const l = new Date(lundi.getTime() + s * 7 * JOUR);
+          const g = new Date(l.getTime() + 3 * JOUR);
+          const f = new Date(l.getTime() + 7 * JOUR);
+          const colisee = f.getTime() === saison.getTime();
+
+          if (now < g) {
+            evenements.push({ date: fmtJour(l), time: "→ " + fmtJour(new Date(g - JOUR)), title: "Jours d'entraînement", sub: "Combats libres pour s'entraîner", icon: "🛡️", badge: now >= l ? "EN COURS" : "", cat: "guerre" });
+          }
+          evenements.push({ date: fmtJour(g), time: "→ " + fmtJour(new Date(f - JOUR)), title: colisee ? "Colisée" : "Guerre de clan", sub: colisee ? "Dernière semaine de la saison" : "4 combats par jour", icon: colisee ? "🏟️" : "⚔️", badge: now >= g ? "EN COURS" : "", cat: "guerre" });
+          if (colisee) {
+            evenements.push({ date: fmtJour(saison), time: fmtHeure(saison), title: "Fin de saison", sub: "Récompenses et nouvelle saison", icon: "🏆", cat: "guerre" });
+          }
+        }
+        return evenements;
+      }
+
+      let calendarEvents = genererCalendrier();
 
       const calTabs = [...document.querySelectorAll(".cal-tab")];
       const calList = document.getElementById("calList");
@@ -4127,6 +4188,7 @@
       });
 
       renderCalendar();
+      setInterval(() => { calendarEvents = genererCalendrier(); renderCalendar(); }, 60000); // compte à rebours à jour
 
       /* =========================
        APPARITION AU SCROLL
