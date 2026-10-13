@@ -4685,7 +4685,7 @@
       rang: { titre: 'Progression du rang', champ: 'rang', rivaux: true, inverse: true, texte: v => v + 'e', bulle: v => v + 'e au classement' },
       score: { titre: 'Trophées du clan', champ: 'score', rivaux: true, inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' },
       guerre: { titre: 'Trophées de guerre', champ: 'guerre', rivaux: true, inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées de guerre' },
-      membres: { titre: 'Nombre de membres', champ: 'membres', inverse: false, texte: v => v, bulle: v => v + '/50 membres' }
+      membres: { titre: 'Nombre de membres', champ: 'membres', rivaux: true, inverse: false, texte: v => v, bulle: v => v + '/50 membres' }
     };
 
     const fr = n => n.toLocaleString('fr-FR');
@@ -4764,7 +4764,16 @@
           document.getElementById('rivaux-entete').innerHTML = '<tr>' +
             (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">' + (id === 'guerre' ? 'Trophées de guerre' : 'Trophées') + '</th>') +
             '<th class="num">Écart</th></tr>';
-
+           // Membres : juste Clan / Membres (pas d'écart)
+          if (id === 'membres') {
+            document.getElementById('rivaux-entete').innerHTML = '<tr><th>Clan</th><th class="num">Membres</th></tr>';
+            document.getElementById('rivaux-liste').innerHTML = d.clans.map(c =>
+              '<tr' + (c.nous ? ' class="nous"' : '') + '><td class="nom">' + esc(c.nom) + '</td><td class="num">' + c.membres + '/50</td></tr>'
+            ).join('');
+            document.getElementById('rivaux-info').textContent = '';
+            if (actuelle === courbes[id]) rivaux.hidden = false;
+            return;
+          }
           document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
             // Rang : écart en places — Trophées : écart en trophées
             const ecart = avecRang ? nous.rang - c.rang : c.trophees - nous.trophees;
