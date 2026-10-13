@@ -4528,7 +4528,7 @@
   .courbe-zone { position: relative; height: 280px; margin-top: 16px; }
   .courbe-vide { color: #aaa7c4; text-align: center; padding: 40px 0; }
 
-  /* ----- Rivaux (sous les courbes) ----- */
+  /* ----- Rivaux (sous la courbe du rang) ----- */
   .courbe-rivaux { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
   .courbe-rivaux[hidden] { display: none; }
   .courbe-rivaux-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
@@ -4543,6 +4543,18 @@
   .courbe-rivaux tr.nous td { background: rgba(255, 215, 0, .08); color: #ffd700; }
   .courbe-rivaux .devant { color: #ff5a4f; }
   .courbe-rivaux .derriere { color: #3ddc84; }
+
+  /* ----- Guerre actuelle : course de bateaux ----- */
+  .courbe-course { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
+  .courbe-course[hidden] { display: none; }
+  .piste { padding: 8px 10px; margin-bottom: 6px; border: 1px solid transparent; }
+  .piste.nous { background: rgba(255, 215, 0, .07); border-color: rgba(255, 215, 0, .45); }
+  .piste-haut { display: flex; justify-content: space-between; gap: 10px; font-weight: 700; }
+  .piste.nous .piste-haut { color: #ffd700; }
+  .piste-bas { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; min-height: 14px; }
+  .riviere { position: relative; height: 30px; margin: 6px 0 4px; border-radius: 15px; background: linear-gradient(90deg, rgba(36, 72, 232, .18), rgba(36, 72, 232, .4)); overflow: hidden; }
+  .riviere::after { content: '🏁'; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 16px; }
+  .bateau { position: absolute; top: 50%; font-size: 22px; line-height: 1; transition: left 1s ease, transform 1s ease; }
 
   @media (max-width: 650px) {
     .courbe-boite { padding: 16px 12px; }
@@ -4564,6 +4576,14 @@
     </div>
     <div class="courbe-zone"><canvas id="courbe-canvas"></canvas></div>
     <p class="courbe-vide" id="courbe-vide" hidden>La courbe se remplit au fil du temps : reviens dans quelques heures !</p>
+
+    <div class="courbe-course" id="courbe-course" hidden>
+      <div class="courbe-rivaux-head">
+        <b>⛵ Guerre actuelle</b>
+        <span id="course-etat"></span>
+      </div>
+      <div id="course-pistes"></div>
+    </div>
 
     <div class="courbe-rivaux" id="courbe-rivaux" hidden>
       <div class="courbe-rivaux-head">
@@ -4595,6 +4615,7 @@
     const vide = document.getElementById('courbe-vide');
     const canvas = document.getElementById('courbe-canvas');
     const rivaux = document.getElementById('courbe-rivaux');
+    const course = document.getElementById('courbe-course');
     let histo = null, graph = null, jours = 7, actuelle = courbes.rang;
 
     const dessiner = () => {
@@ -4665,7 +4686,8 @@
           document.getElementById('rivaux-entete').innerHTML = '<tr>' +
             (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">' + (id === 'guerre' ? 'Trophées de guerre' : 'Trophées') + '</th>') +
             '<th class="num">Écart</th></tr>';
-           // Membres : juste Clan / Membres (pas d'écart)
+
+          // Membres : juste Clan / Membres (pas d'écart)
           if (id === 'membres') {
             document.getElementById('rivaux-entete').innerHTML = '<tr><th>Clan</th><th class="num">Membres</th></tr>';
             document.getElementById('rivaux-liste').innerHTML = d.clans.map(c =>
@@ -4675,6 +4697,7 @@
             if (actuelle === courbes[id]) rivaux.hidden = false;
             return;
           }
+
           document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
             // Rang : écart en places — Trophées : écart en trophées
             const ecart = avecRang ? nous.rang - c.rang : c.trophees - nous.trophees;
@@ -4702,11 +4725,39 @@
         .catch(() => {});
     };
 
+    // Guerre actuelle : phase + course de bateaux vers 10 000 points
+    const afficherCourse = () => {
+      fetch('/data/guerre.json?' + Date.now())
+        .then(r => r.json())
+        .then(g => {
+          if (!g.clans || !g.clans.length || actuelle !== courbes.guerre) return;
+          const j = g.jour;
+          document.getElementById('course-etat').textContent =
+            g.type === 'training' ? '🛡️ Entraînement' + (j >= 0 && j <= 2 ? ' · jour ' + (j + 1) + '/3' : '') + ' · la course commence jeudi'
+            : (g.type === 'colosseum' ? '🏟️ Colisée' : '⚔️ Jour de guerre') + (j >= 3 && j <= 6 ? ' ' + (j - 2) + '/4' : '');
+
+          const max = g.objectif || Math.max(...g.clans.map(c => c.points), 1);
+          document.getElementById('course-pistes').innerHTML = g.clans.map((c, i) => {
+            const pct = Math.min(100, c.points / max * 100);
+            return '<div class="piste' + (c.nous ? ' nous' : '') + '">' +
+              '<div class="piste-haut"><span>' + (i + 1) + '. ' + esc(c.nom) + '</span><span>' + (c.fini ? '🏁 ' : '') + fr(c.points) + (g.objectif ? ' / ' + fr(g.objectif) : '') + '</span></div>' +
+              '<div class="riviere"><span class="bateau" style="left:' + pct + '%;transform:translate(-' + pct + '%, -50%)">⛵</span></div>' +
+              '<div class="piste-bas">' + (g.type === 'training' ? '' : '+' + fr(c.aujourdhui) + ' aujourd’hui · ' + c.combats + '/200 combats') + '</div>' +
+            '</div>';
+          }).join('');
+
+          course.hidden = false;
+        })
+        .catch(() => {});
+    };
+
     Object.keys(courbes).forEach(id => {
       document.getElementById(id).addEventListener('click', () => {
         actuelle = courbes[id];
         document.getElementById('courbe-titre').textContent = actuelle.titre;
         rivaux.hidden = true;
+        course.hidden = true;
+        if (id === 'guerre') afficherCourse();
         if (actuelle.rivaux) afficherRivaux(id);
         fond.hidden = false;
         fetch('/data/historique.json?' + Date.now())
