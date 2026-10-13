@@ -4647,7 +4647,6 @@
     .courbe-boite { padding: 16px 12px; }
     .courbe-zone { height: 220px; }
     .courbe-rivaux table { font-size: 14px; }
-    .courbe-rivaux .col-membres { display: none; }
   }
 </style>
 
@@ -4675,8 +4674,6 @@
           <tr>
             <th>Rang</th>
             <th>Clan</th>
-            <th class="num col-membres">Membres</th>
-            <th class="num">Trophées</th>
             <th class="num">Écart</th>
           </tr>
         </thead>
@@ -4773,8 +4770,6 @@
             return '<tr' + (c.nous ? ' class="nous"' : '') + '>' +
               '<td class="rang">' + c.rang + '<sup>e</sup></td>' +
               '<td class="nom">' + esc(c.nom) + '</td>' +
-              '<td class="num col-membres">' + c.membres + '/50</td>' +
-              '<td class="num">' + fr(c.trophees) + '</td>' +
               '<td class="num">' + cellule + '</td>' +
             '</tr>';
           }).join('');
