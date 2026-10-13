@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil joueur – Clan Français</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Baloo 2', sans-serif; background: #0e1630; color: #fff; }
+    main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
+    a.retour { color: #ffd34d; text-decoration: none; }
+    h1 { font-family: 'Luckiest Guy', cursive; font-size: 2.6rem; margin: 12px 0 0; letter-spacing: 1px; }
+    .tag { opacity: .6; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 24px 0; }
+    .stat { background: #1a2550; border-radius: 12px; padding: 14px; text-align: center; }
+    .stat b { display: block; font-size: 1.6rem; color: #ffd34d; }
+    h2 { font-family: 'Luckiest Guy', cursive; font-weight: normal; margin-top: 32px; }
+    .deck { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; max-width: 420px; }
+    .deck div { text-align: center; font-size: .8rem; }
+    .deck img { width: 100%; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ffffff22; }
+    td.num, th.num { text-align: right; }
+    #erreur { color: #ff7a7a; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="retour" href="/#classement">← Retour au classement</a>
+  <p id="erreur" hidden></p>
+
+  <h1 id="nom">…</h1>
+  <div class="tag" id="tag"></div>
+
+  <div class="stats">
+    <div class="stat"><b id="trophees">–</b>Trophées</div>
+    <div class="stat"><b id="record">–</b>Record</div>
+    <div class="stat"><b id="victoires">–</b>Victoires</div>
+    <div class="stat"><b id="dons">–</b>Dons (semaine)</div>
+    <div class="stat"><b id="niveau">–</b>Niveau</div>
+  </div>
+
+  <h2>Deck actuel</h2>
+  <div class="deck" id="deck"></div>
+
+  <h2>Historique de guerre</h2>
+  <table>
+    <thead><tr><th>Saison / semaine</th><th class="num">Points</th><th class="num">Combats</th></tr></thead>
+    <tbody id="guerres"></tbody>
+  </table>
+</main>
+
+<script>
+  const fr = n => (n ?? 0).toLocaleString('fr-FR');
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const tag = new URLSearchParams(location.search).get('tag');
+
+  const erreur = msg => {
+    const e = document.getElementById('erreur');
+    e.textContent = msg;
+    e.hidden = false;
+  };
+
+  if (!tag || !/^[0-9A-Z]+$/.test(tag)) {
+    erreur('Joueur introuvable.');
+  } else {
+    fetch('/data/joueurs/' + tag + '.json?' + Date.now())
+      .then(r => { if (!r.ok) throw new Error(); return r.json(); })
+      .then(j => {
+        document.title = j.nom + ' – Clan Français';
+        document.getElementById('nom').textContent = j.nom;
+        document.getElementById('tag').textContent = '#' + j.tag + ' · ' + j.role;
+        document.getElementById('trophees').textContent = fr(j.trophees);
+        document.getElementById('record').textContent = fr(j.record);
+        document.getElementById('victoires').textContent = fr(j.victoires);
+        document.getElementById('dons').textContent = fr(j.dons);
+        document.getElementById('niveau').textContent = j.niveau;
+
+        document.getElementById('deck').innerHTML = (j.deck || []).map(c =>
+          '<div><img src="' + esc(c.image) + '" alt="" loading="lazy">' + esc(c.nom) + '</div>'
+        ).join('');
+
+        const g = j.guerres || [];
+        document.getElementById('guerres').innerHTML = g.length
+          ? g.map(w => '<tr><td>' + esc(w.semaine) + '</td><td class="num">' + fr(w.points) + '</td><td class="num">' + w.combats + '</td></tr>').join('')
+          : '<tr><td colspan="3">Pas encore de guerre enregistrée.</td></tr>';
+      })
+      .catch(() => erreur('Impossible de charger ce profil.'));
+  }
+</script>
+</body>
+</html>
