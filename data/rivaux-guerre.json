@@ -1,6 +1,34 @@
 {
-  "total": 999,
-  "seuil": 3120,
-  "nous": 1802,
-  "clans": []
+  "clans": [
+    {
+      "nom": "Clan Francais",
+      "trophees": 1802,
+      "nous": true,
+      "rang": 1
+    },
+    {
+      "nom": "11",
+      "trophees": 1795,
+      "nous": false,
+      "rang": 2
+    },
+    {
+      "nom": "INTERCEPTOR",
+      "trophees": 1793,
+      "nous": false,
+      "rang": 3
+    },
+    {
+      "nom": "Bandeja Paisa",
+      "trophees": 1791,
+      "nous": false,
+      "rang": 4
+    },
+    {
+      "nom": "Gigante Noble",
+      "trophees": 1790,
+      "nous": false,
+      "rang": 5
+    }
+  ]
 }
