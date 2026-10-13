@@ -4754,8 +4754,19 @@
       fetch('/data/' + (id === 'guerre' ? 'rivaux-guerre' : 'rivaux') + '.json?' + Date.now())
         .then(r => r.json())
         .then(d => {
-          const nous = (d.clans || []).find(c => c.nous);
-          if (!nous) return;
+                    const nous = (d.clans || []).find(c => c.nous);
+          if (!nous) {
+            // Pas dans le top 1 000 en guerre : on affiche ce qu'il manque pour y entrer
+            if (id === 'guerre' && d.total > 0 && d.seuil != null && actuelle === courbes[id]) {
+              document.getElementById('rivaux-entete').innerHTML = '';
+              document.getElementById('rivaux-liste').innerHTML = '';
+              document.getElementById('rivaux-info').textContent =
+                'Pas encore dans le top ' + fr(d.total) + ' français en guerre : il manque ' +
+                fr(d.seuil - d.nous + 1) + ' trophées de guerre pour y entrer (le ' + fr(d.total) + 'e en a ' + fr(d.seuil) + ').';
+              rivaux.hidden = false;
+            }
+            return;
+          }
 
           // Rang : Rang / Clan / Écart — Trophées : Clan / Trophées / Écart
           const avecRang = id === 'rang';
