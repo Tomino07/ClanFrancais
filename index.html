@@ -4351,5 +4351,120 @@
       updateAuthInterface();
     </script>
     <script src="cookies.js" defer></script>
+
+    <!-- ===== COURBE DE PROGRESSION DU RANG ===== -->
+<style>
+  #rang { cursor: pointer; }
+  #rang::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
+  .courbe-fond { position: fixed; inset: 0; background: rgba(0, 0, 0, .7); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 16px; }
+  .courbe-fond[hidden] { display: none; }
+  .courbe-boite { background: #0e0f12; border: 1px solid rgba(255, 255, 255, .12); border-radius: 16px; padding: 20px; width: 100%; max-width: 760px; color: #fff; font-family: 'Baloo 2', sans-serif; }
+  .courbe-haut { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .courbe-haut h3 { font-family: 'Luckiest Guy', cursive; font-weight: normal; margin: 0; font-size: 1.6rem; }
+  .courbe-boutons button { background: rgba(255, 255, 255, .055); border: 1px solid rgba(255, 255, 255, .12); color: #aaa7c4; border-radius: 8px; padding: 4px 12px; font: inherit; cursor: pointer; }
+  .courbe-boutons button.actif { background: #ffd700; color: #0e0f12; border-color: #ffd700; }
+  .courbe-fermer { background: none; border: 0; color: #fff; font-size: 1.8rem; cursor: pointer; line-height: 1; }
+  .courbe-zone { position: relative; height: 320px; margin-top: 16px; }
+  .courbe-vide { color: #aaa7c4; text-align: center; padding: 40px 0; }
+</style>
+
+<div class="courbe-fond" id="courbe" hidden>
+  <div class="courbe-boite">
+    <div class="courbe-haut">
+      <h3>Progression du rang</h3>
+      <div class="courbe-boutons">
+        <button data-jours="1">24 h</button>
+        <button data-jours="7" class="actif">7 jours</button>
+        <button data-jours="30">30 jours</button>
+      </div>
+      <button class="courbe-fermer" aria-label="Fermer">×</button>
+    </div>
+    <div class="courbe-zone"><canvas id="courbe-canvas"></canvas></div>
+    <p class="courbe-vide" id="courbe-vide" hidden>La courbe se remplit au fil du temps : reviens dans quelques heures !</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+  (() => {
+    const fond = document.getElementById('courbe');
+    const vide = document.getElementById('courbe-vide');
+    const canvas = document.getElementById('courbe-canvas');
+    let histo = null, graph = null, jours = 7;
+
+    const dessiner = () => {
+      const depuis = Date.now() - jours * 86400000;
+      const points = histo.filter(p => p.rang && new Date(p.date) >= depuis);
+      vide.hidden = points.length >= 2;
+      canvas.parentElement.hidden = points.length < 2;
+      if (points.length < 2) return;
+
+      if (graph) graph.destroy();
+      graph = new Chart(canvas, {
+        type: 'line',
+        data: {
+          labels: points.map(p => new Date(p.date)),
+          datasets: [{
+            data: points.map(p => p.rang),
+            borderColor: '#ffd700',
+            backgroundColor: 'rgba(255, 215, 0, .12)',
+            fill: 'start',
+            tension: .3,
+            pointRadius: 0,
+            pointHoverRadius: 5
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                title: c => new Date(points[c[0].dataIndex].date).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }),
+                label: c => ' ' + c.parsed.y + 'e au classement'
+              }
+            }
+          },
+          scales: {
+            x: {
+              type: 'category',
+              ticks: {
+                color: '#aaa7c4', maxTicksLimit: 7,
+                callback: (v, i) => new Date(points[i].date).toLocaleDateString('fr-FR', jours === 1 ? { hour: '2-digit', minute: '2-digit' } : { day: 'numeric', month: 'short' })
+              },
+              grid: { color: 'rgba(255, 255, 255, .06)' }
+            },
+            y: {
+              reverse: true, // 1er en haut
+              ticks: { color: '#aaa7c4', precision: 0, callback: v => v + 'e' },
+              grid: { color: 'rgba(255, 255, 255, .06)' }
+            }
+          }
+        }
+      });
+    };
+
+    document.getElementById('rang').addEventListener('click', () => {
+      fond.hidden = false;
+      fetch('/data/historique.json?' + Date.now())
+        .then(r => r.ok ? r.json() : [])
+        .catch(() => [])
+        .then(h => { histo = h; dessiner(); });
+    });
+
+    fond.querySelectorAll('[data-jours]').forEach(b => b.onclick = () => {
+      fond.querySelectorAll('[data-jours]').forEach(x => x.classList.toggle('actif', x === b));
+      jours = +b.dataset.jours;
+      if (histo) dessiner();
+    });
+
+    fond.querySelector('.courbe-fermer').onclick = () => fond.hidden = true;
+    fond.onclick = e => { if (e.target === fond) fond.hidden = true; };
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') fond.hidden = true; });
+  })();
+</script>
+<!-- ===== FIN COURBE ===== -->
+
   </body>
 </html>
