@@ -4627,7 +4627,7 @@
   .courbe-zone { position: relative; height: 280px; margin-top: 16px; }
   .courbe-vide { color: #aaa7c4; text-align: center; padding: 40px 0; }
 
-  /* ----- Rivaux (sous la courbe du rang) ----- */
+  /* ----- Rivaux (sous la courbe du rang et des trophées) ----- */
   .courbe-rivaux { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
   .courbe-rivaux[hidden] { display: none; }
   .courbe-rivaux-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
@@ -4670,13 +4670,7 @@
         <span id="rivaux-info"></span>
       </div>
       <table>
-        <thead>
-          <tr>
-            <th>Rang</th>
-            <th>Clan</th>
-            <th class="num">Écart</th>
-          </tr>
-        </thead>
+        <thead id="rivaux-entete"></thead>
         <tbody id="rivaux-liste"></tbody>
       </table>
     </div>
@@ -4688,8 +4682,8 @@
   (() => {
     // Chaque chiffre cliquable : id de l'élément → ce qu'on affiche
     const courbes = {
-      rang: { titre: 'Progression du rang', champ: 'rang', inverse: true, texte: v => v + 'e', bulle: v => v + 'e au classement' },
-      score: { titre: 'Trophées du clan', champ: 'score', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' },
+      rang: { titre: 'Progression du rang', champ: 'rang', rivaux: true, inverse: true, texte: v => v + 'e', bulle: v => v + 'e au classement' },
+      score: { titre: 'Trophées du clan', champ: 'score', rivaux: true, inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' },
       guerre: { titre: 'Trophées de guerre', champ: 'guerre', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées de guerre' },
       membres: { titre: 'Nombre de membres', champ: 'membres', inverse: false, texte: v => v, bulle: v => v + '/50 membres' }
     };
@@ -4755,21 +4749,28 @@
       });
     };
 
-    // Tableau des 5 clans au-dessus et 5 en dessous (seulement pour le rang)
-    const afficherRivaux = () => {
+    // Tableau des 5 clans au-dessus et 5 en dessous (pour le rang et les trophées du clan)
+    const afficherRivaux = id => {
       fetch('/data/rivaux.json?' + Date.now())
         .then(r => r.json())
         .then(d => {
           const nous = (d.clans || []).find(c => c.nous);
           if (!nous) return;
 
+          // Rang : Rang / Clan / Écart — Trophées : Clan / Trophées / Écart
+          const avecRang = id === 'rang';
+          document.getElementById('rivaux-entete').innerHTML = '<tr>' +
+            (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">Trophées</th>') +
+            '<th class="num">Écart</th></tr>';
+
           document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
             const ecart = c.trophees - nous.trophees;
             const cellule = c.nous ? '—'
               : '<span class="' + (ecart > 0 ? 'devant' : 'derriere') + '">' + (ecart > 0 ? '+' : '−') + fr(Math.abs(ecart)) + '</span>';
             return '<tr' + (c.nous ? ' class="nous"' : '') + '>' +
-              '<td class="rang">' + c.rang + '<sup>e</sup></td>' +
-              '<td class="nom">' + esc(c.nom) + '</td>' +
+              (avecRang
+                ? '<td class="rang">' + c.rang + '<sup>e</sup></td><td class="nom">' + esc(c.nom) + '</td>'
+                : '<td class="nom">' + esc(c.nom) + '</td><td class="num">' + fr(c.trophees) + '</td>') +
               '<td class="num">' + cellule + '</td>' +
             '</tr>';
           }).join('');
@@ -4779,7 +4780,7 @@
             ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + ' trophées pour passer ' + devant.rang + 'e'
             : '';
 
-          if (actuelle === courbes.rang) rivaux.hidden = false;
+          if (actuelle === courbes[id]) rivaux.hidden = false;
         })
         .catch(() => {});
     };
@@ -4789,7 +4790,7 @@
         actuelle = courbes[id];
         document.getElementById('courbe-titre').textContent = actuelle.titre;
         rivaux.hidden = true;
-        if (id === 'rang') afficherRivaux();
+        if (actuelle.rivaux) afficherRivaux(id);
         fond.hidden = false;
         fetch('/data/historique.json?' + Date.now())
           .then(r => r.ok ? r.json() : [])
@@ -4810,6 +4811,5 @@
   })();
 </script>
 <!-- ===== FIN COURBE ===== -->
-
   </body>
 </html>
