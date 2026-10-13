@@ -37,6 +37,24 @@ jobs:
           jq --slurpfile c data/clan.json '. + [{date: $c[0].majAt, rang: $c[0].rang, score: $c[0].score, guerre: $c[0].tropheesGuerre, membres: $c[0].membres}] | .[-1440:]' data/historique.json > h.json
           mv h.json data/historique.json
 
+          # MVP de la semaine : podium de la dernière guerre terminée
+          jq -n --slurpfile log log.json --slurpfile c clan.json '
+            try (
+              $log[0].items[0] as $w
+              | ($w.standings[] | select(.clan.tag == "#LJ8GVLQC") | .clan.participants) as $p
+              | {
+                  semaine: "Saison \($w.seasonId) – semaine \($w.sectionIndex + 1)",
+                  podium: ($p | map(select(.fame > 0)) | sort_by(-.fame, -.decksUsed) | .[0:3] | map(
+                    . as $j | {
+                      tag: (.tag | ltrimstr("#")),
+                      nom: .name,
+                      points: .fame,
+                      combats: .decksUsed,
+                      membre: any($c[0].memberList[]; .tag == $j.tag)
+                    }))
+                }
+            ) catch {podium: []}' > data/mvp.json
+
           # Une fiche par joueur : data/joueurs/<TAG>.json
           rm -f data/joueurs/*.json
           jq -r '.memberList[] | [.tag, .role, .donations] | @tsv' clan.json |
