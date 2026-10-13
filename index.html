@@ -4354,8 +4354,8 @@
 
     <!-- ===== COURBE DE PROGRESSION DU RANG ===== -->
 <style>
-  #rang, #score { cursor: pointer; }
-  #rang::after, #score::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
+  #rang, #score, #guerre, #membres { cursor: pointer; }
+  #rang::after, #score::after, #guerre::after, #membres::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
   .courbe-fond { position: fixed; inset: 0; background: rgba(0, 0, 0, .7); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 16px; }
   .courbe-fond[hidden] { display: none; }
   .courbe-boite { background: #0e0f12; border: 1px solid rgba(255, 255, 255, .12); border-radius: 16px; padding: 20px; width: 100%; max-width: 760px; color: #fff; font-family: 'Baloo 2', sans-serif; }
@@ -4390,7 +4390,9 @@
     // Chaque chiffre cliquable : id de l'élément → ce qu'on affiche
     const courbes = {
       rang: { titre: 'Progression du rang', champ: 'rang', inverse: true, texte: v => v + 'e', bulle: v => v + 'e au classement' },
-      score: { titre: 'Trophées du clan', champ: 'score', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' }
+      score: { titre: 'Trophées du clan', champ: 'score', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' },
+      guerre: { titre: 'Trophées de guerre', champ: 'guerre', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées de guerre' },
+      membres: { titre: 'Nombre de membres', champ: 'membres', inverse: false, texte: v => v, bulle: v => v + '/50 membres' }
     };
 
     const fond = document.getElementById('courbe');
