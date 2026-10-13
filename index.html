@@ -3239,7 +3239,7 @@
                     const [role, cls] = roles[j.role] || [j.role, ''];
                     return '<tr>' +
                       '<td class="pos">' + (i + 1) + '</td>' +
-                      '<td class="nom">' + esc(j.nom) + '</td>' +
+                      '<td class="nom"><a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a></td>' +
                       '<td class="role col-role ' + cls + '">' + role + '</td>' +
                       '<td class="num">' + fr(j.trophees) + '</td>' +
                       '<td class="num">' + fr(j.dons) + '</td>' +
