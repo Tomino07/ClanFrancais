@@ -4354,8 +4354,8 @@
 
     <!-- ===== COURBE DE PROGRESSION DU RANG ===== -->
 <style>
-  #rang { cursor: pointer; }
-  #rang::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
+  #rang, #score { cursor: pointer; }
+  #rang::after, #score::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
   .courbe-fond { position: fixed; inset: 0; background: rgba(0, 0, 0, .7); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 16px; }
   .courbe-fond[hidden] { display: none; }
   .courbe-boite { background: #0e0f12; border: 1px solid rgba(255, 255, 255, .12); border-radius: 16px; padding: 20px; width: 100%; max-width: 760px; color: #fff; font-family: 'Baloo 2', sans-serif; }
@@ -4371,7 +4371,7 @@
 <div class="courbe-fond" id="courbe" hidden>
   <div class="courbe-boite">
     <div class="courbe-haut">
-      <h3>Progression du rang</h3>
+      <h3 id="courbe-titre">Progression</h3>
       <div class="courbe-boutons">
         <button data-jours="1">24 h</button>
         <button data-jours="7" class="actif">7 jours</button>
@@ -4387,25 +4387,32 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
   (() => {
+    // Chaque chiffre cliquable : id de l'élément → ce qu'on affiche
+    const courbes = {
+      rang: { titre: 'Progression du rang', champ: 'rang', inverse: true, texte: v => v + 'e', bulle: v => v + 'e au classement' },
+      score: { titre: 'Trophées du clan', champ: 'score', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' }
+    };
+
     const fond = document.getElementById('courbe');
     const vide = document.getElementById('courbe-vide');
     const canvas = document.getElementById('courbe-canvas');
-    let histo = null, graph = null, jours = 7;
+    let histo = null, graph = null, jours = 7, actuelle = courbes.rang;
 
     const dessiner = () => {
+      const c = actuelle;
       const depuis = Date.now() - jours * 86400000;
-      const points = histo.filter(p => p.rang && new Date(p.date) >= depuis);
+      const points = histo.filter(p => p[c.champ] && new Date(p.date) >= depuis);
       vide.hidden = points.length >= 2;
       canvas.parentElement.hidden = points.length < 2;
+      if (graph) graph.destroy();
       if (points.length < 2) return;
 
-      if (graph) graph.destroy();
       graph = new Chart(canvas, {
         type: 'line',
         data: {
-          labels: points.map(p => new Date(p.date)),
+          labels: points.map(p => p.date),
           datasets: [{
-            data: points.map(p => p.rang),
+            data: points.map(p => p[c.champ]),
             borderColor: '#ffd700',
             backgroundColor: 'rgba(255, 215, 0, .12)',
             fill: 'start',
@@ -4421,14 +4428,13 @@
             legend: { display: false },
             tooltip: {
               callbacks: {
-                title: c => new Date(points[c[0].dataIndex].date).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }),
-                label: c => ' ' + c.parsed.y + 'e au classement'
+                title: t => new Date(points[t[0].dataIndex].date).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }),
+                label: t => ' ' + c.bulle(t.parsed.y)
               }
             }
           },
           scales: {
             x: {
-              type: 'category',
               ticks: {
                 color: '#aaa7c4', maxTicksLimit: 7,
                 callback: (v, i) => new Date(points[i].date).toLocaleDateString('fr-FR', jours === 1 ? { hour: '2-digit', minute: '2-digit' } : { day: 'numeric', month: 'short' })
@@ -4436,8 +4442,8 @@
               grid: { color: 'rgba(255, 255, 255, .06)' }
             },
             y: {
-              reverse: true, // 1er en haut
-              ticks: { color: '#aaa7c4', precision: 0, callback: v => v + 'e' },
+              reverse: c.inverse, // pour le rang : 1er en haut
+              ticks: { color: '#aaa7c4', precision: 0, callback: c.texte },
               grid: { color: 'rgba(255, 255, 255, .06)' }
             }
           }
@@ -4445,12 +4451,16 @@
       });
     };
 
-    document.getElementById('rang').addEventListener('click', () => {
-      fond.hidden = false;
-      fetch('/data/historique.json?' + Date.now())
-        .then(r => r.ok ? r.json() : [])
-        .catch(() => [])
-        .then(h => { histo = h; dessiner(); });
+    Object.keys(courbes).forEach(id => {
+      document.getElementById(id).addEventListener('click', () => {
+        actuelle = courbes[id];
+        document.getElementById('courbe-titre').textContent = actuelle.titre;
+        fond.hidden = false;
+        fetch('/data/historique.json?' + Date.now())
+          .then(r => r.ok ? r.json() : [])
+          .catch(() => [])
+          .then(h => { histo = h; dessiner(); });
+      });
     });
 
     fond.querySelectorAll('[data-jours]').forEach(b => b.onclick = () => {
