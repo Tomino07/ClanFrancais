@@ -4618,14 +4618,37 @@
   #rang::after, #score::after, #guerre::after, #membres::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
   .courbe-fond { position: fixed; inset: 0; background: rgba(0, 0, 0, .7); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 16px; }
   .courbe-fond[hidden] { display: none; }
-  .courbe-boite { background: #0e0f12; border: 1px solid rgba(255, 255, 255, .12); border-radius: 16px; padding: 20px; width: 100%; max-width: 760px; color: #fff; font-family: 'Baloo 2', sans-serif; }
+  .courbe-boite { background: #0e0f12; border: 1px solid rgba(255, 255, 255, .12); border-radius: 16px; padding: 20px; width: 100%; max-width: 760px; max-height: 92vh; overflow-y: auto; color: #fff; font-family: 'Baloo 2', sans-serif; }
   .courbe-haut { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
   .courbe-haut h3 { font-family: 'Luckiest Guy', cursive; font-weight: normal; margin: 0; font-size: 1.6rem; }
   .courbe-boutons button { background: rgba(255, 255, 255, .055); border: 1px solid rgba(255, 255, 255, .12); color: #aaa7c4; border-radius: 8px; padding: 4px 12px; font: inherit; cursor: pointer; }
   .courbe-boutons button.actif { background: #ffd700; color: #0e0f12; border-color: #ffd700; }
   .courbe-fermer { background: none; border: 0; color: #fff; font-size: 1.8rem; cursor: pointer; line-height: 1; }
-  .courbe-zone { position: relative; height: 320px; margin-top: 16px; }
+  .courbe-zone { position: relative; height: 280px; margin-top: 16px; }
   .courbe-vide { color: #aaa7c4; text-align: center; padding: 40px 0; }
+
+  /* ----- Rivaux (sous la courbe du rang) ----- */
+  .courbe-rivaux { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
+  .courbe-rivaux[hidden] { display: none; }
+  .courbe-rivaux-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+  .courbe-rivaux-head b { font-family: 'Luckiest Guy', cursive; font-weight: normal; font-size: 1.2rem; }
+  .courbe-rivaux-head span { color: #aaa7c4; font-size: .9rem; }
+  .courbe-rivaux table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .courbe-rivaux th { padding: 0 8px 8px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; letter-spacing: .14em; text-align: left; text-transform: uppercase; border-bottom: 1px solid rgba(255, 255, 255, .18); }
+  .courbe-rivaux td { padding: 7px 8px; border-bottom: 1px solid rgba(255, 255, 255, .07); }
+  .courbe-rivaux .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .courbe-rivaux .rang { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-weight: 700; }
+  .courbe-rivaux .nom { font-weight: 700; overflow-wrap: anywhere; }
+  .courbe-rivaux tr.nous td { background: rgba(255, 215, 0, .08); color: #ffd700; }
+  .courbe-rivaux .devant { color: #ff5a4f; }
+  .courbe-rivaux .derriere { color: #3ddc84; }
+
+  @media (max-width: 650px) {
+    .courbe-boite { padding: 16px 12px; }
+    .courbe-zone { height: 220px; }
+    .courbe-rivaux table { font-size: 14px; }
+    .courbe-rivaux .col-membres { display: none; }
+  }
 </style>
 
 <div class="courbe-fond" id="courbe" hidden>
@@ -4641,6 +4664,25 @@
     </div>
     <div class="courbe-zone"><canvas id="courbe-canvas"></canvas></div>
     <p class="courbe-vide" id="courbe-vide" hidden>La courbe se remplit au fil du temps : reviens dans quelques heures !</p>
+
+    <div class="courbe-rivaux" id="courbe-rivaux" hidden>
+      <div class="courbe-rivaux-head">
+        <b>🎯 Nos rivaux</b>
+        <span id="rivaux-info"></span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Rang</th>
+            <th>Clan</th>
+            <th class="num col-membres">Membres</th>
+            <th class="num">Trophées</th>
+            <th class="num">Écart</th>
+          </tr>
+        </thead>
+        <tbody id="rivaux-liste"></tbody>
+      </table>
+    </div>
   </div>
 </div>
 
@@ -4655,9 +4697,12 @@
       membres: { titre: 'Nombre de membres', champ: 'membres', inverse: false, texte: v => v, bulle: v => v + '/50 membres' }
     };
 
+    const fr = n => n.toLocaleString('fr-FR');
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const fond = document.getElementById('courbe');
     const vide = document.getElementById('courbe-vide');
     const canvas = document.getElementById('courbe-canvas');
+    const rivaux = document.getElementById('courbe-rivaux');
     let histo = null, graph = null, jours = 7, actuelle = courbes.rang;
 
     const dessiner = () => {
@@ -4713,10 +4758,43 @@
       });
     };
 
+    // Tableau des 5 clans au-dessus et 5 en dessous (seulement pour le rang)
+    const afficherRivaux = () => {
+      fetch('/data/rivaux.json?' + Date.now())
+        .then(r => r.json())
+        .then(d => {
+          const nous = (d.clans || []).find(c => c.nous);
+          if (!nous) return;
+
+          document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
+            const ecart = c.trophees - nous.trophees;
+            const cellule = c.nous ? '—'
+              : '<span class="' + (ecart > 0 ? 'devant' : 'derriere') + '">' + (ecart > 0 ? '+' : '−') + fr(Math.abs(ecart)) + '</span>';
+            return '<tr' + (c.nous ? ' class="nous"' : '') + '>' +
+              '<td class="rang">' + c.rang + '<sup>e</sup></td>' +
+              '<td class="nom">' + esc(c.nom) + '</td>' +
+              '<td class="num col-membres">' + c.membres + '/50</td>' +
+              '<td class="num">' + fr(c.trophees) + '</td>' +
+              '<td class="num">' + cellule + '</td>' +
+            '</tr>';
+          }).join('');
+
+          const devant = d.clans.filter(c => c.rang < nous.rang).pop();
+          document.getElementById('rivaux-info').textContent = devant
+            ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + ' trophées pour passer ' + devant.rang + 'e'
+            : '';
+
+          if (actuelle === courbes.rang) rivaux.hidden = false;
+        })
+        .catch(() => {});
+    };
+
     Object.keys(courbes).forEach(id => {
       document.getElementById(id).addEventListener('click', () => {
         actuelle = courbes[id];
         document.getElementById('courbe-titre').textContent = actuelle.titre;
+        rivaux.hidden = true;
+        if (id === 'rang') afficherRivaux();
         fond.hidden = false;
         fetch('/data/historique.json?' + Date.now())
           .then(r => r.ok ? r.json() : [])
