@@ -1,58 +1,51 @@
 {
   "clans": [
     {
-      "rang": 530,
-      "nom": "Neptune",
-      "trophees": 137426,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 531,
-      "nom": "Biceps clan",
-      "trophees": 137425,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 532,
       "nom": "Clash France",
       "trophees": 137424,
       "membres": 48,
       "nous": false
     },
     {
+      "rang": 532,
+      "nom": "Neptune",
+      "trophees": 137422,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 533,
+      "nom": "Père peinard",
+      "trophees": 137422,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 534,
       "nom": "-7- Clan",
       "trophees": 137421,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 534,
+      "rang": 535,
       "nom": "FrenchForceOne",
       "trophees": 137420,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 535,
+      "rang": 536,
       "nom": "Clan Francais",
       "trophees": 137419,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 536,
-      "nom": "Père peinard",
-      "trophees": 137411,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 537,
       "nom": "!_BOOM_!",
-      "trophees": 137411,
+      "trophees": 137413,
       "membres": 50,
       "nous": false
     },
@@ -75,6 +68,13 @@
       "nom": "Savoie",
       "trophees": 137403,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 541,
+      "nom": "1Pekkable",
+      "trophees": 137402,
+      "membres": 50,
       "nous": false
     }
   ]
