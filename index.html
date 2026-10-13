@@ -4627,7 +4627,7 @@
   .courbe-zone { position: relative; height: 280px; margin-top: 16px; }
   .courbe-vide { color: #aaa7c4; text-align: center; padding: 40px 0; }
 
-  /* ----- Rivaux (sous la courbe du rang et des trophées) ----- */
+  /* ----- Rivaux (sous les courbes) ----- */
   .courbe-rivaux { margin-top: 24px; padding-top: 18px; border-top: 1px solid rgba(255, 255, 255, .12); }
   .courbe-rivaux[hidden] { display: none; }
   .courbe-rivaux-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
@@ -4684,7 +4684,7 @@
     const courbes = {
       rang: { titre: 'Progression du rang', champ: 'rang', rivaux: true, inverse: true, texte: v => v + 'e', bulle: v => v + 'e au classement' },
       score: { titre: 'Trophées du clan', champ: 'score', rivaux: true, inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées' },
-      guerre: { titre: 'Trophées de guerre', champ: 'guerre', inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées de guerre' },
+      guerre: { titre: 'Trophées de guerre', champ: 'guerre', rivaux: true, inverse: false, texte: v => v.toLocaleString('fr-FR'), bulle: v => v.toLocaleString('fr-FR') + ' trophées de guerre' },
       membres: { titre: 'Nombre de membres', champ: 'membres', inverse: false, texte: v => v, bulle: v => v + '/50 membres' }
     };
 
@@ -4749,9 +4749,9 @@
       });
     };
 
-    // Tableau des 5 clans au-dessus et 5 en dessous (pour le rang et les trophées du clan)
+    // Tableau des 5 clans au-dessus et 5 en dessous (rang, trophées du clan, trophées de guerre)
     const afficherRivaux = id => {
-      fetch('/data/rivaux.json?' + Date.now())
+      fetch('/data/' + (id === 'guerre' ? 'rivaux-guerre' : 'rivaux') + '.json?' + Date.now())
         .then(r => r.json())
         .then(d => {
           const nous = (d.clans || []).find(c => c.nous);
@@ -4759,12 +4759,13 @@
 
           // Rang : Rang / Clan / Écart — Trophées : Clan / Trophées / Écart
           const avecRang = id === 'rang';
+          const unite = id === 'guerre' ? ' trophées de guerre' : ' trophées';
           document.getElementById('rivaux-entete').innerHTML = '<tr>' +
-            (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">Trophées</th>') +
+            (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">' + (id === 'guerre' ? 'Trophées de guerre' : 'Trophées') + '</th>') +
             '<th class="num">Écart</th></tr>';
 
           document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
-                        // Rang : écart en places — Trophées : écart en trophées
+            // Rang : écart en places — Trophées : écart en trophées
             const ecart = avecRang ? nous.rang - c.rang : c.trophees - nous.trophees;
             const n = Math.abs(ecart);
             const cellule = c.nous ? '—'
@@ -4780,7 +4781,7 @@
 
           const devant = d.clans.filter(c => c.rang < nous.rang).pop();
           document.getElementById('rivaux-info').textContent = devant
-            ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + ' trophées pour passer ' + devant.rang + 'e'
+            ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + unite + ' pour passer ' + devant.rang + 'e'
             : '';
 
           if (actuelle === courbes[id]) rivaux.hidden = false;
