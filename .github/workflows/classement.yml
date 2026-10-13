@@ -79,17 +79,11 @@ jobs:
                 rang: .rank, nom: .name, trophees: .clanScore, membres: .members, nous: (.tag == "#LJ8GVLQC")
               }]} end' rank.json > data/rivaux.json || true
 
-          # Rivaux en guerre : même chose avec le classement national des trophées de guerre
-          curl -sf -H "$AUTH" "$API/locations/57000087/rankings/clanwars?limit=1000" > rankwar.json || echo '{"items":[]}' > rankwar.json
-                    jq --slurpfile c clan.json '(.items | map(.tag) | index("#LJ8GVLQC")) as $i
-            | {
-                total: (.items | length),                 # nombre de clans renvoyés par l API
-                seuil: (.items[-1].clanScore // null),    # trophées de guerre du dernier du classement
-                nous: $c[0].clanWarTrophies,
-                clans: (if $i == null then [] else [.items[([$i - 5, 0] | max):($i + 6)][] | {
-                  rang: .rank, nom: .name, trophees: .clanScore, nous: (.tag == "#LJ8GVLQC")
-                }] end)
-              }' rankwar.json > data/rivaux-guerre.json || true
+          # Rivaux en guerre : les 5 clans de la course actuelle, classés par trophées de guerre
+          if [ -s cur.json ]; then
+            jq '{clans: ([.clans[] | {nom: .name, trophees: .clanScore, nous: (.tag == "#LJ8GVLQC")}]
+              | sort_by(-.trophees) | to_entries | map(.value + {rang: (.key + 1)}))}' cur.json > data/rivaux-guerre.json || true
+          fi
 
           # Une fiche par joueur : data/joueurs/<TAG>.json
           rm -f data/joueurs/*.json
@@ -116,7 +110,7 @@ jobs:
                 ]
               }' p.json > "data/joueurs/$T.json"
           done
-          rm -f clan.json rank.json rankwar.json log.json p.json cur.json
+          rm -f clan.json rank.json log.json p.json cur.json
       - name: Enregistrer
         run: |
           git config user.name "github-actions"
