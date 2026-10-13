@@ -4666,7 +4666,7 @@
 
     <div class="courbe-rivaux" id="courbe-rivaux" hidden>
       <div class="courbe-rivaux-head">
-        <b>🎯 Nos rivaux</b>
+        <b id="rivaux-titre">🎯 Nos rivaux</b>
         <span id="rivaux-info"></span>
       </div>
       <table>
@@ -4754,23 +4754,13 @@
       fetch('/data/' + (id === 'guerre' ? 'rivaux-guerre' : 'rivaux') + '.json?' + Date.now())
         .then(r => r.json())
         .then(d => {
-                    const nous = (d.clans || []).find(c => c.nous);
-          if (!nous) {
-            // Pas dans le top 1 000 en guerre : on affiche ce qu'il manque pour y entrer
-            if (id === 'guerre' && d.total > 0 && d.seuil != null && actuelle === courbes[id]) {
-              document.getElementById('rivaux-entete').innerHTML = '';
-              document.getElementById('rivaux-liste').innerHTML = '';
-              document.getElementById('rivaux-info').textContent =
-                'Pas encore dans le top ' + fr(d.total) + ' français en guerre : il manque ' +
-                fr(d.seuil - d.nous + 1) + ' trophées de guerre pour y entrer (le ' + fr(d.total) + 'e en a ' + fr(d.seuil) + ').';
-              rivaux.hidden = false;
-            }
-            return;
-          }
+          const nous = (d.clans || []).find(c => c.nous);
+          if (!nous) return;
 
           // Rang : Rang / Clan / Écart — Trophées : Clan / Trophées / Écart
           const avecRang = id === 'rang';
           const unite = id === 'guerre' ? ' trophées de guerre' : ' trophées';
+          document.getElementById('rivaux-titre').textContent = id === 'guerre' ? '⚔️ Notre course de guerre' : '🎯 Nos rivaux';
           document.getElementById('rivaux-entete').innerHTML = '<tr>' +
             (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">' + (id === 'guerre' ? 'Trophées de guerre' : 'Trophées') + '</th>') +
             '<th class="num">Écart</th></tr>';
@@ -4790,10 +4780,12 @@
             '</tr>';
           }).join('');
 
+          // Guerre : les 5 clans de la course actuelle — sinon : classement national
           const devant = d.clans.filter(c => c.rang < nous.rang).pop();
-          document.getElementById('rivaux-info').textContent = devant
-            ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + unite + ' pour passer ' + devant.rang + 'e'
-            : '';
+          const manque = devant ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + unite : '';
+          document.getElementById('rivaux-info').textContent = id === 'guerre'
+            ? (devant ? manque + ' pour dépasser ' + devant.nom : 'Le plus de trophées de guerre de la course 💪')
+            : (devant ? manque + ' pour passer ' + devant.rang + 'e' : '');
 
           if (actuelle === courbes[id]) rivaux.hidden = false;
         })
