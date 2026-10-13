@@ -4764,9 +4764,12 @@
             '<th class="num">Écart</th></tr>';
 
           document.getElementById('rivaux-liste').innerHTML = d.clans.map(c => {
-            const ecart = c.trophees - nous.trophees;
+                        // Rang : écart en places — Trophées : écart en trophées
+            const ecart = avecRang ? nous.rang - c.rang : c.trophees - nous.trophees;
+            const n = Math.abs(ecart);
             const cellule = c.nous ? '—'
-              : '<span class="' + (ecart > 0 ? 'devant' : 'derriere') + '">' + (ecart > 0 ? '+' : '−') + fr(Math.abs(ecart)) + '</span>';
+              : '<span class="' + (ecart > 0 ? 'devant' : 'derriere') + '">' + (ecart > 0 ? '+' : '−') + fr(n) +
+                (avecRang ? (n > 1 ? ' places' : ' place') : '') + '</span>';
             return '<tr' + (c.nous ? ' class="nous"' : '') + '>' +
               (avecRang
                 ? '<td class="rang">' + c.rang + '<sup>e</sup></td><td class="nom">' + esc(c.nom) + '</td>'
