@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 529,
-      "nom": "Clash France",
-      "trophees": 137427,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 530,
       "nom": "Biceps clan",
       "trophees": 137425,
@@ -23,31 +16,31 @@
     },
     {
       "rang": 532,
+      "nom": "1Pekkable",
+      "trophees": 137423,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 533,
       "nom": "-7- Clan",
       "trophees": 137421,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 533,
-      "nom": "1Pekkable",
-      "trophees": 137421,
+      "rang": 534,
+      "nom": "As De Trèfle",
+      "trophees": 137420,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 534,
+      "rang": 535,
       "nom": "Clan Francais",
       "trophees": 137419,
       "membres": 50,
       "nous": true
-    },
-    {
-      "rang": 535,
-      "nom": "As De Trèfle",
-      "trophees": 137419,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 536,
@@ -73,8 +66,15 @@
     {
       "rang": 539,
       "nom": "-=BAT=-",
-      "trophees": 137405,
+      "trophees": 137406,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 540,
+      "nom": "BIBI⛩",
+      "trophees": 137400,
+      "membres": 50,
       "nous": false
     }
   ]
