@@ -32,10 +32,9 @@ jobs:
               joueurs: [$c[0].memberList[] | {tag: (.tag | ltrimstr("#")), nom: .name, role, trophees: .trophies, dons: .donations}]
             }' > data/clan.json
 
-            
-          # Historique du rang (30 derniers jours, un point toutes les 30 min)
+          # Historique (30 derniers jours, un point toutes les 30 min)
           [ -f data/historique.json ] || echo '[]' > data/historique.json
-          jq --slurpfile c data/clan.json '. + [{date: $c[0].majAt, rang: $c[0].rang, score: $c[0].score}] | .[-1440:]' data/historique.json > h.json
+          jq --slurpfile c data/clan.json '. + [{date: $c[0].majAt, rang: $c[0].rang, score: $c[0].score, guerre: $c[0].tropheesGuerre, membres: $c[0].membres}] | .[-1440:]' data/historique.json > h.json
           mv h.json data/historique.json
 
           # Une fiche par joueur : data/joueurs/<TAG>.json
