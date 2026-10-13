@@ -16,9 +16,10 @@ jobs:
         run: |
           API="https://proxy.royaleapi.dev/v1"
           AUTH="Authorization: Bearer $CR_TOKEN"
-          mkdir -p data
+          mkdir -p data/joueurs
           curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC" > clan.json
           curl -sf -H "$AUTH" "$API/locations/57000087/rankings/clans?limit=1000" > rank.json
+          curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC/riverracelog?limit=10" > log.json || echo '{"items":[]}' > log.json
           jq -n --slurpfile c clan.json --slurpfile r rank.json '
             ($r[0].items | map(select(.tag == "#LJ8GVLQC")) | first) as $me |
             {
@@ -28,12 +29,38 @@ jobs:
               score: $c[0].clanScore,
               tropheesGuerre: $c[0].clanWarTrophies,
               membres: $c[0].members,
-              joueurs: [$c[0].memberList[] | {nom: .name, role, trophees: .trophies, dons: .donations}]
+              joueurs: [$c[0].memberList[] | {tag: (.tag | ltrimstr("#")), nom: .name, role, trophees: .trophies, dons: .donations}]
             }' > data/clan.json
-          rm clan.json rank.json
+
+          # Une fiche par joueur : data/joueurs/<TAG>.json
+          rm -f data/joueurs/*.json
+          jq -r '.memberList[] | [.tag, .role, .donations] | @tsv' clan.json |
+          while IFS=$'\t' read -r TAG ROLE DONS; do
+            T="${TAG#\#}"
+            curl -sf -H "$AUTH" "$API/players/%23$T" > p.json || continue
+            jq --arg tag "$TAG" --arg role "$ROLE" --argjson dons "$DONS" --slurpfile log log.json '
+              {
+                tag: ($tag | ltrimstr("#")),
+                nom: .name,
+                role: ({leader: "Chef", coLeader: "Chef adjoint", elder: "Aîné", member: "Membre"}[$role] // $role),
+                niveau: .expLevel,
+                trophees: .trophies,
+                record: .bestTrophies,
+                victoires: .wins,
+                dons: $dons,
+                deck: [(.currentDeck // [])[] | {nom: .name, image: .iconUrls.medium}],
+                guerres: [
+                  $log[0].items[] | . as $w
+                  | .standings[] | select(.clan.tag == "#LJ8GVLQC")
+                  | .clan.participants[] | select(.tag == $tag)
+                  | {semaine: "Saison \($w.seasonId) – semaine \($w.sectionIndex + 1)", points: .fame, combats: .decksUsed}
+                ]
+              }' p.json > "data/joueurs/$T.json"
+          done
+          rm -f clan.json rank.json log.json p.json
       - name: Enregistrer
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add data/clan.json
+          git add data/
           git diff --cached --quiet || (git commit -m "Mise à jour du classement" && git push)
