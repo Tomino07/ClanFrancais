@@ -2864,6 +2864,7 @@
             </button>
             <div class="dropdown">
               <a href="#statistiques">ACTUALITÉS</a>
+              <a href="#stats">STATISTIQUES</a>
               <a href="#decouvrir">DÉCOUVRIR LE CLAN</a>
               <a href="#equipe">LES LEADERS</a>
               <a href="#recrutement">RECRUTEMENTS</a>
@@ -2947,7 +2948,217 @@
             </p>
           </div>
 
-                    <!-- Classement en direct (données : data/clan.json, mises à jour par GitHub Actions) -->
+<!-- ===== MVP DE LA SEMAINE ===== -->
+<style>
+  .mvp {
+    position: relative;
+    margin: 0 0 32px;
+    padding: 18px 24px 30px;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .mvp::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+  }
+
+  .mvp[hidden] { display: none; }
+
+  .mvp-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #b9b3a6;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .mvp-head b { color: #f1ece1; }
+  .mvp-semaine { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
+
+  .mvp-podium {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: end;
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .mvp-place {
+    display: block;
+    padding: 22px 12px 18px;
+    text-align: center;
+    color: #f1ece1;
+    border: 1px solid rgba(241, 236, 225, 0.18);
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+
+  a.mvp-place:hover { transform: translateY(-4px); border-color: #ffd700; }
+
+  .mvp-place.p1 {
+    order: 2;
+    padding: 30px 12px 26px;
+    border-color: rgba(255, 215, 0, 0.55);
+    background: linear-gradient(180deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.02));
+  }
+
+  .mvp-place.p2 { order: 1; }
+  .mvp-place.p3 { order: 3; }
+
+  .mvp-medaille { font-size: 34px; line-height: 1; }
+  .mvp-place.p1 .mvp-medaille { font-size: 46px; }
+
+  .mvp-nom {
+    margin-top: 10px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(16px, 1.8vw, 22px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .mvp-place.p1 .mvp-nom { font-size: clamp(20px, 2.4vw, 30px); color: #ffd700; }
+
+  .mvp-points {
+    margin-top: 10px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(20px, 2.2vw, 28px);
+    line-height: 1;
+  }
+
+  .mvp-points small, .mvp-combats {
+    display: block;
+    margin-top: 6px;
+    color: #8f8a80;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 650px) {
+    .mvp { padding: 18px 12px 22px; }
+    .mvp-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .mvp-podium { grid-template-columns: 1fr; }
+    .mvp-place.p1, .mvp-place.p2, .mvp-place.p3 { order: 0; }
+  }
+</style>
+
+<div class="mvp" id="mvp" hidden>
+  <div class="mvp-head">
+    <b>🏆 MVP de la semaine</b>
+    <span class="mvp-semaine" id="mvp-semaine"></span>
+  </div>
+  <div class="mvp-podium" id="mvp-podium"></div>
+</div>
+
+<script>
+  fetch('/data/mvp.json?' + Date.now())
+    .then(r => r.json())
+    .then(m => {
+      if (!m.podium || !m.podium.length) return;
+      const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      const medailles = ['🥇', '🥈', '🥉'];
+
+      document.getElementById('mvp-semaine').textContent = 'Guerre : ' + m.semaine;
+      document.getElementById('mvp-podium').innerHTML = m.podium.map((j, i) => {
+        const contenu =
+          '<div class="mvp-medaille">' + medailles[i] + '</div>' +
+          '<div class="mvp-nom">' + esc(j.nom) + '</div>' +
+          '<div class="mvp-points">' + j.points.toLocaleString('fr-FR') + '<small>points de guerre</small></div>' +
+          '<span class="mvp-combats">' + j.combats + ' combats</span>';
+        // Lien vers le profil seulement si le joueur est encore dans le clan
+        return j.membre
+          ? '<a class="mvp-place p' + (i + 1) + '" href="/joueur.html?tag=' + j.tag + '">' + contenu + '</a>'
+          : '<div class="mvp-place p' + (i + 1) + '">' + contenu + '</div>';
+      }).join('');
+
+      document.getElementById('mvp').hidden = false;
+    })
+    .catch(() => {});
+</script>
+<!-- ===== FIN MVP ===== -->
+          <div class="actu-layout">
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
+              <div class="actu-caption">
+                <h3>Création du Clan Francais</h3>
+                <time>2021</time>
+              </div>
+            </a>
+
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('classement_clash.png')"></div>
+              <div class="actu-caption">
+                <h3>TOP 1000 France</h3>
+                <time>Janvier 2025</time>
+              </div>
+            </a>
+
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('france.png')"></div>
+              <div class="actu-caption">
+                <h3>243e au classement national</h3>
+                <time>Novembre 2025</time>
+              </div>
+            </a>
+
+            <a class="actu-card">
+              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
+              <div class="actu-caption">
+                <h3>Recrutement ouvert : 9 000 trophées minimum</h3>
+                <time>Toujours ouvert</time>
+              </div>
+            </a>
+
+            <aside class="calendar" aria-label="Calendrier du clan">
+              <div class="calendar-inner">
+                <div class="cal-head">Calendrier</div>
+
+                <div class="cal-tabs">
+                  <button type="button" class="cal-arrow" id="calPrev" aria-label="Catégorie précédente">‹</button>
+
+                  <div class="cal-tab-list">
+                    <button type="button" class="cal-tab active" data-filter="all" aria-label="Tout">🗓️</button>
+                  </div>
+
+                  <button type="button" class="cal-arrow" id="calNext" aria-label="Catégorie suivante">›</button>
+                </div>
+
+                <div class="cal-list" id="calList"></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     STATISTIQUES
+========================= -->
+
+      <section id="stats" class="actu-section">
+        <div class="actu-wrap">
+          <div class="actu-heading">
+            <div class="story-kicker">Le clan en chiffres</div>
+            <h2 class="actu-title"><span>STATISTIQUES</span></h2>
+            <p class="actu-description">
+              Le classement du clan et de ses membres, mis à jour automatiquement toutes les 30 minutes.
+            </p>
+          </div>
+
+          <!-- Classement en direct (données : data/clan.json, mises à jour par GitHub Actions) -->
           <style>
             .clan-live {
               margin: 0 0 32px;
@@ -3269,319 +3480,7 @@
                 document.getElementById('maj').textContent = 'Classement indisponible';
               });
           </script>
-<!-- ===== MVP DE LA SEMAINE ===== -->
-<style>
-  .mvp {
-    position: relative;
-    margin: 0 0 32px;
-    padding: 18px 24px 30px;
-    background: #141418;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-  }
 
-  .mvp::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    height: 4px;
-    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
-  }
-
-  .mvp[hidden] { display: none; }
-
-  .mvp-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    color: #b9b3a6;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
-
-  .mvp-head b { color: #f1ece1; }
-  .mvp-semaine { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
-
-  .mvp-podium {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
-    align-items: end;
-    gap: 16px;
-    margin-top: 26px;
-  }
-
-  .mvp-place {
-    display: block;
-    padding: 22px 12px 18px;
-    text-align: center;
-    color: #f1ece1;
-    border: 1px solid rgba(241, 236, 225, 0.18);
-    background: rgba(255, 255, 255, 0.03);
-    transition: transform 0.25s ease, border-color 0.25s ease;
-  }
-
-  a.mvp-place:hover { transform: translateY(-4px); border-color: #ffd700; }
-
-  .mvp-place.p1 {
-    order: 2;
-    padding: 30px 12px 26px;
-    border-color: rgba(255, 215, 0, 0.55);
-    background: linear-gradient(180deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.02));
-  }
-
-  .mvp-place.p2 { order: 1; }
-  .mvp-place.p3 { order: 3; }
-
-  .mvp-medaille { font-size: 34px; line-height: 1; }
-  .mvp-place.p1 .mvp-medaille { font-size: 46px; }
-
-  .mvp-nom {
-    margin-top: 10px;
-    font-family: "Archivo Black", sans-serif;
-    font-size: clamp(16px, 1.8vw, 22px);
-    line-height: 1.1;
-    text-transform: uppercase;
-    overflow-wrap: anywhere;
-  }
-
-  .mvp-place.p1 .mvp-nom { font-size: clamp(20px, 2.4vw, 30px); color: #ffd700; }
-
-  .mvp-points {
-    margin-top: 10px;
-    font-family: "Archivo Black", sans-serif;
-    font-size: clamp(20px, 2.2vw, 28px);
-    line-height: 1;
-  }
-
-  .mvp-points small, .mvp-combats {
-    display: block;
-    margin-top: 6px;
-    color: #8f8a80;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-
-  @media (max-width: 650px) {
-    .mvp { padding: 18px 12px 22px; }
-    .mvp-head { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .mvp-podium { grid-template-columns: 1fr; }
-    .mvp-place.p1, .mvp-place.p2, .mvp-place.p3 { order: 0; }
-  }
-</style>
-
-<div class="mvp" id="mvp" hidden>
-  <div class="mvp-head">
-    <b>🏆 MVP de la semaine</b>
-    <span class="mvp-semaine" id="mvp-semaine"></span>
-  </div>
-  <div class="mvp-podium" id="mvp-podium"></div>
-</div>
-
-<script>
-  fetch('/data/mvp.json?' + Date.now())
-    .then(r => r.json())
-    .then(m => {
-      if (!m.podium || !m.podium.length) return;
-      const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-      const medailles = ['🥇', '🥈', '🥉'];
-
-      document.getElementById('mvp-semaine').textContent = 'Guerre : ' + m.semaine;
-      document.getElementById('mvp-podium').innerHTML = m.podium.map((j, i) => {
-        const contenu =
-          '<div class="mvp-medaille">' + medailles[i] + '</div>' +
-          '<div class="mvp-nom">' + esc(j.nom) + '</div>' +
-          '<div class="mvp-points">' + j.points.toLocaleString('fr-FR') + '<small>points de guerre</small></div>' +
-          '<span class="mvp-combats">' + j.combats + ' combats</span>';
-        // Lien vers le profil seulement si le joueur est encore dans le clan
-        return j.membre
-          ? '<a class="mvp-place p' + (i + 1) + '" href="/joueur.html?tag=' + j.tag + '">' + contenu + '</a>'
-          : '<div class="mvp-place p' + (i + 1) + '">' + contenu + '</div>';
-      }).join('');
-
-      document.getElementById('mvp').hidden = false;
-    })
-    .catch(() => {});
-</script>
-<!-- ===== FIN MVP ===== -->
-<!-- ===== GUERRE EN DIRECT ===== -->
-<style>
-  .bloc-live {
-    position: relative;
-    margin: 0 0 32px;
-    padding: 18px 24px 26px;
-    background: #141418;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #f1ece1;
-  }
-
-  .bloc-live::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    height: 4px;
-    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
-  }
-
-  .bloc-live[hidden] { display: none; }
-
-  .bloc-live-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 20px;
-    color: #b9b3a6;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
-
-  .bloc-live-head b { color: #f1ece1; }
-  .bloc-live-info { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
-
-  .course-ligne {
-    display: grid;
-    grid-template-columns: 34px minmax(0, 1.2fr) minmax(0, 2fr) 110px;
-    align-items: center;
-    gap: 14px;
-    padding: 12px 10px;
-    border-bottom: 1px solid rgba(241, 236, 225, 0.07);
-  }
-
-  .course-ligne.nous {
-    background: rgba(255, 215, 0, 0.07);
-    border: 1px solid rgba(255, 215, 0, 0.45);
-  }
-
-  .course-pos { font-family: "Archivo Black", sans-serif; font-size: 20px; color: #8f8a80; }
-  .course-ligne.nous .course-pos { color: #ffd700; }
-
-  .course-nom { font-weight: 700; overflow-wrap: anywhere; }
-  .course-nom small { display: block; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; }
-
-  .course-barre { height: 10px; background: rgba(255, 255, 255, 0.07); overflow: hidden; }
-  .course-barre div { height: 100%; background: #5d82ff; transition: width 1s ease; }
-  .course-ligne.nous .course-barre div { background: #ffd700; }
-
-  .course-points { text-align: right; font-family: "Archivo Black", sans-serif; font-size: 18px; }
-  .course-points small { display: block; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; }
-
-  .course-attente { padding: 22px 0; text-align: center; color: #b9b3a6; }
-
-  @media (max-width: 650px) {
-    .bloc-live { padding: 18px 12px 22px; }
-    .bloc-live-head { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .course-ligne { grid-template-columns: 26px minmax(0, 1fr) 90px; row-gap: 8px; }
-    .course-barre { grid-column: 2 / -1; grid-row: 2; }
-  }
-</style>
-
-<div class="bloc-live" id="guerre-live" hidden>
-  <div class="bloc-live-head">
-    <b>⚔️ Guerre en direct</b>
-    <span class="bloc-live-info" id="guerre-info"></span>
-  </div>
-  <div id="guerre-course"></div>
-</div>
-
-<script>
-  (() => {
-    const fr = n => n.toLocaleString('fr-FR');
-    const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-
-    fetch('/data/guerre.json?' + Date.now())
-      .then(r => r.json())
-      .then(g => {
-        if (!g.clans || !g.clans.length) return;
-        const zone = document.getElementById('guerre-course');
-        const info = document.getElementById('guerre-info');
-
-        if (g.type === 'training') {
-          info.textContent = 'Jours d’entraînement';
-          zone.innerHTML = '<p class="course-attente">La course reprend jeudi : prépare tes decks ! 🛡️</p>';
-        } else {
-          // Course classique : ligne d'arrivée à 10 000 points. Colisée : pas de ligne d'arrivée.
-          const max = g.objectif || Math.max(...g.clans.map(c => c.points), 1);
-          info.textContent = g.type === 'colosseum' ? 'Colisée · tout se joue aux points' : 'Course fluviale · arrivée à 10 000 points';
-          zone.innerHTML = g.clans.map((c, i) =>
-            '<div class="course-ligne' + (c.nous ? ' nous' : '') + '">' +
-              '<div class="course-pos">' + (i + 1) + '</div>' +
-              '<div class="course-nom">' + esc(c.nom) + '<small>' + c.combats + '/200 combats aujourd’hui</small></div>' +
-              '<div class="course-barre"><div style="width:' + Math.min(100, c.points / max * 100) + '%"></div></div>' +
-              '<div class="course-points">' + (c.fini ? '🏁 ' : '') + fr(c.points) + '<small>+' + fr(c.aujourdhui) + ' aujourd’hui</small></div>' +
-            '</div>'
-          ).join('');
-        }
-
-        document.getElementById('guerre-live').hidden = false;
-      })
-      .catch(() => {});
-  })();
-</script>
-<!-- ===== FIN GUERRE EN DIRECT ===== -->
-          <div class="actu-layout">
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
-              <div class="actu-caption">
-                <h3>Création du Clan Francais</h3>
-                <time>2021</time>
-              </div>
-            </a>
-
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('classement_clash.png')"></div>
-              <div class="actu-caption">
-                <h3>TOP 1000 France</h3>
-                <time>Janvier 2025</time>
-              </div>
-            </a>
-
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('france.png')"></div>
-              <div class="actu-caption">
-                <h3>243e au classement national</h3>
-                <time>Novembre 2025</time>
-              </div>
-            </a>
-
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
-              <div class="actu-caption">
-                <h3>Recrutement ouvert : 9 000 trophées minimum</h3>
-                <time>Toujours ouvert</time>
-              </div>
-            </a>
-
-            <aside class="calendar" aria-label="Calendrier du clan">
-              <div class="calendar-inner">
-                <div class="cal-head">Calendrier</div>
-
-                <div class="cal-tabs">
-                  <button type="button" class="cal-arrow" id="calPrev" aria-label="Catégorie précédente">‹</button>
-
-                  <div class="cal-tab-list">
-                    <button type="button" class="cal-tab active" data-filter="all" aria-label="Tout">🗓️</button>
-                  </div>
-
-                  <button type="button" class="cal-arrow" id="calNext" aria-label="Catégorie suivante">›</button>
-                </div>
-
-                <div class="cal-list" id="calList"></div>
-              </div>
-            </aside>
-          </div>
         </div>
       </section>
 
@@ -3958,6 +3857,7 @@
           <div class="footer-column">
             <h3>LE CLAN</h3>
             <a href="#statistiques">ACTUALITÉS</a>
+            <a href="#stats">STATISTIQUES</a>
             <a href="#decouvrir">DÉCOUVRIR LE CLAN</a>
             <a href="#equipe">LES LEADERS</a>
             <a href="#recrutement">RECRUTEMENTS</a>
