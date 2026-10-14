@@ -65,9 +65,9 @@
   <div class="prog-haut">
     <h2>Progression des trophées</h2>
     <div class="prog-boutons">
-      <button data-jours="7">7 jours</button>
-      <button data-jours="30" class="actif">30 jours</button>
-      <button data-jours="0">Tout</button>
+      <button data-jours="1">24 h</button>
+      <button data-jours="7" class="actif">7 jours</button>
+      <button data-jours="30">30 jours</button>
     </div>
   </div>
   <div class="prog-zone"><canvas id="prog-canvas"></canvas></div>
@@ -119,7 +119,7 @@
         ).join('');
 
         // Derniers combats : résultat, score, adversaire et son deck
-        const modes = { PvP: 'Classique', pathOfLegend: 'Ligue', riverRacePvP: 'Guerre', riverRaceDuel: 'Duel de guerre', riverRaceDuelColosseum: 'Duel · Colisée', boatBattle: 'Bataille navale', clanMate: 'Amical (clan)', friendly: 'Amical', challenge: 'Défi', tournament: 'Tournoi' };
+        const modes = { trail: 'Route des trophées', PvP: 'Classique', pathOfLegend: 'Ligue', riverRacePvP: 'Guerre', riverRaceDuel: 'Duel de guerre', riverRaceDuelColosseum: 'Duel · Colisée', boatBattle: 'Bataille navale', clanMate: 'Amical (clan)', friendly: 'Amical', challenge: 'Défi', tournament: 'Tournoi' };
         const dateCombat = s => new Date(s.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, '$1-$2-$3T$4:$5:$6Z'));
         const ilya = d => { const m = Math.round((Date.now() - d) / 60000); return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : 'il y a ' + Math.round(m / 1440) + ' j'; };
         const cb = j.combats || [];
@@ -145,13 +145,18 @@
       .catch(() => erreur('Impossible de charger ce profil.'));
 
     // Courbe de progression des trophées (data/progression/<TAG>.json, rempli par le programme)
-    let histo = [], graph = null, jours = 30;
+    let histo = [], graph = null, jours = 7;
     const canvas = document.getElementById('prog-canvas');
     const vide = document.getElementById('prog-vide');
 
     const dessiner = () => {
-      const depuis = jours ? Date.now() - jours * 86400000 : 0;
+      const depuis = Date.now() - jours * 86400000;
       const points = histo.filter(p => new Date(p.d) >= depuis);
+      // Les trophées restent identiques entre deux mesures : on part de la dernière valeur connue
+      // avant la période, et on prolonge la courbe jusqu'à maintenant
+      const avant = histo.filter(p => new Date(p.d) < depuis).pop();
+      if (avant) points.unshift({ d: new Date(depuis).toISOString(), t: avant.t });
+      if (points.length) points.push({ d: new Date().toISOString(), t: points[points.length - 1].t });
       vide.hidden = points.length >= 2;
       canvas.parentElement.hidden = points.length < 2;
       if (graph) graph.destroy();
@@ -185,7 +190,7 @@
           },
           scales: {
             x: {
-              ticks: { color: '#aaa7c4', maxTicksLimit: 7, callback: (v, i) => new Date(points[i].d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' }) },
+              ticks: { color: '#aaa7c4', maxTicksLimit: 7, callback: (v, i) => jours === 1 ? new Date(points[i].d).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : new Date(points[i].d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' }) },
               grid: { color: 'rgba(255, 255, 255, .06)' }
             },
             y: {
