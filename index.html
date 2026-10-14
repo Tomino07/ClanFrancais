@@ -3500,6 +3500,140 @@
     .catch(() => {});
 </script>
 <!-- ===== FIN MVP ===== -->
+<!-- ===== JOUEUR DU MOIS ===== -->
+<style>
+  .jdm {
+    position: relative;
+    margin: 0 0 32px;
+    padding: 18px 24px 24px;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #f1ece1;
+  }
+
+  .jdm::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+  }
+
+  .jdm[hidden] { display: none; }
+
+  .jdm-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #b9b3a6;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .jdm-head b { color: #f1ece1; }
+  .jdm-mois { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
+
+  .jdm-corps { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 24px; margin-top: 20px; align-items: stretch; }
+
+  .jdm-star {
+    display: block;
+    padding: 24px 20px;
+    text-align: center;
+    color: #f1ece1;
+    border: 1px solid rgba(255, 215, 0, 0.55);
+    background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.18), rgba(255, 215, 0, 0.02) 70%);
+    transition: transform 0.25s ease;
+  }
+
+  a.jdm-star:hover { transform: translateY(-4px); }
+  .jdm-etoile { font-size: 46px; line-height: 1; }
+  .jdm-nom { margin-top: 10px; font-family: "Archivo Black", sans-serif; font-size: clamp(24px, 3vw, 36px); line-height: 1.05; color: #ffd700; text-transform: uppercase; overflow-wrap: anywhere; }
+  .jdm-score { margin-top: 6px; color: #b9b3a6; font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; }
+
+  .jdm-detail { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+  .jdm-detail div { padding: 10px 6px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); }
+  .jdm-detail strong { display: block; font-family: "Archivo Black", sans-serif; font-size: 18px; }
+  .jdm-detail span { display: block; margin-top: 4px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .jdm-suivants h4 { margin: 0 0 8px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .jdm-suivants ol { list-style: none; margin: 0; padding: 0; }
+  .jdm-suivants li { display: flex; justify-content: space-between; gap: 10px; padding: 9px 4px; border-bottom: 1px solid rgba(241, 236, 225, 0.07); }
+  .jdm-suivants li b { overflow-wrap: anywhere; }
+  .jdm-suivants li span { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 12px; flex-shrink: 0; }
+  .jdm-precedent { margin-top: 16px; color: #b9b3a6; font-size: 14px; }
+  .jdm-precedent b { color: #ffd700; }
+  .jdm-regle { margin-top: 16px; color: #8f8a80; font-size: 12px; }
+
+  @media (max-width: 750px) {
+    .jdm { padding: 18px 12px 20px; }
+    .jdm-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .jdm-corps { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="jdm" id="joueur-du-mois" hidden>
+  <div class="jdm-head">
+    <b>🌟 Joueur du mois</b>
+    <span class="jdm-mois" id="jdm-mois"></span>
+  </div>
+  <div class="jdm-corps">
+    <div id="jdm-star"></div>
+    <div class="jdm-suivants">
+      <h4>Le classement du mois</h4>
+      <ol id="jdm-liste"></ol>
+      <p class="jdm-precedent" id="jdm-precedent"></p>
+    </div>
+  </div>
+  <p class="jdm-regle">Score sur 100 : guerre 50 % · dons 25 % · trophées gagnés 25 %, chaque critère comparé au meilleur du clan. Le gagnant est désigné à la fin du mois.</p>
+</div>
+
+<script>
+  (() => {
+    const fr = n => (n ?? 0).toLocaleString('fr-FR');
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+    fetch('/data/joueur-du-mois.json?' + Date.now())
+      .then(r => r.json())
+      .then(d => {
+        const [premier, ...suivants] = d.classement || [];
+        if (!premier) return;
+
+        document.getElementById('jdm-mois').textContent = d.libelle.charAt(0).toUpperCase() + d.libelle.slice(1) + ' · en cours';
+
+        document.getElementById('jdm-star').innerHTML =
+          '<a class="jdm-star" href="/joueur.html?tag=' + esc(premier.tag) + '">' +
+            '<div class="jdm-etoile">🌟</div>' +
+            '<div class="jdm-nom">' + esc(premier.nom) + '</div>' +
+            '<div class="jdm-score">EN TÊTE · ' + premier.score + ' / 100</div>' +
+            '<div class="jdm-detail">' +
+              '<div><strong>' + fr(premier.guerre) + '</strong><span>⚔️ Guerre</span></div>' +
+              '<div><strong>' + fr(premier.dons) + '</strong><span>🎁 Dons</span></div>' +
+              '<div><strong>+' + fr(premier.trophees) + '</strong><span>🏆 Trophées</span></div>' +
+            '</div>' +
+          '</a>';
+
+        document.getElementById('jdm-liste').innerHTML = suivants.map((j, i) =>
+          '<li><b>' + (i + 2) + '. <a href="/joueur.html?tag=' + esc(j.tag) + '">' + esc(j.nom) + '</a></b><span>' + j.score + ' / 100</span></li>'
+        ).join('');
+
+        const p = (d.historique || [])[0];
+        if (p) {
+          document.getElementById('jdm-precedent').innerHTML =
+            '🏅 Joueur du mois de ' + esc(p.libelle) + ' : <b>' + esc(p.nom) + '</b> (' + p.score + ' / 100)';
+        }
+
+        document.getElementById('joueur-du-mois').hidden = false;
+      })
+      .catch(() => {});
+  })();
+</script>
+<!-- ===== FIN JOUEUR DU MOIS ===== -->
 <!-- ===== ARRIVÉES ET DÉPARTS ===== -->
 <style>
   .mouv {
