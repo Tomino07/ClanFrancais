@@ -55,6 +55,18 @@ jobs:
                 }
             ) catch {podium: []}' > data/mvp.json
 
+          # Arrivées et départs : on compare la liste des membres avec celle du passage précédent
+          [ -f data/membres-precedents.json ] || jq '[.memberList[] | {tag, nom: .name}]' clan.json > data/membres-precedents.json
+          [ -f data/mouvements.json ] || echo '[]' > data/mouvements.json
+          jq --slurpfile c clan.json --slurpfile prev data/membres-precedents.json --arg now "$(date -u +%FT%TZ)" '
+            ([$c[0].memberList[] | {tag, nom: .name}]) as $act
+            | ($act | map(.tag)) as $tA
+            | ($prev[0] | map(.tag)) as $tP
+            | . + [$act[] | select(.tag as $t | $tP | index($t) | not) | {date: $now, type: "arrivee", nom, tag: (.tag | ltrimstr("#"))}]
+                + [$prev[0][] | select(.tag as $t | $tA | index($t) | not) | {date: $now, type: "depart", nom, tag: (.tag | ltrimstr("#"))}]
+            | .[-50:]' data/mouvements.json > m.json && mv m.json data/mouvements.json || true
+          jq '[.memberList[] | {tag, nom: .name}]' clan.json > data/membres-precedents.json
+
           # Guerre en direct : les 5 clans de la course en cours
           if curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC/currentriverrace" > cur.json; then
             jq '{
