@@ -22,6 +22,12 @@
     th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ffffff22; }
     td.num, th.num { text-align: right; }
     #erreur { color: #ff7a7a; }
+    .prog-haut { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .prog-haut h2 { margin-bottom: 0; }
+    .prog-boutons button { background: rgba(255, 255, 255, .055); border: 1px solid rgba(255, 255, 255, .12); color: #aaa7c4; border-radius: 8px; padding: 4px 12px; font: inherit; cursor: pointer; }
+    .prog-boutons button.actif { background: #ffd700; color: #0e0f12; border-color: #ffd700; }
+    .prog-zone { position: relative; height: 260px; margin-top: 12px; }
+    .prog-vide { color: #aaa7c4; }
   </style>
 </head>
 <body>
@@ -40,6 +46,17 @@
     <div class="stat"><b id="niveau">–</b>Niveau</div>
   </div>
 
+  <div class="prog-haut">
+    <h2>Progression des trophées</h2>
+    <div class="prog-boutons">
+      <button data-jours="7">7 jours</button>
+      <button data-jours="30" class="actif">30 jours</button>
+      <button data-jours="0">Tout</button>
+    </div>
+  </div>
+  <div class="prog-zone"><canvas id="prog-canvas"></canvas></div>
+  <p class="prog-vide" id="prog-vide" hidden>La courbe se remplit au fil du temps : reviens dans quelques jours !</p>
+
   <h2>Deck actuel</h2>
   <div class="deck" id="deck"></div>
 
@@ -50,6 +67,7 @@
   </table>
 </main>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
   const fr = n => (n ?? 0).toLocaleString('fr-FR');
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -86,6 +104,70 @@
           : '<tr><td colspan="3">Pas encore de guerre enregistrée.</td></tr>';
       })
       .catch(() => erreur('Impossible de charger ce profil.'));
+
+    // Courbe de progression des trophées (data/progression/<TAG>.json, rempli par le programme)
+    let histo = [], graph = null, jours = 30;
+    const canvas = document.getElementById('prog-canvas');
+    const vide = document.getElementById('prog-vide');
+
+    const dessiner = () => {
+      const depuis = jours ? Date.now() - jours * 86400000 : 0;
+      const points = histo.filter(p => new Date(p.d) >= depuis);
+      vide.hidden = points.length >= 2;
+      canvas.parentElement.hidden = points.length < 2;
+      if (graph) graph.destroy();
+      if (points.length < 2) return;
+
+      graph = new Chart(canvas, {
+        type: 'line',
+        data: {
+          labels: points.map(p => p.d),
+          datasets: [{
+            data: points.map(p => p.t),
+            borderColor: '#ffd700',
+            backgroundColor: 'rgba(255, 215, 0, .12)',
+            fill: 'start',
+            stepped: true, // les trophées changent par paliers
+            pointRadius: 0,
+            pointHoverRadius: 5
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          interaction: { mode: 'index', intersect: false },
+          plugins: {
+            legend: { display: false },
+            tooltip: {
+              callbacks: {
+                title: t => new Date(points[t[0].dataIndex].d).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }),
+                label: t => ' ' + fr(t.parsed.y) + ' trophées'
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: { color: '#aaa7c4', maxTicksLimit: 7, callback: (v, i) => new Date(points[i].d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' }) },
+              grid: { color: 'rgba(255, 255, 255, .06)' }
+            },
+            y: {
+              ticks: { color: '#aaa7c4', precision: 0, callback: v => fr(v) },
+              grid: { color: 'rgba(255, 255, 255, .06)' }
+            }
+          }
+        }
+      });
+    };
+
+    document.querySelectorAll('[data-jours]').forEach(b => b.onclick = () => {
+      document.querySelectorAll('[data-jours]').forEach(x => x.classList.toggle('actif', x === b));
+      jours = +b.dataset.jours;
+      dessiner();
+    });
+
+    fetch('/data/progression/' + tag + '.json?' + Date.now())
+      .then(r => r.ok ? r.json() : [])
+      .catch(() => [])
+      .then(h => { histo = h; dessiner(); });
   }
 </script>
 </body>
