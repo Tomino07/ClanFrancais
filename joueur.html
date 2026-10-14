@@ -22,6 +22,9 @@
     th, td { padding: 8px; text-align: left; border-bottom: 1px solid #ffffff22; }
     td.num, th.num { text-align: right; }
     #erreur { color: #ff7a7a; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(255, 215, 0, .08); border: 1px solid rgba(255, 215, 0, .35); color: #f1ece1; font-size: .85rem; font-weight: 700; cursor: help; }
+    .badge.or { background: rgba(255, 215, 0, .18); border-color: #ffd700; color: #ffd700; }
     .prog-haut { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
     .prog-haut h2 { margin-bottom: 0; }
     .prog-boutons button { background: rgba(255, 255, 255, .055); border: 1px solid rgba(255, 255, 255, .12); color: #aaa7c4; border-radius: 8px; padding: 4px 12px; font: inherit; cursor: pointer; }
@@ -53,6 +56,7 @@
 
   <h1 id="nom">…</h1>
   <div class="tag" id="tag"></div>
+  <div class="badges" id="badges"></div>
 
   <div class="stats">
     <div class="stat"><b id="trophees">–</b>Trophées</div>
@@ -136,6 +140,52 @@
             '<div class="mini-deck">' + (c.deckAdv || []).map(k => '<img src="' + esc(k.image) + '" alt="' + esc(k.nom) + '" title="' + esc(k.nom) + '" loading="lazy">').join('') + '</div></div>' +
           '</div>';
         }).join('');
+
+        // Badges, attribués automatiquement à partir des données du clan
+        const charger = f => fetch('/data/' + f + '.json?' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+        Promise.all([charger('clan'), charger('mvp'), charger('joueur-du-mois'), charger('mouvements')]).then(([clan, mvp, jdm, mouv]) => {
+          const b = []; // [icône + texte, explication, doré ?]
+          const ajout = (texte, info, or) => b.push('<span class="badge' + (or ? ' or' : '') + '" title="' + esc(info) + '">' + texte + '</span>');
+
+          // Rôle
+          if (j.role === 'Chef') ajout('👑 Chef', 'Chef du clan', true);
+          if (j.role === 'Chef adjoint') ajout('⭐ Chef adjoint', 'Chef adjoint du clan');
+
+          // MVP de la semaine
+          const pod = (mvp && mvp.podium) || [];
+          const place = pod.findIndex(p => p.tag === j.tag);
+          if (place === 0) ajout('🏆 MVP de la semaine', 'Meilleur joueur du clan à la dernière guerre (' + mvp.semaine + ')', true);
+          else if (place > 0) ajout(['', '🥈', '🥉'][place] + ' Podium MVP', (place + 1) + 'e à la dernière guerre (' + mvp.semaine + ')');
+          if (j.mvps > 1 || (j.mvps === 1 && place !== 0)) ajout('🏆 MVP ×' + j.mvps, 'Meilleur joueur du clan sur ' + j.mvps + ' guerre(s) parmi les 10 dernières');
+
+          // Joueur du mois
+          if (jdm) {
+            const titres = (jdm.historique || []).filter(h => h.tag === j.tag);
+            if (titres.length) ajout('🌟 Joueur du mois' + (titres.length > 1 ? ' ×' + titres.length : ''), 'Élu Joueur du mois : ' + titres.map(h => h.libelle).join(', '), true);
+            if ((jdm.classement || [])[0] && jdm.classement[0].tag === j.tag) ajout('🌟 En tête du mois', 'Actuellement 1er du classement du Joueur du mois');
+          }
+
+          // Guerre : 16 combats sur 16
+          const guerres = j.guerres || [];
+          const parfaites = guerres.filter(w => w.combats >= 16).length;
+          if (guerres[0] && guerres[0].combats >= 16) ajout('⚔️ 16/16', 'Tous ses combats joués à la dernière guerre' + (parfaites > 1 ? ' · ' + parfaites + ' guerres parfaites sur les ' + guerres.length + ' dernières' : ''));
+          else if (parfaites >= 3) ajout('⚔️ 16/16 ×' + parfaites, parfaites + ' guerres parfaites sur les ' + guerres.length + ' dernières');
+
+          // Dons : top 3 du clan cette semaine
+          if (clan && j.dons > 0) {
+            const rangDons = [...clan.joueurs].sort((a, c) => c.dons - a.dons).findIndex(x => x.tag === j.tag);
+            if (rangDons >= 0 && rangDons < 3) ajout('🎁 Gros donateur', (rangDons + 1) + 'e meilleur donateur du clan cette semaine (' + j.dons + ' dons)');
+          }
+
+          // Trophées
+          if (j.trophees >= 14000) ajout('💎 14 000 trophées', 'A atteint le maximum de la route des trophées');
+
+          // Nouveau membre (arrivé il y a moins de 7 jours)
+          const arrivee = (mouv || []).filter(m => m.type === 'arrivee' && m.tag === j.tag).pop();
+          if (arrivee && Date.now() - new Date(arrivee.date) < 7 * 86400000) ajout('🆕 Nouveau', 'A rejoint le clan récemment');
+
+          document.getElementById('badges').innerHTML = b.join('');
+        });
 
         const g = j.guerres || [];
         document.getElementById('guerres').innerHTML = g.length
