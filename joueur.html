@@ -28,6 +28,22 @@
     .prog-boutons button.actif { background: #ffd700; color: #0e0f12; border-color: #ffd700; }
     .prog-zone { position: relative; height: 260px; margin-top: 12px; }
     .prog-vide { color: #aaa7c4; }
+    .combats-resume { color: #aaa7c4; margin: -4px 0 12px; }
+    .combats-resume b { color: #ffd700; }
+    .combat { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; align-items: center; padding: 12px; margin-bottom: 10px; background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .1); border-left: 4px solid #8f8a80; border-radius: 10px; }
+    .combat.v { border-left-color: #3ddc84; }
+    .combat.d { border-left-color: #ff5a4f; }
+    .combat-res { text-align: center; }
+    .combat-res b { display: block; font-size: .8rem; letter-spacing: .08em; }
+    .combat.v .combat-res b { color: #3ddc84; }
+    .combat.d .combat-res b { color: #ff5a4f; }
+    .combat-score { font-family: 'Luckiest Guy', cursive; font-size: 1.6rem; line-height: 1.1; }
+    .combat-tr { font-size: .8rem; color: #aaa7c4; }
+    .combat-info { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; font-size: .9rem; }
+    .combat-info span { color: #aaa7c4; }
+    .mini-deck { display: grid; grid-template-columns: repeat(8, 1fr); gap: 4px; margin-top: 6px; max-width: 360px; }
+    .mini-deck img { width: 100%; }
+    @media (max-width: 520px) { .combat { grid-template-columns: 1fr; } .mini-deck { grid-template-columns: repeat(4, 1fr); max-width: 200px; } }
   </style>
 </head>
 <body>
@@ -59,6 +75,10 @@
 
   <h2>Deck actuel</h2>
   <div class="deck" id="deck"></div>
+
+  <h2>Derniers combats</h2>
+  <p class="combats-resume" id="combats-resume"></p>
+  <div id="combats"></div>
 
   <h2>Historique de guerre</h2>
   <table>
@@ -97,6 +117,25 @@
         document.getElementById('deck').innerHTML = (j.deck || []).map(c =>
           '<div><img src="' + esc(c.image) + '" alt="" loading="lazy">' + esc(c.nom) + '</div>'
         ).join('');
+
+        // Derniers combats : résultat, score, adversaire et son deck
+        const modes = { PvP: 'Classique', pathOfLegend: 'Ligue', riverRacePvP: 'Guerre', riverRaceDuel: 'Duel de guerre', riverRaceDuelColosseum: 'Duel · Colisée', boatBattle: 'Bataille navale', clanMate: 'Amical (clan)', friendly: 'Amical', challenge: 'Défi', tournament: 'Tournoi' };
+        const dateCombat = s => new Date(s.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, '$1-$2-$3T$4:$5:$6Z'));
+        const ilya = d => { const m = Math.round((Date.now() - d) / 60000); return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : 'il y a ' + Math.round(m / 1440) + ' j'; };
+        const cb = j.combats || [];
+        const nbV = cb.filter(c => c.moi > c.adv).length, nbD = cb.filter(c => c.moi < c.adv).length;
+        document.getElementById('combats-resume').innerHTML = cb.length
+          ? '<b>' + nbV + ' V</b> · <b>' + nbD + ' D</b> sur les ' + cb.length + ' derniers combats (' + Math.round(nbV / cb.length * 100) + ' % de victoires)'
+          : 'Aucun combat récent.';
+        document.getElementById('combats').innerHTML = cb.map(c => {
+          const r = c.moi > c.adv ? 'v' : c.moi < c.adv ? 'd' : 'n';
+          const tr = c.trophees ? (c.trophees > 0 ? '+' : '') + c.trophees + ' 🏆' : '';
+          return '<div class="combat ' + r + '">' +
+            '<div class="combat-res"><b>' + { v: 'VICTOIRE', d: 'DÉFAITE', n: 'ÉGALITÉ' }[r] + '</b><div class="combat-score">' + c.moi + ' – ' + c.adv + '</div><div class="combat-tr">' + tr + '</div></div>' +
+            '<div><div class="combat-info"><div>contre <b>' + esc(c.adversaire) + '</b>' + (c.clanAdv ? ' <span>(' + esc(c.clanAdv) + ')</span>' : '') + '</div><span>' + esc(modes[c.type] || c.mode || c.type) + ' · ' + ilya(dateCombat(c.date)) + '</span></div>' +
+            '<div class="mini-deck">' + (c.deckAdv || []).map(k => '<img src="' + esc(k.image) + '" alt="' + esc(k.nom) + '" title="' + esc(k.nom) + '" loading="lazy">').join('') + '</div></div>' +
+          '</div>';
+        }).join('');
 
         const g = j.guerres || [];
         document.getElementById('guerres').innerHTML = g.length
