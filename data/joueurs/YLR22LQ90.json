@@ -5,7 +5,7 @@
   "niveau": 61,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 5171,
+  "victoires": 5173,
   "dons": 0,
   "deck": [
     {
@@ -15,6 +15,10 @@
     {
       "nom": "Electro Wizard",
       "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
+    },
+    {
+      "nom": "Golden Knight",
+      "image": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png"
     },
     {
       "nom": "Fireball",
