@@ -4768,6 +4768,183 @@
 
       updateAuthInterface();
     </script>
+    <!-- ===== MENU « MON PROFIL » (clic sur la photo de profil) ===== -->
+    <style>
+      .user-chip { position: relative; cursor: pointer; }
+      .user-chip:hover { background: rgba(255, 255, 255, 0.1); }
+
+      .profil-menu {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        z-index: 1001;
+        width: 270px;
+        padding: 14px;
+        background: #141414;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 10px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+        color: #fff;
+        font-size: 14px;
+        cursor: default;
+        white-space: normal;
+      }
+
+      .profil-menu[hidden] { display: none; }
+      .profil-menu-nom { font-weight: 800; font-size: 16px; overflow-wrap: anywhere; }
+      .profil-menu-role { color: #aaa7c4; font-size: 12px; margin-bottom: 10px; }
+      .profil-menu-infos { display: grid; gap: 4px; margin-bottom: 12px; color: #d6d3e7; }
+      .profil-menu-texte { color: #aaa7c4; margin-bottom: 10px; line-height: 1.4; }
+
+      .profil-menu-btn {
+        display: block;
+        width: 100%;
+        margin-top: 6px;
+        padding: 9px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.06);
+        color: #fff;
+        font: inherit;
+        font-weight: 700;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .profil-menu-btn:hover { background: rgba(255, 255, 255, 0.12); }
+      .profil-menu-btn.principal { background: #ffd700; border-color: #ffd700; color: #0e0f12; }
+      .profil-menu-btn.principal:hover { background: #ffe14d; }
+
+      .profil-menu select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: #1b1b1b;
+        color: #fff;
+        font: inherit;
+      }
+
+      .profil-menu-lien { margin-top: 8px; background: none; border: 0; color: #8fa8ff; font: inherit; font-size: 12px; cursor: pointer; padding: 0; }
+
+      @media (max-width: 750px) {
+        .profil-menu { width: min(270px, calc(100vw - 28px)); }
+      }
+    </style>
+
+    <script>
+      (() => {
+        const chip = document.getElementById("userChip");
+        const menu = document.createElement("div");
+        menu.className = "profil-menu";
+        menu.id = "profilMenu";
+        menu.hidden = true;
+        chip.appendChild(menu);
+
+        const fr = (n) => (n ?? 0).toLocaleString("fr-FR");
+        const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+        const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+        const dateCR = (t) => (t ? new Date(t.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, "$1-$2-$3T$4:$5:$6Z")) : null);
+        const duree = (ms) => { const m = Math.max(0, Math.round(ms / 60000)); return m < 60 ? m + " min" : m < 1440 ? Math.round(m / 60) + " h" : Math.round(m / 1440) + " j"; };
+        const roles = { leader: "👑 Chef", coLeader: "⭐ Chef adjoint", elder: "Aîné", member: "Membre" };
+
+        let clan = null;
+        const chargerClan = () => clan || (clan = fetch("/data/clan.json?" + Date.now()).then((r) => r.json()));
+
+        // Retrouve le joueur : tag choisi dans le menu, sinon pseudo d'inscription ou nom Discord
+        function trouverJoueur(user, d) {
+          const meta = user.user_metadata || {};
+          if (meta.tag_clash_royale) {
+            const j = d.joueurs.find((x) => x.tag === meta.tag_clash_royale);
+            if (j) return j;
+          }
+          const discord = (user.identities || []).find((i) => i.provider === "discord");
+          const infos = discord ? discord.identity_data : {};
+          const noms = [meta.pseudo_clash_royale, infos.custom_claims && infos.custom_claims.global_name, infos.full_name, infos.name, meta.full_name]
+            .map(norm).filter(Boolean);
+          return d.joueurs.find((x) => noms.includes(norm(x.nom))) || null;
+        }
+
+        function statut(j, majAt) {
+          const vu = dateCR(j.vu);
+          if (!vu) return "";
+          const absent = Date.now() - vu;
+          if (absent > 14 * 86400000) return "⚠️ Inactif depuis " + duree(absent);
+          if (new Date(majAt) - vu <= 15 * 60000) return "🟢 En ligne";
+          return "🔴 Vu il y a " + duree(absent);
+        }
+
+        const boutonDeconnexion = '<button type="button" class="profil-menu-btn" data-action="deconnexion">🚪 Déconnexion</button>';
+
+        function afficherJoueur(j, d) {
+          const rang = [...d.joueurs].sort((a, b) => b.trophees - a.trophees).findIndex((x) => x.tag === j.tag) + 1;
+          menu.innerHTML =
+            '<div class="profil-menu-nom">' + esc(j.nom) + "</div>" +
+            '<div class="profil-menu-role">' + (roles[j.role] || j.role) + " · " + rang + "e du clan</div>" +
+            '<div class="profil-menu-infos">' +
+              "<div>🏆 " + fr(j.trophees) + " trophées</div>" +
+              "<div>🎁 " + fr(j.dons) + " dons cette semaine</div>" +
+              "<div>" + statut(j, d.majAt) + "</div>" +
+            "</div>" +
+            '<a class="profil-menu-btn principal" href="/joueur.html?tag=' + esc(j.tag) + '">👤 Mon profil</a>' +
+            boutonDeconnexion +
+            '<button type="button" class="profil-menu-lien" data-action="changer">Ce n’est pas toi ? Choisir mon pseudo</button>';
+        }
+
+        function afficherChoix(d, user) {
+          const options = [...d.joueurs]
+            .sort((a, b) => a.nom.localeCompare(b.nom, "fr"))
+            .map((x) => '<option value="' + esc(x.tag) + '">' + esc(x.nom) + "</option>").join("");
+          menu.innerHTML =
+            '<div class="profil-menu-nom">' + esc(document.getElementById("userName").textContent || "Mon compte") + "</div>" +
+            '<p class="profil-menu-texte">Choisis ton pseudo Clash Royale pour accéder à ton profil :</p>' +
+            '<select id="profilChoix"><option value="">— Choisis ton pseudo —</option>' + options + "</select>" +
+            '<button type="button" class="profil-menu-btn principal" data-action="valider">✅ C’est moi</button>' +
+            boutonDeconnexion;
+        }
+
+        async function remplir(forcerChoix) {
+          menu.innerHTML = '<p class="profil-menu-texte">Chargement…</p>';
+          const { data: { user } } = await supabaseClient.auth.getUser();
+          if (!user) { menu.hidden = true; return; }
+          const d = await chargerClan();
+          const j = forcerChoix ? null : trouverJoueur(user, d);
+          if (j) afficherJoueur(j, d);
+          else afficherChoix(d, user);
+        }
+
+        // Ouvrir / fermer le menu en cliquant sur la photo
+        chip.addEventListener("click", (e) => {
+          if (menu.contains(e.target)) return;
+          e.stopPropagation();
+          menu.hidden = !menu.hidden;
+          if (!menu.hidden) remplir(false);
+        });
+
+        // Actions du menu
+        menu.addEventListener("click", async (e) => {
+          e.stopPropagation();
+          const action = e.target.dataset.action;
+          if (action === "deconnexion") {
+            menu.hidden = true;
+            document.getElementById("logoutButton").click();
+          } else if (action === "changer") {
+            remplir(true);
+          } else if (action === "valider") {
+            const tag = document.getElementById("profilChoix").value;
+            if (!tag) return;
+            e.target.textContent = "Enregistrement…";
+            await supabaseClient.auth.updateUser({ data: { tag_clash_royale: tag } });
+            remplir(false);
+          }
+        });
+
+        document.addEventListener("click", (e) => { if (!chip.contains(e.target)) menu.hidden = true; });
+        document.addEventListener("keydown", (e) => { if (e.key === "Escape") menu.hidden = true; });
+      })();
+    </script>
+    <!-- ===== FIN MENU « MON PROFIL » ===== -->
+
     <script src="cookies.js" defer></script>
 
     <!-- ===== COURBE DE PROGRESSION DU RANG ===== -->
