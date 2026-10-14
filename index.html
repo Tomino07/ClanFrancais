@@ -3671,7 +3671,7 @@
             </p>
           </div>
 
-          <div class="leaders-grid">
+          <div class="leaders-grid" id="leaders-grid">
             <!-- TOM07 — CHEF -->
             <article class="leader-card" style="--i: 0">
               <div class="leader-visual">
@@ -3714,6 +3714,72 @@
               </div>
             </article>
           </div>
+
+          <!-- ===== LEADERS AUTOMATIQUES (data/clan.json + data/joueurs/<TAG>.json) ===== -->
+          <style>
+            .leader-statut {
+              margin-top: 18px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+            }
+
+            .leader-card a.leader-name { color: inherit; }
+          </style>
+          <script>
+            (() => {
+              const grille = document.getElementById('leaders-grid');
+              const fr = n => (n ?? 0).toLocaleString('fr-FR');
+              const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+              const dateCR = t => t ? new Date(t.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, '$1-$2-$3T$4:$5:$6Z')) : null;
+              const duree = ms => { const m = Math.max(0, Math.round(ms / 60000)); return m < 60 ? m + ' min' : m < 1440 ? Math.round(m / 60) + ' h' : Math.round(m / 1440) + ' j'; };
+
+              const statut = (j, majAt) => {
+                const vu = dateCR(j.vu);
+                if (!vu) return '';
+                const absent = Date.now() - vu;
+                if (absent > 14 * 86400000) return '⚠️ Inactif depuis ' + duree(absent);
+                if (new Date(majAt) - vu <= 15 * 60000) return '🟢 En ligne';
+                return '🔴 Vu il y a ' + duree(absent);
+              };
+
+              fetch('/data/clan.json?' + Date.now())
+                .then(r => r.json())
+                .then(async d => {
+                  // Le chef d'abord, puis les chefs adjoints (par trophées)
+                  const chefs = [
+                    ...d.joueurs.filter(j => j.role === 'leader'),
+                    ...d.joueurs.filter(j => j.role === 'coLeader').sort((a, b) => b.trophees - a.trophees)
+                  ];
+                  if (!chefs.length) return; // on garde les cartes écrites à la main
+
+                  // Les victoires sont dans la fiche de chaque joueur
+                  const fiches = await Promise.all(chefs.map(j =>
+                    fetch('/data/joueurs/' + j.tag + '.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+                  ));
+
+                  grille.innerHTML = chefs.map((j, i) =>
+                    '<article class="leader-card" style="--i: ' + i + '">' +
+                      '<div class="leader-visual">' +
+                        '<span class="leader-num" aria-hidden="true">' + String(i + 1).padStart(2, '0') + '</span>' +
+                        '<img class="leader-img" src="images-Photoroom.png" alt="' + esc(j.nom) + '" />' +
+                      '</div>' +
+                      '<p class="leader-role">' + (j.role === 'leader' ? 'Chef' : 'Chef adjoint') + '</p>' +
+                      '<a class="leader-name" href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a>' +
+                      '<div class="leader-stats">' +
+                        '<div><strong>' + fr(j.trophees) + '</strong><span>Trophées</span></div>' +
+                        '<div><strong>' + (fiches[i].victoires != null ? fr(fiches[i].victoires) : '—') + '</strong><span>Victoires</span></div>' +
+                      '</div>' +
+                      '<p class="leader-statut">' + statut(j, d.majAt) + '</p>' +
+                    '</article>'
+                  ).join('');
+                })
+                .catch(() => {}); // en cas de souci, les cartes écrites à la main restent affichées
+            })();
+          </script>
+          <!-- ===== FIN LEADERS AUTOMATIQUES ===== -->
         </div>
       </section>
 
