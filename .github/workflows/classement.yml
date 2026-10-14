@@ -145,7 +145,7 @@ jobs:
               | .[-500:]' "$H" > h.json && mv h.json "$H" || true
           done
           # Joueur du mois : guerre + dons + trophées gagnés sur le mois (voir .github/scripts/joueur-du-mois.js)
-          node .github/scripts/joueur-du-mois.js || true
+                    node .github/workflows/.github/scripts/joueur-du-mois.js || true
 
           rm -f clan.json rank.json log.json p.json b.json cur.json
       - name: Enregistrer
