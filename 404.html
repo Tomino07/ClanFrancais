@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable – Clan Français</title>
+  <link rel="icon" type="image/png" href="/images-Photoroom.png">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Baloo+2:wght@500;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+      background: #0e0f12;
+      color: #f1ece1;
+      font-family: "Baloo 2", sans-serif;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* liseré tricolore en haut */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+    }
+
+    main { position: relative; max-width: 560px; }
+
+    .chiffres {
+      font-family: "Archivo Black", sans-serif;
+      font-size: clamp(110px, 30vw, 220px);
+      line-height: 0.9;
+      color: transparent;
+      -webkit-text-stroke: 2px rgba(241, 236, 225, 0.25);
+      user-select: none;
+    }
+
+    /* le roi qui pleure, posé sur le « 0 » */
+    .roi {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: -130px auto 10px;
+      animation: sanglot 2.4s ease-in-out infinite;
+    }
+
+    .roi img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.6)) grayscale(0.35); }
+
+    .larme {
+      position: absolute;
+      top: 58%;
+      width: 12px;
+      height: 16px;
+      background: #5d9bff;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      opacity: 0;
+      animation: larme 1.6s ease-in infinite;
+    }
+
+    .larme.g { left: 36%; }
+    .larme.d { right: 36%; animation-delay: 0.8s; }
+    .pleurs { position: absolute; right: -14px; top: -6px; font-size: 40px; }
+
+    @keyframes larme {
+      0% { transform: translateY(0) scale(0.6); opacity: 0; }
+      15% { opacity: 1; }
+      100% { transform: translateY(70px) scale(1); opacity: 0; }
+    }
+
+    @keyframes sanglot {
+      0%, 100% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg) translateY(4px); }
+    }
+
+    h1 { font-family: "Archivo Black", sans-serif; font-size: clamp(24px, 5vw, 34px); text-transform: uppercase; }
+    p { margin-top: 12px; color: #b9b3a6; font-size: 17px; line-height: 1.6; }
+    .code { margin-top: 6px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: 0.14em; }
+
+    .boutons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
+
+    .boutons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border: 2px solid #f1ece1;
+      color: #f1ece1;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: transform 0.12s, box-shadow 0.12s;
+    }
+
+    .boutons a:hover { transform: translate(-3px, -3px); box-shadow: 3px 3px 0 #f1ece1; }
+    .boutons a.plein { background: #f1ece1; color: #0e0f12; }
+    .boutons a.plein:hover { box-shadow: 3px 3px 0 #e63027; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .roi, .larme { animation: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="chiffres" aria-hidden="true">404</div>
+
+    <div class="roi" aria-hidden="true">
+      <img src="/images-Photoroom.png" alt="">
+      <span class="larme g"></span>
+      <span class="larme d"></span>
+      <span class="pleurs">😭</span>
+    </div>
+
+    <h1>Le roi a perdu sa tour…</h1>
+    <p>Cette page a été détruite par un Gobelin ou n’a jamais existé. Pas de panique : ta place dans le clan, elle, est toujours là !</p>
+    <div class="code">ERREUR 404 · PAGE INTROUVABLE</div>
+
+    <div class="boutons">
+      <a class="plein" href="/">← Retour à l’accueil</a>
+      <a href="/#stats">Voir le classement</a>
+    </div>
+  </main>
+</body>
+</html>
