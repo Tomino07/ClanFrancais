@@ -29,7 +29,7 @@ jobs:
               score: $c[0].clanScore,
               tropheesGuerre: $c[0].clanWarTrophies,
               membres: $c[0].members,
-              joueurs: [$c[0].memberList[] | {tag: (.tag | ltrimstr("#")), nom: .name, role, trophees: .trophies, dons: .donations}]
+              joueurs: [$c[0].memberList[] | {tag: (.tag | ltrimstr("#")), nom: .name, role, trophees: .trophies, dons: .donations, vu: .lastSeen}]
             }' > data/clan.json
 
           # Historique du rang (30 derniers jours, un point toutes les 30 min)
