@@ -1,24 +1,31 @@
 {
-  "majAt": "2026-10-14T12:31:00Z",
+  "majAt": "2026-10-14T13:01:15Z",
   "rang": 550,
   "rangPrecedent": 535,
-  "score": 137418,
+  "score": 137415,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 74
-    },
     {
       "tag": "P9YPQURQ",
       "nom": "samuel",
       "role": "member",
       "trophees": 14000,
       "dons": 16
+    },
+    {
+      "tag": "28920L2YV",
+      "nom": "akkabouz9",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 18
+    },
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 74
     },
     {
       "tag": "YLR22LQ90",
@@ -40,13 +47,6 @@
       "role": "member",
       "trophees": 14000,
       "dons": 68
-    },
-    {
-      "tag": "28920L2YV",
-      "nom": "akkabouz9",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 18
     },
     {
       "tag": "P0GGYJ82P",
@@ -252,18 +252,18 @@
       "dons": 192
     },
     {
-      "tag": "PPRJ9RGV",
-      "nom": "baboon",
-      "role": "member",
-      "trophees": 12807,
-      "dons": 60
-    },
-    {
       "tag": "P9GL8VCRR",
       "nom": "méchant loup",
       "role": "member",
       "trophees": 12806,
       "dons": 0
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "role": "member",
+      "trophees": 12777,
+      "dons": 60
     },
     {
       "tag": "LPG8CJVRR",
