@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 559,
-      "nom": "-7- Clan",
-      "trophees": 137425,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 560,
       "nom": "Abbaye royale",
       "trophees": 137423,
@@ -23,58 +16,65 @@
     },
     {
       "rang": 562,
+      "nom": "-7- Clan",
+      "trophees": 137416,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 563,
       "nom": "Armée Royale",
       "trophees": 137415,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 563,
+      "rang": 564,
       "nom": "Critical Strike",
       "trophees": 137414,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 564,
+      "rang": 565,
       "nom": "Clan Francais",
       "trophees": 137413,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 565,
+      "rang": 566,
       "nom": "3eme division",
       "trophees": 137412,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 566,
+      "rang": 567,
       "nom": ".fr.",
-      "trophees": 137411,
+      "trophees": 137407,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 567,
+      "rang": 568,
+      "nom": "Becdemoule",
+      "trophees": 137404,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 569,
       "nom": "BIBI⛩",
       "trophees": 137403,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 568,
+      "rang": 570,
       "nom": "-=BAT=-",
       "trophees": 137401,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 569,
-      "nom": "Latitude 49",
-      "trophees": 137400,
-      "membres": 49,
       "nous": false
     }
   ]
