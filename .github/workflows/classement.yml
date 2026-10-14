@@ -92,7 +92,8 @@ jobs:
           while IFS=$'\t' read -r TAG ROLE DONS; do
             T="${TAG#\#}"
             curl -sf -H "$AUTH" "$API/players/%23$T" > p.json || continue
-            jq --arg tag "$TAG" --arg role "$ROLE" --argjson dons "$DONS" --slurpfile log log.json '
+            curl -sf -H "$AUTH" "$API/players/%23$T/battlelog" > b.json || echo '[]' > b.json
+            jq --arg tag "$TAG" --arg role "$ROLE" --argjson dons "$DONS" --slurpfile log log.json --slurpfile b b.json '
               {
                 tag: ($tag | ltrimstr("#")),
                 nom: .name,
@@ -103,6 +104,17 @@ jobs:
                 victoires: .wins,
                 dons: $dons,
                 deck: [(.currentDeck // [])[] | {nom: .name, image: .iconUrls.medium}],
+                combats: [($b[0] // [])[:10][] | {
+                  date: .battleTime,
+                  type: .type,
+                  mode: (.gameMode.name // ""),
+                  moi: (.team[0].crowns // 0),
+                  adv: (.opponent[0].crowns // 0),
+                  trophees: (.team[0].trophyChange // null),
+                  adversaire: (.opponent[0].name // "?"),
+                  clanAdv: (.opponent[0].clan.name // null),
+                  deckAdv: [(.opponent[0].cards // [])[] | {nom: .name, image: .iconUrls.medium}]
+                }],
                 guerres: [
                   $log[0].items[] | . as $w
                   | .standings[] | select(.clan.tag == "#LJ8GVLQC")
@@ -120,7 +132,7 @@ jobs:
                 then . + [{d: $now, t: $t}] else . end
               | .[-500:]' "$H" > h.json && mv h.json "$H" || true
           done
-          rm -f clan.json rank.json log.json p.json cur.json
+          rm -f clan.json rank.json log.json p.json b.json cur.json
       - name: Enregistrer
         run: |
           git config user.name "github-actions"
