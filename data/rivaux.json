@@ -1,16 +1,23 @@
 {
   "clans": [
     {
+      "rang": 536,
+      "nom": "Allez l’OM",
+      "trophees": 137429,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 537,
       "nom": "Père peinard",
-      "trophees": 137422,
+      "trophees": 137429,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 538,
       "nom": "-7- Clan",
-      "trophees": 137422,
+      "trophees": 137425,
       "membres": 49,
       "nous": false
     },
@@ -30,37 +37,37 @@
     },
     {
       "rang": 541,
+      "nom": "Clan Francais",
+      "trophees": 137418,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 542,
       "nom": "Baguette",
       "trophees": 137417,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 542,
-      "nom": "Clan Francais",
-      "trophees": 137416,
-      "membres": 50,
-      "nous": true
-    },
-    {
       "rang": 543,
-      "nom": "French Elite",
-      "trophees": 137409,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 544,
       "nom": "-=BAT=-",
       "trophees": 137408,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 545,
+      "rang": 544,
       "nom": "BIBI⛩",
       "trophees": 137406,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 545,
+      "nom": "French Elite",
+      "trophees": 137406,
+      "membres": 48,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "Les Farfadets",
       "trophees": 137404,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 547,
-      "nom": "!_BOOM_!",
-      "trophees": 137399,
-      "membres": 50,
       "nous": false
     }
   ]
