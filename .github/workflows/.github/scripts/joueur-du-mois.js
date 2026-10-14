@@ -35,6 +35,14 @@ if (nousCourse) ajouterGuerre(nousCourse.participants);
 // --- Dons : on additionne ce qui a été donné depuis le passage précédent
 const suivi = lire('data/dons-suivi.json', { dernier: {}, mois: {} });
 suivi.mois[mois] = suivi.mois[mois] || {};
+// Premier lancement : on part des dons déjà faits cette semaine (compteur du jeu)
+if (!suivi.initialise) {
+  for (const m of membres) {
+    suivi.mois[mois][m.tag] = Math.max(suivi.mois[mois][m.tag] || 0, m.donations);
+    suivi.dernier[m.tag] = m.donations;
+  }
+  suivi.initialise = true;
+}
 for (const m of membres) {
   const avant = suivi.dernier[m.tag];
   const delta = avant == null ? 0 : m.donations >= avant ? m.donations - avant : m.donations; // remise à 0 hebdo
