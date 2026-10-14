@@ -3217,6 +3217,10 @@
 
             .clan-members-more:hover { border-color: #5d82ff; }
 
+            /* Statut en ligne / hors ligne / inactif */
+            .clan-members-legende { margin: -6px 0 14px; color: #8f8a80; font-size: 13px; }
+            .clan-members .statut { cursor: help; margin-right: 4px; font-size: 12px; }
+
             @media (max-width: 700px) {
               .clan-members { padding: 18px 12px 22px; }
               .clan-members table { font-size: 14px; }
@@ -3255,6 +3259,7 @@
 
             <div class="clan-members">
               <h3 class="clan-members-title">Classement des membres</h3>
+              <p class="clan-members-legende">🟢 en ligne · 🔴 hors ligne · ⚠️ inactif depuis plus de 2 semaines</p>
               <table>
                 <thead>
                   <tr>
@@ -3303,12 +3308,25 @@
                 const tbody = document.getElementById('liste-membres');
                 const bouton = document.getElementById('voir-membres');
 
+                // Statut du joueur à partir de sa dernière connexion (donnée par l'API)
+                const dateCR = t => t ? new Date(t.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, '$1-$2-$3T$4:$5:$6Z')) : null;
+                const duree = ms => { const m = Math.max(0, Math.round(ms / 60000)); return m < 60 ? m + ' min' : m < 1440 ? Math.round(m / 60) + ' h' : Math.round(m / 1440) + ' j'; };
+                const statut = j => {
+                  const vu = dateCR(j.vu);
+                  if (!vu) return '';
+                  const absent = Date.now() - vu;
+                  const [ico, txt] = absent > 14 * 86400000 ? ['⚠️', 'Inactif : pas vu depuis ' + duree(absent)]
+                    : new Date(d.majAt) - vu <= 15 * 60000 ? ['🟢', 'En ligne (vu il y a ' + duree(absent) + ')']
+                    : ['🔴', 'Hors ligne : vu il y a ' + duree(absent)];
+                  return '<span class="statut" title="' + txt + '">' + ico + '</span>';
+                };
+
                 const afficher = nb => {
                   tbody.innerHTML = joueurs.slice(0, nb).map((j, i) => {
                     const [role, cls] = roles[j.role] || [j.role, ''];
                     return '<tr>' +
                       '<td class="pos">' + (i + 1) + '</td>' +
-                      '<td class="nom"><a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a></td>' +
+                      '<td class="nom">' + statut(j) + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a></td>' +
                       '<td class="role col-role ' + cls + '">' + role + '</td>' +
                       '<td class="num">' + fr(j.trophees) + '</td>' +
                       '<td class="num">' + fr(j.dons) + '</td>' +
