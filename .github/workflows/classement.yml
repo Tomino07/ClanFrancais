@@ -16,7 +16,7 @@ jobs:
         run: |
           API="https://proxy.royaleapi.dev/v1"
           AUTH="Authorization: Bearer $CR_TOKEN"
-          mkdir -p data/joueurs
+          mkdir -p data/joueurs data/progression
           curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC" > clan.json
           curl -sf -H "$AUTH" "$API/locations/57000087/rankings/clans?limit=1000" > rank.json
           curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC/riverracelog?limit=10" > log.json || echo '{"items":[]}' > log.json
@@ -110,6 +110,15 @@ jobs:
                   | {semaine: "Saison \($w.seasonId) – semaine \($w.sectionIndex + 1)", points: .fame, combats: .decksUsed}
                 ]
               }' p.json > "data/joueurs/$T.json"
+
+            # Progression du joueur : un point si ses trophées ont changé, sinon au moins toutes les 6 h (500 points max)
+            H="data/progression/$T.json"
+            [ -f "$H" ] || echo '[]' > "$H"
+            jq --slurpfile p "data/joueurs/$T.json" --arg now "$(date -u +%FT%TZ)" '
+              ($p[0].trophees) as $t | (last // null) as $l
+              | if $l == null or $l.t != $t or (($now | fromdateiso8601) - (($l.d // $now) | fromdateiso8601)) > 21600
+                then . + [{d: $now, t: $t}] else . end
+              | .[-500:]' "$H" > h.json && mv h.json "$H" || true
           done
           rm -f clan.json rank.json log.json p.json cur.json
       - name: Enregistrer
