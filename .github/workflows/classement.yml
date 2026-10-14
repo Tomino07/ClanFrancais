@@ -116,6 +116,10 @@ jobs:
                 victoires: .wins,
                 dons: $dons,
                 deck: [(.currentDeck // [])[] | {nom: .name, image: .iconUrls.medium}],
+                mvps: ([$log[0].items[]
+                  | (.standings[] | select(.clan.tag == "#LJ8GVLQC") | .clan.participants) as $p
+                  | ($p | map(.fame) | max) as $m
+                  | select($m > 0) | $p[] | select(.tag == $tag and .fame == $m)] | length),
                 combats: [($b[0] // [])[:10][] | {
                   date: .battleTime,
                   type: .type,
