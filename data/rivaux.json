@@ -1,6 +1,20 @@
 {
   "clans": [
     {
+      "rang": 570,
+      "nom": "French Elite",
+      "trophees": 137417,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 571,
+      "nom": "Critical Strike",
+      "trophees": 137416,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 572,
       "nom": "Abbaye royale",
       "trophees": 137413,
@@ -16,65 +30,51 @@
     },
     {
       "rang": 574,
-      "nom": "Critical Strike",
-      "trophees": 137411,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 575,
-      "nom": "Apocalypse",
-      "trophees": 137410,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 576,
       "nom": ".fr.",
       "trophees": 137409,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 577,
+      "rang": 575,
       "nom": "Clan Francais",
       "trophees": 137409,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 578,
+      "rang": 576,
+      "nom": "Apocalypse",
+      "trophees": 137407,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 577,
       "nom": "Force A7 ⛩",
       "trophees": 137406,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 579,
+      "rang": 578,
       "nom": "BIBI⛩",
       "trophees": 137406,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 580,
+      "rang": 579,
       "nom": "-=BAT=-",
       "trophees": 137404,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 581,
+      "rang": 580,
       "nom": "Latitude 49",
       "trophees": 137397,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 582,
-      "nom": "INSEEC LYON",
-      "trophees": 137393,
-      "membres": 50,
       "nous": false
     }
   ]
