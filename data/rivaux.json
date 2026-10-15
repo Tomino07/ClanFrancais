@@ -2,58 +2,58 @@
   "clans": [
     {
       "rang": 562,
+      "nom": "Gel a Rage",
+      "trophees": 137460,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 563,
+      "nom": "Atlas",
+      "trophees": 137453,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 564,
       "nom": "Babar d'élite",
       "trophees": 137450,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 563,
+      "rang": 565,
       "nom": "French Elite",
-      "trophees": 137449,
+      "trophees": 137450,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 564,
+      "rang": 566,
       "nom": "Neptune",
       "trophees": 137447,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 565,
+      "rang": 567,
+      "nom": "Clan Francais",
+      "trophees": 137446,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 568,
       "nom": "France Zone",
       "trophees": 137445,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 566,
+      "rang": 569,
       "nom": "Mac Leod",
       "trophees": 137443,
       "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 567,
-      "nom": "Clan Francais",
-      "trophees": 137443,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 568,
-      "nom": "Atlas",
-      "trophees": 137443,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 569,
-      "nom": "Clan #9GYJV0",
-      "trophees": 137440,
-      "membres": 50,
       "nous": false
     },
     {
@@ -65,16 +65,16 @@
     },
     {
       "rang": 571,
-      "nom": "Critical Strike",
-      "trophees": 137428,
-      "membres": 49,
+      "nom": "Clan #9GYJV0",
+      "trophees": 137437,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 572,
-      "nom": "INSEEC LYON",
-      "trophees": 137423,
-      "membres": 50,
+      "nom": "Critical Strike",
+      "trophees": 137432,
+      "membres": 49,
       "nous": false
     }
   ]

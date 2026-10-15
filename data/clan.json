@@ -1,18 +1,26 @@
 {
-  "majAt": "2026-10-15T10:31:00Z",
+  "majAt": "2026-10-15T11:01:14Z",
   "rang": 567,
   "rangPrecedent": 819,
-  "score": 137443,
+  "score": 137446,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "9QQYPPLU",
+      "nom": "Litrode",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 62,
+      "vu": "20261015T105246.000Z"
+    },
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
       "trophees": 14000,
-      "dons": 110,
-      "vu": "20261015T102759.000Z"
+      "dons": 118,
+      "vu": "20261015T104551.000Z"
     },
     {
       "tag": "V9R0C8CQ",
@@ -53,14 +61,6 @@
       "trophees": 14000,
       "dons": 16,
       "vu": "20261015T043725.000Z"
-    },
-    {
-      "tag": "9QQYPPLU",
-      "nom": "Litrode",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 62,
-      "vu": "20261014T224056.000Z"
     },
     {
       "tag": "YLR22LQ90",
@@ -196,7 +196,7 @@
       "role": "member",
       "trophees": 13510,
       "dons": 74,
-      "vu": "20261015T103002.000Z"
+      "vu": "20261015T104745.000Z"
     },
     {
       "tag": "RGRR89L22",
@@ -306,9 +306,9 @@
       "tag": "PPRJ9RGV",
       "nom": "baboon",
       "role": "member",
-      "trophees": 12692,
-      "dons": 60,
-      "vu": "20261015T082043.000Z"
+      "trophees": 12722,
+      "dons": 92,
+      "vu": "20261015T104208.000Z"
     },
     {
       "tag": "8UP2CVJG",
@@ -323,8 +323,8 @@
       "nom": "rocamesijeytb",
       "role": "member",
       "trophees": 12646,
-      "dons": 20,
-      "vu": "20261015T054924.000Z"
+      "dons": 30,
+      "vu": "20261015T103518.000Z"
     },
     {
       "tag": "Y8RR02VYJ",
@@ -340,7 +340,7 @@
       "role": "member",
       "trophees": 12375,
       "dons": 217,
-      "vu": "20261015T041925.000Z"
+      "vu": "20261015T104650.000Z"
     },
     {
       "tag": "CRU9VJY29",
@@ -404,7 +404,7 @@
       "role": "leader",
       "trophees": 8545,
       "dons": 0,
-      "vu": "20261015T095459.000Z"
+      "vu": "20261015T103154.000Z"
     }
   ]
 }
