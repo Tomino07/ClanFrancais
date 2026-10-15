@@ -3173,66 +3173,75 @@
             }
 
             .clan-members td {
-              padding: 9px 10px;
+              padding: 11px 10px;
               border-bottom: 1px solid rgba(241, 236, 225, 0.07);
+              white-space: nowrap;
             }
 
-            .clan-members tr:hover td { background: rgba(255, 255, 255, 0.03); }
+            /* Une ligne sur deux très légèrement plus foncée, comme un tableau de championnat */
+            .clan-members tbody tr:nth-child(even) td { background: rgba(255, 255, 255, 0.018); }
+            .clan-members tbody tr:hover td { background: rgba(255, 255, 255, 0.05); }
 
-            .clan-members .num { text-align: right; font-variant-numeric: tabular-nums; }
+            .clan-members .num { text-align: right; font-family: "JetBrains Mono", monospace; font-size: 14px; font-variant-numeric: tabular-nums; }
+            .clan-members th.num { font-size: 11px; }
 
             .clan-members .pos {
               width: 44px;
               color: #8f8a80;
-              font-family: "JetBrains Mono", monospace;
-              font-size: 13px;
-              font-weight: 700;
+              font-family: "Archivo Black", sans-serif;
+              font-size: 15px;
+              text-align: center;
             }
 
-            .clan-members tbody tr:nth-child(1) .pos { color: #ffd700; }
-            .clan-members tbody tr:nth-child(2) .pos { color: #d7d7e0; }
-            .clan-members tbody tr:nth-child(3) .pos { color: #e09a5a; }
+            /* Top 3 : liseré doré à gauche, le 1er en or */
+            .clan-members tbody tr:nth-child(-n+3) .pos { color: #f1ece1; box-shadow: inset 3px 0 0 #e8b931; }
+            .clan-members tbody tr:nth-child(1) .pos { color: #e8b931; }
 
-            .clan-members .nom { font-weight: 700; overflow-wrap: anywhere; }
+            .clan-members .nom { width: 100%; white-space: normal; }
+            .clan-members .nom a { color: #f1ece1; font-size: 16px; font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
+            .clan-members .nom a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
             .clan-members .role {
-              color: #b9b3a6;
-              font-family: "JetBrains Mono", monospace;
+              margin-left: 8px;
+              color: #66635c;
               font-size: 11px;
               font-weight: 700;
               letter-spacing: 0.1em;
               text-transform: uppercase;
+              white-space: nowrap;
             }
 
-            .clan-members .role.chef { color: #e63027; }
-            .clan-members .role.adjoint { color: #5d82ff; }
+            .clan-members .vu { color: #8f8a80; font-size: 13px; text-align: right; }
 
             .clan-members-more {
               display: block;
-              margin: 18px auto 0;
-              padding: 10px 22px;
-              background: transparent;
-              border: 1px solid rgba(241, 236, 225, 0.35);
+              margin: 18px 0 0;
+              padding: 0;
+              background: none;
+              border: 0;
               color: #f1ece1;
-              font-family: "JetBrains Mono", monospace;
-              font-size: 12px;
+              font-family: "Baloo 2", sans-serif;
+              font-size: 15px;
               font-weight: 700;
-              letter-spacing: 0.14em;
-              text-transform: uppercase;
+              text-decoration: underline;
+              text-underline-offset: 4px;
               cursor: pointer;
             }
 
-            .clan-members-more:hover { border-color: #5d82ff; }
+            .clan-members-more:hover { color: #e8b931; }
 
-            /* Statut en ligne / hors ligne / inactif */
-            .clan-members-legende { margin: -6px 0 14px; color: #8f8a80; font-size: 13px; }
-            .clan-members .statut { cursor: help; margin-right: 4px; font-size: 12px; }
+            /* Statut : petit point de couleur devant le nom */
+            .clan-members-legende { display: flex; flex-wrap: wrap; gap: 16px; margin: -4px 0 14px; color: #8f8a80; font-size: 13px; }
+            .clan-members .statut { display: inline-block; width: 7px; height: 7px; margin-right: 10px; border-radius: 50%; vertical-align: 2px; cursor: help; }
+            .statut.en-ligne { background: #4cc27a; }
+            .statut.hors-ligne { background: #4a4843; }
+            .statut.inactif { background: #e8b931; }
 
             @media (max-width: 700px) {
               .clan-members { padding: 18px 12px 22px; }
               .clan-members table { font-size: 14px; }
               .clan-members th, .clan-members td { padding-left: 6px; padding-right: 6px; }
-              .clan-members .col-role { display: none; }
+              .clan-members .col-dons, .clan-members .vu { display: none; }
               .clan-live-head { flex-direction: column; align-items: flex-start; gap: 4px; }
               .clan-live-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 22px; }
               .clan-live-stats > div:nth-child(3) { border-left: 0; }
@@ -3266,15 +3275,15 @@
 
             <div class="clan-members">
               <h3 class="clan-members-title">Classement des membres</h3>
-              <p class="clan-members-legende">🟢 en ligne · 🔴 hors ligne · ⚠️ inactif depuis plus de 2 semaines</p>
+              <p class="clan-members-legende"><span><span class="statut en-ligne"></span>En ligne</span><span><span class="statut hors-ligne"></span>Hors ligne</span><span><span class="statut inactif"></span>Inactif depuis plus de 2 semaines</span></p>
               <table>
                 <thead>
                   <tr>
                     <th>#</th>
                     <th>Joueur</th>
-                    <th class="col-role">Rôle</th>
                     <th class="num">Trophées</th>
-                    <th class="num">Dons</th>
+                    <th class="num col-dons">Dons</th>
+                    <th class="num vu">Vu</th>
                   </tr>
                 </thead>
                 <tbody id="liste-membres"></tbody>
@@ -3306,12 +3315,12 @@
                 // Classement des membres
                 const roles = {
                   leader: ['Chef', 'chef'],
-                  coLeader: ['Chef adjoint', 'adjoint'],
+                  coLeader: ['Adjoint', 'adjoint'],
                   elder: ['Aîné', ''],
-                  member: ['Membre', '']
+                  member: ['', '']
                 };
                 const esc = t => t.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-                const joueurs = [...d.joueurs].sort((a, b) => b.trophees - a.trophees);
+                const joueurs = [...d.joueurs].sort((a, b) => b.trophees - a.trophees || b.dons - a.dons);
                 const tbody = document.getElementById('liste-membres');
                 const bouton = document.getElementById('voir-membres');
 
@@ -3320,23 +3329,24 @@
                 const duree = ms => { const m = Math.max(0, Math.round(ms / 60000)); return m < 60 ? m + ' min' : m < 1440 ? Math.round(m / 60) + ' h' : Math.round(m / 1440) + ' j'; };
                 const statut = j => {
                   const vu = dateCR(j.vu);
-                  if (!vu) return '';
+                  if (!vu) return ['', '—'];
                   const absent = Date.now() - vu;
-                  const [ico, txt] = absent > 14 * 86400000 ? ['⚠️', 'Inactif : pas vu depuis ' + duree(absent)]
-                    : new Date(d.majAt) - vu <= 15 * 60000 ? ['🟢', 'En ligne (vu il y a ' + duree(absent) + ')']
-                    : ['🔴', 'Hors ligne : vu il y a ' + duree(absent)];
-                  return '<span class="statut" title="' + txt + '">' + ico + '</span>';
+                  const [cls, txt, court] = absent > 14 * 86400000 ? ['inactif', 'Inactif : pas vu depuis ' + duree(absent), duree(absent)]
+                    : new Date(d.majAt) - vu <= 15 * 60000 ? ['en-ligne', 'En ligne', 'en ligne']
+                    : ['hors-ligne', 'Hors ligne : vu il y a ' + duree(absent), duree(absent)];
+                  return ['<span class="statut ' + cls + '" title="' + txt + '"></span>', court];
                 };
 
                 const afficher = nb => {
                   tbody.innerHTML = joueurs.slice(0, nb).map((j, i) => {
-                    const [role, cls] = roles[j.role] || [j.role, ''];
+                    const [role] = roles[j.role] || [j.role];
+                    const [point, vu] = statut(j);
                     return '<tr>' +
                       '<td class="pos">' + (i + 1) + '</td>' +
-                      '<td class="nom">' + statut(j) + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a></td>' +
-                      '<td class="role col-role ' + cls + '">' + role + '</td>' +
+                      '<td class="nom">' + point + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a>' + (role ? '<span class="role">' + role + '</span>' : '') + '</td>' +
                       '<td class="num">' + fr(j.trophees) + '</td>' +
-                      '<td class="num">' + fr(j.dons) + '</td>' +
+                      '<td class="num col-dons">' + fr(j.dons) + '</td>' +
+                      '<td class="vu">' + vu + '</td>' +
                     '</tr>';
                   }).join('');
                 };
