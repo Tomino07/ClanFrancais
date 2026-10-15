@@ -1,6 +1,20 @@
 {
   "clans": [
     {
+      "rang": 573,
+      "nom": "Abbaye royale",
+      "trophees": 137413,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 574,
+      "nom": "3eme division",
+      "trophees": 137412,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 575,
       "nom": "Critical Strike",
       "trophees": 137412,
@@ -23,24 +37,24 @@
     },
     {
       "rang": 578,
+      "nom": "Clan Francais",
+      "trophees": 137409,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 579,
       "nom": "Force A7 ⛩",
       "trophees": 137406,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 579,
+      "rang": 580,
       "nom": "BIBI⛩",
       "trophees": 137406,
       "membres": 50,
       "nous": false
-    },
-    {
-      "rang": 580,
-      "nom": "Clan Francais",
-      "trophees": 137406,
-      "membres": 50,
-      "nous": true
     },
     {
       "rang": 581,
@@ -60,20 +74,6 @@
       "rang": 583,
       "nom": "INSEEC LYON",
       "trophees": 137393,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 584,
-      "nom": "ARMAGEDON",
-      "trophees": 137387,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 585,
-      "nom": "Alsace",
-      "trophees": 137380,
       "membres": 50,
       "nous": false
     }
