@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 568,
+      "rang": 501,
+      "nom": "France Zone",
+      "trophees": 137444,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 502,
+      "nom": "Mac Leod",
+      "trophees": 137440,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 503,
+      "nom": "Biceps clan",
+      "trophees": 137439,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 504,
       "nom": "Clan #9GYJV0",
       "trophees": 137437,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 569,
+      "rang": 505,
       "nom": "French Elite",
-      "trophees": 137434,
+      "trophees": 137437,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 570,
+      "rang": 506,
+      "nom": "Clan Francais",
+      "trophees": 137435,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 507,
       "nom": "-7- Clan",
       "trophees": 137425,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 571,
+      "rang": 508,
+      "nom": ".fr.",
+      "trophees": 137423,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 509,
+      "nom": "Critical Strike",
+      "trophees": 137420,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 510,
       "nom": "Les Farfadets",
       "trophees": 137418,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 572,
-      "nom": ".fr.",
-      "trophees": 137417,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 573,
-      "nom": "Clan Francais",
-      "trophees": 137417,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 574,
-      "nom": "Critical Strike",
-      "trophees": 137416,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 575,
+      "rang": 511,
       "nom": "INSEEC LYON",
-      "trophees": 137415,
+      "trophees": 137418,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 576,
-      "nom": "Apocalypse",
-      "trophees": 137413,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 577,
-      "nom": "BIBI⛩",
-      "trophees": 137405,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 578,
-      "nom": "Force A7 ⛩",
-      "trophees": 137403,
-      "membres": 49,
       "nous": false
     }
   ]
