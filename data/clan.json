@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-10-15T15:01:15Z",
-  "rang": 574,
+  "majAt": "2026-10-15T15:31:04Z",
+  "rang": 579,
   "rangPrecedent": 819,
-  "score": 137446,
+  "score": 137439,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "V9R0C8CQ",
+      "nom": "CLB-SALVATORE",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261015T152030.000Z"
+    },
     {
       "tag": "YLR22LQ90",
       "nom": "I love chloéé",
@@ -29,14 +37,6 @@
       "trophees": 14000,
       "dons": 118,
       "vu": "20261015T111053.000Z"
-    },
-    {
-      "tag": "V9R0C8CQ",
-      "nom": "CLB-SALVATORE",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261015T090718.000Z"
     },
     {
       "tag": "J9LP8Y8",
@@ -199,20 +199,20 @@
       "vu": "20261015T110239.000Z"
     },
     {
-      "tag": "RGRR89L22",
-      "nom": "HyperLoop-2000",
-      "role": "coLeader",
-      "trophees": 13428,
-      "dons": 10,
-      "vu": "20261015T075829.000Z"
-    },
-    {
       "tag": "2V0G2JUPV",
       "nom": "sky",
       "role": "member",
       "trophees": 13425,
       "dons": 100,
       "vu": "20261015T122249.000Z"
+    },
+    {
+      "tag": "RGRR89L22",
+      "nom": "HyperLoop-2000",
+      "role": "coLeader",
+      "trophees": 13374,
+      "dons": 39,
+      "vu": "20261015T152128.000Z"
     },
     {
       "tag": "QVPCVQ08R",
@@ -283,8 +283,8 @@
       "nom": "grand-père",
       "role": "member",
       "trophees": 13000,
-      "dons": 314,
-      "vu": "20261015T144440.000Z"
+      "dons": 324,
+      "vu": "20261015T152149.000Z"
     },
     {
       "tag": "P9GL8VCRR",
