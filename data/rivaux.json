@@ -1,6 +1,55 @@
 {
   "clans": [
     {
+      "rang": 566,
+      "nom": "-7- Clan",
+      "trophees": 137430,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 567,
+      "nom": "Les Farfadets",
+      "trophees": 137418,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 568,
+      "nom": "French Elite",
+      "trophees": 137417,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 569,
+      "nom": "Critical Strike",
+      "trophees": 137416,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 570,
+      "nom": "Abbaye royale",
+      "trophees": 137413,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 571,
+      "nom": "Clan Francais",
+      "trophees": 137413,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 572,
+      "nom": "3eme division",
+      "trophees": 137412,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 573,
       "nom": ".fr.",
       "trophees": 137409,
@@ -9,72 +58,23 @@
     },
     {
       "rang": 574,
-      "nom": "Apocalypse",
-      "trophees": 137407,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 575,
       "nom": "Force A7 ⛩",
       "trophees": 137406,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 576,
+      "rang": 575,
       "nom": "BIBI⛩",
       "trophees": 137406,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 577,
+      "rang": 576,
       "nom": "-=BAT=-",
       "trophees": 137405,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 578,
-      "nom": "Clan Francais",
-      "trophees": 137405,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 579,
-      "nom": "INSEEC LYON",
-      "trophees": 137393,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 580,
-      "nom": "ARMAGEDON",
-      "trophees": 137387,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 581,
-      "nom": "Latitude 49",
-      "trophees": 137385,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 582,
-      "nom": "pas de gdc",
-      "trophees": 137378,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 583,
-      "nom": "poitiers 86",
-      "trophees": 137377,
-      "membres": 50,
       "nous": false
     }
   ]

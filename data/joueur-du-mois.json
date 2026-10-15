@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-15T03:31:45.251Z",
+  "majAt": "2026-10-15T04:01:46.397Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -31,6 +31,15 @@
       "score": 34
     },
     {
+      "tag": "2V0G2JUPV",
+      "nom": "sky",
+      "role": "member",
+      "guerre": 0,
+      "dons": 90,
+      "trophees": 26,
+      "score": 34
+    },
+    {
       "tag": "9QQYPPLU",
       "nom": "Litrode",
       "role": "member",
@@ -38,15 +47,6 @@
       "dons": 62,
       "trophees": 0,
       "score": 33
-    },
-    {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "guerre": 0,
-      "dons": 252,
-      "trophees": 0,
-      "score": 25
     }
   ],
   "historique": []
