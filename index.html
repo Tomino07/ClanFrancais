@@ -3015,321 +3015,776 @@
 
       <section id="stats" class="actu-section">
         <div class="actu-wrap">
-          <!-- ===== STATISTIQUES (nouveau design) ===== -->
+          <div class="actu-heading">
+            <div class="story-kicker">Le clan en chiffres</div>
+            <h2 class="actu-title"><span>STATISTIQUES</span></h2>
+            <p class="actu-description">
+              Le classement du clan et de ses membres, mis à jour automatiquement toutes les 30 minutes.
+            </p>
+          </div>
+
+          <!-- Classement en direct (données : data/clan.json, mises à jour par GitHub Actions) -->
           <style>
-            .st { --st-carte: #15161b; --st-carte-2: #1b1d24; --st-ligne: rgba(255, 255, 255, 0.09); --st-texte: #f1ece1; --st-doux: #a7a3b5; --st-discret: #75727f; --st-or: #ffd700; --st-vert: #3ddc84; --st-rouge: #ff6b61; color: var(--st-texte); }
-            .st-mono { font-family: "JetBrains Mono", monospace; }
-
-            /* En-tête */
-            .st-tete { text-align: center; margin-bottom: 36px; }
-            .st-kicker { color: var(--st-doux); font-size: 12px; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; }
-            .st-tete h2 { font-family: "Archivo Black", sans-serif; font-size: clamp(34px, 5vw, 56px); letter-spacing: -1px; margin-top: 6px; animation: none; }
-            .st-tricolore { display: flex; gap: 6px; justify-content: center; margin-top: 14px; }
-            .st-tricolore span { width: 18px; height: 5px; border-radius: 9px; }
-            .st-live { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; padding: 6px 12px; border: 1px solid var(--st-ligne); border-radius: 999px; color: var(--st-doux); font-size: 12px; }
-            .st-live i { width: 8px; height: 8px; border-radius: 50%; background: #eb1212; animation: st-pulse 1.8s infinite; }
-            @keyframes st-pulse { 0% { box-shadow: 0 0 0 0 rgba(235, 18, 18, 0.6); } 70%, 100% { box-shadow: 0 0 0 8px rgba(235, 18, 18, 0); } }
-
-            /* 4 chiffres clés (cliquables : courbe + rivaux) */
-            .st-kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-bottom: 24px; }
-            .st-kpi { position: relative; overflow: hidden; padding: 18px 18px 14px; background: linear-gradient(160deg, var(--st-carte-2), var(--st-carte)); border: 1px solid var(--st-ligne); border-radius: 18px; cursor: pointer; transition: transform 0.25s, border-color 0.25s; }
-            .st-kpi:hover { transform: translateY(-4px); border-color: rgba(255, 215, 0, 0.45); }
-            /* le bloc des courbes ajoute un 📈 après ces id : déjà présent dans la carte */
-            .st-kpis #rang::after, .st-kpis #score::after, .st-kpis #guerre::after, .st-kpis #membres::after { content: none; }
-            .st-lab { display: flex; align-items: center; gap: 8px; color: var(--st-doux); font-size: 13px; font-weight: 600; }
-            .st-ico { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-size: 16px; background: rgba(255, 255, 255, 0.06); }
-            .st-courbe-lien { margin-left: auto; font-size: 11px; color: var(--st-discret); }
-            .st-val { position: relative; z-index: 1; font-family: "Archivo Black", sans-serif; font-size: 34px; line-height: 1; margin-top: 14px; }
-            .st-val sup { font-size: 14px; }
-            .st-delta { position: relative; z-index: 1; display: inline-block; margin-top: 8px; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 700; background: rgba(255, 255, 255, 0.06); color: var(--st-doux); }
-            .st-delta.up { background: rgba(61, 220, 132, 0.12); color: var(--st-vert); }
-            .st-delta.down { background: rgba(255, 90, 79, 0.12); color: var(--st-rouge); }
-            .st-kpi svg { position: absolute; right: 0; bottom: 0; width: 60%; height: 54px; }
-            .st-jauge { height: 6px; margin-top: 12px; border-radius: 9px; background: rgba(255, 255, 255, 0.07); overflow: hidden; }
-            .st-jauge div { height: 100%; border-radius: 9px; background: linear-gradient(90deg, #2448e8, #fff 50%, #eb1212); }
-
-            /* Grille principale */
-            .st-grille { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 24px; align-items: start; }
-            .st-carte { background: var(--st-carte); border: 1px solid var(--st-ligne); border-radius: 22px; padding: 22px; }
-            .st-carte h3 { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-family: "Archivo Black", sans-serif; font-size: 18px; font-weight: 400; letter-spacing: 0.02em; text-transform: uppercase; }
-            .st-carte h3 small { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--st-discret); text-transform: none; letter-spacing: 0.06em; }
-            .st-droite { display: grid; gap: 24px; }
-
-            /* Classement des membres */
-            .st-filtres { display: flex; gap: 8px; margin: 16px 0 12px; flex-wrap: wrap; }
-            .st-filtres button { padding: 5px 12px; border-radius: 999px; border: 1px solid var(--st-ligne); background: none; color: var(--st-doux); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
-            .st-filtres button.on { background: var(--st-texte); color: #0e0f12; border-color: var(--st-texte); }
-            .st-j { display: grid; grid-template-columns: 34px 44px minmax(0, 1fr) 140px 64px; gap: 12px; align-items: center; padding: 10px; border-radius: 14px; color: inherit; transition: background 0.2s; }
-            .st-j:hover { background: rgba(255, 255, 255, 0.04); }
-            .st-j + .st-j { margin-top: 2px; }
-            .st-pos { font-family: "Archivo Black", sans-serif; font-size: 16px; color: var(--st-discret); text-align: center; }
-            .st-av { position: relative; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; font-weight: 800; font-size: 15px; color: #0e0f12; }
-            .st-pt { position: absolute; right: -3px; bottom: -3px; width: 13px; height: 13px; border-radius: 50%; border: 3px solid var(--st-carte); }
-            .st-nom b { display: block; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-            .st-nom span { font-size: 12px; color: var(--st-discret); }
-            .st-nom .chef { color: var(--st-rouge); }
-            .st-nom .adjoint { color: #7d9bff; }
-            .st-tro { font-family: "JetBrains Mono", monospace; font-size: 13px; text-align: right; }
-            .st-barre { height: 5px; margin-top: 6px; border-radius: 9px; background: rgba(255, 255, 255, 0.07); overflow: hidden; }
-            .st-barre div { height: 100%; border-radius: 9px; background: linear-gradient(90deg, #8a6c00, var(--st-or)); }
-            .st-dons { justify-self: end; padding: 3px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.06); font-size: 12px; font-weight: 700; color: var(--st-doux); white-space: nowrap; }
-            .st-j.t1 { background: linear-gradient(90deg, rgba(255, 215, 0, 0.12), transparent 70%); }
-            .st-j.t1 .st-pos { color: var(--st-or); }
-            .st-j.t2 .st-pos { color: #cfd3dc; }
-            .st-j.t3 .st-pos { color: #e09a5a; }
-            .st-voir { display: block; width: 100%; margin-top: 14px; padding: 12px; border-radius: 14px; border: 1px dashed var(--st-ligne); background: none; color: var(--st-doux); font: inherit; font-weight: 700; cursor: pointer; }
-            .st-voir:hover { color: var(--st-texte); border-color: rgba(255, 255, 255, 0.25); }
-
-            /* Joueur du mois */
-            .st-jdm { display: block; position: relative; overflow: hidden; text-align: center; padding: 26px 20px 22px; border-radius: 22px; border: 1px solid rgba(255, 215, 0, 0.45); background: radial-gradient(120% 90% at 50% 0%, rgba(255, 215, 0, 0.22), rgba(255, 215, 0, 0.03) 60%), var(--st-carte); color: inherit; transition: transform 0.25s; }
-            a.st-jdm:hover { transform: translateY(-4px); }
-            .st-jdm[hidden] { display: none; }
-            .st-jdm-kick { font-size: 12px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--st-or); }
-            .st-anneau { position: relative; width: 120px; height: 120px; margin: 18px auto 0; }
-            .st-anneau svg { width: 100%; height: 100%; transform: rotate(-90deg); }
-            .st-init { position: absolute; inset: 14px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(145deg, #3a2f00, #1b1600); font-family: "Archivo Black", sans-serif; font-size: 34px; color: var(--st-or); }
-            .st-couronne { position: absolute; top: -18px; left: 50%; transform: translateX(-50%); font-size: 28px; }
-            .st-jdm-nom { font-family: "Archivo Black", sans-serif; font-size: 28px; margin-top: 12px; text-transform: uppercase; overflow-wrap: anywhere; }
-            .st-jdm-sc { color: var(--st-doux); font-size: 13px; }
-            .st-mini { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
-            .st-mini div { padding: 10px 4px; border-radius: 12px; background: rgba(0, 0, 0, 0.25); }
-            .st-mini b { display: block; font-family: "Archivo Black", sans-serif; font-size: 17px; }
-            .st-mini span { font-size: 11px; color: var(--st-doux); }
-            .st-precedent { margin-top: 12px; font-size: 13px; color: var(--st-doux); }
-            .st-precedent b { color: var(--st-or); }
-
-            /* Podium MVP */
-            .st-podium { display: grid; grid-template-columns: 1fr 1.15fr 1fr; align-items: end; gap: 10px; margin-top: 18px; }
-            .st-marche { display: block; text-align: center; color: inherit; min-width: 0; }
-            .st-qui { font-weight: 800; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-            .st-pts { font-family: "JetBrains Mono", monospace; font-size: 11px; color: var(--st-doux); margin-bottom: 8px; }
-            .st-socle { border-radius: 14px 14px 6px 6px; display: grid; place-items: center; font-family: "Archivo Black", sans-serif; font-size: 26px; color: #0e0f12; transition: filter 0.2s; }
-            a.st-marche:hover .st-socle { filter: brightness(1.12); }
-            .st-m1 .st-socle { height: 110px; background: linear-gradient(180deg, #ffe773, #c9a400); }
-            .st-m2 .st-socle { height: 80px; background: linear-gradient(180deg, #eef1f6, #9da3b0); }
-            .st-m3 .st-socle { height: 60px; background: linear-gradient(180deg, #f4b98a, #b5703a); }
-            .st-medal { font-size: 26px; margin-bottom: 4px; }
-
-            /* Arrivées et départs */
-            .st-bilan { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
-            .st-bilan div { padding: 12px; border-radius: 14px; background: rgba(255, 255, 255, 0.04); text-align: center; }
-            .st-bilan b { display: block; font-family: "Archivo Black", sans-serif; font-size: 22px; }
-            .st-bilan span { font-size: 12px; color: var(--st-doux); }
-            .st-frise { position: relative; margin-top: 16px; padding-left: 22px; }
-            .st-frise::before { content: ""; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: var(--st-ligne); }
-            .st-ev { position: relative; padding: 8px 0 12px; }
-            .st-ev::before { content: ""; position: absolute; left: -21px; top: 13px; width: 12px; height: 12px; border-radius: 50%; border: 3px solid var(--st-carte); }
-            .st-ev.a::before { background: var(--st-vert); }
-            .st-ev.d::before { background: var(--st-rouge); }
-            .st-ev b { font-size: 15px; color: var(--st-texte); }
-            .st-ev span { display: block; font-size: 12px; color: var(--st-discret); }
-            .st-tag { display: inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px; font-size: 11px; font-weight: 700; font-style: normal; }
-            .st-ev.a .st-tag { background: rgba(61, 220, 132, 0.12); color: var(--st-vert); }
-            .st-ev.d .st-tag { background: rgba(255, 90, 79, 0.12); color: var(--st-rouge); }
-            .st-vide { color: var(--st-discret); font-size: 14px; padding: 6px 0; }
-
-            @media (max-width: 1000px) {
-              .st-grille { grid-template-columns: 1fr; }
-              .st-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .clan-live {
+              margin: 0 0 32px;
+              background: #141418;
+              border: 1px solid rgba(255, 255, 255, 0.18);
+              position: relative;
             }
-            @media (max-width: 560px) {
-              .st-j { grid-template-columns: 26px 40px minmax(0, 1fr) 76px; gap: 10px; padding: 8px 6px; }
-              .st-dons { display: none; }
-              .st-val { font-size: 26px; }
-              .st-carte { padding: 18px 14px; }
-              .st-kpis { gap: 10px; }
-              .st-kpi { padding: 14px 12px 12px; }
-              .st-courbe-lien { display: none; }
+
+            /* liseré tricolore en haut */
+            .clan-live::before {
+              content: "";
+              position: absolute;
+              top: -1px;
+              left: -1px;
+              right: -1px;
+              height: 4px;
+              background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+            }
+
+            .clan-live-head {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 12px;
+              padding: 18px 24px 0;
+              color: #b9b3a6;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.16em;
+              text-transform: uppercase;
+            }
+
+            .clan-live-badge {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              color: #f1ece1;
+            }
+
+            .clan-live-dot {
+              width: 8px;
+              height: 8px;
+              background: #e63027;
+              animation: clan-live-pulse 1.6s ease-in-out infinite;
+            }
+
+            @keyframes clan-live-pulse {
+              50% { opacity: 0.25; }
+            }
+
+            .clan-live-maj {
+              font-size: 11px;
+              letter-spacing: 0.1em;
+              text-transform: none;
+              color: #8f8a80;
+            }
+
+            .clan-live-stats {
+              display: grid;
+              grid-template-columns: repeat(4, minmax(0, 1fr));
+              padding: 22px 0 26px;
+            }
+
+            .clan-live-stats > div {
+              padding: 6px 20px;
+              text-align: center;
+              color: #f1ece1;
+            }
+
+            .clan-live-stats > div + div {
+              border-left: 1px solid rgba(241, 236, 225, 0.18);
+            }
+
+            .clan-live-stats strong {
+              display: block;
+              font-family: "Archivo Black", sans-serif;
+              font-size: clamp(26px, 3vw, 40px);
+              font-weight: 400;
+              line-height: 1;
+            }
+
+            .clan-live-stats sup {
+              font-size: 0.45em;
+              vertical-align: top;
+              margin-left: 2px;
+            }
+
+            .clan-live-stats span {
+              display: block;
+              margin-top: 8px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+            }
+
+            .clan-live-evo {
+              display: inline-block;
+              font-style: normal;
+              margin-top: 8px;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 12px;
+              font-weight: 700;
+              color: #8f8a80;
+            }
+
+            .clan-live-evo.up { color: #3ddc84; }
+            .clan-live-evo.down { color: #ff5a4f; }
+
+
+            /* ===== Classement des membres ===== */
+            .clan-members {
+              border-top: 1px solid rgba(241, 236, 225, 0.18);
+              padding: 22px 24px 26px;
+            }
+
+            .clan-members-title {
+              margin: 0 0 14px;
+              color: #f1ece1;
+              font-family: "Archivo Black", sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+              text-transform: uppercase;
+            }
+
+            .clan-members table {
+              width: 100%;
+              border-collapse: collapse;
+              color: #f1ece1;
+              font-family: "Baloo 2", sans-serif;
+              font-size: 15px;
+            }
+
+            .clan-members th {
+              padding: 0 10px 10px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.14em;
+              text-align: left;
+              text-transform: uppercase;
+              border-bottom: 1px solid rgba(241, 236, 225, 0.18);
+            }
+
+            .clan-members td {
+              padding: 9px 10px;
+              border-bottom: 1px solid rgba(241, 236, 225, 0.07);
+            }
+
+            .clan-members tr:hover td { background: rgba(255, 255, 255, 0.03); }
+
+            .clan-members .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+            .clan-members .pos {
+              width: 44px;
+              color: #8f8a80;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 13px;
+              font-weight: 700;
+            }
+
+            .clan-members tbody tr:nth-child(1) .pos { color: #ffd700; }
+            .clan-members tbody tr:nth-child(2) .pos { color: #d7d7e0; }
+            .clan-members tbody tr:nth-child(3) .pos { color: #e09a5a; }
+
+            .clan-members .nom { font-weight: 700; overflow-wrap: anywhere; }
+
+            .clan-members .role {
+              color: #b9b3a6;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 11px;
+              font-weight: 700;
+              letter-spacing: 0.1em;
+              text-transform: uppercase;
+            }
+
+            .clan-members .role.chef { color: #e63027; }
+            .clan-members .role.adjoint { color: #5d82ff; }
+
+            .clan-members-more {
+              display: block;
+              margin: 18px auto 0;
+              padding: 10px 22px;
+              background: transparent;
+              border: 1px solid rgba(241, 236, 225, 0.35);
+              color: #f1ece1;
+              font-family: "JetBrains Mono", monospace;
+              font-size: 12px;
+              font-weight: 700;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
+              cursor: pointer;
+            }
+
+            .clan-members-more:hover { border-color: #5d82ff; }
+
+            /* Statut en ligne / hors ligne / inactif */
+            .clan-members-legende { margin: -6px 0 14px; color: #8f8a80; font-size: 13px; }
+            .clan-members .statut { cursor: help; margin-right: 4px; font-size: 12px; }
+
+            @media (max-width: 700px) {
+              .clan-members { padding: 18px 12px 22px; }
+              .clan-members table { font-size: 14px; }
+              .clan-members th, .clan-members td { padding-left: 6px; padding-right: 6px; }
+              .clan-members .col-role { display: none; }
+              .clan-live-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+              .clan-live-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 22px; }
+              .clan-live-stats > div:nth-child(3) { border-left: 0; }
             }
           </style>
 
-          <div class="st">
-            <div class="st-tete">
-              <div class="st-kicker">Le clan en chiffres</div>
-              <h2>STATISTIQUES</h2>
-              <div class="st-tricolore"><span style="background: #2448e8"></span><span style="background: #f4f4f4"></span><span style="background: #eb1212"></span></div>
-              <div class="st-live st-mono"><i></i><span id="maj">Chargement…</span></div>
+          <div class="clan-live" id="classement">
+            <div class="clan-live-head">
+              <div class="clan-live-badge"><span class="clan-live-dot"></span>Classement en direct</div>
+              <div class="clan-live-maj" id="maj">Chargement…</div>
+            </div>
+            <div class="clan-live-stats">
+              <div>
+                <strong id="rang">—</strong>
+                <span>Rang national</span>
+                <em class="clan-live-evo" id="evolution"></em>
+              </div>
+              <div>
+                <strong id="score">—</strong>
+                <span>Trophées du clan</span>
+              </div>
+              <div>
+                <strong id="guerre">—</strong>
+                <span>Trophées de guerre</span>
+              </div>
+              <div>
+                <strong id="membres">—</strong>
+                <span>Membres</span>
+              </div>
             </div>
 
-            <!-- Les id rang / score / guerre / membres ouvrent la courbe au clic -->
-            <div class="st-kpis">
-              <div class="st-kpi" id="rang"><div class="st-lab"><span class="st-ico">🏅</span>Rang national<span class="st-courbe-lien">📈</span></div><div class="st-val" id="kpi-rang">—</div><span class="st-delta" id="kpi-rang-evo"></span><span id="kpi-rang-spark"></span></div>
-              <div class="st-kpi" id="score"><div class="st-lab"><span class="st-ico">🏆</span>Trophées du clan<span class="st-courbe-lien">📈</span></div><div class="st-val" id="kpi-score">—</div><span class="st-delta" id="kpi-score-evo"></span><span id="kpi-score-spark"></span></div>
-              <div class="st-kpi" id="guerre"><div class="st-lab"><span class="st-ico">⚔️</span>Trophées de guerre<span class="st-courbe-lien">📈</span></div><div class="st-val" id="kpi-guerre">—</div><span class="st-delta" id="kpi-guerre-evo"></span><span id="kpi-guerre-spark"></span></div>
-              <div class="st-kpi" id="membres"><div class="st-lab"><span class="st-ico">👥</span>Membres<span class="st-courbe-lien">📈</span></div><div class="st-val" id="kpi-membres">—</div><span class="st-delta" id="kpi-membres-evo"></span><div class="st-jauge"><div id="kpi-membres-jauge" style="width: 0"></div></div></div>
-            </div>
-
-            <div class="st-grille">
-              <div class="st-carte" id="classement">
-                <h3>Classement des membres <small>🟢 en ligne · 🔴 hors ligne · ⚠️ inactif</small></h3>
-                <div class="st-filtres" id="st-filtres">
-                  <button type="button" class="on" data-tri="trophees">🏆 Trophées</button>
-                  <button type="button" data-tri="dons">🎁 Dons</button>
-                  <button type="button" data-tri="enligne">🟢 En ligne</button>
-                </div>
-                <div id="liste-membres"></div>
-                <button type="button" class="st-voir" id="voir-membres" hidden></button>
-              </div>
-
-              <div class="st-droite">
-                <a class="st-jdm" id="st-jdm" hidden></a>
-
-                <div class="st-carte" id="mvp" hidden>
-                  <h3>🏆 MVP de la semaine dernière <small id="mvp-semaine"></small></h3>
-                  <div class="st-podium" id="mvp-podium"></div>
-                </div>
-
-                <div class="st-carte" id="mouvements">
-                  <h3>👋 Arrivées et départs <small>7 derniers jours</small></h3>
-                  <div class="st-bilan"><div><b style="color: var(--st-vert)" id="mouv-plus">+0</b><span>arrivées</span></div><div><b style="color: var(--st-rouge)" id="mouv-moins">−0</b><span>départs</span></div></div>
-                  <div class="st-frise" id="mouv-liste"><p class="st-vide">Chargement…</p></div>
-                </div>
-              </div>
+            <div class="clan-members">
+              <h3 class="clan-members-title">Classement des membres</h3>
+              <p class="clan-members-legende">🟢 en ligne · 🔴 hors ligne · ⚠️ inactif depuis plus de 2 semaines</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Joueur</th>
+                    <th class="col-role">Rôle</th>
+                    <th class="num">Trophées</th>
+                    <th class="num">Dons</th>
+                  </tr>
+                </thead>
+                <tbody id="liste-membres"></tbody>
+              </table>
+              <button class="clan-members-more" id="voir-membres" hidden></button>
             </div>
           </div>
 
           <script>
-            (() => {
-              const fr = n => (n ?? 0).toLocaleString('fr-FR');
-              const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-              const dateCR = t => t ? new Date(t.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, '$1-$2-$3T$4:$5:$6Z')) : null;
-              const ilya = d => { const m = Math.max(0, Math.round((Date.now() - new Date(d)) / 60000)); return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : 'il y a ' + Math.round(m / 1440) + ' j'; };
-              const charger = f => fetch('/data/' + f + '.json?' + Date.now()).then(r => r.ok ? r.json() : null).catch(() => null);
+            fetch('/data/clan.json?' + Date.now())
+              .then(r => r.json())
+              .then(d => {
+                const fr = n => n.toLocaleString('fr-FR');
 
-              // Petite courbe (sparkline) des dernières 24 h
-              const spark = (histo, champ, inverse, couleur) => {
-                const pts = (histo || []).map(p => p[champ]).filter(v => v != null).slice(-48);
-                if (pts.length < 2) return '';
-                const mn = Math.min(...pts), mx = Math.max(...pts), w = 120, h = 40;
-                const y = v => mx === mn ? h / 2 : ((inverse ? (v - mn) : (mx - v)) / (mx - mn)) * (h - 6) + 3;
-                const d = 'M' + pts.map((v, i) => (i / (pts.length - 1) * w).toFixed(1) + ',' + y(v).toFixed(1)).join(' L');
-                return '<svg viewBox="0 0 120 40" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="st-g-' + champ + '" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="' + couleur + '" stop-opacity=".35"/><stop offset="1" stop-color="' + couleur + '" stop-opacity="0"/></linearGradient></defs><path d="' + d + ' L120,40 L0,40 Z" fill="url(#st-g-' + champ + ')"/><path d="' + d + '" fill="none" stroke="' + couleur + '" stroke-width="1.6"/></svg>';
-              };
-              const evo = (id, diff, unite, inverse) => {
-                const e = document.getElementById(id);
-                const bon = inverse ? diff < 0 : diff > 0;
-                e.className = 'st-delta' + (diff === 0 ? '' : bon ? ' up' : ' down');
-                e.textContent = diff === 0 ? '= stable sur 24 h' : (diff > 0 ? '▲ +' : '▼ −') + fr(Math.abs(diff)) + unite + ' en 24 h';
-              };
+                document.getElementById('rang').innerHTML =
+                  d.rang ? d.rang + '<sup>e</sup>' : 'Hors top';
 
-              Promise.all([charger('clan'), charger('historique'), charger('mvp'), charger('joueur-du-mois'), charger('mouvements')])
-                .then(([d, histo, mvp, jdm, mouv]) => {
-                  if (!d) { document.getElementById('maj').textContent = 'Classement indisponible'; return; }
-                  histo = histo || [];
+                const evo = document.getElementById('evolution');
+                if (d.rang && d.rangPrecedent > 0) {
+                  const diff = d.rangPrecedent - d.rang;
+                  evo.textContent = diff > 0 ? '▲ ' + diff + ' places' : diff < 0 ? '▼ ' + -diff + ' places' : '= stable';
+                  evo.className = 'clan-live-evo' + (diff > 0 ? ' up' : diff < 0 ? ' down' : '');
+                }
 
-                  // --- En direct
-                  const min = Math.round((Date.now() - new Date(d.majAt)) / 60000);
-                  document.getElementById('maj').textContent = 'En direct · ' + (min < 1 ? 'mis à jour à l’instant' : min < 60 ? 'mis à jour il y a ' + min + ' min' : 'mis à jour le ' + new Date(d.majAt).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }));
+                document.getElementById('score').textContent = fr(d.score);
+                document.getElementById('guerre').textContent = fr(d.tropheesGuerre);
+                document.getElementById('membres').textContent = d.membres + '/50';
 
-                  // --- 4 chiffres clés, comparés à il y a 24 h
-                  const hier = [...histo].reverse().find(p => Date.now() - new Date(p.date) >= 86400000) || histo[0] || {};
-                  document.getElementById('kpi-rang').innerHTML = d.rang ? d.rang + '<sup>e</sup>' : 'Hors top';
-                  document.getElementById('kpi-score').textContent = fr(d.score);
-                  document.getElementById('kpi-guerre').textContent = fr(d.tropheesGuerre);
-                  document.getElementById('kpi-membres').innerHTML = d.membres + '<sup>/50</sup>';
-                  if (d.rang && hier.rang) evo('kpi-rang-evo', hier.rang - d.rang, ' places', false);
-                  if (hier.score) evo('kpi-score-evo', d.score - hier.score, '', false);
-                  if (hier.guerre) evo('kpi-guerre-evo', d.tropheesGuerre - hier.guerre, '', false);
-                  const libres = 50 - d.membres;
-                  const em = document.getElementById('kpi-membres-evo');
-                  em.className = 'st-delta' + (libres === 0 ? ' up' : '');
-                  em.textContent = libres === 0 ? 'Clan complet' : libres + ' place' + (libres > 1 ? 's' : '') + ' libre' + (libres > 1 ? 's' : '');
-                  document.getElementById('kpi-membres-jauge').style.width = d.membres * 2 + '%';
-                  document.getElementById('kpi-rang-spark').innerHTML = spark(histo, 'rang', true, '#7d9bff');
-                  document.getElementById('kpi-score-spark').innerHTML = spark(histo, 'score', false, '#ffd700');
-                  document.getElementById('kpi-guerre-spark').innerHTML = spark(histo, 'guerre', false, '#ff6b61');
+                // Classement des membres
+                const roles = {
+                  leader: ['Chef', 'chef'],
+                  coLeader: ['Chef adjoint', 'adjoint'],
+                  elder: ['Aîné', ''],
+                  member: ['Membre', '']
+                };
+                const esc = t => t.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+                const joueurs = [...d.joueurs].sort((a, b) => b.trophees - a.trophees);
+                const tbody = document.getElementById('liste-membres');
+                const bouton = document.getElementById('voir-membres');
 
-                  // --- Classement des membres
-                  const couleurs = ['#ffd700', '#7d9bff', '#3ddc84', '#ff8f6b', '#c792ff', '#5fd4e8', '#ffb347', '#f47fb0'];
-                  const roles = { leader: ['Chef', 'chef'], coLeader: ['Chef adjoint', 'adjoint'], elder: ['Aîné', ''], member: ['Membre', ''] };
-                  const statut = j => {
-                    const vu = dateCR(j.vu);
-                    if (!vu) return ['#75727f', ''];
-                    const absent = Date.now() - vu;
-                    const duree = ms => { const m = Math.round(ms / 60000); return m < 60 ? m + ' min' : m < 1440 ? Math.round(m / 60) + ' h' : Math.round(m / 1440) + ' j'; };
-                    if (absent > 14 * 86400000) return ['#ffb020', 'Inactif : pas vu depuis ' + duree(absent)];
-                    if (new Date(d.majAt) - vu <= 15 * 60000) return ['#3ddc84', 'En ligne'];
-                    return ['#ff6b61', 'Hors ligne : vu il y a ' + duree(absent)];
+                // Statut du joueur à partir de sa dernière connexion (donnée par l'API)
+                const dateCR = t => t ? new Date(t.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, '$1-$2-$3T$4:$5:$6Z')) : null;
+                const duree = ms => { const m = Math.max(0, Math.round(ms / 60000)); return m < 60 ? m + ' min' : m < 1440 ? Math.round(m / 60) + ' h' : Math.round(m / 1440) + ' j'; };
+                const statut = j => {
+                  const vu = dateCR(j.vu);
+                  if (!vu) return '';
+                  const absent = Date.now() - vu;
+                  const [ico, txt] = absent > 14 * 86400000 ? ['⚠️', 'Inactif : pas vu depuis ' + duree(absent)]
+                    : new Date(d.majAt) - vu <= 15 * 60000 ? ['🟢', 'En ligne (vu il y a ' + duree(absent) + ')']
+                    : ['🔴', 'Hors ligne : vu il y a ' + duree(absent)];
+                  return '<span class="statut" title="' + txt + '">' + ico + '</span>';
+                };
+
+                const afficher = nb => {
+                  tbody.innerHTML = joueurs.slice(0, nb).map((j, i) => {
+                    const [role, cls] = roles[j.role] || [j.role, ''];
+                    return '<tr>' +
+                      '<td class="pos">' + (i + 1) + '</td>' +
+                      '<td class="nom">' + statut(j) + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a></td>' +
+                      '<td class="role col-role ' + cls + '">' + role + '</td>' +
+                      '<td class="num">' + fr(j.trophees) + '</td>' +
+                      '<td class="num">' + fr(j.dons) + '</td>' +
+                    '</tr>';
+                  }).join('');
+                };
+
+                afficher(10);
+                if (joueurs.length > 10) {
+                  let ouvert = false;
+                  bouton.hidden = false;
+                  bouton.textContent = 'Voir les ' + joueurs.length + ' membres';
+                  bouton.onclick = () => {
+                    ouvert = !ouvert;
+                    afficher(ouvert ? joueurs.length : 10);
+                    bouton.textContent = ouvert ? 'Réduire' : 'Voir les ' + joueurs.length + ' membres';
                   };
-                  const tris = {
-                    trophees: (a, b) => b.trophees - a.trophees || b.dons - a.dons,
-                    dons: (a, b) => b.dons - a.dons || b.trophees - a.trophees,
-                    enligne: (a, b) => (dateCR(b.vu) || 0) - (dateCR(a.vu) || 0)
-                  };
-                  const liste = document.getElementById('liste-membres');
-                  const bouton = document.getElementById('voir-membres');
-                  let tri = 'trophees', ouvert = false;
+                }
 
-                  const afficher = () => {
-                    const joueurs = [...d.joueurs].sort(tris[tri]);
-                    liste.innerHTML = joueurs.slice(0, ouvert ? joueurs.length : 10).map((j, i) => {
-                      const [role, cls] = roles[j.role] || [j.role, ''];
-                      const [couleur, info] = statut(j);
-                      const init = [...j.nom.replace(/[^\p{L}\p{N}]/gu, '')][0] || '?';
-                      return '<a class="st-j' + (i < 3 ? ' t' + (i + 1) : '') + '" href="/joueur.html?tag=' + esc(j.tag) + '">' +
-                        '<div class="st-pos">' + (i + 1) + '</div>' +
-                        '<div class="st-av" style="background:' + couleurs[i % couleurs.length] + '">' + esc(init.toUpperCase()) + '<span class="st-pt" style="background:' + couleur + '" title="' + esc(info) + '"></span></div>' +
-                        '<div class="st-nom"><b>' + esc(j.nom) + '</b><span class="' + cls + '">' + role + '</span></div>' +
-                        '<div class="st-tro">' + fr(j.trophees) + '<div class="st-barre"><div style="width:' + Math.min(100, j.trophees / 140) + '%"></div></div></div>' +
-                        '<div class="st-dons">🎁 ' + fr(j.dons) + '</div>' +
-                      '</a>';
-                    }).join('');
-                    bouton.hidden = joueurs.length <= 10;
-                    bouton.textContent = ouvert ? 'Réduire ↑' : 'Voir les ' + joueurs.length + ' membres ↓';
-                  };
-                  bouton.onclick = () => { ouvert = !ouvert; afficher(); };
-                  document.querySelectorAll('#st-filtres button').forEach(b => b.onclick = () => {
-                    document.querySelectorAll('#st-filtres button').forEach(x => x.classList.toggle('on', x === b));
-                    tri = b.dataset.tri;
-                    afficher();
-                  });
-                  afficher();
-
-                  // --- Joueur du mois
-                  const p = jdm && jdm.classement && jdm.classement[0];
-                  if (p) {
-                    const R = 52, C = 2 * Math.PI * R;
-                    const avant = (jdm.historique || [])[0];
-                    const carte = document.getElementById('st-jdm');
-                    carte.href = '/joueur.html?tag=' + p.tag;
-                    carte.innerHTML =
-                      '<div class="st-jdm-kick">🌟 Joueur du mois · ' + esc(jdm.libelle) + '</div>' +
-                      '<div class="st-anneau"><span class="st-couronne">👑</span><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="' + R + '" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="8"/><circle cx="60" cy="60" r="' + R + '" fill="none" stroke="#ffd700" stroke-width="8" stroke-linecap="round" stroke-dasharray="' + (C * p.score / 100).toFixed(1) + ' ' + C.toFixed(1) + '"/></svg><div class="st-init">' + esc(([...p.nom.replace(/[^\p{L}\p{N}]/gu, '')][0] || '?').toUpperCase()) + '</div></div>' +
-                      '<div class="st-jdm-nom">' + esc(p.nom) + '</div><div class="st-jdm-sc st-mono">' + p.score + ' / 100 · en tête</div>' +
-                      '<div class="st-mini"><div><b>' + fr(p.guerre) + '</b><span>⚔️ guerre</span></div><div><b>' + fr(p.dons) + '</b><span>🎁 dons</span></div><div><b>+' + fr(p.trophees) + '</b><span>🏆 trophées</span></div></div>' +
-                      (avant ? '<div class="st-precedent">🏅 ' + esc(avant.libelle) + ' : <b>' + esc(avant.nom) + '</b></div>' : '');
-                    carte.hidden = false;
-                  }
-
-                  // --- MVP : podium à marches
-                  const pod = (mvp && mvp.podium) || [];
-                  if (pod.length) {
-                    document.getElementById('mvp-semaine').textContent = mvp.semaine;
-                    const marche = (j, n, med) => !j ? '<div></div>' :
-                      '<' + (j.membre ? 'a href="/joueur.html?tag=' + esc(j.tag) + '"' : 'div') + ' class="st-marche st-m' + n + '">' +
-                        '<div class="st-medal">' + med + '</div><div class="st-qui">' + esc(j.nom) + '</div>' +
-                        '<div class="st-pts">' + fr(j.points) + ' pts · ' + j.combats + ' combats</div><div class="st-socle">' + n + '</div>' +
-                      '</' + (j.membre ? 'a' : 'div') + '>';
-                    document.getElementById('mvp-podium').innerHTML = marche(pod[1], 2, '🥈') + marche(pod[0], 1, '🥇') + marche(pod[2], 3, '🥉');
-                    document.getElementById('mvp').hidden = false;
-                  }
-
-                  // --- Arrivées et départs
-                  const tous = mouv || [];
-                  const semaine = tous.filter(m => Date.now() - new Date(m.date) < 7 * 86400000);
-                  document.getElementById('mouv-plus').textContent = '+' + semaine.filter(m => m.type === 'arrivee').length;
-                  document.getElementById('mouv-moins').textContent = '−' + semaine.filter(m => m.type === 'depart').length;
-                  const recents = tous.slice().reverse().slice(0, 8);
-                  document.getElementById('mouv-liste').innerHTML = recents.length
-                    ? recents.map(m => m.type === 'arrivee'
-                        ? '<div class="st-ev a"><a href="/joueur.html?tag=' + esc(m.tag) + '"><b>' + esc(m.nom) + '</b></a><em class="st-tag">a rejoint</em><span>' + ilya(m.date) + '</span></div>'
-                        : '<div class="st-ev d"><b>' + esc(m.nom) + '</b><em class="st-tag">est parti</em><span>' + ilya(m.date) + '</span></div>'
-                      ).join('')
-                    : '<p class="st-vide">Aucun mouvement pour le moment : les arrivées et départs s’afficheront ici automatiquement.</p>';
-                });
-            })();
+                const min = Math.round((Date.now() - new Date(d.majAt)) / 60000);
+                document.getElementById('maj').textContent =
+                  min < 1 ? 'Mis à jour à l’instant'
+                  : min < 60 ? 'Mis à jour il y a ' + min + ' min'
+                  : 'Mis à jour le ' + new Date(d.majAt).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
+              })
+              .catch(() => {
+                document.getElementById('maj').textContent = 'Classement indisponible';
+              });
           </script>
-          <!-- ===== FIN STATISTIQUES ===== -->
+
+
+<!-- ===== RÉCOMPENSES : MVP + JOUEUR DU MOIS (un seul bloc) ===== -->
+<style>
+  .recompenses {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+    margin: 0 0 32px;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .recompenses::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+  }
+
+  /* les deux blocs perdent leur propre cadre */
+  .recompenses .mvp,
+  .recompenses .jdm { margin: 0; border: 0; background: transparent; }
+  .recompenses .mvp::before,
+  .recompenses .jdm::before { display: none; }
+  .recompenses .jdm { border-left: 1px solid rgba(241, 236, 225, 0.12); }
+  .recompenses .jdm-regle { font-size: 11px; }
+
+  /* rien à afficher : on cache le bloc */
+  .recompenses:not(:has(.mvp:not([hidden]), .jdm:not([hidden]))) { display: none; }
+
+  @media (max-width: 1000px) {
+    .recompenses { grid-template-columns: 1fr; }
+    .recompenses .jdm { border-left: 0; border-top: 1px solid rgba(241, 236, 225, 0.12); }
+  }
+</style>
+<div class="recompenses">
+<!-- ===== MVP DE LA SEMAINE ===== -->
+<style>
+  .mvp {
+    position: relative;
+    margin: 0 0 32px;
+    padding: 18px 24px 30px;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .mvp::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+  }
+
+  .mvp[hidden] { display: none; }
+
+  .mvp-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #b9b3a6;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .mvp-head b { color: #f1ece1; }
+  .mvp-semaine { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
+
+  .mvp-podium {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    align-items: end;
+    gap: 16px;
+    margin-top: 26px;
+  }
+
+  .mvp-place {
+    display: block;
+    padding: 22px 12px 18px;
+    text-align: center;
+    color: #f1ece1;
+    border: 1px solid rgba(241, 236, 225, 0.18);
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform 0.25s ease, border-color 0.25s ease;
+  }
+
+  a.mvp-place:hover { transform: translateY(-4px); border-color: #ffd700; }
+
+  .mvp-place.p1 {
+    order: 2;
+    padding: 30px 12px 26px;
+    border-color: rgba(255, 215, 0, 0.55);
+    background: linear-gradient(180deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.02));
+  }
+
+  .mvp-place.p2 { order: 1; }
+  .mvp-place.p3 { order: 3; }
+
+  .mvp-medaille { font-size: 34px; line-height: 1; }
+  .mvp-place.p1 .mvp-medaille { font-size: 46px; }
+
+  .mvp-nom {
+    margin-top: 10px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(16px, 1.8vw, 22px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+  }
+
+  .mvp-place.p1 .mvp-nom { font-size: clamp(20px, 2.4vw, 30px); color: #ffd700; }
+
+  .mvp-points {
+    margin-top: 10px;
+    font-family: "Archivo Black", sans-serif;
+    font-size: clamp(20px, 2.2vw, 28px);
+    line-height: 1;
+  }
+
+  .mvp-points small, .mvp-combats {
+    display: block;
+    margin-top: 6px;
+    color: #8f8a80;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 650px) {
+    .mvp { padding: 18px 12px 22px; }
+    .mvp-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .mvp-podium { grid-template-columns: 1fr; }
+    .mvp-place.p1, .mvp-place.p2, .mvp-place.p3 { order: 0; }
+  }
+</style>
+
+<div class="mvp" id="mvp" hidden>
+  <div class="mvp-head">
+    <b>🏆 MVP de la semaine dernière</b>
+    <span class="mvp-semaine" id="mvp-semaine"></span>
+  </div>
+  <div class="mvp-podium" id="mvp-podium"></div>
+</div>
+
+<script>
+  fetch('/data/mvp.json?' + Date.now())
+    .then(r => r.json())
+    .then(m => {
+      if (!m.podium || !m.podium.length) return;
+      const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+      const medailles = ['🥇', '🥈', '🥉'];
+
+      document.getElementById('mvp-semaine').textContent = 'Guerre : ' + m.semaine;
+      document.getElementById('mvp-podium').innerHTML = m.podium.map((j, i) => {
+        const contenu =
+          '<div class="mvp-medaille">' + medailles[i] + '</div>' +
+          '<div class="mvp-nom">' + esc(j.nom) + '</div>' +
+          '<div class="mvp-points">' + j.points.toLocaleString('fr-FR') + '<small>points de guerre</small></div>' +
+          '<span class="mvp-combats">' + j.combats + ' combats</span>';
+        // Lien vers le profil seulement si le joueur est encore dans le clan
+        return j.membre
+          ? '<a class="mvp-place p' + (i + 1) + '" href="/joueur.html?tag=' + j.tag + '">' + contenu + '</a>'
+          : '<div class="mvp-place p' + (i + 1) + '">' + contenu + '</div>';
+      }).join('');
+
+      document.getElementById('mvp').hidden = false;
+    })
+    .catch(() => {});
+</script>
+<!-- ===== FIN MVP ===== -->
+<!-- ===== JOUEUR DU MOIS ===== -->
+<style>
+  .jdm {
+    position: relative;
+    margin: 0 0 32px;
+    padding: 18px 24px 24px;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #f1ece1;
+  }
+
+  .jdm::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+  }
+
+  .jdm[hidden] { display: none; }
+
+  .jdm-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    color: #b9b3a6;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .jdm-head b { color: #f1ece1; }
+  .jdm-mois { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
+
+  .jdm-corps { max-width: 560px; margin: 20px auto 0; }
+
+  .jdm-star {
+    display: block;
+    padding: 24px 20px;
+    text-align: center;
+    color: #f1ece1;
+    border: 1px solid rgba(255, 215, 0, 0.55);
+    background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.18), rgba(255, 215, 0, 0.02) 70%);
+    transition: transform 0.25s ease;
+  }
+
+  a.jdm-star:hover { transform: translateY(-4px); }
+  .jdm-etoile { font-size: 46px; line-height: 1; }
+  .jdm-nom { margin-top: 10px; font-family: "Archivo Black", sans-serif; font-size: clamp(24px, 3vw, 36px); line-height: 1.05; color: #ffd700; text-transform: uppercase; overflow-wrap: anywhere; }
+  .jdm-score { margin-top: 6px; color: #b9b3a6; font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; }
+
+  .jdm-detail { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
+  .jdm-detail div { padding: 10px 6px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); }
+  .jdm-detail strong { display: block; font-family: "Archivo Black", sans-serif; font-size: 18px; }
+  .jdm-detail span { display: block; margin-top: 4px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+
+  .jdm-suivants h4 { margin: 0 0 8px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .jdm-suivants ol { list-style: none; margin: 0; padding: 0; }
+  .jdm-suivants li { display: flex; justify-content: space-between; gap: 10px; padding: 9px 4px; border-bottom: 1px solid rgba(241, 236, 225, 0.07); }
+  .jdm-suivants li b { overflow-wrap: anywhere; }
+  .jdm-suivants li span { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 12px; flex-shrink: 0; }
+  .jdm-precedent { margin-top: 14px; color: #b9b3a6; font-size: 14px; text-align: center; }
+  .jdm-precedent b { color: #ffd700; }
+  .jdm-regle { margin-top: 16px; color: #8f8a80; font-size: 12px; }
+
+  @media (max-width: 750px) {
+    .jdm { padding: 18px 12px 20px; }
+    .jdm-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .jdm-corps { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="jdm" id="joueur-du-mois" hidden>
+  <div class="jdm-head">
+    <b>🌟 Joueur du mois</b>
+    <span class="jdm-mois" id="jdm-mois"></span>
+  </div>
+  <div class="jdm-corps">
+    <div id="jdm-star"></div>
+    <p class="jdm-precedent" id="jdm-precedent"></p>
+  </div>
+  <p class="jdm-regle">Score sur 100 : guerre 50 % · dons 25 % · trophées gagnés 25 %, chaque critère comparé au meilleur du clan. Le gagnant est désigné à la fin du mois.</p>
+</div>
+
+<script>
+  (() => {
+    const fr = n => (n ?? 0).toLocaleString('fr-FR');
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+    fetch('/data/joueur-du-mois.json?' + Date.now())
+      .then(r => r.json())
+      .then(d => {
+        const premier = (d.classement || [])[0];
+        if (!premier) return;
+
+        document.getElementById('jdm-mois').textContent = d.libelle.charAt(0).toUpperCase() + d.libelle.slice(1) + ' · en cours';
+
+        document.getElementById('jdm-star').innerHTML =
+          '<a class="jdm-star" href="/joueur.html?tag=' + esc(premier.tag) + '">' +
+            '<div class="jdm-etoile">🌟</div>' +
+            '<div class="jdm-nom">' + esc(premier.nom) + '</div>' +
+            '<div class="jdm-score">EN TÊTE · ' + premier.score + ' / 100</div>' +
+            '<div class="jdm-detail">' +
+              '<div><strong>' + fr(premier.guerre) + '</strong><span>⚔️ Guerre</span></div>' +
+              '<div><strong>' + fr(premier.dons) + '</strong><span>🎁 Dons</span></div>' +
+              '<div><strong>+' + fr(premier.trophees) + '</strong><span>🏆 Trophées</span></div>' +
+            '</div>' +
+          '</a>';
+
+
+        const p = (d.historique || [])[0];
+        if (p) {
+          document.getElementById('jdm-precedent').innerHTML =
+            '🏅 Joueur du mois de ' + esc(p.libelle) + ' : <b>' + esc(p.nom) + '</b> (' + p.score + ' / 100)';
+        }
+
+        document.getElementById('joueur-du-mois').hidden = false;
+      })
+      .catch(() => {});
+  })();
+</script>
+<!-- ===== FIN JOUEUR DU MOIS ===== -->
+</div>
+<!-- ===== FIN RÉCOMPENSES ===== -->
+<!-- ===== ARRIVÉES ET DÉPARTS ===== -->
+<style>
+  .mouv {
+    position: relative;
+    margin: 0 0 32px;
+    padding: 18px 24px 22px;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #f1ece1;
+  }
+
+  .mouv::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    height: 4px;
+    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+  }
+
+  .mouv-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: #b9b3a6;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .mouv-head b { color: #f1ece1; }
+  .mouv-resume { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
+
+  .mouv-liste { list-style: none; margin: 0; padding: 0; }
+
+  .mouv-liste li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 4px;
+    border-bottom: 1px solid rgba(241, 236, 225, 0.07);
+  }
+
+  .mouv-liste li:last-child { border-bottom: 0; }
+  .mouv-liste .qui { overflow-wrap: anywhere; }
+  .mouv-liste .qui b { color: #fff; }
+  .mouv-liste a b { text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3); }
+  .mouv-liste .arrivee .qui::before { content: "🟢 "; }
+  .mouv-liste .depart .qui::before { content: "🔴 "; }
+  .mouv-liste .quand { flex-shrink: 0; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; }
+  .mouv-vide { color: #8f8a80; padding: 6px 4px; }
+
+  @media (max-width: 650px) {
+    .mouv { padding: 18px 12px 18px; }
+    .mouv-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+  }
+</style>
+
+<div class="mouv" id="mouvements">
+  <div class="mouv-head">
+    <b>👋 Arrivées et départs</b>
+    <span class="mouv-resume" id="mouv-resume"></span>
+  </div>
+  <ul class="mouv-liste" id="mouv-liste">
+    <li class="mouv-vide">Chargement…</li>
+  </ul>
+</div>
+
+<script>
+  (() => {
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const ilya = d => {
+      const m = Math.round((Date.now() - new Date(d)) / 60000);
+      return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : 'il y a ' + Math.round(m / 1440) + ' j';
+    };
+
+    fetch('/data/mouvements.json?' + Date.now())
+      .then(r => r.ok ? r.json() : [])
+      .catch(() => [])
+      .then(liste => {
+        const ul = document.getElementById('mouv-liste');
+        const recents = liste.slice().reverse().slice(0, 10); // les 10 plus récents en premier
+
+        // Bilan des 7 derniers jours
+        const semaine = liste.filter(m => Date.now() - new Date(m.date) < 7 * 86400000);
+        const nbA = semaine.filter(m => m.type === 'arrivee').length;
+        const nbD = semaine.filter(m => m.type === 'depart').length;
+        document.getElementById('mouv-resume').textContent = '7 derniers jours : +' + nbA + ' / −' + nbD;
+
+        if (!recents.length) {
+          ul.innerHTML = '<li class="mouv-vide">Aucun mouvement pour le moment : les arrivées et départs s’afficheront ici automatiquement.</li>';
+          return;
+        }
+
+        ul.innerHTML = recents.map(m => {
+          const nom = '<b>' + esc(m.nom) + '</b>';
+          const qui = m.type === 'arrivee'
+            ? '<a href="/joueur.html?tag=' + esc(m.tag) + '">' + nom + '</a> a rejoint le clan'
+            : nom + ' a quitté le clan';
+          return '<li class="' + (m.type === 'arrivee' ? 'arrivee' : 'depart') + '"><span class="qui">' + qui + '</span><span class="quand">' + ilya(m.date) + '</span></li>';
+        }).join('');
+      });
+  })();
+</script>
+<!-- ===== FIN ARRIVÉES ET DÉPARTS ===== -->
         </div>
       </section>
 
