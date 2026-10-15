@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-10-15T18:31:03Z",
-  "rang": 582,
+  "majAt": "2026-10-15T19:01:13Z",
+  "rang": 580,
   "rangPrecedent": 819,
   "score": 137449,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 118,
+      "vu": "20261015T183735.000Z"
+    },
     {
       "tag": "R80VQ08V",
       "nom": "Spank",
@@ -13,14 +21,6 @@
       "trophees": 14000,
       "dons": 24,
       "vu": "20261015T183009.000Z"
-    },
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 118,
-      "vu": "20261015T181259.000Z"
     },
     {
       "tag": "9QQYPPLU",
@@ -340,7 +340,7 @@
       "role": "member",
       "trophees": 12375,
       "dons": 267,
-      "vu": "20261015T141541.000Z"
+      "vu": "20261015T184059.000Z"
     },
     {
       "tag": "CRU9VJY29",
@@ -404,7 +404,7 @@
       "role": "leader",
       "trophees": 8545,
       "dons": 0,
-      "vu": "20261015T103154.000Z"
+      "vu": "20261015T184709.000Z"
     }
   ]
 }
