@@ -1,25 +1,46 @@
 {
   "clans": [
     {
-      "rang": 571,
+      "rang": 568,
+      "nom": "Clan #9GYJV0",
+      "trophees": 137437,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 569,
+      "nom": "French Elite",
+      "trophees": 137434,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 570,
       "nom": "-7- Clan",
       "trophees": 137425,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 572,
+      "rang": 571,
       "nom": "Les Farfadets",
       "trophees": 137418,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 573,
+      "rang": 572,
       "nom": ".fr.",
       "trophees": 137417,
       "membres": 48,
       "nous": false
+    },
+    {
+      "rang": 573,
+      "nom": "Clan Francais",
+      "trophees": 137417,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 574,
@@ -37,43 +58,22 @@
     },
     {
       "rang": 576,
-      "nom": "Clan Francais",
-      "trophees": 137413,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 577,
       "nom": "Apocalypse",
       "trophees": 137413,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 578,
+      "rang": 577,
       "nom": "BIBI⛩",
       "trophees": 137405,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 579,
+      "rang": 578,
       "nom": "Force A7 ⛩",
       "trophees": 137403,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 580,
-      "nom": "-=BAT=-",
-      "trophees": 137399,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 581,
-      "nom": "Latitude 49",
-      "trophees": 137398,
       "membres": 49,
       "nous": false
     }
