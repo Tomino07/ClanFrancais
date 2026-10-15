@@ -2,37 +2,37 @@
   "clans": [
     {
       "rang": 566,
+      "nom": "France Zone",
+      "trophees": 137434,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 567,
       "nom": "-7- Clan",
       "trophees": 137430,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 567,
+      "rang": 568,
       "nom": "Les Farfadets",
       "trophees": 137418,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 568,
+      "rang": 569,
       "nom": "French Elite",
       "trophees": 137417,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 569,
+      "rang": 570,
       "nom": "Critical Strike",
       "trophees": 137416,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 570,
-      "nom": "Abbaye royale",
-      "trophees": 137413,
-      "membres": 48,
       "nous": false
     },
     {
@@ -52,29 +52,29 @@
     {
       "rang": 573,
       "nom": ".fr.",
-      "trophees": 137409,
+      "trophees": 137407,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 574,
-      "nom": "Force A7 ⛩",
-      "trophees": 137406,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 575,
       "nom": "BIBI⛩",
       "trophees": 137406,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 575,
+      "nom": "Apocalypse",
+      "trophees": 137404,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 576,
-      "nom": "-=BAT=-",
-      "trophees": 137405,
-      "membres": 47,
+      "nom": "Force A7 ⛩",
+      "trophees": 137403,
+      "membres": 49,
       "nous": false
     }
   ]
