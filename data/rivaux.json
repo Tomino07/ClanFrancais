@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 571,
-      "nom": "France Zone",
-      "trophees": 137458,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 572,
       "nom": "1Pekkable",
       "trophees": 137458,
@@ -16,65 +9,72 @@
     },
     {
       "rang": 573,
+      "nom": "France Zone",
+      "trophees": 137458,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 574,
       "nom": "Les Farfadets",
       "trophees": 137452,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 574,
+      "rang": 575,
       "nom": "Babar d'élite",
       "trophees": 137449,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 575,
+      "rang": 576,
       "nom": "les dédés",
       "trophees": 137448,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 576,
+      "rang": 577,
       "nom": "Clan Francais",
       "trophees": 137443,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 577,
+      "rang": 578,
       "nom": "Biceps clan",
-      "trophees": 137440,
+      "trophees": 137436,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 578,
+      "rang": 579,
+      "nom": "Critical Strike",
+      "trophees": 137432,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 580,
       "nom": "Apocalypse",
       "trophees": 137431,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 579,
-      "nom": "INSEEC LYON",
-      "trophees": 137428,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 580,
-      "nom": "Critical Strike",
-      "trophees": 137426,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 581,
-      "nom": "Force A7 ⛩",
+      "nom": "1 PEKKA ble",
       "trophees": 137425,
-      "membres": 49,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 582,
+      "nom": "INSEEC LYON",
+      "trophees": 137425,
+      "membres": 50,
       "nous": false
     }
   ]
