@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-10-15T09:30:59Z",
-  "rang": 565,
+  "majAt": "2026-10-15T10:31:00Z",
+  "rang": 567,
   "rangPrecedent": 819,
   "score": 137443,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 110,
+      "vu": "20261015T102759.000Z"
+    },
     {
       "tag": "V9R0C8CQ",
       "nom": "CLB-SALVATORE",
@@ -61,14 +69,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261014T142842.000Z"
-    },
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 74,
-      "vu": "20261014T122439.000Z"
     },
     {
       "tag": "J898RQQVY",
@@ -195,8 +195,8 @@
       "nom": "benoit82",
       "role": "member",
       "trophees": 13510,
-      "dons": 64,
-      "vu": "20261014T170913.000Z"
+      "dons": 74,
+      "vu": "20261015T103002.000Z"
     },
     {
       "tag": "RGRR89L22",
@@ -372,7 +372,7 @@
       "role": "member",
       "trophees": 12000,
       "dons": 0,
-      "vu": "20261015T062440.000Z"
+      "vu": "20261015T100342.000Z"
     },
     {
       "tag": "2CQYULYJQ",
@@ -404,7 +404,7 @@
       "role": "leader",
       "trophees": 8545,
       "dons": 0,
-      "vu": "20261015T075846.000Z"
+      "vu": "20261015T095459.000Z"
     }
   ]
 }
