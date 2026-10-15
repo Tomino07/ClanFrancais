@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-10-15T20:31:02Z",
-  "rang": 588,
+  "majAt": "2026-10-15T20:59:48Z",
+  "rang": 589,
   "rangPrecedent": 819,
   "score": 137449,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "9QQYPPLU",
+      "nom": "Litrode",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 87,
+      "vu": "20261015T205745.000Z"
+    },
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
@@ -29,14 +37,6 @@
       "trophees": 14000,
       "dons": 24,
       "vu": "20261015T192300.000Z"
-    },
-    {
-      "tag": "9QQYPPLU",
-      "nom": "Litrode",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 87,
-      "vu": "20261015T174011.000Z"
     },
     {
       "tag": "P9YPQURQ",
@@ -388,7 +388,7 @@
       "role": "member",
       "trophees": 11264,
       "dons": 78,
-      "vu": "20261014T184752.000Z"
+      "vu": "20261015T205935.000Z"
     },
     {
       "tag": "QVUGQ0V",
@@ -404,7 +404,7 @@
       "role": "leader",
       "trophees": 8545,
       "dons": 0,
-      "vu": "20261015T184709.000Z"
+      "vu": "20261015T205854.000Z"
     }
   ]
 }
