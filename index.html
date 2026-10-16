@@ -1619,6 +1619,9 @@
         font-size: 34px;
       }
 
+      /* Jour de guerre déjà passé : grisé */
+      .cal-item.cal-fait { opacity: 0.45; }
+
       .cal-empty {
         padding: 40px 20px;
         text-align: center;
@@ -4184,29 +4187,47 @@
         const saison = finDeSaison(now);
         const evenements = [];
 
-        // Compte à rebours en tête de liste
-        const debutGuerre = new Date(lundi.getTime() + 3 * JOUR);
-        const finGuerre = new Date(lundi.getTime() + 7 * JOUR);
-        if (now >= debutGuerre) {
-          evenements.push({ date: "En ce moment", time: "Guerre en cours", title: "⚔️ Fin dans " + fmtDuree(finGuerre - now), sub: "Joue tes 4 combats chaque jour !", icon: "⏳", badge: "EN DIRECT", cat: "guerre" });
-        } else {
-          evenements.push({ date: "Prochaine guerre", time: fmtJour(debutGuerre) + " · " + fmtHeure(debutGuerre), title: "Dans " + fmtDuree(debutGuerre - now), sub: "Prépare tes decks de guerre", icon: "⏳", cat: "guerre" });
-        }
-
-        // Les 3 prochaines semaines
+        // Les 3 prochaines semaines. Pour chaque guerre :
+        //   « Début de la guerre » (disparaît dès que la guerre commence)
+        //   → les 4 jours de guerre en 4 cases → « Fin de la guerre »
+        let prochaineAnnoncee = false;
         for (let s = 0; s < 3; s++) {
           const l = new Date(lundi.getTime() + s * 7 * JOUR);
           const g = new Date(l.getTime() + 3 * JOUR);
           const f = new Date(l.getTime() + 7 * JOUR);
           const colisee = f.getTime() === saison.getTime();
+          const nom = colisee ? "Colisée" : "guerre";
+          const icone = colisee ? "🏟️" : "⚔️";
+          const enCours = now >= g;
 
           if (now < g) {
-            evenements.push({ date: fmtJour(l), time: "→ " + fmtJour(new Date(g - JOUR)), title: "Jours d'entraînement", sub: "Combats libres pour s'entraîner", icon: "🛡️", badge: now >= l ? "EN COURS" : "", cat: "guerre" });
+            evenements.push({ date: fmtJour(l) + " · " + fmtHeure(l), time: "→ " + fmtJour(new Date(g - JOUR)), title: "Jours d'entraînement", sub: "Combats libres pour s'entraîner", icon: "🛡️", badge: now >= l ? "EN COURS" : "", cat: "guerre" });
+
+            // Début de la guerre (seulement tant qu'elle n'a pas commencé)
+            let sub = colisee ? "Dernière semaine de la saison" : "4 combats par jour";
+            if (!prochaineAnnoncee) { sub = "Dans " + fmtDuree(g - now) + " · " + sub; prochaineAnnoncee = true; }
+            evenements.push({ date: fmtJour(g) + " · " + fmtHeure(g), time: "", title: colisee ? "Début du Colisée" : "Début de la guerre", sub, icon: icone, cat: "guerre" });
           }
-          evenements.push({ date: fmtJour(g), time: "→ " + fmtJour(new Date(f - JOUR)), title: colisee ? "Colisée" : "Guerre de clan", sub: colisee ? "Dernière semaine de la saison" : "4 combats par jour", icon: colisee ? "🏟️" : "⚔️", badge: now >= g ? "EN COURS" : "", cat: "guerre" });
-          if (colisee) {
-            evenements.push({ date: fmtJour(saison), time: fmtHeure(saison), title: "Fin de saison", sub: "Récompenses et nouvelle saison", icon: "🏆", cat: "guerre" });
+
+          // Les 4 jours de guerre : une ligne par jour, de haut en bas
+          for (let k = 0; k < 4; k++) {
+            const d = new Date(g.getTime() + k * JOUR);
+            const fait = now >= d.getTime() + JOUR, actuel = !fait && now >= d;
+            evenements.push({
+              date: fmtJour(d) + " · " + fmtHeure(d), time: "",
+              title: (colisee ? "Colisée" : "Guerre") + " · jour " + (k + 1) + "/4",
+              sub: actuel ? "Fin du jour dans " + fmtDuree(d.getTime() + JOUR - now) : "4 combats",
+              icon: icone, badge: actuel ? "EN DIRECT" : fait ? "TERMINÉ" : "", fait, cat: "guerre"
+            });
           }
+
+          // Fin de la guerre (le Colisée se termine avec la saison)
+          evenements.push({
+            date: fmtJour(f) + " · " + fmtHeure(f), time: "",
+            title: colisee ? "Fin du Colisée et de la saison" : "Fin de la guerre",
+            sub: enCours ? "Dans " + fmtDuree(f - now) : colisee ? "Récompenses et nouvelle saison" : "Résultats de la course",
+            icon: colisee ? "🏆" : "🏁", cat: "guerre"
+          });
         }
         return evenements;
       }
@@ -4253,6 +4274,8 @@
           row.appendChild(date);
           row.appendChild(info);
           row.appendChild(calEl("div", "cal-ico", e.icon));
+
+          if (e.fait) row.classList.add("cal-fait");
 
           calList.appendChild(row);
         });
