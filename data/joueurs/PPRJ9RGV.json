@@ -3,7 +3,7 @@
   "nom": "baboon",
   "role": "Membre",
   "niveau": 68,
-  "trophees": 12722,
+  "trophees": 12692,
   "record": 12895,
   "victoires": 6670,
   "dons": 92,
@@ -43,6 +43,50 @@
   ],
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261016T083526.000Z",
+      "type": "PvP",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 1,
+      "trophees": -30,
+      "adversaire": "Tilttty",
+      "clanAdv": "its what we do",
+      "deckAdv": [
+        {
+          "nom": "Baby Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/cjC9n4AvEZJ3urkVh-rwBkJ-aRSsydIMqSAV48hAih0.png"
+        },
+        {
+          "nom": "Ice Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Poison",
+          "image": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png"
+        },
+        {
+          "nom": "Barbarian Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
+        },
+        {
+          "nom": "Goblin Cage",
+          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
+        },
+        {
+          "nom": "Mega Minion",
+          "image": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png"
+        },
+        {
+          "nom": "Graveyard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Icp8BIyyfBTj1ncCJS7mb82SY7TPV-MAE-J2L2R48DI.png"
+        }
+      ]
+    },
     {
       "date": "20261015T105526.000Z",
       "type": "riverRacePvP",
@@ -468,50 +512,6 @@
         {
           "nom": "Valkyrie",
           "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
-        }
-      ]
-    },
-    {
-      "date": "20261014T125958.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 0,
-      "adv": 2,
-      "trophees": -30,
-      "adversaire": "ANTHONY",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
-        },
-        {
-          "nom": "Dark Prince",
-          "image": "https://api-assets.clashroyale.com/cards/300/M7fXlrKXHu2IvpSGpk36kXVstslbR08Bbxcy0jQcln8.png"
-        },
-        {
-          "nom": "Tesla",
-          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        },
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Goblin Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
-        },
-        {
-          "nom": "Ronin",
-          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
-        },
-        {
-          "nom": "Ram Rider",
-          "image": "https://api-assets.clashroyale.com/cards/300/QaJyerT7f7oMyZ3Fv1glKymtLSvx7YUXisAulxl7zRI.png"
         }
       ]
     }
