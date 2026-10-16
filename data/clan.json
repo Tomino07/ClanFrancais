@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-10-16T05:01:12Z",
-  "rang": 587,
+  "majAt": "2026-10-16T05:30:59Z",
+  "rang": 585,
   "rangPrecedent": 819,
-  "score": 137449,
+  "score": 137448,
   "tropheesGuerre": 1802,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "P9YPQURQ",
+      "nom": "samuel",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 16,
+      "vu": "20261016T052615.000Z"
+    },
     {
       "tag": "28920L2YV",
       "nom": "akkabouz9",
@@ -37,14 +45,6 @@
       "trophees": 14000,
       "dons": 24,
       "vu": "20261015T192300.000Z"
-    },
-    {
-      "tag": "P9YPQURQ",
-      "nom": "samuel",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 16,
-      "vu": "20261015T172928.000Z"
     },
     {
       "tag": "J9LP8Y8",
@@ -402,9 +402,9 @@
       "tag": "PGJJ8P8LU",
       "nom": "✨Tom07✨",
       "role": "leader",
-      "trophees": 8545,
-      "dons": 0,
-      "vu": "20261016T050106.000Z"
+      "trophees": 8516,
+      "dons": 18,
+      "vu": "20261016T050908.000Z"
     }
   ]
 }
