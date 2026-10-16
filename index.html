@@ -3320,7 +3320,7 @@
                   member: ['', '']
                 };
                 const esc = t => t.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-                const joueurs = [...d.joueurs].sort((a, b) => b.trophees - a.trophees || b.dons - a.dons);
+                const joueurs = d.joueurs; // même ordre que dans le jeu (donné par l'API)
                 const tbody = document.getElementById('liste-membres');
                 const bouton = document.getElementById('voir-membres');
 
