@@ -3275,7 +3275,7 @@
 
             <div class="clan-members">
               <h3 class="clan-members-title">Classement des membres</h3>
-              <p class="clan-members-legende"><span><span class="statut en-ligne"></span>En ligne</span><span><span class="statut hors-ligne"></span>Hors ligne</span><span><span class="statut inactif"></span>Inactif depuis plus de 2 semaines</span></p>
+              <p class="clan-members-legende"><span><span class="statut en-ligne"></span>En ligne</span><span><span class="statut hors-ligne"></span>Hors ligne</span><span><span class="statut inactif"></span>Inactif depuis plus d’1 semaine</span></p>
               <table>
                 <thead>
                   <tr>
@@ -3331,7 +3331,7 @@
                   const vu = dateCR(j.vu);
                   if (!vu) return ['', '—'];
                   const absent = Date.now() - vu;
-                  const [cls, txt, court] = absent > 14 * 86400000 ? ['inactif', 'Inactif : pas vu depuis ' + duree(absent), duree(absent)]
+                  const [cls, txt, court] = absent > 7 * 86400000 ? ['inactif', 'Inactif : pas vu depuis ' + duree(absent), duree(absent)]
                     : new Date(d.majAt) - vu <= 15 * 60000 ? ['en-ligne', 'En ligne', 'en ligne']
                     : ['hors-ligne', 'Hors ligne : vu il y a ' + duree(absent), duree(absent)];
                   return ['<span class="statut ' + cls + '" title="' + txt + '"></span>', court];
@@ -3924,7 +3924,7 @@
                 const vu = dateCR(j.vu);
                 if (!vu) return '';
                 const absent = Date.now() - vu;
-                if (absent > 14 * 86400000) return '⚠️ Inactif depuis ' + duree(absent);
+                if (absent > 7 * 86400000) return '⚠️ Inactif depuis ' + duree(absent);
                 if (new Date(majAt) - vu <= 15 * 60000) return '🟢 En ligne';
                 return '🔴 Vu il y a ' + duree(absent);
               };
@@ -5054,7 +5054,7 @@
           const vu = dateCR(j.vu);
           if (!vu) return "";
           const absent = Date.now() - vu;
-          if (absent > 14 * 86400000) return "⚠️ Inactif depuis " + duree(absent);
+          if (absent > 7 * 86400000) return "⚠️ Inactif depuis " + duree(absent);
           if (new Date(majAt) - vu <= 15 * 60000) return "🟢 En ligne";
           return "🔴 Vu il y a " + duree(absent);
         }
