@@ -62,6 +62,33 @@
     .combat-info span { color: #aaa7c4; }
     .mini-deck { display: grid; grid-template-columns: repeat(8, 1fr); gap: 4px; margin-top: 6px; max-width: 360px; }
     .mini-deck img { width: 100%; }
+    /* Historique de guerre : une ligne par semaine, combats en 16 cases + points en barre */
+    .guerre-resume { display: flex; gap: 28px; flex-wrap: wrap; margin: 4px 0 18px; }
+    .guerre-resume div { color: #8f8a80; font-size: 13px; }
+    .guerre-resume b { display: block; font-family: 'Archivo Black', sans-serif; font-weight: 400; font-size: 26px; line-height: 1.1; color: #f1ece1; }
+    .guerre-vide { color: #8f8a80; margin: 4px 0 18px; }
+    .semaine { display: grid; grid-template-columns: 170px 210px minmax(0, 1fr); gap: 18px; align-items: center; padding: 10px 0; border-bottom: 1px solid rgba(241, 236, 225, .08); font-size: 14px; }
+    .semaine-nom { color: #b9b3a6; }
+    .semaine-nom b { color: #f1ece1; font-weight: 700; }
+    .cases { display: flex; align-items: center; gap: 3px; }
+    .cases i { width: 8px; height: 12px; background: rgba(241, 236, 225, .1); }
+    .cases i.joue { background: #f1ece1; }
+    .cases.complet i.joue { background: #3ddc84; }
+    .cases span { margin-left: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #8f8a80; }
+    .points { display: flex; align-items: center; gap: 10px; }
+    .points i { flex: 1; height: 4px; background: rgba(241, 236, 225, .08); position: relative; }
+    .points i::after { content: ''; position: absolute; inset: 0 auto 0 0; width: var(--l); background: #e8b931; }
+    .points b { min-width: 52px; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+    .semaine.absent { color: #66635c; }
+    .semaine.absent .semaine-nom, .semaine.absent .semaine-nom b { color: #66635c; }
+    .semaine.absent .pas-joue { grid-column: 2 / -1; font-size: 13px; font-style: italic; }
+    @media (max-width: 640px) {
+      .semaine { grid-template-columns: 1fr auto; row-gap: 6px; }
+      .semaine-nom { grid-column: 1 / -1; }
+      .semaine.absent .semaine-nom { grid-column: 1; }
+      .semaine.absent .pas-joue { grid-column: 2; }
+      .points i { display: none; }
+    }
     @media (max-width: 520px) { .combat { grid-template-columns: 1fr; } .mini-deck { grid-template-columns: repeat(4, 1fr); max-width: 200px; } }
   </style>
 </head>
@@ -106,10 +133,8 @@
   <div id="combats"></div>
 
   <h2>Historique de guerre</h2>
-  <table>
-    <thead><tr><th>Saison / semaine</th><th class="num">Points</th><th class="num">Combats</th></tr></thead>
-    <tbody id="guerres"></tbody>
-  </table>
+  <div id="guerre-resume"></div>
+  <div id="guerres"></div>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
@@ -208,10 +233,32 @@
           document.getElementById('badges').innerHTML = b.join('');
         });
 
+        // Historique de guerre : résumé + une ligne par semaine (16 combats max par semaine)
         const g = j.guerres || [];
-        document.getElementById('guerres').innerHTML = g.length
-          ? g.map(w => '<tr><td>' + esc(w.semaine) + '</td><td class="num">' + fr(w.points) + '</td><td class="num">' + w.combats + '</td></tr>').join('')
-          : '<tr><td colspan="3">Pas encore de guerre enregistrée.</td></tr>';
+        const jouees = g.filter(w => w.combats > 0);
+        const total = g.reduce((t, w) => t + w.points, 0);
+        const combats = g.reduce((t, w) => t + w.combats, 0);
+        const maxPts = Math.max(1, ...g.map(w => w.points));
+        document.getElementById('guerre-resume').outerHTML = !g.length
+          ? '<p class="guerre-vide">Pas encore de guerre enregistrée.</p>'
+          : !jouees.length
+            ? '<p class="guerre-vide">Aucun combat de guerre sur les ' + g.length + ' dernières semaines.</p>'
+            : '<div class="guerre-resume">' +
+                '<div><b>' + fr(total) + '</b>points au total</div>' +
+                '<div><b>' + combats + '<span style="font-size:.55em;color:#8f8a80"> / ' + g.length * 16 + '</span></b>combats joués (' + Math.round(combats / (g.length * 16) * 100) + ' %)</div>' +
+                '<div><b>' + fr(Math.max(...g.map(w => w.points))) + '</b>meilleure semaine</div>' +
+              '</div>';
+        document.getElementById('guerres').innerHTML = jouees.length ? g.map(w => {
+          const [saison, semaine] = w.semaine.split(' – ');
+          const nom = '<div class="semaine-nom">' + esc(saison) + (semaine ? ' · <b>' + esc(semaine) + '</b>' : '') + '</div>';
+          if (!w.combats) return '<div class="semaine absent">' + nom + '<div class="pas-joue">Pas joué</div></div>';
+          return '<div class="semaine">' + nom +
+            '<div class="cases' + (w.combats >= 16 ? ' complet' : '') + '" title="' + w.combats + ' combats sur 16">' +
+              Array.from({ length: 16 }, (_, i) => '<i' + (i < w.combats ? ' class="joue"' : '') + '></i>').join('') +
+              '<span>' + w.combats + '/16</span></div>' +
+            '<div class="points"><i style="--l:' + Math.round(w.points / maxPts * 100) + '%"></i><b>' + fr(w.points) + '</b></div>' +
+          '</div>';
+        }).join('') : '';
       })
       .catch(() => erreur('Impossible de charger ce profil.'));
 
