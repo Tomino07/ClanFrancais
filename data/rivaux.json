@@ -2,22 +2,22 @@
   "clans": [
     {
       "rang": 697,
+      "nom": ".fr.",
+      "trophees": 136941,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 698,
       "nom": "french",
       "trophees": 136928,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 698,
-      "nom": "Adulte Elite",
-      "trophees": 136919,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 699,
-      "nom": "Clan des darons",
-      "trophees": 136910,
+      "nom": "Adulte Elite",
+      "trophees": 136916,
       "membres": 50,
       "nous": false
     },
@@ -44,37 +44,37 @@
     },
     {
       "rang": 703,
+      "nom": "Clan des darons",
+      "trophees": 136904,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 704,
       "nom": "Ad Vitam",
       "trophees": 136901,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 704,
+      "rang": 705,
       "nom": "3eme division",
       "trophees": 136894,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 705,
+      "rang": 706,
       "nom": "100% français",
       "trophees": 136893,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 706,
+      "rang": 707,
       "nom": "Bretagne",
       "trophees": 136893,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 707,
-      "nom": "LKM League",
-      "trophees": 136889,
-      "membres": 43,
       "nous": false
     }
   ]
