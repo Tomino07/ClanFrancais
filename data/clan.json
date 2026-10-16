@@ -1,18 +1,26 @@
 {
-  "majAt": "2026-10-16T10:31:01Z",
-  "rang": 724,
+  "majAt": "2026-10-16T11:01:13Z",
+  "rang": 723,
   "rangPrecedent": 589,
-  "score": 136894,
+  "score": 136897,
   "tropheesGuerre": 1802,
   "membres": 49,
   "joueurs": [
+    {
+      "tag": "P9YPQURQ",
+      "nom": "samuel",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 16,
+      "vu": "20261016T104532.000Z"
+    },
     {
       "tag": "P82Q8LVYP",
       "nom": "Luckyvolution",
       "role": "member",
       "trophees": 14000,
       "dons": 48,
-      "vu": "20261016T101725.000Z"
+      "vu": "20261016T103107.000Z"
     },
     {
       "tag": "28920L2YV",
@@ -29,14 +37,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261016T073039.000Z"
-    },
-    {
-      "tag": "P9YPQURQ",
-      "nom": "samuel",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 16,
-      "vu": "20261016T052615.000Z"
     },
     {
       "tag": "9QQYPPLU",
@@ -187,8 +187,8 @@
       "nom": "benoit82",
       "role": "member",
       "trophees": 13510,
-      "dons": 92,
-      "vu": "20261016T093649.000Z"
+      "dons": 118,
+      "vu": "20261016T105005.000Z"
     },
     {
       "tag": "2V0G2JUPV",
@@ -234,9 +234,9 @@
       "tag": "8GGQG28YU",
       "nom": "grand-père",
       "role": "member",
-      "trophees": 13060,
-      "dons": 340,
-      "vu": "20261015T180355.000Z"
+      "trophees": 13091,
+      "dons": 394,
+      "vu": "20261016T104600.000Z"
     },
     {
       "tag": "CPJQ9LJPG",
@@ -332,7 +332,7 @@
       "role": "member",
       "trophees": 12375,
       "dons": 327,
-      "vu": "20261016T095508.000Z"
+      "vu": "20261016T103735.000Z"
     },
     {
       "tag": "CRU9VJY29",
@@ -356,7 +356,7 @@
       "role": "member",
       "trophees": 12024,
       "dons": 0,
-      "vu": "20261016T102259.000Z"
+      "vu": "20261016T103943.000Z"
     },
     {
       "tag": "QC8Q0PQV2",
@@ -364,7 +364,7 @@
       "role": "member",
       "trophees": 12000,
       "dons": 0,
-      "vu": "20261016T092648.000Z"
+      "vu": "20261016T104231.000Z"
     },
     {
       "tag": "2CQYULYJQ",
@@ -395,8 +395,8 @@
       "nom": "✨Tom07✨",
       "role": "leader",
       "trophees": 8516,
-      "dons": 18,
-      "vu": "20261016T102018.000Z"
+      "dons": 52,
+      "vu": "20261016T105444.000Z"
     }
   ]
 }

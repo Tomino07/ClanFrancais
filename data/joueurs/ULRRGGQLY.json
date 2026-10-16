@@ -41,28 +41,6 @@
       "image": "https://api-assets.clashroyale.com/cards/300/yHGpoEnmUWPGV_hBbhn-Kk-Bs838OjGzWzJJlQpQKQA.png"
     }
   ],
-  "ranked": {
-    "ligue": 3,
-    "points": 0,
-    "rang": null
-  },
-  "rankedBrut": {
-    "currentPathOfLegendSeasonResult": {
-      "leagueNumber": 3,
-      "trophies": 0,
-      "rank": null
-    },
-    "lastPathOfLegendSeasonResult": {
-      "leagueNumber": 7,
-      "trophies": 1816,
-      "rank": null
-    },
-    "bestPathOfLegendSeasonResult": {
-      "leagueNumber": 7,
-      "trophies": 1870,
-      "rank": null
-    }
-  },
   "mvps": 0,
   "combats": [
     {

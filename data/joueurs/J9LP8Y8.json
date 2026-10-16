@@ -41,42 +41,6 @@
       "image": "https://api-assets.clashroyale.com/cards/300/Wyjq5l0IXHTkX9Rmpap6HaH08MvjbxFp1xBO9a47YSI.png"
     }
   ],
-  "ranked": {
-    "ligue": 1,
-    "points": 0,
-    "rang": null
-  },
-  "rankedBrut": {
-    "leagueStatistics": {
-      "currentSeason": {
-        "trophies": 14000
-      },
-      "previousSeason": {
-        "id": "2026-09",
-        "trophies": 5427,
-        "bestTrophies": 5427
-      },
-      "bestSeason": {
-        "id": "2021-09",
-        "trophies": 6206
-      }
-    },
-    "currentPathOfLegendSeasonResult": {
-      "leagueNumber": 1,
-      "trophies": 0,
-      "rank": null
-    },
-    "lastPathOfLegendSeasonResult": {
-      "leagueNumber": 2,
-      "trophies": 0,
-      "rank": null
-    },
-    "bestPathOfLegendSeasonResult": {
-      "leagueNumber": 7,
-      "trophies": 1624,
-      "rank": null
-    }
-  },
   "mvps": 0,
   "combats": [
     {
