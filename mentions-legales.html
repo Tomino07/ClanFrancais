@@ -597,5 +597,55 @@
     </footer>
 
     <script src="cookies.js" defer></script>
-  </body>
+      <!-- ===== DA ESPORT — pages légales ===== -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;1,700;1,800;1,900&family=Barlow:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --page-bg: #07080a; --text: #f4f4f4; --muted: #9a9ba3; --dim: #5d5e66; --line: #1f2027; --red: #ff2b2b;
+        --e-carte: #0f1014; --e-titre: "Barlow Condensed", sans-serif; --e-police: "Barlow", sans-serif;
+      }
+      html body { background: var(--page-bg); color: var(--text); font-family: var(--e-police); }
+
+      /* En-tête, comme sur l'accueil */
+      html body .topbar { background: var(--red); color: #fff; font-family: var(--e-titre); font-style: italic; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+      html body header { background: rgba(7, 8, 10, 0.92); border-bottom: 1px solid var(--line); }
+      html body .logo span { font-family: var(--e-titre); font-style: italic; font-weight: 900; font-size: 22px; letter-spacing: 0.02em; }
+      html body .nav a { font-family: var(--e-police); font-weight: 700; letter-spacing: 0.14em; }
+
+      /* Titre de la page */
+      html body .kicker { display: inline-flex; align-items: center; gap: 10px; color: var(--red); font-family: var(--e-police); font-weight: 800; font-size: 12px; letter-spacing: 0.24em; text-transform: uppercase; }
+      html body .kicker::before { content: ""; width: 28px; height: 3px; background: var(--red); }
+      html body .legal h1 { font-family: var(--e-titre); font-style: italic; font-weight: 900; font-size: clamp(60px, 10vw, 120px); line-height: 0.85; letter-spacing: 0; text-transform: uppercase; color: var(--text); }
+      html body .tricolour { display: none; }
+      html body .updated { color: var(--red); font-family: var(--e-police); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-size: 12px; }
+      html body .intro { color: var(--muted); }
+
+      /* Sections numérotées */
+      html body .legal-section { border-top: 1px solid var(--line); }
+      html body .legal-num { font-family: var(--e-titre); font-style: italic; font-weight: 900; color: var(--red); -webkit-text-stroke: 0; }
+      html body .legal-section h2 { font-family: var(--e-titre); font-style: italic; font-weight: 900; font-size: 32px; letter-spacing: 0.01em; text-transform: uppercase; color: var(--text); }
+      html body .legal-section p,
+      html body .legal-section li { color: var(--muted); }
+      html body .legal-section strong { color: var(--text); }
+      html body .legal-section a,
+      html body .intro a { color: var(--text); border-bottom: 1px solid var(--red); }
+
+      /* Fiches d'informations et tableaux */
+      html body .info-list { border-color: var(--line); background: var(--e-carte); }
+      html body .info-list dt { font-family: var(--e-police); font-weight: 800; letter-spacing: 0.18em; color: var(--dim); }
+      html body .info-list dd { font-family: var(--e-titre); font-style: italic; font-weight: 800; font-size: 19px; color: var(--text); }
+      html body .table-wrap { border-color: var(--line); background: var(--e-carte); }
+      html body .table-wrap th { font-family: var(--e-police); font-weight: 800; letter-spacing: 0.16em; color: var(--dim); border-color: var(--line); }
+      html body .table-wrap td { border-color: var(--line); color: var(--muted); }
+      html body .disclaimer { background: var(--e-carte); border-color: var(--line); border-left: 4px solid var(--red); color: var(--muted); }
+
+      /* Retour et pied de page */
+      html body .back-link { font-family: var(--e-titre); font-style: italic; font-weight: 800; font-size: 18px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); }
+      html body footer { border-top: 1px solid var(--line); }
+      html body .footer-links a { font-family: var(--e-titre); font-style: italic; font-weight: 700; font-size: 16px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+      html body .footer-links a:hover { color: var(--red); }
+      html body .footer-text { color: var(--dim); }
+    </style>
+    <!-- ===== FIN DA ESPORT ===== -->
+</body>
 </html>
