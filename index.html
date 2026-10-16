@@ -5171,6 +5171,8 @@
   .piste-bas { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; min-height: 14px; }
   .riviere { position: relative; height: 30px; margin: 6px 0 4px; border-radius: 15px; background: linear-gradient(90deg, rgba(36, 72, 232, .18), rgba(36, 72, 232, .4)); overflow: hidden; }
   .riviere::after { content: '🏁'; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 16px; }
+  .courbe-explication { margin: -2px 0 12px; color: #8f8a80; font-size: 13px; line-height: 1.45; }
+  .courbe-explication[hidden] { display: none; }
   .bateau { position: absolute; top: 50%; font-size: 22px; line-height: 1; transition: left 1s ease, transform 1s ease; }
 
   @media (max-width: 650px) {
@@ -5196,9 +5198,10 @@
 
     <div class="courbe-course" id="courbe-course" hidden>
       <div class="courbe-rivaux-head">
-        <b>⛵ Guerre actuelle</b>
+        <b>⛵ Course de la semaine</b>
         <span id="course-etat"></span>
       </div>
+      <p class="courbe-explication">Les points gagnés cette semaine par les 5 clans de la course. Le premier à 10 000 gagne. Ces points repartent à zéro chaque semaine.</p>
       <div id="course-pistes"></div>
     </div>
 
@@ -5207,6 +5210,7 @@
         <b id="rivaux-titre">🎯 Nos rivaux</b>
         <span id="rivaux-info"></span>
       </div>
+      <p class="courbe-explication" id="rivaux-explication" hidden>Le niveau général de chaque clan en guerre, comme les trophées d’un joueur. Ils ne changent qu’à la fin de chaque course : on en gagne ou on en perd selon sa place à l’arrivée. Dans le jeu : page du clan, icône aux deux épées.</p>
       <table>
         <thead id="rivaux-entete"></thead>
         <tbody id="rivaux-liste"></tbody>
@@ -5299,7 +5303,8 @@
           // Rang : Rang / Clan / Écart — Trophées : Clan / Trophées / Écart
           const avecRang = id === 'rang';
           const unite = id === 'guerre' ? ' trophées de guerre' : ' trophées';
-          document.getElementById('rivaux-titre').textContent = id === 'guerre' ? '⚔️ Notre course de guerre' : '🎯 Nos rivaux';
+          document.getElementById('rivaux-titre').textContent = id === 'guerre' ? '⚔️ Trophées de guerre des 5 clans' : '🎯 Nos rivaux';
+          document.getElementById('rivaux-explication').hidden = id !== 'guerre';
           document.getElementById('rivaux-entete').innerHTML = '<tr>' +
             (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">' + (id === 'guerre' ? 'Trophées de guerre' : 'Trophées') + '</th>') +
             '<th class="num">Écart</th></tr>';
@@ -5359,7 +5364,7 @@
             return '<div class="piste' + (c.nous ? ' nous' : '') + '">' +
               '<div class="piste-haut"><span>' + (i + 1) + '. ' + esc(c.nom) + '</span><span>' + (c.fini ? '🏁 ' : '') + fr(c.points) + (g.objectif ? ' / ' + fr(g.objectif) : '') + '</span></div>' +
               '<div class="riviere"><span class="bateau" style="left:' + pct + '%;transform:translate(-' + pct + '%, -50%)">⛵</span></div>' +
-              '<div class="piste-bas">' + (g.type === 'training' ? '' : '+' + fr(c.aujourdhui) + ' aujourd’hui · ' + c.combats + '/200 combats') + '</div>' +
+              '<div class="piste-bas">' + (g.type === 'training' ? '' : '+' + fr(c.aujourdhui) + ' points aujourd’hui · ' + c.combats + '/200 combats joués') + '</div>' +
             '</div>';
           }).join('');
 
