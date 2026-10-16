@@ -75,9 +75,7 @@
     .cases i.joue { background: #f1ece1; }
     .cases.complet i.joue { background: #3ddc84; }
     .cases span { margin-left: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #8f8a80; }
-    .points { display: flex; align-items: center; gap: 10px; }
-    .points i { flex: 1; height: 4px; background: rgba(241, 236, 225, .08); position: relative; }
-    .points i::after { content: ''; position: absolute; inset: 0 auto 0 0; width: var(--l); background: #e8b931; }
+    .points { display: flex; justify-content: flex-end; }
     .points b { min-width: 52px; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
     .semaine.absent { color: #66635c; }
     .semaine.absent .semaine-nom, .semaine.absent .semaine-nom b { color: #66635c; }
@@ -87,7 +85,6 @@
       .semaine-nom { grid-column: 1 / -1; }
       .semaine.absent .semaine-nom { grid-column: 1; }
       .semaine.absent .pas-joue { grid-column: 2; }
-      .points i { display: none; }
     }
     @media (max-width: 520px) { .combat { grid-template-columns: 1fr; } .mini-deck { grid-template-columns: repeat(4, 1fr); max-width: 200px; } }
   </style>
@@ -238,7 +235,6 @@
         const jouees = g.filter(w => w.combats > 0);
         const total = g.reduce((t, w) => t + w.points, 0);
         const combats = g.reduce((t, w) => t + w.combats, 0);
-        const maxPts = Math.max(1, ...g.map(w => w.points));
         document.getElementById('guerre-resume').outerHTML = !g.length
           ? '<p class="guerre-vide">Pas encore de guerre enregistrée.</p>'
           : !jouees.length
@@ -256,7 +252,7 @@
             '<div class="cases' + (w.combats >= 16 ? ' complet' : '') + '" title="' + w.combats + ' combats sur 16">' +
               Array.from({ length: 16 }, (_, i) => '<i' + (i < w.combats ? ' class="joue"' : '') + '></i>').join('') +
               '<span>' + w.combats + '/16</span></div>' +
-            '<div class="points"><i style="--l:' + Math.round(w.points / maxPts * 100) + '%"></i><b>' + fr(w.points) + '</b></div>' +
+            '<div class="points"><b>' + fr(w.points) + '</b></div>' +
           '</div>';
         }).join('') : '';
       })
