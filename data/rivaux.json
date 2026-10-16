@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 711,
-      "nom": "BKL16",
+      "rang": 713,
+      "nom": "La Squadra",
+      "trophees": 136913,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 714,
+      "nom": "913ème",
       "trophees": 136912,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 715,
+      "nom": "BKL16",
+      "trophees": 136911,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 712,
+      "rang": 716,
+      "nom": "Astero Level 15",
+      "trophees": 136907,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 717,
       "nom": "BloodSoldiers",
       "trophees": 136906,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 713,
-      "nom": "Astero Level 15",
+      "rang": 718,
+      "nom": "Clan Francais",
       "trophees": 136902,
-      "membres": 50,
-      "nous": false
+      "membres": 49,
+      "nous": true
     },
     {
-      "rang": 714,
+      "rang": 719,
       "nom": "Ad Vitam",
       "trophees": 136901,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 715,
+      "rang": 720,
       "nom": "Hosnian Prime™☄",
       "trophees": 136899,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 716,
-      "nom": "Clan Francais",
-      "trophees": 136899,
-      "membres": 49,
-      "nous": true
-    },
-    {
-      "rang": 717,
+      "rang": 721,
       "nom": "3eme division",
-      "trophees": 136894,
+      "trophees": 136891,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 718,
+      "rang": 722,
       "nom": "Bretagne",
       "trophees": 136890,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 719,
+      "rang": 723,
       "nom": "LKM League",
       "trophees": 136890,
       "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 720,
-      "nom": "D'EMBLÉE",
-      "trophees": 136887,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 721,
-      "nom": "100% français",
-      "trophees": 136886,
-      "membres": 48,
       "nous": false
     }
   ]
