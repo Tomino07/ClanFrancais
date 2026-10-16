@@ -74,6 +74,10 @@
     .cases span { margin-left: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: #8f8a80; }
     .points { display: flex; justify-content: flex-end; }
     .points b { min-width: 52px; text-align: right; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+    .semaine.en-cours { background: rgba(232, 185, 49, .06); padding-left: 10px; padding-right: 10px; border-bottom-color: rgba(232, 185, 49, .35); }
+    .semaine.en-cours .direct { color: #e8b931; }
+    .semaine.en-cours .pas-joue { grid-column: 2 / -1; color: #8f8a80; font-size: 13px; }
+    .semaine-nom small { display: block; color: #8f8a80; font-size: 12px; }
     .semaine.absent { color: #66635c; }
     .semaine.absent .semaine-nom, .semaine.absent .semaine-nom b { color: #66635c; }
     .semaine.absent .pas-joue { grid-column: 2 / -1; font-size: 13px; font-style: italic; }
@@ -235,17 +239,26 @@
           : !jouees.length
             ? '<p class="guerre-vide">Aucun combat de guerre sur les ' + g.length + ' dernières semaines.</p>'
             : '';
-        document.getElementById('guerres').innerHTML = jouees.length ? g.map(w => {
+        const cases = n => '<div class="cases' + (n >= 16 ? ' complet' : '') + '" title="' + n + ' combats sur 16">' +
+          Array.from({ length: 16 }, (_, i) => '<i' + (i < n ? ' class="joue"' : '') + '></i>').join('') +
+          '<span>' + n + '/16</span></div>';
+
+        // Guerre en cours (mise à jour toutes les 30 min), en tête de liste
+        const ec = j.enCours;
+        const enCours = !ec ? '' : '<div class="semaine en-cours">' +
+          '<div class="semaine-nom">' + (ec.saison ? 'Saison ' + ec.saison + ' · ' : '') + '<b>semaine ' + ec.semaine + '</b>' +
+            '<small><b class="direct">En cours</b>' + (ec.type === 'training' ? '' : ' · aujourd’hui ' + ec.aujourdhui + '/4 combats') + '</small></div>' +
+          (ec.type === 'training'
+            ? '<div class="pas-joue">Entraînement : la guerre commence jeudi</div>'
+            : cases(ec.combats) + '<div class="points"><b>' + fr(ec.points) + '</b></div>') +
+        '</div>';
+
+        document.getElementById('guerres').innerHTML = enCours + (jouees.length ? g.map(w => {
           const [saison, semaine] = w.semaine.split(' – ');
           const nom = '<div class="semaine-nom">' + esc(saison) + (semaine ? ' · <b>' + esc(semaine) + '</b>' : '') + '</div>';
           if (!w.combats) return '<div class="semaine absent">' + nom + '<div class="pas-joue">Pas joué</div></div>';
-          return '<div class="semaine">' + nom +
-            '<div class="cases' + (w.combats >= 16 ? ' complet' : '') + '" title="' + w.combats + ' combats sur 16">' +
-              Array.from({ length: 16 }, (_, i) => '<i' + (i < w.combats ? ' class="joue"' : '') + '></i>').join('') +
-              '<span>' + w.combats + '/16</span></div>' +
-            '<div class="points"><b>' + fr(w.points) + '</b></div>' +
-          '</div>';
-        }).join('') : '';
+          return '<div class="semaine">' + nom + cases(w.combats) + '<div class="points"><b>' + fr(w.points) + '</b></div></div>';
+        }).join('') : '');
       })
       .catch(() => erreur('Impossible de charger ce profil.'));
 
