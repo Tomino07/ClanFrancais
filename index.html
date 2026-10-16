@@ -3085,52 +3085,57 @@
             .clan-live-stats {
               display: grid;
               grid-template-columns: repeat(4, minmax(0, 1fr));
-              padding: 22px 0 26px;
+              padding: 24px 0 28px;
             }
 
             .clan-live-stats > div {
-              padding: 6px 20px;
+              padding: 4px 20px;
               text-align: center;
               color: #f1ece1;
             }
 
             .clan-live-stats > div + div {
-              border-left: 1px solid rgba(241, 236, 225, 0.18);
+              border-left: 1px solid rgba(241, 236, 225, 0.12);
+            }
+
+            /* Titre au-dessus du chiffre */
+            .clan-live-stats span {
+              display: block;
+              color: #8f8a80;
+              font-family: "Baloo 2", sans-serif;
+              font-size: 12px;
+              font-weight: 800;
+              letter-spacing: 0.14em;
+              text-transform: uppercase;
             }
 
             .clan-live-stats strong {
               display: block;
+              margin-top: 8px;
               font-family: "Archivo Black", sans-serif;
-              font-size: clamp(26px, 3vw, 40px);
+              font-size: clamp(28px, 3.2vw, 44px);
               font-weight: 400;
               line-height: 1;
             }
 
             .clan-live-stats sup {
-              font-size: 0.45em;
+              font-size: 0.42em;
               vertical-align: top;
               margin-left: 2px;
             }
 
-            .clan-live-stats span {
-              display: block;
-              margin-top: 8px;
-              color: #8f8a80;
-              font-family: "JetBrains Mono", monospace;
-              font-size: 11px;
-              font-weight: 700;
-              letter-spacing: 0.14em;
-              text-transform: uppercase;
-            }
+            .clan-live-stats strong small { font-size: 0.45em; color: #66635c; }
 
+            /* Petite ligne sous le chiffre : évolution du rang, places libres */
             .clan-live-evo {
-              display: inline-block;
-              font-style: normal;
+              display: block;
+              min-height: 20px;
               margin-top: 8px;
-              font-family: "JetBrains Mono", monospace;
-              font-size: 12px;
+              font-family: "Baloo 2", sans-serif;
+              font-size: 13px;
+              font-style: normal;
               font-weight: 700;
-              color: #8f8a80;
+              color: #66635c;
             }
 
             .clan-live-evo.up { color: #3ddc84; }
@@ -3265,21 +3270,22 @@
             </div>
             <div class="clan-live-stats">
               <div>
-                <strong id="rang">—</strong>
                 <span>Rang national</span>
+                <strong id="rang">—</strong>
                 <em class="clan-live-evo" id="evolution"></em>
               </div>
               <div>
-                <strong id="score">—</strong>
                 <span>Trophées du clan</span>
+                <strong id="score">—</strong>
               </div>
               <div>
-                <strong id="guerre">—</strong>
                 <span>Trophées de guerre</span>
+                <strong id="guerre">—</strong>
               </div>
               <div>
-                <strong id="membres">—</strong>
                 <span>Membres</span>
+                <strong id="membres">—</strong>
+                <em class="clan-live-evo" id="places-libres"></em>
               </div>
             </div>
 
@@ -3319,7 +3325,10 @@
 
                 document.getElementById('score').textContent = fr(d.score);
                 document.getElementById('guerre').textContent = fr(d.tropheesGuerre);
-                document.getElementById('membres').textContent = d.membres + '/50';
+                document.getElementById('membres').innerHTML = d.membres + '<small> / 50</small>';
+                const libres = 50 - d.membres;
+                document.getElementById('places-libres').textContent =
+                  libres > 0 ? libres + ' place' + (libres > 1 ? 's libres' : ' libre') : 'Clan complet';
 
                 // Classement des membres
                 const roles = {
@@ -5143,7 +5152,6 @@
     <!-- ===== COURBE DE PROGRESSION DU RANG ===== -->
 <style>
   #rang, #score, #guerre, #membres { cursor: pointer; }
-  #rang::after, #score::after, #guerre::after, #membres::after { content: ' 📈'; font-size: .5em; vertical-align: middle; }
   .courbe-fond { position: fixed; inset: 0; background: rgba(0, 0, 0, .7); display: flex; align-items: center; justify-content: center; z-index: 9999; padding: 16px; }
   .courbe-fond[hidden] { display: none; }
   .courbe-boite { background: #0e0f12; border: 1px solid rgba(255, 255, 255, .12); border-top: 0; padding: 22px 24px 18px; width: 100%; max-width: 760px; max-height: 92vh; overflow-y: auto; color: #f1ece1; font-family: 'Baloo 2', sans-serif;
