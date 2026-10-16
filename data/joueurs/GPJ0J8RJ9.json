@@ -5,8 +5,8 @@
   "niveau": 60,
   "trophees": 12375,
   "record": 12432,
-  "victoires": 1722,
-  "dons": 267,
+  "victoires": 1724,
+  "dons": 327,
   "deck": [
     {
       "nom": "P.E.K.K.A",
@@ -43,6 +43,94 @@
   ],
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261016T094813.000Z",
+      "type": "riverRacePvP",
+      "mode": "Rage_Ladder",
+      "moi": 3,
+      "adv": 0,
+      "trophees": null,
+      "adversaire": "Богдан",
+      "clanAdv": "Фартовий Ua",
+      "deckAdv": [
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Bowler",
+          "image": "https://api-assets.clashroyale.com/cards/300/SU4qFXmbQXWjvASxVI6z9IJuTYolx4A0MKK90sTIE88.png"
+        },
+        {
+          "nom": "Mega Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+        },
+        {
+          "nom": "Dark Prince",
+          "image": "https://api-assets.clashroyale.com/cards/300/M7fXlrKXHu2IvpSGpk36kXVstslbR08Bbxcy0jQcln8.png"
+        },
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Minions",
+          "image": "https://api-assets.clashroyale.com/cards/300/yHGpoEnmUWPGV_hBbhn-Kk-Bs838OjGzWzJJlQpQKQA.png"
+        },
+        {
+          "nom": "Royal Delivery",
+          "image": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        }
+      ]
+    },
+    {
+      "date": "20261016T094602.000Z",
+      "type": "riverRacePvP",
+      "mode": "Rage_Ladder",
+      "moi": 3,
+      "adv": 2,
+      "trophees": null,
+      "adversaire": "AZERTY",
+      "clanAdv": "Erreur 404",
+      "deckAdv": [
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Mighty Miner",
+          "image": "https://api-assets.clashroyale.com/cards/300/Cd9R56yraxTvJiD8xJ2qT2OdsHyh94FqOAarXpbyelo.png"
+        },
+        {
+          "nom": "Little Prince",
+          "image": "https://api-assets.clashroyale.com/cards/300/dY-gSseki6KBpkIG17safHH5YlB8SErFZO9OXbJxf9w.png"
+        },
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Elixir Golem",
+          "image": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
+        },
+        {
+          "nom": "Skeleton Dragons",
+          "image": "https://api-assets.clashroyale.com/cards/300/qPOtg9uONh47_NLxGhhFc_ww9PlZ6z3Ry507q1NZUXs.png"
+        },
+        {
+          "nom": "Fisherman",
+          "image": "https://api-assets.clashroyale.com/cards/300/U2KZ3g0wyufcuA5P2Xrn3Z3lr1WiJmc5S0IWOZHgizQ.png"
+        },
+        {
+          "nom": "Goblin Gang",
+          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
+        }
+      ]
+    },
     {
       "date": "20261012T151800.000Z",
       "type": "trail",
@@ -392,94 +480,6 @@
         {
           "nom": "Royal Ghost",
           "image": "https://api-assets.clashroyale.com/cards/300/3En2cz0ISQAaMTHY3hj3rTveFN2kJYq-H4VxvdJNvCM.png"
-        }
-      ]
-    },
-    {
-      "date": "20261002T185800.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 1,
-      "adv": 2,
-      "trophees": -29,
-      "adversaire": "graveyard",
-      "clanAdv": "IRAN",
-      "deckAdv": [
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
-        },
-        {
-          "nom": "Giant",
-          "image": "https://api-assets.clashroyale.com/cards/300/Axr4ox5_b7edmLsoHxBX3vmgijAIibuF6RImTbqLlXE.png"
-        },
-        {
-          "nom": "Boss Bandit",
-          "image": "https://api-assets.clashroyale.com/cards/300/nuceG9o7rAyvyc7D3sp2QSiRYtSOEgraq0NJkDf729s.png"
-        },
-        {
-          "nom": "Bats",
-          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Skeleton Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
-        },
-        {
-          "nom": "Prince",
-          "image": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        }
-      ]
-    },
-    {
-      "date": "20261002T145348.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 1,
-      "adv": 2,
-      "trophees": -29,
-      "adversaire": "Lori",
-      "clanAdv": "MVP WARRIORS",
-      "deckAdv": [
-        {
-          "nom": "Dart Goblin",
-          "image": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png"
-        },
-        {
-          "nom": "Executioner",
-          "image": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
-        },
-        {
-          "nom": "P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png"
-        },
-        {
-          "nom": "Rage",
-          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
-        },
-        {
-          "nom": "Hog Rider",
-          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
-        },
-        {
-          "nom": "Cannon",
-          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
-        },
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
         }
       ]
     }

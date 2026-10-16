@@ -1,36 +1,20 @@
 {
   "type": "warDay",
-  "jour": 3,
-  "majAt": "2026-10-16T09:31:01Z",
+  "jour": 4,
+  "majAt": "2026-10-16T10:22:28Z",
   "objectif": 10000,
   "clans": [
     {
-      "nom": "11",
-      "points": 0,
-      "aujourdhui": 1250,
-      "combats": 8,
-      "fini": false,
-      "nous": false
-    },
-    {
-      "nom": "INTERCEPTOR",
-      "points": 0,
-      "aujourdhui": 1400,
-      "combats": 8,
-      "fini": false,
-      "nous": false
-    },
-    {
       "nom": "Clan Francais",
-      "points": 0,
-      "aujourdhui": 2850,
-      "combats": 16,
+      "points": 3316,
+      "aujourdhui": 400,
+      "combats": 2,
       "fini": false,
       "nous": true
     },
     {
-      "nom": "Gigante Noble",
-      "points": 0,
+      "nom": "INTERCEPTOR",
+      "points": 1989,
       "aujourdhui": 0,
       "combats": 0,
       "fini": false,
@@ -38,9 +22,25 @@
     },
     {
       "nom": "Bandeja Paisa",
-      "points": 0,
-      "aujourdhui": 1350,
-      "combats": 8,
+      "points": 1243,
+      "aujourdhui": 0,
+      "combats": 0,
+      "fini": false,
+      "nous": false
+    },
+    {
+      "nom": "11",
+      "points": 982,
+      "aujourdhui": 0,
+      "combats": 0,
+      "fini": false,
+      "nous": false
+    },
+    {
+      "nom": "Gigante Noble",
+      "points": 112,
+      "aujourdhui": 0,
+      "combats": 0,
       "fini": false,
       "nous": false
     }
