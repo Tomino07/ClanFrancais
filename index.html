@@ -3293,9 +3293,12 @@
           </div>
 
           <script>
-            fetch('/data/clan.json?' + Date.now())
-              .then(r => r.json())
-              .then(d => {
+            Promise.all([
+              fetch('/data/clan.json?' + Date.now()).then(r => r.json()),
+              // Classement ranked de chaque joueur (ligue, points) pour départager comme dans le jeu
+              fetch('/data/ranked.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+            ])
+              .then(([d, ranked]) => {
                 const fr = n => n.toLocaleString('fr-FR');
 
                 document.getElementById('rang').innerHTML =
@@ -3320,7 +3323,13 @@
                   member: ['', '']
                 };
                 const esc = t => t.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-                const joueurs = d.joueurs; // même ordre que dans le jeu (donné par l'API)
+                // Même ordre que dans le jeu : trophées, puis ligue ranked (Maître, Champion…), puis points ranked
+                const rk = j => ranked[j.tag] || {};
+                const joueurs = [...d.joueurs].sort((a, b) =>
+                  b.trophees - a.trophees ||
+                  (rk(b).ligue || 0) - (rk(a).ligue || 0) ||
+                  (rk(b).points || 0) - (rk(a).points || 0) ||
+                  (rk(a).rang || 1e9) - (rk(b).rang || 1e9));
                 const tbody = document.getElementById('liste-membres');
                 const bouton = document.getElementById('voir-membres');
 
