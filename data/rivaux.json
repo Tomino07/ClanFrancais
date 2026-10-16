@@ -1,52 +1,59 @@
 {
   "clans": [
     {
+      "rang": 708,
+      "nom": "1ere4",
+      "trophees": 136923,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 709,
-      "nom": "BKL16",
-      "trophees": 136915,
-      "membres": 47,
+      "nom": "Adulte Elite",
+      "trophees": 136918,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 710,
       "nom": "913ème",
-      "trophees": 136912,
+      "trophees": 136917,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 711,
-      "nom": "Astero Level 15",
-      "trophees": 136907,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 712,
       "nom": "BloodSoldiers",
       "trophees": 136906,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 713,
-      "nom": "La Squadra",
+      "rang": 712,
+      "nom": "LYON",
       "trophees": 136904,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 714,
+      "rang": 713,
       "nom": "Clan Francais",
       "trophees": 136902,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 715,
+      "rang": 714,
       "nom": "Ad Vitam",
       "trophees": 136901,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 715,
+      "nom": "La Squadra",
+      "trophees": 136900,
+      "membres": 50,
       "nous": false
     },
     {
@@ -58,23 +65,16 @@
     },
     {
       "rang": 717,
-      "nom": "3eme division",
-      "trophees": 136891,
-      "membres": 47,
+      "nom": "Astero Level 15",
+      "trophees": 136895,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 718,
       "nom": "Bretagne",
-      "trophees": 136891,
+      "trophees": 136892,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 719,
-      "nom": "LKM League",
-      "trophees": 136890,
-      "membres": 43,
       "nous": false
     }
   ]
