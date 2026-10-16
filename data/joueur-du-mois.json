@@ -1,13 +1,13 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-16T11:31:51.112Z",
+  "majAt": "2026-10-16T11:49:45.998Z",
   "classement": [
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
-      "guerre": 5700,
+      "guerre": 6250,
       "dons": 118,
       "trophees": 0,
       "score": 57
@@ -19,7 +19,7 @@
       "guerre": 4150,
       "dons": 102,
       "trophees": 0,
-      "score": 43
+      "score": 40
     },
     {
       "tag": "PPRJ9RGV",
@@ -28,7 +28,16 @@
       "guerre": 3650,
       "dons": 92,
       "trophees": 0,
-      "score": 38
+      "score": 35
+    },
+    {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "guerre": 0,
+      "dons": 402,
+      "trophees": 91,
+      "score": 34
     },
     {
       "tag": "9QQYPPLU",
@@ -37,16 +46,7 @@
       "guerre": 3400,
       "dons": 87,
       "trophees": 0,
-      "score": 35
-    },
-    {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "guerre": 0,
-      "dons": 394,
-      "trophees": 91,
-      "score": 34
+      "score": 33
     }
   ],
   "historique": []
