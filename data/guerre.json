@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 3,
-  "majAt": "2026-10-16T07:01:16Z",
+  "majAt": "2026-10-16T07:31:01Z",
   "objectif": 10000,
   "clans": [
     {
@@ -15,8 +15,8 @@
     {
       "nom": "INTERCEPTOR",
       "points": 0,
-      "aujourdhui": 900,
-      "combats": 6,
+      "aujourdhui": 1400,
+      "combats": 8,
       "fini": false,
       "nous": false
     },
@@ -39,8 +39,8 @@
     {
       "nom": "Bandeja Paisa",
       "points": 0,
-      "aujourdhui": 650,
-      "combats": 4,
+      "aujourdhui": 1350,
+      "combats": 8,
       "fini": false,
       "nous": false
     }
