@@ -99,7 +99,6 @@ jobs:
           fi
 
           # Une fiche par joueur : data/joueurs/<TAG>.json
-          rm -f data/joueurs/*.json
           jq -r '.memberList[] | [.tag, .role, .donations] | @tsv' clan.json |
           while IFS=$'\t' read -r TAG ROLE DONS; do
             T="${TAG#\#}"
@@ -116,6 +115,8 @@ jobs:
                 victoires: .wins,
                 dons: $dons,
                 deck: [(.currentDeck // [])[] | {nom: .name, image: .iconUrls.medium}],
+                ranked: ((.currentPathOfLegendSeasonResult // {}) | {ligue: (.leagueNumber // 0), points: (.trophies // 0), rang: (.rank // null)}),
+                rankedBrut: with_entries(select(.key | test("legend|ranked|league"; "i"))),
                 mvps: ([$log[0].items[]
                   | (.standings[] | select(.clan.tag == "#LJ8GVLQC") | .clan.participants) as $p
                   | ($p | map(.fame) | max) as $m
@@ -148,6 +149,17 @@ jobs:
                 then . + [{d: $now, t: $t}] else . end
               | .[-500:]' "$H" > h.json && mv h.json "$H" || true
           done
+
+          # Ranked de tous les membres en un seul fichier (sert à classer les membres comme dans le jeu)
+          jq -s 'map({key: .tag, value: .ranked}) | from_entries' data/joueurs/*.json > data/ranked.json || true
+
+          # On supprime seulement les fiches des joueurs qui ont quitté le clan.
+          # (Si l API ne répond pas pour un joueur, son ancienne fiche reste en ligne au lieu de disparaître.)
+          for f in data/joueurs/*.json; do
+            t=$(basename "$f" .json)
+            jq -e --arg t "#$t" 'any(.memberList[]; .tag == $t)' clan.json > /dev/null || rm -f "$f"
+          done
+
           # Joueur du mois : guerre + dons + trophées gagnés sur le mois (voir .github/scripts/joueur-du-mois.js)
                     node .github/workflows/.github/scripts/joueur-du-mois.js || true
 
