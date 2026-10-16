@@ -4,7 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Profil joueur – Clan Français</title>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Baloo+2:wght@400;600;700;800&family=JetBrains+Mono:wght@700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <!-- Appli installable sur téléphone -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0e0f12" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Clan FR" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
   <style>
         body { margin: 0; font-family: 'Baloo 2', sans-serif; background: #0e0f12; color: #fff; }
     main { max-width: 900px; margin: 0 auto; padding: 24px 16px; }
@@ -25,12 +32,21 @@
     .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
     .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(255, 215, 0, .08); border: 1px solid rgba(255, 215, 0, .35); color: #f1ece1; font-size: .85rem; font-weight: 700; cursor: help; }
     .badge.or { background: rgba(255, 215, 0, .18); border-color: #ffd700; color: #ffd700; }
-    .prog-haut { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    /* Progression des trophées : même style que les courbes de la page d'accueil */
     .prog-haut h2 { margin-bottom: 0; }
-    .prog-boutons button { background: rgba(255, 255, 255, .055); border: 1px solid rgba(255, 255, 255, .12); color: #aaa7c4; border-radius: 8px; padding: 4px 12px; font: inherit; cursor: pointer; }
-    .prog-boutons button.actif { background: #ffd700; color: #0e0f12; border-color: #ffd700; }
-    .prog-zone { position: relative; height: 260px; margin-top: 12px; }
-    .prog-vide { color: #aaa7c4; }
+    .prog-resume { display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; margin-top: 12px; }
+    .prog-actuel { font-family: 'Archivo Black', sans-serif; font-size: 40px; line-height: 1; }
+    .prog-evo { font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700; color: #8f8a80; }
+    .prog-evo.monte { color: #3ddc84; }
+    .prog-evo.baisse { color: #ff5a4f; }
+    .prog-bornes { margin-left: auto; display: flex; gap: 18px; font-size: 13px; color: #8f8a80; }
+    .prog-bornes b { color: #f1ece1; font-family: 'JetBrains Mono', monospace; }
+    .prog-boutons { display: flex; gap: 20px; margin-top: 18px; border-bottom: 1px solid rgba(255, 255, 255, .1); }
+    .prog-boutons button { background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: 0 0 8px; color: #8f8a80; font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+    .prog-boutons button.actif { color: #f1ece1; border-bottom-color: #e8b931; }
+    .prog-zone { position: relative; height: 270px; margin-top: 16px; }
+    .prog-vide { color: #8f8a80; }
+    @media (max-width: 520px) { .prog-actuel { font-size: 32px; } .prog-bornes { margin-left: 0; width: 100%; } .prog-zone { height: 230px; } }
     .combats-resume { color: #aaa7c4; margin: -4px 0 12px; }
     .combats-resume b { color: #ffd700; }
     .combat { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; align-items: center; padding: 12px; margin-bottom: 10px; background: rgba(255, 255, 255, .04); border: 1px solid rgba(255, 255, 255, .1); border-left: 4px solid #8f8a80; border-radius: 10px; }
@@ -68,11 +84,16 @@
 
   <div class="prog-haut">
     <h2>Progression des trophées</h2>
-    <div class="prog-boutons">
-      <button data-jours="1">24 h</button>
-      <button data-jours="7" class="actif">7 jours</button>
-      <button data-jours="30">30 jours</button>
-    </div>
+  </div>
+  <div class="prog-resume">
+    <div class="prog-actuel" id="prog-actuel"></div>
+    <div class="prog-evo" id="prog-evo"></div>
+    <div class="prog-bornes" id="prog-bornes"></div>
+  </div>
+  <div class="prog-boutons">
+    <button data-jours="1">24 h</button>
+    <button data-jours="7" class="actif">7 jours</button>
+    <button data-jours="30">30 jours</button>
   </div>
   <div class="prog-zone"><canvas id="prog-canvas"></canvas></div>
   <p class="prog-vide" id="prog-vide" hidden>La courbe se remplit au fil du temps : reviens dans quelques jours !</p>
@@ -199,6 +220,28 @@
     const canvas = document.getElementById('prog-canvas');
     const vide = document.getElementById('prog-vide');
 
+    // Ligne pointillée du record + valeur actuelle au bout de la courbe
+    const repere = {
+      id: 'repere',
+      afterDatasetsDraw(chart, _, o) {
+        const { ctx, chartArea: a, scales: { y } } = chart;
+        const pts = chart.getDatasetMeta(0).data;
+        if (!pts.length) return;
+        ctx.save();
+        const yr = y.getPixelForValue(o.record);
+        ctx.setLineDash([4, 4]); ctx.strokeStyle = 'rgba(241, 236, 225, .28)'; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(a.left, yr); ctx.lineTo(a.right, yr); ctx.stroke(); ctx.setLineDash([]);
+        ctx.font = '700 11px "Baloo 2"'; ctx.fillStyle = '#8f8a80'; ctx.textAlign = 'left'; ctx.textBaseline = 'bottom';
+        ctx.fillText(o.libelle, a.left + 4, yr - 3);
+        const p = pts[pts.length - 1];
+        ctx.fillStyle = '#e8b931'; ctx.beginPath(); ctx.arc(p.x, p.y, 4.5, 0, 7); ctx.fill();
+        ctx.strokeStyle = '#0e0f12'; ctx.lineWidth = 2; ctx.stroke();
+        ctx.font = '700 12px "JetBrains Mono"'; ctx.fillStyle = '#e8b931'; ctx.textAlign = 'right';
+        ctx.fillText(o.dernier, p.x - 8, p.y - 8);
+        ctx.restore();
+      }
+    };
+
     const dessiner = () => {
       const depuis = Date.now() - jours * 86400000;
       const points = histo.filter(p => new Date(p.d) >= depuis);
@@ -209,46 +252,86 @@
       if (points.length) points.push({ d: new Date().toISOString(), t: points[points.length - 1].t });
       vide.hidden = points.length >= 2;
       canvas.parentElement.hidden = points.length < 2;
+
+      // Résumé au-dessus de la courbe
+      const vals = points.map(p => p.t);
+      const der = vals[vals.length - 1], diff = der - vals[0];
+      const evo = document.getElementById('prog-evo');
+      document.getElementById('prog-actuel').textContent = vals.length ? fr(der) : '';
+      evo.className = 'prog-evo' + (diff > 0 ? ' monte' : diff < 0 ? ' baisse' : '');
+      evo.textContent = vals.length < 2 ? ''
+        : (diff === 0 ? '= stable' : (diff > 0 ? '▲ ' : '▼ ') + fr(Math.abs(diff))) + ' sur ' + (jours === 1 ? '24 h' : jours + ' jours');
+      document.getElementById('prog-bornes').innerHTML = vals.length < 2 ? ''
+        : '<span>Plus haut <b>' + fr(Math.max(...vals)) + '</b></span><span>Plus bas <b>' + fr(Math.min(...vals)) + '</b></span>';
+
       if (graph) graph.destroy();
       if (points.length < 2) return;
+
+      const degrade = canvas.getContext('2d').createLinearGradient(0, 0, 0, 270);
+      degrade.addColorStop(0, 'rgba(232, 185, 49, .16)');
+      degrade.addColorStop(1, 'rgba(232, 185, 49, 0)');
+      const jour = p => new Date(p.d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' });
 
       graph = new Chart(canvas, {
         type: 'line',
         data: {
           labels: points.map(p => p.d),
           datasets: [{
-            data: points.map(p => p.t),
-            borderColor: '#ffd700',
-            backgroundColor: 'rgba(255, 215, 0, .12)',
+            data: vals,
+            borderColor: '#e8b931',
+            borderWidth: 2,
+            backgroundColor: degrade,
             fill: 'start',
             stepped: true, // les trophées changent par paliers
             pointRadius: 0,
-            pointHoverRadius: 5
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: '#e8b931',
+            pointHoverBorderColor: '#0e0f12',
+            pointHoverBorderWidth: 2
           }]
         },
         options: {
           maintainAspectRatio: false,
+          animation: { duration: 500 },
+          layout: { padding: { top: 22, right: 4, left: 14 } },
           interaction: { mode: 'index', intersect: false },
           plugins: {
             legend: { display: false },
+            repere: { record: Math.max(...vals), libelle: 'Plus haut : ' + fr(Math.max(...vals)), dernier: fr(der) },
             tooltip: {
+              backgroundColor: '#f1ece1', titleColor: '#0e0f12', bodyColor: '#0e0f12', displayColors: false, cornerRadius: 0, padding: 10,
+              titleFont: { family: 'Baloo 2', weight: '700', size: 12 },
+              bodyFont: { family: 'JetBrains Mono', weight: '700', size: 13 },
               callbacks: {
-                title: t => new Date(points[t[0].dataIndex].d).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' }),
-                label: t => ' ' + fr(t.parsed.y) + ' trophées'
+                title: t => new Date(points[t[0].dataIndex].d).toLocaleString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }),
+                label: t => fr(t.parsed.y) + ' trophées'
               }
             }
           },
           scales: {
             x: {
-              ticks: { color: '#aaa7c4', maxTicksLimit: 7, callback: (v, i) => jours === 1 ? new Date(points[i].d).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }) : new Date(points[i].d).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' }) },
-              grid: { color: 'rgba(255, 255, 255, .06)' }
+              grid: { display: false },
+              border: { color: 'rgba(241, 236, 225, .18)' },
+              ticks: {
+                color: '#8f8a80', font: { family: 'Baloo 2', size: 12 }, maxRotation: 0,
+                // 24 h : quelques heures — sinon : une seule date par jour
+                autoSkip: jours === 1,
+                maxTicksLimit: jours === 1 ? 6 : undefined,
+                callback: v => jours === 1
+                  ? new Date(points[v].d).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })
+                  : (v === 0 || jour(points[v]) !== jour(points[v - 1]) ? jour(points[v]) : '')
+              }
             },
             y: {
-              ticks: { color: '#aaa7c4', precision: 0, callback: v => fr(v) },
-              grid: { color: 'rgba(255, 255, 255, .06)' }
+              position: 'right',
+              grace: '8%',
+              border: { display: false },
+              grid: { color: 'rgba(241, 236, 225, .06)' },
+              ticks: { color: '#66635c', font: { family: 'JetBrains Mono', size: 11 }, maxTicksLimit: 5, precision: 0, callback: v => fr(v) }
             }
           }
-        }
+        },
+        plugins: [repere]
       });
     };
 
@@ -264,5 +347,6 @@
       .then(h => { histo = h; dessiner(); });
   }
 </script>
+  <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js');</script>
 </body>
 </html>
