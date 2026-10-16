@@ -3211,6 +3211,18 @@
               white-space: nowrap;
             }
 
+            /* Chef et adjoints : étiquette carrée de couleur, bien visible */
+            .clan-members .role.chef,
+            .clan-members .role.adjoint {
+              display: inline-block;
+              padding: 1px 7px;
+              border: 1px solid currentColor;
+              vertical-align: 2px;
+              letter-spacing: 0.12em;
+            }
+            .clan-members .role.chef { color: #ff4a3f; background: rgba(230, 48, 39, 0.14); }
+            .clan-members .role.adjoint { color: #7d9bff; background: rgba(36, 72, 232, 0.16); }
+
             .clan-members .vu { color: #8f8a80; font-size: 13px; text-align: right; }
 
             .clan-members-more {
@@ -3338,10 +3350,10 @@
 
                 const afficher = nb => {
                   tbody.innerHTML = joueurs.slice(0, nb).map((j, i) => {
-                    const [role] = roles[j.role] || [j.role];
+                    const [role, cls] = roles[j.role] || [j.role, ''];
                     const [point, vu] = statut(j);
                     return '<tr>' +
-                      '<td class="nom">' + point + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a>' + (role ? '<span class="role">' + role + '</span>' : '') + '</td>' +
+                      '<td class="nom">' + point + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a>' + (role ? '<span class="role ' + cls + '">' + role + '</span>' : '') + '</td>' +
                       '<td class="num">' + fr(j.trophees) + '</td>' +
                       '<td class="num col-dons">' + fr(j.dons) + '</td>' +
                       '<td class="vu">' + vu + '</td>' +
