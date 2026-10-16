@@ -121,7 +121,7 @@ jobs:
                   | if . == null then null else {
                       points: .fame, combats: .decksUsed, aujourdhui: .decksUsedToday,
                       type: $cur[0].periodType, jour: (($cur[0].periodIndex // -1) % 7), semaine: (($cur[0].sectionIndex // 0) + 1),
-                      # La saison n'est pas donnée pour la course en cours : on la déduit de la dernière guerre terminée
+                      # Saison absente de la course en cours : on la déduit de la dernière guerre terminée
                       saison: ($log[0].items[0] as $l | if $l == null then null
                         elif ($cur[0].sectionIndex // 0) > ($l.sectionIndex // -1) then $l.seasonId else $l.seasonId + 1 end)
                     } end),
