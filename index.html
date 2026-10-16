@@ -3521,7 +3521,7 @@
 
 <div class="mvp" id="mvp" hidden>
   <div class="mvp-head">
-    <b>Guerre : Meileurs joueurs de la semaine dernière</b>
+    <b>MVP de la semaine dernière</b>
     <span class="mvp-semaine" id="mvp-semaine"></span>
   </div>
   <div class="mvp-podium" id="mvp-podium"></div>
@@ -3594,51 +3594,54 @@
   .jdm-head b { color: #f1ece1; }
   .jdm-mois { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
 
-  .jdm-corps { max-width: 560px; margin: 20px auto 0; }
+  /* Petit carré doré devant le titre (à la place de l'emoji), comme le MVP */
+  .jdm-head b::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 8px; background: #e8b931; vertical-align: 1px; }
 
-  .jdm-star {
-    display: block;
-    padding: 24px 20px;
-    text-align: center;
-    color: #f1ece1;
-    border: 1px solid rgba(255, 215, 0, 0.55);
-    background: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.18), rgba(255, 215, 0, 0.02) 70%);
-    transition: transform 0.25s ease;
-  }
+  .jdm-corps { margin-top: 18px; }
 
-  a.jdm-star:hover { transform: translateY(-4px); }
-  .jdm-etoile { font-size: 46px; line-height: 1; }
-  .jdm-nom { margin-top: 10px; font-family: "Archivo Black", sans-serif; font-size: clamp(24px, 3vw, 36px); line-height: 1.05; color: #ffd700; text-transform: uppercase; overflow-wrap: anywhere; }
-  .jdm-score { margin-top: 6px; color: #b9b3a6; font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; }
+  /* Le joueur en tête : nom en doré, score sur 100 à droite */
+  .jdm-star { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: end; padding-bottom: 16px; color: #f1ece1; border-bottom: 1px solid rgba(232, 185, 49, 0.35); }
+  a.jdm-star:hover .jdm-nom { text-decoration: underline; text-underline-offset: 4px; }
+  .jdm-label { display: block; margin-bottom: 2px; color: #e8b931; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+  .jdm-nom { font-family: "Archivo Black", sans-serif; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.05; color: #e8b931; overflow-wrap: anywhere; }
+  .jdm-score { text-align: right; font-family: "Archivo Black", sans-serif; font-size: 34px; line-height: 1; }
+  .jdm-score small { font-size: 0.4em; color: #8f8a80; }
 
-  .jdm-detail { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 18px; }
-  .jdm-detail div { padding: 10px 6px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); }
-  .jdm-detail strong { display: block; font-family: "Archivo Black", sans-serif; font-size: 18px; }
-  .jdm-detail span { display: block; margin-top: 4px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+  /* Détail du score : une barre fine par critère */
+  .jdm-detail { margin-top: 14px; }
+  .jdm-ligne { display: grid; grid-template-columns: 74px minmax(0, 1fr) 64px 52px; gap: 12px; align-items: center; padding: 5px 0; font-size: 13px; color: #8f8a80; }
+  .jdm-ligne i { height: 4px; background: rgba(241, 236, 225, 0.08); position: relative; }
+  .jdm-ligne i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--l); background: #e8b931; }
+  .jdm-ligne b { text-align: right; color: #f1ece1; font-family: "JetBrains Mono", monospace; font-size: 13px; }
+  .jdm-ligne em { text-align: right; font-style: normal; font-family: "JetBrains Mono", monospace; font-size: 11px; }
 
-  .jdm-suivants h4 { margin: 0 0 8px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
-  .jdm-suivants ol { list-style: none; margin: 0; padding: 0; }
-  .jdm-suivants li { display: flex; justify-content: space-between; gap: 10px; padding: 9px 4px; border-bottom: 1px solid rgba(241, 236, 225, 0.07); }
-  .jdm-suivants li b { overflow-wrap: anywhere; }
-  .jdm-suivants li span { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 12px; flex-shrink: 0; }
-  .jdm-precedent { margin-top: 14px; color: #b9b3a6; font-size: 14px; text-align: center; }
-  .jdm-precedent b { color: #ffd700; }
-  .jdm-regle { margin-top: 16px; color: #8f8a80; font-size: 12px; }
+  /* Poursuivants */
+  .jdm-suivants { margin-top: 14px; }
+  .jdm-suivants a { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 0; color: #f1ece1; border-top: 1px solid rgba(241, 236, 225, 0.08); }
+  .jdm-suivants a:hover b { text-decoration: underline; text-underline-offset: 3px; }
+  .jdm-suivants .rg { font-family: "Archivo Black", sans-serif; font-size: 18px; text-align: center; }
+  .jdm-suivants b { font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .jdm-suivants span { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 12px; }
+
+  .jdm-precedent { margin-top: 12px; color: #8f8a80; font-size: 13px; }
+  .jdm-precedent b { color: #e8b931; }
+  .jdm-regle { margin-top: 14px; color: #66635c; font-size: 12px; }
 
   @media (max-width: 750px) {
     .jdm { padding: 18px 12px 20px; }
     .jdm-head { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .jdm-corps { grid-template-columns: 1fr; }
+    .jdm-ligne { grid-template-columns: 64px minmax(0, 1fr) 56px 46px; gap: 8px; }
   }
 </style>
 
 <div class="jdm" id="joueur-du-mois" hidden>
   <div class="jdm-head">
-    <b>🌟 Joueur du mois</b>
+    <b>Joueur du mois</b>
     <span class="jdm-mois" id="jdm-mois"></span>
   </div>
   <div class="jdm-corps">
     <div id="jdm-star"></div>
+    <div class="jdm-suivants" id="jdm-suivants"></div>
     <p class="jdm-precedent" id="jdm-precedent"></p>
   </div>
   <p class="jdm-regle">Score sur 100 : guerre 50 % · dons 25 % · trophées gagnés 25 %, chaque critère comparé au meilleur du clan. Le gagnant est désigné à la fin du mois.</p>
@@ -3657,23 +3660,37 @@
 
         document.getElementById('jdm-mois').textContent = d.libelle.charAt(0).toUpperCase() + d.libelle.slice(1) + ' · en cours';
 
+        // Détail du score : chaque critère comparé au meilleur du clan (même calcul que le programme)
+        const cl = d.classement;
+        const max = k => Math.max(1, ...cl.map(l => l[k]));
+        const critere = (nom, cle, texte, poids) => {
+          const part = premier[cle] / max(cle);
+          return '<div class="jdm-ligne"><span>' + nom + '</span><i style="--l:' + Math.round(part * 100) + '%"></i>' +
+            '<b>' + texte + '</b><em>' + Math.round(part * poids) + ' / ' + poids + '</em></div>';
+        };
+
         document.getElementById('jdm-star').innerHTML =
           '<a class="jdm-star" href="/joueur.html?tag=' + esc(premier.tag) + '">' +
-            '<div class="jdm-etoile">🌟</div>' +
-            '<div class="jdm-nom">' + esc(premier.nom) + '</div>' +
-            '<div class="jdm-score">EN TÊTE · ' + premier.score + ' / 100</div>' +
-            '<div class="jdm-detail">' +
-              '<div><strong>' + fr(premier.guerre) + '</strong><span>⚔️ Guerre</span></div>' +
-              '<div><strong>' + fr(premier.dons) + '</strong><span>🎁 Dons</span></div>' +
-              '<div><strong>+' + fr(premier.trophees) + '</strong><span>🏆 Trophées</span></div>' +
-            '</div>' +
-          '</a>';
+            '<div><span class="jdm-label">En tête</span><div class="jdm-nom">' + esc(premier.nom) + '</div></div>' +
+            '<div class="jdm-score">' + premier.score + '<small> / 100</small></div>' +
+          '</a>' +
+          '<div class="jdm-detail">' +
+            critere('Guerre', 'guerre', fr(premier.guerre), 50) +
+            critere('Dons', 'dons', fr(premier.dons), 25) +
+            critere('Trophées', 'trophees', '+' + fr(premier.trophees), 25) +
+          '</div>';
+
+        // Les deux suivants
+        document.getElementById('jdm-suivants').innerHTML = cl.slice(1, 3).map((j, i) =>
+          '<a href="/joueur.html?tag=' + esc(j.tag) + '"><span class="rg" style="color:' + ['#cfd3dc', '#d98c4e'][i] + '">' + (i + 2) + '</span>' +
+          '<b>' + esc(j.nom) + '</b><span>' + j.score + ' / 100</span></a>'
+        ).join('');
 
 
         const p = (d.historique || [])[0];
         if (p) {
           document.getElementById('jdm-precedent').innerHTML =
-            '🏅 Joueur du mois de ' + esc(p.libelle) + ' : <b>' + esc(p.nom) + '</b> (' + p.score + ' / 100)';
+            'Joueur du mois de ' + esc(p.libelle) + ' : <b>' + esc(p.nom) + '</b> (' + p.score + ' / 100)';
         }
 
         document.getElementById('joueur-du-mois').hidden = false;
