@@ -3617,7 +3617,9 @@
   .jdm-suivants a { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: center; padding: 9px 0; color: #f1ece1; border-top: 1px solid rgba(241, 236, 225, 0.08); }
   .jdm-suivants a:hover b { text-decoration: underline; text-underline-offset: 3px; }
   .jdm-suivants .rg { font-family: "Archivo Black", sans-serif; font-size: 18px; text-align: center; }
-  .jdm-suivants b { font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .jdm-suivants b { display: block; font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .jdm-stats { margin-top: 2px; color: #8f8a80; font-size: 13px; }
+  .jdm-stats em { font-style: normal; color: #f1ece1; font-family: "JetBrains Mono", monospace; font-size: 12px; }
   .jdm-suivants span { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 12px; }
 
   .jdm-precedent { margin-top: 12px; color: #8f8a80; font-size: 13px; }
@@ -3673,7 +3675,8 @@
         // Les deux suivants
         document.getElementById('jdm-suivants').innerHTML = cl.slice(1, 3).map((j, i) =>
           '<a href="/joueur.html?tag=' + esc(j.tag) + '"><span class="rg" style="color:' + ['#cfd3dc', '#d98c4e'][i] + '">' + (i + 2) + '</span>' +
-          '<b>' + esc(j.nom) + '</b></a>'
+          '<div><b>' + esc(j.nom) + '</b>' +
+            '<div class="jdm-stats">Guerre <em>' + fr(j.guerre) + '</em> · Dons <em>' + fr(j.dons) + '</em> · Trophées <em>+' + fr(j.trophees) + '</em></div></div></a>'
         ).join('');
 
 
