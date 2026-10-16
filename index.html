@@ -3521,7 +3521,7 @@
 
 <div class="mvp" id="mvp" hidden>
   <div class="mvp-head">
-    <b>Guerre : MVP de la semaine dernière</b>
+    <b>MVP de la semaine dernière</b>
     <span class="mvp-semaine" id="mvp-semaine"></span>
   </div>
   <div class="mvp-podium" id="mvp-podium"></div>
@@ -3600,24 +3600,21 @@
   .jdm-corps { margin-top: 18px; }
 
   /* Le joueur en tête : nom en doré, score sur 100 à droite */
-  .jdm-star { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: end; padding-bottom: 16px; color: #f1ece1; border-bottom: 1px solid rgba(232, 185, 49, 0.35); }
+  .jdm-star { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; align-items: end; padding-bottom: 16px; color: #f1ece1; border-bottom: 1px solid rgba(232, 185, 49, 0.35); }
   a.jdm-star:hover .jdm-nom { text-decoration: underline; text-underline-offset: 4px; }
   .jdm-label { display: block; margin-bottom: 2px; color: #e8b931; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
   .jdm-nom { font-family: "Archivo Black", sans-serif; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.05; color: #e8b931; overflow-wrap: anywhere; }
   .jdm-score { text-align: right; font-family: "Archivo Black", sans-serif; font-size: 34px; line-height: 1; }
   .jdm-score small { font-size: 0.4em; color: #8f8a80; }
 
-  /* Détail du score : une barre fine par critère */
+  /* Détail : une ligne par critère */
   .jdm-detail { margin-top: 14px; }
-  .jdm-ligne { display: grid; grid-template-columns: 74px minmax(0, 1fr) 64px 52px; gap: 12px; align-items: center; padding: 5px 0; font-size: 13px; color: #8f8a80; }
-  .jdm-ligne i { height: 4px; background: rgba(241, 236, 225, 0.08); position: relative; }
-  .jdm-ligne i::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--l); background: #e8b931; }
+  .jdm-ligne { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 5px 0; font-size: 13px; color: #8f8a80; }
   .jdm-ligne b { text-align: right; color: #f1ece1; font-family: "JetBrains Mono", monospace; font-size: 13px; }
-  .jdm-ligne em { text-align: right; font-style: normal; font-family: "JetBrains Mono", monospace; font-size: 11px; }
 
   /* Poursuivants */
   .jdm-suivants { margin-top: 14px; }
-  .jdm-suivants a { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 10px; align-items: center; padding: 9px 0; color: #f1ece1; border-top: 1px solid rgba(241, 236, 225, 0.08); }
+  .jdm-suivants a { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 10px; align-items: center; padding: 9px 0; color: #f1ece1; border-top: 1px solid rgba(241, 236, 225, 0.08); }
   .jdm-suivants a:hover b { text-decoration: underline; text-underline-offset: 3px; }
   .jdm-suivants .rg { font-family: "Archivo Black", sans-serif; font-size: 18px; text-align: center; }
   .jdm-suivants b { font-size: 15px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -3630,7 +3627,6 @@
   @media (max-width: 750px) {
     .jdm { padding: 18px 12px 20px; }
     .jdm-head { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .jdm-ligne { grid-template-columns: 64px minmax(0, 1fr) 56px 46px; gap: 8px; }
   }
 </style>
 
@@ -3660,37 +3656,31 @@
 
         document.getElementById('jdm-mois').textContent = d.libelle.charAt(0).toUpperCase() + d.libelle.slice(1) + ' · en cours';
 
-        // Détail du score : chaque critère comparé au meilleur du clan (même calcul que le programme)
+        // Détail : guerre, dons et trophées gagnés ce mois-ci
         const cl = d.classement;
-        const max = k => Math.max(1, ...cl.map(l => l[k]));
-        const critere = (nom, cle, texte, poids) => {
-          const part = premier[cle] / max(cle);
-          return '<div class="jdm-ligne"><span>' + nom + '</span><i style="--l:' + Math.round(part * 100) + '%"></i>' +
-            '<b>' + texte + '</b><em>' + Math.round(part * poids) + ' / ' + poids + '</em></div>';
-        };
+        const critere = (nom, texte) => '<div class="jdm-ligne"><span>' + nom + '</span><b>' + texte + '</b></div>';
 
         document.getElementById('jdm-star').innerHTML =
           '<a class="jdm-star" href="/joueur.html?tag=' + esc(premier.tag) + '">' +
             '<div><span class="jdm-label">En tête</span><div class="jdm-nom">' + esc(premier.nom) + '</div></div>' +
-            '<div class="jdm-score">' + premier.score + '<small> / 100</small></div>' +
           '</a>' +
           '<div class="jdm-detail">' +
-            critere('Guerre', 'guerre', fr(premier.guerre), 50) +
-            critere('Dons', 'dons', fr(premier.dons), 25) +
-            critere('Trophées', 'trophees', '+' + fr(premier.trophees), 25) +
+            critere('Guerre', fr(premier.guerre)) +
+            critere('Dons', fr(premier.dons)) +
+            critere('Trophées', '+' + fr(premier.trophees)) +
           '</div>';
 
         // Les deux suivants
         document.getElementById('jdm-suivants').innerHTML = cl.slice(1, 3).map((j, i) =>
           '<a href="/joueur.html?tag=' + esc(j.tag) + '"><span class="rg" style="color:' + ['#cfd3dc', '#d98c4e'][i] + '">' + (i + 2) + '</span>' +
-          '<b>' + esc(j.nom) + '</b><span>' + j.score + ' / 100</span></a>'
+          '<b>' + esc(j.nom) + '</b></a>'
         ).join('');
 
 
         const p = (d.historique || [])[0];
         if (p) {
           document.getElementById('jdm-precedent').innerHTML =
-            'Joueur du mois de ' + esc(p.libelle) + ' : <b>' + esc(p.nom) + '</b> (' + p.score + ' / 100)';
+            'Joueur du mois de ' + esc(p.libelle) + ' : <b>' + esc(p.nom) + '</b>';
         }
 
         document.getElementById('joueur-du-mois').hidden = false;
