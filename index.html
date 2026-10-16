@@ -3468,79 +3468,60 @@
   .mvp-head b { color: #f1ece1; }
   .mvp-semaine { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
 
-  .mvp-podium {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
-    align-items: end;
-    gap: 16px;
-    margin-top: 26px;
-  }
+  /* Petit carré doré devant le titre (à la place de l'emoji) */
+  .mvp-head b::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 8px; background: #e8b931; vertical-align: 1px; }
+
+  /* Résultats : une ligne par joueur, le MVP en grand en haut */
+  .mvp-podium { margin-top: 18px; }
 
   .mvp-place {
-    display: block;
-    padding: 22px 12px 18px;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr) auto;
+    gap: 14px;
+    align-items: center;
+    padding: 12px 0;
     color: #f1ece1;
-    border: 1px solid rgba(241, 236, 225, 0.18);
-    background: rgba(255, 255, 255, 0.03);
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    border-bottom: 1px solid rgba(241, 236, 225, 0.08);
   }
 
-  a.mvp-place:hover { transform: translateY(-4px); border-color: #ffd700; }
+  .mvp-place:last-child { border-bottom: 0; }
+  a.mvp-place:hover .mvp-nom { text-decoration: underline; text-underline-offset: 3px; }
 
-  .mvp-place.p1 {
-    order: 2;
-    padding: 30px 12px 26px;
-    border-color: rgba(255, 215, 0, 0.55);
-    background: linear-gradient(180deg, rgba(255, 215, 0, 0.12), rgba(255, 215, 0, 0.02));
-  }
+  .mvp-rang { font-family: "Archivo Black", sans-serif; font-size: 22px; text-align: center; }
+  .mvp-place.p1 .mvp-rang { font-size: 38px; color: #e8b931; }
+  .mvp-place.p2 .mvp-rang { color: #cfd3dc; }
+  .mvp-place.p3 .mvp-rang { color: #d98c4e; }
 
-  .mvp-place.p2 { order: 1; }
-  .mvp-place.p3 { order: 3; }
+  .mvp-label { display: block; margin-bottom: 2px; color: #e8b931; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
+  .mvp-nom { font-size: 17px; font-weight: 800; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
-  .mvp-medaille { font-size: 34px; line-height: 1; }
-  .mvp-place.p1 .mvp-medaille { font-size: 46px; }
+  .mvp-points { text-align: right; font-family: "Archivo Black", sans-serif; font-size: 22px; line-height: 1; }
+  .mvp-points small { display: block; margin-top: 4px; color: #8f8a80; font-family: "Baloo 2", sans-serif; font-size: 12px; font-weight: 700; }
 
-  .mvp-nom {
-    margin-top: 10px;
-    font-family: "Archivo Black", sans-serif;
-    font-size: clamp(16px, 1.8vw, 22px);
-    line-height: 1.1;
-    text-transform: uppercase;
-    overflow-wrap: anywhere;
-  }
+  .mvp-place.p1 { padding: 18px 0 20px; border-bottom-color: rgba(232, 185, 49, 0.35); }
+  .mvp-place.p1 .mvp-nom { font-family: "Archivo Black", sans-serif; font-weight: 400; font-size: 26px; color: #e8b931; }
+  .mvp-place.p1 .mvp-points { font-size: 34px; }
 
-  .mvp-place.p1 .mvp-nom { font-size: clamp(20px, 2.4vw, 30px); color: #ffd700; }
-
-  .mvp-points {
-    margin-top: 10px;
-    font-family: "Archivo Black", sans-serif;
-    font-size: clamp(20px, 2.2vw, 28px);
-    line-height: 1;
-  }
-
-  .mvp-points small, .mvp-combats {
-    display: block;
-    margin-top: 6px;
-    color: #8f8a80;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
+  /* Combats : 16 cases, une par combat de la semaine (vertes à 16/16) */
+  .mvp-cases { display: flex; align-items: center; gap: 2px; margin-top: 4px; }
+  .mvp-cases i { width: 6px; height: 10px; background: rgba(241, 236, 225, 0.12); }
+  .mvp-cases i.joue { background: #f1ece1; }
+  .mvp-cases.plein i.joue { background: #3ddc84; }
+  .mvp-cases span { margin-left: 8px; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; }
 
   @media (max-width: 650px) {
     .mvp { padding: 18px 12px 22px; }
     .mvp-head { flex-direction: column; align-items: flex-start; gap: 4px; }
-    .mvp-podium { grid-template-columns: 1fr; }
-    .mvp-place.p1, .mvp-place.p2, .mvp-place.p3 { order: 0; }
+    .mvp-place { grid-template-columns: 32px minmax(0, 1fr) auto; gap: 10px; }
+    .mvp-place.p1 .mvp-rang { font-size: 30px; }
+    .mvp-place.p1 .mvp-nom { font-size: 20px; }
+    .mvp-place.p1 .mvp-points { font-size: 26px; }
   }
 </style>
 
 <div class="mvp" id="mvp" hidden>
   <div class="mvp-head">
-    <b>🏆 MVP de la semaine dernière</b>
+    <b>MVP de la semaine dernière</b>
     <span class="mvp-semaine" id="mvp-semaine"></span>
   </div>
   <div class="mvp-podium" id="mvp-podium"></div>
@@ -3552,15 +3533,17 @@
     .then(m => {
       if (!m.podium || !m.podium.length) return;
       const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-      const medailles = ['🥇', '🥈', '🥉'];
 
       document.getElementById('mvp-semaine').textContent = 'Guerre : ' + m.semaine;
       document.getElementById('mvp-podium').innerHTML = m.podium.map((j, i) => {
+        const cases = Array.from({ length: 16 }, (_, k) => '<i' + (k < j.combats ? ' class="joue"' : '') + '></i>').join('');
         const contenu =
-          '<div class="mvp-medaille">' + medailles[i] + '</div>' +
-          '<div class="mvp-nom">' + esc(j.nom) + '</div>' +
-          '<div class="mvp-points">' + j.points.toLocaleString('fr-FR') + '<small>points de guerre</small></div>' +
-          '<span class="mvp-combats">' + j.combats + ' combats</span>';
+          '<div class="mvp-rang">' + (i + 1) + '</div>' +
+          '<div>' + (i === 0 ? '<span class="mvp-label">MVP</span>' : '') +
+            '<div class="mvp-nom">' + esc(j.nom) + '</div>' +
+            '<div class="mvp-cases' + (j.combats >= 16 ? ' plein' : '') + '" title="' + j.combats + ' combats sur 16">' + cases + '<span>' + j.combats + '/16</span></div>' +
+          '</div>' +
+          '<div class="mvp-points">' + j.points.toLocaleString('fr-FR') + '<small>points</small></div>';
         // Lien vers le profil seulement si le joueur est encore dans le clan
         return j.membre
           ? '<a class="mvp-place p' + (i + 1) + '" href="/joueur.html?tag=' + j.tag + '">' + contenu + '</a>'
