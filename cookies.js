@@ -83,82 +83,84 @@
 
   /* ---------- Styles ---------- */
   const css = `
-    .cfc-banner, .cfc-modal { font-family: "Baloo 2", Arial, sans-serif; color: #f1ece1; }
+    /* DA Esport : noir, rouge, typo condensée italique, coins coupés */
+    .cfc-banner, .cfc-modal { font-family: "Barlow", "Baloo 2", Arial, sans-serif; color: #f4f4f4; }
     .cfc-banner {
       position: fixed; left: 20px; bottom: 20px; z-index: 1200;
       width: min(560px, calc(100% - 40px));
       padding: 24px 24px 20px;
-      background: #141418;
-      border: 1px solid rgba(255,255,255,.18);
-      box-shadow: 0 24px 60px rgba(0,0,0,.55);
+      background: #0f1014;
+      border: 1px solid #1f2027;
+      box-shadow: 0 24px 60px rgba(0,0,0,.6);
       animation: cfcIn .35s cubic-bezier(.2,.8,.2,1) both;
     }
     .cfc-banner::before, .cfc-box::before {
-      content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 4px;
-      background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
+      content: ""; position: absolute; top: -1px; left: -1px; width: 90px; height: 4px; background: #ff2b2b;
     }
     .cfc-title {
-      margin: 0 0 8px; font-family: "Archivo Black", Arial, sans-serif;
-      font-size: 20px; font-weight: 400; text-transform: uppercase; letter-spacing: 0;
+      margin: 0 0 8px; font-family: "Barlow Condensed", "Archivo Black", Arial, sans-serif;
+      font-size: 28px; font-style: italic; font-weight: 900; line-height: 1; text-transform: uppercase; letter-spacing: 0;
     }
-    .cfc-text { margin: 0; color: #cfcac0; font-size: 14.5px; line-height: 1.6; }
-    .cfc-text a { color: #8fa8ff; border-bottom: 1px solid rgba(143,168,255,.4); }
+    .cfc-text { margin: 0; color: #9a9ba3; font-size: 14.5px; line-height: 1.6; }
+    .cfc-text a { color: #f4f4f4; border-bottom: 1px solid #ff2b2b; }
     .cfc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
     .cfc-btn {
-      flex: 1 1 auto; padding: 11px 16px; cursor: pointer;
-      border: 2px solid #f1ece1; background: transparent; color: #f1ece1;
-      font-family: inherit; font-size: 13px; font-weight: 800;
-      letter-spacing: .06em; text-transform: uppercase;
-      transition: transform .12s, box-shadow .12s, background .2s, color .2s;
+      flex: 1 1 auto; padding: 12px 18px; cursor: pointer;
+      border: 0; background: #15161b; color: #f4f4f4;
+      clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+      font-family: "Barlow Condensed", Arial, sans-serif; font-size: 17px; font-style: italic; font-weight: 800;
+      letter-spacing: .08em; text-transform: uppercase;
+      transition: background .15s, color .15s;
     }
-    .cfc-btn:hover { transform: translate(-2px,-2px); box-shadow: 2px 2px 0 #f1ece1; }
-    .cfc-btn:focus-visible { outline: 2px solid #8fa8ff; outline-offset: 2px; }
-    .cfc-btn.cfc-solid { background: #f1ece1; color: #0e0f12; }
-    .cfc-btn.cfc-solid:hover { box-shadow: 2px 2px 0 #e63027; }
+    .cfc-btn:hover { background: #f4f4f4; color: #07080a; }
+    .cfc-btn:focus-visible { outline: 2px solid #ff2b2b; outline-offset: 2px; }
+    .cfc-btn.cfc-solid { background: #ff2b2b; color: #fff; }
+    .cfc-btn.cfc-solid:hover { background: #f4f4f4; color: #07080a; }
     .cfc-link {
       flex-basis: 100%; padding: 4px 0 0; border: 0; background: none; cursor: pointer;
-      color: #b9b3a6; font-family: inherit; font-size: 13px; font-weight: 700;
-      text-decoration: underline; text-underline-offset: 3px; text-align: center;
+      color: #9a9ba3; font-family: "Barlow Condensed", Arial, sans-serif; font-size: 15px; font-style: italic; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase; text-align: center;
     }
-    .cfc-link:hover { color: #fff; }
+    .cfc-link:hover { color: #ff2b2b; }
 
     .cfc-modal {
       position: fixed; inset: 0; z-index: 1300;
       display: flex; align-items: center; justify-content: center; padding: 20px;
-      background: rgba(0,0,0,.75); backdrop-filter: blur(6px);
+      background: rgba(0,0,0,.8); backdrop-filter: blur(6px);
     }
     .cfc-box {
       position: relative; width: min(560px, 100%); max-height: 90vh; overflow-y: auto;
-      padding: 28px 26px 22px; background: #141418;
-      border: 1px solid rgba(255,255,255,.18); box-shadow: 0 25px 80px rgba(0,0,0,.6);
+      padding: 28px 26px 22px; background: #0f1014;
+      border: 1px solid #1f2027; box-shadow: 0 25px 80px rgba(0,0,0,.7);
       animation: cfcIn .3s cubic-bezier(.2,.8,.2,1) both;
     }
     .cfc-close {
       position: absolute; top: 10px; right: 14px; border: 0; background: none;
-      color: #fff; font-size: 28px; line-height: 1; cursor: pointer;
+      color: #9a9ba3; font-size: 28px; line-height: 1; cursor: pointer;
     }
-    .cfc-cat { padding: 16px 0; border-bottom: 1px solid rgba(241,236,225,.12); }
-    .cfc-cat:first-of-type { margin-top: 14px; border-top: 1px solid rgba(241,236,225,.18); }
+    .cfc-close:hover { color: #ff2b2b; }
+    .cfc-cat { padding: 16px 0; border-bottom: 1px solid #1f2027; }
+    .cfc-cat:first-of-type { margin-top: 14px; border-top: 1px solid #1f2027; }
     .cfc-cat-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
-    .cfc-cat-head strong { font-size: 15.5px; }
-    .cfc-cat p { margin: 6px 0 0; color: #a9a49a; font-size: 13.5px; line-height: 1.55; }
+    .cfc-cat-head strong { font-family: "Barlow Condensed", Arial, sans-serif; font-size: 19px; font-style: italic; font-weight: 800; letter-spacing: .02em; text-transform: uppercase; }
+    .cfc-cat p { margin: 6px 0 0; color: #9a9ba3; font-size: 13.5px; line-height: 1.55; }
     .cfc-always {
-      color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px;
-      font-weight: 700; letter-spacing: .1em; text-transform: uppercase; white-space: nowrap;
+      color: #ff2b2b; font-family: "Barlow", Arial, sans-serif; font-size: 11px;
+      font-weight: 800; letter-spacing: .18em; text-transform: uppercase; white-space: nowrap;
     }
     .cfc-switch { position: relative; flex-shrink: 0; width: 46px; height: 26px; }
     .cfc-switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
     .cfc-switch span {
-      position: absolute; inset: 0; border: 2px solid #f1ece1; background: transparent;
-      transition: background .2s;
+      position: absolute; inset: 0; border: 2px solid #5d5e66; background: transparent;
+      transition: background .2s, border-color .2s;
     }
     .cfc-switch span::after {
       content: ""; position: absolute; top: 3px; left: 3px; width: 16px; height: 16px;
-      background: #f1ece1; transition: transform .2s, background .2s;
+      background: #9a9ba3; transition: transform .2s, background .2s;
     }
-    .cfc-switch input:checked + span { background: #2448e8; border-color: #2448e8; }
+    .cfc-switch input:checked + span { background: #ff2b2b; border-color: #ff2b2b; }
     .cfc-switch input:checked + span::after { transform: translateX(20px); background: #fff; }
-    .cfc-switch input:focus-visible + span { outline: 2px solid #8fa8ff; outline-offset: 2px; }
+    .cfc-switch input:focus-visible + span { outline: 2px solid #ff2b2b; outline-offset: 2px; }
 
     @keyframes cfcIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
 
