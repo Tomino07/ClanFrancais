@@ -3009,6 +3009,12 @@
         .fil-vide { color: #5d5e66; font-family: "Barlow", sans-serif; }
         .fil-liste li.fil-sep { display: block; padding: 18px 22px 8px; border-bottom: 0; color: #ff2b2b; font-family: "Barlow", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.24em; text-transform: uppercase; }
         .fil-liste li.fil-ancien .fil-txt b { font-size: 17px; }
+        /* Histoire du clan : icônes sans fond, comme celles du calendrier */
+        .fil-liste li.fil-ancien .fil-ico { background: none; clip-path: none; color: #5d5e66; }
+        .fil-liste li.fil-ancien .fil-ico.or { color: #ff2b2b; }
+        .fil-liste li.fil-ancien .fil-ico svg { width: 26px; height: 26px; }
+        /* Message « rien de nouveau » : texte sur toute la largeur */
+        .fil-liste li.fil-vide { display: block; padding: 18px 22px; line-height: 1.5; }
         @media (max-width: 1100px) { .fil { grid-column: 1 / -1; grid-row: auto; min-height: 0; max-height: 560px; } }
         @media (max-width: 560px) {
           .fil-liste li { grid-template-columns: 38px minmax(0, 1fr); padding: 12px 14px; }
@@ -5554,7 +5560,10 @@
       html body .cal-ico { display: flex; justify-content: center; color: var(--e-discret); }
       html body .cal-ico svg { width: 28px; height: 28px; }
       html body .cal-item.cal-direct .cal-ico { color: var(--e-rouge); }
-      html body .cal-tab svg { width: 20px; height: 20px; vertical-align: middle; }
+      /* Icône sous « Calendrier » : même style que les icônes des lignes (gris, sans trait tricolore) */
+      html body .cal-tab, html body .cal-tab.active { color: var(--e-discret); opacity: 1; filter: none; }
+      html body .cal-tab svg { width: 26px; height: 26px; vertical-align: middle; }
+      html body .cal-tab.active::after { display: none; }
 
       /* ---------- Chiffres du clan ---------- */
       html body .clan-live-head,
