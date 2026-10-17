@@ -2,37 +2,37 @@
   "clans": [
     {
       "rang": 697,
+      "nom": "Ad Vitam",
+      "trophees": 136903,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 698,
       "nom": "La Squadra",
       "trophees": 136899,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 698,
+      "rang": 699,
       "nom": "BloodSoldiers",
       "trophees": 136899,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 699,
+      "rang": 700,
       "nom": "3eme division",
       "trophees": 136899,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 700,
+      "rang": 701,
       "nom": "Hosnian Prime™☄",
       "trophees": 136899,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 701,
-      "nom": "100% français",
-      "trophees": 136899,
-      "membres": 48,
       "nous": false
     },
     {
@@ -44,16 +44,16 @@
     },
     {
       "rang": 703,
-      "nom": "Astero Level 2",
-      "trophees": 136890,
+      "nom": "100% français",
+      "trophees": 136895,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 704,
-      "nom": "Helfe Squad",
-      "trophees": 136889,
-      "membres": 49,
+      "nom": "Astero Level 2",
+      "trophees": 136890,
+      "membres": 48,
       "nous": false
     },
     {
@@ -65,15 +65,15 @@
     },
     {
       "rang": 706,
-      "nom": "Adulte Ambiance",
-      "trophees": 136885,
-      "membres": 50,
+      "nom": "Helfe Squad",
+      "trophees": 136887,
+      "membres": 49,
       "nous": false
     },
     {
       "rang": 707,
-      "nom": "Biem's 3",
-      "trophees": 136883,
+      "nom": "Adulte Ambiance",
+      "trophees": 136885,
       "membres": 50,
       "nous": false
     }
