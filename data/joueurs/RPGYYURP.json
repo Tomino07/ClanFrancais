@@ -41,7 +41,15 @@
       "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
     }
   ],
-  "enCours": null,
+  "enCours": {
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
+    "type": "warDay",
+    "jour": 5,
+    "semaine": 2,
+    "saison": 137
+  },
   "mvps": 0,
   "combats": [
     {
