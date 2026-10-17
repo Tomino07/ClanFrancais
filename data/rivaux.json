@@ -2,30 +2,30 @@
   "clans": [
     {
       "rang": 697,
-      "nom": "La Squadra",
-      "trophees": 136916,
+      "nom": "Bretagne",
+      "trophees": 136914,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 698,
-      "nom": "As de Coeur FR",
-      "trophees": 136915,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 699,
       "nom": "rois de france",
       "trophees": 136910,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 700,
-      "nom": "Bretagne",
+      "rang": 699,
+      "nom": "Hosnian Prime™☄",
       "trophees": 136902,
-      "membres": 50,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 700,
+      "nom": "BloodSoldiers",
+      "trophees": 136901,
+      "membres": 45,
       "nous": false
     },
     {
@@ -44,37 +44,37 @@
     },
     {
       "rang": 703,
-      "nom": "Hosnian Prime™☄",
-      "trophees": 136898,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 704,
-      "nom": "BloodSoldiers",
-      "trophees": 136898,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 705,
       "nom": "100% français",
       "trophees": 136895,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 706,
+      "rang": 704,
       "nom": "Helfe Squad",
-      "trophees": 136887,
+      "trophees": 136893,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 707,
+      "rang": 705,
+      "nom": "4 Mousquetaire",
+      "trophees": 136885,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 706,
       "nom": "Adulte Ambiance",
       "trophees": 136885,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 707,
+      "nom": "Adultes WarCool",
+      "trophees": 136882,
+      "membres": 46,
       "nous": false
     }
   ]
