@@ -2,16 +2,16 @@
   "clans": [
     {
       "rang": 705,
-      "nom": "Clan des darons",
-      "trophees": 136911,
+      "nom": "Bretagne",
+      "trophees": 136907,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 706,
-      "nom": "Bretagne",
-      "trophees": 136907,
-      "membres": 50,
+      "nom": "BloodSoldiers",
+      "trophees": 136904,
+      "membres": 45,
       "nous": false
     },
     {
@@ -44,37 +44,37 @@
     },
     {
       "rang": 711,
-      "nom": "BloodSoldiers",
-      "trophees": 136898,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 712,
       "nom": "100% français",
       "trophees": 136896,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 713,
+      "rang": 712,
       "nom": "Adulte Ambiance",
       "trophees": 136888,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 714,
+      "rang": 713,
       "nom": "4 Mousquetaire",
       "trophees": 136887,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 715,
+      "rang": 714,
       "nom": "! AFR esport",
       "trophees": 136885,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 715,
+      "nom": "Adult Savage FR",
+      "trophees": 136883,
+      "membres": 50,
       "nous": false
     }
   ]
