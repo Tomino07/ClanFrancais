@@ -3382,7 +3382,7 @@
                     const [role, cls] = roles[j.role] || [j.role, ''];
                     const [point, vu] = statut(j);
                     return '<tr>' +
-                      '<td class="nom">' + point + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a>' + (role ? '<span class="role ' + cls + '">' + role + '</span>' : '') + badgeLigue(ligues[j.tag]) + '</td>' +
+                      '<td class="nom"><span class="nom-ligne">' + point + '<a href="/joueur.html?tag=' + j.tag + '">' + esc(j.nom) + '</a>' + (role ? '<span class="role ' + cls + '">' + role + '</span>' : '') + badgeLigue(ligues[j.tag]) + '</span></td>' +
                       '<td class="num">' + fr(j.trophees) + '</td>' +
                       '<td class="num col-dons">' + fr(j.dons) + '</td>' +
                       '<td class="vu">' + vu + '</td>' +
@@ -5503,6 +5503,10 @@
       html body .clan-members th.num { font-family: var(--e-texte-police); font-style: normal; font-weight: 700; font-size: 11px; }
       html body .clan-members tbody tr:nth-child(even) td { background: rgba(255, 255, 255, 0.015); }
       html body .clan-members tbody tr:hover td { background: var(--e-carte-2); }
+      /* Pseudo, rôle et ligue centrés verticalement sur la même ligne */
+      html body .clan-members .nom-ligne { display: inline-flex; align-items: center; flex-wrap: wrap; row-gap: 4px; }
+      html body .clan-members .nom-ligne .statut { flex-shrink: 0; }
+      html body .clan-members .nom-ligne .ligue { vertical-align: 0; }
       html body .clan-members .nom a { font-family: var(--e-titre); font-style: italic; font-weight: 800; font-size: 20px; letter-spacing: 0.02em; text-transform: uppercase; }
       html body .clan-members .num { font-family: var(--e-titre); font-style: italic; font-weight: 800; font-size: 19px; }
       html body .clan-members .role.chef,
