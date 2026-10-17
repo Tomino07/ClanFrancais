@@ -426,6 +426,9 @@
     html body a.retour { display: inline-flex; gap: 8px; color: var(--e-doux); font-family: var(--e-titre); font-style: italic; font-weight: 800; font-size: 16px; letter-spacing: 0.06em; text-transform: uppercase; }
     html body a.retour:hover { color: var(--e-rouge); }
     html body h1 { margin-top: 18px; font-family: var(--e-titre); font-style: italic; font-weight: 900; font-size: clamp(56px, 9vw, 110px); line-height: 0.85; letter-spacing: 0; text-transform: uppercase; }
+    /* Tag, rôle et ligue centrés verticalement sur la même ligne */
+    html body .tag { display: flex; align-items: center; flex-wrap: wrap; row-gap: 6px; }
+    html body .tag .ligue { vertical-align: 0; }
     html body .tag { margin-top: 10px; color: var(--e-rouge); font-weight: 800; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; }
 
     /* Badges : étiquettes aux coins coupés */
