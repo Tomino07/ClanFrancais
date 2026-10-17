@@ -18,6 +18,10 @@
     a.retour { color: #ff2b2b; text-decoration: none; }
     h1 { font-family: 'Luckiest Guy', cursive; font-size: 2.6rem; margin: 12px 0 0; letter-spacing: 1px; }
     .tag { color: #aaa7c4; }
+    /* Ligue ranked : petit badge biseauté à la couleur de la ligue */
+    .ligue { display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; color: var(--c); font-family: "Barlow", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; white-space: nowrap; vertical-align: 2px; }
+    .ligue img { width: 22px; height: 24px; object-fit: contain; vertical-align: middle; }
+      .ligue i { display: inline-block; padding: 1px 6px; background: var(--c); color: #07080a; font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 900; font-size: 12px; letter-spacing: 0.02em; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); }
     .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 24px 0; }
     .stat { background: rgba(255, 255, 255, 0.055); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 14px; text-align: center; color: #aaa7c4; }
     .stat b { display: block; font-size: 1.6rem; color: #ff2b2b; }
@@ -140,6 +144,18 @@
   const fr = n => (n ?? 0).toLocaleString('fr-FR');
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const tag = new URLSearchParams(location.search).get('tag');
+  const LIGUES = {
+    1: ['Maître I', 'M1', '#9fb3d9'], 2: ['Maître II', 'M2', '#9fb3d9'], 3: ['Maître III', 'M3', '#9fb3d9'],
+    4: ['Champion', 'CH', '#c58cff'], 5: ['Grand Champion', 'GC', '#ffb02e'],
+    6: ['Royal Champion', 'RC', '#ff5a5a'], 7: ['Ultimate Champion', 'UC', '#ffe07a']
+  };
+  const badgeLigue = n => {
+    const l = LIGUES[n];
+    if (!l) return '';
+        // Logo officiel de la ligue si on l a (ligues/ligue1.webp ...), sinon petit badge avec les initiales
+        const logo = n <= 5 ? '<img src="/ligues/ligue' + n + '.webp" alt="" loading="lazy">' : '<i>' + l[1] + '</i>';
+        return '<span class="ligue" style="--c:' + l[2] + '" title="Ranked : ' + l[0] + '">' + logo + l[0] + '</span>';
+  };
 
   const erreur = msg => {
     const e = document.getElementById('erreur');
@@ -155,7 +171,7 @@
       .then(j => {
         document.title = j.nom + ' – Clan Français';
         document.getElementById('nom').textContent = j.nom;
-        document.getElementById('tag').textContent = '#' + j.tag + ' · ' + j.role;
+        document.getElementById('tag').innerHTML = '#' + esc(j.tag) + ' · ' + esc(j.role) + badgeLigue(j.ligue);
         document.getElementById('trophees').textContent = fr(j.trophees);
         document.getElementById('record').textContent = fr(j.record);
         document.getElementById('victoires').textContent = fr(j.victoires);
