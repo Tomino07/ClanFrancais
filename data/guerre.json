@@ -1,14 +1,14 @@
 {
   "type": "warDay",
   "jour": 5,
-  "majAt": "2026-10-17T13:01:08Z",
+  "majAt": "2026-10-17T13:30:55Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "11",
       "points": 4305,
-      "aujourdhui": 1100,
-      "combats": 7,
+      "aujourdhui": 1200,
+      "combats": 8,
       "fini": false,
       "nous": false
     },
