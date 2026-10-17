@@ -1,14 +1,14 @@
 {
   "type": "warDay",
   "jour": 4,
-  "majAt": "2026-10-17T08:30:52Z",
+  "majAt": "2026-10-17T09:01:07Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "Clan Francais",
       "points": 3316,
-      "aujourdhui": 1350,
-      "combats": 9,
+      "aujourdhui": 1750,
+      "combats": 13,
       "fini": false,
       "nous": true
     },
