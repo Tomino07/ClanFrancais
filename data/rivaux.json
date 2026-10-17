@@ -1,59 +1,73 @@
 {
   "clans": [
     {
-      "rang": 711,
+      "rang": 709,
       "nom": "LYON",
-      "trophees": 136908,
+      "trophees": 136904,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 712,
+      "rang": 710,
       "nom": "La Squadra",
       "trophees": 136902,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 713,
+      "rang": 711,
       "nom": "Ad Vitam",
       "trophees": 136901,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 714,
+      "rang": 712,
       "nom": "rois de france",
       "trophees": 136897,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 715,
+      "rang": 713,
       "nom": "Hosnian Prime™☄",
       "trophees": 136896,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 716,
+      "rang": 714,
       "nom": "Clan Francais",
       "trophees": 136896,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 717,
+      "rang": 715,
+      "nom": "3eme division",
+      "trophees": 136894,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 716,
       "nom": "FRANCE",
-      "trophees": 136895,
+      "trophees": 136893,
       "membres": 49,
       "nous": false
     },
     {
+      "rang": 717,
+      "nom": "Astero Level 15",
+      "trophees": 136892,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 718,
-      "nom": "3eme division",
-      "trophees": 136894,
-      "membres": 47,
+      "nom": "Ah c'est vous !",
+      "trophees": 136891,
+      "membres": 49,
       "nous": false
     },
     {
@@ -61,20 +75,6 @@
       "nom": "LKM League",
       "trophees": 136890,
       "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 720,
-      "nom": "100% français",
-      "trophees": 136888,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 721,
-      "nom": "Ah c'est vous !",
-      "trophees": 136888,
-      "membres": 49,
       "nous": false
     }
   ]
