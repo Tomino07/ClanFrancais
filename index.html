@@ -3331,7 +3331,7 @@
                   const l = LIGUES[n];
                   if (!l) return '';
         // Logo officiel de la ligue si on l a (ligue1.webp ... à côté de index.html), sinon petit badge avec les initiales
-        const logo = n <= 5 ? '<img src="/ligue' + n + '.webp" alt="" loading="lazy">' : '<i>' + l[1] + '</i>';
+        const logo = n <= 5 ? '<img src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
         return '<span class="ligue" style="--c:' + l[2] + '" title="Ranked : ' + l[0] + '">' + logo + l[0] + '</span>';
                 };
 
