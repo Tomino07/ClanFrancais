@@ -2959,37 +2959,14 @@
           </div>
 
           <div class="actu-layout">
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
-              <div class="actu-caption">
-                <h3>Création du Clan Francais</h3>
-                <time>2021</time>
+            <!-- ===== FIL « ÇA BOUGE DANS LE CLAN » (data/evenements.json, mis à jour toutes les 30 min) ===== -->
+            <div class="fil" id="fil">
+              <div class="fil-tete">
+                <h3>Ça bouge dans le clan</h3>
+                <span>Mis à jour automatiquement</span>
               </div>
-            </a>
-
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('classement_clash.png')"></div>
-              <div class="actu-caption">
-                <h3>TOP 1000 France</h3>
-                <time>Janvier 2025</time>
-              </div>
-            </a>
-
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('france.png')"></div>
-              <div class="actu-caption">
-                <h3>243e au classement national</h3>
-                <time>Novembre 2025</time>
-              </div>
-            </a>
-
-            <a class="actu-card">
-              <div class="actu-img" style="background-image: url('clash-royale-banniere.jpg')"></div>
-              <div class="actu-caption">
-                <h3>Recrutement ouvert : 9 000 trophées minimum</h3>
-                <time>Toujours ouvert</time>
-              </div>
-            </a>
+              <ul class="fil-liste" id="fil-liste"><li class="fil-vide">Chargement…</li></ul>
+            </div>
 
             <aside class="calendar" aria-label="Calendrier du clan">
               <div class="calendar-inner">
@@ -3010,6 +2987,87 @@
             </aside>
           </div>
         </div>
+      <style>
+        /* Fil « Ça bouge dans le clan » : prend la place des 4 cartes (2 colonnes, 2 rangées) */
+        .fil { grid-column: 1 / 3; grid-row: 1 / span 2; position: relative; display: flex; flex-direction: column; min-height: 560px; background: #0f1014; border: 1px solid #1f2027; }
+        .fil::before { content: ""; position: absolute; top: -1px; left: -1px; width: 90px; height: 4px; background: #ff2b2b; }
+        .fil-tete { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 22px 14px; border-bottom: 1px solid #1f2027; }
+        .fil-tete h3 { margin: 0; font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 900; font-size: 30px; line-height: 1; text-transform: uppercase; color: #f4f4f4; }
+        .fil-tete span { color: #5d5e66; font-family: "Barlow", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; }
+        .fil-liste { flex: 1; min-height: 0; overflow-y: auto; margin: 0; padding: 0; list-style: none; scrollbar-width: thin; scrollbar-color: #2a2b33 transparent; }
+        .fil-liste li { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 14px 22px; border-bottom: 1px solid #1f2027; }
+        .fil-ico { display: grid; place-items: center; width: 44px; height: 44px; background: #15161b; color: #9a9ba3; clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); }
+        .fil-ico svg { width: 22px; height: 22px; }
+        .fil-ico img { width: 34px; height: 38px; object-fit: contain; }
+        .fil-ico.or { background: #ff2b2b; color: #fff; }
+        .fil-txt { color: #9a9ba3; font-family: "Barlow", sans-serif; font-size: 15px; line-height: 1.35; }
+        .fil-txt b { color: #f4f4f4; font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; font-size: 19px; letter-spacing: 0.02em; text-transform: uppercase; }
+        .fil-txt a b:hover { color: #ff2b2b; }
+        .fil-txt em { font-style: normal; color: #f4f4f4; font-weight: 700; }
+        .fil-txt small { display: block; color: #5d5e66; font-size: 12px; }
+        .fil-quand { color: #5d5e66; font-family: "Barlow", sans-serif; font-size: 12px; font-weight: 700; white-space: nowrap; }
+        .fil-vide { color: #5d5e66; font-family: "Barlow", sans-serif; }
+        .fil-liste li.fil-sep { display: block; padding: 18px 22px 8px; border-bottom: 0; color: #ff2b2b; font-family: "Barlow", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.24em; text-transform: uppercase; }
+        .fil-liste li.fil-ancien .fil-txt b { font-size: 17px; }
+        @media (max-width: 1100px) { .fil { grid-column: 1 / -1; grid-row: auto; min-height: 0; max-height: 560px; } }
+        @media (max-width: 560px) {
+          .fil-liste li { grid-template-columns: 38px minmax(0, 1fr); padding: 12px 14px; }
+          .fil-ico { width: 38px; height: 38px; }
+          .fil-quand { grid-column: 2; }
+          .fil-tete { padding: 16px 14px 12px; }
+        }
+      </style>
+      <script>
+        (() => {
+          const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+          const svg = d => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">' + d + '</svg>';
+          const ICONES = {
+            trophee: svg('<path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3M12 14v4M8 21h8M9 18h6"/>'),
+            promo: svg('<path d="M6 15l6-6 6 6M6 20l6-6 6 6M6 10l6-6 6 6"/>'),
+            epees: svg('<path d="M14.5 17.5 3 6V3h3l11.5 11.5M13 19l6-6M16 16l4 4M19 21l2-2M14.5 6.5 18 3h3v3l-3.5 3.5M5 14l4 4M7 17l-3 3M3 19l2 2"/>'),
+            record: svg('<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/>'),
+            drapeau: svg('<path d="M5 21V4M5 4h13l-2.5 4.5L18 13H5"/>')
+          };
+          const LIGUES = { 1: 'Maître I', 2: 'Maître II', 3: 'Maître III', 4: 'Champion', 5: 'Grand Champion', 6: 'Royal Champion', 7: 'Ultimate Champion' };
+          const ilya = d => {
+            const m = Math.max(0, Math.round((Date.now() - new Date(d)) / 60000));
+            return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : m < 2880 ? 'hier' : 'il y a ' + Math.round(m / 1440) + ' j';
+          };
+          const joueur = e => '<a href="/joueur.html?tag=' + esc(e.tag) + '"><b>' + esc(e.nom) + '</b></a>';
+          const place = p => p === 1 ? '1re' : p + 'e';
+
+          // Une ligne du fil : [icône, texte, mise en avant ?]
+          const ligne = e => {
+            if (e.type === 'ligue') return [e.ligue <= 5 ? '<img src="/ligue' + e.ligue + '.webp" alt="">' : ICONES.promo, joueur(e) + ' est passé <em>' + (LIGUES[e.ligue] || 'ligue ' + e.ligue) + '</em>', e.ligue >= 4];
+            if (e.type === 'trophees') return [ICONES.trophee, joueur(e) + ' a atteint <em>14 000 trophées</em>', false];
+            if (e.type === 'promo') return [ICONES.promo, joueur(e) + ' a été promu <em>' + esc(e.role) + '</em>', e.role !== 'Aîné'];
+            if (e.type === 'guerre') return [ICONES.epees, e.place === 1 ? '<b>Victoire en guerre !</b> Le clan termine <em>1er</em> de la course' : 'Le clan termine <em>' + place(e.place) + '</em> de la guerre', e.place === 1, 'Saison ' + e.saison + ' · semaine ' + e.semaine + (e.trophees ? ' · ' + (e.trophees > 0 ? '+' : '') + e.trophees + ' trophées de guerre' : '')];
+            if (e.type === 'record') return [ICONES.record, '<b>Nouveau record !</b> Le clan atteint la <em>' + e.rang + 'e place</em> du classement national', true];
+            return null;
+          };
+          const li = (ico, txt, or, sous, quand, cls) =>
+            '<li' + (cls ? ' class="' + cls + '"' : '') + '><span class="fil-ico' + (or ? ' or' : '') + '">' + ico + '</span>' +
+            '<span class="fil-txt">' + txt + (sous ? '<small>' + sous + '</small>' : '') + '</span><span class="fil-quand">' + quand + '</span></li>';
+
+          // Les grandes dates du clan, toujours affichées en bas
+          const historique =
+            '<li class="fil-sep">Histoire du clan</li>' +
+            li(ICONES.record, '<b>243e</b> au classement national, record du clan', true, '', 'nov. 2025', 'fil-ancien') +
+            li(ICONES.drapeau, 'Le clan entre dans le <b>Top 1000 France</b>', false, '', 'janv. 2025', 'fil-ancien') +
+            li(ICONES.drapeau, '<b>Création</b> du Clan Francais', false, '', '2021', 'fil-ancien');
+
+          fetch('/data/evenements.json?' + Date.now())
+            .then(r => r.ok ? r.json() : [])
+            .catch(() => [])
+            .then(liste => {
+              const recents = liste.slice().reverse().map(e => { const l = ligne(e); return l ? li(l[0], l[1], l[2], l[3], ilya(e.date)) : ''; }).join('');
+              document.getElementById('fil-liste').innerHTML =
+                (recents || '<li class="fil-vide">Rien de nouveau pour l’instant : les montées de ligue, promotions, 14 000 trophées, victoires en guerre et records s’afficheront ici automatiquement.</li>') +
+                historique;
+            });
+        })();
+      </script>
+      <!-- ===== FIN FIL ===== -->
       </section>
 
       <!-- =========================
@@ -3306,6 +3364,7 @@
                     <th class="num">Trophées</th>
                     <th class="num col-dons">Dons</th>
                     <th class="num vu">Vu</th>
+                    <th class="num vu" title="Depuis quand le joueur est dans le clan">Arrivé</th>
                   </tr>
                 </thead>
                 <tbody id="liste-membres"></tbody>
@@ -3318,9 +3377,11 @@
             Promise.all([
               fetch('/data/clan.json?' + Date.now()).then(r => r.json()),
               // Ligue ranked de chaque membre (mise à jour toutes les 30 min)
-              fetch('/data/ligues.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
+              fetch('/data/ligues.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+              // Date d'arrivée de chaque membre
+              fetch('/data/arrivees.json?' + Date.now()).then(r => r.ok ? r.json() : {}).catch(() => ({}))
             ])
-              .then(([d, ligues]) => {
+              .then(([d, ligues, arrivees]) => {
                 const fr = n => n.toLocaleString('fr-FR');
                 const LIGUES = {
                   1: ['Maître I', 'M1', '#9fb3d9'], 2: ['Maître II', 'M2', '#9fb3d9'], 3: ['Maître III', 'M3', '#9fb3d9'],
@@ -3377,6 +3438,15 @@
                   return ['<span class="statut ' + cls + '" title="' + txt + '"></span>', court];
                 };
 
+                // Depuis quand le joueur est dans le clan (« — » si déjà là avant le début du suivi)
+                const arrive = j => {
+                  const a = arrivees[j.tag];
+                  if (!a || a === 'avant') return '<span title="Déjà dans le clan quand le suivi a commencé">—</span>';
+                  const jours = Math.floor((Date.now() - new Date(a)) / 86400000);
+                  const txt = jours < 1 ? 'auj.' : jours < 31 ? jours + ' j' : jours < 365 ? Math.floor(jours / 30.4) + ' mois' : Math.floor(jours / 365) + ' an' + (jours >= 730 ? 's' : '');
+                  return '<span title="Arrivé le ' + new Date(a).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }) + '">' + txt + '</span>';
+                };
+
                 const afficher = nb => {
                   tbody.innerHTML = joueurs.slice(0, nb).map((j, i) => {
                     const [role, cls] = roles[j.role] || [j.role, ''];
@@ -3386,6 +3456,7 @@
                       '<td class="num">' + fr(j.trophees) + '</td>' +
                       '<td class="num col-dons">' + fr(j.dons) + '</td>' +
                       '<td class="vu">' + vu + '</td>' +
+                      '<td class="vu">' + arrive(j) + '</td>' +
                     '</tr>';
                   }).join('');
                 };
