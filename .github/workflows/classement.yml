@@ -67,6 +67,15 @@ jobs:
             | .[-50:]' data/mouvements.json > m.json && mv m.json data/mouvements.json || true
           jq '[.memberList[] | {tag, nom: .name}]' clan.json > data/membres-precedents.json
 
+          # Date d arrivee de chaque membre (data/arrivees.json, jamais raccourci).
+          # Au tout premier passage, les membres deja presents sont notes "avant" (date inconnue).
+          if [ -f data/arrivees.json ]; then
+            jq --slurpfile c data/clan.json --arg now "$(date -u +%FT%TZ)" '
+              . as $a | reduce $c[0].joueurs[] as $j ({}; .[$j.tag] = ($a[$j.tag] // $now))' data/arrivees.json > a.json && mv a.json data/arrivees.json || true
+          else
+            jq '[.joueurs[] | {key: .tag, value: "avant"}] | from_entries' data/clan.json > data/arrivees.json || true
+          fi
+
           # Guerre en direct : les 5 clans de la course en cours
           if curl -sf -H "$AUTH" "$API/clans/%23LJ8GVLQC/currentriverrace" > cur.json; then
             jq '{
@@ -169,6 +178,65 @@ jobs:
             t=$(basename "$f" .json)
             jq -e --arg t "#$t" 'any(.memberList[]; .tag == $t)' clan.json > /dev/null || rm -f "$f"
           done
+
+          # Fil « Ça bouge dans le clan » : montées de ligue, 14 000 trophées, promotions, fin de guerre, record national
+          node <<'FIN_EVENEMENTS' || true
+          // Fil « Ça bouge dans le clan » : compare l'état actuel avec celui du passage précédent
+          const fs = require('fs');
+          const lire = (f, d) => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { return d; } };
+          const NOUS = '#LJ8GVLQC';
+          const maintenant = new Date().toISOString();
+
+          const clanApi = lire('clan.json', { memberList: [] });
+          const clan = lire('data/clan.json', {});
+          const ligues = lire('data/ligues.json', {});
+          const log = lire('log.json', { items: [] });
+          const histo = lire('data/historique.json', []);
+          const prec = lire('data/etat-precedent.json', null);
+          const evts = lire('data/evenements.json', []);
+
+          const ordreRole = { member: 0, elder: 1, coLeader: 2, leader: 3 };
+          const nomRole = { elder: 'Aîné', coLeader: 'Chef adjoint', leader: 'Chef' };
+
+          // État actuel
+          const joueurs = {};
+          for (const m of clanApi.memberList || []) {
+            const tag = m.tag.replace('#', '');
+            joueurs[tag] = { nom: m.name, role: m.role, trophees: m.trophies, ligue: ligues[tag] ?? null };
+          }
+          const derniere = (log.items || [])[0];
+          const guerreId = derniere ? derniere.seasonId + '-' + derniere.sectionIndex : null;
+          const rangs = histo.map(p => p.rang).filter(Boolean);
+          const record = Math.min(243, ...rangs, clan.rang || Infinity); // 243e : record connu du clan
+
+          if (!Object.keys(joueurs).length) process.exit(0); // API indisponible : on ne touche à rien
+
+          if (prec) {
+            const ajout = e => evts.push({ date: maintenant, ...e });
+
+            for (const [tag, j] of Object.entries(joueurs)) {
+              const p = prec.joueurs[tag];
+              if (!p) continue; // nouveau membre : déjà dans « Arrivées et départs »
+              if (j.ligue && p.ligue && j.ligue > p.ligue) ajout({ type: 'ligue', tag, nom: j.nom, ligue: j.ligue });
+              if (j.trophees >= 14000 && p.trophees < 14000) ajout({ type: 'trophees', tag, nom: j.nom });
+              if ((ordreRole[j.role] ?? 0) > (ordreRole[p.role] ?? 0) && nomRole[j.role]) ajout({ type: 'promo', tag, nom: j.nom, role: nomRole[j.role] });
+            }
+
+            // Fin de guerre : 1re, 2e ou 3e place
+            if (derniere && guerreId !== prec.guerreId) {
+              const nous = (derniere.standings || []).find(s => s.clan && s.clan.tag === NOUS);
+              if (nous && nous.rank <= 3) {
+                ajout({ type: 'guerre', place: nous.rank, saison: derniere.seasonId, semaine: derniere.sectionIndex + 1, trophees: nous.trophyChange || 0 });
+              }
+            }
+
+            // Nouveau record au classement national
+            if (clan.rang && prec.record && clan.rang < prec.record) ajout({ type: 'record', rang: clan.rang });
+          }
+
+          fs.writeFileSync('data/evenements.json', JSON.stringify(evts.slice(-40), null, 1));
+          fs.writeFileSync('data/etat-precedent.json', JSON.stringify({ joueurs, guerreId, record }));
+          FIN_EVENEMENTS
 
           # Joueur du mois : guerre + dons + trophées gagnés sur le mois (voir .github/scripts/joueur-du-mois.js)
                     node .github/workflows/.github/scripts/joueur-du-mois.js || true
