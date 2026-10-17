@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 720,
-      "nom": "Ad Vitam",
-      "trophees": 136901,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 721,
       "nom": "Absolute Clash",
       "trophees": 136898,
@@ -37,17 +30,17 @@
     },
     {
       "rang": 725,
-      "nom": "Clan Francais",
-      "trophees": 136895,
-      "membres": 49,
-      "nous": true
-    },
-    {
-      "rang": 726,
       "nom": "rois de france",
       "trophees": 136895,
       "membres": 49,
       "nous": false
+    },
+    {
+      "rang": 726,
+      "nom": "Clan Francais",
+      "trophees": 136892,
+      "membres": 49,
+      "nous": true
     },
     {
       "rang": 727,
@@ -75,6 +68,13 @@
       "nom": "Astero Level 15",
       "trophees": 136885,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 731,
+      "nom": "100% français",
+      "trophees": 136884,
+      "membres": 48,
       "nous": false
     }
   ]
