@@ -2,29 +2,29 @@
   "clans": [
     {
       "rang": 707,
-      "nom": "TOULOUSE",
-      "trophees": 136918,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 708,
       "nom": "8eCompagnie",
       "trophees": 136917,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 709,
+      "rang": 708,
       "nom": "La Squadra",
       "trophees": 136916,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 710,
+      "rang": 709,
       "nom": "Bretagne",
       "trophees": 136913,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 710,
+      "nom": "Clan des darons",
+      "trophees": 136908,
       "membres": 50,
       "nous": false
     },
@@ -51,28 +51,28 @@
     },
     {
       "rang": 714,
-      "nom": "Clan des darons",
-      "trophees": 136901,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 715,
       "nom": "3eme division",
       "trophees": 136899,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 716,
+      "rang": 715,
       "nom": "Adulte Ambiance",
       "trophees": 136891,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 717,
+      "rang": 716,
       "nom": "! AFR esport",
+      "trophees": 136887,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 717,
+      "nom": "Apocalypse",
       "trophees": 136887,
       "membres": 49,
       "nous": false
