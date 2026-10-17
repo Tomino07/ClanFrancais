@@ -116,6 +116,8 @@ jobs:
                 victoires: .wins,
                 dons: $dons,
                 deck: [(.currentDeck // [])[] | {nom: .name, image: .iconUrls.medium}],
+                # Ligue ranked de la saison (numero donne par Clash Royale : 1 = Maitre I ... 7 = Ultimate Champion)
+                ligue: ((.currentPathOfLegendSeasonResult // {}).leagueNumber // null),
                 # Guerre en cours : points et combats du joueur cette semaine
                 enCours: (($cur[0].clan.participants // []) | map(select(.tag == $tag)) | .[0]
                   | if . == null then null else {
@@ -157,6 +159,9 @@ jobs:
                 then . + [{d: $now, t: $t}] else . end
               | .[-500:]' "$H" > h.json && mv h.json "$H" || true
           done
+
+          # Ligues de tous les membres en un seul fichier (pour le classement de la page d accueil)
+          jq -s 'map({key: .tag, value: .ligue}) | from_entries' data/joueurs/*.json > data/ligues.json || true
 
           # On supprime seulement les fiches des joueurs qui ont quitté le clan.
           # (Si l API ne répond pas pour un joueur, son ancienne fiche reste en ligne au lieu de disparaître.)
