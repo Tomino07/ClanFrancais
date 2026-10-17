@@ -2,23 +2,23 @@
   "clans": [
     {
       "rang": 722,
-      "nom": "BloodSoldiers",
-      "trophees": 136903,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 723,
       "nom": "LYON",
       "trophees": 136902,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 724,
+      "rang": 723,
       "nom": "Ad Vitam",
       "trophees": 136901,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 724,
+      "nom": "FRANCE",
+      "trophees": 136898,
+      "membres": 49,
       "nous": false
     },
     {
@@ -44,37 +44,37 @@
     },
     {
       "rang": 728,
-      "nom": "FRANCE",
-      "trophees": 136895,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 729,
       "nom": "3eme division",
       "trophees": 136894,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 730,
+      "rang": 729,
       "nom": "LKM League",
       "trophees": 136890,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 731,
+      "rang": 730,
       "nom": "Bretagne",
-      "trophees": 136890,
+      "trophees": 136887,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 731,
+      "nom": "Astero Level 15",
+      "trophees": 136885,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 732,
-      "nom": "Astero Level 15",
-      "trophees": 136885,
-      "membres": 50,
+      "nom": "100% français",
+      "trophees": 136884,
+      "membres": 48,
       "nous": false
     }
   ]
