@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Clan Francais</title>
+    <meta name="description" content="Clan Francais, clan Clash Royale français du top France depuis 2021. 9 000 trophées minimum, guerre de clan chaque semaine, classement et stats des membres en direct. Rejoins-nous !" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -3494,71 +3495,36 @@
 
 <!-- ===== ARRIVÉES ET DÉPARTS ===== -->
 <style>
-  .mouv {
-    position: relative;
-    margin: 0 0 32px;
-    padding: 18px 24px 22px;
-    background: #141418;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #f1ece1;
-  }
-
-  .mouv::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
-    height: 4px;
-    background: linear-gradient(90deg, #2448e8 0 33%, #f4f4f4 33% 66%, #eb1212 66%);
-  }
-
-  .mouv-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 14px;
-    color: #b9b3a6;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-  }
-
-  .mouv-head b { color: #f1ece1; }
-  .mouv-resume { font-size: 11px; letter-spacing: 0.1em; text-transform: none; color: #8f8a80; }
-
+  .mouv { position: relative; margin: 0 0 32px; background: #0f1014; border: 1px solid #1f2027; color: #f4f4f4; }
+  .mouv::before { content: ""; position: absolute; top: -1px; left: -1px; width: 90px; height: 4px; background: #ff2b2b; }
+  .mouv-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 22px 14px; border-bottom: 1px solid #1f2027; }
+  .mouv-head b { font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 900; font-size: 30px; line-height: 1; letter-spacing: 0; text-transform: uppercase; color: #f4f4f4; }
+  .mouv-resume { color: #5d5e66; font-family: "Barlow", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; }
+  .mouv-resume .plus { color: #3ddc84; }
+  .mouv-resume .moins { color: #ff2b2b; }
   .mouv-liste { list-style: none; margin: 0; padding: 0; }
-
-  .mouv-liste li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 10px 4px;
-    border-bottom: 1px solid rgba(241, 236, 225, 0.07);
-  }
-
+  .mouv-liste li { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 14px; align-items: center; padding: 12px 22px; border-bottom: 1px solid #1f2027; }
   .mouv-liste li:last-child { border-bottom: 0; }
-  .mouv-liste .qui { overflow-wrap: anywhere; }
-  .mouv-liste .qui b { color: #fff; }
-  .mouv-liste a b { text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3); }
-  .mouv-liste .arrivee .qui::before { content: "🟢 "; }
-  .mouv-liste .depart .qui::before { content: "🔴 "; }
-  .mouv-liste .quand { flex-shrink: 0; color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; }
-  .mouv-vide { color: #8f8a80; padding: 6px 4px; }
+  .mouv-ico { display: grid; place-items: center; }
+  .mouv-ico svg { width: 24px; height: 24px; }
+  .mouv-liste .arrivee .mouv-ico { color: #3ddc84; }
+  .mouv-liste .depart .mouv-ico { color: #ff2b2b; }
+  .mouv-liste .qui { color: #9a9ba3; font-family: "Barlow", sans-serif; font-size: 15px; overflow-wrap: anywhere; }
+  .mouv-liste .qui b { color: #f4f4f4; font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; font-size: 19px; letter-spacing: 0.02em; text-transform: uppercase; }
+  .mouv-liste a:hover b { color: #ff2b2b; }
+  .mouv-liste .quand { color: #5d5e66; font-family: "Barlow", sans-serif; font-size: 12px; font-weight: 700; white-space: nowrap; }
+  .mouv-liste li.mouv-vide { display: block; color: #5d5e66; font-family: "Barlow", sans-serif; line-height: 1.5; }
 
-  @media (max-width: 650px) {
-    .mouv { padding: 18px 12px 18px; }
-    .mouv-head { flex-direction: column; align-items: flex-start; gap: 4px; }
+  @media (max-width: 560px) {
+    .mouv-head { padding: 16px 14px 12px; }
+    .mouv-liste li { grid-template-columns: 32px minmax(0, 1fr); padding: 12px 14px; }
+    .mouv-liste .quand { grid-column: 2; }
   }
 </style>
 
 <div class="mouv" id="mouvements">
   <div class="mouv-head">
-    <b>👋 Arrivées et départs</b>
+    <b>Arrivées et départs</b>
     <span class="mouv-resume" id="mouv-resume"></span>
   </div>
   <ul class="mouv-liste" id="mouv-liste">
@@ -3570,9 +3536,13 @@
   (() => {
     const esc = t => String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
     const ilya = d => {
-      const m = Math.round((Date.now() - new Date(d)) / 60000);
-      return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : 'il y a ' + Math.round(m / 1440) + ' j';
+      const m = Math.max(0, Math.round((Date.now() - new Date(d)) / 60000));
+      return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : m < 2880 ? 'hier' : 'il y a ' + Math.round(m / 1440) + ' j';
     };
+    // Icônes dessinées : flèche qui entre (arrivée), flèche qui sort (départ)
+    const svg = d => '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">' + d + '</svg>';
+    const ENTREE = svg('<path d="M14 4h6v16h-6M3 12h12M11 8l4 4-4 4"/>');
+    const SORTIE = svg('<path d="M10 4H4v16h6M9 12h12M17 8l4 4-4 4"/>');
 
     fetch('/data/mouvements.json?' + Date.now())
       .then(r => r.ok ? r.json() : [])
@@ -3585,7 +3555,7 @@
         const semaine = liste.filter(m => Date.now() - new Date(m.date) < 7 * 86400000);
         const nbA = semaine.filter(m => m.type === 'arrivee').length;
         const nbD = semaine.filter(m => m.type === 'depart').length;
-        document.getElementById('mouv-resume').textContent = '7 derniers jours : +' + nbA + ' / −' + nbD;
+        document.getElementById('mouv-resume').innerHTML = '7 derniers jours : <span class="plus">+' + nbA + '</span> / <span class="moins">−' + nbD + '</span>';
 
         if (!recents.length) {
           ul.innerHTML = '<li class="mouv-vide">Aucun mouvement pour le moment : les arrivées et départs s’afficheront ici automatiquement.</li>';
@@ -3594,10 +3564,12 @@
 
         ul.innerHTML = recents.map(m => {
           const nom = '<b>' + esc(m.nom) + '</b>';
-          const qui = m.type === 'arrivee'
+          const arrivee = m.type === 'arrivee';
+          const qui = arrivee
             ? '<a href="/joueur.html?tag=' + esc(m.tag) + '">' + nom + '</a> a rejoint le clan'
             : nom + ' a quitté le clan';
-          return '<li class="' + (m.type === 'arrivee' ? 'arrivee' : 'depart') + '"><span class="qui">' + qui + '</span><span class="quand">' + ilya(m.date) + '</span></li>';
+          return '<li class="' + (arrivee ? 'arrivee' : 'depart') + '"><span class="mouv-ico">' + (arrivee ? ENTREE : SORTIE) + '</span>' +
+            '<span class="qui">' + qui + '</span><span class="quand">' + ilya(m.date) + '</span></li>';
         }).join('');
       });
   })();
