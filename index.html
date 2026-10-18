@@ -3759,8 +3759,9 @@
               <span class="solary-word-yellow">RECRUTEMENTS</span>
             </h2>
             <p class="solary-recruitment-intro-text">
-              Si vous souhaitez rejoindre notre clan, c'est le moment ! Attention le nombre de place est limité à 50 personnes.
+              Tu veux rejoindre le clan ? C’est le moment ! Attention, les places sont limitées à 50 membres.
             </p>
+            <p class="recrut-places" id="recrut-places" hidden></p>
           </div>
 
           <div class="solary-recruitment-main">
@@ -3769,6 +3770,7 @@
                 <div class="solary-stat">
                   <strong>Tag</strong>
                   <span>#LJ8GVLQC</span>
+                  <button type="button" class="recrut-copier" id="recrut-copier">Copier</button>
                 </div>
                 <div class="solary-stat">
                   <strong>Statut</strong>
@@ -3780,9 +3782,10 @@
                 </div>
                 <div class="solary-stat">
                   <strong>Trophées</strong>
-                  <span>9000-11000</span>
+                  <span>9 000 – 11 000</span>
                 </div>
               </div>
+              <a class="recrut-lien" href="https://link.clashroyale.com/invite/clan/fr?tag=LJ8GVLQC">Rejoindre dans le jeu →</a>
             </div>
 
             <div class="solary-recruitment-photo-wrap">
@@ -3795,6 +3798,43 @@
           </div>
         </div>
       </section>
+      <style>
+        /* Recrutement : places libres, bouton copier, lien vers le jeu */
+        #recrutement .recrut-places { display: inline-flex; align-items: center; gap: 10px; margin-top: 16px; color: #9a9ba3; font-family: "Barlow", sans-serif; font-size: 14px; }
+        #recrutement .recrut-places[hidden] { display: none; }
+        #recrutement .recrut-places i { width: 8px; height: 8px; background: #3ddc84; }
+        #recrutement .recrut-places.complet i { background: #ff2b2b; }
+        #recrutement .recrut-places b { color: #f4f4f4; }
+        #recrutement .recrut-copier { display: block; margin-top: 8px; padding: 0; border: 0; background: none; color: #ff2b2b; font-family: "Barlow", sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; cursor: pointer; }
+        #recrutement .recrut-copier:hover { color: #f4f4f4; }
+        #recrutement .recrut-lien { display: inline-block; margin-top: 18px; color: #ff2b2b; font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; font-size: 17px; letter-spacing: 0.06em; text-transform: uppercase; }
+        #recrutement .recrut-lien:hover { color: #f4f4f4; }
+      </style>
+      <script>
+        (() => {
+          // Places libres en direct
+          fetch('/data/clan.json?' + Date.now())
+            .then(r => r.json())
+            .then(d => {
+              const libres = 50 - d.membres;
+              const p = document.getElementById('recrut-places');
+              p.innerHTML = '<i></i><span>' + (libres > 0
+                ? '<b>' + libres + ' place' + (libres > 1 ? 's libres' : ' libre') + '</b> en ce moment · ' + d.membres + ' / 50 membres'
+                : '<b>Clan complet</b> pour le moment · reviens bientôt') + '</span>';
+              p.classList.toggle('complet', libres <= 0);
+              p.hidden = false;
+            })
+            .catch(() => {});
+
+          // Copier le tag
+          const b = document.getElementById('recrut-copier');
+          b.addEventListener('click', () => {
+            if (navigator.clipboard) navigator.clipboard.writeText('#LJ8GVLQC');
+            b.textContent = 'Copié !';
+            setTimeout(() => { b.textContent = 'Copier'; }, 1500);
+          });
+        })();
+      </script>
 
       <!-- =========================
      DISCORD
