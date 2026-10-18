@@ -1,53 +1,46 @@
 {
   "clans": [
     {
-      "rang": 692,
+      "rang": 693,
       "nom": "french",
       "trophees": 136937,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 693,
+      "rang": 694,
       "nom": "Alsace 2Légende",
-      "trophees": 136933,
+      "trophees": 136930,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 694,
+      "rang": 695,
       "nom": "Bretagne",
       "trophees": 136929,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 695,
+      "rang": 696,
       "nom": "8eCompagnie",
       "trophees": 136927,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 696,
+      "rang": 697,
       "nom": "La Squadra",
       "trophees": 136912,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 697,
+      "rang": 698,
       "nom": "Clan Francais",
       "trophees": 136910,
       "membres": 49,
       "nous": true
-    },
-    {
-      "rang": 698,
-      "nom": "Clan des darons",
-      "trophees": 136909,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 699,
@@ -75,6 +68,13 @@
       "nom": "LKM League",
       "trophees": 136904,
       "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 703,
+      "nom": "Helfe Squad",
+      "trophees": 136903,
+      "membres": 49,
       "nous": false
     }
   ]
