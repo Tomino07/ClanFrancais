@@ -3363,7 +3363,7 @@
 
             <div class="clan-members">
               <h3 class="clan-members-title">Classement des membres</h3>
-              <p class="clan-members-legende"><span><span class="statut en-ligne"></span>En ligne</span><span><span class="statut hors-ligne"></span>Hors ligne</span></p>
+              <p class="clan-members-legende"><span><span class="statut en-ligne"></span>En ligne</span><span><span class="statut hors-ligne"></span>Hors ligne</span><span class="legende-chef">Chef</span><span class="legende-adjoint">Chef adjoint</span></p>
               <table>
                 <thead>
                   <tr>
@@ -5605,6 +5605,15 @@
         clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
       }
       html body .clan-members .nom-ligne .role.chef { background: var(--e-rouge); color: #fff; }
+      /* Chef et adjoints : pseudo en couleur au lieu de l étiquette (expliqué dans la légende) */
+      html body .clan-members .nom-ligne .role.chef,
+      html body .clan-members .nom-ligne .role.adjoint { display: none; }
+      html body .clan-members tr.r-chef .nom a { color: var(--e-rouge); }
+      html body .clan-members tr.r-adjoint .nom a { color: var(--e-bleu); }
+      html body .clan-members-legende .legende-chef,
+      html body .clan-members-legende .legende-adjoint { font-family: var(--e-titre); font-style: italic; font-weight: 800; font-size: 14px; letter-spacing: 0.04em; text-transform: uppercase; }
+      html body .clan-members-legende .legende-chef { color: var(--e-rouge); }
+      html body .clan-members-legende .legende-adjoint { color: var(--e-bleu); }
       html body .clan-members .nom-ligne .role.adjoint { background: var(--e-bleu); color: #fff; }
       html body .clan-members .nom-ligne .role.aine { background: #2a2b33; color: #c9cad1; }
       html body .clan-members .nom-ligne .ligue { font-size: 12px; font-weight: 800; }
