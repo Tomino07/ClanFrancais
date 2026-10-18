@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 701,
+      "rang": 698,
+      "nom": "french",
+      "trophees": 136928,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 699,
       "nom": "8eCompagnie",
       "trophees": 136927,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 702,
+      "rang": 700,
       "nom": "Bretagne",
-      "trophees": 136913,
+      "trophees": 136921,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 703,
-      "nom": "Clan des darons",
-      "trophees": 136911,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 704,
+      "rang": 701,
       "nom": "La Squadra",
       "trophees": 136911,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 705,
+      "rang": 702,
       "nom": "BloodSoldiers",
       "trophees": 136910,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 706,
+      "rang": 703,
       "nom": "Clan Francais",
       "trophees": 136908,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 707,
-      "nom": "TOULOUSE",
+      "rang": 704,
+      "nom": "Clan des darons",
       "trophees": 136908,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 705,
+      "nom": "TOULOUSE",
+      "trophees": 136905,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 708,
+      "rang": 706,
       "nom": "LKM League",
       "trophees": 136904,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 709,
+      "rang": 707,
       "nom": "3eme division",
       "trophees": 136903,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 710,
+      "rang": 708,
       "nom": "Hosnian Prime™☄",
-      "trophees": 136901,
+      "trophees": 136899,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 711,
-      "nom": "100% 3*1",
-      "trophees": 136895,
-      "membres": 50,
       "nous": false
     }
   ]
