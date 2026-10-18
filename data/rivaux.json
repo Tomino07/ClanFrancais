@@ -1,9 +1,23 @@
 {
   "clans": [
     {
+      "rang": 693,
+      "nom": "AigriGang",
+      "trophees": 136945,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 694,
+      "nom": "French Zone!",
+      "trophees": 136945,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 695,
       "nom": "Bismillah",
-      "trophees": 136941,
+      "trophees": 136944,
       "membres": 49,
       "nous": false
     },
@@ -16,37 +30,37 @@
     },
     {
       "rang": 697,
-      "nom": "La Squadra",
-      "trophees": 136921,
+      "nom": "Bretagne",
+      "trophees": 136925,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 698,
-      "nom": "Bretagne",
-      "trophees": 136918,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 699,
-      "nom": "French Karma V2",
-      "trophees": 136915,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 700,
       "nom": "Clan Francais",
-      "trophees": 136914,
+      "trophees": 136921,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 701,
-      "nom": "Eden Légion",
-      "trophees": 136907,
+      "rang": 699,
+      "nom": "La Squadra",
+      "trophees": 136920,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 700,
+      "nom": "Eden Légion",
+      "trophees": 136913,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 701,
+      "nom": "French Karma V2",
+      "trophees": 136907,
+      "membres": 49,
       "nous": false
     },
     {
@@ -61,20 +75,6 @@
       "nom": "LKM League",
       "trophees": 136904,
       "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 704,
-      "nom": "3eme division",
-      "trophees": 136903,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 705,
-      "nom": "TOULOUSE",
-      "trophees": 136903,
-      "membres": 47,
       "nous": false
     }
   ]
