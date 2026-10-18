@@ -207,10 +207,6 @@
           const b = []; // [icône + texte, explication, doré ?]
           const ajout = (texte, info, or) => b.push('<span class="badge' + (or ? ' or' : '') + '" title="' + esc(info) + '">' + texte + '</span>');
 
-          // Rôle
-          if (j.role === 'Chef') ajout('👑 Chef', 'Chef du clan', true);
-          if (j.role === 'Chef adjoint') ajout('⭐ Chef adjoint', 'Chef adjoint du clan');
-
           // MVP de la semaine
           const pod = (mvp && mvp.podium) || [];
           const place = pod.findIndex(p => p.tag === j.tag);
