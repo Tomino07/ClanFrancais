@@ -2840,7 +2840,7 @@
     <header>
       <div class="topbar">
         Rejoins le Clan Francais · 9 000 trophées minimum · Discord ouvert à
-        tous 💙🤍❤️
+        tous
       </div>
 
       <div class="nav">
@@ -3704,9 +3704,9 @@
                 const vu = dateCR(j.vu);
                 if (!vu) return '';
                 const absent = Date.now() - vu;
-                if (absent > 7 * 86400000) return '⚠️ Inactif depuis ' + duree(absent);
-                if (new Date(majAt) - vu <= 15 * 60000) return '🟢 En ligne';
-                return '🔴 Vu il y a ' + duree(absent);
+                if (absent > 7 * 86400000) return '<span class="point-statut inactif"></span>Inactif depuis ' + duree(absent);
+                if (new Date(majAt) - vu <= 15 * 60000) return '<span class="point-statut en-ligne"></span>En ligne';
+                return '<span class="point-statut hors-ligne"></span>Vu il y a ' + duree(absent);
               };
 
               fetch('/data/clan.json?' + Date.now())
@@ -4034,7 +4034,7 @@
             <h3>LIENS UTILES</h3>
             <a href="mentions-legales.html">Mentions légales</a>
             <a href="politique-confidentialite.html">Politique de confidentialité</a>
-            <a href="#" id="installerAppli" hidden>📱 Installer l’appli</a>
+            <a href="#" id="installerAppli" hidden>Installer l’appli</a>
             <a href="#" data-cookie-settings>Gérer les cookies</a>
           </div>
         </div>
@@ -4844,7 +4844,7 @@
         const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
         const dateCR = (t) => (t ? new Date(t.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*$/, "$1-$2-$3T$4:$5:$6Z")) : null);
         const duree = (ms) => { const m = Math.max(0, Math.round(ms / 60000)); return m < 60 ? m + " min" : m < 1440 ? Math.round(m / 60) + " h" : Math.round(m / 1440) + " j"; };
-        const roles = { leader: "👑 Chef", coLeader: "⭐ Chef adjoint", elder: "Aîné", member: "Membre" };
+        const roles = { leader: "Chef", coLeader: "Chef adjoint", elder: "Aîné", member: "Membre" };
 
         let clan = null;
         const chargerClan = () => clan || (clan = fetch("/data/clan.json?" + Date.now()).then((r) => r.json()));
@@ -4867,12 +4867,12 @@
           const vu = dateCR(j.vu);
           if (!vu) return "";
           const absent = Date.now() - vu;
-          if (absent > 7 * 86400000) return "⚠️ Inactif depuis " + duree(absent);
-          if (new Date(majAt) - vu <= 15 * 60000) return "🟢 En ligne";
-          return "🔴 Vu il y a " + duree(absent);
+          if (absent > 7 * 86400000) return '<span class="point-statut inactif"></span>Inactif depuis ' + duree(absent);
+          if (new Date(majAt) - vu <= 15 * 60000) return '<span class="point-statut en-ligne"></span>En ligne';
+          return '<span class="point-statut hors-ligne"></span>Vu il y a ' + duree(absent);
         }
 
-        const boutonDeconnexion = '<button type="button" class="profil-menu-btn" data-action="deconnexion">🚪 Déconnexion</button>';
+        const boutonDeconnexion = '<button type="button" class="profil-menu-btn" data-action="deconnexion"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M10 4H4v16h6M9 12h12M17 8l4 4-4 4"/></svg> Déconnexion</button>';
 
         function afficherJoueur(j, d) {
           const rang = [...d.joueurs].sort((a, b) => b.trophees - a.trophees).findIndex((x) => x.tag === j.tag) + 1;
@@ -4880,11 +4880,11 @@
             '<div class="profil-menu-nom">' + esc(j.nom) + "</div>" +
             '<div class="profil-menu-role">' + (roles[j.role] || j.role) + " · " + rang + "e du clan</div>" +
             '<div class="profil-menu-infos">' +
-              "<div>🏆 " + fr(j.trophees) + " trophées</div>" +
-              "<div>🎁 " + fr(j.dons) + " dons cette semaine</div>" +
+              "<div>" + '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a3 3 0 0 0 3 3M17 6h3v2a3 3 0 0 1-3 3M12 14v4M8 21h8M9 18h6"/></svg>' + " " + fr(j.trophees) + " trophées</div>" +
+              "<div>" + '<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 10h16v11H4zM2 6h20v4H2zM12 6v15M12 6c-2-4-6-3-5 0M12 6c2-4 6-3 5 0"/></svg>' + " " + fr(j.dons) + " dons cette semaine</div>" +
               "<div>" + statut(j, d.majAt) + "</div>" +
             "</div>" +
-            '<a class="profil-menu-btn principal" href="/joueur.html?tag=' + esc(j.tag) + '">👤 Mon profil</a>' +
+            '<a class="profil-menu-btn principal" href="/joueur.html?tag=' + esc(j.tag) + '"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c1-4 4-6 8-6s7 2 8 6"/></svg> Mon profil</a>' +
             boutonDeconnexion +
             '<button type="button" class="profil-menu-lien" data-action="changer">Ce n’est pas toi ? Choisir mon pseudo</button>';
         }
@@ -4897,7 +4897,7 @@
             '<div class="profil-menu-nom">' + esc(document.getElementById("userName").textContent || "Mon compte") + "</div>" +
             '<p class="profil-menu-texte">Choisis ton pseudo Clash Royale pour accéder à ton profil :</p>' +
             '<select id="profilChoix"><option value="">— Choisis ton pseudo —</option>' + options + "</select>" +
-            '<button type="button" class="profil-menu-btn principal" data-action="valider">✅ C’est moi</button>' +
+            '<button type="button" class="profil-menu-btn principal" data-action="valider"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg> C’est moi</button>' +
             boutonDeconnexion;
         }
 
@@ -5004,7 +5004,8 @@
   .piste.nous .piste-haut { color: #ff2b2b; }
   .piste-bas { color: #8f8a80; font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 700; min-height: 14px; }
   .riviere { position: relative; height: 30px; margin: 6px 0 4px; border-radius: 15px; background: linear-gradient(90deg, rgba(36, 72, 232, .18), rgba(36, 72, 232, .4)); overflow: hidden; }
-  .riviere::after { content: '🏁'; position: absolute; right: 6px; top: 50%; transform: translateY(-50%); font-size: 16px; }
+  /* Course : simple barre de progression vers 10 000, avec la ligne d arrivée à droite */
+  .riviere::after { content: ''; position: absolute; right: 0; top: -3px; bottom: -3px; width: 2px; background: #f4f4f4; }
   .courbe-explication { margin: -2px 0 12px; color: #8f8a80; font-size: 13px; line-height: 1.45; }
   .courbe-explication[hidden] { display: none; }
   .bateau { position: absolute; top: 50%; font-size: 22px; line-height: 1; transition: left 1s ease, transform 1s ease; }
@@ -5040,7 +5041,7 @@
 
     <div class="courbe-course" id="courbe-course" hidden>
       <div class="courbe-rivaux-head">
-        <b>⛵ Course de la semaine</b>
+        <b>Course de la semaine</b>
         <span id="course-etat"></span>
       </div>
       <p class="courbe-explication">Les points gagnés cette semaine par les 5 clans de la course. Le premier à 10 000 gagne. Ces points repartent à zéro chaque semaine.</p>
@@ -5049,7 +5050,7 @@
 
     <div class="courbe-rivaux" id="courbe-rivaux" hidden>
       <div class="courbe-rivaux-head">
-        <b id="rivaux-titre">🎯 Nos rivaux</b>
+        <b id="rivaux-titre">Nos rivaux</b>
         <span id="rivaux-info"></span>
       </div>
       <p class="courbe-explication" id="rivaux-explication" hidden>Le niveau général de chaque clan en guerre, comme les trophées d’un joueur. Ils ne changent qu’à la fin de chaque course : on en gagne ou on en perd selon sa place à l’arrivée. Dans le jeu : page du clan, icône aux deux épées.</p>
@@ -5209,7 +5210,7 @@
           // Rang : Rang / Clan / Écart — Trophées : Clan / Trophées / Écart
           const avecRang = id === 'rang';
           const unite = id === 'guerre' ? ' trophées de guerre' : ' trophées';
-          document.getElementById('rivaux-titre').textContent = id === 'guerre' ? '⚔️ Trophées de guerre des 5 clans' : '🎯 Nos rivaux';
+          document.getElementById('rivaux-titre').textContent = id === 'guerre' ? 'Trophées de guerre des 5 clans' : 'Nos rivaux';
           document.getElementById('rivaux-explication').hidden = id !== 'guerre';
           document.getElementById('rivaux-entete').innerHTML = '<tr>' +
             (avecRang ? '<th>Rang</th><th>Clan</th>' : '<th>Clan</th><th class="num">' + (id === 'guerre' ? 'Trophées de guerre' : 'Trophées') + '</th>') +
@@ -5245,7 +5246,7 @@
           const devant = d.clans.filter(c => c.rang < nous.rang).pop();
           const manque = devant ? 'Il manque ' + fr(devant.trophees - nous.trophees + 1) + unite : '';
           document.getElementById('rivaux-info').textContent = id === 'guerre'
-            ? (devant ? manque + ' pour dépasser ' + devant.nom : 'Le plus de trophées de guerre de la course 💪')
+            ? (devant ? manque + ' pour dépasser ' + devant.nom : 'Le plus de trophées de guerre de la course')
             : (devant ? manque + ' pour passer ' + devant.rang + 'e' : '');
 
           if (actuelle === courbes[id]) rivaux.hidden = false;
@@ -5261,15 +5262,15 @@
           if (!g.clans || !g.clans.length || actuelle !== courbes.guerre) return;
           const j = g.jour;
           document.getElementById('course-etat').textContent =
-            g.type === 'training' ? '🛡️ Entraînement' + (j >= 0 && j <= 2 ? ' · jour ' + (j + 1) + '/3' : '') + ' · la course commence jeudi'
-            : (g.type === 'colosseum' ? '🏟️ Colisée' : '⚔️ Jour de guerre') + (j >= 3 && j <= 6 ? ' ' + (j - 2) + '/4' : '');
+            g.type === 'training' ? 'Entraînement' + (j >= 0 && j <= 2 ? ' · jour ' + (j + 1) + '/3' : '') + ' · la course commence jeudi'
+            : (g.type === 'colosseum' ? 'Colisée' : 'Jour de guerre') + (j >= 3 && j <= 6 ? ' ' + (j - 2) + '/4' : '');
 
           const max = g.objectif || Math.max(...g.clans.map(c => c.points), 1);
           document.getElementById('course-pistes').innerHTML = g.clans.map((c, i) => {
             const pct = Math.min(100, c.points / max * 100);
             return '<div class="piste' + (c.nous ? ' nous' : '') + '">' +
-              '<div class="piste-haut"><span>' + (i + 1) + '. ' + esc(c.nom) + '</span><span>' + (c.fini ? '🏁 ' : '') + fr(c.points) + (g.objectif ? ' / ' + fr(g.objectif) : '') + '</span></div>' +
-              '<div class="riviere"><span class="bateau" style="left:' + pct + '%;transform:translate(-' + pct + '%, -50%)">⛵</span></div>' +
+              '<div class="piste-haut"><span>' + (i + 1) + '. ' + esc(c.nom) + '</span><span>' + (c.fini ? 'Arrivé · ' : '') + fr(c.points) + (g.objectif ? ' / ' + fr(g.objectif) : '') + '</span></div>' +
+              '<div class="riviere"><span class="riviere-plein" style="width:' + pct + '%"></span></div>' +
               '<div class="piste-bas">' + (g.type === 'training' ? '' : '+' + fr(c.aujourdhui) + ' points aujourd’hui · ' + c.combats + '/200 combats joués') + '</div>' +
             '</div>';
           }).join('');
@@ -5668,6 +5669,22 @@
       /* ---------- Bandeau cookies et fenêtres de connexion ---------- */
       html body .auth-modal,
       html body .cfc-banner { border-radius: 0; background: var(--e-carte); border-color: var(--e-trait); }
+    </style>
+    <style>
+      /* Points de statut (leaders, menu profil) */
+      .point-statut { display: inline-block; width: 7px; height: 7px; margin-right: 8px; border-radius: 50%; vertical-align: 1px; }
+      .point-statut.en-ligne { background: #3ddc84; }
+      .point-statut.hors-ligne { background: #ff2b2b; }
+      .point-statut.inactif { background: #ffb02e; }
+      /* Icônes dessinées dans le menu profil */
+      .profil-menu .ico { width: 15px; height: 15px; vertical-align: -2px; margin-right: 4px; }
+      /* Course de la semaine : barre droite, remplie en rouge pour nous */
+      html body .riviere { height: 6px; margin: 8px 0 6px; border-radius: 0; background: #1f2027; overflow: visible; }
+      html body .riviere-plein { position: absolute; inset: 0 auto 0 0; background: #5d5e66; }
+      html body .piste.nous .riviere-plein { background: #ff2b2b; }
+      html body .piste { border-radius: 0; }
+      html body .piste.nous { background: rgba(255, 43, 43, 0.07); border-color: rgba(255, 43, 43, 0.35); }
+      html body .piste-haut { font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; font-size: 18px; text-transform: uppercase; letter-spacing: 0.02em; }
     </style>
     <!-- ===== FIN DA ESPORT ===== -->
 </body>
