@@ -1,17 +1,10 @@
 {
   "clans": [
     {
-      "rang": 692,
-      "nom": "French Zone!",
-      "trophees": 136951,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 693,
-      "nom": "Bismillah",
-      "trophees": 136944,
-      "membres": 49,
+      "nom": "French Zone!",
+      "trophees": 136947,
+      "membres": 50,
       "nous": false
     },
     {
@@ -23,31 +16,31 @@
     },
     {
       "rang": 695,
+      "nom": "Bretagne",
+      "trophees": 136924,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 696,
       "nom": "La Squadra",
       "trophees": 136920,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 696,
+      "rang": 697,
       "nom": "Eden Légion",
       "trophees": 136919,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 697,
+      "rang": 698,
       "nom": "Clan Francais",
       "trophees": 136918,
       "membres": 49,
       "nous": true
-    },
-    {
-      "rang": 698,
-      "nom": "Bretagne",
-      "trophees": 136913,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 699,
@@ -58,20 +51,27 @@
     },
     {
       "rang": 700,
-      "nom": "French Karma V2",
-      "trophees": 136911,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 701,
       "nom": "BloodSoldiers",
       "trophees": 136909,
       "membres": 45,
       "nous": false
     },
     {
+      "rang": 701,
+      "nom": "3eme division",
+      "trophees": 136906,
+      "membres": 47,
+      "nous": false
+    },
+    {
       "rang": 702,
+      "nom": "French Karma V2",
+      "trophees": 136905,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 703,
       "nom": "LKM League",
       "trophees": 136904,
       "membres": 43,
