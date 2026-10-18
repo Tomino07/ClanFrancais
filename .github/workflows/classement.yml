@@ -205,7 +205,8 @@ jobs:
             joueurs[tag] = { nom: m.name, role: m.role, trophees: m.trophies, ligue: ligues[tag] ?? null };
           }
           const derniere = (log.items || [])[0];
-          const guerreId = derniere ? derniere.seasonId + '-' + derniere.sectionIndex : null;
+          // Si l historique des guerres n a pas pu etre lu, on garde le dernier connu (evite de re-annoncer une vieille guerre)
+          const guerreId = derniere ? derniere.seasonId + '-' + derniere.sectionIndex : (prec ? prec.guerreId : null);
           const rangs = histo.map(p => p.rang).filter(Boolean);
           const record = Math.min(243, ...rangs, clan.rang || Infinity); // 243e : record connu du clan
 
@@ -223,7 +224,10 @@ jobs:
             }
 
             // Fin de guerre : 1re, 2e ou 3e place
-            if (derniere && guerreId !== prec.guerreId) {
+            // Date Clash Royale (20261012T094213.000Z) : on n annonce que les guerres finies depuis moins de 3 jours
+            const dateCR = t => new Date(t.slice(0, 4) + '-' + t.slice(4, 6) + '-' + t.slice(6, 8) + 'T' + t.slice(9, 11) + ':' + t.slice(11, 13) + ':' + t.slice(13, 15) + 'Z');
+            const recente = derniere && derniere.createdDate && Date.now() - dateCR(derniere.createdDate) < 3 * 86400000;
+            if (derniere && prec.guerreId && guerreId !== prec.guerreId && recente) {
               const nous = (derniere.standings || []).find(s => s.clan && s.clan.tag === NOUS);
               if (nous && nous.rank <= 3) {
                 ajout({ type: 'guerre', place: nous.rank, saison: derniere.seasonId, semaine: derniere.sectionIndex + 1, trophees: nous.trophyChange || 0 });
