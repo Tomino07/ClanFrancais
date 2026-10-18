@@ -3000,6 +3000,8 @@
         .fil-ico svg { width: 22px; height: 22px; }
         .fil-ico img { width: 34px; height: 38px; object-fit: contain; }
         .fil-ico.or { background: #ff2b2b; color: #fff; }
+        /* Logo de ligue : affiché tel quel, sans carré derrière */
+        .fil-ico:has(img) { background: none; clip-path: none; }
         .fil-txt { color: #9a9ba3; font-family: "Barlow", sans-serif; font-size: 15px; line-height: 1.35; }
         .fil-txt b { color: #f4f4f4; font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; font-size: 19px; letter-spacing: 0.02em; text-transform: uppercase; }
         .fil-txt a b:hover { color: #ff2b2b; }
@@ -3043,7 +3045,7 @@
 
           // Une ligne du fil : [icône, texte, mise en avant ?]
           const ligne = e => {
-            if (e.type === 'ligue') return [e.ligue <= 6 ? '<img src="/ligue' + e.ligue + '.webp" alt="">' : ICONES.promo, joueur(e) + ' est passé <em>' + (LIGUES[e.ligue] || 'ligue ' + e.ligue) + '</em>', e.ligue >= 4];
+            if (e.type === 'ligue') return [e.ligue <= 6 ? '<img src="/ligue' + e.ligue + '.webp" alt="">' : ICONES.promo, joueur(e) + ' est passé <em>' + (LIGUES[e.ligue] || 'ligue ' + e.ligue) + '</em>', false];
             if (e.type === 'trophees') return [ICONES.trophee, joueur(e) + ' a atteint <em>14 000 trophées</em>', false];
             if (e.type === 'promo') return [ICONES.promo, joueur(e) + ' a été promu <em>' + esc(e.role) + '</em>', e.role !== 'Aîné'];
             if (e.type === 'guerre') return [ICONES.epees, e.place === 1 ? '<b>Victoire en guerre !</b> Le clan termine <em>1er</em> de la course' : 'Le clan termine <em>' + place(e.place) + '</em> de la guerre', e.place === 1, 'Saison ' + e.saison + ' · semaine ' + e.semaine + (e.trophees ? ' · ' + (e.trophees > 0 ? '+' : '') + e.trophees + ' trophées de guerre' : '')];
