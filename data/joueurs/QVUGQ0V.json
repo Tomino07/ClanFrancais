@@ -49,7 +49,7 @@
     "type": "warDay",
     "jour": 5,
     "semaine": 2,
-    "saison": null
+    "saison": 137
   },
   "mvps": 0,
   "combats": [
@@ -494,5 +494,36 @@
       ]
     }
   ],
-  "guerres": []
+  "guerres": [
+    {
+      "semaine": "Saison 137 – semaine 1",
+      "points": 0,
+      "combats": 0
+    },
+    {
+      "semaine": "Saison 136 – semaine 4",
+      "points": 0,
+      "combats": 0
+    },
+    {
+      "semaine": "Saison 136 – semaine 3",
+      "points": 0,
+      "combats": 0
+    },
+    {
+      "semaine": "Saison 136 – semaine 2",
+      "points": 0,
+      "combats": 0
+    },
+    {
+      "semaine": "Saison 136 – semaine 1",
+      "points": 0,
+      "combats": 0
+    },
+    {
+      "semaine": "Saison 135 – semaine 5",
+      "points": 0,
+      "combats": 0
+    }
+  ]
 }
