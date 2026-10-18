@@ -1,53 +1,46 @@
 {
   "clans": [
     {
-      "rang": 690,
-      "nom": "8eCompagnie",
-      "trophees": 136953,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 691,
-      "nom": "Astero Level 1",
-      "trophees": 136949,
+      "nom": "8eCompagnie",
+      "trophees": 136954,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 692,
+      "nom": "Astero Level 1",
+      "trophees": 136950,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 693,
       "nom": "Bismillah",
       "trophees": 136947,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 693,
+      "rang": 694,
       "nom": "AigriGang",
       "trophees": 136946,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 694,
+      "rang": 695,
       "nom": "French Zone!",
-      "trophees": 136940,
+      "trophees": 136941,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 695,
+      "rang": 696,
       "nom": "Clan Francais",
       "trophees": 136921,
       "membres": 49,
       "nous": true
-    },
-    {
-      "rang": 696,
-      "nom": "Bretagne",
-      "trophees": 136921,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 697,
@@ -65,13 +58,20 @@
     },
     {
       "rang": 699,
-      "nom": "French Karma V2",
-      "trophees": 136910,
-      "membres": 49,
+      "nom": "Bretagne",
+      "trophees": 136913,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 700,
+      "nom": "French Karma V2",
+      "trophees": 136907,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 701,
       "nom": "BloodSoldiers",
       "trophees": 136905,
       "membres": 45,
