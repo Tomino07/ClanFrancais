@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 707,
+      "nom": "Eden Légion",
+      "trophees": 136941,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 708,
       "nom": "AigriGang",
       "trophees": 136940,
@@ -9,71 +16,64 @@
     },
     {
       "rang": 709,
-      "nom": "Eden Légion",
-      "trophees": 136934,
+      "nom": "Bretagne",
+      "trophees": 136931,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 710,
-      "nom": "Bretagne",
-      "trophees": 136924,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 711,
       "nom": "La Squadra",
       "trophees": 136923,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 712,
+      "rang": 711,
       "nom": "10.8 Return War",
       "trophees": 136918,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 713,
+      "rang": 712,
       "nom": "Clan Francais",
       "trophees": 136918,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 714,
+      "rang": 713,
       "nom": "rois de france",
       "trophees": 136918,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 715,
-      "nom": "Presque2 FRANCE",
-      "trophees": 136910,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 716,
+      "rang": 714,
       "nom": "BloodSoldiers",
       "trophees": 136909,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 717,
+      "rang": 715,
+      "nom": "Presque2 FRANCE",
+      "trophees": 136907,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 716,
       "nom": "3eme division",
       "trophees": 136906,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 718,
+      "rang": 717,
       "nom": "Helfe Squad",
-      "trophees": 136905,
+      "trophees": 136906,
       "membres": 49,
       "nous": false
     }
