@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 702,
+      "rang": 699,
+      "nom": "caya",
+      "trophees": 136947,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 700,
       "nom": "AigriGang",
       "trophees": 136940,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 703,
+      "rang": 701,
       "nom": "Eden Légion",
       "trophees": 136938,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 704,
+      "rang": 702,
       "nom": "Bretagne",
       "trophees": 136934,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 705,
+      "rang": 703,
       "nom": "La Squadra",
-      "trophees": 136925,
+      "trophees": 136933,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 706,
+      "rang": 704,
+      "nom": "Clan Francais",
+      "trophees": 136920,
+      "membres": 49,
+      "nous": true
+    },
+    {
+      "rang": 705,
       "nom": "10.8 Return War",
-      "trophees": 136917,
+      "trophees": 136919,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 706,
+      "nom": "rois de france",
+      "trophees": 136918,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 707,
-      "nom": "Clan Francais",
-      "trophees": 136916,
-      "membres": 49,
-      "nous": true
-    },
-    {
-      "rang": 708,
-      "nom": "rois de france",
-      "trophees": 136914,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 709,
       "nom": "BloodSoldiers",
       "trophees": 136909,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 710,
+      "rang": 708,
       "nom": "3eme division",
       "trophees": 136906,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 711,
+      "rang": 709,
       "nom": "Helfe Squad",
       "trophees": 136906,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 712,
-      "nom": "LKM League",
-      "trophees": 136904,
-      "membres": 43,
       "nous": false
     }
   ]
