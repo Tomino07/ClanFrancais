@@ -1,46 +1,67 @@
 {
   "clans": [
     {
-      "rang": 688,
-      "nom": "Adult Savage FR",
-      "trophees": 136927,
+      "rang": 685,
+      "nom": "Realm IX",
+      "trophees": 136942,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 689,
+      "rang": 686,
+      "nom": "2spi",
+      "trophees": 136933,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 687,
+      "nom": "Adult Savage FR",
+      "trophees": 136930,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 688,
       "nom": "Presque2 FRANCE",
-      "trophees": 136924,
+      "trophees": 136927,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 690,
+      "rang": 689,
       "nom": "100% 3*1",
       "trophees": 136921,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 690,
+      "nom": "Clan Francais",
+      "trophees": 136916,
+      "membres": 49,
+      "nous": true
+    },
+    {
       "rang": 691,
+      "nom": "BS Mercenaries",
+      "trophees": 136915,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 692,
       "nom": "Atypiques",
       "trophees": 136913,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 692,
+      "rang": 693,
       "nom": "France",
       "trophees": 136913,
       "membres": 50,
       "nous": false
-    },
-    {
-      "rang": 693,
-      "nom": "Clan Francais",
-      "trophees": 136913,
-      "membres": 49,
-      "nous": true
     },
     {
       "rang": 694,
@@ -51,30 +72,9 @@
     },
     {
       "rang": 695,
-      "nom": "Helfe Squad",
-      "trophees": 136907,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 696,
       "nom": "Bretagne",
       "trophees": 136906,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 697,
-      "nom": "BS Mercenaries",
-      "trophees": 136906,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 698,
-      "nom": "LKM League",
-      "trophees": 136904,
-      "membres": 43,
       "nous": false
     }
   ]
