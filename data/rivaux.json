@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 702,
+      "nom": "8eCompagnie",
+      "trophees": 136944,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 703,
       "nom": "AigriGang",
       "trophees": 136940,
@@ -30,17 +37,17 @@
     },
     {
       "rang": 707,
-      "nom": "10.8 Return War",
-      "trophees": 136921,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 708,
       "nom": "Clan Francais",
       "trophees": 136918,
       "membres": 49,
       "nous": true
+    },
+    {
+      "rang": 708,
+      "nom": "10.8 Return War",
+      "trophees": 136918,
+      "membres": 49,
+      "nous": false
     },
     {
       "rang": 709,
@@ -66,15 +73,8 @@
     {
       "rang": 712,
       "nom": "Helfe Squad",
-      "trophees": 136902,
+      "trophees": 136903,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 713,
-      "nom": "Adult Savage FR",
-      "trophees": 136900,
-      "membres": 50,
       "nous": false
     }
   ]
