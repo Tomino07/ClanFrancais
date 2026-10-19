@@ -147,13 +147,13 @@
   const LIGUES = {
     1: ['Maître I', 'M1', '#ff7a6e'], 2: ['Maître II', 'M2', '#b9a8ee'], 3: ['Maître III', 'M3', '#4fb0ff'],
     4: ['Champion', 'CH', '#ffc23d'], 5: ['Grand Champion', 'GC', '#d6264a'],
-    6: ['Royal Champion', 'RC', '#6f9bff'], 7: ['Champion suprême', 'CS', '#ffe07a']
+    6: ['Royal Champion', 'RC', '#6f9bff'], 7: ['Champion suprême', 'CS', '#c27bff']
   };
   const badgeLigue = n => {
     const l = LIGUES[n];
     if (!l) return '';
         // Logo officiel de la ligue si on l a (ligue1.webp ... à côté de index.html), sinon petit badge avec les initiales
-        const logo = n <= 7 ? '<img src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
+        const logo = n <= 7 ? '<img class="l' + n + '" src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
         return '<span class="ligue" style="--c:' + l[2] + '" title="Ranked : ' + l[0] + '">' + logo + l[0] + '</span>';
   };
 
@@ -470,6 +470,10 @@
     .ico { width: 15px; height: 15px; vertical-align: -2px; }
     .badge .ico { width: 16px; height: 16px; }
     .combat-tr .ico { width: 13px; height: 13px; }
+  </style>
+  <style>
+    /* Logo Champion suprême : l image a de grandes marges transparentes, on l agrandit pour qu il fasse la même taille que les autres */
+    .ligue img.l7, .fil-ico img.l7 { transform: scale(1.42); }
   </style>
   <!-- ===== FIN DA ESPORT ===== -->
 </body>
