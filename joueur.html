@@ -147,13 +147,13 @@
   const LIGUES = {
     1: ['Maître I', 'M1', '#ff7a6e'], 2: ['Maître II', 'M2', '#b9a8ee'], 3: ['Maître III', 'M3', '#4fb0ff'],
     4: ['Champion', 'CH', '#ffc23d'], 5: ['Grand Champion', 'GC', '#d6264a'],
-    6: ['Royal Champion', 'RC', '#6f9bff'], 7: ['Ultimate Champion', 'UC', '#ffe07a']
+    6: ['Royal Champion', 'RC', '#6f9bff'], 7: ['Champion suprême', 'CS', '#ffe07a']
   };
   const badgeLigue = n => {
     const l = LIGUES[n];
     if (!l) return '';
         // Logo officiel de la ligue si on l a (ligue1.webp ... à côté de index.html), sinon petit badge avec les initiales
-        const logo = n <= 6 ? '<img src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
+        const logo = n <= 7 ? '<img src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
         return '<span class="ligue" style="--c:' + l[2] + '" title="Ranked : ' + l[0] + '">' + logo + l[0] + '</span>';
   };
 
