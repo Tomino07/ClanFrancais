@@ -3036,7 +3036,7 @@
             record: svg('<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4 6.8 19.1l1-5.8L3.5 9.2l5.9-.9z"/>'),
             drapeau: svg('<path d="M5 21V4M5 4h13l-2.5 4.5L18 13H5"/>')
           };
-          const LIGUES = { 1: 'Maître I', 2: 'Maître II', 3: 'Maître III', 4: 'Champion', 5: 'Grand Champion', 6: 'Royal Champion', 7: 'Ultimate Champion' };
+          const LIGUES = { 1: 'Maître I', 2: 'Maître II', 3: 'Maître III', 4: 'Champion', 5: 'Grand Champion', 6: 'Royal Champion', 7: 'Champion suprême' };
           const ilya = d => {
             const m = Math.max(0, Math.round((Date.now() - new Date(d)) / 60000));
             return m < 60 ? 'il y a ' + m + ' min' : m < 1440 ? 'il y a ' + Math.round(m / 60) + ' h' : m < 2880 ? 'hier' : 'il y a ' + Math.round(m / 1440) + ' j';
@@ -3046,7 +3046,7 @@
 
           // Une ligne du fil : [icône, texte, mise en avant ?]
           const ligne = e => {
-            if (e.type === 'ligue') return [e.ligue <= 6 ? '<img src="/ligue' + e.ligue + '.webp" alt="">' : ICONES.promo, joueur(e) + ' est passé <em>' + (LIGUES[e.ligue] || 'ligue ' + e.ligue) + '</em>', false];
+            if (e.type === 'ligue') return [e.ligue <= 7 ? '<img src="/ligue' + e.ligue + '.webp" alt="">' : ICONES.promo, joueur(e) + ' est passé <em>' + (LIGUES[e.ligue] || 'ligue ' + e.ligue) + '</em>', false];
             if (e.type === 'trophees') return [ICONES.trophee, joueur(e) + ' a atteint <em>14 000 trophées</em>', false];
             if (e.type === 'promo') return [ICONES.promo, joueur(e) + ' a été promu <em>' + esc(e.role) + '</em>', e.role !== 'Aîné'];
             if (e.type === 'guerre') return [ICONES.epees, e.place === 1 ? '<b>Victoire en guerre !</b> Le clan termine <em>1er</em> de la course' : 'Le clan termine <em>' + place(e.place) + '</em> de la guerre', e.place === 1, 'Saison ' + e.saison + ' · semaine ' + e.semaine + (e.trophees ? ' · ' + (e.trophees > 0 ? '+' : '') + e.trophees + ' trophées de guerre' : '')];
@@ -3394,13 +3394,13 @@
                 const LIGUES = {
                   1: ['Maître I', 'M1', '#ff7a6e'], 2: ['Maître II', 'M2', '#b9a8ee'], 3: ['Maître III', 'M3', '#4fb0ff'],
                   4: ['Champion', 'CH', '#ffc23d'], 5: ['Grand Champion', 'GC', '#d6264a'],
-                  6: ['Royal Champion', 'RC', '#6f9bff'], 7: ['Ultimate Champion', 'UC', '#ffe07a']
+                  6: ['Royal Champion', 'RC', '#6f9bff'], 7: ['Champion suprême', 'CS', '#ffe07a']
                 };
                 const badgeLigue = n => {
                   const l = LIGUES[n];
                   if (!l) return '';
         // Logo officiel de la ligue si on l a (ligue1.webp ... à côté de index.html), sinon petit badge avec les initiales
-        const logo = n <= 6 ? '<img src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
+        const logo = n <= 7 ? '<img src="/ligue' + n + '.webp" alt="">' : '<i>' + l[1] + '</i>';
         return '<span class="ligue" style="--c:' + l[2] + '" title="Ranked : ' + l[0] + '">' + logo + l[0] + '</span>';
                 };
 
