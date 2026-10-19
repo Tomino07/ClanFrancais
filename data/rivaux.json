@@ -1,3 +1,81 @@
 {
-  "clans": []
+  "clans": [
+    {
+      "rang": 439,
+      "nom": "La Squadra",
+      "trophees": 136937,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 440,
+      "nom": "rois de france",
+      "trophees": 136936,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 441,
+      "nom": "France",
+      "trophees": 136932,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 442,
+      "nom": "Adult Savage FR",
+      "trophees": 136928,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 443,
+      "nom": "100%saucisson",
+      "trophees": 136919,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 444,
+      "nom": "Clan Francais",
+      "trophees": 136916,
+      "membres": 49,
+      "nous": true
+    },
+    {
+      "rang": 445,
+      "nom": "Bretagne",
+      "trophees": 136913,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 446,
+      "nom": "BloodSoldiers",
+      "trophees": 136910,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 447,
+      "nom": "Helfe Squad",
+      "trophees": 136907,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 448,
+      "nom": "LKM League",
+      "trophees": 136904,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 449,
+      "nom": "Guerrier&Cie",
+      "trophees": 136890,
+      "membres": 49,
+      "nous": false
+    }
+  ]
 }
