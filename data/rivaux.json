@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 698,
+      "rang": 700,
+      "nom": "Bretagne",
+      "trophees": 136933,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 701,
       "nom": "Adult Savage FR",
       "trophees": 136930,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 699,
-      "nom": "Bretagne",
-      "trophees": 136929,
+      "rang": 702,
+      "nom": "Atypiques",
+      "trophees": 136925,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 700,
+      "rang": 703,
       "nom": "France",
       "trophees": 136924,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 701,
-      "nom": "Atypiques",
-      "trophees": 136922,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 702,
+      "rang": 704,
       "nom": "100% 3*1",
       "trophees": 136920,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 703,
+      "rang": 705,
       "nom": "Clan Francais",
       "trophees": 136916,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 704,
+      "rang": 706,
+      "nom": "BS Mercenaries",
+      "trophees": 136915,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 707,
+      "nom": "3eme division",
+      "trophees": 136915,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 708,
       "nom": "Helfe Squad",
       "trophees": 136913,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 705,
-      "nom": "3eme division",
-      "trophees": 136910,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 706,
+      "rang": 709,
       "nom": "Biem's 3",
-      "trophees": 136910,
+      "trophees": 136907,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 707,
+      "rang": 710,
       "nom": "Acid Army FR",
       "trophees": 136904,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 708,
-      "nom": "Hell ArmY FR",
-      "trophees": 136892,
-      "membres": 49,
       "nous": false
     }
   ]
