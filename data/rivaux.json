@@ -1,59 +1,52 @@
 {
   "clans": [
     {
-      "rang": 697,
-      "nom": "cop's fr II",
-      "trophees": 136934,
-      "membres": 45,
-      "nous": false
-    },
-    {
       "rang": 698,
       "nom": "Adult Savage FR",
-      "trophees": 136934,
+      "trophees": 136930,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 699,
       "nom": "Bretagne",
-      "trophees": 136930,
+      "trophees": 136929,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 700,
       "nom": "France",
-      "trophees": 136929,
+      "trophees": 136924,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 701,
+      "nom": "Atypiques",
+      "trophees": 136922,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 702,
       "nom": "100% 3*1",
       "trophees": 136920,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 702,
+      "rang": 703,
       "nom": "Clan Francais",
       "trophees": 136916,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 703,
-      "nom": "Helfe Squad",
-      "trophees": 136912,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 704,
-      "nom": "Atypiques",
-      "trophees": 136911,
-      "membres": 50,
+      "nom": "Helfe Squad",
+      "trophees": 136913,
+      "membres": 49,
       "nous": false
     },
     {
@@ -65,16 +58,23 @@
     },
     {
       "rang": 706,
+      "nom": "Biem's 3",
+      "trophees": 136910,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 707,
       "nom": "Acid Army FR",
       "trophees": 136904,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 707,
-      "nom": "Biem's 3",
-      "trophees": 136904,
-      "membres": 50,
+      "rang": 708,
+      "nom": "Hell ArmY FR",
+      "trophees": 136892,
+      "membres": 49,
       "nous": false
     }
   ]
