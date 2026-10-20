@@ -1,30 +1,23 @@
 {
   "clans": [
     {
-      "rang": 700,
-      "nom": "Bretagne",
+      "rang": 701,
+      "nom": "BS Mercenaries",
       "trophees": 136933,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 701,
-      "nom": "Adult Savage FR",
-      "trophees": 136930,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 702,
-      "nom": "Atypiques",
-      "trophees": 136925,
-      "membres": 50,
+      "nom": "2spi",
+      "trophees": 136930,
+      "membres": 49,
       "nous": false
     },
     {
       "rang": 703,
-      "nom": "France",
-      "trophees": 136924,
+      "nom": "Atypiques",
+      "trophees": 136921,
       "membres": 50,
       "nous": false
     },
@@ -37,36 +30,36 @@
     },
     {
       "rang": 705,
+      "nom": "France",
+      "trophees": 136917,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 706,
       "nom": "Clan Francais",
       "trophees": 136916,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 706,
-      "nom": "BS Mercenaries",
-      "trophees": 136915,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 707,
-      "nom": "3eme division",
-      "trophees": 136915,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 708,
       "nom": "Helfe Squad",
       "trophees": 136913,
       "membres": 49,
       "nous": false
     },
     {
+      "rang": 708,
+      "nom": "3eme division",
+      "trophees": 136913,
+      "membres": 47,
+      "nous": false
+    },
+    {
       "rang": 709,
       "nom": "Biem's 3",
-      "trophees": 136907,
+      "trophees": 136909,
       "membres": 50,
       "nous": false
     },
@@ -75,6 +68,13 @@
       "nom": "Acid Army FR",
       "trophees": 136904,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 711,
+      "nom": "Black Knights",
+      "trophees": 136900,
+      "membres": 50,
       "nous": false
     }
   ]
