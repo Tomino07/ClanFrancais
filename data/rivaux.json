@@ -2,23 +2,23 @@
   "clans": [
     {
       "rang": 695,
+      "nom": "Adult Savage FR",
+      "trophees": 136934,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 696,
       "nom": "La Squadra",
       "trophees": 136932,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 696,
-      "nom": "Bretagne",
-      "trophees": 136928,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 697,
-      "nom": "Athéna",
-      "trophees": 136925,
-      "membres": 48,
+      "nom": "Bretagne",
+      "trophees": 136932,
+      "membres": 50,
       "nous": false
     },
     {
@@ -72,9 +72,9 @@
     },
     {
       "rang": 705,
-      "nom": "Hell ArmY FR",
-      "trophees": 136892,
-      "membres": 49,
+      "nom": "Biem's 3",
+      "trophees": 136898,
+      "membres": 50,
       "nous": false
     }
   ]
