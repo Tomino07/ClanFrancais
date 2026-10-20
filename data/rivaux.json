@@ -1,73 +1,59 @@
 {
   "clans": [
     {
-      "rang": 794,
+      "rang": 796,
+      "nom": "france",
+      "trophees": 136604,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 797,
       "nom": "SatchLand",
       "trophees": 136602,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 795,
-      "nom": "IrresisTeam",
+      "rang": 798,
+      "nom": "Tim 2 Choc",
       "trophees": 136601,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 796,
-      "nom": "Tim 2 Choc",
-      "trophees": 136595,
+      "rang": 799,
+      "nom": "Nantes",
+      "trophees": 136598,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 797,
+      "rang": 800,
       "nom": "Kharnage 2",
       "trophees": 136594,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 798,
-      "nom": "Nantes",
-      "trophees": 136587,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 799,
+      "rang": 801,
       "nom": "Clan Francais",
-      "trophees": 136586,
+      "trophees": 136593,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 800,
+      "rang": 802,
       "nom": "La Resistance",
-      "trophees": 136585,
+      "trophees": 136587,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 801,
+      "rang": 803,
       "nom": "Royal~Arrow 3",
       "trophees": 136584,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 802,
-      "nom": "FRENCHROYAL",
-      "trophees": 136584,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 803,
-      "nom": "Tripel Lovers",
-      "trophees": 136581,
-      "membres": 50,
       "nous": false
     },
     {
@@ -75,6 +61,20 @@
       "nom": "Normandie 50",
       "trophees": 136575,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 805,
+      "nom": "FRENCHROYAL",
+      "trophees": 136574,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 806,
+      "nom": "French Addict",
+      "trophees": 136573,
+      "membres": 46,
       "nous": false
     }
   ]
