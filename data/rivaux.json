@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 800,
-      "nom": "SatchLand",
-      "trophees": 136602,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 801,
       "nom": "france",
       "trophees": 136600,
@@ -23,58 +16,65 @@
     },
     {
       "rang": 803,
-      "nom": "French Addict",
-      "trophees": 136596,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 804,
       "nom": "Kharnage 2",
       "trophees": 136595,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 804,
+      "nom": "Breizh Dissiden",
+      "trophees": 136595,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 805,
+      "nom": "#!llus!on",
+      "trophees": 136594,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 806,
       "nom": "Clan Francais",
       "trophees": 136593,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 806,
+      "rang": 807,
+      "nom": "French Addict",
+      "trophees": 136593,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 808,
       "nom": "La Resistance",
       "trophees": 136583,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 807,
+      "rang": 809,
+      "nom": "1CIEL",
+      "trophees": 136580,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 810,
       "nom": "#les Deglingos",
       "trophees": 136579,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 808,
+      "rang": 811,
       "nom": "Normandie 50",
       "trophees": 136575,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 809,
-      "nom": "BS Esport",
-      "trophees": 136570,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 810,
-      "nom": "#royalekush",
-      "trophees": 136568,
-      "membres": 48,
       "nous": false
     }
   ]
