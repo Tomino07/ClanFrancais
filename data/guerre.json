@@ -1,7 +1,7 @@
 {
   "type": "training",
   "jour": 1,
-  "majAt": "2026-10-20T11:19:58Z",
+  "majAt": "2026-10-20T11:30:56Z",
   "objectif": 10000,
   "clans": [
     {
@@ -16,7 +16,7 @@
       "nom": "INTERCEPTOR",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 0,
+      "combats": 2,
       "fini": false,
       "nous": false
     },
