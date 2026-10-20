@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 692,
+      "nom": "La Squadra",
+      "trophees": 136938,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 693,
       "nom": "cop's fr II",
       "trophees": 136934,
@@ -23,37 +30,37 @@
     },
     {
       "rang": 696,
-      "nom": "France",
-      "trophees": 136923,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 697,
       "nom": "100% 3*1",
       "trophees": 136921,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 698,
+      "rang": 697,
       "nom": "Clan Francais",
       "trophees": 136916,
       "membres": 49,
       "nous": true
     },
     {
+      "rang": 698,
+      "nom": "France",
+      "trophees": 136916,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 699,
-      "nom": "3eme division",
-      "trophees": 136910,
-      "membres": 47,
+      "nom": "Helfe Squad",
+      "trophees": 136913,
+      "membres": 49,
       "nous": false
     },
     {
       "rang": 700,
-      "nom": "Helfe Squad",
-      "trophees": 136906,
-      "membres": 49,
+      "nom": "3eme division",
+      "trophees": 136910,
+      "membres": 47,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "Acid Army FR",
       "trophees": 136904,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 703,
-      "nom": "Atypiques",
-      "trophees": 136904,
-      "membres": 50,
       "nous": false
     }
   ]
