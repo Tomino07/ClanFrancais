@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-20T12:02:01.848Z",
+  "majAt": "2026-10-20T12:31:43.370Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -26,18 +26,9 @@
       "nom": "grand-père",
       "role": "member",
       "guerre": 0,
-      "dons": 634,
+      "dons": 678,
       "trophees": 88,
       "score": 34
-    },
-    {
-      "tag": "PPRJ9RGV",
-      "nom": "baboon",
-      "role": "member",
-      "guerre": 3650,
-      "dons": 100,
-      "trophees": 32,
-      "score": 31
     },
     {
       "tag": "9QQYPPLU",
@@ -46,6 +37,15 @@
       "guerre": 4100,
       "dons": 87,
       "trophees": 0,
+      "score": 30
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "role": "member",
+      "guerre": 3650,
+      "dons": 100,
+      "trophees": 32,
       "score": 30
     }
   ],
