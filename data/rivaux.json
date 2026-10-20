@@ -1,52 +1,59 @@
 {
   "clans": [
     {
-      "rang": 705,
+      "rang": 704,
       "nom": "3-2 L’ardenne",
+      "trophees": 136934,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 705,
+      "nom": "Adult Savage FR",
       "trophees": 136931,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 706,
-      "nom": "La Squadra",
-      "trophees": 136931,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 707,
-      "nom": "2spi",
-      "trophees": 136930,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 708,
       "nom": "100% 3*1",
       "trophees": 136927,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 709,
+      "rang": 707,
+      "nom": "La Squadra",
+      "trophees": 136927,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 708,
       "nom": "France",
       "trophees": 136923,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 710,
+      "rang": 709,
       "nom": "Clan Francais",
-      "trophees": 136919,
+      "trophees": 136920,
       "membres": 49,
       "nous": true
     },
     {
+      "rang": 710,
+      "nom": "2spi",
+      "trophees": 136919,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 711,
-      "nom": "Black Knights",
+      "nom": "Helfe Squad",
       "trophees": 136913,
-      "membres": 50,
+      "membres": 49,
       "nous": false
     },
     {
@@ -58,20 +65,13 @@
     },
     {
       "rang": 713,
-      "nom": "Atypiques",
-      "trophees": 136911,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 714,
       "nom": "Biem's 3",
       "trophees": 136910,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 715,
+      "rang": 714,
       "nom": "Acid Army FR",
       "trophees": 136908,
       "membres": 47,
