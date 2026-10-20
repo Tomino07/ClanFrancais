@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 799,
-      "nom": "Tim 2 Choc",
-      "trophees": 136604,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 800,
       "nom": "SatchLand",
       "trophees": 136602,
@@ -16,65 +9,72 @@
     },
     {
       "rang": 801,
-      "nom": "Kharnage 2",
-      "trophees": 136601,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 802,
       "nom": "france",
       "trophees": 136600,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 803,
+      "rang": 802,
       "nom": "FRENCHROYAL",
-      "trophees": 136598,
+      "trophees": 136600,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 803,
+      "nom": "French Addict",
+      "trophees": 136596,
+      "membres": 46,
+      "nous": false
+    },
+    {
       "rang": 804,
+      "nom": "Kharnage 2",
+      "trophees": 136595,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 805,
       "nom": "Clan Francais",
       "trophees": 136593,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 805,
+      "rang": 806,
       "nom": "La Resistance",
       "trophees": 136583,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 806,
-      "nom": "French Addict",
+      "rang": 807,
+      "nom": "#les Deglingos",
       "trophees": 136579,
-      "membres": 46,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 807,
+      "rang": 808,
       "nom": "Normandie 50",
       "trophees": 136575,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 808,
+      "rang": 809,
       "nom": "BS Esport",
-      "trophees": 136573,
+      "trophees": 136570,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 809,
-      "nom": "#les Deglingos",
-      "trophees": 136572,
-      "membres": 50,
+      "rang": 810,
+      "nom": "#royalekush",
+      "trophees": 136568,
+      "membres": 48,
       "nous": false
     }
   ]
