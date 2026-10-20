@@ -2,15 +2,15 @@
   "clans": [
     {
       "rang": 692,
-      "nom": "La Squadra",
-      "trophees": 136932,
+      "nom": "Adult Savage FR",
+      "trophees": 136929,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 693,
-      "nom": "Adult Savage FR",
-      "trophees": 136929,
+      "nom": "Bretagne",
+      "trophees": 136928,
       "membres": 50,
       "nous": false
     },
@@ -44,37 +44,37 @@
     },
     {
       "rang": 698,
-      "nom": "Helfe Squad",
-      "trophees": 136913,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 699,
       "nom": "3eme division",
       "trophees": 136910,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 700,
-      "nom": "Bretagne",
-      "trophees": 136910,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 701,
+      "rang": 699,
       "nom": "Atypiques",
       "trophees": 136907,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 702,
+      "rang": 700,
+      "nom": "Helfe Squad",
+      "trophees": 136906,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 701,
       "nom": "Acid Army FR",
       "trophees": 136904,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 702,
+      "nom": "Hell ArmY FR",
+      "trophees": 136892,
+      "membres": 49,
       "nous": false
     }
   ]
