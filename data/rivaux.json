@@ -1,52 +1,59 @@
 {
   "clans": [
     {
+      "rang": 700,
+      "nom": "La Squadra",
+      "trophees": 136935,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 701,
       "nom": "Adult Savage FR",
-      "trophees": 136934,
+      "trophees": 136933,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 702,
+      "nom": "Allez l’OM",
+      "trophees": 136932,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 703,
       "nom": "3-2 L’ardenne",
       "trophees": 136932,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 703,
+      "rang": 704,
       "nom": "2spi",
       "trophees": 136923,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 704,
+      "rang": 705,
+      "nom": "Clan Francais",
+      "trophees": 136921,
+      "membres": 49,
+      "nous": true
+    },
+    {
+      "rang": 706,
       "nom": "France",
       "trophees": 136919,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 705,
+      "rang": 707,
       "nom": "3eme division",
       "trophees": 136918,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 706,
-      "nom": "Clan Francais",
-      "trophees": 136918,
-      "membres": 49,
-      "nous": true
-    },
-    {
-      "rang": 707,
-      "nom": "FRANCE",
-      "trophees": 136915,
-      "membres": 50,
       "nous": false
     },
     {
@@ -58,23 +65,16 @@
     },
     {
       "rang": 709,
-      "nom": "Biem's 3",
-      "trophees": 136913,
+      "nom": "FRANCE",
+      "trophees": 136915,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 710,
-      "nom": "IAE TOURS",
-      "trophees": 136911,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 711,
-      "nom": "10.8 Return",
-      "trophees": 136909,
-      "membres": 45,
+      "nom": "Biem's 3",
+      "trophees": 136913,
+      "membres": 50,
       "nous": false
     }
   ]
