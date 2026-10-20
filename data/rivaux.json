@@ -1,52 +1,66 @@
 {
   "clans": [
     {
-      "rang": 801,
+      "rang": 799,
+      "nom": "Breizh Dissiden",
+      "trophees": 136601,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 800,
       "nom": "france",
       "trophees": 136600,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 802,
-      "nom": "FRENCHROYAL",
-      "trophees": 136600,
-      "membres": 50,
+      "rang": 801,
+      "nom": "1ere4",
+      "trophees": 136599,
+      "membres": 48,
       "nous": false
     },
     {
-      "rang": 803,
+      "rang": 802,
       "nom": "Kharnage 2",
       "trophees": 136595,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 804,
-      "nom": "Breizh Dissiden",
+      "rang": 803,
+      "nom": "#!llus!on",
       "trophees": 136595,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 805,
-      "nom": "#!llus!on",
-      "trophees": 136594,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 806,
+      "rang": 804,
       "nom": "Clan Francais",
       "trophees": 136593,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 807,
+      "rang": 805,
+      "nom": "Nantes",
+      "trophees": 136592,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 806,
       "nom": "French Addict",
-      "trophees": 136593,
+      "trophees": 136591,
       "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 807,
+      "nom": "1CIEL",
+      "trophees": 136584,
+      "membres": 50,
       "nous": false
     },
     {
@@ -58,23 +72,9 @@
     },
     {
       "rang": 809,
-      "nom": "1CIEL",
-      "trophees": 136580,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 810,
       "nom": "#les Deglingos",
       "trophees": 136579,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 811,
-      "nom": "Normandie 50",
-      "trophees": 136575,
-      "membres": 47,
       "nous": false
     }
   ]
