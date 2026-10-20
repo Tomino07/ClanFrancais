@@ -1,46 +1,25 @@
 {
   "clans": [
     {
-      "rang": 699,
-      "nom": "La Squadra",
-      "trophees": 136933,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 700,
-      "nom": "Adult Savage FR",
-      "trophees": 136931,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 701,
-      "nom": "100% 3*1",
+      "rang": 702,
+      "nom": "3-2 L’ardenne",
       "trophees": 136927,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 702,
+      "rang": 703,
       "nom": "France",
       "trophees": 136923,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 703,
+      "rang": 704,
       "nom": "2spi",
       "trophees": 136923,
       "membres": 49,
       "nous": false
-    },
-    {
-      "rang": 704,
-      "nom": "Clan Francais",
-      "trophees": 136920,
-      "membres": 49,
-      "nous": true
     },
     {
       "rang": 705,
@@ -58,23 +37,44 @@
     },
     {
       "rang": 707,
+      "nom": "Clan Francais",
+      "trophees": 136913,
+      "membres": 49,
+      "nous": true
+    },
+    {
+      "rang": 708,
       "nom": "Biem's 3",
       "trophees": 136910,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 708,
+      "rang": 709,
       "nom": "IAE TOURS",
       "trophees": 136910,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 709,
+      "rang": 710,
       "nom": "Parabellum II",
       "trophees": 136908,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 711,
+      "nom": "Acid Army FR",
+      "trophees": 136908,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 712,
+      "nom": "FRANCE",
+      "trophees": 136908,
+      "membres": 50,
       "nous": false
     }
   ]

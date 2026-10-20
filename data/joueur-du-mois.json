@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-20T12:31:43.370Z",
+  "majAt": "2026-10-20T13:01:53.261Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -22,15 +22,6 @@
       "score": 39
     },
     {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "guerre": 0,
-      "dons": 678,
-      "trophees": 88,
-      "score": 34
-    },
-    {
       "tag": "9QQYPPLU",
       "nom": "Litrode",
       "role": "member",
@@ -47,6 +38,15 @@
       "dons": 100,
       "trophees": 32,
       "score": 30
+    },
+    {
+      "tag": "RGRR89L22",
+      "nom": "HyperLoop-2000",
+      "role": "coLeader",
+      "guerre": 0,
+      "dons": 93,
+      "trophees": 248,
+      "score": 28
     }
   ],
   "historique": []
