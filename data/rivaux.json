@@ -1,24 +1,31 @@
 {
   "clans": [
     {
+      "rang": 700,
+      "nom": "La Squadra",
+      "trophees": 136935,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 701,
+      "nom": "Bretagne",
+      "trophees": 136935,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 702,
       "nom": "BS Mercenaries",
       "trophees": 136933,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 702,
-      "nom": "2spi",
-      "trophees": 136930,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 703,
-      "nom": "Atypiques",
-      "trophees": 136921,
-      "membres": 50,
+      "nom": "2spi",
+      "trophees": 136927,
+      "membres": 49,
       "nous": false
     },
     {
@@ -30,17 +37,17 @@
     },
     {
       "rang": 705,
-      "nom": "France",
-      "trophees": 136917,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 706,
       "nom": "Clan Francais",
       "trophees": 136916,
       "membres": 49,
       "nous": true
+    },
+    {
+      "rang": 706,
+      "nom": "France",
+      "trophees": 136915,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 707,
@@ -58,22 +65,15 @@
     },
     {
       "rang": 709,
-      "nom": "Biem's 3",
-      "trophees": 136909,
+      "nom": "Atypiques",
+      "trophees": 136910,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 710,
-      "nom": "Acid Army FR",
-      "trophees": 136904,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 711,
-      "nom": "Black Knights",
-      "trophees": 136900,
+      "nom": "Biem's 3",
+      "trophees": 136909,
       "membres": 50,
       "nous": false
     }
