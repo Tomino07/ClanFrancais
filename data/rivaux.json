@@ -1,60 +1,46 @@
 {
   "clans": [
     {
-      "rang": 805,
-      "nom": "France Elite",
-      "trophees": 136618,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 806,
+      "rang": 807,
       "nom": "1ere4",
-      "trophees": 136608,
+      "trophees": 136609,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 807,
-      "nom": "French To Glory",
-      "trophees": 136599,
-      "membres": 46,
+      "rang": 808,
+      "nom": "Breizh Dissiden",
+      "trophees": 136600,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 808,
+      "rang": 809,
       "nom": "#!llus!on",
       "trophees": 136599,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 809,
+      "rang": 810,
       "nom": "SatchLand",
-      "trophees": 136596,
+      "trophees": 136599,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 810,
-      "nom": "Clan Francais",
-      "trophees": 136594,
-      "membres": 48,
-      "nous": true
-    },
-    {
       "rang": 811,
-      "nom": "Breizh Dissiden",
-      "trophees": 136594,
-      "membres": 50,
+      "nom": "French To Glory",
+      "trophees": 136597,
+      "membres": 46,
       "nous": false
     },
     {
       "rang": 812,
-      "nom": "La Resistance",
-      "trophees": 136591,
+      "nom": "Clan Francais",
+      "trophees": 136594,
       "membres": 48,
-      "nous": false
+      "nous": true
     },
     {
       "rang": 813,
@@ -72,9 +58,23 @@
     },
     {
       "rang": 815,
+      "nom": "La Resistance",
+      "trophees": 136587,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 816,
       "nom": "#les Deglingos",
-      "trophees": 136590,
+      "trophees": 136586,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 817,
+      "nom": "Presque2 FRANCE",
+      "trophees": 136585,
+      "membres": 47,
       "nous": false
     }
   ]
