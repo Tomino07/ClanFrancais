@@ -1,80 +1,80 @@
 {
   "clans": [
     {
+      "rang": 809,
+      "nom": "l’ekip",
+      "trophees": 136620,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 810,
-      "nom": "Breizh Dissiden",
-      "trophees": 136610,
+      "nom": "France Elite",
+      "trophees": 136620,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 811,
+      "nom": "THE fbtgg team",
+      "trophees": 136613,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 812,
+      "nom": "Breizh Dissiden",
+      "trophees": 136611,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 813,
       "nom": "SatchLand",
       "trophees": 136599,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 812,
-      "nom": "THE fbtgg team",
+      "rang": 814,
+      "nom": "Clan Francais",
       "trophees": 136599,
-      "membres": 49,
-      "nous": false
+      "membres": 48,
+      "nous": true
     },
     {
-      "rang": 813,
+      "rang": 815,
       "nom": "French To Glory",
       "trophees": 136598,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 814,
+      "rang": 816,
       "nom": "#!llus!on",
       "trophees": 136597,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 815,
-      "nom": "Clan Francais",
-      "trophees": 136596,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 816,
+      "rang": 817,
       "nom": "La Resistance",
       "trophees": 136595,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 817,
+      "rang": 818,
       "nom": "Tripel Lovers",
       "trophees": 136594,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 818,
+      "rang": 819,
       "nom": "1Battable",
       "trophees": 136592,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 819,
-      "nom": "#les Deglingos",
-      "trophees": 136591,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 820,
-      "nom": "Presque2 FRANCE",
-      "trophees": 136582,
-      "membres": 47,
       "nous": false
     }
   ]
