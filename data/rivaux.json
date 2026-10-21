@@ -1,58 +1,65 @@
 {
   "clans": [
     {
-      "rang": 805,
-      "nom": "SatchLand",
-      "trophees": 136603,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 806,
+      "rang": 804,
       "nom": "French To Glory",
       "trophees": 136599,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 807,
+      "rang": 805,
       "nom": "Breizh Dissiden",
       "trophees": 136597,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 808,
-      "nom": "La Resistance",
-      "trophees": 136597,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 809,
+      "rang": 806,
       "nom": "#!llus!on",
       "trophees": 136596,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 810,
+      "rang": 807,
+      "nom": "SatchLand",
+      "trophees": 136596,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 808,
+      "nom": "La Resistance",
+      "trophees": 136594,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 809,
       "nom": "Clan Francais",
       "trophees": 136591,
       "membres": 48,
       "nous": true
     },
     {
+      "rang": 810,
+      "nom": "THE fbtgg team",
+      "trophees": 136590,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 811,
-      "nom": "1Battable",
-      "trophees": 136584,
+      "nom": "#les Deglingos",
+      "trophees": 136588,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 812,
-      "nom": "#les Deglingos",
-      "trophees": 136582,
+      "nom": "1Battable",
+      "trophees": 136584,
       "membres": 50,
       "nous": false
     },
@@ -68,13 +75,6 @@
       "nom": "#royalekush",
       "trophees": 136580,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 815,
-      "nom": "8eCompagnie",
-      "trophees": 136579,
-      "membres": 49,
       "nous": false
     }
   ]
