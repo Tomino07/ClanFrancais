@@ -1,16 +1,43 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-22T08:31:41.681Z",
+  "majAt": "2026-10-22T09:02:02.079Z",
   "classement": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "guerre": 7750,
+      "dons": 258,
+      "trophees": 0,
+      "score": 59
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "role": "member",
+      "guerre": 3650,
+      "dons": 100,
+      "trophees": 65,
+      "score": 33
+    },
     {
       "tag": "8GGQG28YU",
       "nom": "grand-père",
       "role": "member",
       "guerre": 0,
       "dons": 758,
-      "trophees": 60,
+      "trophees": 61,
       "score": 31
+    },
+    {
+      "tag": "9QQYPPLU",
+      "nom": "Litrode",
+      "role": "member",
+      "guerre": 4100,
+      "dons": 87,
+      "trophees": 0,
+      "score": 29
     },
     {
       "tag": "RGRR89L22",
@@ -20,33 +47,6 @@
       "dons": 93,
       "trophees": 248,
       "score": 28
-    },
-    {
-      "tag": "VPQ920JU",
-      "nom": "benoit82",
-      "role": "member",
-      "guerre": 0,
-      "dons": 253,
-      "trophees": 116,
-      "score": 20
-    },
-    {
-      "tag": "2V0G2JUPV",
-      "nom": "sky",
-      "role": "member",
-      "guerre": 0,
-      "dons": 246,
-      "trophees": 104,
-      "score": 19
-    },
-    {
-      "tag": "UV20LCP22",
-      "nom": "Xtazz27",
-      "role": "member",
-      "guerre": 0,
-      "dons": 532,
-      "trophees": 0,
-      "score": 18
     }
   ],
   "historique": []
