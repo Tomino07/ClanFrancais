@@ -1,46 +1,60 @@
 {
   "clans": [
     {
-      "rang": 829,
+      "rang": 827,
       "nom": "La Resistance",
       "trophees": 136597,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 830,
+      "rang": 828,
+      "nom": "French Legion",
+      "trophees": 136597,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 829,
       "nom": "#!llus!on",
       "trophees": 136596,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 831,
-      "nom": "8eCompagnie",
-      "trophees": 136592,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 832,
+      "rang": 830,
       "nom": "Actifs Francais",
       "trophees": 136591,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 833,
+      "rang": 831,
       "nom": "1CIEL",
       "trophees": 136591,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 834,
+      "rang": 832,
       "nom": "Clan Francais",
       "trophees": 136589,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 833,
+      "nom": "8eCompagnie",
+      "trophees": 136588,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 834,
+      "nom": "13organisé",
+      "trophees": 136583,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 835,
@@ -51,30 +65,16 @@
     },
     {
       "rang": 836,
-      "nom": "13organisé",
-      "trophees": 136582,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 837,
       "nom": "Latitude 49",
       "trophees": 136578,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 838,
+      "rang": 837,
       "nom": "rois de france",
       "trophees": 136568,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 839,
-      "nom": "Red Falocon FR",
-      "trophees": 136567,
-      "membres": 47,
       "nous": false
     }
   ]
