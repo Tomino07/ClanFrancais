@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 843,
-      "nom": "france",
-      "trophees": 136605,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 844,
       "nom": "cop's fr III",
       "trophees": 136602,
@@ -16,51 +9,51 @@
     },
     {
       "rang": 845,
+      "nom": "1Battable",
+      "trophees": 136601,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 846,
       "nom": "6p6i6z6z6a",
       "trophees": 136600,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 846,
-      "nom": "1CIEL",
-      "trophees": 136595,
+      "rang": 847,
+      "nom": "france",
+      "trophees": 136600,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 847,
+      "rang": 848,
       "nom": "8eCompagnie",
-      "trophees": 136592,
+      "trophees": 136591,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 848,
+      "rang": 849,
       "nom": "Clan Francais",
       "trophees": 136589,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 849,
-      "nom": "100% Braco",
-      "trophees": 136589,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 850,
-      "nom": "36 30",
-      "trophees": 136586,
+      "nom": "1CIEL",
+      "trophees": 136587,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 851,
-      "nom": "Bande de oufs",
-      "trophees": 136582,
-      "membres": 48,
+      "nom": "36 30",
+      "trophees": 136586,
+      "membres": 50,
       "nous": false
     },
     {
@@ -72,9 +65,16 @@
     },
     {
       "rang": 853,
-      "nom": "1Battable",
-      "trophees": 136581,
+      "nom": "Asperges Folles",
+      "trophees": 136578,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 854,
+      "nom": "Bande de oufs",
+      "trophees": 136574,
+      "membres": 48,
       "nous": false
     }
   ]
