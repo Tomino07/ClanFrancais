@@ -1,22 +1,22 @@
 {
   "type": "warDay",
   "jour": 3,
-  "majAt": "2026-10-22T15:01:20Z",
+  "majAt": "2026-10-22T15:31:00Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "11",
       "points": 0,
-      "aujourdhui": 900,
-      "combats": 5,
+      "aujourdhui": 1300,
+      "combats": 8,
       "fini": false,
       "nous": false
     },
     {
       "nom": "INTERCEPTOR",
       "points": 0,
-      "aujourdhui": 0,
-      "combats": 0,
+      "aujourdhui": 200,
+      "combats": 2,
       "fini": false,
       "nous": false
     },
