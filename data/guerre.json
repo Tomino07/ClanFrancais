@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 3,
-  "majAt": "2026-10-22T14:01:18Z",
+  "majAt": "2026-10-22T14:31:01Z",
   "objectif": 10000,
   "clans": [
     {
@@ -31,16 +31,16 @@
     {
       "nom": "Gigante Noble",
       "points": 0,
-      "aujourdhui": 0,
-      "combats": 0,
+      "aujourdhui": 100,
+      "combats": 1,
       "fini": false,
       "nous": false
     },
     {
       "nom": "Bandeja Paisa",
       "points": 0,
-      "aujourdhui": 0,
-      "combats": 0,
+      "aujourdhui": 100,
+      "combats": 1,
       "fini": false,
       "nous": false
     }
