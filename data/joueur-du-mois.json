@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-22T16:02:02.162Z",
+  "majAt": "2026-10-22T16:31:46.903Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -18,8 +18,17 @@
       "role": "member",
       "guerre": 4350,
       "dons": 100,
-      "trophees": 94,
+      "trophees": 96,
       "score": 39
+    },
+    {
+      "tag": "VPQ920JU",
+      "nom": "benoit82",
+      "role": "member",
+      "guerre": 0,
+      "dons": 271,
+      "trophees": 200,
+      "score": 29
     },
     {
       "tag": "9QQYPPLU",
@@ -38,15 +47,6 @@
       "dons": 93,
       "trophees": 248,
       "score": 28
-    },
-    {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "guerre": 300,
-      "dons": 800,
-      "trophees": 0,
-      "score": 27
     }
   ],
   "historique": []
