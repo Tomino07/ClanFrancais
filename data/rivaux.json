@@ -1,59 +1,52 @@
 {
   "clans": [
     {
-      "rang": 829,
+      "rang": 830,
+      "nom": "Tripel Lovers",
+      "trophees": 136601,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 831,
       "nom": "#!llus!on",
       "trophees": 136599,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 830,
-      "nom": "French Legion",
-      "trophees": 136599,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 831,
-      "nom": "La Resistance",
-      "trophees": 136597,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 832,
+      "nom": "French Legion",
+      "trophees": 136598,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 833,
       "nom": "1CIEL",
       "trophees": 136591,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 833,
+      "rang": 834,
       "nom": "8eCompagnie",
       "trophees": 136588,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 834,
+      "rang": 835,
       "nom": "Clan Francais",
       "trophees": 136586,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 835,
+      "rang": 836,
       "nom": "Latitude 49",
       "trophees": 136585,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 836,
-      "nom": "Actifs Francais",
-      "trophees": 136585,
-      "membres": 48,
       "nous": false
     },
     {
@@ -65,16 +58,23 @@
     },
     {
       "rang": 838,
+      "nom": "Presque2 FRANCE",
+      "trophees": 136583,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 839,
       "nom": "1Battable",
       "trophees": 136582,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 839,
-      "nom": "Presque2 FRANCE",
-      "trophees": 136580,
-      "membres": 47,
+      "rang": 840,
+      "nom": "Actifs Francais",
+      "trophees": 136582,
+      "membres": 48,
       "nous": false
     }
   ]
