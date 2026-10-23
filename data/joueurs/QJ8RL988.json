@@ -42,7 +42,15 @@
     }
   ],
   "ligue": 1,
-  "enCours": null,
+  "enCours": {
+    "points": 500,
+    "combats": 4,
+    "aujourdhui": 4,
+    "type": "warDay",
+    "jour": 3,
+    "semaine": 3,
+    "saison": 137
+  },
   "mvps": 10,
   "combats": [
     {
