@@ -1,52 +1,59 @@
 {
   "clans": [
     {
+      "rang": 954,
+      "nom": "Corse",
+      "trophees": 136197,
+      "membres": 45,
+      "nous": false
+    },
+    {
       "rang": 955,
+      "nom": "100%PvP",
+      "trophees": 136194,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 956,
       "nom": "OSTHAPATHE",
       "trophees": 136189,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 956,
-      "nom": "D3st1n",
-      "trophees": 136188,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 957,
-      "nom": "Brigade Fantôme",
-      "trophees": 136185,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 958,
       "nom": "les 7 couronnes",
       "trophees": 136179,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 959,
+      "rang": 958,
       "nom": "Normandie",
-      "trophees": 136177,
+      "trophees": 136176,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 960,
+      "rang": 959,
       "nom": "Clan Francais",
-      "trophees": 136170,
+      "trophees": 136174,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 961,
+      "rang": 960,
       "nom": "Les Vieux Cons",
-      "trophees": 136166,
+      "trophees": 136172,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 961,
+      "nom": "LES AFFRANCHIS",
+      "trophees": 136155,
+      "membres": 46,
       "nous": false
     },
     {
@@ -59,22 +66,15 @@
     {
       "rang": 963,
       "nom": "Atlantis Fr",
-      "trophees": 136149,
+      "trophees": 136150,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 964,
-      "nom": "CLASH ROYALE fr",
-      "trophees": 136145,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 965,
-      "nom": "French Team 4",
+      "nom": "les gones",
       "trophees": 136141,
-      "membres": 50,
+      "membres": 48,
       "nous": false
     }
   ]
