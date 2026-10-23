@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 977,
-      "nom": "Normandie",
-      "trophees": 136177,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 978,
       "nom": "Legion Noire",
       "trophees": 136172,
@@ -37,44 +30,51 @@
     },
     {
       "rang": 982,
+      "nom": "AFCA",
+      "trophees": 136156,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 983,
       "nom": "Clan Francais",
       "trophees": 136155,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 983,
+      "rang": 984,
       "nom": "Les Vieux Cons",
       "trophees": 136136,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 984,
+      "rang": 985,
       "nom": "les gones",
       "trophees": 136125,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 985,
+      "rang": 986,
       "nom": "LES ARVERNES",
       "trophees": 136120,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 986,
-      "nom": "Atlantes",
-      "trophees": 136113,
-      "membres": 49,
+      "rang": 987,
+      "nom": "Les Anciens !!",
+      "trophees": 136117,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 987,
-      "nom": "Les Anciens !!",
-      "trophees": 136106,
-      "membres": 50,
+      "rang": 988,
+      "nom": "Atlantes",
+      "trophees": 136113,
+      "membres": 49,
       "nous": false
     }
   ]
