@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 950,
-      "nom": "Legion Noire",
-      "trophees": 136196,
-      "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 951,
+      "rang": 946,
       "nom": "Normandie",
-      "trophees": 136194,
+      "trophees": 136193,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 952,
-      "nom": "(Fr) League",
-      "trophees": 136193,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 953,
+      "rang": 947,
       "nom": "OSTHAPATHE",
       "trophees": 136192,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 954,
+      "rang": 948,
       "nom": "D3st1n",
       "trophees": 136191,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 955,
+      "rang": 949,
+      "nom": "(Fr) League",
+      "trophees": 136182,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 950,
+      "nom": "france",
+      "trophees": 136177,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 951,
       "nom": "Clan Francais",
       "trophees": 136175,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 956,
-      "nom": "france",
-      "trophees": 136166,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 957,
+      "rang": 952,
       "nom": "LES AFFRANCHIS",
-      "trophees": 136154,
+      "trophees": 136159,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 958,
+      "rang": 953,
       "nom": "BoA 3",
       "trophees": 136145,
       "membres": 42,
       "nous": false
     },
     {
-      "rang": 959,
+      "rang": 954,
       "nom": "As de Coeur FR",
-      "trophees": 136144,
+      "trophees": 136141,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 960,
+      "rang": 955,
       "nom": "Atlantis Fr",
       "trophees": 136140,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 956,
+      "nom": "Les Anciens !!",
+      "trophees": 136139,
+      "membres": 50,
       "nous": false
     }
   ]
