@@ -52,7 +52,272 @@
     "saison": 137
   },
   "mvps": 0,
-  "combats": [],
+  "combats": [
+    {
+      "date": "20260928T132054.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 1,
+      "trophees": -30,
+      "adversaire": "bbi",
+      "clanAdv": "\"$ündörgő gőte",
+      "deckAdv": [
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Mega Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+        },
+        {
+          "nom": "Tesla",
+          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
+        },
+        {
+          "nom": "Freeze",
+          "image": "https://api-assets.clashroyale.com/cards/300/I1M20_Zs_p_BS1NaNIVQjuMJkYI_1-ePtwYZahn0JXQ.png"
+        },
+        {
+          "nom": "Ronin",
+          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
+        },
+        {
+          "nom": "Executioner",
+          "image": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
+        },
+        {
+          "nom": "Ram Rider",
+          "image": "https://api-assets.clashroyale.com/cards/300/QaJyerT7f7oMyZ3Fv1glKymtLSvx7YUXisAulxl7zRI.png"
+        }
+      ]
+    },
+    {
+      "date": "20260928T131707.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 2,
+      "adv": 1,
+      "trophees": 32,
+      "adversaire": "nyx",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Archers",
+          "image": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
+        },
+        {
+          "nom": "Balloon",
+          "image": "https://api-assets.clashroyale.com/cards/300/qBipxLo-3hhCnPrApp2Nn3b2NgrSrvwzWytvREev0CY.png"
+        },
+        {
+          "nom": "Skeleton Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
+        },
+        {
+          "nom": "Mortar",
+          "image": "https://api-assets.clashroyale.com/cards/300/lPOSw6H7YOHq2miSCrf7ZDL3ANjhJdPPDYOTujdNrVE.png"
+        },
+        {
+          "nom": "Goblin Cage",
+          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
+        },
+        {
+          "nom": "Sparky",
+          "image": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png"
+        },
+        {
+          "nom": "Tornado",
+          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
+        },
+        {
+          "nom": "Battle Healer",
+          "image": "https://api-assets.clashroyale.com/cards/300/KdwXcoigS2Kg-cgA7BJJIANbUJG6SNgjetRQ-MegZ08.png"
+        }
+      ]
+    },
+    {
+      "date": "20260928T130345.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 3,
+      "trophees": -27,
+      "adversaire": "Megumi$",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Archer Queen",
+          "image": "https://api-assets.clashroyale.com/cards/300/p7OQmOAFTery7zCzlpDdm-LOD1kINTm42AwIHchZfWk.png"
+        },
+        {
+          "nom": "Electro Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png"
+        },
+        {
+          "nom": "Goblin Cage",
+          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
+        },
+        {
+          "nom": "Mother Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
+        },
+        {
+          "nom": "Royal Recruits",
+          "image": "https://api-assets.clashroyale.com/cards/300/jcNyYGUiXXNz3kuz8NBkHNKNREQKraXlb_Ts7rhCIdM.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Zappies",
+          "image": "https://api-assets.clashroyale.com/cards/300/QZfHRpLRmutZbCr5fpLnTpIp89vLI6NrAwzGZ8tHEc4.png"
+        }
+      ]
+    },
+    {
+      "date": "20260928T130035.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 2,
+      "adv": 1,
+      "trophees": 32,
+      "adversaire": "ZanyAchilles",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Mighty Miner",
+          "image": "https://api-assets.clashroyale.com/cards/300/Cd9R56yraxTvJiD8xJ2qT2OdsHyh94FqOAarXpbyelo.png"
+        },
+        {
+          "nom": "Furnace",
+          "image": "https://api-assets.clashroyale.com/cards/300/iqbDiG7yYRIzvCPXdt9zPb3IvMt7F7Gi4wIPnh2x4aI.png"
+        },
+        {
+          "nom": "Ram Rider",
+          "image": "https://api-assets.clashroyale.com/cards/300/QaJyerT7f7oMyZ3Fv1glKymtLSvx7YUXisAulxl7zRI.png"
+        },
+        {
+          "nom": "Mother Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
+        },
+        {
+          "nom": "Lightning",
+          "image": "https://api-assets.clashroyale.com/cards/300/fpnESbYqe5GyZmaVVYe-SEu7tE0Kxh_HZyVigzvLjks.png"
+        },
+        {
+          "nom": "Mega Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+        },
+        {
+          "nom": "Flying Machine",
+          "image": "https://api-assets.clashroyale.com/cards/300/hzKNE3QwFcrSrDDRuVW3QY_OnrDPijSiIp-PsWgFevE.png"
+        }
+      ]
+    },
+    {
+      "date": "20260923T190314.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 3,
+      "trophees": null,
+      "adversaire": "samy21",
+      "clanAdv": "BrigadeDesStup",
+      "deckAdv": [
+        {
+          "nom": "Mega Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Freeze",
+          "image": "https://api-assets.clashroyale.com/cards/300/I1M20_Zs_p_BS1NaNIVQjuMJkYI_1-ePtwYZahn0JXQ.png"
+        },
+        {
+          "nom": "Goblin Gang",
+          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
+        },
+        {
+          "nom": "Night Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/NpCrXDEDBBJgNv9QrBAcJmmMFbS7pe3KCY8xJ5VB18A.png"
+        },
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        }
+      ]
+    },
+    {
+      "date": "20260908T061556.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 1,
+      "adv": 3,
+      "trophees": null,
+      "adversaire": "bio",
+      "clanAdv": "da gu gang",
+      "deckAdv": [
+        {
+          "nom": "Elite Barbarians",
+          "image": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Inferno Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/y5HDbKtTbWG6En6TGWU0xoVIGs1-iQpIP4HC-VM7u8A.png"
+        },
+        {
+          "nom": "Rocket",
+          "image": "https://api-assets.clashroyale.com/cards/300/Ie07nQNK9CjhKOa4-arFAewi4EroqaA-86Xo7r5tx94.png"
+        },
+        {
+          "nom": "Giant",
+          "image": "https://api-assets.clashroyale.com/cards/300/Axr4ox5_b7edmLsoHxBX3vmgijAIibuF6RImTbqLlXE.png"
+        },
+        {
+          "nom": "Rage",
+          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        }
+      ]
+    }
+  ],
   "guerres": [
     {
       "semaine": "Saison 137 – semaine 2",
