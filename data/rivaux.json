@@ -1,20 +1,6 @@
 {
   "clans": [
     {
-      "rang": 945,
-      "nom": "(Fr) League",
-      "trophees": 136195,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 946,
-      "nom": "D3st1n",
-      "trophees": 136195,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 947,
       "nom": "Normandie",
       "trophees": 136194,
@@ -30,51 +16,65 @@
     },
     {
       "rang": 949,
-      "nom": "france",
-      "trophees": 136178,
+      "nom": "(Fr) League",
+      "trophees": 136188,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 950,
+      "nom": "D3st1n",
+      "trophees": 136186,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 951,
+      "nom": "france",
+      "trophees": 136182,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 952,
       "nom": "Clan Francais",
       "trophees": 136175,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 951,
+      "rang": 953,
       "nom": "12345678910",
-      "trophees": 136171,
+      "trophees": 136174,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 952,
+      "rang": 954,
+      "nom": "BREIZH 35",
+      "trophees": 136164,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 955,
+      "nom": "Les Anciens !!",
+      "trophees": 136162,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 956,
       "nom": "LES AFFRANCHIS",
       "trophees": 136148,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 953,
+      "rang": 957,
       "nom": "Atlantis Fr",
       "trophees": 136147,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 954,
-      "nom": "BoA 3",
-      "trophees": 136145,
-      "membres": 42,
-      "nous": false
-    },
-    {
-      "rang": 955,
-      "nom": "As de Coeur FR",
-      "trophees": 136141,
-      "membres": 45,
       "nous": false
     }
   ]
