@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 4,
-  "majAt": "2026-10-23T13:01:13Z",
+  "majAt": "2026-10-23T13:31:00Z",
   "objectif": 10000,
   "clans": [
     {
@@ -23,8 +23,8 @@
     {
       "nom": "Gigante Noble",
       "points": 1159,
-      "aujourdhui": 300,
-      "combats": 2,
+      "aujourdhui": 500,
+      "combats": 3,
       "fini": false,
       "nous": false
     },
@@ -39,8 +39,8 @@
     {
       "nom": "INTERCEPTOR",
       "points": 664,
-      "aujourdhui": 1050,
-      "combats": 8,
+      "aujourdhui": 1650,
+      "combats": 11,
       "fini": false,
       "nous": false
     }
