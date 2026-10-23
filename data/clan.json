@@ -1,8 +1,8 @@
 {
-  "majAt": "2026-10-23T06:30:58Z",
+  "majAt": "2026-10-23T07:01:10Z",
   "rang": 980,
-  "rangPrecedent": 833,
-  "score": 136160,
+  "rangPrecedent": 983,
+  "score": 136162,
   "tropheesGuerre": 1812,
   "membres": 47,
   "joueurs": [
@@ -239,6 +239,14 @@
       "vu": "20261016T011010.000Z"
     },
     {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "trophees": 13030,
+      "dons": 256,
+      "vu": "20261023T065415.000Z"
+    },
+    {
       "tag": "JUUQVRQYJ",
       "nom": "tm975",
       "role": "member",
@@ -263,20 +271,12 @@
       "vu": "20261005T112135.000Z"
     },
     {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "trophees": 13002,
-      "dons": 256,
-      "vu": "20261023T062456.000Z"
-    },
-    {
       "tag": "PPRJ9RGV",
       "nom": "baboon",
       "role": "member",
       "trophees": 12816,
       "dons": 8,
-      "vu": "20261023T062011.000Z"
+      "vu": "20261023T065134.000Z"
     },
     {
       "tag": "P9GL8VCRR",
@@ -379,8 +379,8 @@
       "nom": "✨Tom07✨",
       "role": "leader",
       "trophees": 8500,
-      "dons": 0,
-      "vu": "20261023T023629.000Z"
+      "dons": 8,
+      "vu": "20261023T064052.000Z"
     }
   ]
 }
