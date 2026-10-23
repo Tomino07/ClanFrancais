@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-23T07:31:37.404Z",
+  "majAt": "2026-10-23T08:01:54.950Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -10,16 +10,7 @@
       "guerre": 8250,
       "dons": 318,
       "trophees": 0,
-      "score": 60
-    },
-    {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "guerre": 600,
-      "dons": 834,
-      "trophees": 120,
-      "score": 41
+      "score": 59
     },
     {
       "tag": "PPRJ9RGV",
@@ -31,6 +22,15 @@
       "score": 39
     },
     {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "guerre": 600,
+      "dons": 842,
+      "trophees": 32,
+      "score": 32
+    },
+    {
       "tag": "9QQYPPLU",
       "nom": "Litrode",
       "role": "member",
@@ -40,12 +40,12 @@
       "score": 30
     },
     {
-      "tag": "RGRR89L22",
-      "nom": "HyperLoop-2000",
-      "role": "coLeader",
+      "tag": "2V0G2JUPV",
+      "nom": "sky",
+      "role": "member",
       "guerre": 0,
-      "dons": 93,
-      "trophees": 248,
+      "dons": 262,
+      "trophees": 197,
       "score": 28
     }
   ],
