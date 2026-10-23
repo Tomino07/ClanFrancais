@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 3,
-  "majAt": "2026-10-23T01:22:16Z",
+  "majAt": "2026-10-23T01:30:56Z",
   "objectif": 10000,
   "clans": [
     {
@@ -39,8 +39,8 @@
     {
       "nom": "Bandeja Paisa",
       "points": 0,
-      "aujourdhui": 200,
-      "combats": 2,
+      "aujourdhui": 500,
+      "combats": 4,
       "fini": false,
       "nous": false
     }
