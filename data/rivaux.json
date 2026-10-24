@@ -1,17 +1,31 @@
 {
   "clans": [
     {
+      "rang": 923,
+      "nom": "Les Anciens !!",
+      "trophees": 136207,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 924,
+      "nom": "LES ARVERNES",
+      "trophees": 136206,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 925,
-      "nom": "Corse",
-      "trophees": 136199,
-      "membres": 45,
+      "nom": "Normandie",
+      "trophees": 136200,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 926,
-      "nom": "LES ARVERNES",
-      "trophees": 136198,
-      "membres": 48,
+      "nom": "Corse",
+      "trophees": 136197,
+      "membres": 45,
       "nous": false
     },
     {
@@ -23,24 +37,24 @@
     },
     {
       "rang": 928,
+      "nom": "Clan Francais",
+      "trophees": 136193,
+      "membres": 47,
+      "nous": true
+    },
+    {
+      "rang": 929,
       "nom": "LES AFFRANCHIS",
-      "trophees": 136195,
+      "trophees": 136193,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 929,
+      "rang": 930,
       "nom": "Fowlk",
       "trophees": 136189,
       "membres": 49,
       "nous": false
-    },
-    {
-      "rang": 930,
-      "nom": "Clan Francais",
-      "trophees": 136189,
-      "membres": 47,
-      "nous": true
     },
     {
       "rang": 931,
@@ -61,20 +75,6 @@
       "nom": "La Taverne",
       "trophees": 136169,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 934,
-      "nom": "CLASH OF FRENCH",
-      "trophees": 136167,
-      "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 935,
-      "nom": "73Clan",
-      "trophees": 136159,
-      "membres": 49,
       "nous": false
     }
   ]
