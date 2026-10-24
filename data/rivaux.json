@@ -2,37 +2,37 @@
   "clans": [
     {
       "rang": 924,
-      "nom": "Biem's 3",
-      "trophees": 136212,
+      "nom": "Blood Order",
+      "trophees": 136211,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 925,
       "nom": "Normandie",
-      "trophees": 136211,
+      "trophees": 136208,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 926,
-      "nom": "LES ARVERNES",
-      "trophees": 136207,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 927,
       "nom": "OSTHAPATHE",
       "trophees": 136206,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 928,
+      "rang": 927,
       "nom": "Les Anciens !!",
       "trophees": 136206,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 928,
+      "nom": "LES ARVERNES",
+      "trophees": 136206,
+      "membres": 48,
       "nous": false
     },
     {
@@ -45,36 +45,36 @@
     {
       "rang": 930,
       "nom": "LES AFFRANCHIS",
-      "trophees": 136197,
+      "trophees": 136193,
       "membres": 46,
       "nous": false
     },
     {
       "rang": 931,
-      "nom": "Blood Order",
-      "trophees": 136196,
-      "membres": 50,
+      "nom": "Legion Noire",
+      "trophees": 136191,
+      "membres": 43,
       "nous": false
     },
     {
       "rang": 932,
-      "nom": "Corse",
-      "trophees": 136191,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 933,
       "nom": "Fowlk",
       "trophees": 136189,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 934,
+      "rang": 933,
       "nom": "La Taverne",
       "trophees": 136179,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 934,
+      "nom": "Les s@uv@ges",
+      "trophees": 136169,
+      "membres": 49,
       "nous": false
     }
   ]
