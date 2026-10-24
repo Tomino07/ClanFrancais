@@ -1,22 +1,15 @@
 {
   "clans": [
     {
-      "rang": 948,
-      "nom": "OSTHAPATHE",
-      "trophees": 136195,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 949,
-      "nom": "Les Anciens !!",
-      "trophees": 136195,
-      "membres": 50,
+      "nom": "Normandie",
+      "trophees": 136193,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 950,
-      "nom": "Normandie",
+      "nom": "vp back",
       "trophees": 136193,
       "membres": 48,
       "nous": false
@@ -37,22 +30,22 @@
     },
     {
       "rang": 953,
+      "nom": "LES AFFRANCHIS",
+      "trophees": 136179,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 954,
       "nom": "Clan Francais",
       "trophees": 136175,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 954,
-      "nom": "LES AFFRANCHIS",
-      "trophees": 136174,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 955,
       "nom": "(Fr) League",
-      "trophees": 136172,
+      "trophees": 136168,
       "membres": 50,
       "nous": false
     },
@@ -65,16 +58,23 @@
     },
     {
       "rang": 957,
-      "nom": "Astero Level 3",
-      "trophees": 136155,
-      "membres": 50,
+      "nom": "LES ARVERNES",
+      "trophees": 136146,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 958,
-      "nom": "LES ARVERNES",
+      "nom": "Astero Level 3",
       "trophees": 136146,
-      "membres": 48,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 959,
+      "nom": "BoA 3",
+      "trophees": 136145,
+      "membres": 42,
       "nous": false
     }
   ]
