@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 947,
-      "nom": "OSTHAPATHE",
-      "trophees": 136195,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 948,
       "nom": "Normandie",
       "trophees": 136193,
@@ -37,17 +30,17 @@
     },
     {
       "rang": 952,
+      "nom": "(Fr) League",
+      "trophees": 136178,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 953,
       "nom": "Clan Francais",
       "trophees": 136175,
       "membres": 47,
       "nous": true
-    },
-    {
-      "rang": 953,
-      "nom": "(Fr) League",
-      "trophees": 136175,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 954,
@@ -75,6 +68,13 @@
       "nom": "LES ARVERNES",
       "trophees": 136146,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 958,
+      "nom": "BoA 3",
+      "trophees": 136145,
+      "membres": 42,
       "nous": false
     }
   ]
