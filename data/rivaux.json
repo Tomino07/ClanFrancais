@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 924,
+      "nom": "Les Anciens !!",
+      "trophees": 136200,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 925,
       "nom": "LES ARVERNES",
       "trophees": 136200,
@@ -9,38 +16,38 @@
     },
     {
       "rang": 926,
+      "nom": "Barbes Grises",
+      "trophees": 136200,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 927,
       "nom": "Corse",
       "trophees": 136197,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 927,
+      "rang": 928,
       "nom": "LES AFFRANCHIS",
       "trophees": 136197,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 928,
-      "nom": "Barbes Grises",
-      "trophees": 136196,
-      "membres": 50,
-      "nous": false
+      "rang": 929,
+      "nom": "Clan Francais",
+      "trophees": 136194,
+      "membres": 47,
+      "nous": true
     },
     {
-      "rang": 929,
+      "rang": 930,
       "nom": "Fowlk",
       "trophees": 136189,
       "membres": 49,
       "nous": false
-    },
-    {
-      "rang": 930,
-      "nom": "Clan Francais",
-      "trophees": 136187,
-      "membres": 47,
-      "nous": true
     },
     {
       "rang": 931,
@@ -51,30 +58,23 @@
     },
     {
       "rang": 932,
+      "nom": "Boomanoob",
+      "trophees": 136173,
+      "membres": 42,
+      "nous": false
+    },
+    {
+      "rang": 933,
       "nom": "La Taverne",
       "trophees": 136169,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 933,
-      "nom": "13organisé",
-      "trophees": 136165,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 934,
-      "nom": "73Clan",
-      "trophees": 136159,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 935,
-      "nom": "French Experts",
-      "trophees": 136138,
-      "membres": 50,
+      "nom": "TWITCH :thober_",
+      "trophees": 136167,
+      "membres": 45,
       "nous": false
     }
   ]
