@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 915,
-      "nom": "vp back",
-      "trophees": 136204,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 916,
-      "nom": "Normandie",
-      "trophees": 136201,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 917,
-      "nom": "Barbes Grises",
-      "trophees": 136201,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 918,
       "nom": "OSTHAPATHE",
       "trophees": 136195,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 918,
+      "nom": "Barbes Grises",
+      "trophees": 136195,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 919,
+      "nom": "LES ARVERNES",
+      "trophees": 136192,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 920,
       "nom": "Fowlk",
       "trophees": 136189,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 920,
+      "rang": 921,
+      "nom": "Blood Order",
+      "trophees": 136188,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 922,
       "nom": "Clan Francais",
       "trophees": 136185,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 921,
+      "rang": 923,
       "nom": "LES AFFRANCHIS",
       "trophees": 136185,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 922,
-      "nom": "LES ARVERNES",
-      "trophees": 136184,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 923,
+      "rang": 924,
       "nom": "Legion Noire",
       "trophees": 136182,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 924,
+      "rang": 925,
       "nom": "CLASH OF FRENCH",
       "trophees": 136167,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 925,
+      "rang": 926,
       "nom": "La Taverne",
       "trophees": 136166,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 927,
+      "nom": "73Clan",
+      "trophees": 136156,
+      "membres": 49,
       "nous": false
     }
   ]

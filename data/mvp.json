@@ -1,26 +1,3 @@
 {
-  "semaine": "Saison 137 – semaine 2",
-  "podium": [
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "points": 2850,
-      "combats": 16,
-      "membre": true
-    },
-    {
-      "tag": "9QQYPPLU",
-      "nom": "Litrode",
-      "points": 1500,
-      "combats": 10,
-      "membre": true
-    },
-    {
-      "tag": "U92LYRVQY",
-      "nom": "arthur morgane",
-      "points": 950,
-      "combats": 8,
-      "membre": false
-    }
-  ]
+  "podium": []
 }
