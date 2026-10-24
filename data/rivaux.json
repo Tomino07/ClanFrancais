@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 923,
-      "nom": "Les Anciens !!",
-      "trophees": 136207,
+      "rang": 922,
+      "nom": "OSTHAPATHE",
+      "trophees": 136206,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 923,
+      "nom": "Normandie",
+      "trophees": 136204,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 924,
       "nom": "LES ARVERNES",
-      "trophees": 136206,
+      "trophees": 136202,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 925,
-      "nom": "Normandie",
-      "trophees": 136200,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 926,
       "nom": "Corse",
       "trophees": 136197,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 927,
-      "nom": "OSTHAPATHE",
-      "trophees": 136195,
-      "membres": 50,
+      "rang": 926,
+      "nom": "LES AFFRANCHIS",
+      "trophees": 136197,
+      "membres": 46,
       "nous": false
     },
     {
-      "rang": 928,
+      "rang": 927,
       "nom": "Clan Francais",
       "trophees": 136193,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 929,
-      "nom": "LES AFFRANCHIS",
-      "trophees": 136193,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 930,
+      "rang": 928,
       "nom": "Fowlk",
       "trophees": 136189,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 931,
+      "rang": 929,
       "nom": "Barbes Grises",
       "trophees": 136189,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 932,
+      "rang": 930,
       "nom": "Legion Noire",
       "trophees": 136177,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 933,
+      "rang": 931,
       "nom": "La Taverne",
-      "trophees": 136169,
+      "trophees": 136172,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 932,
+      "nom": "CLASH OF FRENCH",
+      "trophees": 136167,
+      "membres": 43,
       "nous": false
     }
   ]
