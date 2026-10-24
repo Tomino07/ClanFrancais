@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 923,
+      "rang": 924,
+      "nom": "Blood Order",
+      "trophees": 136212,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 925,
+      "nom": "Biem's 3",
+      "trophees": 136212,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 926,
       "nom": "LES ARVERNES",
       "trophees": 136211,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 924,
-      "nom": "Normandie",
-      "trophees": 136211,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 925,
-      "nom": "Biem's 3",
-      "trophees": 136210,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 926,
+      "rang": 927,
       "nom": "OSTHAPATHE",
       "trophees": 136206,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 927,
-      "nom": "Les Anciens !!",
-      "trophees": 136204,
-      "membres": 50,
+      "rang": 928,
+      "nom": "Normandie",
+      "trophees": 136203,
+      "membres": 48,
       "nous": false
     },
     {
-      "rang": 928,
+      "rang": 929,
       "nom": "Clan Francais",
       "trophees": 136201,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 929,
-      "nom": "LES AFFRANCHIS",
-      "trophees": 136200,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 930,
-      "nom": "Baguette Royale",
-      "trophees": 136194,
+      "nom": "Les Anciens !!",
+      "trophees": 136200,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 931,
-      "nom": "Corse",
-      "trophees": 136194,
-      "membres": 45,
+      "nom": "LES AFFRANCHIS",
+      "trophees": 136199,
+      "membres": 46,
       "nous": false
     },
     {
       "rang": 932,
+      "nom": "Corse",
+      "trophees": 136192,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 933,
       "nom": "Fowlk",
       "trophees": 136189,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 933,
-      "nom": "pot de miel",
-      "trophees": 136180,
-      "membres": 50,
+      "rang": 934,
+      "nom": "Legion Noire",
+      "trophees": 136179,
+      "membres": 43,
       "nous": false
     }
   ]
