@@ -2,37 +2,37 @@
   "clans": [
     {
       "rang": 948,
+      "nom": "OSTHAPATHE",
+      "trophees": 136195,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 949,
+      "nom": "Les Anciens !!",
+      "trophees": 136195,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 950,
       "nom": "Normandie",
       "trophees": 136193,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 949,
-      "nom": "Les Anciens !!",
-      "trophees": 136192,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 950,
+      "rang": 951,
       "nom": "Legion Noire",
       "trophees": 136189,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 951,
+      "rang": 952,
       "nom": "Corse",
       "trophees": 136189,
       "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 952,
-      "nom": "(Fr) League",
-      "trophees": 136178,
-      "membres": 50,
       "nous": false
     },
     {
@@ -45,36 +45,36 @@
     {
       "rang": 954,
       "nom": "LES AFFRANCHIS",
-      "trophees": 136170,
+      "trophees": 136174,
       "membres": 46,
       "nous": false
     },
     {
       "rang": 955,
+      "nom": "(Fr) League",
+      "trophees": 136172,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 956,
       "nom": "CLASH OF FRENCH",
       "trophees": 136162,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 956,
+      "rang": 957,
       "nom": "Astero Level 3",
-      "trophees": 136152,
+      "trophees": 136155,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 957,
+      "rang": 958,
       "nom": "LES ARVERNES",
       "trophees": 136146,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 958,
-      "nom": "BoA 3",
-      "trophees": 136145,
-      "membres": 42,
       "nous": false
     }
   ]
