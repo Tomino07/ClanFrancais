@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-24T15:01:52.947Z",
+  "majAt": "2026-10-24T15:31:50.467Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -22,15 +22,6 @@
       "score": 40
     },
     {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "guerre": 600,
-      "dons": 920,
-      "trophees": 60,
-      "score": 33
-    },
-    {
       "tag": "VPQ920JU",
       "nom": "benoit82",
       "role": "member",
@@ -47,6 +38,15 @@
       "dons": 87,
       "trophees": 0,
       "score": 30
+    },
+    {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "guerre": 600,
+      "dons": 920,
+      "trophees": 1,
+      "score": 29
     }
   ],
   "historique": []
