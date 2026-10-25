@@ -54,6 +54,50 @@
   "mvps": 0,
   "combats": [
     {
+      "date": "20261025T191726.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "ヌベジョン",
+      "clanAdv": "栃木@Japan",
+      "deckAdv": [
+        {
+          "nom": "Battle Ram",
+          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Royal Ghost",
+          "image": "https://api-assets.clashroyale.com/cards/300/3En2cz0ISQAaMTHY3hj3rTveFN2kJYq-H4VxvdJNvCM.png"
+        },
+        {
+          "nom": "Giant Skeleton",
+          "image": "https://api-assets.clashroyale.com/cards/300/0p0gd0XaVRu1Hb1iSG1hTYbz2AN6aEiZnhaAib5O8Z8.png"
+        },
+        {
+          "nom": "Hunter",
+          "image": "https://api-assets.clashroyale.com/cards/300/VNabB1WKnYtYRSG7X_FZfnZjQDHTBs9A96OGMFmecrA.png"
+        },
+        {
+          "nom": "Vines",
+          "image": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png"
+        },
+        {
+          "nom": "Zappies",
+          "image": "https://api-assets.clashroyale.com/cards/300/QZfHRpLRmutZbCr5fpLnTpIp89vLI6NrAwzGZ8tHEc4.png"
+        },
+        {
+          "nom": "Barbarian Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
+        }
+      ]
+    },
+    {
       "date": "20261010T163653.000Z",
       "type": "trail",
       "mode": "202610_Event_Spooky_Chess",
@@ -430,50 +474,6 @@
         {
           "nom": "Suspicious Bush",
           "image": "https://api-assets.clashroyale.com/cards/300/vqTzGAjseQv9F5rf4tsFWeocvg0dyPw1j_nB1cmDZfI.png"
-        }
-      ]
-    },
-    {
-      "date": "20260925T180631.000Z",
-      "type": "unknown",
-      "mode": "RR_Event_Mega_Monk",
-      "moi": 2,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "Rimak",
-      "clanAdv": "Algerien W Fhal",
-      "deckAdv": [
-        {
-          "nom": "Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
-        },
-        {
-          "nom": "Mega Minion",
-          "image": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png"
-        },
-        {
-          "nom": "Tesla",
-          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
-        },
-        {
-          "nom": "Hog Rider",
-          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
-        },
-        {
-          "nom": "Flying Machine",
-          "image": "https://api-assets.clashroyale.com/cards/300/hzKNE3QwFcrSrDDRuVW3QY_OnrDPijSiIp-PsWgFevE.png"
-        },
-        {
-          "nom": "Earthquake",
-          "image": "https://api-assets.clashroyale.com/cards/300/XeQXcrUu59C52DslyZVwCnbi4yamID-WxfVZLShgZmE.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
-        },
-        {
-          "nom": "Ice Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png"
         }
       ]
     }
