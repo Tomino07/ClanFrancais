@@ -1,16 +1,25 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-25T13:31:38.618Z",
+  "majAt": "2026-10-25T16:31:56.648Z",
   "classement": [
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
-      "guerre": 7750,
+      "guerre": 8700,
       "dons": 475,
       "trophees": 0,
-      "score": 63
+      "score": 62
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "role": "member",
+      "guerre": 5150,
+      "dons": 100,
+      "trophees": 98,
+      "score": 38
     },
     {
       "tag": "VPQ920JU",
@@ -18,35 +27,26 @@
       "role": "member",
       "guerre": 0,
       "dons": 337,
-      "trophees": 406,
+      "trophees": 434,
       "score": 34
     },
     {
-      "tag": "PPRJ9RGV",
-      "nom": "baboon",
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
       "role": "member",
-      "guerre": 3650,
-      "dons": 100,
-      "trophees": 98,
+      "guerre": 600,
+      "dons": 988,
+      "trophees": 66,
       "score": 32
     },
     {
       "tag": "9QQYPPLU",
       "nom": "Litrode",
       "role": "member",
-      "guerre": 4100,
+      "guerre": 4800,
       "dons": 87,
       "trophees": 0,
-      "score": 29
-    },
-    {
-      "tag": "RGRR89L22",
-      "nom": "HyperLoop-2000",
-      "role": "coLeader",
-      "guerre": 0,
-      "dons": 121,
-      "trophees": 368,
-      "score": 26
+      "score": 30
     }
   ],
   "historique": []
