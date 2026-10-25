@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 920,
+      "rang": 926,
       "nom": "Biem's 3",
+      "trophees": 136224,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 927,
+      "nom": "The French Pros",
+      "trophees": 136217,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 928,
+      "nom": "adulte france",
+      "trophees": 136217,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 929,
+      "nom": "OSTHAPATHE",
       "trophees": 136212,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 921,
-      "nom": "421 Team",
-      "trophees": 136211,
-      "membres": 49,
+      "rang": 930,
+      "nom": "Au Vieux Deck",
+      "trophees": 136212,
+      "membres": 48,
       "nous": false
     },
     {
-      "rang": 922,
-      "nom": "French Experts",
-      "trophees": 136207,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 923,
-      "nom": "Corse",
-      "trophees": 136201,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 924,
-      "nom": "france",
-      "trophees": 136201,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 925,
+      "rang": 931,
       "nom": "Clan Francais",
-      "trophees": 136200,
+      "trophees": 136209,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 926,
+      "rang": 932,
+      "nom": "Corse",
+      "trophees": 136208,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 933,
+      "nom": "421 Team",
+      "trophees": 136207,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 934,
       "nom": "Blood Order",
       "trophees": 136200,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 927,
+      "rang": 935,
       "nom": "Les s@uv@ges",
       "trophees": 136197,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 928,
-      "nom": "Les Anciens !!",
-      "trophees": 136197,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 929,
+      "rang": 936,
       "nom": "LES AFFRANCHIS",
-      "trophees": 136196,
+      "trophees": 136197,
       "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 930,
-      "nom": "Fowlk",
-      "trophees": 136189,
-      "membres": 49,
       "nous": false
     }
   ]
