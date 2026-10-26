@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 882,
+      "rang": 883,
+      "nom": "Helfe Squad",
+      "trophees": 136241,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 884,
+      "nom": "france",
+      "trophees": 136237,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 885,
       "nom": "06",
-      "trophees": 136232,
+      "trophees": 136236,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 883,
+      "rang": 886,
       "nom": "Guerrier&Cie",
       "trophees": 136227,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 884,
-      "nom": "Allez la France",
-      "trophees": 136225,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 885,
-      "nom": "france",
-      "trophees": 136225,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 886,
+      "rang": 887,
       "nom": "400% gaulois!!!",
       "trophees": 136219,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 887,
+      "rang": 888,
       "nom": "Clan Francais",
-      "trophees": 136210,
+      "trophees": 136218,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 888,
+      "rang": 889,
+      "nom": "Allez la France",
+      "trophees": 136217,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 890,
+      "nom": "BREIZH",
+      "trophees": 136213,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 891,
+      "nom": "Taytøon",
+      "trophees": 136206,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 892,
       "nom": "#OyZzzz",
       "trophees": 136195,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 889,
-      "nom": "Fowlk",
-      "trophees": 136189,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 890,
-      "nom": "les clasheurs",
-      "trophees": 136188,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 891,
-      "nom": "BlakRoyal",
-      "trophees": 136181,
-      "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 892,
-      "nom": "Taytøon",
-      "trophees": 136176,
-      "membres": 45,
+      "rang": 893,
+      "nom": "2spi",
+      "trophees": 136190,
+      "membres": 48,
       "nous": false
     }
   ]
