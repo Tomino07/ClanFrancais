@@ -1,53 +1,46 @@
 {
   "clans": [
     {
-      "rang": 895,
-      "nom": "Biem's 3",
-      "trophees": 136262,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 896,
-      "nom": "Ad Vitam",
-      "trophees": 136259,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 897,
-      "nom": "FR adulte",
-      "trophees": 136250,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 898,
       "nom": "OSTHAPATHE",
       "trophees": 136248,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 897,
+      "nom": "FR adulte",
+      "trophees": 136246,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 898,
+      "nom": "Chez Tos",
+      "trophees": 136245,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 899,
       "nom": "Taytøon",
-      "trophees": 136234,
+      "trophees": 136235,
       "membres": 45,
       "nous": false
     },
     {
       "rang": 900,
+      "nom": "-GeNeSyS-",
+      "trophees": 136231,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 901,
       "nom": "Clan Francais",
       "trophees": 136229,
       "membres": 47,
       "nous": true
-    },
-    {
-      "rang": 901,
-      "nom": "-GeNeSyS-",
-      "trophees": 136229,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 902,
@@ -75,6 +68,13 @@
       "nom": "CR ADULTES FR 4",
       "trophees": 136219,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 906,
+      "nom": "Allez la France",
+      "trophees": 136217,
+      "membres": 50,
       "nous": false
     }
   ]
