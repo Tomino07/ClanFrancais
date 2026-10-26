@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 916,
+      "nom": "Black Knights",
+      "trophees": 136227,
+      "membres": 47,
+      "nous": false
+    },
+    {
       "rang": 917,
       "nom": "ALLIANCE SUD",
       "trophees": 136226,
@@ -23,55 +30,48 @@
     },
     {
       "rang": 920,
-      "nom": "Helfe Squad",
-      "trophees": 136225,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 921,
       "nom": "OSTHAPATHE",
       "trophees": 136223,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 922,
+      "rang": 921,
       "nom": "Clan Francais",
       "trophees": 136222,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 923,
+      "rang": 922,
       "nom": "Chez Tos",
       "trophees": 136220,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 924,
+      "rang": 923,
       "nom": "Baguette Royale",
       "trophees": 136216,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 925,
+      "rang": 924,
       "nom": "E.L.I.T.E.S",
       "trophees": 136208,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 926,
+      "rang": 925,
       "nom": "france",
       "trophees": 136191,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 927,
+      "rang": 926,
       "nom": "LES AFFRANCHIS",
       "trophees": 136190,
       "membres": 46,
