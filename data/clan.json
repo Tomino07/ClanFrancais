@@ -1,8 +1,8 @@
 {
-  "majAt": "2026-10-26T22:30:57Z",
-  "rang": 898,
+  "majAt": "2026-10-26T23:30:55Z",
+  "rang": 899,
   "rangPrecedent": 922,
-  "score": 136230,
+  "score": 136234,
   "tropheesGuerre": 1807,
   "membres": 47,
   "joueurs": [
@@ -191,20 +191,20 @@
       "vu": "20261026T125441.000Z"
     },
     {
+      "tag": "2V0G2JUPV",
+      "nom": "sky",
+      "role": "member",
+      "trophees": 13543,
+      "dons": 62,
+      "vu": "20261026T231957.000Z"
+    },
+    {
       "tag": "RGRR89L22",
       "nom": "HyperLoop-2000",
       "role": "coLeader",
       "trophees": 13522,
       "dons": 0,
       "vu": "20261024T162534.000Z"
-    },
-    {
-      "tag": "2V0G2JUPV",
-      "nom": "sky",
-      "role": "member",
-      "trophees": 13513,
-      "dons": 62,
-      "vu": "20261026T160022.000Z"
     },
     {
       "tag": "QVPCVQ08R",
@@ -380,7 +380,7 @@
       "role": "leader",
       "trophees": 8500,
       "dons": 0,
-      "vu": "20261025T230758.000Z"
+      "vu": "20261026T231824.000Z"
     }
   ]
 }
