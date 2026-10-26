@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 6,
-  "majAt": "2026-10-26T01:30:56Z",
+  "majAt": "2026-10-26T02:01:11Z",
   "objectif": 10000,
   "clans": [
     {
@@ -39,8 +39,8 @@
     {
       "nom": "Gigante Noble",
       "points": 1818,
-      "aujourdhui": 0,
-      "combats": 0,
+      "aujourdhui": 100,
+      "combats": 1,
       "fini": false,
       "nous": false
     }
