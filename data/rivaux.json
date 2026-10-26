@@ -1,53 +1,46 @@
 {
   "clans": [
     {
-      "rang": 881,
+      "rang": 882,
+      "nom": "06",
+      "trophees": 136232,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 883,
       "nom": "Guerrier&Cie",
       "trophees": 136227,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 882,
-      "nom": "DOUCE FRANCE",
-      "trophees": 136226,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 883,
+      "rang": 884,
       "nom": "Allez la France",
       "trophees": 136225,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 884,
+      "rang": 885,
       "nom": "france",
-      "trophees": 136223,
+      "trophees": 136225,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 885,
+      "rang": 886,
       "nom": "400% gaulois!!!",
-      "trophees": 136216,
+      "trophees": 136219,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 886,
+      "rang": 887,
       "nom": "Clan Francais",
       "trophees": 136210,
       "membres": 47,
       "nous": true
-    },
-    {
-      "rang": 887,
-      "nom": "E.L.I.T.E.S",
-      "trophees": 136201,
-      "membres": 49,
-      "nous": false
     },
     {
       "rang": 888,
@@ -72,9 +65,16 @@
     },
     {
       "rang": 891,
-      "nom": "1ere",
-      "trophees": 136175,
-      "membres": 49,
+      "nom": "BlakRoyal",
+      "trophees": 136181,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 892,
+      "nom": "Taytøon",
+      "trophees": 136176,
+      "membres": 45,
       "nous": false
     }
   ]
