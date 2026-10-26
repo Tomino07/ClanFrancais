@@ -46,9 +46,9 @@
     "points": 0,
     "combats": 0,
     "aujourdhui": 0,
-    "type": "warDay",
-    "jour": 6,
-    "semaine": 3,
+    "type": "training",
+    "jour": 0,
+    "semaine": 4,
     "saison": 137
   },
   "mvps": 0,
@@ -430,6 +430,11 @@
   ],
   "guerres": [
     {
+      "semaine": "Saison 137 – semaine 3",
+      "points": 0,
+      "combats": 0
+    },
+    {
       "semaine": "Saison 137 – semaine 2",
       "points": 0,
       "combats": 0
@@ -471,11 +476,6 @@
     },
     {
       "semaine": "Saison 135 – semaine 3",
-      "points": 0,
-      "combats": 0
-    },
-    {
-      "semaine": "Saison 135 – semaine 2",
       "points": 0,
       "combats": 0
     }
