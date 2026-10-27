@@ -1,10 +1,24 @@
 {
   "clans": [
     {
+      "rang": 891,
+      "nom": "Taytøon",
+      "trophees": 136257,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 892,
+      "nom": "Allez la France",
+      "trophees": 136255,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 893,
-      "nom": "100% Fr",
-      "trophees": 136250,
-      "membres": 47,
+      "nom": "OSTHAPATHE",
+      "trophees": 136251,
+      "membres": 50,
       "nous": false
     },
     {
@@ -23,10 +37,10 @@
     },
     {
       "rang": 896,
-      "nom": "Guerrier&Cie",
-      "trophees": 136232,
+      "nom": "Clan Francais",
+      "trophees": 136233,
       "membres": 47,
-      "nous": false
+      "nous": true
     },
     {
       "rang": 897,
@@ -37,44 +51,30 @@
     },
     {
       "rang": 898,
-      "nom": "Clan Francais",
-      "trophees": 136227,
+      "nom": "Guerrier&Cie",
+      "trophees": 136230,
       "membres": 47,
-      "nous": true
+      "nous": false
     },
     {
       "rang": 899,
       "nom": "#DLCW FR",
-      "trophees": 136210,
+      "trophees": 136208,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 900,
-      "nom": "BZH29",
-      "trophees": 136209,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 901,
       "nom": "Arès",
       "trophees": 136206,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 902,
-      "nom": "Alterans",
-      "trophees": 136205,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 903,
-      "nom": "BS Esport Pro",
-      "trophees": 136201,
-      "membres": 43,
+      "rang": 901,
+      "nom": "BZH29",
+      "trophees": 136206,
+      "membres": 50,
       "nous": false
     }
   ]
