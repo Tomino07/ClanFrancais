@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 904,
-      "nom": "Haute Savoie",
-      "trophees": 136290,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 905,
       "nom": "Taytøon",
       "trophees": 136275,
@@ -17,37 +10,37 @@
     {
       "rang": 906,
       "nom": "Alterans",
-      "trophees": 136267,
+      "trophees": 136274,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 907,
       "nom": "Biem's 3",
-      "trophees": 136262,
+      "trophees": 136268,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 908,
+      "nom": "Legion Noire",
+      "trophees": 136266,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 909,
       "nom": "OSTHAPATHE",
       "trophees": 136254,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 909,
+      "rang": 910,
       "nom": "Clan Francais",
       "trophees": 136254,
       "membres": 47,
       "nous": true
-    },
-    {
-      "rang": 910,
-      "nom": "La Resistance",
-      "trophees": 136254,
-      "membres": 47,
-      "nous": false
     },
     {
       "rang": 911,
@@ -58,22 +51,29 @@
     },
     {
       "rang": 912,
-      "nom": "king2017",
-      "trophees": 136249,
-      "membres": 50,
+      "nom": "La Resistance",
+      "trophees": 136250,
+      "membres": 47,
       "nous": false
     },
     {
       "rang": 913,
+      "nom": "king2017",
+      "trophees": 136250,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 914,
       "nom": "Allez la France",
       "trophees": 136249,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 914,
-      "nom": "CR ADULTES FR 4",
-      "trophees": 136247,
+      "rang": 915,
+      "nom": "Atomic French",
+      "trophees": 136240,
       "membres": 49,
       "nous": false
     }
