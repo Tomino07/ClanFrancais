@@ -42,7 +42,15 @@
     }
   ],
   "ligue": 1,
-  "enCours": null,
+  "enCours": {
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
+    "type": "training",
+    "jour": 0,
+    "semaine": 4,
+    "saison": 137
+  },
   "mvps": 0,
   "combats": [
     {
@@ -135,7 +143,7 @@
     },
     {
       "date": "20260930T152832.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_CaptureTheEgg_Friendly",
       "moi": 1,
       "adv": 0,
@@ -179,7 +187,7 @@
     },
     {
       "date": "20260928T152024.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_SuperTroopBattle_Friendly",
       "moi": 1,
       "adv": 0,
@@ -223,7 +231,7 @@
     },
     {
       "date": "20260928T151632.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_FourCard_Friendly",
       "moi": 0,
       "adv": 1,
@@ -251,7 +259,7 @@
     },
     {
       "date": "20260926T151232.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_AllEvoBattle_Friendly",
       "moi": 0,
       "adv": 1,
@@ -295,7 +303,7 @@
     },
     {
       "date": "20260926T150759.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_Event_Mega_Monk",
       "moi": 2,
       "adv": 1,
@@ -339,7 +347,7 @@
     },
     {
       "date": "20260926T150435.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_Overtime_Friendly",
       "moi": 0,
       "adv": 1,
@@ -383,7 +391,7 @@
     },
     {
       "date": "20260926T150050.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_Event_Mega_Monk",
       "moi": 1,
       "adv": 2,
@@ -427,7 +435,7 @@
     },
     {
       "date": "20260925T181015.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_Heist_Friendly",
       "moi": 0,
       "adv": 3,

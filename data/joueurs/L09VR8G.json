@@ -42,7 +42,15 @@
     }
   ],
   "ligue": 1,
-  "enCours": null,
+  "enCours": {
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
+    "type": "training",
+    "jour": 0,
+    "semaine": 4,
+    "saison": 137
+  },
   "mvps": 0,
   "combats": [
     {
@@ -179,7 +187,7 @@
     },
     {
       "date": "20261003T204619.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_CaptureTheEgg_Friendly",
       "moi": 0,
       "adv": 1,
@@ -223,7 +231,7 @@
     },
     {
       "date": "20261003T204235.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_FourCard_Friendly",
       "moi": 1,
       "adv": 0,
@@ -251,7 +259,7 @@
     },
     {
       "date": "20261003T202023.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_Blackout_Friendly",
       "moi": 0,
       "adv": 1,
@@ -295,7 +303,7 @@
     },
     {
       "date": "20261003T201636.000Z",
-      "type": "unknown",
+      "type": "royaleRoulette",
       "mode": "RR_Snowball_bombardment",
       "moi": 0,
       "adv": 1,
