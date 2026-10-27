@@ -1,7 +1,7 @@
 {
   "type": "training",
   "jour": 1,
-  "majAt": "2026-10-27T22:01:11Z",
+  "majAt": "2026-10-27T22:30:56Z",
   "objectif": 10000,
   "clans": [
     {
@@ -32,7 +32,7 @@
       "nom": "Gigante Noble",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 0,
+      "combats": 3,
       "fini": false,
       "nous": false
     },
