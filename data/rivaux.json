@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 917,
+      "nom": "Biem's 3",
+      "trophees": 136267,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 918,
       "nom": "Legion Noire",
       "trophees": 136266,
@@ -30,23 +37,23 @@
     },
     {
       "rang": 922,
-      "nom": "Allez la France",
-      "trophees": 136255,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 923,
       "nom": "Clan Francais",
       "trophees": 136254,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 924,
+      "rang": 923,
       "nom": "Paris",
       "trophees": 136251,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 924,
+      "nom": "Allez la France",
+      "trophees": 136251,
+      "membres": 50,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "Clan #P29QJC2U",
       "trophees": 136230,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 928,
-      "nom": "Clan des darons",
-      "trophees": 136226,
-      "membres": 49,
       "nous": false
     }
   ]
