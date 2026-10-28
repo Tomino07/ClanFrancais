@@ -1,7 +1,7 @@
 {
   "type": "training",
   "jour": 1,
-  "majAt": "2026-10-28T02:01:09Z",
+  "majAt": "2026-10-28T02:30:55Z",
   "objectif": 10000,
   "clans": [
     {
@@ -24,7 +24,7 @@
       "nom": "Clan Francais",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 0,
+      "combats": 4,
       "fini": false,
       "nous": true
     },
@@ -40,7 +40,7 @@
       "nom": "Bandeja Paisa",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 8,
       "fini": false,
       "nous": false
     }
