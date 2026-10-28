@@ -1,53 +1,46 @@
 {
   "clans": [
     {
-      "rang": 917,
+      "rang": 918,
       "nom": "Legion Noire",
       "trophees": 136266,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 918,
+      "rang": 919,
       "nom": "Biem's 3",
       "trophees": 136264,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 919,
+      "rang": 920,
       "nom": "king2017",
       "trophees": 136257,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 920,
+      "rang": 921,
       "nom": "Guerrier&Cie",
       "trophees": 136255,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 921,
+      "rang": 922,
       "nom": "OSTHAPATHE",
       "trophees": 136254,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 922,
+      "rang": 923,
       "nom": "Clan Francais",
       "trophees": 136254,
       "membres": 47,
       "nous": true
-    },
-    {
-      "rang": 923,
-      "nom": "Paris",
-      "trophees": 136254,
-      "membres": 49,
-      "nous": false
     },
     {
       "rang": 924,
@@ -58,7 +51,7 @@
     },
     {
       "rang": 925,
-      "nom": "Chats Mignons",
+      "nom": "Paris",
       "trophees": 136251,
       "membres": 49,
       "nous": false
@@ -66,7 +59,7 @@
     {
       "rang": 926,
       "nom": "Atomic French",
-      "trophees": 136239,
+      "trophees": 136245,
       "membres": 49,
       "nous": false
     },
@@ -75,6 +68,13 @@
       "nom": "Happy Army",
       "trophees": 136232,
       "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 928,
+      "nom": "Clan #P29QJC2U",
+      "trophees": 136230,
+      "membres": 48,
       "nous": false
     }
   ]
