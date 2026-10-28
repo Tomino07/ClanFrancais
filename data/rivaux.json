@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 935,
+      "nom": "Legion Noire",
+      "trophees": 136278,
+      "membres": 43,
+      "nous": false
+    },
+    {
       "rang": 936,
       "nom": "Chats Mignons",
       "trophees": 136273,
@@ -16,50 +23,50 @@
     },
     {
       "rang": 938,
-      "nom": "Allez la France",
-      "trophees": 136267,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 939,
       "nom": "Paris",
       "trophees": 136264,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 940,
-      "nom": "Amour Froid",
-      "trophees": 136260,
-      "membres": 49,
+      "rang": 939,
+      "nom": "Allez la France",
+      "trophees": 136264,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 941,
+      "rang": 940,
       "nom": "Clan Francais",
       "trophees": 136257,
       "membres": 47,
       "nous": true
     },
     {
-      "rang": 942,
+      "rang": 941,
       "nom": "OSTHAPATHE",
       "trophees": 136257,
       "membres": 50,
       "nous": false
     },
     {
+      "rang": 942,
+      "nom": "Amour Froid",
+      "trophees": 136254,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 943,
       "nom": "Adopte Un Golem",
-      "trophees": 136252,
+      "trophees": 136250,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 944,
       "nom": "king2017",
-      "trophees": 136250,
+      "trophees": 136248,
       "membres": 50,
       "nous": false
     },
@@ -67,13 +74,6 @@
       "rang": 945,
       "nom": "1Vincible",
       "trophees": 136241,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 946,
-      "nom": "CLASH ACCROS",
-      "trophees": 136240,
       "membres": 50,
       "nous": false
     }
