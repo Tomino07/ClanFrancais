@@ -5,8 +5,8 @@
   "niveau": 73,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 6806,
-  "dons": 0,
+  "victoires": 6807,
+  "dons": 8,
   "deck": [
     {
       "nom": "Valkyrie",
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261028T164934.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena",
+      "moi": 3,
+      "adv": 1,
+      "trophees": 30,
+      "adversaire": "잣같은건싫어요",
+      "clanAdv": "대구",
+      "deckAdv": [
+        {
+          "nom": "Goblin Cage",
+          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
+        },
+        {
+          "nom": "Dark Prince",
+          "image": "https://api-assets.clashroyale.com/cards/300/M7fXlrKXHu2IvpSGpk36kXVstslbR08Bbxcy0jQcln8.png"
+        },
+        {
+          "nom": "Baby Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/cjC9n4AvEZJ3urkVh-rwBkJ-aRSsydIMqSAV48hAih0.png"
+        },
+        {
+          "nom": "Ice Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
+        },
+        {
+          "nom": "Electro Giant",
+          "image": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
+        },
+        {
+          "nom": "Barbarian Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
+        },
+        {
+          "nom": "Lightning",
+          "image": "https://api-assets.clashroyale.com/cards/300/fpnESbYqe5GyZmaVVYe-SEu7tE0Kxh_HZyVigzvLjks.png"
+        },
+        {
+          "nom": "Tornado",
+          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
+        }
+      ]
+    },
     {
       "date": "20261025T101741.000Z",
       "type": "pathOfLegend",
@@ -446,50 +490,6 @@
         {
           "nom": "Electro Wizard",
           "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        }
-      ]
-    },
-    {
-      "date": "20261018T182908.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena",
-      "moi": 0,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "EE I PatrikStar",
-      "clanAdv": "Cobra Kai",
-      "deckAdv": [
-        {
-          "nom": "Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
-        },
-        {
-          "nom": "Ice Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
-        },
-        {
-          "nom": "Tesla",
-          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
-        },
-        {
-          "nom": "Tornado",
-          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
-        },
-        {
-          "nom": "Rocket",
-          "image": "https://api-assets.clashroyale.com/cards/300/Ie07nQNK9CjhKOa4-arFAewi4EroqaA-86Xo7r5tx94.png"
-        },
-        {
-          "nom": "X-Bow",
-          "image": "https://api-assets.clashroyale.com/cards/300/zVQ9Hme1hlj9Dc6e1ORl9xWwglcSrP7ejow5mAhLUJc.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
-        },
-        {
-          "nom": "Skeletons",
-          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
         }
       ]
     }
