@@ -1,7 +1,7 @@
 {
   "type": "colosseum",
   "jour": 3,
-  "majAt": "2026-10-29T14:01:14Z",
+  "majAt": "2026-10-29T14:31:03Z",
   "objectif": null,
   "clans": [
     {
@@ -14,9 +14,9 @@
     },
     {
       "nom": "INTERCEPTOR",
-      "points": 1300,
+      "points": 1800,
       "aujourdhui": 0,
-      "combats": 8,
+      "combats": 10,
       "fini": false,
       "nous": false
     },
