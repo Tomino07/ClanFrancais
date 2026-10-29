@@ -5,8 +5,8 @@
   "niveau": 65,
   "trophees": 13035,
   "record": 13132,
-  "victoires": 4384,
-  "dons": 170,
+  "victoires": 4385,
+  "dons": 178,
   "deck": [
     {
       "nom": "Executioner",
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261029T181531.000Z",
+      "type": "trail",
+      "mode": "Chaos_1v1_Draft",
+      "moi": 1,
+      "adv": 0,
+      "trophees": null,
+      "adversaire": "Alexis",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        },
+        {
+          "nom": "Baby Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/cjC9n4AvEZJ3urkVh-rwBkJ-aRSsydIMqSAV48hAih0.png"
+        },
+        {
+          "nom": "Cannon",
+          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
+        },
+        {
+          "nom": "Goblin Machine",
+          "image": "https://api-assets.clashroyale.com/cards/300/-iLlotr6GCFndL_1BSBqWBb6DnsHBhLerd5EblZDNfU.png"
+        },
+        {
+          "nom": "Barbarian Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
+        },
+        {
+          "nom": "Barbarian Hut",
+          "image": "https://api-assets.clashroyale.com/cards/300/ho0nOG2y3Ch86elHHcocQs8Fv_QNe0cFJ2CijsxABZA.png"
+        },
+        {
+          "nom": "Hunter",
+          "image": "https://api-assets.clashroyale.com/cards/300/VNabB1WKnYtYRSG7X_FZfnZjQDHTBs9A96OGMFmecrA.png"
+        },
+        {
+          "nom": "Bomb Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/rirYRyHPc97emRjoH-c1O8uZCBzPVnToaGuNGusF3TQ.png"
+        }
+      ]
+    },
     {
       "date": "20261029T112911.000Z",
       "type": "trail",
@@ -446,50 +490,6 @@
         {
           "nom": "Earthquake",
           "image": "https://api-assets.clashroyale.com/cards/300/XeQXcrUu59C52DslyZVwCnbi4yamID-WxfVZLShgZmE.png"
-        }
-      ]
-    },
-    {
-      "date": "20261027T163320.000Z",
-      "type": "trail",
-      "mode": "Chaos_1v1_Draft",
-      "moi": 0,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "trix",
-      "clanAdv": "folk valley",
-      "deckAdv": [
-        {
-          "nom": "Barbarian Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
-        },
-        {
-          "nom": "Firecracker",
-          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
-        },
-        {
-          "nom": "Goblin Cage",
-          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
-        },
-        {
-          "nom": "X-Bow",
-          "image": "https://api-assets.clashroyale.com/cards/300/zVQ9Hme1hlj9Dc6e1ORl9xWwglcSrP7ejow5mAhLUJc.png"
-        },
-        {
-          "nom": "Inferno Dragon",
-          "image": "https://api-assets.clashroyale.com/cards/300/y5HDbKtTbWG6En6TGWU0xoVIGs1-iQpIP4HC-VM7u8A.png"
-        },
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Cannon Cart",
-          "image": "https://api-assets.clashroyale.com/cards/300/aqwxRz8HXzqlMCO4WMXNA1txynjXTsLinknqsgZLbok.png"
         }
       ]
     }

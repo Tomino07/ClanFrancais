@@ -5,7 +5,7 @@
   "niveau": 66,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 5066,
+  "victoires": 5067,
   "dons": 106,
   "deck": [
     {
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261029T181424.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "Dreamscop",
+      "clanAdv": "Diamond Dust",
+      "deckAdv": [
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Mini P.E.K.K.A",
+          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
+        },
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Vines",
+          "image": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png"
+        },
+        {
+          "nom": "Cannon",
+          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Baby Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/cjC9n4AvEZJ3urkVh-rwBkJ-aRSsydIMqSAV48hAih0.png"
+        },
+        {
+          "nom": "Graveyard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Icp8BIyyfBTj1ncCJS7mb82SY7TPV-MAE-J2L2R48DI.png"
+        }
+      ]
+    },
     {
       "date": "20261029T162551.000Z",
       "type": "pathOfLegend",
@@ -446,50 +490,6 @@
         {
           "nom": "Goblin Barrel",
           "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
-        }
-      ]
-    },
-    {
-      "date": "20261028T194512.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena",
-      "moi": 2,
-      "adv": 3,
-      "trophees": null,
-      "adversaire": "javadjh.6",
-      "clanAdv": "پرنده تنها",
-      "deckAdv": [
-        {
-          "nom": "Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        },
-        {
-          "nom": "Royal Giant",
-          "image": "https://api-assets.clashroyale.com/cards/300/mnlRaNtmfpQx2e6mp70sLd0ND-pKPF70Cf87_agEKg4.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
-        },
-        {
-          "nom": "Goblin Gang",
-          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
-        },
-        {
-          "nom": "Cannon",
-          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
-        },
-        {
-          "nom": "Royal Delivery",
-          "image": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png"
-        },
-        {
-          "nom": "Electro Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png"
         }
       ]
     }
