@@ -1,14 +1,14 @@
 {
-  "type": "training",
-  "jour": 2,
-  "majAt": "2026-10-29T09:30:58Z",
-  "objectif": 10000,
+  "type": "colosseum",
+  "jour": 3,
+  "majAt": "2026-10-29T10:01:09Z",
+  "objectif": null,
   "clans": [
     {
       "nom": "11",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 7,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
@@ -16,7 +16,7 @@
       "nom": "INTERCEPTOR",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 8,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
@@ -24,7 +24,7 @@
       "nom": "Clan Francais",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 5,
+      "combats": 0,
       "fini": false,
       "nous": true
     },
@@ -32,7 +32,7 @@
       "nom": "Gigante Noble",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 2,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
