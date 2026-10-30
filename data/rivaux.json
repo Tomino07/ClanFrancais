@@ -9,21 +9,21 @@
     },
     {
       "rang": 953,
-      "nom": "France Eternel",
-      "trophees": 136221,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 954,
       "nom": "les Basques",
       "trophees": 136218,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 955,
+      "rang": 954,
       "nom": "Clans Formateur",
+      "trophees": 136214,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 955,
+      "nom": "France Eternel",
       "trophees": 136214,
       "membres": 50,
       "nous": false
@@ -58,23 +58,23 @@
     },
     {
       "rang": 960,
-      "nom": "DBZ SAIYANS",
-      "trophees": 136187,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 961,
       "nom": "Les Industriels",
-      "trophees": 136185,
+      "trophees": 136189,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 962,
-      "nom": "13ème clan !",
-      "trophees": 136182,
+      "rang": 961,
+      "nom": "Band of Adultes",
+      "trophees": 136188,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 962,
+      "nom": "DBZ SAIYANS",
+      "trophees": 136187,
+      "membres": 50,
       "nous": false
     }
   ]
