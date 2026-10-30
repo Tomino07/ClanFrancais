@@ -1,59 +1,73 @@
 {
   "clans": [
     {
-      "rang": 954,
+      "rang": 952,
       "nom": "Clan #RLYPYR2G",
-      "trophees": 136226,
+      "trophees": 136227,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 955,
+      "rang": 953,
+      "nom": "France Eternel",
+      "trophees": 136221,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 954,
       "nom": "les Basques",
       "trophees": 136218,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 956,
+      "rang": 955,
       "nom": "Clans Formateur",
-      "trophees": 136218,
+      "trophees": 136214,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 957,
-      "nom": "France Eternel",
-      "trophees": 136207,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 958,
+      "rang": 956,
       "nom": "39-45",
-      "trophees": 136206,
+      "trophees": 136205,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 959,
+      "rang": 957,
       "nom": "Clan Francais",
       "trophees": 136202,
       "membres": 47,
       "nous": true
     },
     {
+      "rang": 958,
+      "nom": "Helfe Squad",
+      "trophees": 136194,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 959,
+      "nom": "French TransiT",
+      "trophees": 136191,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 960,
-      "nom": "Les Industriels",
-      "trophees": 136200,
-      "membres": 48,
+      "nom": "DBZ SAIYANS",
+      "trophees": 136187,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 961,
-      "nom": "Helfe Squad",
-      "trophees": 136194,
-      "membres": 47,
+      "nom": "Les Industriels",
+      "trophees": 136185,
+      "membres": 48,
       "nous": false
     },
     {
@@ -61,20 +75,6 @@
       "nom": "13ème clan !",
       "trophees": 136182,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 963,
-      "nom": "OSSLYON",
-      "trophees": 136179,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 964,
-      "nom": "913ème",
-      "trophees": 136163,
-      "membres": 46,
       "nous": false
     }
   ]
