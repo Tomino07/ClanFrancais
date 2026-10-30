@@ -2,23 +2,23 @@
   "clans": [
     {
       "rang": 954,
+      "nom": "Clan #RLYPYR2G",
+      "trophees": 136226,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 955,
       "nom": "les Basques",
       "trophees": 136218,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 955,
+      "rang": 956,
       "nom": "Clans Formateur",
       "trophees": 136218,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 956,
-      "nom": "ATW",
-      "trophees": 136212,
-      "membres": 49,
       "nous": false
     },
     {
@@ -45,7 +45,7 @@
     {
       "rang": 960,
       "nom": "Les Industriels",
-      "trophees": 136196,
+      "trophees": 136200,
       "membres": 48,
       "nous": false
     },
@@ -58,23 +58,23 @@
     },
     {
       "rang": 962,
-      "nom": "Invictus",
-      "trophees": 136193,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 963,
       "nom": "13ème clan !",
       "trophees": 136182,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 964,
+      "rang": 963,
       "nom": "OSSLYON",
       "trophees": 136179,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 964,
+      "nom": "913ème",
+      "trophees": 136163,
+      "membres": 46,
       "nous": false
     }
   ]
