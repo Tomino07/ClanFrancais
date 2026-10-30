@@ -1,7 +1,7 @@
 {
   "mois": "2026-10",
   "libelle": "octobre 2026",
-  "majAt": "2026-10-30T09:01:52.847Z",
+  "majAt": "2026-10-30T09:31:36.591Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -31,6 +31,15 @@
       "score": 34
     },
     {
+      "tag": "UV20LCP22",
+      "nom": "Xtazz27",
+      "role": "member",
+      "guerre": 1625,
+      "dons": 876,
+      "trophees": 117,
+      "score": 33
+    },
+    {
       "tag": "8GGQG28YU",
       "nom": "grand-père",
       "role": "member",
@@ -38,15 +47,6 @@
       "dons": 1166,
       "trophees": 35,
       "score": 30
-    },
-    {
-      "tag": "UV20LCP22",
-      "nom": "Xtazz27",
-      "role": "member",
-      "guerre": 1625,
-      "dons": 868,
-      "trophees": 27,
-      "score": 28
     }
   ],
   "historique": []
