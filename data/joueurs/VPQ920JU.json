@@ -54,6 +54,50 @@
   "mvps": 0,
   "combats": [
     {
+      "date": "20261030T154736.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 1,
+      "trophees": -30,
+      "adversaire": "LuiguiLoo",
+      "clanAdv": "gg I troll;)",
+      "deckAdv": [
+        {
+          "nom": "Princess",
+          "image": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Firecracker",
+          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
+        },
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Bats",
+          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        },
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        },
+        {
+          "nom": "Tesla",
+          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
+        }
+      ]
+    },
+    {
       "date": "20261030T114211.000Z",
       "type": "trail",
       "mode": "Ladder",
@@ -446,50 +490,6 @@
         {
           "nom": "Royal Delivery",
           "image": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png"
-        }
-      ]
-    },
-    {
-      "date": "20261029T111529.000Z",
-      "type": "trail",
-      "mode": "Ladder",
-      "moi": 0,
-      "adv": 1,
-      "trophees": -6,
-      "adversaire": "stanhopp",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Valkyrie",
-          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
-        },
-        {
-          "nom": "Mini P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
-        },
-        {
-          "nom": "Little Prince",
-          "image": "https://api-assets.clashroyale.com/cards/300/dY-gSseki6KBpkIG17safHH5YlB8SErFZO9OXbJxf9w.png"
-        },
-        {
-          "nom": "Elite Barbarians",
-          "image": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
-        },
-        {
-          "nom": "Electro Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        },
-        {
-          "nom": "Mirror",
-          "image": "https://api-assets.clashroyale.com/cards/300/wC6Cm9rKLEOk72zTsukVwxewKIoO4ZcMJun54zCPWvA.png"
-        },
-        {
-          "nom": "Prince",
-          "image": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png"
-        },
-        {
-          "nom": "Inferno Tower",
-          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
         }
       ]
     }
