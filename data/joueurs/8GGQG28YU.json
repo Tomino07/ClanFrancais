@@ -47,12 +47,56 @@
     "combats": 0,
     "aujourdhui": 0,
     "type": "colosseum",
-    "jour": 3,
+    "jour": 4,
     "semaine": 4,
     "saison": 137
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261030T093659.000Z",
+      "type": "trail",
+      "mode": "Chaos_1v1_Draft",
+      "moi": 0,
+      "adv": 3,
+      "trophees": null,
+      "adversaire": "Luke",
+      "clanAdv": "im crowning",
+      "deckAdv": [
+        {
+          "nom": "Night Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/NpCrXDEDBBJgNv9QrBAcJmmMFbS7pe3KCY8xJ5VB18A.png"
+        },
+        {
+          "nom": "Poison",
+          "image": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png"
+        },
+        {
+          "nom": "Barbarian Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
+        },
+        {
+          "nom": "Cannon Cart",
+          "image": "https://api-assets.clashroyale.com/cards/300/aqwxRz8HXzqlMCO4WMXNA1txynjXTsLinknqsgZLbok.png"
+        },
+        {
+          "nom": "Barbarian Hut",
+          "image": "https://api-assets.clashroyale.com/cards/300/ho0nOG2y3Ch86elHHcocQs8Fv_QNe0cFJ2CijsxABZA.png"
+        },
+        {
+          "nom": "Ronin",
+          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
+        },
+        {
+          "nom": "Goblin Cage",
+          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
+        },
+        {
+          "nom": "Wall Breakers",
+          "image": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png"
+        }
+      ]
+    },
     {
       "date": "20261029T181531.000Z",
       "type": "trail",
@@ -446,50 +490,6 @@
         {
           "nom": "Electro Spirit",
           "image": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png"
-        }
-      ]
-    },
-    {
-      "date": "20261028T115537.000Z",
-      "type": "trail",
-      "mode": "Chaos_1v1_Draft",
-      "moi": 0,
-      "adv": 3,
-      "trophees": null,
-      "adversaire": "можнов",
-      "clanAdv": "Dagestan Empire",
-      "deckAdv": [
-        {
-          "nom": "Mother Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
-        },
-        {
-          "nom": "Elixir Collector",
-          "image": "https://api-assets.clashroyale.com/cards/300/BGLo3Grsp81c72EpxLLk-Sofk3VY56zahnUNOv3JcT0.png"
-        },
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Royal Hogs",
-          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
-        },
-        {
-          "nom": "Night Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/NpCrXDEDBBJgNv9QrBAcJmmMFbS7pe3KCY8xJ5VB18A.png"
-        },
-        {
-          "nom": "Cannon",
-          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
-        },
-        {
-          "nom": "Vines",
-          "image": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png"
-        },
-        {
-          "nom": "Earthquake",
-          "image": "https://api-assets.clashroyale.com/cards/300/XeQXcrUu59C52DslyZVwCnbi4yamID-WxfVZLShgZmE.png"
         }
       ]
     }
