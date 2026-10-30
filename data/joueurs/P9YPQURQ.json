@@ -5,7 +5,7 @@
   "niveau": 79,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 28770,
+  "victoires": 28771,
   "dons": 26,
   "deck": [
     {
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261030T055958.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena",
+      "moi": 2,
+      "adv": 1,
+      "trophees": 28,
+      "adversaire": "Dogg Master",
+      "clanAdv": "無言",
+      "deckAdv": [
+        {
+          "nom": "Bats",
+          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Firecracker",
+          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
+        },
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Giant Skeleton",
+          "image": "https://api-assets.clashroyale.com/cards/300/0p0gd0XaVRu1Hb1iSG1hTYbz2AN6aEiZnhaAib5O8Z8.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Goblin Gang",
+          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
+        },
+        {
+          "nom": "Zap",
+          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
+        }
+      ]
+    },
     {
       "date": "20261029T201942.000Z",
       "type": "pathOfLegend",
@@ -446,50 +490,6 @@
         {
           "nom": "Wall Breakers",
           "image": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png"
-        }
-      ]
-    },
-    {
-      "date": "20261028T180806.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena",
-      "moi": 2,
-      "adv": 0,
-      "trophees": 31,
-      "adversaire": "mart",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Electro Dragon",
-          "image": "https://api-assets.clashroyale.com/cards/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png"
-        },
-        {
-          "nom": "Inferno Tower",
-          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
-        },
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
-        },
-        {
-          "nom": "Night Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/NpCrXDEDBBJgNv9QrBAcJmmMFbS7pe3KCY8xJ5VB18A.png"
-        },
-        {
-          "nom": "Elixir Golem",
-          "image": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Tornado",
-          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
         }
       ]
     }
