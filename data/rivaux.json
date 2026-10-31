@@ -1,51 +1,58 @@
 {
   "clans": [
     {
-      "rang": 949,
+      "rang": 948,
       "nom": "Lames d'Hécate",
       "trophees": 136221,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 950,
+      "rang": 949,
       "nom": "les Basques",
-      "trophees": 136218,
+      "trophees": 136221,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 951,
+      "rang": 950,
       "nom": "Clans Formateur",
       "trophees": 136214,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 952,
+      "rang": 951,
       "nom": "France Eternel",
       "trophees": 136214,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 953,
+      "rang": 952,
       "nom": "39-45",
       "trophees": 136204,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 954,
+      "rang": 953,
       "nom": "Clan Francais",
       "trophees": 136202,
       "membres": 47,
       "nous": true
     },
     {
+      "rang": 954,
+      "nom": "DBZ SAIYANS",
+      "trophees": 136196,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 955,
       "nom": "Helfe Squad",
-      "trophees": 136200,
+      "trophees": 136194,
       "membres": 47,
       "nous": false
     },
@@ -68,13 +75,6 @@
       "nom": "Band of Adultes",
       "trophees": 136188,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 959,
-      "nom": "DBZ SAIYANS",
-      "trophees": 136181,
-      "membres": 50,
       "nous": false
     }
   ]
