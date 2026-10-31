@@ -1,17 +1,10 @@
 {
   "clans": [
     {
-      "rang": 950,
+      "rang": 951,
       "nom": "les Basques",
       "trophees": 136224,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 951,
-      "nom": "Lames d'Hécate",
-      "trophees": 136221,
-      "membres": 45,
       "nous": false
     },
     {
@@ -37,17 +30,17 @@
     },
     {
       "rang": 955,
-      "nom": "Clan Francais",
-      "trophees": 136202,
-      "membres": 47,
-      "nous": true
-    },
-    {
-      "rang": 956,
       "nom": "Helfe Squad",
       "trophees": 136201,
       "membres": 47,
       "nous": false
+    },
+    {
+      "rang": 956,
+      "nom": "Clan Francais",
+      "trophees": 136201,
+      "membres": 47,
+      "nous": true
     },
     {
       "rang": 957,
@@ -75,6 +68,13 @@
       "nom": "French TransiT",
       "trophees": 136182,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 961,
+      "nom": "Adultes",
+      "trophees": 136180,
+      "membres": 46,
       "nous": false
     }
   ]
