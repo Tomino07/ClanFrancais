@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 950,
+      "nom": "les Basques",
+      "trophees": 136224,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 951,
       "nom": "Lames d'Hécate",
       "trophees": 136221,
@@ -9,72 +16,65 @@
     },
     {
       "rang": 952,
-      "nom": "les Basques",
-      "trophees": 136221,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 953,
       "nom": "Clans Formateur",
       "trophees": 136214,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 954,
+      "rang": 953,
       "nom": "France Eternel",
       "trophees": 136214,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 955,
+      "rang": 954,
       "nom": "39-45",
       "trophees": 136204,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 956,
+      "rang": 955,
       "nom": "Clan Francais",
       "trophees": 136202,
       "membres": 47,
       "nous": true
     },
     {
+      "rang": 956,
+      "nom": "Helfe Squad",
+      "trophees": 136201,
+      "membres": 47,
+      "nous": false
+    },
+    {
       "rang": 957,
       "nom": "DBZ SAIYANS",
-      "trophees": 136196,
+      "trophees": 136197,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 958,
-      "nom": "Helfe Squad",
-      "trophees": 136194,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 959,
       "nom": "Les Industriels",
       "trophees": 136193,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 960,
-      "nom": "French TransiT",
-      "trophees": 136191,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 961,
+      "rang": 959,
       "nom": "Band of Adultes",
       "trophees": 136188,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 960,
+      "nom": "French TransiT",
+      "trophees": 136182,
+      "membres": 50,
       "nous": false
     }
   ]
