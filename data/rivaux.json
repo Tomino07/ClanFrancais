@@ -23,22 +23,22 @@
     },
     {
       "rang": 954,
+      "nom": "Helfe Squad",
+      "trophees": 136205,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 955,
       "nom": "39-45",
       "trophees": 136204,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 955,
-      "nom": "Helfe Squad",
-      "trophees": 136201,
-      "membres": 47,
-      "nous": false
-    },
-    {
       "rang": 956,
       "nom": "Clan Francais",
-      "trophees": 136201,
+      "trophees": 136204,
       "membres": 47,
       "nous": true
     },
@@ -72,9 +72,9 @@
     },
     {
       "rang": 961,
-      "nom": "Adultes",
+      "nom": "13ème clan !",
       "trophees": 136180,
-      "membres": 46,
+      "membres": 47,
       "nous": false
     }
   ]
