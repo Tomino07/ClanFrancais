@@ -1,7 +1,7 @@
 {
   "type": "colosseum",
   "jour": 5,
-  "majAt": "2026-10-31T16:30:49Z",
+  "majAt": "2026-10-31T17:01:04Z",
   "objectif": null,
   "clans": [
     {
@@ -22,17 +22,17 @@
     },
     {
       "nom": "Clan Francais",
-      "points": 1450,
+      "points": 2000,
       "aujourdhui": 0,
-      "combats": 0,
+      "combats": 4,
       "fini": false,
       "nous": true
     },
     {
       "nom": "Bandeja Paisa",
-      "points": 1200,
+      "points": 1300,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 5,
       "fini": false,
       "nous": false
     },
