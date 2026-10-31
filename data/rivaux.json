@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 852,
+      "rang": 854,
+      "nom": "Elite Azur",
+      "trophees": 136505,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 855,
       "nom": "essonne 91",
       "trophees": 136503,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 853,
+      "rang": 856,
       "nom": "! Alliance Fr",
       "trophees": 136502,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 854,
-      "nom": "Les Anarchistes",
-      "trophees": 136501,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 855,
+      "rang": 857,
       "nom": "Atlantes",
-      "trophees": 136501,
+      "trophees": 136496,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 856,
+      "rang": 858,
       "nom": "adulte france",
       "trophees": 136488,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 857,
+      "rang": 859,
       "nom": "Clan Francais",
       "trophees": 136478,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 858,
+      "rang": 860,
+      "nom": "CLUB FR",
+      "trophees": 136477,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 861,
       "nom": "OSSLYON",
-      "trophees": 136474,
+      "trophees": 136471,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 859,
+      "rang": 862,
       "nom": "SOLF SUPREMACY",
       "trophees": 136470,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 860,
-      "nom": "CLUB FR",
+      "rang": 863,
+      "nom": "LES ZEUS",
       "trophees": 136470,
-      "membres": 50,
+      "membres": 44,
       "nous": false
     },
     {
-      "rang": 861,
+      "rang": 864,
       "nom": "France Actif",
       "trophees": 136468,
       "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 862,
-      "nom": "LES ZEUS",
-      "trophees": 136468,
-      "membres": 44,
       "nous": false
     }
   ]
