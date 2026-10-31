@@ -1,7 +1,7 @@
 {
   "type": "colosseum",
   "jour": 4,
-  "majAt": "2026-10-31T09:01:04Z",
+  "majAt": "2026-10-31T09:30:51Z",
   "objectif": null,
   "clans": [
     {
@@ -22,9 +22,9 @@
     },
     {
       "nom": "Clan Francais",
-      "points": 1250,
+      "points": 1450,
       "aujourdhui": 0,
-      "combats": 3,
+      "combats": 4,
       "fini": false,
       "nous": true
     },
