@@ -54,6 +54,182 @@
   "mvps": 0,
   "combats": [
     {
+      "date": "20261031T155813.000Z",
+      "type": "friendly",
+      "mode": "Chaos_1v1_Draft",
+      "moi": 3,
+      "adv": 0,
+      "trophees": null,
+      "adversaire": "Florestre__",
+      "clanAdv": "AviónDePapel",
+      "deckAdv": [
+        {
+          "nom": "Barbarian Hut",
+          "image": "https://api-assets.clashroyale.com/cards/300/ho0nOG2y3Ch86elHHcocQs8Fv_QNe0cFJ2CijsxABZA.png"
+        },
+        {
+          "nom": "Royal Delivery",
+          "image": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        },
+        {
+          "nom": "Elixir Collector",
+          "image": "https://api-assets.clashroyale.com/cards/300/BGLo3Grsp81c72EpxLLk-Sofk3VY56zahnUNOv3JcT0.png"
+        },
+        {
+          "nom": "Bomb Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/rirYRyHPc97emRjoH-c1O8uZCBzPVnToaGuNGusF3TQ.png"
+        },
+        {
+          "nom": "Berserker",
+          "image": "https://api-assets.clashroyale.com/cards/300/NA6W8S1JBYBlOPwD3dNvJLFvVDKq-UuBs_J3i3ewLFI.png"
+        },
+        {
+          "nom": "Electro Giant",
+          "image": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
+        }
+      ]
+    },
+    {
+      "date": "20261031T155426.000Z",
+      "type": "friendly",
+      "mode": "Chaos_1v1_Draft",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "Florestre__",
+      "clanAdv": "AviónDePapel",
+      "deckAdv": [
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Mega Minion",
+          "image": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png"
+        },
+        {
+          "nom": "Earthquake",
+          "image": "https://api-assets.clashroyale.com/cards/300/XeQXcrUu59C52DslyZVwCnbi4yamID-WxfVZLShgZmE.png"
+        },
+        {
+          "nom": "Inferno Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
+        },
+        {
+          "nom": "Goblin Cage",
+          "image": "https://api-assets.clashroyale.com/cards/300/vD24bBgK4rSq7wx5QEbuqChtPMRFviL_ep76GwQw1yA.png"
+        },
+        {
+          "nom": "Goblin Machine",
+          "image": "https://api-assets.clashroyale.com/cards/300/-iLlotr6GCFndL_1BSBqWBb6DnsHBhLerd5EblZDNfU.png"
+        }
+      ]
+    },
+    {
+      "date": "20261031T155008.000Z",
+      "type": "friendly",
+      "mode": "Chaos_1v1_Draft",
+      "moi": 2,
+      "adv": 0,
+      "trophees": null,
+      "adversaire": "Florestre__",
+      "clanAdv": "AviónDePapel",
+      "deckAdv": [
+        {
+          "nom": "Rocket",
+          "image": "https://api-assets.clashroyale.com/cards/300/Ie07nQNK9CjhKOa4-arFAewi4EroqaA-86Xo7r5tx94.png"
+        },
+        {
+          "nom": "Electro Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Princess",
+          "image": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png"
+        },
+        {
+          "nom": "Elixir Collector",
+          "image": "https://api-assets.clashroyale.com/cards/300/BGLo3Grsp81c72EpxLLk-Sofk3VY56zahnUNOv3JcT0.png"
+        },
+        {
+          "nom": "Bomb Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/rirYRyHPc97emRjoH-c1O8uZCBzPVnToaGuNGusF3TQ.png"
+        },
+        {
+          "nom": "Rage",
+          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
+        }
+      ]
+    },
+    {
+      "date": "20261031T154541.000Z",
+      "type": "friendly",
+      "mode": "Chaos_1v1_Draft",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "Florestre__",
+      "clanAdv": "AviónDePapel",
+      "deckAdv": [
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Royal Hogs",
+          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
+        },
+        {
+          "nom": "Poison",
+          "image": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png"
+        },
+        {
+          "nom": "Phoenix",
+          "image": "https://api-assets.clashroyale.com/cards/300/i0RoY1fs6ay7VAxyFEfZGIPnD002nAKcne9FtJsWBHM.png"
+        },
+        {
+          "nom": "Bomb Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/rirYRyHPc97emRjoH-c1O8uZCBzPVnToaGuNGusF3TQ.png"
+        },
+        {
+          "nom": "Inferno Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
+        },
+        {
+          "nom": "Flying Machine",
+          "image": "https://api-assets.clashroyale.com/cards/300/hzKNE3QwFcrSrDDRuVW3QY_OnrDPijSiIp-PsWgFevE.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        }
+      ]
+    },
+    {
       "date": "20261030T174510.000Z",
       "type": "friendly",
       "mode": "Chaos_1v1_Draft",
@@ -314,182 +490,6 @@
         {
           "nom": "The Log",
           "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
-        }
-      ]
-    },
-    {
-      "date": "20261026T190525.000Z",
-      "type": "trail",
-      "mode": "Crazy_Arena_PowerSurge",
-      "moi": 0,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "M@n@v",
-      "clanAdv": "NOWAR",
-      "deckAdv": [
-        {
-          "nom": "Electro Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        },
-        {
-          "nom": "Ronin",
-          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
-        },
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Tesla",
-          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
-        },
-        {
-          "nom": "Berserker",
-          "image": "https://api-assets.clashroyale.com/cards/300/NA6W8S1JBYBlOPwD3dNvJLFvVDKq-UuBs_J3i3ewLFI.png"
-        },
-        {
-          "nom": "Poison",
-          "image": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png"
-        },
-        {
-          "nom": "Bandit",
-          "image": "https://api-assets.clashroyale.com/cards/300/QWDdXMKJNpv0go-HYaWQWP6p8uIOHjqn-zX7G0p3DyM.png"
-        },
-        {
-          "nom": "Vines",
-          "image": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png"
-        }
-      ]
-    },
-    {
-      "date": "20261026T114120.000Z",
-      "type": "trail",
-      "mode": "Crazy_Arena_PowerSurge",
-      "moi": 1,
-      "adv": 0,
-      "trophees": null,
-      "adversaire": "raylan",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Electro Giant",
-          "image": "https://api-assets.clashroyale.com/cards/300/_uChZkNHAMq6tPb3v6A49xinOe3CnhjstOhG6OZbPYc.png"
-        },
-        {
-          "nom": "Electro Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png"
-        },
-        {
-          "nom": "Wall Breakers",
-          "image": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Cannon",
-          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
-        },
-        {
-          "nom": "Princess",
-          "image": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png"
-        },
-        {
-          "nom": "Royal Hogs",
-          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
-        },
-        {
-          "nom": "Elixir Golem",
-          "image": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
-        }
-      ]
-    },
-    {
-      "date": "20261026T113602.000Z",
-      "type": "trail",
-      "mode": "Crazy_Arena_PowerSurge",
-      "moi": 0,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "y.llb",
-      "clanAdv": "РУССКИЕ",
-      "deckAdv": [
-        {
-          "nom": "Archers",
-          "image": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Ronin",
-          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
-        },
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Royal Hogs",
-          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
-        },
-        {
-          "nom": "Skeleton Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
-        },
-        {
-          "nom": "Barbarian Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
-        }
-      ]
-    },
-    {
-      "date": "20261026T113006.000Z",
-      "type": "trail",
-      "mode": "Crazy_Arena_PowerSurge",
-      "moi": 0,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "暇神",
-      "clanAdv": "We're Burdocks",
-      "deckAdv": [
-        {
-          "nom": "Berserker",
-          "image": "https://api-assets.clashroyale.com/cards/300/NA6W8S1JBYBlOPwD3dNvJLFvVDKq-UuBs_J3i3ewLFI.png"
-        },
-        {
-          "nom": "Archers",
-          "image": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
-        },
-        {
-          "nom": "Skeleton Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
-        },
-        {
-          "nom": "Ronin",
-          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Poison",
-          "image": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Barbarian Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
         }
       ]
     }
