@@ -1,14 +1,14 @@
 {
   "type": "colosseum",
-  "jour": 4,
-  "majAt": "2026-10-31T09:30:51Z",
+  "jour": 5,
+  "majAt": "2026-10-31T10:01:01Z",
   "objectif": null,
   "clans": [
     {
       "nom": "11",
       "points": 10150,
       "aujourdhui": 0,
-      "combats": 36,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
@@ -16,7 +16,7 @@
       "nom": "INTERCEPTOR",
       "points": 3700,
       "aujourdhui": 0,
-      "combats": 11,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
@@ -24,7 +24,7 @@
       "nom": "Clan Francais",
       "points": 1450,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 0,
       "fini": false,
       "nous": true
     },
