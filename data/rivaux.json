@@ -1,66 +1,73 @@
 {
   "clans": [
     {
-      "rang": 854,
-      "nom": "Elite Azur",
+      "rang": 853,
+      "nom": "-PARABELLUM-",
       "trophees": 136507,
-      "membres": 49,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 854,
+      "nom": "essonne 91",
+      "trophees": 136504,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 855,
       "nom": "Atlantes",
-      "trophees": 136502,
+      "trophees": 136503,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 856,
-      "nom": "essonne 91",
+      "nom": "Les Anarchistes",
       "trophees": 136501,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 857,
-      "nom": "Les Anarchistes",
-      "trophees": 136498,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 858,
       "nom": "adulte france",
       "trophees": 136484,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 859,
+      "rang": 858,
       "nom": "Clan Francais",
       "trophees": 136478,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 860,
+      "rang": 859,
       "nom": "SOLF SUPREMACY",
       "trophees": 136470,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 861,
+      "rang": 860,
       "nom": "France Actif",
       "trophees": 136468,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 862,
+      "rang": 861,
       "nom": "LES ZEUS",
       "trophees": 136468,
       "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 862,
+      "nom": "Elsassclub",
+      "trophees": 136468,
+      "membres": 49,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "OSSLYON",
       "trophees": 136465,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 864,
-      "nom": "Ad Gloriam",
-      "trophees": 136464,
-      "membres": 46,
       "nous": false
     }
   ]
