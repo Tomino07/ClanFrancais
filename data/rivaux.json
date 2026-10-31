@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 856,
-      "nom": "Elite Azur",
-      "trophees": 136500,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 857,
       "nom": "NoahFamily",
       "trophees": 136500,
@@ -16,65 +9,72 @@
     },
     {
       "rang": 858,
+      "nom": "Elite Azur",
+      "trophees": 136500,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 859,
       "nom": "Les Anarchistes",
       "trophees": 136492,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 859,
+      "rang": 860,
       "nom": "adulte france",
       "trophees": 136484,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 860,
-      "nom": "92i",
-      "trophees": 136484,
-      "membres": 49,
+      "rang": 861,
+      "nom": "essonne 91",
+      "trophees": 136480,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 861,
+      "rang": 862,
       "nom": "Clan Francais",
       "trophees": 136478,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 862,
-      "nom": "essonne 91",
+      "rang": 863,
+      "nom": "Gel a Rage",
       "trophees": 136474,
-      "membres": 50,
+      "membres": 47,
       "nous": false
     },
     {
-      "rang": 863,
+      "rang": 864,
       "nom": "Tilted Towers",
       "trophees": 136473,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 864,
-      "nom": "Gel a Rage",
-      "trophees": 136473,
-      "membres": 47,
-      "nous": false
-    },
-    {
       "rang": 865,
-      "nom": "SOLF SUPREMACY",
-      "trophees": 136467,
-      "membres": 47,
+      "nom": "les clasheurs",
+      "trophees": 136470,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 866,
-      "nom": "LES ZEUS",
-      "trophees": 136463,
-      "membres": 44,
+      "nom": "Clash FR",
+      "trophees": 136469,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 867,
+      "nom": "SOLF SUPREMACY",
+      "trophees": 136467,
+      "membres": 47,
       "nous": false
     }
   ]
