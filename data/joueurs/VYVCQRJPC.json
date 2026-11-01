@@ -5,7 +5,7 @@
   "niveau": 59,
   "trophees": 9161,
   "record": 9161,
-  "victoires": 2911,
+  "victoires": 2912,
   "dons": 68,
   "deck": [
     {
@@ -43,9 +43,9 @@
   ],
   "ligue": 1,
   "enCours": {
-    "points": 0,
-    "combats": 0,
-    "aujourdhui": 0,
+    "points": 200,
+    "combats": 1,
+    "aujourdhui": 1,
     "type": "colosseum",
     "jour": 6,
     "semaine": 4,
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261101T153501.000Z",
+      "type": "riverRacePvP",
+      "mode": "Touchdown_ClanWar",
+      "moi": 3,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "YelmoPR",
+      "clanAdv": "Santa Maria PR",
+      "deckAdv": [
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Ice Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Baby Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/cjC9n4AvEZJ3urkVh-rwBkJ-aRSsydIMqSAV48hAih0.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Archers",
+          "image": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        }
+      ]
+    },
     {
       "date": "20261101T091144.000Z",
       "type": "PvP",
