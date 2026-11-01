@@ -1,13 +1,13 @@
 {
   "mois": "2026-11",
   "libelle": "novembre 2026",
-  "majAt": "2026-11-01T19:06:43.251Z",
+  "majAt": "2026-11-01T19:31:36.204Z",
   "classement": [
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
-      "guerre": 2000,
+      "guerre": 2600,
       "dons": 0,
       "trophees": 0,
       "score": 50
@@ -19,23 +19,14 @@
       "guerre": 600,
       "dons": 58,
       "trophees": 32,
-      "score": 48
-    },
-    {
-      "tag": "PGJRVUJRU",
-      "nom": "Victor Natan",
-      "role": "member",
-      "guerre": 0,
-      "dons": 40,
-      "trophees": 34,
-      "score": 26
+      "score": 39
     },
     {
       "tag": "8GGQG28YU",
       "nom": "grand-père",
       "role": "member",
       "guerre": 0,
-      "dons": 60,
+      "dons": 78,
       "trophees": 0,
       "score": 25
     },
@@ -47,6 +38,15 @@
       "dons": 0,
       "trophees": 92,
       "score": 25
+    },
+    {
+      "tag": "PGJRVUJRU",
+      "nom": "Victor Natan",
+      "role": "member",
+      "guerre": 0,
+      "dons": 40,
+      "trophees": 34,
+      "score": 22
     }
   ],
   "historique": [
