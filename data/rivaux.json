@@ -1,17 +1,24 @@
 {
   "clans": [
     {
+      "rang": 856,
+      "nom": "Elite Azur",
+      "trophees": 136498,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 857,
-      "nom": "Gel a Rage",
-      "trophees": 136488,
-      "membres": 47,
+      "nom": "adulte france",
+      "trophees": 136494,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 858,
-      "nom": "adulte france",
-      "trophees": 136488,
-      "membres": 50,
+      "nom": "Gel a Rage",
+      "trophees": 136491,
+      "membres": 47,
       "nous": false
     },
     {
@@ -30,17 +37,17 @@
     },
     {
       "rang": 861,
-      "nom": "Astero Level 9",
-      "trophees": 136482,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 862,
       "nom": "Clan Francais",
       "trophees": 136481,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 862,
+      "nom": "Astero Level 9",
+      "trophees": 136477,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 863,
@@ -68,13 +75,6 @@
       "nom": "LES ZEUS",
       "trophees": 136470,
       "membres": 44,
-      "nous": false
-    },
-    {
-      "rang": 867,
-      "nom": "Clash FR",
-      "trophees": 136470,
-      "membres": 50,
       "nous": false
     }
   ]
