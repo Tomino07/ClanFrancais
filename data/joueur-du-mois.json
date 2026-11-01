@@ -1,8 +1,17 @@
 {
   "mois": "2026-11",
   "libelle": "novembre 2026",
-  "majAt": "2026-11-01T08:01:34.610Z",
+  "majAt": "2026-11-01T09:01:41.464Z",
   "classement": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "guerre": 2000,
+      "dons": 0,
+      "trophees": 0,
+      "score": 50
+    },
     {
       "tag": "PGJRVUJRU",
       "nom": "Victor Natan",
@@ -33,15 +42,6 @@
     {
       "tag": "VPQ920JU",
       "nom": "benoit82",
-      "role": "member",
-      "guerre": 0,
-      "dons": 0,
-      "trophees": 0,
-      "score": 0
-    },
-    {
-      "tag": "LCUPLPR09",
-      "nom": "axou",
       "role": "member",
       "guerre": 0,
       "dons": 0,

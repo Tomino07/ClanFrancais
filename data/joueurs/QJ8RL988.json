@@ -42,7 +42,15 @@
     }
   ],
   "ligue": 1,
-  "enCours": null,
+  "enCours": {
+    "points": 2000,
+    "combats": 12,
+    "aujourdhui": 4,
+    "type": "colosseum",
+    "jour": 5,
+    "semaine": 4,
+    "saison": 137
+  },
   "mvps": 10,
   "combats": [
     {
