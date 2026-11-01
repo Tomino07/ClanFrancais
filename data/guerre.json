@@ -1,7 +1,7 @@
 {
   "type": "colosseum",
   "jour": 6,
-  "majAt": "2026-11-01T21:01:05Z",
+  "majAt": "2026-11-01T21:30:53Z",
   "objectif": null,
   "clans": [
     {
@@ -30,9 +30,9 @@
     },
     {
       "nom": "Bandeja Paisa",
-      "points": 3000,
+      "points": 3100,
       "aujourdhui": 0,
-      "combats": 9,
+      "combats": 10,
       "fini": false,
       "nous": false
     },
