@@ -1,7 +1,7 @@
 {
   "type": "colosseum",
   "jour": 6,
-  "majAt": "2026-11-01T11:30:51Z",
+  "majAt": "2026-11-01T12:30:51Z",
   "objectif": null,
   "clans": [
     {
@@ -21,6 +21,14 @@
       "nous": false
     },
     {
+      "nom": "Bandeja Paisa",
+      "points": 2100,
+      "aujourdhui": 0,
+      "combats": 4,
+      "fini": false,
+      "nous": false
+    },
+    {
       "nom": "Clan Francais",
       "points": 2000,
       "aujourdhui": 0,
@@ -31,14 +39,6 @@
     {
       "nom": "Gigante Noble",
       "points": 1400,
-      "aujourdhui": 0,
-      "combats": 0,
-      "fini": false,
-      "nous": false
-    },
-    {
-      "nom": "Bandeja Paisa",
-      "points": 1300,
       "aujourdhui": 0,
       "combats": 0,
       "fini": false,
