@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 857,
+      "rang": 858,
+      "nom": "Gel a Rage",
+      "trophees": 136488,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 859,
       "nom": "Les_poneys",
       "trophees": 136486,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 858,
+      "rang": 860,
       "nom": "adulte france",
       "trophees": 136485,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 859,
+      "rang": 861,
       "nom": "Latitude 49",
       "trophees": 136482,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 860,
+      "rang": 862,
       "nom": "Astero Level 9",
       "trophees": 136482,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 861,
+      "rang": 863,
+      "nom": "Clan Francais",
+      "trophees": 136481,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 864,
       "nom": "Clash FR",
       "trophees": 136478,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 862,
-      "nom": "Clan Francais",
-      "trophees": 136478,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 863,
+      "rang": 865,
       "nom": "Elsassclub",
       "trophees": 136475,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 864,
+      "rang": 866,
       "nom": "France Actif",
       "trophees": 136474,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 865,
+      "rang": 867,
       "nom": "OSSLYON",
       "trophees": 136472,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 866,
+      "rang": 868,
       "nom": "SOLF SUPREMACY",
       "trophees": 136471,
       "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 867,
-      "nom": "LES ZEUS",
-      "trophees": 136470,
-      "membres": 44,
       "nous": false
     }
   ]
