@@ -1,14 +1,14 @@
 {
   "type": "colosseum",
   "jour": 6,
-  "majAt": "2026-11-01T10:30:51Z",
+  "majAt": "2026-11-01T11:01:03Z",
   "objectif": null,
   "clans": [
     {
       "nom": "11",
-      "points": 12050,
+      "points": 12250,
       "aujourdhui": 0,
-      "combats": 0,
+      "combats": 2,
       "fini": false,
       "nous": false
     },

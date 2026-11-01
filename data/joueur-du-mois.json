@@ -1,7 +1,7 @@
 {
   "mois": "2026-11",
   "libelle": "novembre 2026",
-  "majAt": "2026-11-01T10:31:30.421Z",
+  "majAt": "2026-11-01T11:01:45.150Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -22,6 +22,15 @@
       "score": 34
     },
     {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "guerre": 0,
+      "dons": 20,
+      "trophees": 0,
+      "score": 25
+    },
+    {
       "tag": "PGJRVUJRU",
       "nom": "Victor Natan",
       "role": "member",
@@ -36,17 +45,8 @@
       "role": "member",
       "guerre": 0,
       "dons": 0,
-      "trophees": 30,
-      "score": 8
-    },
-    {
-      "tag": "P9YPQURQ",
-      "nom": "samuel",
-      "role": "member",
-      "guerre": 0,
-      "dons": 0,
-      "trophees": 0,
-      "score": 0
+      "trophees": 92,
+      "score": 24
     }
   ],
   "historique": [
