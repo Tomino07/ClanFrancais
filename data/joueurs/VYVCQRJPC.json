@@ -43,13 +43,13 @@
   ],
   "ligue": 1,
   "enCours": {
-    "points": 600,
-    "combats": 4,
-    "aujourdhui": 4,
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
     "type": "colosseum",
     "jour": 6,
     "semaine": 4,
-    "saison": 137
+    "saison": 138
   },
   "mvps": 0,
   "combats": [
@@ -362,5 +362,11 @@
       ]
     }
   ],
-  "guerres": []
+  "guerres": [
+    {
+      "semaine": "Saison 137 – semaine 4",
+      "points": 600,
+      "combats": 4
+    }
+  ]
 }

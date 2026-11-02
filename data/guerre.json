@@ -1,46 +1,46 @@
 {
   "type": "colosseum",
   "jour": 6,
-  "majAt": "2026-11-02T09:30:56Z",
+  "majAt": "2026-11-02T09:51:53Z",
   "objectif": null,
   "clans": [
     {
       "nom": "11",
-      "points": 14600,
+      "points": 0,
       "aujourdhui": 0,
-      "combats": 16,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
     {
       "nom": "INTERCEPTOR",
-      "points": 6000,
+      "points": 0,
       "aujourdhui": 0,
-      "combats": 6,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
     {
       "nom": "Clan Francais",
-      "points": 3200,
+      "points": 0,
       "aujourdhui": 0,
-      "combats": 8,
+      "combats": 0,
       "fini": false,
       "nous": true
     },
     {
-      "nom": "Bandeja Paisa",
-      "points": 3100,
+      "nom": "Gigante Noble",
+      "points": 0,
       "aujourdhui": 0,
-      "combats": 10,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
     {
-      "nom": "Gigante Noble",
-      "points": 2100,
+      "nom": "Bandeja Paisa",
+      "points": 0,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 0,
       "fini": false,
       "nous": false
     }
