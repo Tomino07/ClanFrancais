@@ -6,7 +6,7 @@
   "trophees": 13009,
   "record": 13132,
   "victoires": 4395,
-  "dons": 24,
+  "dons": 42,
   "deck": [
     {
       "nom": "Executioner",
@@ -42,15 +42,7 @@
     }
   ],
   "ligue": 1,
-  "enCours": {
-    "points": 0,
-    "combats": 0,
-    "aujourdhui": 0,
-    "type": "training",
-    "jour": 0,
-    "semaine": 1,
-    "saison": 138
-  },
+  "enCours": null,
   "mvps": 0,
   "combats": [
     {
