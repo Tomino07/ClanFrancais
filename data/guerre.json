@@ -1,19 +1,11 @@
 {
-  "type": "colosseum",
-  "jour": 6,
-  "majAt": "2026-11-02T09:51:53Z",
-  "objectif": null,
+  "type": "training",
+  "jour": 0,
+  "majAt": "2026-11-02T10:31:01Z",
+  "objectif": 10000,
   "clans": [
     {
-      "nom": "11",
-      "points": 0,
-      "aujourdhui": 0,
-      "combats": 0,
-      "fini": false,
-      "nous": false
-    },
-    {
-      "nom": "INTERCEPTOR",
+      "nom": "INDIANS",
       "points": 0,
       "aujourdhui": 0,
       "combats": 0,
@@ -29,7 +21,7 @@
       "nous": true
     },
     {
-      "nom": "Gigante Noble",
+      "nom": "DARK",
       "points": 0,
       "aujourdhui": 0,
       "combats": 0,
@@ -37,7 +29,15 @@
       "nous": false
     },
     {
-      "nom": "Bandeja Paisa",
+      "nom": "akacze spustacz",
+      "points": 0,
+      "aujourdhui": 0,
+      "combats": 0,
+      "fini": false,
+      "nous": false
+    },
+    {
+      "nom": "Deutschland",
       "points": 0,
       "aujourdhui": 0,
       "combats": 0,
