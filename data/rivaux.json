@@ -2,37 +2,37 @@
   "clans": [
     {
       "rang": 848,
+      "nom": "Alpha",
+      "trophees": 136504,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 849,
       "nom": "#Les Champions!",
       "trophees": 136503,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 849,
+      "rang": 850,
       "nom": "Clash FR",
       "trophees": 136498,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 850,
-      "nom": "Auvergnat touch",
-      "trophees": 136494,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 851,
       "nom": "NoahFamily",
-      "trophees": 136493,
+      "trophees": 136496,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 852,
-      "nom": "99,9% adulte",
-      "trophees": 136492,
-      "membres": 48,
+      "nom": "Auvergnat touch",
+      "trophees": 136494,
+      "membres": 49,
       "nous": false
     },
     {
@@ -44,37 +44,37 @@
     },
     {
       "rang": 854,
+      "nom": "99,9% adulte",
+      "trophees": 136489,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 855,
       "nom": "Arès",
       "trophees": 136479,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 855,
+      "rang": 856,
       "nom": "Presque4 FRANCE",
       "trophees": 136474,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 856,
+      "rang": 857,
       "nom": "LES ZEUS",
       "trophees": 136470,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 857,
+      "rang": 858,
       "nom": "France",
       "trophees": 136469,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 858,
-      "nom": "SOLF SUPREMACY",
-      "trophees": 136468,
-      "membres": 47,
       "nous": false
     }
   ]

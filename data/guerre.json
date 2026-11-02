@@ -1,7 +1,7 @@
 {
   "type": "colosseum",
   "jour": 6,
-  "majAt": "2026-11-02T03:30:54Z",
+  "majAt": "2026-11-02T04:01:04Z",
   "objectif": null,
   "clans": [
     {
@@ -38,9 +38,9 @@
     },
     {
       "nom": "Gigante Noble",
-      "points": 1400,
+      "points": 2100,
       "aujourdhui": 0,
-      "combats": 0,
+      "combats": 4,
       "fini": false,
       "nous": false
     }
