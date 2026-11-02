@@ -1,18 +1,34 @@
 {
-  "majAt": "2026-11-02T16:01:14Z",
-  "rang": 848,
+  "majAt": "2026-11-02T17:01:11Z",
+  "rang": 846,
   "rangPrecedent": 854,
-  "score": 136490,
+  "score": 136486,
   "tropheesGuerre": 1782,
   "membres": 48,
   "joueurs": [
+    {
+      "tag": "VPQ920JU",
+      "nom": "benoit82",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 20,
+      "vu": "20261102T165307.000Z"
+    },
     {
       "tag": "P0GGYJ82P",
       "nom": "Exilaight",
       "role": "member",
       "trophees": 14000,
       "dons": 0,
-      "vu": "20261102T154424.000Z"
+      "vu": "20261102T165208.000Z"
+    },
+    {
+      "tag": "2PU9RGV90",
+      "nom": "eddy",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 26,
+      "vu": "20261102T164504.000Z"
     },
     {
       "tag": "28920L2YV",
@@ -47,14 +63,6 @@
       "vu": "20261102T122838.000Z"
     },
     {
-      "tag": "VPQ920JU",
-      "nom": "benoit82",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 20,
-      "vu": "20261102T105716.000Z"
-    },
-    {
       "tag": "LCUPLPR09",
       "nom": "axou",
       "role": "member",
@@ -85,14 +93,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261101T144224.000Z"
-    },
-    {
-      "tag": "2PU9RGV90",
-      "nom": "eddy",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261025T191338.000Z"
     },
     {
       "tag": "90UG89L9L",
@@ -180,7 +180,7 @@
       "role": "member",
       "trophees": 13875,
       "dons": 0,
-      "vu": "20261102T150343.000Z"
+      "vu": "20261102T162740.000Z"
     },
     {
       "tag": "PQLRPYLV8",
@@ -231,14 +231,6 @@
       "vu": "20261102T160045.000Z"
     },
     {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "trophees": 13037,
-      "dons": 24,
-      "vu": "20261102T153654.000Z"
-    },
-    {
       "tag": "CPJQ9LJPG",
       "nom": "Nehoray",
       "role": "member",
@@ -269,6 +261,14 @@
       "trophees": 13024,
       "dons": 0,
       "vu": "20261023T105347.000Z"
+    },
+    {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "trophees": 13009,
+      "dons": 24,
+      "vu": "20261102T161645.000Z"
     },
     {
       "tag": "PPRJ9RGV",
