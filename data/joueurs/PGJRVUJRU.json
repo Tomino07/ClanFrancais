@@ -6,7 +6,7 @@
   "trophees": 8720,
   "record": 8806,
   "victoires": 1008,
-  "dons": 0,
+  "dons": 34,
   "deck": [
     {
       "nom": "Wizard",
@@ -38,7 +38,15 @@
     }
   ],
   "ligue": 1,
-  "enCours": null,
+  "enCours": {
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
+    "type": "training",
+    "jour": 0,
+    "semaine": 1,
+    "saison": 138
+  },
   "mvps": 0,
   "combats": [
     {
