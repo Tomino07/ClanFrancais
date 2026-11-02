@@ -5,7 +5,7 @@
   "niveau": 73,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 6819,
+  "victoires": 6821,
   "dons": 26,
   "deck": [
     {
@@ -41,7 +41,7 @@
       "image": "https://api-assets.clashroyale.com/cards/300/Wyjq5l0IXHTkX9Rmpap6HaH08MvjbxFp1xBO9a47YSI.png"
     }
   ],
-  "ligue": 2,
+  "ligue": 3,
   "enCours": {
     "points": 0,
     "combats": 0,
@@ -53,6 +53,94 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261101T233503.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena",
+      "moi": 2,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "Nightmare Fredy",
+      "clanAdv": "United Kings GT",
+      "deckAdv": [
+        {
+          "nom": "Musketeer",
+          "image": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png"
+        },
+        {
+          "nom": "Ice Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
+        },
+        {
+          "nom": "Ice Golem",
+          "image": "https://api-assets.clashroyale.com/cards/300/r05cmpwV1o7i7FHodtZwW3fmjbXCW34IJCsDEV5cZC4.png"
+        },
+        {
+          "nom": "Ronin",
+          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Goblin Gang",
+          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
+        }
+      ]
+    },
+    {
+      "date": "20261101T233135.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "米科喜欢冰淇淋",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Princess",
+          "image": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png"
+        },
+        {
+          "nom": "Inferno Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
+        },
+        {
+          "nom": "Goblin Gang",
+          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Ice Spirit",
+          "image": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png"
+        },
+        {
+          "nom": "Rocket",
+          "image": "https://api-assets.clashroyale.com/cards/300/Ie07nQNK9CjhKOa4-arFAewi4EroqaA-86Xo7r5tx94.png"
+        }
+      ]
+    },
     {
       "date": "20261101T232719.000Z",
       "type": "pathOfLegend",
@@ -402,94 +490,6 @@
         {
           "nom": "Skeletons",
           "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
-        }
-      ]
-    },
-    {
-      "date": "20261101T225537.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena",
-      "moi": 1,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "terminatorsergi",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Musketeer",
-          "image": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png"
-        },
-        {
-          "nom": "Giant",
-          "image": "https://api-assets.clashroyale.com/cards/300/Axr4ox5_b7edmLsoHxBX3vmgijAIibuF6RImTbqLlXE.png"
-        },
-        {
-          "nom": "Valkyrie",
-          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
-        },
-        {
-          "nom": "Goblin Gang",
-          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
-        },
-        {
-          "nom": "Battle Ram",
-          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
-        },
-        {
-          "nom": "Mini P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
-        },
-        {
-          "nom": "Firecracker",
-          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
-        }
-      ]
-    },
-    {
-      "date": "20261101T170637.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena",
-      "moi": 1,
-      "adv": 2,
-      "trophees": null,
-      "adversaire": "SaidRaptor22®",
-      "clanAdv": "Knock Out MX",
-      "deckAdv": [
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        },
-        {
-          "nom": "Electro Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        },
-        {
-          "nom": "Mega Minion",
-          "image": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png"
-        },
-        {
-          "nom": "Sparky",
-          "image": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png"
-        },
-        {
-          "nom": "Goblin Giant",
-          "image": "https://api-assets.clashroyale.com/cards/300/SoW16cY3jXBwaTDvb39DkqiVsoFVaDWbzf5QBYphJrY.png"
-        },
-        {
-          "nom": "Mini P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
-        },
-        {
-          "nom": "Dark Prince",
-          "image": "https://api-assets.clashroyale.com/cards/300/M7fXlrKXHu2IvpSGpk36kXVstslbR08Bbxcy0jQcln8.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
         }
       ]
     }
