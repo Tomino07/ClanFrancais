@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 873,
-      "nom": "Hunters",
-      "trophees": 136527,
-      "membres": 45,
-      "nous": false
-    },
-    {
       "rang": 874,
       "nom": "NoahFamily",
       "trophees": 136525,
@@ -16,38 +9,38 @@
     },
     {
       "rang": 875,
+      "nom": "ELITE CLASH",
+      "trophees": 136501,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 876,
       "nom": "French Team",
       "trophees": 136500,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 876,
-      "nom": "ELITE CLASH",
+      "rang": 877,
+      "nom": "Miracle03",
       "trophees": 136497,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 877,
+      "rang": 878,
       "nom": "12345678910",
       "trophees": 136496,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 878,
+      "rang": 879,
       "nom": "Clan Francais",
       "trophees": 136495,
       "membres": 48,
       "nous": true
-    },
-    {
-      "rang": 879,
-      "nom": "Miracle03",
-      "trophees": 136494,
-      "membres": 46,
-      "nous": false
     },
     {
       "rang": 880,
@@ -58,23 +51,30 @@
     },
     {
       "rang": 881,
-      "nom": "Auvergnat touch",
-      "trophees": 136486,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 882,
       "nom": "Les Anciens !!",
       "trophees": 136484,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 883,
+      "rang": 882,
       "nom": "Alpha",
       "trophees": 136483,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 883,
+      "nom": "Barbes Grises",
+      "trophees": 136483,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 884,
+      "nom": "Auvergnat touch",
+      "trophees": 136483,
+      "membres": 49,
       "nous": false
     }
   ]
