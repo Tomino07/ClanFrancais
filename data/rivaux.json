@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 864,
+      "nom": "NoahFamily",
+      "trophees": 136515,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 865,
       "nom": "NoPainNoGame",
       "trophees": 136506,
@@ -30,17 +37,17 @@
     },
     {
       "rang": 869,
-      "nom": "BrokenWorld",
-      "trophees": 136493,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 870,
       "nom": "Clan Francais",
       "trophees": 136489,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 870,
+      "nom": "BrokenWorld",
+      "trophees": 136488,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 871,
@@ -67,13 +74,6 @@
       "rang": 874,
       "nom": "DarkWater",
       "trophees": 136463,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 875,
-      "nom": "Adopte Un Golem",
-      "trophees": 136456,
       "membres": 50,
       "nous": false
     }
