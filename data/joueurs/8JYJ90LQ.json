@@ -5,7 +5,7 @@
   "niveau": 64,
   "trophees": 12646,
   "record": 12673,
-  "victoires": 5210,
+  "victoires": 5211,
   "dons": 0,
   "deck": [
     {
@@ -42,7 +42,15 @@
     }
   ],
   "ligue": 1,
-  "enCours": null,
+  "enCours": {
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
+    "type": "training",
+    "jour": 1,
+    "semaine": 1,
+    "saison": 138
+  },
   "mvps": 0,
   "combats": [
     {
