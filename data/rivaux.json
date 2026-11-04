@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 880,
+      "nom": "Miracle03",
+      "trophees": 136506,
+      "membres": 46,
+      "nous": false
+    },
+    {
       "rang": 881,
       "nom": "French Team",
       "trophees": 136500,
@@ -30,17 +37,17 @@
     },
     {
       "rang": 885,
+      "nom": "Clan Francais",
+      "trophees": 136493,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 886,
       "nom": "12345678910",
       "trophees": 136492,
       "membres": 50,
       "nous": false
-    },
-    {
-      "rang": 886,
-      "nom": "Clan Francais",
-      "trophees": 136490,
-      "membres": 48,
-      "nous": true
     },
     {
       "rang": 887,
@@ -68,13 +75,6 @@
       "nom": "Barbes Grises",
       "trophees": 136474,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 891,
-      "nom": "ADULTES KILLERS",
-      "trophees": 136474,
-      "membres": 50,
       "nous": false
     }
   ]

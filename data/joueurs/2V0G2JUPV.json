@@ -3,9 +3,9 @@
   "nom": "sky",
   "role": "Membre",
   "niveau": 72,
-  "trophees": 13609,
+  "trophees": 13636,
   "record": 13718,
-  "victoires": 6623,
+  "victoires": 6624,
   "dons": 88,
   "deck": [
     {
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261104T030607.000Z",
+      "type": "PvP",
+      "mode": "Ladder",
+      "moi": 2,
+      "adv": 1,
+      "trophees": 27,
+      "adversaire": "Doria",
+      "clanAdv": "clãbli",
+      "deckAdv": [
+        {
+          "nom": "Firecracker",
+          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Lumberjack",
+          "image": "https://api-assets.clashroyale.com/cards/300/E6RWrnCuk13xMX5OE1EQtLEKTZQV6B78d00y8PlXt6Q.png"
+        },
+        {
+          "nom": "Skeletons",
+          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Inferno Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
+        },
+        {
+          "nom": "Balloon",
+          "image": "https://api-assets.clashroyale.com/cards/300/qBipxLo-3hhCnPrApp2Nn3b2NgrSrvwzWytvREev0CY.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        }
+      ]
+    },
     {
       "date": "20261103T110017.000Z",
       "type": "PvP",
@@ -446,50 +490,6 @@
         {
           "nom": "Battle Ram",
           "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
-        }
-      ]
-    },
-    {
-      "date": "20261103T035621.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 1,
-      "adv": 0,
-      "trophees": 29,
-      "adversaire": "Horsenips",
-      "clanAdv": "ASU SUN DEVILS",
-      "deckAdv": [
-        {
-          "nom": "Dart Goblin",
-          "image": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png"
-        },
-        {
-          "nom": "Rage",
-          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
-        },
-        {
-          "nom": "Archers",
-          "image": "https://api-assets.clashroyale.com/cards/300/W4Hmp8MTSdXANN8KdblbtHwtsbt0o749BbxNqmJYfA8.png"
-        },
-        {
-          "nom": "Bats",
-          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        },
-        {
-          "nom": "Skeleton Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
-        },
-        {
-          "nom": "Prince",
-          "image": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png"
-        },
-        {
-          "nom": "Elite Barbarians",
-          "image": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
         }
       ]
     }
