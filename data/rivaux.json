@@ -1,31 +1,24 @@
 {
   "clans": [
     {
-      "rang": 880,
-      "nom": "NoahFamily",
-      "trophees": 136519,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 881,
-      "nom": "French Team",
-      "trophees": 136507,
+      "nom": "YT : RezonK_",
+      "trophees": 136510,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 882,
-      "nom": "Miracle03",
-      "trophees": 136506,
-      "membres": 46,
+      "nom": "French Team",
+      "trophees": 136510,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 883,
-      "nom": "YT : RezonK_",
+      "nom": "Miracle03",
       "trophees": 136506,
-      "membres": 50,
+      "membres": 46,
       "nous": false
     },
     {
@@ -37,17 +30,17 @@
     },
     {
       "rang": 885,
-      "nom": "Clan Francais",
-      "trophees": 136500,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 886,
       "nom": "ELITE CLASH",
       "trophees": 136498,
       "membres": 46,
       "nous": false
+    },
+    {
+      "rang": 886,
+      "nom": "Clan Francais",
+      "trophees": 136496,
+      "membres": 48,
+      "nous": true
     },
     {
       "rang": 887,
@@ -75,6 +68,13 @@
       "nom": "Les Anciens !!",
       "trophees": 136484,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 891,
+      "nom": "Auvergnat touch",
+      "trophees": 136483,
+      "membres": 49,
       "nous": false
     }
   ]
