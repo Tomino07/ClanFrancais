@@ -1,65 +1,51 @@
 {
   "clans": [
     {
-      "rang": 901,
-      "nom": "- Les Freros",
-      "trophees": 136500,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 902,
+      "rang": 903,
       "nom": "Dream Team FR",
       "trophees": 136499,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 903,
+      "rang": 904,
       "nom": "Miracle03",
       "trophees": 136498,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 904,
+      "rang": 905,
+      "nom": "BrokenWorld",
+      "trophees": 136497,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 906,
       "nom": "Angry Frenchies",
       "trophees": 136496,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 905,
+      "rang": 907,
       "nom": "NoahFamily",
       "trophees": 136495,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 906,
+      "rang": 908,
       "nom": "Clan Francais",
       "trophees": 136494,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 907,
-      "nom": "BrokenWorld",
-      "trophees": 136494,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 908,
-      "nom": "Adulte FR +18",
-      "trophees": 136492,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 909,
       "nom": "Alpha",
-      "trophees": 136490,
+      "trophees": 136488,
       "membres": 50,
       "nous": false
     },
@@ -75,6 +61,20 @@
       "nom": "DarkWater",
       "trophees": 136480,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 912,
+      "nom": "OG Clan",
+      "trophees": 136477,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 913,
+      "nom": "#royalekush",
+      "trophees": 136472,
+      "membres": 47,
       "nous": false
     }
   ]
