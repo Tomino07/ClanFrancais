@@ -2,29 +2,29 @@
   "clans": [
     {
       "rang": 902,
-      "nom": "12345678910",
-      "trophees": 136505,
+      "nom": "Alpha",
+      "trophees": 136506,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 903,
+      "nom": "68fr",
+      "trophees": 136505,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 904,
       "nom": "Adulte FR +18",
       "trophees": 136503,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 904,
+      "rang": 905,
       "nom": "- Les Freros",
       "trophees": 136501,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 905,
-      "nom": "Les Anciens !!",
-      "trophees": 136499,
       "membres": 50,
       "nous": false
     },
@@ -45,7 +45,7 @@
     {
       "rang": 908,
       "nom": "Akatsuki",
-      "trophees": 136481,
+      "trophees": 136488,
       "membres": 50,
       "nous": false
     },
@@ -65,16 +65,16 @@
     },
     {
       "rang": 911,
-      "nom": "Barbes Grises",
-      "trophees": 136474,
-      "membres": 49,
+      "nom": "! Arrakis 9 !",
+      "trophees": 136472,
+      "membres": 44,
       "nous": false
     },
     {
       "rang": 912,
-      "nom": "! Arrakis 9 !",
-      "trophees": 136472,
-      "membres": 44,
+      "nom": "CR France",
+      "trophees": 136471,
+      "membres": 48,
       "nous": false
     }
   ]
