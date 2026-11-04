@@ -1,5 +1,5 @@
 {
-  "majAt": "2026-11-04T12:01:10Z",
+  "majAt": "2026-11-04T12:30:53Z",
   "rang": 894,
   "rangPrecedent": 885,
   "score": 136496,
@@ -7,12 +7,20 @@
   "membres": 48,
   "joueurs": [
     {
+      "tag": "LCUPLPR09",
+      "nom": "axou",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 86,
+      "vu": "20261104T123049.000Z"
+    },
+    {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
       "trophees": 14000,
       "dons": 60,
-      "vu": "20261104T114935.000Z"
+      "vu": "20261104T122753.000Z"
     },
     {
       "tag": "J9LP8Y8",
@@ -20,7 +28,7 @@
       "role": "member",
       "trophees": 14000,
       "dons": 8,
-      "vu": "20261104T113251.000Z"
+      "vu": "20261104T121109.000Z"
     },
     {
       "tag": "V8UVQCGLR",
@@ -69,14 +77,6 @@
       "trophees": 14000,
       "dons": 26,
       "vu": "20261103T224410.000Z"
-    },
-    {
-      "tag": "LCUPLPR09",
-      "nom": "axou",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 86,
-      "vu": "20261103T170502.000Z"
     },
     {
       "tag": "28920L2YV",
@@ -332,7 +332,7 @@
       "role": "member",
       "trophees": 12314,
       "dons": 0,
-      "vu": "20261104T110242.000Z"
+      "vu": "20261104T121823.000Z"
     },
     {
       "tag": "CRU9VJY29",
@@ -356,7 +356,7 @@
       "role": "member",
       "trophees": 12000,
       "dons": 0,
-      "vu": "20261104T094836.000Z"
+      "vu": "20261104T121152.000Z"
     },
     {
       "tag": "2CQYULYJQ",
@@ -371,7 +371,7 @@
       "nom": "M4RTYF4N4T1K",
       "role": "member",
       "trophees": 9161,
-      "dons": 154,
+      "dons": 170,
       "vu": "20261104T114340.000Z"
     },
     {
