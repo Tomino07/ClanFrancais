@@ -3,7 +3,7 @@
   "nom": "baboon",
   "role": "Membre",
   "niveau": 68,
-  "trophees": 12940,
+  "trophees": 12911,
   "record": 12971,
   "victoires": 6695,
   "dons": 0,
@@ -53,6 +53,50 @@
   },
   "mvps": 1,
   "combats": [
+    {
+      "date": "20261103T233815.000Z",
+      "type": "PvP",
+      "mode": "Ladder",
+      "moi": 2,
+      "adv": 3,
+      "trophees": -29,
+      "adversaire": "DEMonicCharliE",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Battle Ram",
+          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
+        },
+        {
+          "nom": "Magic Archer",
+          "image": "https://api-assets.clashroyale.com/cards/300/Avli3W7BxU9HQ2SoLiXnBgGx25FoNXUSFm7OcAk68ek.png"
+        },
+        {
+          "nom": "Royal Ghost",
+          "image": "https://api-assets.clashroyale.com/cards/300/3En2cz0ISQAaMTHY3hj3rTveFN2kJYq-H4VxvdJNvCM.png"
+        },
+        {
+          "nom": "Zap",
+          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
+        },
+        {
+          "nom": "P.E.K.K.A",
+          "image": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png"
+        },
+        {
+          "nom": "Electro Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
+        },
+        {
+          "nom": "Bandit",
+          "image": "https://api-assets.clashroyale.com/cards/300/QWDdXMKJNpv0go-HYaWQWP6p8uIOHjqn-zX7G0p3DyM.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        }
+      ]
+    },
     {
       "date": "20261103T223221.000Z",
       "type": "PvP",
@@ -446,50 +490,6 @@
         {
           "nom": "Fireball",
           "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        }
-      ]
-    },
-    {
-      "date": "20261026T144111.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 3,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "EtERnaLNinJa",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Lumberjack",
-          "image": "https://api-assets.clashroyale.com/cards/300/E6RWrnCuk13xMX5OE1EQtLEKTZQV6B78d00y8PlXt6Q.png"
-        },
-        {
-          "nom": "Balloon",
-          "image": "https://api-assets.clashroyale.com/cards/300/qBipxLo-3hhCnPrApp2Nn3b2NgrSrvwzWytvREev0CY.png"
-        },
-        {
-          "nom": "Electro Dragon",
-          "image": "https://api-assets.clashroyale.com/cards/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png"
-        },
-        {
-          "nom": "Tornado",
-          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
-        },
-        {
-          "nom": "Barbarian Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
-        },
-        {
-          "nom": "Inferno Dragon",
-          "image": "https://api-assets.clashroyale.com/cards/300/y5HDbKtTbWG6En6TGWU0xoVIGs1-iQpIP4HC-VM7u8A.png"
-        },
-        {
-          "nom": "Bowler",
-          "image": "https://api-assets.clashroyale.com/cards/300/SU4qFXmbQXWjvASxVI6z9IJuTYolx4A0MKK90sTIE88.png"
-        },
-        {
-          "nom": "Freeze",
-          "image": "https://api-assets.clashroyale.com/cards/300/I1M20_Zs_p_BS1NaNIVQjuMJkYI_1-ePtwYZahn0JXQ.png"
         }
       ]
     }
