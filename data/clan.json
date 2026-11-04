@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-04T06:30:51Z",
-  "rang": 886,
-  "rangPrecedent": -1,
+  "majAt": "2026-11-04T07:01:08Z",
+  "rang": 887,
+  "rangPrecedent": 885,
   "score": 136496,
   "tropheesGuerre": 1782,
   "membres": 48,
   "joueurs": [
+    {
+      "tag": "P9YPQURQ",
+      "nom": "samuel",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 24,
+      "vu": "20261104T064345.000Z"
+    },
     {
       "tag": "VPQ920JU",
       "nom": "benoit82",
@@ -45,14 +53,6 @@
       "trophees": 14000,
       "dons": 8,
       "vu": "20261103T215526.000Z"
-    },
-    {
-      "tag": "P9YPQURQ",
-      "nom": "samuel",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 24,
-      "vu": "20261103T205655.000Z"
     },
     {
       "tag": "R80VQ08V",
@@ -388,7 +388,7 @@
       "role": "leader",
       "trophees": 8500,
       "dons": 52,
-      "vu": "20261102T085642.000Z"
+      "vu": "20261104T064155.000Z"
     }
   ]
 }
