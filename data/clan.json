@@ -1,11 +1,27 @@
 {
-  "majAt": "2026-11-04T11:01:11Z",
-  "rang": 891,
+  "majAt": "2026-11-04T11:27:54Z",
+  "rang": 892,
   "rangPrecedent": 885,
   "score": 136496,
   "tropheesGuerre": 1782,
   "membres": 48,
   "joueurs": [
+    {
+      "tag": "V8UVQCGLR",
+      "nom": "Hitolam",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261104T112353.000Z"
+    },
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 26,
+      "vu": "20261104T111641.000Z"
+    },
     {
       "tag": "VPQ920JU",
       "nom": "benoit82",
@@ -47,28 +63,12 @@
       "vu": "20261103T224410.000Z"
     },
     {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 26,
-      "vu": "20261103T220938.000Z"
-    },
-    {
       "tag": "J9LP8Y8",
       "nom": "Swarander",
       "role": "member",
       "trophees": 14000,
       "dons": 8,
       "vu": "20261103T215526.000Z"
-    },
-    {
-      "tag": "V8UVQCGLR",
-      "nom": "Hitolam",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261103T173518.000Z"
     },
     {
       "tag": "LCUPLPR09",
@@ -332,7 +332,7 @@
       "role": "member",
       "trophees": 12314,
       "dons": 0,
-      "vu": "20261104T085253.000Z"
+      "vu": "20261104T110242.000Z"
     },
     {
       "tag": "CRU9VJY29",
