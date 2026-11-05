@@ -1,6 +1,20 @@
 {
   "clans": [
     {
+      "rang": 921,
+      "nom": "NoahFamily",
+      "trophees": 136516,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 922,
+      "nom": "DarkWater",
+      "trophees": 136511,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 923,
       "nom": "Dream Team FR",
       "trophees": 136509,
@@ -9,38 +23,38 @@
     },
     {
       "rang": 924,
-      "nom": "OG Clan",
-      "trophees": 136506,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 925,
       "nom": "Astero Level 9",
       "trophees": 136505,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 926,
-      "nom": "BrokenWorld",
+      "rang": 925,
+      "nom": "OG Clan",
       "trophees": 136500,
-      "membres": 50,
+      "membres": 45,
       "nous": false
     },
     {
+      "rang": 926,
+      "nom": "Clan Francais",
+      "trophees": 136498,
+      "membres": 48,
+      "nous": true
+    },
+    {
       "rang": 927,
-      "nom": "Adulte FR +18",
-      "trophees": 136500,
+      "nom": "BrokenWorld",
+      "trophees": 136498,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 928,
-      "nom": "Clan Francais",
-      "trophees": 136498,
-      "membres": 48,
-      "nous": true
+      "nom": "Adulte FR +18",
+      "trophees": 136497,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 929,
@@ -61,20 +75,6 @@
       "nom": "Alpha",
       "trophees": 136482,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 932,
-      "nom": "Becdemoule",
-      "trophees": 136477,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 933,
-      "nom": "Algérie",
-      "trophees": 136475,
-      "membres": 49,
       "nous": false
     }
   ]
