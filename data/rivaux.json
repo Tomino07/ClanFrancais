@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 913,
+      "nom": "Dream Team FR",
+      "trophees": 136509,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 914,
       "nom": "Barbes Grises",
       "trophees": 136509,
@@ -9,15 +16,15 @@
     },
     {
       "rang": 915,
-      "nom": "Astero Level 9",
-      "trophees": 136506,
+      "nom": "Adulte FR +18",
+      "trophees": 136502,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 916,
-      "nom": "Adulte FR +18",
-      "trophees": 136502,
+      "nom": "Astero Level 9",
+      "trophees": 136500,
       "membres": 50,
       "nous": false
     },
@@ -30,51 +37,44 @@
     },
     {
       "rang": 918,
+      "nom": "Clan Francais",
+      "trophees": 136494,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 919,
       "nom": "BrokenWorld",
       "trophees": 136493,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 919,
-      "nom": "Clan Francais",
-      "trophees": 136491,
-      "membres": 48,
-      "nous": true
-    },
-    {
       "rang": 920,
-      "nom": "Alpha",
-      "trophees": 136489,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 921,
       "nom": "Adopte Un Golem",
       "trophees": 136488,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 922,
+      "rang": 921,
       "nom": "DarkWater",
       "trophees": 136488,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 923,
+      "rang": 922,
       "nom": "Akatsuki",
-      "trophees": 136486,
+      "trophees": 136488,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 924,
-      "nom": "Algérie",
-      "trophees": 136479,
-      "membres": 49,
+      "rang": 923,
+      "nom": "Alpha",
+      "trophees": 136486,
+      "membres": 50,
       "nous": false
     }
   ]
