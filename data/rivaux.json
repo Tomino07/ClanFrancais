@@ -1,24 +1,10 @@
 {
   "clans": [
     {
-      "rang": 913,
+      "rang": 915,
       "nom": "Dream Team FR",
       "trophees": 136509,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 914,
-      "nom": "Barbes Grises",
-      "trophees": 136509,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 915,
-      "nom": "Adulte FR +18",
-      "trophees": 136502,
-      "membres": 50,
       "nous": false
     },
     {
@@ -30,51 +16,65 @@
     },
     {
       "rang": 917,
-      "nom": "Miracle03",
-      "trophees": 136496,
-      "membres": 46,
+      "nom": "BrokenWorld",
+      "trophees": 136500,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 918,
+      "nom": "Miracle03",
+      "trophees": 136499,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 919,
+      "nom": "Adulte FR +18",
+      "trophees": 136499,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 920,
       "nom": "Clan Francais",
       "trophees": 136494,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 919,
-      "nom": "BrokenWorld",
-      "trophees": 136493,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 920,
+      "rang": 921,
       "nom": "Adopte Un Golem",
       "trophees": 136488,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 921,
-      "nom": "DarkWater",
-      "trophees": 136488,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 922,
-      "nom": "Akatsuki",
-      "trophees": 136488,
+      "nom": "Alpha",
+      "trophees": 136486,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 923,
-      "nom": "Alpha",
-      "trophees": 136486,
+      "nom": "Akatsuki",
+      "trophees": 136485,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 924,
+      "nom": "DarkWater",
+      "trophees": 136485,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 925,
+      "nom": "OG Clan",
+      "trophees": 136480,
+      "membres": 45,
       "nous": false
     }
   ]
