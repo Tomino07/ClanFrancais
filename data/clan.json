@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-05T11:30:52Z",
-  "rang": 919,
+  "majAt": "2026-11-05T12:01:05Z",
+  "rang": 922,
   "rangPrecedent": 911,
-  "score": 136502,
+  "score": 136498,
   "tropheesGuerre": 1782,
   "membres": 48,
   "joueurs": [
+    {
+      "tag": "V8UVQCGLR",
+      "nom": "Hitolam",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261105T114914.000Z"
+    },
     {
       "tag": "J9LP8Y8",
       "nom": "Swarander",
@@ -29,14 +37,6 @@
       "trophees": 14000,
       "dons": 60,
       "vu": "20261105T100916.000Z"
-    },
-    {
-      "tag": "V8UVQCGLR",
-      "nom": "Hitolam",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261105T095844.000Z"
     },
     {
       "tag": "P0GGYJ82P",
@@ -194,7 +194,7 @@
       "tag": "2V0G2JUPV",
       "nom": "sky",
       "role": "member",
-      "trophees": 13726,
+      "trophees": 13698,
       "dons": 114,
       "vu": "20261105T111401.000Z"
     },
@@ -371,8 +371,8 @@
       "nom": "M4RTYF4N4T1K",
       "role": "member",
       "trophees": 9161,
-      "dons": 212,
-      "vu": "20261105T083552.000Z"
+      "dons": 228,
+      "vu": "20261105T114305.000Z"
     },
     {
       "tag": "PGJRVUJRU",
