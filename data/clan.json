@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-05T08:30:52Z",
-  "rang": 918,
+  "majAt": "2026-11-05T09:01:05Z",
+  "rang": 919,
   "rangPrecedent": 911,
   "score": 136491,
   "tropheesGuerre": 1782,
   "membres": 48,
   "joueurs": [
+    {
+      "tag": "R80VQ08V",
+      "nom": "Spank",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261105T085800.000Z"
+    },
     {
       "tag": "P9YPQURQ",
       "nom": "samuel",
@@ -77,14 +85,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261104T112353.000Z"
-    },
-    {
-      "tag": "R80VQ08V",
-      "nom": "Spank",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261104T084505.000Z"
     },
     {
       "tag": "ULRRGGQLY",
@@ -332,7 +332,7 @@
       "role": "member",
       "trophees": 12343,
       "dons": 0,
-      "vu": "20261105T075700.000Z"
+      "vu": "20261105T085952.000Z"
     },
     {
       "tag": "CRU9VJY29",
@@ -371,8 +371,8 @@
       "nom": "M4RTYF4N4T1K",
       "role": "member",
       "trophees": 9161,
-      "dons": 204,
-      "vu": "20261105T033713.000Z"
+      "dons": 212,
+      "vu": "20261105T083552.000Z"
     },
     {
       "tag": "PGJRVUJRU",
@@ -388,7 +388,7 @@
       "role": "leader",
       "trophees": 8500,
       "dons": 52,
-      "vu": "20261104T064155.000Z"
+      "vu": "20261105T090058.000Z"
     }
   ]
 }
