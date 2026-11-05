@@ -5,7 +5,7 @@
   "niveau": 65,
   "trophees": 13009,
   "record": 13132,
-  "victoires": 4397,
+  "victoires": 4398,
   "dons": 226,
   "deck": [
     {
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261105T180311.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "kevin Rojas",
+      "clanAdv": "JUMP FORCE MX",
+      "deckAdv": [
+        {
+          "nom": "Bomber",
+          "image": "https://api-assets.clashroyale.com/cards/300/12n1CesxKIcqVYntjxcF36EFA-ONw7Z-DoL0_rQrbdo.png"
+        },
+        {
+          "nom": "Elite Barbarians",
+          "image": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
+        },
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Electro Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
+        },
+        {
+          "nom": "Prince",
+          "image": "https://api-assets.clashroyale.com/cards/300/3JntJV62aY0G1Qh6LIs-ek-0ayeYFY3VItpG7cb9I60.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        }
+      ]
+    },
     {
       "date": "20261105T175722.000Z",
       "type": "pathOfLegend",
@@ -446,50 +490,6 @@
         {
           "nom": "Freeze",
           "image": "https://api-assets.clashroyale.com/cards/300/I1M20_Zs_p_BS1NaNIVQjuMJkYI_1-ePtwYZahn0JXQ.png"
-        }
-      ]
-    },
-    {
-      "date": "20261104T000957.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 0,
-      "adv": 3,
-      "trophees": null,
-      "adversaire": "HUNTER",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Mortar",
-          "image": "https://api-assets.clashroyale.com/cards/300/lPOSw6H7YOHq2miSCrf7ZDL3ANjhJdPPDYOTujdNrVE.png"
-        },
-        {
-          "nom": "Goblinstein",
-          "image": "https://api-assets.clashroyale.com/cards/300/mQ20B49dXdk7Nv0lMdLw175M3YvkSpN6KNnho8UKBd8.png"
-        },
-        {
-          "nom": "Skeleton Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
-        },
-        {
-          "nom": "Cannon Cart",
-          "image": "https://api-assets.clashroyale.com/cards/300/aqwxRz8HXzqlMCO4WMXNA1txynjXTsLinknqsgZLbok.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Bats",
-          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
-        },
-        {
-          "nom": "Skeletons",
-          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
         }
       ]
     }

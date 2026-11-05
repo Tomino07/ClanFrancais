@@ -6,7 +6,7 @@
   "trophees": 14000,
   "record": 14000,
   "victoires": 6834,
-  "dons": 8,
+  "dons": 18,
   "deck": [
     {
       "nom": "Valkyrie",
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261105T181221.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 0,
+      "adv": 1,
+      "trophees": -30,
+      "adversaire": "nasro famma",
+      "clanAdv": "Morocco",
+      "deckAdv": [
+        {
+          "nom": "Mega Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Bats",
+          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
+        },
+        {
+          "nom": "Inferno Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Hog Rider",
+          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
+        },
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        }
+      ]
+    },
     {
       "date": "20261105T133130.000Z",
       "type": "trail",
@@ -446,50 +490,6 @@
         {
           "nom": "Barbarian Barrel",
           "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
-        }
-      ]
-    },
-    {
-      "date": "20261103T174506.000Z",
-      "type": "trail",
-      "mode": "Ladder",
-      "moi": 3,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "Cpt Discopants",
-      "clanAdv": "Clan #LRV22G",
-      "deckAdv": [
-        {
-          "nom": "Battle Ram",
-          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
-        },
-        {
-          "nom": "Golden Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Electro Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        },
-        {
-          "nom": "Skeleton Dragons",
-          "image": "https://api-assets.clashroyale.com/cards/300/qPOtg9uONh47_NLxGhhFc_ww9PlZ6z3Ry507q1NZUXs.png"
-        },
-        {
-          "nom": "Mother Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
-        },
-        {
-          "nom": "Bandit",
-          "image": "https://api-assets.clashroyale.com/cards/300/QWDdXMKJNpv0go-HYaWQWP6p8uIOHjqn-zX7G0p3DyM.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
         }
       ]
     }
