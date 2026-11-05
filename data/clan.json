@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-05T17:30:51Z",
-  "rang": 930,
+  "majAt": "2026-11-05T18:01:08Z",
+  "rang": 931,
   "rangPrecedent": 911,
-  "score": 136495,
+  "score": 136492,
   "tropheesGuerre": 1782,
   "membres": 48,
   "joueurs": [
+    {
+      "tag": "LCUPLPR09",
+      "nom": "axou",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 120,
+      "vu": "20261105T180029.000Z"
+    },
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
@@ -53,14 +61,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261105T114914.000Z"
-    },
-    {
-      "tag": "LCUPLPR09",
-      "nom": "axou",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 120,
-      "vu": "20261105T104543.000Z"
     },
     {
       "tag": "R80VQ08V",
@@ -267,16 +267,8 @@
       "nom": "grand-père",
       "role": "member",
       "trophees": 13009,
-      "dons": 218,
-      "vu": "20261105T163409.000Z"
-    },
-    {
-      "tag": "PPRJ9RGV",
-      "nom": "baboon",
-      "role": "member",
-      "trophees": 12882,
-      "dons": 0,
-      "vu": "20261105T151108.000Z"
+      "dons": 226,
+      "vu": "20261105T175208.000Z"
     },
     {
       "tag": "LPG8CJVRR",
@@ -285,6 +277,14 @@
       "trophees": 12875,
       "dons": 0,
       "vu": "20261103T214427.000Z"
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "role": "member",
+      "trophees": 12852,
+      "dons": 0,
+      "vu": "20261105T173358.000Z"
     },
     {
       "tag": "P9GL8VCRR",

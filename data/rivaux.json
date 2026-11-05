@@ -1,16 +1,9 @@
 {
   "clans": [
     {
-      "rang": 925,
-      "nom": "Adopte Un Golem",
-      "trophees": 136510,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 926,
       "nom": "DarkWater",
-      "trophees": 136508,
+      "trophees": 136511,
       "membres": 50,
       "nous": false
     },
@@ -24,7 +17,7 @@
     {
       "rang": 928,
       "nom": "OG Clan",
-      "trophees": 136506,
+      "trophees": 136503,
       "membres": 45,
       "nous": false
     },
@@ -37,44 +30,51 @@
     },
     {
       "rang": 930,
-      "nom": "Clan Francais",
-      "trophees": 136495,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 931,
       "nom": "Algérie",
-      "trophees": 136495,
+      "trophees": 136499,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 932,
-      "nom": "Elite Azur",
-      "trophees": 136493,
+      "rang": 931,
+      "nom": "Clan Francais",
+      "trophees": 136492,
       "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 932,
+      "nom": "Adulte FR +18",
+      "trophees": 136492,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 933,
-      "nom": "Adulte FR +18",
-      "trophees": 136489,
+      "nom": "Akatsuki",
+      "trophees": 136482,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 934,
-      "nom": "Akatsuki",
-      "trophees": 136484,
-      "membres": 50,
+      "nom": "Becdemoule",
+      "trophees": 136481,
+      "membres": 47,
       "nous": false
     },
     {
       "rang": 935,
-      "nom": "Becdemoule",
-      "trophees": 136481,
-      "membres": 47,
+      "nom": "Alpha",
+      "trophees": 136476,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 936,
+      "nom": "CR France",
+      "trophees": 136473,
+      "membres": 48,
       "nous": false
     }
   ]
