@@ -1,52 +1,59 @@
 {
   "clans": [
     {
-      "rang": 905,
+      "rang": 904,
       "nom": "Angry Frenchies",
       "trophees": 136500,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 906,
+      "rang": 905,
       "nom": "Dream Team FR",
       "trophees": 136499,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 907,
+      "rang": 906,
       "nom": "Barbes Grises",
       "trophees": 136499,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 908,
+      "rang": 907,
       "nom": "Miracle03",
       "trophees": 136498,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 909,
+      "rang": 908,
       "nom": "NoahFamily",
       "trophees": 136495,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 910,
+      "rang": 909,
       "nom": "Clan Francais",
       "trophees": 136494,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 911,
+      "rang": 910,
       "nom": "BrokenWorld",
       "trophees": 136494,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 911,
+      "nom": "Algérie",
+      "trophees": 136492,
+      "membres": 49,
       "nous": false
     },
     {
@@ -67,13 +74,6 @@
       "rang": 914,
       "nom": "DarkWater",
       "trophees": 136480,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 915,
-      "nom": "Akatsuki",
-      "trophees": 136478,
       "membres": 50,
       "nous": false
     }
