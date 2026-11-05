@@ -1,16 +1,23 @@
 {
   "clans": [
     {
+      "rang": 914,
+      "nom": "Les Anciens !!",
+      "trophees": 136510,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 915,
       "nom": "Dream Team FR",
-      "trophees": 136509,
+      "trophees": 136506,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 916,
       "nom": "Astero Level 9",
-      "trophees": 136500,
+      "trophees": 136503,
       "membres": 50,
       "nous": false
     },
@@ -30,17 +37,17 @@
     },
     {
       "rang": 919,
+      "nom": "Clan Francais",
+      "trophees": 136498,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 920,
       "nom": "DarkWater",
       "trophees": 136492,
       "membres": 50,
       "nous": false
-    },
-    {
-      "rang": 920,
-      "nom": "Clan Francais",
-      "trophees": 136491,
-      "membres": 48,
-      "nous": true
     },
     {
       "rang": 921,
@@ -68,13 +75,6 @@
       "nom": "Akatsuki",
       "trophees": 136485,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 925,
-      "nom": "Becdemoule",
-      "trophees": 136475,
-      "membres": 47,
       "nous": false
     }
   ]
