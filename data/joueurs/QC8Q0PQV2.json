@@ -5,7 +5,7 @@
   "niveau": 79,
   "trophees": 12000,
   "record": 12000,
-  "victoires": 21876,
+  "victoires": 21877,
   "dons": 0,
   "deck": [
     {
@@ -53,6 +53,94 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261106T125453.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "Alxji⛱️",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Bats",
+          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
+        },
+        {
+          "nom": "Mini P.E.K.K.A",
+          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
+        },
+        {
+          "nom": "Lumberjack",
+          "image": "https://api-assets.clashroyale.com/cards/300/E6RWrnCuk13xMX5OE1EQtLEKTZQV6B78d00y8PlXt6Q.png"
+        },
+        {
+          "nom": "Ice Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
+        },
+        {
+          "nom": "Princess",
+          "image": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        },
+        {
+          "nom": "P.E.K.K.A",
+          "image": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png"
+        }
+      ]
+    },
+    {
+      "date": "20261106T125057.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "Trainer Legend",
+      "clanAdv": "QuantumGods™",
+      "deckAdv": [
+        {
+          "nom": "P.E.K.K.A",
+          "image": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Vines",
+          "image": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png"
+        },
+        {
+          "nom": "Rage",
+          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
+        },
+        {
+          "nom": "Poison",
+          "image": "https://api-assets.clashroyale.com/cards/300/98HDkG2189yOULcVG9jz2QbJKtfuhH21DIrIjkOjxI8.png"
+        },
+        {
+          "nom": "Electro Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
+        },
+        {
+          "nom": "Dark Prince",
+          "image": "https://api-assets.clashroyale.com/cards/300/M7fXlrKXHu2IvpSGpk36kXVstslbR08Bbxcy0jQcln8.png"
+        }
+      ]
+    },
     {
       "date": "20261106T120059.000Z",
       "type": "pathOfLegend",
@@ -402,94 +490,6 @@
         {
           "nom": "Barbarian Barrel",
           "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
-        }
-      ]
-    },
-    {
-      "date": "20261106T061206.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 1,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "StevenIsFat",
-      "clanAdv": "Alphabet Soup",
-      "deckAdv": [
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
-        },
-        {
-          "nom": "Valkyrie",
-          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
-        },
-        {
-          "nom": "Elite Barbarians",
-          "image": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
-        },
-        {
-          "nom": "Hog Rider",
-          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
-        },
-        {
-          "nom": "Royal Delivery",
-          "image": "https://api-assets.clashroyale.com/cards/300/LPg7AGjGI3_xmi7gLLgGC50yKM1jJ2teWkZfoHJcIZo.png"
-        },
-        {
-          "nom": "Magic Archer",
-          "image": "https://api-assets.clashroyale.com/cards/300/Avli3W7BxU9HQ2SoLiXnBgGx25FoNXUSFm7OcAk68ek.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        }
-      ]
-    },
-    {
-      "date": "20261106T060853.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 0,
-      "adv": 1,
-      "trophees": null,
-      "adversaire": "victoriachavira",
-      "clanAdv": "viky",
-      "deckAdv": [
-        {
-          "nom": "Royal Hogs",
-          "image": "https://api-assets.clashroyale.com/cards/300/ASSQJG_MoVq9e81HZzo4bynMnyLNpNJMfSLb3hqydOw.png"
-        },
-        {
-          "nom": "Mega Minion",
-          "image": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png"
-        },
-        {
-          "nom": "Firecracker",
-          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
-        },
-        {
-          "nom": "Electro Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png"
-        },
-        {
-          "nom": "Ice Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png"
-        },
-        {
-          "nom": "Guards",
-          "image": "https://api-assets.clashroyale.com/cards/300/1ArKfLJxYo6_NU_S9cAeIrfbXqWH0oULVJXedxBXQlU.png"
-        },
-        {
-          "nom": "Cannon",
-          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
         }
       ]
     }
