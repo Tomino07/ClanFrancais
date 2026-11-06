@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 3,
-  "majAt": "2026-11-06T09:01:07Z",
+  "majAt": "2026-11-06T09:30:55Z",
   "objectif": 10000,
   "clans": [
     {
@@ -31,16 +31,16 @@
     {
       "nom": "akacze spustacz",
       "points": 0,
-      "aujourdhui": 1400,
-      "combats": 8,
+      "aujourdhui": 1500,
+      "combats": 9,
       "fini": false,
       "nous": false
     },
     {
       "nom": "Deutschland",
       "points": 0,
-      "aujourdhui": 1750,
-      "combats": 11,
+      "aujourdhui": 1950,
+      "combats": 12,
       "fini": false,
       "nous": false
     }
