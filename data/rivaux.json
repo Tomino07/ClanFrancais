@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 731,
+      "rang": 728,
+      "nom": "BS Esport Pro",
+      "trophees": 137061,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 729,
       "nom": "Atomic French",
       "trophees": 137060,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 732,
-      "nom": "LYON",
-      "trophees": 137056,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 733,
+      "rang": 730,
       "nom": "Baguette Royale",
-      "trophees": 137055,
+      "trophees": 137053,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 734,
+      "rang": 731,
       "nom": "Clan #9GYJV0",
       "trophees": 137047,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 735,
-      "nom": "fr fr fr fr fr",
-      "trophees": 137046,
-      "membres": 47,
+      "rang": 732,
+      "nom": "Dream Team FR",
+      "trophees": 137047,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 736,
+      "rang": 733,
       "nom": "Clan Francais",
       "trophees": 137043,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 737,
-      "nom": "HELIOX",
-      "trophees": 137042,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 738,
+      "rang": 734,
       "nom": "Chill FR",
       "trophees": 137041,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 739,
-      "nom": "Dream Team FR",
+      "rang": 735,
+      "nom": "HELIOX",
       "trophees": 137040,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 740,
+      "rang": 736,
       "nom": "92i",
-      "trophees": 137038,
+      "trophees": 137040,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 741,
+      "rang": 737,
       "nom": "Binouze ours",
       "trophees": 137038,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 738,
+      "nom": "LYON",
+      "trophees": 137037,
+      "membres": 50,
       "nous": false
     }
   ]
