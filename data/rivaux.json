@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 766,
+      "nom": "om",
+      "trophees": 137071,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 767,
       "nom": "BandOfBrothers",
       "trophees": 137069,
@@ -23,58 +30,51 @@
     },
     {
       "rang": 770,
-      "nom": "Baguette Royale",
-      "trophees": 137050,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 771,
       "nom": "Clan #9GYJV0",
       "trophees": 137046,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 772,
+      "rang": 771,
       "nom": "Clan Francais",
       "trophees": 137046,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 773,
+      "rang": 772,
       "nom": "125Bis",
       "trophees": 137046,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 774,
+      "rang": 773,
       "nom": "Atomic French",
       "trophees": 137043,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 775,
-      "nom": "rois de france",
-      "trophees": 137022,
+      "rang": 774,
+      "nom": "Baguette Royale",
+      "trophees": 137041,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 775,
+      "nom": "Astero Level 2",
+      "trophees": 137026,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 776,
-      "nom": "2temps",
-      "trophees": 137008,
+      "nom": "rois de france",
+      "trophees": 137022,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 777,
-      "nom": "brigade zehef",
-      "trophees": 137007,
-      "membres": 46,
       "nous": false
     }
   ]
