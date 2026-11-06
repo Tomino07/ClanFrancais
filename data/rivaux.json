@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 765,
-      "nom": "La GR",
-      "trophees": 137060,
-      "membres": 43,
-      "nous": false
-    },
-    {
       "rang": 766,
       "nom": "Morpheus",
       "trophees": 137058,
@@ -23,43 +16,43 @@
     },
     {
       "rang": 768,
+      "nom": "BandOfBrothers",
+      "trophees": 137051,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 769,
       "nom": "Baguette Royale",
       "trophees": 137050,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 769,
+      "rang": 770,
       "nom": "Clan #9GYJV0",
       "trophees": 137046,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 770,
+      "rang": 771,
       "nom": "Clan Francais",
       "trophees": 137046,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 771,
+      "rang": 772,
       "nom": "125Bis",
       "trophees": 137041,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 772,
+      "rang": 773,
       "nom": "Atomic French",
       "trophees": 137040,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 773,
-      "nom": "BandOfBrothers",
-      "trophees": 137036,
       "membres": 50,
       "nous": false
     },
@@ -73,8 +66,15 @@
     {
       "rang": 775,
       "nom": "Elite Azur",
-      "trophees": 137015,
+      "trophees": 137018,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 776,
+      "nom": "brigade zehef",
+      "trophees": 137011,
+      "membres": 46,
       "nous": false
     }
   ]
