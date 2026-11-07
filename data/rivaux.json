@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 729,
-      "nom": "LYON",
-      "trophees": 137062,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 730,
       "nom": "BS Esport Pro",
       "trophees": 137061,
@@ -17,7 +10,7 @@
     {
       "rang": 731,
       "nom": "Latitude 49",
-      "trophees": 137059,
+      "trophees": 137061,
       "membres": 47,
       "nous": false
     },
@@ -31,35 +24,35 @@
     {
       "rang": 733,
       "nom": "fr fr fr fr fr",
-      "trophees": 137049,
+      "trophees": 137054,
       "membres": 47,
       "nous": false
     },
     {
       "rang": 734,
+      "nom": "Dream Team FR",
+      "trophees": 137044,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 735,
       "nom": "Clan Francais",
       "trophees": 137043,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 735,
+      "rang": 736,
       "nom": "92i",
       "trophees": 137043,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 736,
+      "rang": 737,
       "nom": "HELIOX",
       "trophees": 137042,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 737,
-      "nom": "Dream Team FR",
-      "trophees": 137041,
       "membres": 50,
       "nous": false
     },
@@ -72,8 +65,15 @@
     },
     {
       "rang": 739,
-      "nom": "Chill FR",
-      "trophees": 137038,
+      "nom": "Team Brest",
+      "trophees": 137041,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 740,
+      "nom": "Haute Savoie",
+      "trophees": 137040,
       "membres": 50,
       "nous": false
     }
