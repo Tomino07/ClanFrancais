@@ -1,7 +1,7 @@
 {
   "mois": "2026-11",
   "libelle": "novembre 2026",
-  "majAt": "2026-11-07T15:31:35.300Z",
+  "majAt": "2026-11-07T15:52:51.838Z",
   "classement": [
     {
       "tag": "QJ8RL988",
@@ -19,14 +19,23 @@
       "guerre": 1800,
       "dons": 396,
       "trophees": 32,
-      "score": 50
+      "score": 49
+    },
+    {
+      "tag": "GPJ0J8RJ9",
+      "nom": "buzz",
+      "role": "member",
+      "guerre": 700,
+      "dons": 208,
+      "trophees": 57,
+      "score": 30
     },
     {
       "tag": "8GGQG28YU",
       "nom": "grand-père",
       "role": "member",
       "guerre": 0,
-      "dons": 390,
+      "dons": 406,
       "trophees": 0,
       "score": 25
     },
@@ -38,15 +47,6 @@
       "dons": 0,
       "trophees": 149,
       "score": 25
-    },
-    {
-      "tag": "GPJ0J8RJ9",
-      "nom": "buzz",
-      "role": "member",
-      "guerre": 0,
-      "dons": 208,
-      "trophees": 57,
-      "score": 23
     }
   ],
   "historique": [
