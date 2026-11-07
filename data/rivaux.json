@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 733,
+      "rang": 731,
+      "nom": "BS Esport Pro",
+      "trophees": 137061,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 732,
       "nom": "Atomic French",
       "trophees": 137060,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 734,
+      "rang": 733,
       "nom": "0_Ragnarok_0",
       "trophees": 137058,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 735,
+      "rang": 734,
       "nom": "fr fr fr fr fr",
-      "trophees": 137051,
+      "trophees": 137049,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 736,
+      "rang": 735,
       "nom": "Clan #9GYJV0",
       "trophees": 137047,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 737,
-      "nom": "Dream Team FR",
-      "trophees": 137047,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 738,
+      "rang": 736,
       "nom": "Clan Francais",
       "trophees": 137043,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 739,
+      "rang": 737,
       "nom": "92i",
       "trophees": 137043,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 740,
+      "rang": 738,
       "nom": "HELIOX",
+      "trophees": 137042,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 739,
+      "nom": "Dream Team FR",
       "trophees": 137041,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 741,
+      "rang": 740,
       "nom": "Team Brest",
       "trophees": 137040,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 742,
+      "rang": 741,
       "nom": "Chill FR",
       "trophees": 137038,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 743,
-      "nom": "! Innommables ¡",
-      "trophees": 137038,
-      "membres": 46,
       "nous": false
     }
   ]
