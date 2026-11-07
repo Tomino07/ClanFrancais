@@ -1,46 +1,46 @@
 {
   "type": "warDay",
-  "jour": 4,
-  "majAt": "2026-11-07T09:30:54Z",
+  "jour": 5,
+  "majAt": "2026-11-07T10:01:06Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "INDIANS",
-      "points": 3231,
-      "aujourdhui": 2050,
-      "combats": 16,
-      "fini": false,
-      "nous": false
-    },
-    {
-      "nom": "Clan Francais",
-      "points": 1959,
-      "aujourdhui": 1050,
-      "combats": 8,
-      "fini": false,
-      "nous": true
-    },
-    {
-      "nom": "Deutschland",
-      "points": 1143,
-      "aujourdhui": 950,
-      "combats": 6,
-      "fini": false,
-      "nous": false
-    },
-    {
-      "nom": "akacze spustacz",
-      "points": 712,
-      "aujourdhui": 700,
-      "combats": 4,
+      "points": 5262,
+      "aujourdhui": 0,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
     {
       "nom": "DARK",
-      "points": 643,
-      "aujourdhui": 2100,
-      "combats": 13,
+      "points": 3886,
+      "aujourdhui": 0,
+      "combats": 0,
+      "fini": false,
+      "nous": false
+    },
+    {
+      "nom": "Clan Francais",
+      "points": 3059,
+      "aujourdhui": 850,
+      "combats": 7,
+      "fini": false,
+      "nous": true
+    },
+    {
+      "nom": "Deutschland",
+      "points": 1833,
+      "aujourdhui": 0,
+      "combats": 0,
+      "fini": false,
+      "nous": false
+    },
+    {
+      "nom": "akacze spustacz",
+      "points": 1224,
+      "aujourdhui": 0,
+      "combats": 0,
       "fini": false,
       "nous": false
     }
