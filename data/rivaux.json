@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 726,
+      "rang": 728,
+      "nom": "Haute Savoie",
+      "trophees": 137063,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 729,
       "nom": "La GR",
       "trophees": 137060,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 727,
+      "rang": 730,
       "nom": "Dream Team FR",
       "trophees": 137060,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 728,
-      "nom": "Adultes only ;)",
-      "trophees": 137056,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 729,
+      "rang": 731,
       "nom": "Normandie",
       "trophees": 137054,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 730,
+      "rang": 732,
       "nom": "Karmes PDF 2",
       "trophees": 137049,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 731,
+      "rang": 733,
       "nom": "Clan Francais",
       "trophees": 137045,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 732,
+      "rang": 734,
+      "nom": "BoA 3",
+      "trophees": 137045,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 735,
       "nom": "French Dynasty",
       "trophees": 137044,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 733,
+      "rang": 736,
       "nom": "NoahFamily",
       "trophees": 137041,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 734,
+      "rang": 737,
       "nom": "Atlantique 34",
       "trophees": 137041,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 735,
+      "rang": 738,
       "nom": "\"DAMN\"",
       "trophees": 137040,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 736,
-      "nom": "! Innommables ¡",
-      "trophees": 137038,
-      "membres": 46,
       "nous": false
     }
   ]
