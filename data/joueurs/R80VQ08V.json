@@ -5,7 +5,7 @@
   "niveau": 66,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 3913,
+  "victoires": 3914,
   "dons": 0,
   "deck": [
     {
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261108T080002.000Z",
+      "type": "trail",
+      "mode": "Ladder",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "Silverhawks",
+      "clanAdv": "prestige",
+      "deckAdv": [
+        {
+          "nom": "Skeleton Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
+        },
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Clone",
+          "image": "https://api-assets.clashroyale.com/cards/300/mHVCet-1TkwWq-pxVIU2ZWY9_2z7Z7wtP25ArEUsP_g.png"
+        },
+        {
+          "nom": "Bomber",
+          "image": "https://api-assets.clashroyale.com/cards/300/12n1CesxKIcqVYntjxcF36EFA-ONw7Z-DoL0_rQrbdo.png"
+        },
+        {
+          "nom": "Minions",
+          "image": "https://api-assets.clashroyale.com/cards/300/yHGpoEnmUWPGV_hBbhn-Kk-Bs838OjGzWzJJlQpQKQA.png"
+        },
+        {
+          "nom": "Giant Skeleton",
+          "image": "https://api-assets.clashroyale.com/cards/300/0p0gd0XaVRu1Hb1iSG1hTYbz2AN6aEiZnhaAib5O8Z8.png"
+        }
+      ]
+    },
     {
       "date": "20261107T144251.000Z",
       "type": "trail",
@@ -446,50 +490,6 @@
         {
           "nom": "Mini P.E.K.K.A",
           "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
-        }
-      ]
-    },
-    {
-      "date": "20261105T192801.000Z",
-      "type": "trail",
-      "mode": "Ladder",
-      "moi": 3,
-      "adv": 1,
-      "trophees": 30,
-      "adversaire": "Shiqq",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Royal Ghost",
-          "image": "https://api-assets.clashroyale.com/cards/300/3En2cz0ISQAaMTHY3hj3rTveFN2kJYq-H4VxvdJNvCM.png"
-        },
-        {
-          "nom": "Skeletons",
-          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
-        },
-        {
-          "nom": "Hunter",
-          "image": "https://api-assets.clashroyale.com/cards/300/VNabB1WKnYtYRSG7X_FZfnZjQDHTBs9A96OGMFmecrA.png"
-        },
-        {
-          "nom": "Fisherman",
-          "image": "https://api-assets.clashroyale.com/cards/300/U2KZ3g0wyufcuA5P2Xrn3Z3lr1WiJmc5S0IWOZHgizQ.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Royal Giant",
-          "image": "https://api-assets.clashroyale.com/cards/300/mnlRaNtmfpQx2e6mp70sLd0ND-pKPF70Cf87_agEKg4.png"
-        },
-        {
-          "nom": "Electro Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png"
-        },
-        {
-          "nom": "The Log",
-          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
         }
       ]
     }
