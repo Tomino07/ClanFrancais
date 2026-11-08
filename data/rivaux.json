@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 723,
-      "nom": "NoahFamily",
-      "trophees": 137052,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 724,
       "nom": "Karmes PDF 2",
       "trophees": 137049,
@@ -24,36 +17,36 @@
     {
       "rang": 726,
       "nom": "LYON",
-      "trophees": 137047,
+      "trophees": 137046,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 727,
+      "nom": "Taytøon",
+      "trophees": 137044,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 728,
       "nom": "68fr",
       "trophees": 137043,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 728,
+      "rang": 729,
       "nom": "Clan Francais",
       "trophees": 137042,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 729,
+      "rang": 730,
       "nom": "Kalash Royale",
       "trophees": 137042,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 730,
-      "nom": "Taytøon",
-      "trophees": 137041,
-      "membres": 45,
       "nous": false
     },
     {
@@ -73,7 +66,14 @@
     {
       "rang": 733,
       "nom": "adultes only",
-      "trophees": 137016,
+      "trophees": 137014,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 734,
+      "nom": "Kharnage 2",
+      "trophees": 137012,
       "membres": 50,
       "nous": false
     }
