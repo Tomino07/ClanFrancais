@@ -1,6 +1,27 @@
 {
   "clans": [
     {
+      "rang": 694,
+      "nom": "MAROC",
+      "trophees": 137060,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 695,
+      "nom": "Royal~Arrow",
+      "trophees": 137060,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 696,
+      "nom": "4.2.0",
+      "trophees": 137059,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 697,
       "nom": "Taytøon",
       "trophees": 137057,
@@ -9,71 +30,50 @@
     },
     {
       "rang": 698,
-      "nom": "4.2.0",
-      "trophees": 137055,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 699,
       "nom": "France 2.0",
       "trophees": 137055,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 700,
-      "nom": "OG Clan",
-      "trophees": 137054,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 701,
-      "nom": "2M16",
-      "trophees": 137053,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 702,
+      "rang": 699,
       "nom": "Clan Francais",
       "trophees": 137052,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 703,
+      "rang": 700,
+      "nom": "OG Clan",
+      "trophees": 137052,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 701,
       "nom": "Karmes PDF 2",
-      "trophees": 137050,
+      "trophees": 137051,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 704,
+      "rang": 702,
+      "nom": "2M16",
+      "trophees": 137046,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 703,
       "nom": "! Innommables ¡",
       "trophees": 137039,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 705,
+      "rang": 704,
       "nom": "Santwitch Royal",
       "trophees": 137038,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 706,
-      "nom": "Les Toulousains",
-      "trophees": 137036,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 707,
-      "nom": "LYON",
-      "trophees": 137034,
       "membres": 50,
       "nous": false
     }
