@@ -1,7 +1,7 @@
 {
   "type": "warDay",
   "jour": 6,
-  "majAt": "2026-11-09T08:01:07Z",
+  "majAt": "2026-11-09T08:30:56Z",
   "objectif": 10000,
   "clans": [
     {
@@ -15,8 +15,8 @@
     {
       "nom": "INDIANS",
       "points": 6034,
-      "aujourdhui": 1750,
-      "combats": 12,
+      "aujourdhui": 2200,
+      "combats": 16,
       "fini": false,
       "nous": false
     },
@@ -39,8 +39,8 @@
     {
       "nom": "akacze spustacz",
       "points": 1336,
-      "aujourdhui": 1600,
-      "combats": 10,
+      "aujourdhui": 1800,
+      "combats": 12,
       "fini": false,
       "nous": false
     }
