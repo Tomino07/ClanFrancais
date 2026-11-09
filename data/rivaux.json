@@ -1,6 +1,20 @@
 {
   "clans": [
     {
+      "rang": 712,
+      "nom": "La GR",
+      "trophees": 137060,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 713,
+      "nom": "Taytøon",
+      "trophees": 137060,
+      "membres": 45,
+      "nous": false
+    },
+    {
       "rang": 714,
       "nom": "Clan #9GYJV0",
       "trophees": 137057,
@@ -10,71 +24,57 @@
     {
       "rang": 715,
       "nom": "Balle de Break",
-      "trophees": 137051,
+      "trophees": 137050,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 716,
-      "nom": "68fr",
-      "trophees": 137050,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 717,
-      "nom": "LYON",
-      "trophees": 137050,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 718,
       "nom": "Karmes PDF 2",
       "trophees": 137049,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 719,
+      "rang": 717,
       "nom": "Clan Francais",
       "trophees": 137049,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 720,
+      "rang": 718,
+      "nom": "LYON",
+      "trophees": 137049,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 719,
       "nom": "2M16",
       "trophees": 137046,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 721,
+      "rang": 720,
       "nom": "! Innommables ¡",
       "trophees": 137039,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 722,
+      "rang": 721,
       "nom": "Kalash Royale",
       "trophees": 137037,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 723,
+      "rang": 722,
       "nom": "OG Clan",
       "trophees": 137032,
       "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 724,
-      "nom": "adultes only",
-      "trophees": 137020,
-      "membres": 50,
       "nous": false
     }
   ]
