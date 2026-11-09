@@ -1,6 +1,20 @@
 {
   "clans": [
     {
+      "rang": 721,
+      "nom": "BZH",
+      "trophees": 137060,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 722,
+      "nom": "Taytøon",
+      "trophees": 137059,
+      "membres": 45,
+      "nous": false
+    },
+    {
       "rang": 723,
       "nom": "Clan #9GYJV0",
       "trophees": 137058,
@@ -23,24 +37,24 @@
     },
     {
       "rang": 726,
+      "nom": "Clan Francais",
+      "trophees": 137049,
+      "membres": 49,
+      "nous": true
+    },
+    {
+      "rang": 727,
       "nom": "LYON",
       "trophees": 137048,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 727,
+      "rang": 728,
       "nom": "68fr",
       "trophees": 137043,
       "membres": 50,
       "nous": false
-    },
-    {
-      "rang": 728,
-      "nom": "Clan Francais",
-      "trophees": 137042,
-      "membres": 49,
-      "nous": true
     },
     {
       "rang": 729,
@@ -61,20 +75,6 @@
       "nom": "OG Clan",
       "trophees": 137025,
       "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 732,
-      "nom": "adultes only",
-      "trophees": 137019,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 733,
-      "nom": "Clash la mif",
-      "trophees": 137011,
-      "membres": 50,
       "nous": false
     }
   ]
