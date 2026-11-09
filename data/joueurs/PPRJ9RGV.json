@@ -41,7 +41,7 @@
   "enCours": {
     "points": 0,
     "combats": 0,
-    "aujourdhui": 0,
+    "aujourdhui": 1,
     "type": "training",
     "jour": 0,
     "semaine": 2,
@@ -49,6 +49,50 @@
   },
   "mvps": 1,
   "combats": [
+    {
+      "date": "20261109T123243.000Z",
+      "type": "riverRacePvP",
+      "mode": "Rage_Ladder",
+      "moi": 3,
+      "adv": 2,
+      "trophees": null,
+      "adversaire": "Big Pappa",
+      "clanAdv": "Prestige",
+      "deckAdv": [
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        },
+        {
+          "nom": "Battle Ram",
+          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
+        },
+        {
+          "nom": "Furnace",
+          "image": "https://api-assets.clashroyale.com/cards/300/iqbDiG7yYRIzvCPXdt9zPb3IvMt7F7Gi4wIPnh2x4aI.png"
+        },
+        {
+          "nom": "Elixir Golem",
+          "image": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
+        },
+        {
+          "nom": "Barbarians",
+          "image": "https://api-assets.clashroyale.com/cards/300/TvJsuu2S4yhyk1jVYUAQwdKOnW4U77KuWWOTPOWnwfI.png"
+        },
+        {
+          "nom": "Mother Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        },
+        {
+          "nom": "Cannon Cart",
+          "image": "https://api-assets.clashroyale.com/cards/300/aqwxRz8HXzqlMCO4WMXNA1txynjXTsLinknqsgZLbok.png"
+        }
+      ]
+    },
     {
       "date": "20261107T164524.000Z",
       "type": "riverRacePvP",
@@ -570,50 +614,6 @@
         {
           "nom": "Mother Witch",
           "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
-        }
-      ]
-    },
-    {
-      "date": "20261103T233815.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 2,
-      "adv": 3,
-      "trophees": -29,
-      "adversaire": "DEMonicCharliE",
-      "clanAdv": null,
-      "deckAdv": [
-        {
-          "nom": "Battle Ram",
-          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
-        },
-        {
-          "nom": "Magic Archer",
-          "image": "https://api-assets.clashroyale.com/cards/300/Avli3W7BxU9HQ2SoLiXnBgGx25FoNXUSFm7OcAk68ek.png"
-        },
-        {
-          "nom": "Royal Ghost",
-          "image": "https://api-assets.clashroyale.com/cards/300/3En2cz0ISQAaMTHY3hj3rTveFN2kJYq-H4VxvdJNvCM.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        },
-        {
-          "nom": "P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/MlArURKhn_zWAZY-Xj1qIRKLVKquarG25BXDjUQajNs.png"
-        },
-        {
-          "nom": "Electro Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        },
-        {
-          "nom": "Bandit",
-          "image": "https://api-assets.clashroyale.com/cards/300/QWDdXMKJNpv0go-HYaWQWP6p8uIOHjqn-zX7G0p3DyM.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
         }
       ]
     }
