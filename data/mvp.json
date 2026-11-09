@@ -1,18 +1,25 @@
 {
-  "semaine": "Saison 137 – semaine 4",
+  "semaine": "Saison 138 – semaine 1",
   "podium": [
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
-      "points": 2600,
+      "points": 2650,
       "combats": 16,
       "membre": true
     },
     {
       "tag": "VYVCQRJPC",
       "nom": "M4RTYF4N4T1K",
-      "points": 600,
-      "combats": 4,
+      "points": 1950,
+      "combats": 16,
+      "membre": true
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "points": 1400,
+      "combats": 8,
       "membre": true
     }
   ]
