@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 723,
+      "nom": "BZH",
+      "trophees": 137056,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 724,
       "nom": "Karmes PDF 2",
       "trophees": 137049,
@@ -23,24 +30,24 @@
     },
     {
       "rang": 727,
-      "nom": "Kalash Royale",
-      "trophees": 137045,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 728,
       "nom": "68fr",
       "trophees": 137043,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 729,
+      "rang": 728,
       "nom": "Clan Francais",
       "trophees": 137042,
       "membres": 49,
       "nous": true
+    },
+    {
+      "rang": 729,
+      "nom": "Kalash Royale",
+      "trophees": 137042,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 730,
@@ -67,13 +74,6 @@
       "rang": 733,
       "nom": "Kharnage 2",
       "trophees": 137011,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 734,
-      "nom": "adultes only",
-      "trophees": 137009,
       "membres": 50,
       "nous": false
     }
