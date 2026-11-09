@@ -2,29 +2,29 @@
   "clans": [
     {
       "rang": 694,
-      "nom": "100IQ France",
-      "trophees": 137060,
-      "membres": 43,
-      "nous": false
-    },
-    {
-      "rang": 695,
       "nom": "Taytøon",
       "trophees": 137057,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 696,
+      "rang": 695,
       "nom": "2M16",
       "trophees": 137057,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 697,
+      "rang": 696,
       "nom": "France 2.0",
       "trophees": 137053,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 697,
+      "nom": "Royal~Arrow",
+      "trophees": 137052,
       "membres": 48,
       "nous": false
     },
@@ -44,37 +44,37 @@
     },
     {
       "rang": 700,
-      "nom": "Royal~Arrow",
-      "trophees": 137049,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 701,
       "nom": "AntiGénieSquad",
       "trophees": 137049,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 702,
+      "rang": 701,
       "nom": "! Innommables ¡",
       "trophees": 137039,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 703,
+      "rang": 702,
       "nom": "OG Clan",
       "trophees": 137039,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 704,
+      "rang": 703,
       "nom": "Les Toulousains",
       "trophees": 137030,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 704,
+      "nom": "LYON",
+      "trophees": 137030,
+      "membres": 50,
       "nous": false
     }
   ]
