@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 707,
-      "nom": "Academia",
-      "trophees": 137065,
-      "membres": 47,
-      "nous": false
-    },
-    {
       "rang": 708,
       "nom": "La GR",
       "trophees": 137060,
@@ -30,35 +23,35 @@
     },
     {
       "rang": 711,
+      "nom": "*spartiates*",
+      "trophees": 137060,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 712,
       "nom": "Karmes PDF 2",
       "trophees": 137051,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 712,
+      "rang": 713,
       "nom": "Clan Francais",
       "trophees": 137049,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 713,
-      "nom": "Santwitch Royal",
-      "trophees": 137046,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 714,
-      "nom": "ADULTE FR",
+      "nom": "french family",
       "trophees": 137045,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 715,
-      "nom": "french family",
+      "nom": "Santwitch Royal",
       "trophees": 137045,
       "membres": 50,
       "nous": false
@@ -72,7 +65,14 @@
     },
     {
       "rang": 717,
-      "nom": "LYON",
+      "nom": "ADULTE FR",
+      "trophees": 137043,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 718,
+      "nom": "adulte france",
       "trophees": 137040,
       "membres": 50,
       "nous": false
