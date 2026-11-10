@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 718,
-      "nom": "BZH",
-      "trophees": 137060,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 719,
       "nom": "Bzh",
       "trophees": 137054,
@@ -30,30 +23,30 @@
     },
     {
       "rang": 722,
+      "nom": "french family",
+      "trophees": 137050,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 723,
       "nom": "100 Limite",
       "trophees": 137049,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 723,
+      "rang": 724,
       "nom": "Clan Francais",
       "trophees": 137047,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 724,
-      "nom": "french family",
-      "trophees": 137047,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 725,
-      "nom": "France Elite",
-      "trophees": 137045,
-      "membres": 50,
+      "nom": "As de Coeur FR",
+      "trophees": 137043,
+      "membres": 46,
       "nous": false
     },
     {
@@ -65,13 +58,20 @@
     },
     {
       "rang": 727,
+      "nom": "France Elite",
+      "trophees": 137042,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 728,
       "nom": "adulte france",
       "trophees": 137040,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 728,
+      "rang": 729,
       "nom": "adultes only",
       "trophees": 137040,
       "membres": 50,
