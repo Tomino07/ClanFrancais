@@ -1,65 +1,58 @@
 {
   "clans": [
     {
-      "rang": 717,
+      "rang": 718,
+      "nom": "BZH",
+      "trophees": 137060,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 719,
       "nom": "Bzh",
       "trophees": 137054,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 718,
+      "rang": 720,
       "nom": "Karmes PDF 2",
       "trophees": 137052,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 719,
+      "rang": 721,
       "nom": "Les Toulousains",
       "trophees": 137052,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 720,
-      "nom": "100 Limite",
-      "trophees": 137052,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 721,
-      "nom": "BZH",
-      "trophees": 137051,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 722,
+      "nom": "100 Limite",
+      "trophees": 137049,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 723,
       "nom": "Clan Francais",
       "trophees": 137047,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 723,
+      "rang": 724,
       "nom": "french family",
       "trophees": 137047,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 724,
-      "nom": "As de Coeur FR",
-      "trophees": 137046,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 725,
-      "nom": "adultes only",
-      "trophees": 137044,
+      "nom": "France Elite",
+      "trophees": 137045,
       "membres": 50,
       "nous": false
     },
@@ -73,6 +66,13 @@
     {
       "rang": 727,
       "nom": "adulte france",
+      "trophees": 137040,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 728,
+      "nom": "adultes only",
       "trophees": 137040,
       "membres": 50,
       "nous": false
