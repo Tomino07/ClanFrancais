@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 701,
-      "nom": "Taytøon",
-      "trophees": 137069,
-      "membres": 45,
-      "nous": false
-    },
-    {
       "rang": 702,
       "nom": "La GR",
       "trophees": 137060,
@@ -37,35 +30,35 @@
     },
     {
       "rang": 706,
+      "nom": "Karmes PDF 2",
+      "trophees": 137051,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 707,
       "nom": "Clan Francais",
       "trophees": 137050,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 707,
-      "nom": "ADULTE FR",
-      "trophees": 137050,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 708,
       "nom": "Santwitch Royal",
-      "trophees": 137048,
+      "trophees": 137045,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 709,
-      "nom": "Karmes PDF 2",
-      "trophees": 137048,
-      "membres": 45,
+      "nom": "Baguette Royale",
+      "trophees": 137044,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 710,
-      "nom": "Baguette Royale",
+      "nom": "ADULTE FR",
       "trophees": 137044,
       "membres": 50,
       "nous": false
@@ -73,6 +66,13 @@
     {
       "rang": 711,
       "nom": "LYON",
+      "trophees": 137043,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 712,
+      "nom": "adulte france",
       "trophees": 137043,
       "membres": 50,
       "nous": false
