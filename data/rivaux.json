@@ -1,17 +1,10 @@
 {
   "clans": [
     {
-      "rang": 711,
-      "nom": "Baguette Royale",
-      "trophees": 137059,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 712,
-      "nom": "LYON",
-      "trophees": 137057,
-      "membres": 50,
+      "nom": "*spartiates*",
+      "trophees": 137060,
+      "membres": 43,
       "nous": false
     },
     {
@@ -23,31 +16,31 @@
     },
     {
       "rang": 714,
-      "nom": "Santwitch Royal",
-      "trophees": 137046,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 715,
       "nom": "french family",
       "trophees": 137045,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 716,
-      "nom": "Clan Francais",
+      "rang": 715,
+      "nom": "BZH",
       "trophees": 137044,
-      "membres": 49,
-      "nous": true
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 716,
+      "nom": "Santwitch Royal",
+      "trophees": 137044,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 717,
-      "nom": "BZH",
-      "trophees": 137043,
-      "membres": 50,
-      "nous": false
+      "nom": "Clan Francais",
+      "trophees": 137041,
+      "membres": 49,
+      "nous": true
     },
     {
       "rang": 718,
@@ -66,14 +59,21 @@
     {
       "rang": 720,
       "nom": "adultes only",
-      "trophees": 137031,
+      "trophees": 137037,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 721,
-      "nom": "! Arrakis 8 !",
-      "trophees": 137024,
+      "nom": "100 Limite",
+      "trophees": 137037,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 722,
+      "nom": "NoInspiration",
+      "trophees": 137022,
       "membres": 47,
       "nous": false
     }
