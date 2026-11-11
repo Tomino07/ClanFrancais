@@ -1,59 +1,66 @@
 {
   "clans": [
     {
+      "rang": 635,
+      "nom": "100% Fr",
+      "trophees": 137367,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 636,
+      "nom": "Les hélices",
+      "trophees": 137366,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 637,
       "nom": "Acid Army FR",
       "trophees": 137357,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 637,
-      "nom": "bordeaux",
-      "trophees": 137355,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 638,
-      "nom": "BURGOUZZ",
-      "trophees": 137354,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 639,
       "nom": "france",
       "trophees": 137353,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 640,
+      "rang": 639,
       "nom": "FRANCE",
       "trophees": 137353,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 641,
+      "rang": 640,
       "nom": "Clan Francais",
-      "trophees": 137350,
+      "trophees": 137352,
       "membres": 50,
       "nous": true
     },
     {
+      "rang": 641,
+      "nom": "BURGOUZZ",
+      "trophees": 137352,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 642,
-      "nom": "Tortue Furtive",
-      "trophees": 137339,
+      "nom": "bordeaux",
+      "trophees": 137352,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 643,
-      "nom": "ASSASSIN-FR",
-      "trophees": 137334,
-      "membres": 50,
+      "nom": "Tortue Furtive",
+      "trophees": 137342,
+      "membres": 49,
       "nous": false
     },
     {
@@ -65,16 +72,9 @@
     },
     {
       "rang": 645,
-      "nom": "Bête des Vosges",
-      "trophees": 137322,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 646,
-      "nom": "Bubuzitor",
-      "trophees": 137317,
-      "membres": 44,
+      "nom": "ASSASSIN-FR",
+      "trophees": 137330,
+      "membres": 50,
       "nous": false
     }
   ]
