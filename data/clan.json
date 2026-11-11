@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-11T10:30:57Z",
-  "rang": 734,
+  "majAt": "2026-11-11T11:01:12Z",
+  "rang": 641,
   "rangPrecedent": 725,
-  "score": 137052,
+  "score": 137350,
   "tropheesGuerre": 1792,
-  "membres": 49,
+  "membres": 50,
   "joueurs": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 166,
+      "vu": "20261111T103521.000Z"
+    },
     {
       "tag": "P0GGYJ82P",
       "nom": "Exilaight",
@@ -29,14 +37,6 @@
       "trophees": 14000,
       "dons": 54,
       "vu": "20261111T045404.000Z"
-    },
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 132,
-      "vu": "20261111T000605.000Z"
     },
     {
       "tag": "R80VQ08V",
@@ -373,6 +373,14 @@
       "trophees": 11783,
       "dons": 0,
       "vu": "20261101T232908.000Z"
+    },
+    {
+      "tag": "G0JL20P9V",
+      "nom": "KAA2NAA",
+      "role": "member",
+      "trophees": 9964,
+      "dons": 0,
+      "vu": "20261111T103403.000Z"
     },
     {
       "tag": "VYVCQRJPC",
