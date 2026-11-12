@@ -1,24 +1,31 @@
 {
   "clans": [
     {
+      "rang": 651,
+      "nom": "Auvergnat touch",
+      "trophees": 137409,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 652,
       "nom": "ASSASSIN-FR",
-      "trophees": 137392,
+      "trophees": 137402,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 653,
-      "nom": "Brave Soldiers",
-      "trophees": 137391,
-      "membres": 48,
+      "nom": "PSG PSG PSG PSG",
+      "trophees": 137400,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 654,
-      "nom": "PSG PSG PSG PSG",
-      "trophees": 137390,
-      "membres": 50,
+      "nom": "Brave Soldiers",
+      "trophees": 137391,
+      "membres": 48,
       "nous": false
     },
     {
@@ -30,50 +37,43 @@
     },
     {
       "rang": 656,
-      "nom": "Adulte Fr",
-      "trophees": 137386,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 657,
       "nom": "Clan Francais",
-      "trophees": 137384,
+      "trophees": 137387,
       "membres": 50,
       "nous": true
     },
     {
+      "rang": 657,
+      "nom": "Tortue Furtive",
+      "trophees": 137382,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 658,
-      "nom": "bordeaux",
-      "trophees": 137377,
+      "nom": "Adulte Fr",
+      "trophees": 137380,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 659,
-      "nom": "Tortue Furtive",
-      "trophees": 137375,
+      "nom": "bordeaux",
+      "trophees": 137379,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 660,
-      "nom": "67canettes",
-      "trophees": 137367,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 661,
       "nom": "BURGOUZZ",
-      "trophees": 137367,
+      "trophees": 137371,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 662,
-      "nom": "FRANCE",
-      "trophees": 137365,
+      "rang": 661,
+      "nom": "67canettes",
+      "trophees": 137367,
       "membres": 50,
       "nous": false
     }
