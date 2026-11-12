@@ -1,58 +1,65 @@
 {
   "clans": [
     {
-      "rang": 653,
+      "rang": 652,
       "nom": "Auvergnat touch",
-      "trophees": 137410,
+      "trophees": 137413,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 653,
+      "nom": "PSG PSG PSG PSG",
+      "trophees": 137411,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 654,
       "nom": "ASSASSIN-FR",
-      "trophees": 137402,
+      "trophees": 137406,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 655,
-      "nom": "PSG PSG PSG PSG",
-      "trophees": 137400,
-      "membres": 50,
+      "nom": "Brave Soldiers",
+      "trophees": 137398,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 656,
       "nom": "$KING-ROYALE$",
-      "trophees": 137396,
+      "trophees": 137395,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 657,
-      "nom": "Brave Soldiers",
-      "trophees": 137395,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 658,
       "nom": "Clan Francais",
       "trophees": 137391,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 659,
+      "rang": 658,
       "nom": "Tortue Furtive",
-      "trophees": 137378,
+      "trophees": 137379,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 659,
+      "nom": "bordeaux",
+      "trophees": 137377,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 660,
-      "nom": "bordeaux",
-      "trophees": 137378,
+      "nom": "Adulte Fr",
+      "trophees": 137375,
       "membres": 49,
       "nous": false
     },
@@ -66,15 +73,8 @@
     {
       "rang": 662,
       "nom": "67canettes",
-      "trophees": 137373,
+      "trophees": 137374,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 663,
-      "nom": "Adulte Fr",
-      "trophees": 137372,
-      "membres": 49,
       "nous": false
     }
   ]
