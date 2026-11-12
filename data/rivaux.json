@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 636,
+      "nom": "PSG PSG PSG PSG",
+      "trophees": 137390,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 637,
       "nom": "Adulte Fr",
       "trophees": 137389,
@@ -10,14 +17,14 @@
     {
       "rang": 638,
       "nom": "Brave Soldiers",
-      "trophees": 137378,
+      "trophees": 137380,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 639,
       "nom": "bordeaux",
-      "trophees": 137376,
+      "trophees": 137374,
       "membres": 49,
       "nous": false
     },
@@ -30,50 +37,43 @@
     },
     {
       "rang": 641,
-      "nom": "adultes elite",
-      "trophees": 137371,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 642,
       "nom": "Clan Francais",
       "trophees": 137368,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 643,
-      "nom": "FRANCE",
-      "trophees": 137366,
-      "membres": 50,
+      "rang": 642,
+      "nom": "adultes elite",
+      "trophees": 137368,
+      "membres": 48,
       "nous": false
     },
     {
-      "rang": 644,
+      "rang": 643,
       "nom": "BURGOUZZ",
       "trophees": 137359,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 645,
+      "rang": 644,
       "nom": "FrenchK|$$",
       "trophees": 137358,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 646,
-      "nom": "Actifs et sympa",
-      "trophees": 137357,
+      "rang": 645,
+      "nom": "FRANCE",
+      "trophees": 137358,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 647,
+      "rang": 646,
       "nom": "Acid Army FR",
-      "trophees": 137355,
+      "trophees": 137356,
       "membres": 47,
       "nous": false
     }
