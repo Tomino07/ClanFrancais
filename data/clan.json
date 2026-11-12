@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-12T18:30:58Z",
-  "rang": 657,
+  "majAt": "2026-11-12T19:01:08Z",
+  "rang": 656,
   "rangPrecedent": 639,
-  "score": 137391,
+  "score": 137387,
   "tropheesGuerre": 1792,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 238,
+      "vu": "20261112T185136.000Z"
+    },
     {
       "tag": "VPQ920JU",
       "nom": "benoit82",
@@ -53,14 +61,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261112T114522.000Z"
-    },
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 238,
-      "vu": "20261112T113841.000Z"
     },
     {
       "tag": "P0GGYJ82P",
@@ -223,20 +223,20 @@
       "vu": "20261112T142526.000Z"
     },
     {
-      "tag": "8GGQG28YU",
-      "nom": "grand-père",
-      "role": "member",
-      "trophees": 13210,
-      "dons": 272,
-      "vu": "20261112T180939.000Z"
-    },
-    {
       "tag": "QVPCVQ08R",
       "nom": "darkos 7",
       "role": "member",
       "trophees": 13200,
       "dons": 0,
       "vu": "20260922T144739.000Z"
+    },
+    {
+      "tag": "8GGQG28YU",
+      "nom": "grand-père",
+      "role": "member",
+      "trophees": 13180,
+      "dons": 272,
+      "vu": "20261112T183324.000Z"
     },
     {
       "tag": "JUUQVRQYJ",
@@ -324,7 +324,7 @@
       "role": "member",
       "trophees": 12500,
       "dons": 0,
-      "vu": "20261112T182808.000Z"
+      "vu": "20261112T185157.000Z"
     },
     {
       "tag": "GPJ0J8RJ9",
