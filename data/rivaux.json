@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 636,
+      "nom": "125Bis",
+      "trophees": 137393,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 637,
       "nom": "Brave Soldiers",
       "trophees": 137387,
@@ -17,42 +24,42 @@
     {
       "rang": 639,
       "nom": "ASSASSIN-FR",
-      "trophees": 137382,
+      "trophees": 137381,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 640,
       "nom": "$KING-ROYALE$",
-      "trophees": 137382,
+      "trophees": 137373,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 641,
-      "nom": "bordeaux",
-      "trophees": 137374,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 642,
       "nom": "Clan Francais",
-      "trophees": 137368,
+      "trophees": 137372,
       "membres": 50,
       "nous": true
     },
     {
+      "rang": 642,
+      "nom": "bordeaux",
+      "trophees": 137371,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 643,
       "nom": "adultes elite",
-      "trophees": 137366,
+      "trophees": 137370,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 644,
       "nom": "67canettes",
-      "trophees": 137361,
+      "trophees": 137364,
       "membres": 50,
       "nous": false
     },
@@ -67,13 +74,6 @@
       "rang": 646,
       "nom": "FRANCE",
       "trophees": 137358,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 647,
-      "nom": "FrenchK|$$",
-      "trophees": 137357,
       "membres": 50,
       "nous": false
     }
