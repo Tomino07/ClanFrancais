@@ -1,66 +1,59 @@
 {
   "clans": [
     {
-      "rang": 639,
+      "rang": 640,
+      "nom": "PSG PSG PSG PSG",
+      "trophees": 137387,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 641,
       "nom": "Brave Soldiers",
-      "trophees": 137383,
+      "trophees": 137387,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 640,
+      "rang": 642,
       "nom": "ASSASSIN-FR",
       "trophees": 137381,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 641,
-      "nom": "Les hélices",
-      "trophees": 137381,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 642,
+      "rang": 643,
       "nom": "FrenchK|$$",
-      "trophees": 137375,
+      "trophees": 137380,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 643,
+      "rang": 644,
       "nom": "$KING-ROYALE$",
       "trophees": 137373,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 644,
+      "rang": 645,
       "nom": "Clan Francais",
       "trophees": 137372,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 645,
+      "rang": 646,
       "nom": "bordeaux",
       "trophees": 137371,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 646,
+      "rang": 647,
       "nom": "adultes elite",
       "trophees": 137367,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 647,
-      "nom": "67canettes",
-      "trophees": 137364,
-      "membres": 50,
       "nous": false
     },
     {
@@ -74,6 +67,13 @@
       "rang": 649,
       "nom": "Tortue Furtive",
       "trophees": 137361,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 650,
+      "nom": "BURGOUZZ",
+      "trophees": 137360,
       "membres": 49,
       "nous": false
     }
