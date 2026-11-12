@@ -1,65 +1,51 @@
 {
   "clans": [
     {
-      "rang": 651,
-      "nom": "1terminable",
-      "trophees": 137410,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 652,
-      "nom": "Auvergnat touch",
-      "trophees": 137406,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 653,
-      "nom": "$KING-ROYALE$",
-      "trophees": 137404,
+      "nom": "GiantFirstPlay!",
+      "trophees": 137403,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 654,
+      "nom": "$KING-ROYALE$",
+      "trophees": 137399,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 655,
       "nom": "Brave Soldiers",
       "trophees": 137398,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 655,
+      "rang": 656,
       "nom": "PSG PSG PSG PSG",
       "trophees": 137398,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 656,
+      "rang": 657,
+      "nom": "Tortue Furtive",
+      "trophees": 137389,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 658,
       "nom": "Clan Francais",
       "trophees": 137387,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 657,
-      "nom": "Tortue Furtive",
-      "trophees": 137382,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 658,
+      "rang": 659,
       "nom": "bordeaux",
       "trophees": 137380,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 659,
-      "nom": "BURGOUZZ",
-      "trophees": 137374,
       "membres": 49,
       "nous": false
     },
@@ -72,9 +58,23 @@
     },
     {
       "rang": 661,
+      "nom": "BURGOUZZ",
+      "trophees": 137371,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 662,
       "nom": "FRANCE",
       "trophees": 137370,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 663,
+      "nom": "Assos",
+      "trophees": 137366,
+      "membres": 48,
       "nous": false
     }
   ]
