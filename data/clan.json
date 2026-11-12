@@ -1,11 +1,19 @@
 {
-  "majAt": "2026-11-12T04:01:06Z",
-  "rang": 641,
+  "majAt": "2026-11-12T04:31:00Z",
+  "rang": 642,
   "rangPrecedent": 725,
-  "score": 137372,
+  "score": 137368,
   "tropheesGuerre": 1792,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "P9YPQURQ",
+      "nom": "samuel",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 124,
+      "vu": "20261112T042305.000Z"
+    },
     {
       "tag": "LCUPLPR09",
       "nom": "axou",
@@ -13,14 +21,6 @@
       "trophees": 14000,
       "dons": 96,
       "vu": "20261112T000015.000Z"
-    },
-    {
-      "tag": "P9YPQURQ",
-      "nom": "samuel",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 124,
-      "vu": "20261111T203627.000Z"
     },
     {
       "tag": "J9LP8Y8",
@@ -202,7 +202,7 @@
       "tag": "2V0G2JUPV",
       "nom": "sky",
       "role": "member",
-      "trophees": 13644,
+      "trophees": 13614,
       "dons": 44,
       "vu": "20261112T034658.000Z"
     },
