@@ -1,59 +1,66 @@
 {
   "clans": [
     {
-      "rang": 634,
+      "rang": 633,
       "nom": "PSG PSG PSG PSG",
       "trophees": 137390,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 635,
+      "rang": 634,
       "nom": "Auvergnat touch",
       "trophees": 137388,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 636,
+      "rang": 635,
       "nom": "Adulte Fr",
       "trophees": 137386,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 637,
+      "rang": 636,
       "nom": "Brave Soldiers",
       "trophees": 137377,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 638,
+      "rang": 637,
       "nom": "bordeaux",
       "trophees": 137376,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 639,
+      "rang": 638,
       "nom": "Clan Francais",
       "trophees": 137376,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 640,
+      "rang": 639,
       "nom": "$KING-ROYALE$",
       "trophees": 137373,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 641,
+      "rang": 640,
       "nom": "adultes elite",
       "trophees": 137371,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 641,
+      "nom": "France Adulte",
+      "trophees": 137363,
+      "membres": 50,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "BURGOUZZ",
       "trophees": 137361,
       "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 644,
-      "nom": "France Adulte",
-      "trophees": 137360,
-      "membres": 50,
       "nous": false
     }
   ]
