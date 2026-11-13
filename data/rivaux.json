@@ -1,23 +1,16 @@
 {
   "clans": [
     {
-      "rang": 623,
+      "rang": 624,
       "nom": "Auvergnat touch",
       "trophees": 137423,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 624,
+      "rang": 625,
       "nom": "! Forteresse 6",
       "trophees": 137422,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 625,
-      "nom": "adulte France",
-      "trophees": 137418,
       "membres": 48,
       "nous": false
     },
@@ -30,51 +23,58 @@
     },
     {
       "rang": 627,
+      "nom": "adulte France",
+      "trophees": 137415,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 628,
       "nom": "Brave Soldiers",
       "trophees": 137414,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 628,
+      "rang": 629,
       "nom": "Clan Francais",
       "trophees": 137413,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 629,
+      "rang": 630,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 630,
+      "rang": 631,
       "nom": "ARMENIA",
-      "trophees": 137407,
+      "trophees": 137400,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 631,
-      "nom": "-pin",
-      "trophees": 137393,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 632,
-      "nom": "PSG PSG PSG PSG",
-      "trophees": 137392,
+      "nom": "ASSASSIN-FR",
+      "trophees": 137395,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 633,
       "nom": "Tortue Furtive",
-      "trophees": 137392,
+      "trophees": 137395,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 634,
+      "nom": "-pin",
+      "trophees": 137393,
+      "membres": 50,
       "nous": false
     }
   ]

@@ -5,7 +5,7 @@
   "niveau": 66,
   "trophees": 14000,
   "record": 14000,
-  "victoires": 5125,
+  "victoires": 5126,
   "dons": 88,
   "deck": [
     {
@@ -53,6 +53,138 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261113T164627.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "Cookie",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Ice Spirit",
+          "image": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Cannon",
+          "image": "https://api-assets.clashroyale.com/cards/300/nZK1y-beLxO5vnlyUhK6-2zH2NzXJwqykcosqQ1cmZ8.png"
+        },
+        {
+          "nom": "Hog Rider",
+          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Skeletons",
+          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
+        },
+        {
+          "nom": "Firecracker",
+          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        }
+      ]
+    },
+    {
+      "date": "20261113T164143.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "groscapibara",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Goblin Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
+        },
+        {
+          "nom": "Mighty Miner",
+          "image": "https://api-assets.clashroyale.com/cards/300/Cd9R56yraxTvJiD8xJ2qT2OdsHyh94FqOAarXpbyelo.png"
+        },
+        {
+          "nom": "Dart Goblin",
+          "image": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png"
+        },
+        {
+          "nom": "Guards",
+          "image": "https://api-assets.clashroyale.com/cards/300/1ArKfLJxYo6_NU_S9cAeIrfbXqWH0oULVJXedxBXQlU.png"
+        },
+        {
+          "nom": "Inferno Tower",
+          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
+        },
+        {
+          "nom": "Electro Spirit",
+          "image": "https://api-assets.clashroyale.com/cards/300/WKd4-IAFsgPpMo7dDi9sujmYjRhOMEWiE07OUJpvD9g.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Wall Breakers",
+          "image": "https://api-assets.clashroyale.com/cards/300/_xPphEfC8eEwFNrfU3cMQG9-f5JaLQ31ARCA7l3XtW4.png"
+        }
+      ]
+    },
+    {
+      "date": "20261113T163725.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "AndreyNed",
+      "clanAdv": "os canabios",
+      "deckAdv": [
+        {
+          "nom": "Executioner",
+          "image": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
+        },
+        {
+          "nom": "Ice Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/W3dkw0HTw9n1jB-zbknY2w3wHuyuLxSRIAV5fUT1SEY.png"
+        },
+        {
+          "nom": "Elite Barbarians",
+          "image": "https://api-assets.clashroyale.com/cards/300/C88C5JH_F3lLZj6K-tLcMo5DPjrFmvzIb1R2M6xCfTE.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Golem",
+          "image": "https://api-assets.clashroyale.com/cards/300/npdmCnET7jmVjJvjJQkFnNSNnDxYHDBigbvIAloFMds.png"
+        },
+        {
+          "nom": "Zap",
+          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
+        },
+        {
+          "nom": "Skeleton Army",
+          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
+        },
+        {
+          "nom": "Elixir Collector",
+          "image": "https://api-assets.clashroyale.com/cards/300/BGLo3Grsp81c72EpxLLk-Sofk3VY56zahnUNOv3JcT0.png"
+        }
+      ]
+    },
     {
       "date": "20261113T161945.000Z",
       "type": "pathOfLegend",
@@ -358,138 +490,6 @@
         {
           "nom": "Goblin Gang",
           "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
-        }
-      ]
-    },
-    {
-      "date": "20261111T162853.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 1,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "bolinho",
-      "clanAdv": "Os Mercenários",
-      "deckAdv": [
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
-        },
-        {
-          "nom": "Valkyrie",
-          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
-        },
-        {
-          "nom": "Executioner",
-          "image": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
-        },
-        {
-          "nom": "Hog Rider",
-          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
-        },
-        {
-          "nom": "Bomb Tower",
-          "image": "https://api-assets.clashroyale.com/cards/300/rirYRyHPc97emRjoH-c1O8uZCBzPVnToaGuNGusF3TQ.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
-        },
-        {
-          "nom": "Sparky",
-          "image": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        }
-      ]
-    },
-    {
-      "date": "20261111T162528.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 1,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "☠️Exodia☠️",
-      "clanAdv": "EGYPT",
-      "deckAdv": [
-        {
-          "nom": "Tesla",
-          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
-        },
-        {
-          "nom": "Minion Horde",
-          "image": "https://api-assets.clashroyale.com/cards/300/Wyjq5l0IXHTkX9Rmpap6HaH08MvjbxFp1xBO9a47YSI.png"
-        },
-        {
-          "nom": "Sparky",
-          "image": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png"
-        },
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Goblin Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
-        },
-        {
-          "nom": "Clone",
-          "image": "https://api-assets.clashroyale.com/cards/300/mHVCet-1TkwWq-pxVIU2ZWY9_2z7Z7wtP25ArEUsP_g.png"
-        },
-        {
-          "nom": "Giant Skeleton",
-          "image": "https://api-assets.clashroyale.com/cards/300/0p0gd0XaVRu1Hb1iSG1hTYbz2AN6aEiZnhaAib5O8Z8.png"
-        }
-      ]
-    },
-    {
-      "date": "20261111T160342.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 1,
-      "adv": 0,
-      "trophees": 30,
-      "adversaire": "CombatoLp",
-      "clanAdv": "smazky",
-      "deckAdv": [
-        {
-          "nom": "Dart Goblin",
-          "image": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Lumberjack",
-          "image": "https://api-assets.clashroyale.com/cards/300/E6RWrnCuk13xMX5OE1EQtLEKTZQV6B78d00y8PlXt6Q.png"
-        },
-        {
-          "nom": "Ice Spirit",
-          "image": "https://api-assets.clashroyale.com/cards/300/lv1budiafU9XmSdrDkk0NYyqASAFYyZ06CPysXKZXlA.png"
-        },
-        {
-          "nom": "Zap",
-          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
-        },
-        {
-          "nom": "Goblin Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
-        },
-        {
-          "nom": "Skeletons",
-          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
-        },
-        {
-          "nom": "Inferno Tower",
-          "image": "https://api-assets.clashroyale.com/cards/300/GSHY_wrooMMLET6bG_WJB8redtwx66c4i80ipi4gYOM.png"
         }
       ]
     }
