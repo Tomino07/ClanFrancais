@@ -54,6 +54,82 @@
   "mvps": 0,
   "combats": [
     {
+      "date": "20261113T234143.000Z",
+      "type": "unknown",
+      "mode": "Competitive_Multideck",
+      "moi": 1,
+      "adv": 3,
+      "trophees": null,
+      "adversaire": "rambo",
+      "clanAdv": "murray 1o9",
+      "deckAdv": [
+        {
+          "nom": "Witch",
+          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Golden Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/WJd207D0O1sN-l1FTb8P9KhYL2oF5jY26vRUfTUW3FQ.png"
+        },
+        {
+          "nom": "Sparky",
+          "image": "https://api-assets.clashroyale.com/cards/300/2GKMkBrArZXgQxf2ygFjDs4VvGYPbx8F6Lj_68iVhIM.png"
+        },
+        {
+          "nom": "Bats",
+          "image": "https://api-assets.clashroyale.com/cards/300/EnIcvO21hxiNpoI-zO6MDjLmzwPbq8Z4JPo2OKoVUjU.png"
+        },
+        {
+          "nom": "Freeze",
+          "image": "https://api-assets.clashroyale.com/cards/300/I1M20_Zs_p_BS1NaNIVQjuMJkYI_1-ePtwYZahn0JXQ.png"
+        },
+        {
+          "nom": "Executioner",
+          "image": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        },
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Boss Bandit",
+          "image": "https://api-assets.clashroyale.com/cards/300/nuceG9o7rAyvyc7D3sp2QSiRYtSOEgraq0NJkDf729s.png"
+        },
+        {
+          "nom": "Inferno Dragon",
+          "image": "https://api-assets.clashroyale.com/cards/300/y5HDbKtTbWG6En6TGWU0xoVIGs1-iQpIP4HC-VM7u8A.png"
+        },
+        {
+          "nom": "Firecracker",
+          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
+        },
+        {
+          "nom": "Mega Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Dart Goblin",
+          "image": "https://api-assets.clashroyale.com/cards/300/BmpK3bqEAviflqHCdxxnfm-_l3pRPJw3qxHkwS55nCY.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        }
+      ]
+    },
+    {
       "date": "20261112T124416.000Z",
       "type": "pathOfLegend",
       "mode": "Ranked1v1_NewArena2",
@@ -446,50 +522,6 @@
         {
           "nom": "Spear Goblins",
           "image": "https://api-assets.clashroyale.com/cards/300/FSDFotjaXidI4ku_WFpVCTWS1hKGnFh1sxX0lxM43_E.png"
-        }
-      ]
-    },
-    {
-      "date": "20261112T000609.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 0,
-      "adv": 3,
-      "trophees": null,
-      "adversaire": "#FIRE#",
-      "clanAdv": "Guerreros Z",
-      "deckAdv": [
-        {
-          "nom": "Firecracker",
-          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
-        },
-        {
-          "nom": "Bowler",
-          "image": "https://api-assets.clashroyale.com/cards/300/SU4qFXmbQXWjvASxVI6z9IJuTYolx4A0MKK90sTIE88.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Tornado",
-          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
-        },
-        {
-          "nom": "Mirror",
-          "image": "https://api-assets.clashroyale.com/cards/300/wC6Cm9rKLEOk72zTsukVwxewKIoO4ZcMJun54zCPWvA.png"
-        },
-        {
-          "nom": "Skeleton Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
-        },
-        {
-          "nom": "Mini P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
-        },
-        {
-          "nom": "Mother Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/fO-Xah8XZkYKaSK9SCp3wnzwxtvIhun9NVY-zzte1Ng.png"
         }
       ]
     }
