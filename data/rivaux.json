@@ -1,27 +1,6 @@
 {
   "clans": [
     {
-      "rang": 605,
-      "nom": "1 p'tit peu",
-      "trophees": 137419,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 606,
-      "nom": "10.9-reserve",
-      "trophees": 137418,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 607,
-      "nom": "om",
-      "trophees": 137414,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 608,
       "nom": "ASSASSIN-FR",
       "trophees": 137414,
@@ -30,23 +9,23 @@
     },
     {
       "rang": 609,
+      "nom": "France",
+      "trophees": 137412,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 610,
       "nom": "HELIOX",
       "trophees": 137408,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 610,
-      "nom": "Clan Francais",
-      "trophees": 137408,
-      "membres": 50,
-      "nous": true
-    },
-    {
       "rang": 611,
-      "nom": "67canettes",
+      "nom": "BURGOUZZ",
       "trophees": 137408,
-      "membres": 50,
+      "membres": 49,
       "nous": false
     },
     {
@@ -58,15 +37,15 @@
     },
     {
       "rang": 613,
-      "nom": "BURGOUZZ",
+      "nom": "Clan Francais",
       "trophees": 137405,
-      "membres": 49,
-      "nous": false
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 614,
       "nom": "-GMs- 2",
-      "trophees": 137402,
+      "trophees": 137403,
       "membres": 48,
       "nous": false
     },
@@ -75,6 +54,27 @@
       "nom": "majoxcrl",
       "trophees": 137401,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 616,
+      "nom": "CASINO",
+      "trophees": 137395,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 617,
+      "nom": "bordeaux",
+      "trophees": 137381,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 618,
+      "nom": "Grillon’s Royal",
+      "trophees": 137380,
+      "membres": 47,
       "nous": false
     }
   ]
