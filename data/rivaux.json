@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 620,
+      "rang": 617,
+      "nom": "#DLCW FR",
+      "trophees": 137423,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 618,
+      "nom": "1er coffre",
+      "trophees": 137422,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 619,
       "nom": "-pin",
       "trophees": 137421,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 621,
-      "nom": "1er coffre",
-      "trophees": 137421,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 622,
+      "rang": 620,
       "nom": "Brave Soldiers",
       "trophees": 137419,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 623,
+      "rang": 621,
       "nom": "10.9-reserve",
       "trophees": 137417,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 624,
-      "nom": "#DLCW FR",
-      "trophees": 137416,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 625,
+      "rang": 622,
       "nom": "Clan Francais",
       "trophees": 137415,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 626,
+      "rang": 623,
+      "nom": "Rest In Peace",
+      "trophees": 137415,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 624,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 627,
+      "rang": 625,
       "nom": "As de Coeur FR",
       "trophees": 137401,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 628,
+      "rang": 626,
       "nom": "BURGOUZZ",
       "trophees": 137395,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 629,
+      "rang": 627,
       "nom": "67canettes",
       "trophees": 137395,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 630,
-      "nom": "Tortue Furtive",
-      "trophees": 137392,
-      "membres": 49,
       "nous": false
     }
   ]
