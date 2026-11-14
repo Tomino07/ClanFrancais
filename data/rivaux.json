@@ -1,16 +1,23 @@
 {
   "clans": [
     {
-      "rang": 625,
-      "nom": "adulte France",
+      "rang": 624,
+      "nom": "1terminable",
       "trophees": 137423,
-      "membres": 48,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 625,
+      "nom": "10.8 Return 2",
+      "trophees": 137423,
+      "membres": 46,
       "nous": false
     },
     {
       "rang": 626,
-      "nom": "92i Asiat",
-      "trophees": 137422,
+      "nom": "adulte France",
+      "trophees": 137423,
       "membres": 48,
       "nous": false
     },
@@ -30,17 +37,17 @@
     },
     {
       "rang": 629,
+      "nom": "Clan Francais",
+      "trophees": 137418,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 630,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
-    },
-    {
-      "rang": 630,
-      "nom": "Clan Francais",
-      "trophees": 137407,
-      "membres": 50,
-      "nous": true
     },
     {
       "rang": 631,
@@ -58,23 +65,16 @@
     },
     {
       "rang": 633,
-      "nom": "Tortue Furtive",
-      "trophees": 137395,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 634,
       "nom": "BURGOUZZ",
       "trophees": 137392,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 635,
-      "nom": "$KING-ROYALE$",
-      "trophees": 137390,
-      "membres": 50,
+      "rang": 634,
+      "nom": "Tortue Furtive",
+      "trophees": 137391,
+      "membres": 49,
       "nous": false
     }
   ]
