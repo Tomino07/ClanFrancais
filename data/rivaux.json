@@ -1,16 +1,9 @@
 {
   "clans": [
     {
-      "rang": 602,
-      "nom": "1terminable",
-      "trophees": 137431,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 603,
       "nom": "1er coffre",
-      "trophees": 137427,
+      "trophees": 137428,
       "membres": 47,
       "nous": false
     },
@@ -31,23 +24,23 @@
     {
       "rang": 606,
       "nom": "1 p'tit peu",
-      "trophees": 137419,
+      "trophees": 137416,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 607,
-      "nom": "Clan Francais",
-      "trophees": 137415,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 608,
       "nom": "10.9-reserve",
       "trophees": 137414,
       "membres": 49,
       "nous": false
+    },
+    {
+      "rang": 608,
+      "nom": "Clan Francais",
+      "trophees": 137411,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 609,
@@ -58,22 +51,29 @@
     },
     {
       "rang": 610,
-      "nom": "As de Coeur FR",
-      "trophees": 137401,
-      "membres": 47,
+      "nom": "ASSASSIN-FR",
+      "trophees": 137407,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 611,
       "nom": "67canettes",
-      "trophees": 137398,
+      "trophees": 137399,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 612,
+      "nom": "As de Coeur FR",
+      "trophees": 137398,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 613,
       "nom": "BURGOUZZ",
-      "trophees": 137395,
+      "trophees": 137396,
       "membres": 49,
       "nous": false
     }
