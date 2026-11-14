@@ -1,17 +1,31 @@
 {
   "clans": [
     {
+      "rang": 605,
+      "nom": "Brave Soldiers",
+      "trophees": 137432,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 606,
+      "nom": "1terminable",
+      "trophees": 137431,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 607,
-      "nom": "1er coffre",
-      "trophees": 137427,
-      "membres": 47,
+      "nom": "-pin",
+      "trophees": 137428,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 608,
-      "nom": "1terminable",
-      "trophees": 137423,
-      "membres": 50,
+      "nom": "1er coffre",
+      "trophees": 137427,
+      "membres": 47,
       "nous": false
     },
     {
@@ -23,24 +37,24 @@
     },
     {
       "rang": 610,
-      "nom": "10.9-reserve",
-      "trophees": 137420,
-      "membres": 49,
-      "nous": false
+      "nom": "Clan Francais",
+      "trophees": 137415,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 611,
       "nom": "#DLCW FR",
-      "trophees": 137419,
+      "trophees": 137415,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 612,
-      "nom": "Clan Francais",
-      "trophees": 137415,
-      "membres": 50,
-      "nous": true
+      "nom": "10.9-reserve",
+      "trophees": 137414,
+      "membres": 49,
+      "nous": false
     },
     {
       "rang": 613,
@@ -51,30 +65,16 @@
     },
     {
       "rang": 614,
-      "nom": "As de Coeur FR",
-      "trophees": 137401,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 615,
       "nom": "67canettes",
-      "trophees": 137400,
+      "trophees": 137402,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 616,
-      "nom": "BURGOUZZ",
-      "trophees": 137395,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 617,
-      "nom": "Tortue Furtive",
-      "trophees": 137393,
-      "membres": 49,
+      "rang": 615,
+      "nom": "As de Coeur FR",
+      "trophees": 137401,
+      "membres": 47,
       "nous": false
     }
   ]
