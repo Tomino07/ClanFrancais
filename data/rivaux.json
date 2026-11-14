@@ -1,10 +1,24 @@
 {
   "clans": [
     {
-      "rang": 612,
+      "rang": 610,
       "nom": "1er coffre",
-      "trophees": 137424,
+      "trophees": 137427,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 611,
+      "nom": "10.8 Return 2",
+      "trophees": 137423,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 612,
+      "nom": "#DLCW FR",
+      "trophees": 137423,
+      "membres": 50,
       "nous": false
     },
     {
@@ -16,63 +30,49 @@
     },
     {
       "rang": 614,
-      "nom": "10.8 Return 2",
-      "trophees": 137423,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 615,
-      "nom": "#DLCW FR",
-      "trophees": 137423,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 616,
       "nom": "10.9-reserve",
       "trophees": 137417,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 617,
+      "rang": 615,
       "nom": "Clan Francais",
       "trophees": 137415,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 618,
+      "rang": 616,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 619,
+      "rang": 617,
       "nom": "As de Coeur FR",
       "trophees": 137401,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 620,
+      "rang": 618,
       "nom": "BURGOUZZ",
       "trophees": 137395,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 621,
+      "rang": 619,
       "nom": "Tortue Furtive",
       "trophees": 137393,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 622,
-      "nom": "67canettes",
+      "rang": 620,
+      "nom": "ASSASSIN-FR",
       "trophees": 137392,
       "membres": 50,
       "nous": false
