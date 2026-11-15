@@ -1,66 +1,52 @@
 {
   "clans": [
     {
-      "rang": 610,
-      "nom": "les gaufres",
-      "trophees": 137441,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 611,
+      "rang": 612,
       "nom": "CLASH GANG",
       "trophees": 137435,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 612,
+      "rang": 613,
       "nom": "Normandie",
       "trophees": 137432,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 613,
-      "nom": "FrenchK|$$",
-      "trophees": 137426,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 614,
-      "nom": "1 p'tit peu",
-      "trophees": 137424,
+      "nom": "Les requins",
+      "trophees": 137432,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 615,
+      "nom": "FrenchK|$$",
+      "trophees": 137429,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 616,
+      "nom": "1 p'tit peu",
+      "trophees": 137425,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 617,
       "nom": "Clan Francais",
       "trophees": 137423,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 616,
-      "nom": "Les requins",
-      "trophees": 137422,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 617,
+      "rang": 618,
       "nom": "FRANCE",
       "trophees": 137421,
       "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 618,
-      "nom": "8 pool",
-      "trophees": 137410,
-      "membres": 49,
       "nous": false
     },
     {
@@ -75,6 +61,20 @@
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 621,
+      "nom": "8 pool",
+      "trophees": 137407,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 622,
+      "nom": "No GDC attitude",
+      "trophees": 137406,
+      "membres": 49,
       "nous": false
     }
   ]
