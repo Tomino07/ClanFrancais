@@ -1,10 +1,17 @@
 {
   "clans": [
     {
-      "rang": 612,
+      "rang": 611,
       "nom": "les gaufres",
       "trophees": 137441,
       "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 612,
+      "nom": "Etoile du soir",
+      "trophees": 137441,
+      "membres": 48,
       "nous": false
     },
     {
@@ -23,55 +30,48 @@
     },
     {
       "rang": 615,
-      "nom": "Etoile du soir",
-      "trophees": 137435,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 616,
       "nom": "French Team 3",
       "trophees": 137431,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 617,
+      "rang": 616,
       "nom": "Clan Francais",
       "trophees": 137416,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 618,
+      "rang": 617,
       "nom": "HELIOX",
       "trophees": 137415,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 619,
+      "rang": 618,
       "nom": "1 p'tit peu",
       "trophees": 137412,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 620,
+      "rang": 619,
       "nom": "majoxcrl",
       "trophees": 137408,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 621,
+      "rang": 620,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 622,
+      "rang": 621,
       "nom": "8 pool",
       "trophees": 137406,
       "membres": 49,
