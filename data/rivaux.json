@@ -1,46 +1,32 @@
 {
   "clans": [
     {
-      "rang": 609,
-      "nom": "92i Asiat",
-      "trophees": 137448,
+      "rang": 611,
+      "nom": "Brave Soldiers",
+      "trophees": 137442,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 610,
+      "rang": 612,
       "nom": "les gaufres",
       "trophees": 137441,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 611,
-      "nom": "Brave Soldiers",
-      "trophees": 137439,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 612,
-      "nom": "Etoile du soir",
-      "trophees": 137438,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 613,
-      "nom": "Normandie",
-      "trophees": 137437,
-      "membres": 50,
+      "nom": "Etoile du soir",
+      "trophees": 137440,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 614,
-      "nom": "Clan Francais",
-      "trophees": 137416,
+      "nom": "Normandie",
+      "trophees": 137424,
       "membres": 50,
-      "nous": true
+      "nous": false
     },
     {
       "rang": 615,
@@ -51,16 +37,16 @@
     },
     {
       "rang": 616,
-      "nom": "1 p'tit peu",
-      "trophees": 137412,
-      "membres": 49,
-      "nous": false
+      "nom": "Clan Francais",
+      "trophees": 137415,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 617,
-      "nom": "majoxcrl",
-      "trophees": 137408,
-      "membres": 48,
+      "nom": "1 p'tit peu",
+      "trophees": 137412,
+      "membres": 49,
       "nous": false
     },
     {
@@ -72,7 +58,21 @@
     },
     {
       "rang": 619,
+      "nom": "Au Vieux Deck",
+      "trophees": 137407,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 620,
       "nom": "8 pool",
+      "trophees": 137406,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 621,
+      "nom": "No GDC attitude",
       "trophees": 137406,
       "membres": 49,
       "nous": false
