@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 613,
+      "nom": "les gaufres",
+      "trophees": 137441,
+      "membres": 46,
+      "nous": false
+    },
+    {
       "rang": 614,
       "nom": "Normandie",
       "trophees": 137440,
@@ -17,7 +24,7 @@
     {
       "rang": 616,
       "nom": "Etoile du soir",
-      "trophees": 137432,
+      "trophees": 137434,
       "membres": 48,
       "nous": false
     },
@@ -30,50 +37,43 @@
     },
     {
       "rang": 618,
-      "nom": "1 p'tit peu",
-      "trophees": 137410,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 619,
       "nom": "Clan Francais",
-      "trophees": 137409,
+      "trophees": 137416,
       "membres": 50,
       "nous": true
     },
     {
+      "rang": 619,
+      "nom": "1 p'tit peu",
+      "trophees": 137413,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 620,
+      "nom": "ASSASSIN-FR",
+      "trophees": 137411,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 621,
       "nom": "majoxcrl",
       "trophees": 137408,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 621,
+      "rang": 622,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 622,
+      "rang": 623,
       "nom": "BURGOUZZ",
       "trophees": 137405,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 623,
-      "nom": "ASSASSIN-FR",
-      "trophees": 137405,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 624,
-      "nom": "om",
-      "trophees": 137403,
       "membres": 49,
       "nous": false
     }
