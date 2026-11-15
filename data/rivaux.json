@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 601,
+      "nom": "Etoile du soir",
+      "trophees": 137445,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 602,
       "nom": "les gaufres",
       "trophees": 137441,
@@ -24,36 +31,36 @@
     {
       "rang": 605,
       "nom": "FrenchK|$$",
-      "trophees": 137424,
+      "trophees": 137426,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 606,
-      "nom": "FRANCE",
-      "trophees": 137421,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 607,
       "nom": "Clan Francais",
       "trophees": 137417,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 608,
+      "rang": 607,
       "nom": "Les requins",
       "trophees": 137415,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 609,
+      "rang": 608,
       "nom": "1 p'tit peu",
-      "trophees": 137414,
+      "trophees": 137415,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 609,
+      "nom": "Elite Stars™",
+      "trophees": 137409,
+      "membres": 50,
       "nous": false
     },
     {
@@ -66,13 +73,6 @@
     {
       "rang": 611,
       "nom": "Au Vieux Deck",
-      "trophees": 137407,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 612,
-      "nom": "8 pool",
       "trophees": 137407,
       "membres": 49,
       "nous": false
