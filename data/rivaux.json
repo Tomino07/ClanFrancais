@@ -1,20 +1,6 @@
 {
   "clans": [
     {
-      "rang": 601,
-      "nom": "Etoile du soir",
-      "trophees": 137445,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 602,
-      "nom": "les gaufres",
-      "trophees": 137441,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 603,
       "nom": "CLASH GANG",
       "trophees": 137435,
@@ -37,43 +23,57 @@
     },
     {
       "rang": 606,
+      "nom": "FRANCE",
+      "trophees": 137421,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 607,
+      "nom": "1 p'tit peu",
+      "trophees": 137420,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 608,
       "nom": "Clan Francais",
       "trophees": 137417,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 607,
+      "rang": 609,
       "nom": "Les requins",
       "trophees": 137415,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 608,
-      "nom": "1 p'tit peu",
-      "trophees": 137415,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 609,
+      "rang": 610,
       "nom": "Elite Stars™",
       "trophees": 137409,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 610,
+      "rang": 611,
       "nom": "⚜️Fox River⚜️",
       "trophees": 137407,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 611,
-      "nom": "Au Vieux Deck",
+      "rang": 612,
+      "nom": "8 pool",
       "trophees": 137407,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 613,
+      "nom": "No GDC attitude",
+      "trophees": 137406,
       "membres": 49,
       "nous": false
     }
