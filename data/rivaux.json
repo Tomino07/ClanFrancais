@@ -2,37 +2,37 @@
   "clans": [
     {
       "rang": 614,
+      "nom": "Normandie",
+      "trophees": 137440,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 615,
       "nom": "Brave Soldiers",
       "trophees": 137439,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 615,
+      "rang": 616,
       "nom": "Etoile du soir",
       "trophees": 137432,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 616,
+      "rang": 617,
       "nom": "French Team 3",
       "trophees": 137430,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 617,
-      "nom": "1 p'tit peu",
-      "trophees": 137430,
-      "membres": 49,
-      "nous": false
-    },
-    {
       "rang": 618,
-      "nom": "majoxcrl",
-      "trophees": 137411,
-      "membres": 48,
+      "nom": "1 p'tit peu",
+      "trophees": 137410,
+      "membres": 49,
       "nous": false
     },
     {
@@ -44,16 +44,16 @@
     },
     {
       "rang": 620,
-      "nom": "⚜️Fox River⚜️",
-      "trophees": 137407,
-      "membres": 45,
+      "nom": "majoxcrl",
+      "trophees": 137408,
+      "membres": 48,
       "nous": false
     },
     {
       "rang": 621,
-      "nom": "om",
-      "trophees": 137406,
-      "membres": 49,
+      "nom": "⚜️Fox River⚜️",
+      "trophees": 137407,
+      "membres": 45,
       "nous": false
     },
     {
@@ -72,9 +72,9 @@
     },
     {
       "rang": 624,
-      "nom": "HELIOX",
-      "trophees": 137391,
-      "membres": 50,
+      "nom": "om",
+      "trophees": 137403,
+      "membres": 49,
       "nous": false
     }
   ]
