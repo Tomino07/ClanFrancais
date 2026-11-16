@@ -1,11 +1,35 @@
 {
-  "majAt": "2026-11-16T11:01:20Z",
-  "rang": 585,
+  "majAt": "2026-11-16T11:31:10Z",
+  "rang": 586,
   "rangPrecedent": 611,
   "score": 137421,
   "tropheesGuerre": 1782,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "P82Q8LVYP",
+      "nom": "Luckyvolution",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 48,
+      "vu": "20261116T112935.000Z"
+    },
+    {
+      "tag": "P0GGYJ82P",
+      "nom": "Exilaight",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 54,
+      "vu": "20261116T112514.000Z"
+    },
+    {
+      "tag": "VPQ920JU",
+      "nom": "benoit82",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 10,
+      "vu": "20261116T111958.000Z"
+    },
     {
       "tag": "R80VQ08V",
       "nom": "Spank",
@@ -31,14 +55,6 @@
       "vu": "20261116T100945.000Z"
     },
     {
-      "tag": "P82Q8LVYP",
-      "nom": "Luckyvolution",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 38,
-      "vu": "20261116T094509.000Z"
-    },
-    {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
@@ -47,28 +63,12 @@
       "vu": "20261116T082517.000Z"
     },
     {
-      "tag": "P0GGYJ82P",
-      "nom": "Exilaight",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 54,
-      "vu": "20261116T075111.000Z"
-    },
-    {
       "tag": "P9YPQURQ",
       "nom": "samuel",
       "role": "member",
       "trophees": 14000,
       "dons": 34,
       "vu": "20261116T074504.000Z"
-    },
-    {
-      "tag": "VPQ920JU",
-      "nom": "benoit82",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 10,
-      "vu": "20261116T071551.000Z"
     },
     {
       "tag": "LCUPLPR09",
@@ -188,7 +188,7 @@
       "role": "member",
       "trophees": 13875,
       "dons": 0,
-      "vu": "20261115T195912.000Z"
+      "vu": "20261116T112038.000Z"
     },
     {
       "tag": "2V0G2JUPV",
@@ -404,7 +404,7 @@
       "role": "leader",
       "trophees": 8500,
       "dons": 0,
-      "vu": "20261114T233918.000Z"
+      "vu": "20261116T111602.000Z"
     }
   ]
 }
