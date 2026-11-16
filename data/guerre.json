@@ -1,14 +1,14 @@
 {
   "type": "warDay",
   "jour": 6,
-  "majAt": "2026-11-16T09:01:11Z",
+  "majAt": "2026-11-16T09:22:49Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "Deutschland",
       "points": 7933,
-      "aujourdhui": 2600,
-      "combats": 18,
+      "aujourdhui": 3400,
+      "combats": 23,
       "fini": false,
       "nous": false
     },
