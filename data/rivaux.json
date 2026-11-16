@@ -1,57 +1,64 @@
 {
   "clans": [
     {
-      "rang": 581,
+      "rang": 580,
       "nom": "Captain's clan",
       "trophees": 137444,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 582,
+      "rang": 581,
       "nom": "CLASH GANG",
       "trophees": 137437,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 583,
+      "rang": 582,
       "nom": "les gaufres",
       "trophees": 137436,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 584,
+      "rang": 583,
       "nom": "SI VIS PACEM",
       "trophees": 137430,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 585,
+      "rang": 584,
       "nom": "1P.E.K.K.A BLEU",
       "trophees": 137425,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 586,
+      "rang": 585,
       "nom": "Clan Francais",
       "trophees": 137421,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 587,
+      "rang": 586,
       "nom": "Red Falocon FR",
       "trophees": 137419,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 588,
+      "rang": 587,
       "nom": "Elite Stars™",
+      "trophees": 137418,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 588,
+      "nom": "67canettes",
       "trophees": 137418,
       "membres": 50,
       "nous": false
@@ -65,15 +72,8 @@
     },
     {
       "rang": 590,
-      "nom": "67canettes",
-      "trophees": 137409,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 591,
       "nom": "Toulouse",
-      "trophees": 137406,
+      "trophees": 137409,
       "membres": 49,
       "nous": false
     }
