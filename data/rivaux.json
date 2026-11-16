@@ -1,20 +1,6 @@
 {
   "clans": [
     {
-      "rang": 578,
-      "nom": "CLASH GANG",
-      "trophees": 137437,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 579,
-      "nom": "les gaufres",
-      "trophees": 137436,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 580,
       "nom": "SI VIS PACEM",
       "trophees": 137430,
@@ -37,24 +23,24 @@
     },
     {
       "rang": 583,
-      "nom": "Clan Francais",
-      "trophees": 137418,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 584,
       "nom": "CanardPC GDC",
       "trophees": 137417,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 585,
+      "rang": 584,
       "nom": "Parabellum II",
-      "trophees": 137414,
+      "trophees": 137416,
       "membres": 48,
       "nous": false
+    },
+    {
+      "rang": 585,
+      "nom": "Clan Francais",
+      "trophees": 137416,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 586,
@@ -66,14 +52,28 @@
     {
       "rang": 587,
       "nom": "No GDC attitude",
-      "trophees": 137410,
+      "trophees": 137409,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 588,
       "nom": "...",
-      "trophees": 137409,
+      "trophees": 137404,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 589,
+      "nom": "Bretagne",
+      "trophees": 137402,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 590,
+      "nom": "67canettes",
+      "trophees": 137402,
       "membres": 50,
       "nous": false
     }
