@@ -1,11 +1,27 @@
 {
-  "majAt": "2026-11-16T17:31:18Z",
-  "rang": 586,
+  "majAt": "2026-11-16T18:01:16Z",
+  "rang": 582,
   "rangPrecedent": 611,
-  "score": 137412,
+  "score": 137409,
   "tropheesGuerre": 1782,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "QJ8RL988",
+      "nom": "sa_chate",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 90,
+      "vu": "20261116T180009.000Z"
+    },
+    {
+      "tag": "P0GGYJ82P",
+      "nom": "Exilaight",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 54,
+      "vu": "20261116T175454.000Z"
+    },
     {
       "tag": "P9YPQURQ",
       "nom": "samuel",
@@ -29,14 +45,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261116T164358.000Z"
-    },
-    {
-      "tag": "P0GGYJ82P",
-      "nom": "Exilaight",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 54,
-      "vu": "20261116T160635.000Z"
     },
     {
       "tag": "P82Q8LVYP",
@@ -69,14 +77,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261116T100945.000Z"
-    },
-    {
-      "tag": "QJ8RL988",
-      "nom": "sa_chate",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 46,
-      "vu": "20261116T082517.000Z"
     },
     {
       "tag": "LCUPLPR09",
@@ -303,20 +303,20 @@
       "vu": "20261116T121917.000Z"
     },
     {
-      "tag": "PPRJ9RGV",
-      "nom": "baboon",
-      "role": "member",
-      "trophees": 12671,
-      "dons": 0,
-      "vu": "20261116T155116.000Z"
-    },
-    {
       "tag": "8JYJ90LQ",
       "nom": "rocamesijeytb",
       "role": "member",
       "trophees": 12646,
       "dons": 0,
       "vu": "20261108T091238.000Z"
+    },
+    {
+      "tag": "PPRJ9RGV",
+      "nom": "baboon",
+      "role": "member",
+      "trophees": 12641,
+      "dons": 0,
+      "vu": "20261116T175156.000Z"
     },
     {
       "tag": "VY9Q80URP",
