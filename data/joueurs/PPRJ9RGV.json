@@ -13,10 +13,6 @@
       "image": "https://api-assets.clashroyale.com/cards/300/lPOSw6H7YOHq2miSCrf7ZDL3ANjhJdPPDYOTujdNrVE.png"
     },
     {
-      "nom": "Skeleton King",
-      "image": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png"
-    },
-    {
       "nom": "Witch",
       "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
     },
@@ -45,7 +41,7 @@
   "enCours": {
     "points": 0,
     "combats": 0,
-    "aujourdhui": 0,
+    "aujourdhui": 1,
     "type": "training",
     "jour": 1,
     "semaine": 3,
@@ -53,6 +49,50 @@
   },
   "mvps": 1,
   "combats": [
+    {
+      "date": "20261117T121826.000Z",
+      "type": "riverRacePvP",
+      "mode": "RampUpElixir_Ladder",
+      "moi": 0,
+      "adv": 1,
+      "trophees": null,
+      "adversaire": "RATGAMING",
+      "clanAdv": "DMTRIX",
+      "deckAdv": [
+        {
+          "nom": "Musketeer",
+          "image": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png"
+        },
+        {
+          "nom": "Monk",
+          "image": "https://api-assets.clashroyale.com/cards/300/2onG4t4-CxqwFVZAn6zpWxFz3_mG2ksSj4Q7zldo1SM.png"
+        },
+        {
+          "nom": "Mega Minion",
+          "image": "https://api-assets.clashroyale.com/cards/300/-T_e4YLbuhPBKbYnBwQfXgynNpp5eOIN_0RracYwL9c.png"
+        },
+        {
+          "nom": "Heal Spirit",
+          "image": "https://api-assets.clashroyale.com/cards/300/GITl06sa2nGRLPvboyXbGEv5E3I-wAwn1Eqa5esggbc.png"
+        },
+        {
+          "nom": "Rage",
+          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
+        },
+        {
+          "nom": "Hog Rider",
+          "image": "https://api-assets.clashroyale.com/cards/300/Ubu0oUl8tZkusnkZf8Xv9Vno5IO29Y-jbZ4fhoNJ5oc.png"
+        },
+        {
+          "nom": "Skeletons",
+          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
+        },
+        {
+          "nom": "Arrows",
+          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
+        }
+      ]
+    },
     {
       "date": "20261116T181051.000Z",
       "type": "PvP",
@@ -510,50 +550,6 @@
         {
           "nom": "Graveyard",
           "image": "https://api-assets.clashroyale.com/cards/300/Icp8BIyyfBTj1ncCJS7mb82SY7TPV-MAE-J2L2R48DI.png"
-        }
-      ]
-    },
-    {
-      "date": "20261113T181250.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 2,
-      "adv": 3,
-      "trophees": -29,
-      "adversaire": "jotta jamahi",
-      "clanAdv": "wonkcul brothrs",
-      "deckAdv": [
-        {
-          "nom": "Battle Ram",
-          "image": "https://api-assets.clashroyale.com/cards/300/dyc50V2cplKi4H7pq1B3I36pl_sEH5DQrNHboS_dbbM.png"
-        },
-        {
-          "nom": "Princess",
-          "image": "https://api-assets.clashroyale.com/cards/300/bAwMcqp9EKVIKH3ZLm_m0MqZFSG72zG-vKxpx8aKoVs.png"
-        },
-        {
-          "nom": "Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/cfwk1vzehVyHC-uloEIH6NOI0hOdofCutR5PyhIgO6w.png"
-        },
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Mini P.E.K.K.A",
-          "image": "https://api-assets.clashroyale.com/cards/300/Fmltc4j3Ve9vO_xhHHPEO3PRP3SmU2oKp2zkZQHRZT4.png"
-        },
-        {
-          "nom": "Arrows",
-          "image": "https://api-assets.clashroyale.com/cards/300/Flsoci-Y6y8ZFVi5uRFTmgkPnCmMyMVrU7YmmuPvSBo.png"
-        },
-        {
-          "nom": "Firecracker",
-          "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
-        },
-        {
-          "nom": "Goblin Barrel",
-          "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
         }
       ]
     }
