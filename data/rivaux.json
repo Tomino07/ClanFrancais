@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 591,
+      "nom": "Parabellum II",
+      "trophees": 137429,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 592,
       "nom": "SI VIS PACEM",
       "trophees": 137429,
@@ -30,48 +37,41 @@
     },
     {
       "rang": 596,
-      "nom": "#Tranquilos2.0#",
-      "trophees": 137419,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 597,
       "nom": "Clan Francais",
       "trophees": 137418,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 598,
+      "rang": 597,
       "nom": "300Spartiates",
       "trophees": 137417,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 599,
+      "rang": 598,
       "nom": "Toulouse",
       "trophees": 137410,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 600,
-      "nom": "! IZI BANGS !",
-      "trophees": 137409,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 601,
+      "rang": 599,
       "nom": "French Elite",
       "trophees": 137406,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 602,
+      "rang": 600,
+      "nom": "! IZI BANGS !",
+      "trophees": 137406,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 601,
       "nom": "No GDC attitude",
       "trophees": 137402,
       "membres": 49,
