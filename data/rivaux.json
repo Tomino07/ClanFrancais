@@ -1,6 +1,27 @@
 {
   "clans": [
     {
+      "rang": 588,
+      "nom": "adultes elite",
+      "trophees": 137452,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 589,
+      "nom": "CLASH GANG",
+      "trophees": 137448,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 590,
+      "nom": "Carpe Diem ✨⭐",
+      "trophees": 137446,
+      "membres": 47,
+      "nous": false
+    },
+    {
       "rang": 591,
       "nom": "les gaufres",
       "trophees": 137439,
@@ -10,37 +31,37 @@
     {
       "rang": 592,
       "nom": "Black-Star-Fr",
-      "trophees": 137433,
+      "trophees": 137436,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 593,
+      "nom": "Clan Francais",
+      "trophees": 137430,
+      "membres": 50,
+      "nous": true
+    },
+    {
+      "rang": 594,
       "nom": "Parabellum II",
       "trophees": 137429,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 594,
+      "rang": 595,
       "nom": "SI VIS PACEM",
       "trophees": 137425,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 595,
+      "rang": 596,
       "nom": "! IZI BANGS !",
       "trophees": 137425,
       "membres": 50,
       "nous": false
-    },
-    {
-      "rang": 596,
-      "nom": "Clan Francais",
-      "trophees": 137420,
-      "membres": 50,
-      "nous": true
     },
     {
       "rang": 597,
@@ -54,27 +75,6 @@
       "nom": "1P.E.K.K.A BLEU",
       "trophees": 137417,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 599,
-      "nom": "France Adulte",
-      "trophees": 137413,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 600,
-      "nom": "Toulouse",
-      "trophees": 137410,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 601,
-      "nom": "No GDC attitude",
-      "trophees": 137405,
-      "membres": 49,
       "nous": false
     }
   ]
