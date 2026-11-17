@@ -1,11 +1,35 @@
 {
-  "majAt": "2026-11-17T11:39:21Z",
-  "rang": 593,
+  "majAt": "2026-11-17T12:01:12Z",
+  "rang": 592,
   "rangPrecedent": 606,
   "score": 137430,
   "tropheesGuerre": 1782,
   "membres": 50,
   "joueurs": [
+    {
+      "tag": "R80VQ08V",
+      "nom": "Spank",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261117T115240.000Z"
+    },
+    {
+      "tag": "VPQ920JU",
+      "nom": "benoit82",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 56,
+      "vu": "20261117T114901.000Z"
+    },
+    {
+      "tag": "9QQYPPLU",
+      "nom": "Litrode",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261117T114740.000Z"
+    },
     {
       "tag": "LCUPLPR09",
       "nom": "axou",
@@ -15,28 +39,12 @@
       "vu": "20261117T111208.000Z"
     },
     {
-      "tag": "9QQYPPLU",
-      "nom": "Litrode",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261117T105440.000Z"
-    },
-    {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
       "trophees": 14000,
       "dons": 118,
       "vu": "20261117T092647.000Z"
-    },
-    {
-      "tag": "VPQ920JU",
-      "nom": "benoit82",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 48,
-      "vu": "20261117T071831.000Z"
     },
     {
       "tag": "V8UVQCGLR",
@@ -61,14 +69,6 @@
       "trophees": 14000,
       "dons": 96,
       "vu": "20261116T193319.000Z"
-    },
-    {
-      "tag": "R80VQ08V",
-      "nom": "Spank",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261116T190224.000Z"
     },
     {
       "tag": "P82Q8LVYP",
@@ -379,8 +379,8 @@
       "nom": "M4RTYF4N4T1K",
       "role": "member",
       "trophees": 10394,
-      "dons": 45,
-      "vu": "20261117T083328.000Z"
+      "dons": 53,
+      "vu": "20261117T115857.000Z"
     },
     {
       "tag": "G0JL20P9V",
@@ -404,7 +404,7 @@
       "role": "leader",
       "trophees": 8500,
       "dons": 0,
-      "vu": "20261117T090723.000Z"
+      "vu": "20261117T114532.000Z"
     }
   ]
 }
