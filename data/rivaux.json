@@ -1,6 +1,20 @@
 {
   "clans": [
     {
+      "rang": 591,
+      "nom": "les gaufres",
+      "trophees": 137439,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 592,
+      "nom": "Black-Star-Fr",
+      "trophees": 137433,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 593,
       "nom": "Parabellum II",
       "trophees": 137429,
@@ -17,16 +31,16 @@
     {
       "rang": 595,
       "nom": "! IZI BANGS !",
-      "trophees": 137422,
+      "trophees": 137425,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 596,
-      "nom": "#DLCW FR",
+      "nom": "Clan Francais",
       "trophees": 137420,
-      "membres": 49,
-      "nous": false
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 597,
@@ -37,43 +51,29 @@
     },
     {
       "rang": 598,
-      "nom": "Clan Francais",
-      "trophees": 137418,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 599,
       "nom": "1P.E.K.K.A BLEU",
       "trophees": 137417,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 600,
+      "rang": 599,
       "nom": "France Adulte",
-      "trophees": 137416,
+      "trophees": 137413,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 601,
+      "rang": 600,
       "nom": "Toulouse",
       "trophees": 137410,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 602,
-      "nom": "French Elite",
-      "trophees": 137406,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 603,
+      "rang": 601,
       "nom": "No GDC attitude",
-      "trophees": 137402,
+      "trophees": 137405,
       "membres": 49,
       "nous": false
     }
