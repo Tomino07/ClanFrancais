@@ -1,14 +1,14 @@
 {
   "type": "training",
-  "jour": 0,
-  "majAt": "2026-11-17T09:31:11Z",
+  "jour": 1,
+  "majAt": "2026-11-17T10:01:14Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "INDIANS",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
@@ -16,7 +16,7 @@
       "nom": "Clan Francais",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 10,
+      "combats": 0,
       "fini": false,
       "nous": true
     },
@@ -40,7 +40,7 @@
       "nom": "Deutschland",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 0,
       "fini": false,
       "nous": false
     }
