@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 615,
+      "nom": "1 Pro App",
+      "trophees": 137458,
+      "membres": 46,
+      "nous": false
+    },
+    {
       "rang": 616,
       "nom": "adulte France",
       "trophees": 137457,
@@ -16,31 +23,31 @@
     },
     {
       "rang": 618,
-      "nom": "1/2mouelleux",
-      "trophees": 137454,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 619,
       "nom": "AS DE LA GUERRE",
       "trophees": 137440,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 620,
+      "rang": 619,
       "nom": "les gaufres",
       "trophees": 137438,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 621,
+      "rang": 620,
       "nom": "Clan Francais",
-      "trophees": 137436,
+      "trophees": 137437,
       "membres": 50,
       "nous": true
+    },
+    {
+      "rang": 621,
+      "nom": "1/2mouelleux",
+      "trophees": 137437,
+      "membres": 50,
+      "nous": false
     },
     {
       "rang": 622,
@@ -65,16 +72,9 @@
     },
     {
       "rang": 625,
-      "nom": "Black's Legends",
-      "trophees": 137427,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 626,
-      "nom": "<AJAX>",
-      "trophees": 137427,
-      "membres": 47,
+      "nom": "A french clan 2",
+      "trophees": 137428,
+      "membres": 49,
       "nous": false
     }
   ]
