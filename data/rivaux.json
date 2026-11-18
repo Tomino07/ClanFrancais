@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 611,
+      "rang": 614,
+      "nom": "Ultra",
+      "trophees": 137474,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 615,
       "nom": "Adulte KS45",
       "trophees": 137470,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 612,
+      "rang": 616,
       "nom": "2 clans pains",
-      "trophees": 137467,
+      "trophees": 137464,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 613,
-      "nom": "adulte France",
-      "trophees": 137457,
-      "membres": 45,
+      "rang": 617,
+      "nom": "DBZ SAIYANS",
+      "trophees": 137456,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 614,
+      "rang": 618,
       "nom": "king2017",
       "trophees": 137455,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 615,
-      "nom": "DBZ SAIYANS",
-      "trophees": 137449,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 616,
+      "rang": 619,
       "nom": "Clan Francais",
       "trophees": 137447,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 617,
+      "rang": 620,
       "nom": "1 Pro App",
       "trophees": 137447,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 618,
-      "nom": "1/2mouelleux",
-      "trophees": 137444,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 619,
+      "rang": 621,
       "nom": "11 de légende",
       "trophees": 137442,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 620,
+      "rang": 622,
       "nom": "les gaufres",
       "trophees": 137441,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 621,
-      "nom": "AS DE LA GUERRE",
-      "trophees": 137438,
-      "membres": 49,
+      "rang": 623,
+      "nom": "1/2mouelleux",
+      "trophees": 137441,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 624,
+      "nom": "Bretagne",
+      "trophees": 137433,
+      "membres": 50,
       "nous": false
     }
   ]
