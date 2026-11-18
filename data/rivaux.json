@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 603,
-      "nom": "DBZ SAIYANS",
-      "trophees": 137443,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 604,
       "nom": "les gaufres",
       "trophees": 137438,
@@ -23,31 +16,31 @@
     },
     {
       "rang": 606,
+      "nom": "<AJAX>",
+      "trophees": 137431,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 607,
       "nom": "Parabellum II",
       "trophees": 137430,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 607,
+      "rang": 608,
       "nom": "Ultra",
       "trophees": 137430,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 608,
+      "rang": 609,
       "nom": "Clan Francais",
-      "trophees": 137428,
+      "trophees": 137429,
       "membres": 50,
       "nous": true
-    },
-    {
-      "rang": 609,
-      "nom": "<AJAX>",
-      "trophees": 137425,
-      "membres": 47,
-      "nous": false
     },
     {
       "rang": 610,
@@ -75,6 +68,13 @@
       "nom": "#Bûche de Noël",
       "trophees": 137414,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 614,
+      "nom": "Toulouse",
+      "trophees": 137414,
+      "membres": 49,
       "nous": false
     }
   ]
