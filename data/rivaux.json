@@ -2,30 +2,30 @@
   "clans": [
     {
       "rang": 605,
+      "nom": "Ultra",
+      "trophees": 137450,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 606,
       "nom": "DBZ SAIYANS",
       "trophees": 137443,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 606,
+      "rang": 607,
       "nom": "les gaufres",
       "trophees": 137438,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 607,
+      "rang": 608,
       "nom": "actarus club",
       "trophees": 137438,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 608,
-      "nom": "Ultra",
-      "trophees": 137433,
-      "membres": 45,
       "nous": false
     },
     {
@@ -52,7 +52,7 @@
     {
       "rang": 612,
       "nom": "11 de légende",
-      "trophees": 137426,
+      "trophees": 137427,
       "membres": 50,
       "nous": false
     },
@@ -65,15 +65,15 @@
     },
     {
       "rang": 614,
-      "nom": "Bretagne",
-      "trophees": 137420,
+      "nom": "#Bûche de Noël",
+      "trophees": 137422,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 615,
-      "nom": "Black's Legends",
-      "trophees": 137418,
+      "nom": "Bretagne",
+      "trophees": 137420,
       "membres": 50,
       "nous": false
     }
