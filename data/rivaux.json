@@ -1,30 +1,23 @@
 {
   "clans": [
     {
-      "rang": 613,
-      "nom": "les gaufres",
-      "trophees": 137438,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 614,
       "nom": "1P.E.K.K.A BLEU",
-      "trophees": 137434,
+      "trophees": 137437,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 615,
       "nom": "1/2mouelleux",
-      "trophees": 137432,
+      "trophees": 137433,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 616,
       "nom": "11 de légende",
-      "trophees": 137428,
+      "trophees": 137431,
       "membres": 50,
       "nous": false
     },
@@ -37,17 +30,17 @@
     },
     {
       "rang": 618,
+      "nom": "Black's Legends",
+      "trophees": 137425,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 619,
       "nom": "Clan Francais",
       "trophees": 137424,
       "membres": 50,
       "nous": true
-    },
-    {
-      "rang": 619,
-      "nom": "Black's Legends",
-      "trophees": 137422,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 620,
@@ -59,7 +52,7 @@
     {
       "rang": 621,
       "nom": "French Ghoul 2",
-      "trophees": 137417,
+      "trophees": 137418,
       "membres": 50,
       "nous": false
     },
@@ -73,8 +66,15 @@
     {
       "rang": 623,
       "nom": "A french clan 2",
-      "trophees": 137414,
+      "trophees": 137409,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 624,
+      "nom": "les déglingués",
+      "trophees": 137407,
+      "membres": 47,
       "nous": false
     }
   ]
