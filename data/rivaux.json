@@ -1,6 +1,27 @@
 {
   "clans": [
     {
+      "rang": 614,
+      "nom": "DBZ SAIYANS",
+      "trophees": 137453,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 615,
+      "nom": "king2017",
+      "trophees": 137451,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 616,
+      "nom": "actarus club",
+      "trophees": 137450,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 617,
       "nom": "11 de légende",
       "trophees": 137439,
@@ -16,10 +37,10 @@
     },
     {
       "rang": 619,
-      "nom": "1P.E.K.K.A BLEU",
+      "nom": "Clan Francais",
       "trophees": 137438,
       "membres": 50,
-      "nous": false
+      "nous": true
     },
     {
       "rang": 620,
@@ -37,15 +58,15 @@
     },
     {
       "rang": 622,
-      "nom": "Clan Francais",
-      "trophees": 137430,
+      "nom": "1P.E.K.K.A BLEU",
+      "trophees": 137432,
       "membres": 50,
-      "nous": true
+      "nous": false
     },
     {
       "rang": 623,
       "nom": "<AJAX>",
-      "trophees": 137426,
+      "trophees": 137429,
       "membres": 47,
       "nous": false
     },
@@ -54,27 +75,6 @@
       "nom": "Black's Legends",
       "trophees": 137425,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 625,
-      "nom": "Toulouse",
-      "trophees": 137422,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 626,
-      "nom": "Phantoms Push",
-      "trophees": 137418,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 627,
-      "nom": "Les requins",
-      "trophees": 137416,
-      "membres": 49,
       "nous": false
     }
   ]
