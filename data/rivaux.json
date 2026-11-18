@@ -2,30 +2,30 @@
   "clans": [
     {
       "rang": 605,
-      "nom": "1/2mouelleux",
-      "trophees": 137451,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 606,
       "nom": "DBZ SAIYANS",
       "trophees": 137443,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 607,
+      "rang": 606,
       "nom": "les gaufres",
       "trophees": 137438,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 608,
+      "rang": 607,
       "nom": "actarus club",
       "trophees": 137438,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 608,
+      "nom": "Ultra",
+      "trophees": 137433,
+      "membres": 45,
       "nous": false
     },
     {
@@ -51,29 +51,29 @@
     },
     {
       "rang": 612,
-      "nom": "Ultra",
-      "trophees": 137430,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 613,
       "nom": "11 de légende",
-      "trophees": 137424,
+      "trophees": 137426,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 614,
+      "rang": 613,
       "nom": "Les requins",
       "trophees": 137423,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 615,
+      "rang": 614,
       "nom": "Bretagne",
       "trophees": 137420,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 615,
+      "nom": "Black's Legends",
+      "trophees": 137418,
       "membres": 50,
       "nous": false
     }
