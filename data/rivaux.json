@@ -1,46 +1,53 @@
 {
   "clans": [
     {
-      "rang": 604,
+      "rang": 603,
       "nom": "DBZ SAIYANS",
       "trophees": 137443,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 605,
-      "nom": "actarus club",
-      "trophees": 137441,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 606,
+      "rang": 604,
       "nom": "les gaufres",
       "trophees": 137438,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 607,
+      "rang": 605,
+      "nom": "actarus club",
+      "trophees": 137438,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 606,
       "nom": "Parabellum II",
       "trophees": 137430,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 608,
+      "rang": 607,
       "nom": "Ultra",
       "trophees": 137430,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 609,
+      "rang": 608,
       "nom": "Clan Francais",
       "trophees": 137428,
       "membres": 50,
       "nous": true
+    },
+    {
+      "rang": 609,
+      "nom": "<AJAX>",
+      "trophees": 137425,
+      "membres": 47,
+      "nous": false
     },
     {
       "rang": 610,
@@ -65,15 +72,8 @@
     },
     {
       "rang": 613,
-      "nom": "30th Gaming",
-      "trophees": 137413,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 614,
-      "nom": "Black's Legends",
-      "trophees": 137411,
+      "nom": "#Bûche de Noël",
+      "trophees": 137414,
       "membres": 50,
       "nous": false
     }
