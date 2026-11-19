@@ -1,9 +1,30 @@
 {
   "clans": [
     {
-      "rang": 632,
+      "rang": 629,
+      "nom": "bordeaux",
+      "trophees": 137496,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 630,
+      "nom": "11 de légende",
+      "trophees": 137482,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 631,
       "nom": "Adulte KS45",
       "trophees": 137480,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 632,
+      "nom": "DBZ SAIYANS",
+      "trophees": 137473,
       "membres": 50,
       "nous": false
     },
@@ -16,36 +37,36 @@
     },
     {
       "rang": 634,
-      "nom": "11 de légende",
-      "trophees": 137470,
+      "nom": "Clan Francais",
+      "trophees": 137464,
       "membres": 50,
-      "nous": false
+      "nous": true
     },
     {
       "rang": 635,
-      "nom": "DBZ SAIYANS",
-      "trophees": 137470,
+      "nom": "2 clans pains",
+      "trophees": 137464,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 636,
-      "nom": "2 clans pains",
+      "nom": "1/2mouelleux",
       "trophees": 137463,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 637,
-      "nom": "Clan Francais",
-      "trophees": 137462,
-      "membres": 50,
-      "nous": true
+      "nom": "Black-Star-Fr",
+      "trophees": 137455,
+      "membres": 48,
+      "nous": false
     },
     {
       "rang": 638,
-      "nom": "1/2mouelleux",
-      "trophees": 137462,
+      "nom": "#Bûche de Noël",
+      "trophees": 137451,
       "membres": 50,
       "nous": false
     },
@@ -54,27 +75,6 @@
       "nom": "Magic Crew",
       "trophees": 137449,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 640,
-      "nom": "1 Pro App",
-      "trophees": 137447,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 641,
-      "nom": "#Bûche de Noël",
-      "trophees": 137447,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 642,
-      "nom": "1P.E.K.K.A BLEU",
-      "trophees": 137446,
-      "membres": 50,
       "nous": false
     }
   ]
