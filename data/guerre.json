@@ -1,7 +1,7 @@
 {
-  "type": "training",
-  "jour": 2,
-  "majAt": "2026-11-19T09:31:09Z",
+  "type": "warDay",
+  "jour": 3,
+  "majAt": "2026-11-19T10:01:15Z",
   "objectif": 10000,
   "clans": [
     {
@@ -16,7 +16,7 @@
       "nom": "Clan Francais",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 9,
+      "combats": 0,
       "fini": false,
       "nous": true
     },
@@ -40,7 +40,7 @@
       "nom": "Deutschland",
       "points": 0,
       "aujourdhui": 0,
-      "combats": 4,
+      "combats": 0,
       "fini": false,
       "nous": false
     }
