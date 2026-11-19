@@ -1,7 +1,7 @@
 {
   "mois": "2026-11",
   "libelle": "novembre 2026",
-  "majAt": "2026-11-19T18:32:05.474Z",
+  "majAt": "2026-11-19T18:35:32.068Z",
   "classement": [
     {
       "tag": "VYVCQRJPC",
@@ -10,13 +10,13 @@
       "guerre": 5700,
       "dons": 1155,
       "trophees": 1583,
-      "score": 86
+      "score": 84
     },
     {
       "tag": "QJ8RL988",
       "nom": "sa_chate",
       "role": "member",
-      "guerre": 7950,
+      "guerre": 8400,
       "dons": 726,
       "trophees": 0,
       "score": 66
@@ -28,15 +28,6 @@
       "guerre": 3350,
       "dons": 0,
       "trophees": 0,
-      "score": 21
-    },
-    {
-      "tag": "UV20LCP22",
-      "nom": "Xtazz27",
-      "role": "member",
-      "guerre": 1350,
-      "dons": 519,
-      "trophees": 0,
       "score": 20
     },
     {
@@ -47,6 +38,15 @@
       "dons": 877,
       "trophees": 50,
       "score": 20
+    },
+    {
+      "tag": "UV20LCP22",
+      "nom": "Xtazz27",
+      "role": "member",
+      "guerre": 1350,
+      "dons": 519,
+      "trophees": 0,
+      "score": 19
     }
   ],
   "historique": [
