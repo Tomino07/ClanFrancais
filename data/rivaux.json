@@ -1,53 +1,46 @@
 {
   "clans": [
     {
-      "rang": 619,
-      "nom": "DBZ SAIYANS",
-      "trophees": 137460,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 620,
       "nom": "1/2mouelleux",
-      "trophees": 137454,
+      "trophees": 137458,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 621,
       "nom": "11 de légende",
-      "trophees": 137453,
+      "trophees": 137455,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 622,
       "nom": "king2017",
-      "trophees": 137453,
+      "trophees": 137452,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 623,
+      "nom": "1P.E.K.K.A BLEU",
+      "trophees": 137448,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 624,
       "nom": "1 Pro App",
       "trophees": 137447,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 624,
+      "rang": 625,
       "nom": "Clan Francais",
       "trophees": 137444,
       "membres": 50,
       "nous": true
-    },
-    {
-      "rang": 625,
-      "nom": "1P.E.K.K.A BLEU",
-      "trophees": 137444,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 626,
@@ -75,6 +68,13 @@
       "nom": "Toulouse",
       "trophees": 137425,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 630,
+      "nom": "Black's Legends",
+      "trophees": 137422,
+      "membres": 50,
       "nous": false
     }
   ]
