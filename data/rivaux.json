@@ -1,25 +1,46 @@
 {
   "clans": [
     {
-      "rang": 639,
+      "rang": 636,
+      "nom": "Captain's clan",
+      "trophees": 137497,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 637,
+      "nom": "! Forteresse 6",
+      "trophees": 137496,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 638,
       "nom": "bordeaux",
       "trophees": 137491,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 640,
+      "rang": 639,
       "nom": "Adulte KS45",
       "trophees": 137476,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 641,
+      "rang": 640,
       "nom": "2 clans pains",
-      "trophees": 137473,
+      "trophees": 137474,
       "membres": 50,
       "nous": false
+    },
+    {
+      "rang": 641,
+      "nom": "Clan Francais",
+      "trophees": 137472,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 642,
@@ -30,48 +51,27 @@
     },
     {
       "rang": 643,
-      "nom": "Dame de Trêfle",
-      "trophees": 137468,
-      "membres": 48,
+      "nom": "#Bûche de Noël",
+      "trophees": 137458,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 644,
-      "nom": "Clan Francais",
-      "trophees": 137468,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 645,
-      "nom": "DBZ SAIYANS",
-      "trophees": 137465,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 646,
       "nom": "Magic Crew",
       "trophees": 137457,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 647,
-      "nom": "#Bûche de Noël",
-      "trophees": 137448,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 648,
+      "rang": 645,
       "nom": "1 Pro App",
       "trophees": 137447,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 649,
+      "rang": 646,
       "nom": "Toulouse",
       "trophees": 137439,
       "membres": 49,
