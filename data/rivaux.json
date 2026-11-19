@@ -1,10 +1,17 @@
 {
   "clans": [
     {
-      "rang": 638,
+      "rang": 637,
       "nom": "bordeaux",
       "trophees": 137494,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 638,
+      "nom": "1/2mouelleux",
+      "trophees": 137487,
+      "membres": 50,
       "nous": false
     },
     {
@@ -16,9 +23,9 @@
     },
     {
       "rang": 640,
-      "nom": "2 clans pains",
-      "trophees": 137475,
-      "membres": 50,
+      "nom": "Astero Level 1",
+      "trophees": 137476,
+      "membres": 49,
       "nous": false
     },
     {
@@ -30,29 +37,29 @@
     },
     {
       "rang": 642,
-      "nom": "Astero Level 1",
-      "trophees": 137473,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 643,
       "nom": "Clan Francais",
       "trophees": 137472,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 644,
+      "rang": 643,
       "nom": "Ultra",
       "trophees": 137471,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 645,
+      "rang": 644,
       "nom": "#Bûche de Noël",
       "trophees": 137471,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 645,
+      "nom": "2 clans pains",
+      "trophees": 137468,
       "membres": 50,
       "nous": false
     },
@@ -67,13 +74,6 @@
       "rang": 647,
       "nom": "Les saigneurs",
       "trophees": 137460,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 648,
-      "nom": "Magic Crew",
-      "trophees": 137457,
       "membres": 48,
       "nous": false
     }
