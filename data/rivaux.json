@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 620,
+      "rang": 616,
+      "nom": "Ultra",
+      "trophees": 137485,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 617,
       "nom": "2crma",
-      "trophees": 137477,
+      "trophees": 137480,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 621,
+      "rang": 618,
       "nom": "ABClash",
       "trophees": 137473,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 622,
+      "rang": 619,
       "nom": "CLASH N' SLASH",
       "trophees": 137472,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 623,
+      "rang": 620,
       "nom": "Magic Crew",
       "trophees": 137468,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 624,
-      "nom": "Trentenaires",
-      "trophees": 137467,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 625,
+      "rang": 621,
       "nom": "Clan Francais",
       "trophees": 137467,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 626,
+      "rang": 622,
+      "nom": "Trentenaires",
+      "trophees": 137467,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 623,
       "nom": "*spartiates*",
       "trophees": 137465,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 627,
+      "rang": 624,
       "nom": "CASINO",
       "trophees": 137464,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 628,
-      "nom": "2 clans pains",
-      "trophees": 137464,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 629,
+      "rang": 625,
       "nom": "#Bûche de Noël",
       "trophees": 137461,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 630,
-      "nom": "psg psg psg psg",
-      "trophees": 137458,
-      "membres": 48,
+      "rang": 626,
+      "nom": "2 clans pains",
+      "trophees": 137461,
+      "membres": 50,
       "nous": false
     }
   ]
