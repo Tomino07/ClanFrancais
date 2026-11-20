@@ -1,59 +1,66 @@
 {
   "clans": [
     {
-      "rang": 635,
+      "rang": 634,
       "nom": "ultimatefr",
-      "trophees": 137513,
+      "trophees": 137512,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 636,
+      "rang": 635,
       "nom": "! Forteresse 6",
       "trophees": 137508,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 637,
+      "rang": 636,
       "nom": "A french clan 2",
-      "trophees": 137505,
+      "trophees": 137508,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 638,
+      "rang": 637,
       "nom": "1/2mouelleux",
       "trophees": 137497,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 639,
+      "rang": 638,
       "nom": "#bananaman",
       "trophees": 137483,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 640,
+      "rang": 639,
       "nom": "Clan Francais",
       "trophees": 137476,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 641,
+      "rang": 640,
       "nom": "Adulte KS45",
       "trophees": 137474,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 642,
+      "rang": 641,
       "nom": "Ultra",
       "trophees": 137474,
       "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 642,
+      "nom": "2 clans pains",
+      "trophees": 137470,
+      "membres": 50,
       "nous": false
     },
     {
@@ -66,13 +73,6 @@
     {
       "rang": 644,
       "nom": "#Bûche de Noël",
-      "trophees": 137465,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 645,
-      "nom": "2 clans pains",
       "trophees": 137465,
       "membres": 50,
       "nous": false
