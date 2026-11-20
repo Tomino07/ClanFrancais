@@ -1,14 +1,14 @@
 {
   "type": "warDay",
   "jour": 4,
-  "majAt": "2026-11-20T19:30:59Z",
+  "majAt": "2026-11-20T20:01:07Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "INDIANS",
       "points": 3217,
-      "aujourdhui": 1050,
-      "combats": 8,
+      "aujourdhui": 1750,
+      "combats": 12,
       "fini": false,
       "nous": false
     },
@@ -23,8 +23,8 @@
     {
       "nom": "Deutschland",
       "points": 1280,
-      "aujourdhui": 0,
-      "combats": 0,
+      "aujourdhui": 200,
+      "combats": 2,
       "fini": false,
       "nous": false
     },
