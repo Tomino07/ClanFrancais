@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 633,
-      "nom": "Captain's clan",
-      "trophees": 137511,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 634,
       "nom": "! Forteresse 6",
       "trophees": 137496,
@@ -37,23 +30,23 @@
     },
     {
       "rang": 638,
+      "nom": "Ultra",
+      "trophees": 137477,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 639,
       "nom": "Clan Francais",
       "trophees": 137476,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 639,
+      "rang": 640,
       "nom": "Adulte KS45",
       "trophees": 137474,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 640,
-      "nom": "Ultra",
-      "trophees": 137471,
-      "membres": 45,
       "nous": false
     },
     {
@@ -75,6 +68,13 @@
       "nom": "⚜️Paladins⚜️",
       "trophees": 137460,
       "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 644,
+      "nom": "Magic Crew",
+      "trophees": 137459,
+      "membres": 48,
       "nous": false
     }
   ]
