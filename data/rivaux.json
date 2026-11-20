@@ -1,59 +1,66 @@
 {
   "clans": [
     {
-      "rang": 625,
+      "rang": 624,
       "nom": "CLASH N' SLASH",
       "trophees": 137471,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 626,
+      "rang": 625,
       "nom": "Magic Crew",
       "trophees": 137469,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 627,
+      "rang": 626,
       "nom": "Trentenaires",
       "trophees": 137467,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 628,
+      "rang": 627,
       "nom": "2 clans pains",
       "trophees": 137466,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 629,
+      "rang": 628,
       "nom": "*spartiates*",
       "trophees": 137465,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 630,
+      "rang": 629,
       "nom": "Clan Francais",
       "trophees": 137464,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 631,
+      "rang": 630,
       "nom": "#Bûche de Noël",
       "trophees": 137464,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 632,
+      "rang": 631,
       "nom": "Baguette Game",
       "trophees": 137460,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 632,
+      "nom": "Asgard.",
+      "trophees": 137460,
+      "membres": 48,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "psg psg psg psg",
       "trophees": 137452,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 635,
-      "nom": "CASINO",
-      "trophees": 137442,
-      "membres": 50,
       "nous": false
     }
   ]
