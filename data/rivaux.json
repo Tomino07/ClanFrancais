@@ -1,25 +1,46 @@
 {
   "clans": [
     {
-      "rang": 627,
-      "nom": "Magic Crew",
-      "trophees": 137469,
+      "rang": 624,
+      "nom": "2crma",
+      "trophees": 137477,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 628,
+      "rang": 625,
+      "nom": "ABClash",
+      "trophees": 137477,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 626,
+      "nom": "CLASH N' SLASH",
+      "trophees": 137471,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 627,
       "nom": "Trentenaires",
       "trophees": 137467,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 629,
+      "rang": 628,
       "nom": "#Bûche de Noël",
       "trophees": 137467,
       "membres": 50,
       "nous": false
+    },
+    {
+      "rang": 629,
+      "nom": "Clan Francais",
+      "trophees": 137467,
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 630,
@@ -37,44 +58,23 @@
     },
     {
       "rang": 632,
-      "nom": "Clan Francais",
-      "trophees": 137464,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 633,
-      "nom": "Asgard.",
-      "trophees": 137462,
+      "nom": "Magic Crew",
+      "trophees": 137465,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 634,
-      "nom": "Baguette Game",
-      "trophees": 137460,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 635,
+      "rang": 633,
       "nom": "psg psg psg psg",
       "trophees": 137458,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 636,
-      "nom": "1Pekkable",
-      "trophees": 137454,
+      "rang": 634,
+      "nom": "Asgard.",
+      "trophees": 137457,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 637,
-      "nom": "1 Pro App",
-      "trophees": 137453,
-      "membres": 46,
       "nous": false
     }
   ]
