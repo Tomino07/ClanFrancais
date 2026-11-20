@@ -1,24 +1,31 @@
 {
   "clans": [
     {
-      "rang": 621,
+      "rang": 620,
       "nom": "2crma",
       "trophees": 137477,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 622,
+      "rang": 621,
       "nom": "ABClash",
-      "trophees": 137474,
+      "trophees": 137473,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 623,
+      "rang": 622,
       "nom": "CLASH N' SLASH",
       "trophees": 137472,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 623,
+      "nom": "Magic Crew",
+      "trophees": 137468,
+      "membres": 48,
       "nous": false
     },
     {
@@ -30,36 +37,36 @@
     },
     {
       "rang": 625,
-      "nom": "#Bûche de Noël",
-      "trophees": 137467,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 626,
       "nom": "Clan Francais",
       "trophees": 137467,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 627,
+      "rang": 626,
       "nom": "*spartiates*",
       "trophees": 137465,
       "membres": 44,
       "nous": false
     },
     {
+      "rang": 627,
+      "nom": "CASINO",
+      "trophees": 137464,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 628,
-      "nom": "Magic Crew",
-      "trophees": 137465,
-      "membres": 48,
+      "nom": "2 clans pains",
+      "trophees": 137464,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 629,
-      "nom": "2 clans pains",
-      "trophees": 137464,
+      "nom": "#Bûche de Noël",
+      "trophees": 137461,
       "membres": 50,
       "nous": false
     },
@@ -67,13 +74,6 @@
       "rang": 630,
       "nom": "psg psg psg psg",
       "trophees": 137458,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 631,
-      "nom": "1Pekkable",
-      "trophees": 137454,
       "membres": 48,
       "nous": false
     }
