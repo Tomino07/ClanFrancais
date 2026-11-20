@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 634,
+      "nom": "! Forteresse 6",
+      "trophees": 137496,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 635,
       "nom": "bordeaux",
       "trophees": 137494,
@@ -10,7 +17,7 @@
     {
       "rang": 636,
       "nom": "1/2mouelleux",
-      "trophees": 137494,
+      "trophees": 137491,
       "membres": 50,
       "nous": false
     },
@@ -30,23 +37,23 @@
     },
     {
       "rang": 639,
-      "nom": "Astero Level 1",
-      "trophees": 137473,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 640,
       "nom": "Clan Francais",
       "trophees": 137472,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 641,
+      "rang": 640,
       "nom": "Ultra",
       "trophees": 137471,
       "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 641,
+      "nom": "Astero Level 1",
+      "trophees": 137470,
+      "membres": 49,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "⚜️Paladins⚜️",
       "trophees": 137460,
       "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 645,
-      "nom": "Les saigneurs",
-      "trophees": 137460,
-      "membres": 48,
       "nous": false
     }
   ]
