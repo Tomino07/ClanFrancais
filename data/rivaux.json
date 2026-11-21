@@ -1,52 +1,59 @@
 {
   "clans": [
     {
-      "rang": 608,
+      "rang": 607,
       "nom": "CLASH N' SLASH",
-      "trophees": 137490,
+      "trophees": 137493,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 609,
+      "rang": 608,
       "nom": "PSG PSG PSG PSG",
-      "trophees": 137484,
+      "trophees": 137492,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 610,
+      "rang": 609,
       "nom": "BlueLock",
       "trophees": 137480,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 611,
+      "rang": 610,
       "nom": "Magic Crew",
       "trophees": 137479,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 612,
+      "rang": 611,
       "nom": "1Pekkable",
       "trophees": 137477,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 613,
+      "rang": 612,
       "nom": "Clan Francais",
       "trophees": 137470,
       "membres": 50,
       "nous": true
     },
     {
-      "rang": 614,
+      "rang": 613,
       "nom": "*FRENCH crew*",
       "trophees": 137469,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 614,
+      "nom": "-GMs- 2",
+      "trophees": 137468,
+      "membres": 48,
       "nous": false
     },
     {
@@ -65,16 +72,9 @@
     },
     {
       "rang": 617,
-      "nom": "-GMs- 2",
-      "trophees": 137456,
+      "nom": "Game Of Life",
+      "trophees": 137454,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 618,
-      "nom": "2 clans pains",
-      "trophees": 137453,
-      "membres": 50,
       "nous": false
     }
   ]
