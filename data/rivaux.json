@@ -1,32 +1,46 @@
 {
   "clans": [
     {
+      "rang": 603,
+      "nom": "BlueLock",
+      "trophees": 137480,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 604,
+      "nom": "FrenchArmy",
+      "trophees": 137480,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 605,
+      "nom": "Magic Crew",
+      "trophees": 137480,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 606,
       "nom": "1Pekkable",
       "trophees": 137477,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 606,
-      "nom": "PSG PSG PSG PSG",
-      "trophees": 137475,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 607,
-      "nom": "mortar",
-      "trophees": 137472,
+      "nom": "king2017",
+      "trophees": 137471,
       "membres": 49,
       "nous": false
     },
     {
       "rang": 608,
-      "nom": "king2017",
+      "nom": "Clan Francais",
       "trophees": 137471,
-      "membres": 49,
-      "nous": false
+      "membres": 50,
+      "nous": true
     },
     {
       "rang": 609,
@@ -37,44 +51,30 @@
     },
     {
       "rang": 610,
-      "nom": "Clan Francais",
-      "trophees": 137465,
-      "membres": 50,
-      "nous": true
-    },
-    {
-      "rang": 611,
       "nom": "'QLF' ARMY",
-      "trophees": 137465,
+      "trophees": 137468,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 612,
+      "rang": 611,
       "nom": "Game Of Life",
-      "trophees": 137456,
+      "trophees": 137457,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 613,
+      "rang": 612,
       "nom": "#Bûche de Noël",
       "trophees": 137455,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 614,
+      "rang": 613,
       "nom": "100%pote",
       "trophees": 137454,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 615,
-      "nom": "French Ghoul 2",
-      "trophees": 137453,
-      "membres": 50,
       "nous": false
     }
   ]
