@@ -1,46 +1,60 @@
 {
   "clans": [
     {
-      "rang": 611,
+      "rang": 609,
+      "nom": "Trentenaires",
+      "trophees": 137480,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 610,
       "nom": "mortar",
       "trophees": 137473,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 612,
+      "rang": 611,
       "nom": "CLASH N' SLASH",
       "trophees": 137472,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 613,
+      "rang": 612,
       "nom": "#Aimé Césaire#",
       "trophees": 137470,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 614,
+      "rang": 613,
       "nom": "Magic Crew",
       "trophees": 137470,
       "membres": 48,
       "nous": false
     },
     {
+      "rang": 614,
+      "nom": "Clan Francais",
+      "trophees": 137467,
+      "membres": 50,
+      "nous": true
+    },
+    {
       "rang": 615,
-      "nom": "ABClash",
-      "trophees": 137470,
+      "nom": "1Pekkable",
+      "trophees": 137466,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 616,
-      "nom": "Clan Francais",
-      "trophees": 137467,
-      "membres": 50,
-      "nous": true
+      "nom": "ABClash",
+      "trophees": 137466,
+      "membres": 48,
+      "nous": false
     },
     {
       "rang": 617,
@@ -61,20 +75,6 @@
       "nom": "1 Pro App",
       "trophees": 137463,
       "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 620,
-      "nom": "1Pekkable",
-      "trophees": 137460,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 621,
-      "nom": "#Bûche de Noël",
-      "trophees": 137458,
-      "membres": 50,
       "nous": false
     }
   ]
