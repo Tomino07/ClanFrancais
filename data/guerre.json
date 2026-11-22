@@ -1,30 +1,30 @@
 {
   "type": "warDay",
   "jour": 6,
-  "majAt": "2026-11-22T16:01:08Z",
+  "majAt": "2026-11-22T16:30:58Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "INDIANS",
       "points": 9651,
-      "aujourdhui": 775,
-      "combats": 5,
+      "aujourdhui": 1100,
+      "combats": 8,
       "fini": false,
       "nous": false
     },
     {
       "nom": "Clan Francais",
       "points": 5659,
-      "aujourdhui": 100,
-      "combats": 1,
+      "aujourdhui": 550,
+      "combats": 4,
       "fini": false,
       "nous": true
     },
     {
       "nom": "Deutschland",
       "points": 2940,
-      "aujourdhui": 200,
-      "combats": 1,
+      "aujourdhui": 300,
+      "combats": 2,
       "fini": false,
       "nous": false
     },
