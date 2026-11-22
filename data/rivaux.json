@@ -1,27 +1,6 @@
 {
   "clans": [
     {
-      "rang": 689,
-      "nom": "Les Toulousains",
-      "trophees": 137129,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 690,
-      "nom": "BS Esport",
-      "trophees": 137128,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 691,
-      "nom": "BoA 3",
-      "trophees": 137128,
-      "membres": 44,
-      "nous": false
-    },
-    {
       "rang": 692,
       "nom": "Red Falocon FR",
       "trophees": 137127,
@@ -31,50 +10,71 @@
     {
       "rang": 693,
       "nom": "\"(paradise)\"5",
-      "trophees": 137121,
+      "trophees": 137125,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 694,
-      "nom": "Clan Francais",
-      "trophees": 137120,
-      "membres": 49,
-      "nous": true
-    },
-    {
-      "rang": 695,
       "nom": "Tortue Furtive",
       "trophees": 137119,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 696,
+      "rang": 695,
       "nom": "Hunters",
       "trophees": 137117,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 697,
+      "rang": 696,
       "nom": "pro retired",
-      "trophees": 137117,
+      "trophees": 137114,
       "membres": 44,
       "nous": false
     },
     {
+      "rang": 697,
+      "nom": "Clan Francais",
+      "trophees": 137113,
+      "membres": 49,
+      "nous": true
+    },
+    {
       "rang": 698,
-      "nom": "BTS SIO EFREI",
-      "trophees": 137101,
-      "membres": 50,
+      "nom": "magique clash 3",
+      "trophees": 137100,
+      "membres": 49,
       "nous": false
     },
     {
       "rang": 699,
-      "nom": "magique clash 3",
-      "trophees": 137099,
+      "nom": "BTS SIO EFREI",
+      "trophees": 137098,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 700,
+      "nom": "France Eternel",
+      "trophees": 137097,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 701,
+      "nom": "French Purple",
+      "trophees": 137094,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 702,
+      "nom": "NoInspiration",
+      "trophees": 137092,
+      "membres": 47,
       "nous": false
     }
   ]
