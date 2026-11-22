@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 690,
-      "nom": "Les Toulousains",
-      "trophees": 137126,
-      "membres": 47,
-      "nous": false
-    },
-    {
       "rang": 691,
       "nom": "Tortue Furtive",
       "trophees": 137125,
@@ -16,44 +9,44 @@
     },
     {
       "rang": 692,
-      "nom": "pro retired",
-      "trophees": 137121,
-      "membres": 44,
+      "nom": "100%saucisson",
+      "trophees": 137120,
+      "membres": 46,
       "nous": false
     },
     {
       "rang": 693,
+      "nom": "1000%remplaçant",
+      "trophees": 137120,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 694,
       "nom": "\"(paradise)\"5",
       "trophees": 137118,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 694,
+      "rang": 695,
       "nom": "Hunters",
       "trophees": 137118,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 695,
+      "rang": 696,
       "nom": "Clan Francais",
       "trophees": 137114,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 696,
+      "rang": 697,
       "nom": "Corse",
       "trophees": 137112,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 697,
-      "nom": "100%saucisson",
-      "trophees": 137112,
-      "membres": 46,
       "nous": false
     },
     {
@@ -72,9 +65,16 @@
     },
     {
       "rang": 700,
-      "nom": "D3st1n",
+      "nom": "Clash FR",
       "trophees": 137098,
-      "membres": 49,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 701,
+      "nom": "NoInspiration",
+      "trophees": 137095,
+      "membres": 47,
       "nous": false
     }
   ]
