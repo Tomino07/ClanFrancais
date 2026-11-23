@@ -1,30 +1,23 @@
 {
   "clans": [
     {
-      "rang": 762,
-      "nom": "Toulouse",
-      "trophees": 136832,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 763,
-      "nom": "FRANCE",
-      "trophees": 136831,
-      "membres": 49,
+      "nom": "Roi de Trêfle",
+      "trophees": 136833,
+      "membres": 43,
       "nous": false
     },
     {
       "rang": 764,
       "nom": "Beachbreak",
-      "trophees": 136829,
+      "trophees": 136832,
       "membres": 47,
       "nous": false
     },
     {
       "rang": 765,
-      "nom": "LES BRAS CASSÉS",
-      "trophees": 136826,
+      "nom": "FRANCE",
+      "trophees": 136831,
       "membres": 49,
       "nous": false
     },
@@ -37,23 +30,23 @@
     },
     {
       "rang": 767,
-      "nom": "Clan Francais",
-      "trophees": 136825,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 768,
       "nom": "Les nazguls",
       "trophees": 136822,
       "membres": 48,
       "nous": false
     },
     {
+      "rang": 768,
+      "nom": "Clan Francais",
+      "trophees": 136821,
+      "membres": 48,
+      "nous": true
+    },
+    {
       "rang": 769,
-      "nom": "100 Amis",
-      "trophees": 136813,
-      "membres": 50,
+      "nom": "LES BRAS CASSÉS",
+      "trophees": 136817,
+      "membres": 49,
       "nous": false
     },
     {
@@ -72,6 +65,13 @@
     },
     {
       "rang": 772,
+      "nom": "100 Amis",
+      "trophees": 136808,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 773,
       "nom": "Barbes Grises",
       "trophees": 136804,
       "membres": 49,
