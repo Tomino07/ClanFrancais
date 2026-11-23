@@ -1,8 +1,8 @@
 {
-  "majAt": "2026-11-23T14:31:01Z",
-  "rang": 764,
+  "majAt": "2026-11-23T15:01:13Z",
+  "rang": 762,
   "rangPrecedent": 678,
-  "score": 136800,
+  "score": 136799,
   "tropheesGuerre": 1792,
   "membres": 48,
   "joueurs": [
@@ -13,6 +13,14 @@
       "trophees": 14000,
       "dons": 8,
       "vu": "20261123T063915.000Z"
+    },
+    {
+      "tag": "R80VQ08V",
+      "nom": "Spank",
+      "role": "member",
+      "trophees": 14000,
+      "dons": 0,
+      "vu": "20261123T145839.000Z"
     },
     {
       "tag": "LCUPLPR09",
@@ -29,14 +37,6 @@
       "trophees": 14000,
       "dons": 0,
       "vu": "20261123T133722.000Z"
-    },
-    {
-      "tag": "R80VQ08V",
-      "nom": "Spank",
-      "role": "member",
-      "trophees": 14000,
-      "dons": 0,
-      "vu": "20261123T113331.000Z"
     },
     {
       "tag": "QJ8RL988",
@@ -183,20 +183,20 @@
       "vu": "20260928T131350.000Z"
     },
     {
-      "tag": "2V0G2JUPV",
-      "nom": "sky",
-      "role": "member",
-      "trophees": 13911,
-      "dons": 16,
-      "vu": "20261123T142652.000Z"
-    },
-    {
       "tag": "2PJYJUCGR",
       "nom": "Rasenou17",
       "role": "member",
       "trophees": 13875,
       "dons": 0,
       "vu": "20261121T135657.000Z"
+    },
+    {
+      "tag": "2V0G2JUPV",
+      "nom": "sky",
+      "role": "member",
+      "trophees": 13873,
+      "dons": 16,
+      "vu": "20261123T142652.000Z"
     },
     {
       "tag": "PQLRPYLV8",
@@ -242,9 +242,9 @@
       "tag": "8GGQG28YU",
       "nom": "grand-père",
       "role": "member",
-      "trophees": 13083,
-      "dons": 24,
-      "vu": "20261123T135114.000Z"
+      "trophees": 13113,
+      "dons": 32,
+      "vu": "20261123T144132.000Z"
     },
     {
       "tag": "CPJQ9LJPG",
