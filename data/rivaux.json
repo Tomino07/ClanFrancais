@@ -1,80 +1,80 @@
 {
   "clans": [
     {
+      "rang": 756,
+      "nom": "Les nazguls",
+      "trophees": 136830,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 757,
-      "nom": "BZH",
-      "trophees": 136819,
-      "membres": 50,
+      "nom": "LES BRAS CASSÉS",
+      "trophees": 136826,
+      "membres": 49,
       "nous": false
     },
     {
       "rang": 758,
+      "nom": "Toulouse",
+      "trophees": 136826,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 759,
+      "nom": "L'orange spm",
+      "trophees": 136824,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 760,
       "nom": "Legion Noire",
       "trophees": 136817,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 759,
+      "rang": 761,
+      "nom": "Clan Francais",
+      "trophees": 136815,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 762,
       "nom": "Coiffeurs CJ",
       "trophees": 136813,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 760,
+      "rang": 763,
       "nom": "Epic Sniper 2.0",
       "trophees": 136811,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 761,
+      "rang": 764,
+      "nom": "BZH",
+      "trophees": 136807,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 765,
       "nom": "Hot Savoie",
       "trophees": 136800,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 762,
-      "nom": "Clan Francais",
-      "trophees": 136799,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 763,
+      "rang": 766,
       "nom": "The French Pros",
       "trophees": 136793,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 764,
-      "nom": "Realm IX",
-      "trophees": 136791,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 765,
-      "nom": "Clan des darons",
-      "trophees": 136784,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 766,
-      "nom": "les affrenchis",
-      "trophees": 136784,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 767,
-      "nom": "Santwitch Royal",
-      "trophees": 136781,
-      "membres": 49,
       "nous": false
     }
   ]
