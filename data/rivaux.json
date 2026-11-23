@@ -1,46 +1,60 @@
 {
   "clans": [
     {
-      "rang": 755,
+      "rang": 753,
+      "nom": "Roi de Trêfle",
+      "trophees": 136833,
+      "membres": 43,
+      "nous": false
+    },
+    {
+      "rang": 754,
       "nom": "Golem De France",
-      "trophees": 136830,
+      "trophees": 136833,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 756,
+      "rang": 755,
       "nom": "Chez Tos",
       "trophees": 136830,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 757,
-      "nom": "Les nazguls",
-      "trophees": 136827,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 758,
+      "rang": 756,
       "nom": "LES BRAS CASSÉS",
       "trophees": 136826,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 759,
+      "rang": 757,
       "nom": "L'orange spm",
       "trophees": 136825,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 760,
+      "rang": 758,
       "nom": "Clan Francais",
       "trophees": 136825,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 759,
+      "nom": "Les nazguls",
+      "trophees": 136825,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 760,
+      "nom": "Beachbreak",
+      "trophees": 136824,
+      "membres": 47,
+      "nous": false
     },
     {
       "rang": 761,
@@ -51,30 +65,16 @@
     },
     {
       "rang": 762,
-      "nom": "Legion Noire",
+      "nom": "100 Amis",
       "trophees": 136814,
-      "membres": 44,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 763,
-      "nom": "Epic Sniper 2.0",
-      "trophees": 136808,
+      "nom": "Legion Noire",
+      "trophees": 136809,
       "membres": 44,
-      "nous": false
-    },
-    {
-      "rang": 764,
-      "nom": "The French Pros",
-      "trophees": 136806,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 765,
-      "nom": "Realm IX",
-      "trophees": 136803,
-      "membres": 50,
       "nous": false
     }
   ]
