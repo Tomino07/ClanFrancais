@@ -1,46 +1,60 @@
 {
   "clans": [
     {
-      "rang": 651,
+      "rang": 649,
+      "nom": "Les Toulousains",
+      "trophees": 137131,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 650,
       "nom": "la French touch",
-      "trophees": 137128,
+      "trophees": 137131,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 651,
+      "nom": "-BUNK-",
+      "trophees": 137128,
+      "membres": 47,
       "nous": false
     },
     {
       "rang": 652,
-      "nom": "Tortue Furtive",
-      "trophees": 137127,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 653,
       "nom": "La mousse tache",
       "trophees": 137126,
       "membres": 45,
       "nous": false
     },
     {
+      "rang": 653,
+      "nom": "Tortue Furtive",
+      "trophees": 137123,
+      "membres": 48,
+      "nous": false
+    },
+    {
       "rang": 654,
+      "nom": "Clan Francais",
+      "trophees": 137121,
+      "membres": 49,
+      "nous": true
+    },
+    {
+      "rang": 655,
       "nom": "BS Esport",
       "trophees": 137120,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 655,
+      "rang": 656,
       "nom": "...",
-      "trophees": 137118,
+      "trophees": 137116,
       "membres": 49,
       "nous": false
-    },
-    {
-      "rang": 656,
-      "nom": "Clan Francais",
-      "trophees": 137118,
-      "membres": 49,
-      "nous": true
     },
     {
       "rang": 657,
@@ -61,20 +75,6 @@
       "nom": "Corse",
       "trophees": 137108,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 660,
-      "nom": "Guerrier&Cie",
-      "trophees": 137103,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 661,
-      "nom": "French Flair 2",
-      "trophees": 137102,
-      "membres": 46,
       "nous": false
     }
   ]
