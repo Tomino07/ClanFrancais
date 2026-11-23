@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 754,
+      "nom": "FRANCE",
+      "trophees": 136832,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 755,
       "nom": "Golem De France",
       "trophees": 136829,
@@ -30,17 +37,17 @@
     },
     {
       "rang": 759,
-      "nom": "Toulouse",
-      "trophees": 136820,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 760,
       "nom": "Clan Francais",
       "trophees": 136818,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 760,
+      "nom": "Toulouse",
+      "trophees": 136816,
+      "membres": 48,
+      "nous": false
     },
     {
       "rang": 761,
@@ -58,23 +65,16 @@
     },
     {
       "rang": 763,
-      "nom": "Realm IX",
-      "trophees": 136807,
+      "nom": "The French Pros",
+      "trophees": 136806,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 764,
-      "nom": "BZH",
+      "nom": "Realm IX",
       "trophees": 136803,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 765,
-      "nom": "Hot Savoie",
-      "trophees": 136801,
-      "membres": 48,
       "nous": false
     }
   ]
