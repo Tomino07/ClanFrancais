@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 756,
+      "rang": 755,
       "nom": "Golem De France",
-      "trophees": 136835,
+      "trophees": 136829,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 757,
+      "rang": 756,
       "nom": "Les nazguls",
       "trophees": 136827,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 758,
+      "rang": 757,
       "nom": "LES BRAS CASSÉS",
       "trophees": 136826,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 759,
-      "nom": "Toulouse",
-      "trophees": 136826,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 760,
+      "rang": 758,
       "nom": "L'orange spm",
       "trophees": 136825,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 761,
+      "rang": 759,
+      "nom": "Toulouse",
+      "trophees": 136820,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 760,
       "nom": "Clan Francais",
       "trophees": 136818,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 762,
+      "rang": 761,
       "nom": "Legion Noire",
       "trophees": 136814,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 763,
+      "rang": 762,
       "nom": "Epic Sniper 2.0",
-      "trophees": 136812,
+      "trophees": 136808,
       "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 763,
+      "nom": "Realm IX",
+      "trophees": 136807,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 764,
       "nom": "BZH",
-      "trophees": 136806,
+      "trophees": 136803,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 765,
       "nom": "Hot Savoie",
-      "trophees": 136800,
+      "trophees": 136801,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 766,
-      "nom": "Realm IX",
-      "trophees": 136799,
-      "membres": 50,
       "nous": false
     }
   ]
