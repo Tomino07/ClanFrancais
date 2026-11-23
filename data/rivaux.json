@@ -2,30 +2,30 @@
   "clans": [
     {
       "rang": 757,
-      "nom": "Chez Tos",
-      "trophees": 136837,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 758,
       "nom": "FRANCE",
       "trophees": 136835,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 759,
+      "rang": 758,
       "nom": "Roi de Trêfle",
       "trophees": 136833,
       "membres": 43,
       "nous": false
     },
     {
-      "rang": 760,
+      "rang": 759,
       "nom": "LES BRAS CASSÉS",
       "trophees": 136826,
       "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 760,
+      "nom": "Beachbreak",
+      "trophees": 136826,
+      "membres": 47,
       "nous": false
     },
     {
@@ -51,28 +51,28 @@
     },
     {
       "rang": 764,
-      "nom": "Beachbreak",
-      "trophees": 136823,
-      "membres": 47,
-      "nous": false
-    },
-    {
-      "rang": 765,
       "nom": "Les nazguls",
       "trophees": 136822,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 766,
+      "rang": 765,
       "nom": "100 Amis",
-      "trophees": 136819,
+      "trophees": 136816,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 767,
+      "rang": 766,
       "nom": "Legion Noire",
+      "trophees": 136812,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 767,
+      "nom": "Epic Sniper 2.0",
       "trophees": 136812,
       "membres": 44,
       "nous": false
