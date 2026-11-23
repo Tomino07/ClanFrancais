@@ -1,17 +1,24 @@
 {
   "clans": [
     {
-      "rang": 651,
+      "rang": 650,
       "nom": "La mousse tache",
       "trophees": 137126,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 652,
+      "rang": 651,
       "nom": "France Eternel",
       "trophees": 137124,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 652,
+      "nom": "Tortue Furtive",
+      "trophees": 137121,
+      "membres": 48,
       "nous": false
     },
     {
@@ -23,55 +30,48 @@
     },
     {
       "rang": 654,
-      "nom": "Tortue Furtive",
-      "trophees": 137117,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 655,
       "nom": "...",
       "trophees": 137116,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 656,
+      "rang": 655,
       "nom": "Clan Francais",
       "trophees": 137115,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 657,
+      "rang": 656,
       "nom": "Corse",
       "trophees": 137109,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 658,
+      "rang": 657,
       "nom": "French Flair 2",
       "trophees": 137106,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 659,
+      "rang": 658,
       "nom": "NoInspiration",
-      "trophees": 137102,
+      "trophees": 137098,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 660,
+      "rang": 659,
       "nom": "\"(paradise)\"5",
       "trophees": 137097,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 661,
+      "rang": 660,
       "nom": "10.8 Return War",
       "trophees": 137096,
       "membres": 49,
