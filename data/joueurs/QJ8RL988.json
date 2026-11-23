@@ -43,15 +43,15 @@
   ],
   "ligue": 1,
   "enCours": {
-    "points": 1500,
-    "combats": 12,
-    "aujourdhui": 4,
-    "type": "warDay",
-    "jour": 6,
-    "semaine": 3,
+    "points": 0,
+    "combats": 0,
+    "aujourdhui": 0,
+    "type": "training",
+    "jour": 0,
+    "semaine": 4,
     "saison": 138
   },
-  "mvps": 10,
+  "mvps": 9,
   "combats": [
     {
       "date": "20261122T200410.000Z",
@@ -656,6 +656,11 @@
   ],
   "guerres": [
     {
+      "semaine": "Saison 138 – semaine 3",
+      "points": 1500,
+      "combats": 12
+    },
+    {
       "semaine": "Saison 138 – semaine 2",
       "points": 2700,
       "combats": 16
@@ -699,11 +704,6 @@
       "semaine": "Saison 136 – semaine 2",
       "points": 3100,
       "combats": 16
-    },
-    {
-      "semaine": "Saison 136 – semaine 1",
-      "points": 2700,
-      "combats": 15
     }
   ]
 }

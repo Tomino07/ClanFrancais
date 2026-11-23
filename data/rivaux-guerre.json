@@ -2,31 +2,31 @@
   "clans": [
     {
       "nom": "INDIANS",
-      "trophees": 1803,
+      "trophees": 1823,
       "nous": false,
       "rang": 1
     },
     {
-      "nom": "Deutschland",
-      "trophees": 1798,
-      "nous": false,
+      "nom": "Clan Francais",
+      "trophees": 1792,
+      "nous": true,
       "rang": 2
     },
     {
-      "nom": "Clan Francais",
-      "trophees": 1782,
-      "nous": true,
+      "nom": "Deutschland",
+      "trophees": 1788,
+      "nous": false,
       "rang": 3
     },
     {
       "nom": "akacze spustacz",
-      "trophees": 1781,
+      "trophees": 1776,
       "nous": false,
       "rang": 4
     },
     {
       "nom": "DARK",
-      "trophees": 1740,
+      "trophees": 1720,
       "nous": false,
       "rang": 5
     }
