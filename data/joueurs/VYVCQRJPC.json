@@ -3,9 +3,9 @@
   "nom": "M4RTYF4N4T1K",
   "role": "Membre",
   "niveau": 59,
-  "trophees": 10817,
+  "trophees": 10849,
   "record": 10913,
-  "victoires": 3071,
+  "victoires": 3072,
   "dons": 24,
   "deck": [
     {
@@ -53,6 +53,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261123T051038.000Z",
+      "type": "PvP",
+      "mode": "Ladder",
+      "moi": 2,
+      "adv": 1,
+      "trophees": 32,
+      "adversaire": "Alex 2122",
+      "clanAdv": null,
+      "deckAdv": [
+        {
+          "nom": "Skeleton Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/vCB4DWCcrGbTkarjcOiVz4aNDx6GWLm0yUepg9E1MGo.png"
+        },
+        {
+          "nom": "Knight",
+          "image": "https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png"
+        },
+        {
+          "nom": "Musketeer",
+          "image": "https://api-assets.clashroyale.com/cards/300/Tex1C48UTq9FKtAX-3tzG0FJmc9jzncUZG3bb5Vf-Ds.png"
+        },
+        {
+          "nom": "Mortar",
+          "image": "https://api-assets.clashroyale.com/cards/300/lPOSw6H7YOHq2miSCrf7ZDL3ANjhJdPPDYOTujdNrVE.png"
+        },
+        {
+          "nom": "Skeletons",
+          "image": "https://api-assets.clashroyale.com/cards/300/oO7iKMU5m0cdxhYPZA3nWQiAUh2yoGgdThLWB1rVSec.png"
+        },
+        {
+          "nom": "Minions",
+          "image": "https://api-assets.clashroyale.com/cards/300/yHGpoEnmUWPGV_hBbhn-Kk-Bs838OjGzWzJJlQpQKQA.png"
+        },
+        {
+          "nom": "Fireball",
+          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
+        },
+        {
+          "nom": "Barbarian Barrel",
+          "image": "https://api-assets.clashroyale.com/cards/300/Gb0G1yNy0i5cIGUHin8uoFWxqntNtRPhY_jeMXg7HnA.png"
+        }
+      ]
+    },
     {
       "date": "20261123T045151.000Z",
       "type": "PvP",
@@ -510,50 +554,6 @@
         {
           "nom": "Goblin Barrel",
           "image": "https://api-assets.clashroyale.com/cards/300/CoZdp5PpsTH858l212lAMeJxVJ0zxv9V-f5xC8Bvj5g.png"
-        }
-      ]
-    },
-    {
-      "date": "20261122T082155.000Z",
-      "type": "PvP",
-      "mode": "Ladder",
-      "moi": 1,
-      "adv": 3,
-      "trophees": -28,
-      "adversaire": "얼 교관",
-      "clanAdv": "geunthong2",
-      "deckAdv": [
-        {
-          "nom": "Electro Dragon",
-          "image": "https://api-assets.clashroyale.com/cards/300/tN9h6lnMNPCNsx0LMFmvpHgznbDZ1fBRkx-C7UfNmfY.png"
-        },
-        {
-          "nom": "Skeleton King",
-          "image": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png"
-        },
-        {
-          "nom": "Skeleton Army",
-          "image": "https://api-assets.clashroyale.com/cards/300/fAOToOi1pRy7svN2xQS6mDkhQw2pj9m_17FauaNqyl4.png"
-        },
-        {
-          "nom": "Tornado",
-          "image": "https://api-assets.clashroyale.com/cards/300/QJB-QK1QJHdw4hjpAwVSyZBozc2ZWAR9pQ-SMUyKaT0.png"
-        },
-        {
-          "nom": "Battle Healer",
-          "image": "https://api-assets.clashroyale.com/cards/300/KdwXcoigS2Kg-cgA7BJJIANbUJG6SNgjetRQ-MegZ08.png"
-        },
-        {
-          "nom": "Elixir Golem",
-          "image": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
-        },
-        {
-          "nom": "Night Witch",
-          "image": "https://api-assets.clashroyale.com/cards/300/NpCrXDEDBBJgNv9QrBAcJmmMFbS7pe3KCY8xJ5VB18A.png"
-        },
-        {
-          "nom": "Rage",
-          "image": "https://api-assets.clashroyale.com/cards/300/bGP21OOmcpHMJ5ZA79bHVV2D-NzPtDkvBskCNJb7pg0.png"
         }
       ]
     }
