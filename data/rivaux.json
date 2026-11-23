@@ -1,6 +1,48 @@
 {
   "clans": [
     {
+      "rang": 752,
+      "nom": "BZH",
+      "trophees": 136820,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 753,
+      "nom": "Coiffeurs CJ",
+      "trophees": 136819,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 754,
+      "nom": "DA Esport Pro",
+      "trophees": 136816,
+      "membres": 45,
+      "nous": false
+    },
+    {
+      "rang": 755,
+      "nom": "Epic Sniper 2.0",
+      "trophees": 136810,
+      "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 756,
+      "nom": "Hot Savoie",
+      "trophees": 136797,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 757,
+      "nom": "Clan Francais",
+      "trophees": 136793,
+      "membres": 48,
+      "nous": true
+    },
+    {
       "rang": 758,
       "nom": "The French Pros",
       "trophees": 136792,
@@ -9,15 +51,15 @@
     },
     {
       "rang": 759,
-      "nom": "Realm IX",
-      "trophees": 136788,
+      "nom": "les affrenchis",
+      "trophees": 136787,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 760,
-      "nom": "les affrenchis",
-      "trophees": 136787,
+      "nom": "Realm IX",
+      "trophees": 136786,
       "membres": 50,
       "nous": false
     },
@@ -33,48 +75,6 @@
       "nom": "Clan des darons",
       "trophees": 136782,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 763,
-      "nom": "Clan Francais",
-      "trophees": 136782,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 764,
-      "nom": "Barbes Grises",
-      "trophees": 136777,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 765,
-      "nom": "La rue la vraie",
-      "trophees": 136773,
-      "membres": 44,
-      "nous": false
-    },
-    {
-      "rang": 766,
-      "nom": "Gang de Gaulois",
-      "trophees": 136765,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 767,
-      "nom": "Taytøon",
-      "trophees": 136764,
-      "membres": 45,
-      "nous": false
-    },
-    {
-      "rang": 768,
-      "nom": "Algérie",
-      "trophees": 136759,
-      "membres": 49,
       "nous": false
     }
   ]
