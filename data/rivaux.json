@@ -1,23 +1,9 @@
 {
   "clans": [
     {
-      "rang": 777,
-      "nom": "Epic Sniper 2.0",
-      "trophees": 136834,
-      "membres": 44,
-      "nous": false
-    },
-    {
-      "rang": 778,
+      "rang": 779,
       "nom": "Tim 2 Choc",
       "trophees": 136834,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 779,
-      "nom": "Comeback 3",
-      "trophees": 136833,
       "membres": 48,
       "nous": false
     },
@@ -37,24 +23,24 @@
     },
     {
       "rang": 782,
-      "nom": "Clan Francais",
-      "trophees": 136828,
+      "nom": "Comeback 3",
+      "trophees": 136830,
       "membres": 48,
-      "nous": true
+      "nous": false
     },
     {
       "rang": 783,
       "nom": "BZH",
-      "trophees": 136828,
+      "trophees": 136830,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 784,
-      "nom": "10.9-reserve",
-      "trophees": 136821,
-      "membres": 47,
-      "nous": false
+      "nom": "Clan Francais",
+      "trophees": 136828,
+      "membres": 48,
+      "nous": true
     },
     {
       "rang": 785,
@@ -75,6 +61,20 @@
       "nom": "BZH29",
       "trophees": 136818,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 788,
+      "nom": "The French Pros",
+      "trophees": 136817,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 789,
+      "nom": "10.9-reserve",
+      "trophees": 136817,
+      "membres": 47,
       "nous": false
     }
   ]
