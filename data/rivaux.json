@@ -1,59 +1,52 @@
 {
   "clans": [
     {
-      "rang": 760,
+      "rang": 761,
+      "nom": "Golem De France",
+      "trophees": 136843,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 762,
       "nom": "Holly",
       "trophees": 136843,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 761,
-      "nom": "FRANCE",
-      "trophees": 136841,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 762,
+      "rang": 763,
       "nom": "Realm IX",
       "trophees": 136833,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 763,
+      "rang": 764,
       "nom": "300Spartiates",
       "trophees": 136832,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 764,
+      "rang": 765,
       "nom": "L'orange spm",
       "trophees": 136828,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 765,
+      "rang": 766,
       "nom": "Clan Francais",
       "trophees": 136821,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 766,
+      "rang": 767,
       "nom": "Les nazguls",
       "trophees": 136819,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 767,
-      "nom": "100 Amis",
-      "trophees": 136814,
-      "membres": 50,
       "nous": false
     },
     {
@@ -75,6 +68,13 @@
       "nom": "The French Pros",
       "trophees": 136812,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 771,
+      "nom": "LES BRAS CASSÉS",
+      "trophees": 136811,
+      "membres": 49,
       "nous": false
     }
   ]
