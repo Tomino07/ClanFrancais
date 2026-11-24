@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 759,
+      "nom": "FRANCE",
+      "trophees": 136841,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 760,
       "nom": "300Spartiates",
       "trophees": 136836,
@@ -10,7 +17,7 @@
     {
       "rang": 761,
       "nom": "Realm IX",
-      "trophees": 136832,
+      "trophees": 136833,
       "membres": 50,
       "nous": false
     },
@@ -30,17 +37,17 @@
     },
     {
       "rang": 764,
-      "nom": "Les nazguls",
-      "trophees": 136822,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 765,
       "nom": "Clan Francais",
       "trophees": 136821,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 765,
+      "nom": "Les nazguls",
+      "trophees": 136819,
+      "membres": 48,
+      "nous": false
     },
     {
       "rang": 766,
@@ -68,13 +75,6 @@
       "nom": "100 Amis",
       "trophees": 136811,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 770,
-      "nom": "Barbes Grises",
-      "trophees": 136804,
-      "membres": 49,
       "nous": false
     }
   ]
