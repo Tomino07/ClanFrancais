@@ -9,14 +9,14 @@
     },
     {
       "rang": 760,
-      "nom": "300Spartiates",
-      "trophees": 136836,
+      "nom": "Realm IX",
+      "trophees": 136833,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 761,
-      "nom": "Realm IX",
+      "nom": "300Spartiates",
       "trophees": 136833,
       "membres": 50,
       "nous": false
@@ -51,30 +51,30 @@
     },
     {
       "rang": 766,
-      "nom": "Hot Savoie",
-      "trophees": 136814,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 767,
       "nom": "Epic Sniper 2.0",
       "trophees": 136812,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 768,
+      "rang": 767,
       "nom": "The French Pros",
       "trophees": 136812,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 769,
+      "rang": 768,
       "nom": "100 Amis",
       "trophees": 136811,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 769,
+      "nom": "Hot Savoie",
+      "trophees": 136811,
+      "membres": 48,
       "nous": false
     }
   ]
