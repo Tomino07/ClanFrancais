@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 759,
+      "rang": 760,
+      "nom": "Holly",
+      "trophees": 136843,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 761,
       "nom": "FRANCE",
       "trophees": 136841,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 760,
+      "rang": 762,
       "nom": "Realm IX",
       "trophees": 136833,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 761,
+      "rang": 763,
       "nom": "300Spartiates",
       "trophees": 136833,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 762,
+      "rang": 764,
       "nom": "L'orange spm",
       "trophees": 136828,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 763,
-      "nom": "LES BRAS CASSÉS",
-      "trophees": 136823,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 764,
+      "rang": 765,
       "nom": "Clan Francais",
       "trophees": 136821,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 765,
+      "rang": 766,
       "nom": "Les nazguls",
       "trophees": 136819,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 766,
+      "rang": 767,
+      "nom": "LES BRAS CASSÉS",
+      "trophees": 136814,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 768,
       "nom": "Epic Sniper 2.0",
       "trophees": 136812,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 767,
+      "rang": 769,
       "nom": "The French Pros",
       "trophees": 136812,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 768,
+      "rang": 770,
       "nom": "100 Amis",
       "trophees": 136811,
       "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 769,
-      "nom": "Hot Savoie",
-      "trophees": 136811,
-      "membres": 48,
       "nous": false
     }
   ]
