@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 761,
+      "rang": 762,
+      "nom": "Chez Tos",
+      "trophees": 136855,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 763,
+      "nom": "Atchoum",
+      "trophees": 136853,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 764,
       "nom": "Holly",
       "trophees": 136850,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 762,
+      "rang": 765,
       "nom": "300Spartiates",
-      "trophees": 136844,
+      "trophees": 136847,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 763,
+      "rang": 766,
       "nom": "Epic Sniper 2.0",
       "trophees": 136833,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 764,
-      "nom": "Realm IX",
-      "trophees": 136830,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 765,
-      "nom": "The French Pros",
-      "trophees": 136824,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 766,
+      "rang": 767,
       "nom": "Clan Francais",
-      "trophees": 136823,
+      "trophees": 136826,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 767,
-      "nom": "Les nazguls",
-      "trophees": 136822,
-      "membres": 48,
+      "rang": 768,
+      "nom": "The French Pros",
+      "trophees": 136825,
+      "membres": 50,
       "nous": false
     },
     {
-      "rang": 768,
+      "rang": 769,
+      "nom": "Realm IX",
+      "trophees": 136825,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 770,
       "nom": "Presque2 FRANCE",
       "trophees": 136820,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 769,
+      "rang": 771,
       "nom": "Hot Savoie",
-      "trophees": 136819,
+      "trophees": 136820,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 770,
-      "nom": "L'orange spm",
-      "trophees": 136818,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 771,
-      "nom": "FRANCE",
-      "trophees": 136818,
-      "membres": 49,
+      "rang": 772,
+      "nom": "Les nazguls",
+      "trophees": 136819,
+      "membres": 48,
       "nous": false
     }
   ]
