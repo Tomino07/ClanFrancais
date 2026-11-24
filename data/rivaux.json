@@ -1,66 +1,31 @@
 {
   "clans": [
     {
-      "rang": 775,
-      "nom": "Realm IX",
-      "trophees": 136838,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 776,
-      "nom": "Epic Sniper 2.0",
+      "rang": 780,
+      "nom": "Tim 2 Choc",
       "trophees": 136834,
-      "membres": 44,
+      "membres": 48,
       "nous": false
     },
     {
-      "rang": 777,
+      "rang": 781,
       "nom": "Les Expendables",
-      "trophees": 136833,
+      "trophees": 136834,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 778,
+      "rang": 782,
       "nom": "Hot Savoie",
       "trophees": 136832,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 779,
-      "nom": "Chez Tos",
-      "trophees": 136831,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 780,
-      "nom": "Clan Francais",
-      "trophees": 136829,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 781,
-      "nom": "Tim 2 Choc",
-      "trophees": 136824,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 782,
+      "rang": 783,
       "nom": "Comeback 3",
       "trophees": 136822,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 783,
-      "nom": "10.9-reserve",
-      "trophees": 136821,
-      "membres": 47,
       "nous": false
     },
     {
@@ -72,9 +37,44 @@
     },
     {
       "rang": 785,
+      "nom": "Clan Francais",
+      "trophees": 136819,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 786,
       "nom": "The French Pros",
       "trophees": 136817,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 787,
+      "nom": "10.9-reserve",
+      "trophees": 136817,
+      "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 788,
+      "nom": "Les nazguls",
+      "trophees": 136816,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 789,
+      "nom": "BZH",
+      "trophees": 136813,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 790,
+      "nom": "Cailloux",
+      "trophees": 136807,
+      "membres": 49,
       "nous": false
     }
   ]
