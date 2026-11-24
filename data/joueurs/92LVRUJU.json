@@ -55,7 +55,7 @@
   "combats": [
     {
       "date": "20261115T140604.000Z",
-      "type": "unknown",
+      "type": "competitiveDuel",
       "mode": "Competitive_Multideck",
       "moi": 2,
       "adv": 0,
@@ -131,7 +131,7 @@
     },
     {
       "date": "20261115T135601.000Z",
-      "type": "unknown",
+      "type": "competitiveDuel",
       "mode": "Competitive_Multideck",
       "moi": 2,
       "adv": 0,
@@ -207,7 +207,7 @@
     },
     {
       "date": "20261115T134622.000Z",
-      "type": "unknown",
+      "type": "competitiveDuel",
       "mode": "Competitive_Multideck",
       "moi": 3,
       "adv": 1,
@@ -283,7 +283,7 @@
     },
     {
       "date": "20261115T133636.000Z",
-      "type": "unknown",
+      "type": "competitiveDuel",
       "mode": "Competitive_Multideck",
       "moi": 2,
       "adv": 3,
