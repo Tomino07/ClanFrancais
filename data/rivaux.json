@@ -1,46 +1,53 @@
 {
   "clans": [
     {
-      "rang": 764,
+      "rang": 763,
       "nom": "Holly",
       "trophees": 136850,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 765,
+      "rang": 764,
       "nom": "300Spartiates",
       "trophees": 136844,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 766,
+      "rang": 765,
       "nom": "FRANCE",
       "trophees": 136834,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 767,
+      "rang": 766,
       "nom": "Epic Sniper 2.0",
       "trophees": 136833,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 768,
+      "rang": 767,
       "nom": "Realm IX",
-      "trophees": 136827,
+      "trophees": 136830,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 769,
+      "rang": 768,
       "nom": "Clan Francais",
       "trophees": 136823,
       "membres": 48,
       "nous": true
+    },
+    {
+      "rang": 769,
+      "nom": "Les nazguls",
+      "trophees": 136822,
+      "membres": 48,
+      "nous": false
     },
     {
       "rang": 770,
@@ -51,7 +58,7 @@
     },
     {
       "rang": 771,
-      "nom": "Les nazguls",
+      "nom": "Hot Savoie",
       "trophees": 136819,
       "membres": 48,
       "nous": false
@@ -65,16 +72,9 @@
     },
     {
       "rang": 773,
-      "nom": "Hot Savoie",
-      "trophees": 136815,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 774,
-      "nom": "Barbes Grises",
-      "trophees": 136810,
-      "membres": 49,
+      "nom": "les affrenchis",
+      "trophees": 136812,
+      "membres": 50,
       "nous": false
     }
   ]
