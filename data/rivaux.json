@@ -1,10 +1,17 @@
 {
   "clans": [
     {
-      "rang": 781,
+      "rang": 780,
       "nom": "Tim 2 Choc",
-      "trophees": 136847,
+      "trophees": 136844,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 781,
+      "nom": "Infinity",
+      "trophees": 136842,
+      "membres": 50,
       "nous": false
     },
     {
@@ -16,64 +23,57 @@
     },
     {
       "rang": 783,
-      "nom": "BZH",
-      "trophees": 136835,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 784,
       "nom": "Epic Sniper 2.0",
       "trophees": 136833,
       "membres": 44,
       "nous": false
     },
     {
-      "rang": 785,
+      "rang": 784,
       "nom": "Nantes",
       "trophees": 136833,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 786,
+      "rang": 785,
       "nom": "Clan Francais",
       "trophees": 136831,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 787,
+      "rang": 786,
       "nom": "L'orange spm",
       "trophees": 136829,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 788,
+      "rang": 787,
       "nom": "10.9-reserve",
       "trophees": 136829,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 789,
+      "rang": 788,
       "nom": "Presque2 FRANCE",
-      "trophees": 136826,
+      "trophees": 136829,
       "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 789,
+      "nom": "BZH",
+      "trophees": 136824,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 790,
       "nom": "The French Pros",
       "trophees": 136821,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 791,
-      "nom": "Realm IX",
-      "trophees": 136819,
       "membres": 50,
       "nous": false
     }
