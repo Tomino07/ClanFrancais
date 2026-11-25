@@ -1,52 +1,59 @@
 {
   "clans": [
     {
-      "rang": 795,
+      "rang": 794,
       "nom": "Nantes",
-      "trophees": 136849,
+      "trophees": 136846,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 796,
-      "nom": "Clash royal FR",
-      "trophees": 136846,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 797,
+      "rang": 795,
       "nom": "L'orange spm",
       "trophees": 136844,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 798,
+      "rang": 796,
       "nom": "Les Anciens !!",
       "trophees": 136844,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 799,
+      "rang": 797,
       "nom": "Jarl Firthu",
-      "trophees": 136841,
+      "trophees": 136844,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 800,
+      "rang": 798,
+      "nom": "Gang de Gaulois",
+      "trophees": 136843,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 799,
       "nom": "Clan Francais",
       "trophees": 136840,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 801,
+      "rang": 800,
       "nom": "Clan des darons",
-      "trophees": 136837,
+      "trophees": 136840,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 801,
+      "nom": "Presque2 FRANCE",
+      "trophees": 136839,
+      "membres": 46,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "Hot Savoie",
       "trophees": 136833,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 805,
-      "nom": "LA PORCHERIE",
-      "trophees": 136831,
-      "membres": 49,
       "nous": false
     }
   ]
