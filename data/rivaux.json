@@ -1,24 +1,31 @@
 {
   "clans": [
     {
+      "rang": 627,
+      "nom": "13ème clan !",
+      "trophees": 137398,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 628,
-      "nom": "France",
-      "trophees": 137385,
+      "nom": "- F R A N C E -",
+      "trophees": 137390,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 629,
-      "nom": "psg psg psg psg",
-      "trophees": 137379,
-      "membres": 48,
+      "nom": "France",
+      "trophees": 137382,
+      "membres": 50,
       "nous": false
     },
     {
       "rang": 630,
-      "nom": "- F R A N C E -",
-      "trophees": 137379,
-      "membres": 50,
+      "nom": "psg psg psg psg",
+      "trophees": 137381,
+      "membres": 48,
       "nous": false
     },
     {
@@ -30,29 +37,29 @@
     },
     {
       "rang": 632,
-      "nom": "@arc en mousse@",
-      "trophees": 137371,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 633,
       "nom": "Clan Francais",
       "trophees": 137370,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 634,
+      "rang": 633,
       "nom": "Eden Légion",
-      "trophees": 137367,
+      "trophees": 137365,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 635,
+      "rang": 634,
       "nom": "AubignyCityGang",
-      "trophees": 137362,
+      "trophees": 137364,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 635,
+      "nom": "@arc en mousse@",
+      "trophees": 137361,
       "membres": 50,
       "nous": false
     },
@@ -68,13 +75,6 @@
       "nom": "la French touch",
       "trophees": 137356,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 638,
-      "nom": "les déglingués",
-      "trophees": 137351,
-      "membres": 46,
       "nous": false
     }
   ]
