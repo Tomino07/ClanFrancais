@@ -1,16 +1,9 @@
 {
   "clans": [
     {
-      "rang": 795,
-      "nom": "Clash royal FR",
-      "trophees": 136849,
-      "membres": 46,
-      "nous": false
-    },
-    {
       "rang": 796,
       "nom": "Jarl Firthu",
-      "trophees": 136847,
+      "trophees": 136849,
       "membres": 48,
       "nous": false
     },
@@ -37,17 +30,17 @@
     },
     {
       "rang": 800,
+      "nom": "Clan des darons",
+      "trophees": 136843,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 801,
       "nom": "Clan Francais",
       "trophees": 136840,
       "membres": 48,
       "nous": true
-    },
-    {
-      "rang": 801,
-      "nom": "Clan des darons",
-      "trophees": 136840,
-      "membres": 50,
-      "nous": false
     },
     {
       "rang": 802,
@@ -75,6 +68,13 @@
       "nom": "Hot Savoie",
       "trophees": 136833,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 806,
+      "nom": "BZH",
+      "trophees": 136824,
+      "membres": 50,
       "nous": false
     }
   ]
