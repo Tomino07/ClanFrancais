@@ -5,16 +5,12 @@
   "niveau": 65,
   "trophees": 13875,
   "record": 13875,
-  "victoires": 6650,
+  "victoires": 6651,
   "dons": 0,
   "deck": [
     {
       "nom": "Firecracker",
       "image": "https://api-assets.clashroyale.com/cards/300/c1rL3LO1U2D9-TkeFfAC18gP3AO8ztSwrcHMZplwL2Q.png"
-    },
-    {
-      "nom": "Skeleton King",
-      "image": "https://api-assets.clashroyale.com/cards/300/dCd69_wN9f8DxwuqOGtR4QgWhHIPIaTNxZ1e23RzAAc.png"
     },
     {
       "nom": "Inferno Dragon",
@@ -53,6 +49,50 @@
   },
   "mvps": 0,
   "combats": [
+    {
+      "date": "20261125T020052.000Z",
+      "type": "pathOfLegend",
+      "mode": "Ranked1v1_NewArena2",
+      "moi": 1,
+      "adv": 0,
+      "trophees": 30,
+      "adversaire": "arnaupede17",
+      "clanAdv": "Gritamisuuuu",
+      "deckAdv": [
+        {
+          "nom": "Wizard",
+          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
+        },
+        {
+          "nom": "Valkyrie",
+          "image": "https://api-assets.clashroyale.com/cards/300/0lIoYf3Y_plFTzo95zZL93JVxpfb3MMgFDDhgSDGU9A.png"
+        },
+        {
+          "nom": "Boss Bandit",
+          "image": "https://api-assets.clashroyale.com/cards/300/nuceG9o7rAyvyc7D3sp2QSiRYtSOEgraq0NJkDf729s.png"
+        },
+        {
+          "nom": "Ronin",
+          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
+        },
+        {
+          "nom": "Zap",
+          "image": "https://api-assets.clashroyale.com/cards/300/7dxh2-yCBy1x44GrBaL29vjqnEEeJXHEAlsi5g6D1eY.png"
+        },
+        {
+          "nom": "The Log",
+          "image": "https://api-assets.clashroyale.com/cards/300/_iDwuDLexHPFZ_x4_a0eP-rxCS6vwWgTs6DLauwwoaY.png"
+        },
+        {
+          "nom": "Tesla",
+          "image": "https://api-assets.clashroyale.com/cards/300/OiwnGrxFMNiHetYEerE-UZt0L_uYNzFY7qV_CA_OxR4.png"
+        },
+        {
+          "nom": "Goblin Gang",
+          "image": "https://api-assets.clashroyale.com/cards/300/NHflxzVAQT4oAz7eDfdueqpictb5vrWezn1nuqFhE4w.png"
+        }
+      ]
+    },
     {
       "date": "20261124T074838.000Z",
       "type": "pathOfLegend",
@@ -446,50 +486,6 @@
         {
           "nom": "Vines",
           "image": "https://api-assets.clashroyale.com/cards/300/V5sJlPuo2WBRtirJ1lGEPJA4NvQ0KPwFeMrpxLX5z_8.png"
-        }
-      ]
-    },
-    {
-      "date": "20261118T173513.000Z",
-      "type": "pathOfLegend",
-      "mode": "Ranked1v1_NewArena2",
-      "moi": 2,
-      "adv": 1,
-      "trophees": 30,
-      "adversaire": "ttnk",
-      "clanAdv": "hermosillo",
-      "deckAdv": [
-        {
-          "nom": "Mega Knight",
-          "image": "https://api-assets.clashroyale.com/cards/300/O2NycChSNhn_UK9nqBXUhhC_lILkiANzPuJjtjoz0CE.png"
-        },
-        {
-          "nom": "Electro Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/RsFaHgB3w6vXsTjXdPr3x8l_GbV9TbOUCvIx07prbrQ.png"
-        },
-        {
-          "nom": "Wizard",
-          "image": "https://api-assets.clashroyale.com/cards/300/Mej7vnv4H_3p_8qPs_N6_GKahy6HDr7pU7i9eTHS84U.png"
-        },
-        {
-          "nom": "Elixir Golem",
-          "image": "https://api-assets.clashroyale.com/cards/300/puhMsZjCIqy21HW3hYxjrk_xt8NIPyFqjRy-BeLKZwo.png"
-        },
-        {
-          "nom": "Minion Horde",
-          "image": "https://api-assets.clashroyale.com/cards/300/Wyjq5l0IXHTkX9Rmpap6HaH08MvjbxFp1xBO9a47YSI.png"
-        },
-        {
-          "nom": "Fireball",
-          "image": "https://api-assets.clashroyale.com/cards/300/lZD9MILQv7O-P3XBr_xOLS5idwuz3_7Ws9G60U36yhc.png"
-        },
-        {
-          "nom": "Executioner",
-          "image": "https://api-assets.clashroyale.com/cards/300/9XL5BP2mqzV8kza6KF8rOxrpCZTyuGLp2l413DTjEoM.png"
-        },
-        {
-          "nom": "Ronin",
-          "image": "https://api-assets.clashroyale.com/cards/300/X0dTFs7OGUavreDEzOtYd_YNZ8Zly6qgAE-dd-bNfWU.png"
         }
       ]
     }
