@@ -1,13 +1,6 @@
 {
   "clans": [
     {
-      "rang": 801,
-      "nom": "Comeback 3",
-      "trophees": 136858,
-      "membres": 48,
-      "nous": false
-    },
-    {
       "rang": 802,
       "nom": "L'orange spm",
       "trophees": 136852,
@@ -24,7 +17,7 @@
     {
       "rang": 804,
       "nom": "Clan des darons",
-      "trophees": 136841,
+      "trophees": 136845,
       "membres": 50,
       "nous": false
     },
@@ -37,17 +30,17 @@
     },
     {
       "rang": 806,
+      "nom": "adultes only",
+      "trophees": 136841,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 807,
       "nom": "Clan Francais",
       "trophees": 136840,
       "membres": 48,
       "nous": true
-    },
-    {
-      "rang": 807,
-      "nom": "adultes only",
-      "trophees": 136838,
-      "membres": 49,
-      "nous": false
     },
     {
       "rang": 808,
@@ -75,6 +68,13 @@
       "nom": "Les nazguls",
       "trophees": 136820,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 812,
+      "nom": "LA PORCHERIE",
+      "trophees": 136820,
+      "membres": 49,
       "nous": false
     }
   ]
