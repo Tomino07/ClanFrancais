@@ -1,80 +1,80 @@
 {
   "clans": [
     {
+      "rang": 816,
+      "nom": "Légion noire",
+      "trophees": 136893,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 817,
+      "nom": "La chouille",
+      "trophees": 136885,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 818,
+      "nom": "Holly",
+      "trophees": 136877,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 819,
-      "nom": "*French Hope*",
-      "trophees": 136864,
+      "nom": "french family",
+      "trophees": 136877,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 820,
-      "nom": "Comeback 3",
-      "trophees": 136862,
+      "nom": "Les nazguls",
+      "trophees": 136867,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 821,
+      "nom": "Clan Francais",
+      "trophees": 136865,
+      "membres": 48,
+      "nous": true
+    },
+    {
+      "rang": 822,
+      "nom": "Comeback 3",
+      "trophees": 136864,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 823,
       "nom": "2 clans pains",
-      "trophees": 136861,
+      "trophees": 136864,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 822,
+      "rang": 824,
+      "nom": "*French Hope*",
+      "trophees": 136863,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 825,
       "nom": "Les Expendables",
       "trophees": 136857,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 823,
-      "nom": "adultes only",
-      "trophees": 136856,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 824,
-      "nom": "Clan Francais",
-      "trophees": 136854,
-      "membres": 48,
-      "nous": true
-    },
-    {
-      "rang": 825,
-      "nom": "Boomanoob",
-      "trophees": 136853,
-      "membres": 43,
-      "nous": false
-    },
-    {
       "rang": 826,
-      "nom": "Clan des darons",
-      "trophees": 136852,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 827,
-      "nom": "barbare d'élite",
-      "trophees": 136849,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 828,
-      "nom": "L'orange spm",
-      "trophees": 136847,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 829,
-      "nom": "Realm IX",
-      "trophees": 136845,
-      "membres": 50,
+      "nom": "adultes only",
+      "trophees": 136855,
+      "membres": 49,
       "nous": false
     }
   ]
