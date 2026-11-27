@@ -1,8 +1,15 @@
 {
   "clans": [
     {
-      "rang": 815,
+      "rang": 814,
       "nom": "La chouille",
+      "trophees": 136882,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 815,
+      "nom": "french family",
       "trophees": 136882,
       "membres": 48,
       "nous": false
@@ -16,51 +23,51 @@
     },
     {
       "rang": 817,
-      "nom": "french family",
-      "trophees": 136877,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 818,
       "nom": "METALSTORM",
-      "trophees": 136876,
+      "trophees": 136875,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 819,
+      "rang": 818,
       "nom": "*French Hope*",
       "trophees": 136869,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 820,
+      "rang": 819,
       "nom": "Clan Francais",
       "trophees": 136868,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 821,
-      "nom": "barbare d'élite",
-      "trophees": 136865,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 822,
+      "rang": 820,
       "nom": "Les nazguls",
       "trophees": 136864,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 823,
+      "rang": 821,
+      "nom": "barbare d'élite",
+      "trophees": 136864,
+      "membres": 46,
+      "nous": false
+    },
+    {
+      "rang": 822,
       "nom": "2 clans pains",
       "trophees": 136860,
       "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 823,
+      "nom": "Gemini IM",
+      "trophees": 136860,
+      "membres": 44,
       "nous": false
     },
     {
@@ -68,13 +75,6 @@
       "nom": "Comeback 3",
       "trophees": 136858,
       "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 825,
-      "nom": "Les Expendables",
-      "trophees": 136857,
-      "membres": 50,
       "nous": false
     }
   ]
