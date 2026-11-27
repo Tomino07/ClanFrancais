@@ -2,22 +2,22 @@
   "clans": [
     {
       "rang": 805,
+      "nom": "Légion noire",
+      "trophees": 136898,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 806,
       "nom": "#uL-Team-2",
       "trophees": 136896,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 806,
-      "nom": "Légion noire",
-      "trophees": 136895,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 807,
       "nom": "METALSTORM",
-      "trophees": 136888,
+      "trophees": 136885,
       "membres": 49,
       "nous": false
     },
@@ -51,23 +51,23 @@
     },
     {
       "rang": 812,
-      "nom": "adultes only",
-      "trophees": 136871,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 813,
       "nom": "Les nazguls",
       "trophees": 136869,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 814,
+      "rang": 813,
       "nom": "-pin",
-      "trophees": 136867,
+      "trophees": 136869,
       "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 814,
+      "nom": "adultes only",
+      "trophees": 136869,
+      "membres": 49,
       "nous": false
     },
     {
