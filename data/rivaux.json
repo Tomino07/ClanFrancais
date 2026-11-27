@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 801,
+      "rang": 800,
       "nom": "La chouille",
       "trophees": 136884,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 802,
+      "rang": 801,
       "nom": "Clan des darons",
       "trophees": 136882,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 803,
+      "rang": 802,
       "nom": "Holly",
       "trophees": 136881,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 804,
-      "nom": "#uL-Team-2",
-      "trophees": 136881,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 805,
+      "rang": 803,
       "nom": "Adulte France",
       "trophees": 136879,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 806,
+      "rang": 804,
+      "nom": "adultes only",
+      "trophees": 136875,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 805,
       "nom": "Clan Francais",
       "trophees": 136873,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 807,
-      "nom": "adultes only",
-      "trophees": 136871,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 808,
+      "rang": 806,
       "nom": "Les nazguls",
       "trophees": 136869,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 809,
+      "rang": 807,
+      "nom": "Comeback 3",
+      "trophees": 136865,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 808,
       "nom": "barbare d'élite",
       "trophees": 136864,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 810,
-      "nom": "Comeback 3",
-      "trophees": 136862,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 811,
+      "rang": 809,
       "nom": "Gemini IM",
       "trophees": 136860,
       "membres": 44,
+      "nous": false
+    },
+    {
+      "rang": 810,
+      "nom": "2 clans pains",
+      "trophees": 136855,
+      "membres": 50,
       "nous": false
     }
   ]
