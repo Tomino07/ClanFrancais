@@ -1,7 +1,7 @@
 {
   "mois": "2026-11",
   "libelle": "novembre 2026",
-  "majAt": "2026-11-27T22:01:43.869Z",
+  "majAt": "2026-11-27T22:31:38.635Z",
   "classement": [
     {
       "tag": "PPRJ9RGV",
@@ -19,7 +19,7 @@
       "guerre": 0,
       "dons": 1192,
       "trophees": 194,
-      "score": 33
+      "score": 34
     },
     {
       "tag": "GPJ0J8RJ9",
@@ -28,6 +28,15 @@
       "guerre": 700,
       "dons": 654,
       "trophees": 181,
+      "score": 28
+    },
+    {
+      "tag": "2V0G2JUPV",
+      "nom": "sky",
+      "role": "member",
+      "guerre": 0,
+      "dons": 550,
+      "trophees": 343,
       "score": 27
     },
     {
@@ -37,15 +46,6 @@
       "guerre": 1350,
       "dons": 633,
       "trophees": 33,
-      "score": 26
-    },
-    {
-      "tag": "2V0G2JUPV",
-      "nom": "sky",
-      "role": "member",
-      "guerre": 0,
-      "dons": 550,
-      "trophees": 343,
       "score": 26
     }
   ],
