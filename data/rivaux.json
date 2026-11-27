@@ -1,23 +1,16 @@
 {
   "clans": [
     {
-      "rang": 807,
+      "rang": 808,
       "nom": "Montpellier",
       "trophees": 136902,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 808,
-      "nom": "Clan des darons",
-      "trophees": 136883,
-      "membres": 50,
-      "nous": false
-    },
-    {
       "rang": 809,
-      "nom": "Ardennes rebels",
-      "trophees": 136883,
+      "nom": "Clan des darons",
+      "trophees": 136884,
       "membres": 50,
       "nous": false
     },
@@ -31,49 +24,56 @@
     {
       "rang": 811,
       "nom": "-pin",
-      "trophees": 136880,
+      "trophees": 136881,
       "membres": 48,
       "nous": false
     },
     {
       "rang": 812,
+      "nom": "Ardennes rebels",
+      "trophees": 136880,
+      "membres": 50,
+      "nous": false
+    },
+    {
+      "rang": 813,
       "nom": "Clan Francais",
       "trophees": 136878,
       "membres": 48,
       "nous": true
     },
     {
-      "rang": 813,
+      "rang": 814,
       "nom": "Adulte France",
       "trophees": 136876,
       "membres": 49,
       "nous": false
     },
     {
-      "rang": 814,
+      "rang": 815,
       "nom": "France",
       "trophees": 136874,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 815,
+      "rang": 816,
       "nom": "barbare d'élite",
       "trophees": 136871,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 816,
+      "rang": 817,
       "nom": "Les nazguls",
       "trophees": 136869,
       "membres": 48,
       "nous": false
     },
     {
-      "rang": 817,
+      "rang": 818,
       "nom": "adultes only",
-      "trophees": 136865,
+      "trophees": 136864,
       "membres": 49,
       "nous": false
     }
