@@ -1,32 +1,46 @@
 {
   "clans": [
     {
-      "rang": 626,
+      "rang": 624,
+      "nom": "1Pekkable",
+      "trophees": 137409,
+      "membres": 48,
+      "nous": false
+    },
+    {
+      "rang": 625,
       "nom": "Arès",
       "trophees": 137406,
       "membres": 45,
       "nous": false
     },
     {
+      "rang": 626,
+      "nom": "Eden Légion",
+      "trophees": 137406,
+      "membres": 49,
+      "nous": false
+    },
+    {
       "rang": 627,
       "nom": "Bzh",
-      "trophees": 137404,
+      "trophees": 137401,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 628,
-      "nom": "Eden Légion",
-      "trophees": 137402,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 629,
       "nom": "Arcande",
       "trophees": 137399,
       "membres": 50,
       "nous": false
+    },
+    {
+      "rang": 629,
+      "nom": "Clan Francais",
+      "trophees": 137398,
+      "membres": 49,
+      "nous": true
     },
     {
       "rang": 630,
@@ -37,43 +51,29 @@
     },
     {
       "rang": 631,
-      "nom": "Clan Francais",
-      "trophees": 137394,
-      "membres": 49,
-      "nous": true
-    },
-    {
-      "rang": 632,
-      "nom": "Dame de Trêfle",
-      "trophees": 137392,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 633,
       "nom": "1000%remplaçant",
       "trophees": 137390,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 634,
+      "rang": 632,
       "nom": "Armoire",
       "trophees": 137379,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 635,
+      "rang": 633,
       "nom": "BAHAMUT STYLE",
-      "trophees": 137378,
+      "trophees": 137375,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 636,
+      "rang": 634,
       "nom": "Baguette",
-      "trophees": 137375,
+      "trophees": 137372,
       "membres": 50,
       "nous": false
     }
