@@ -1,6 +1,13 @@
 {
   "clans": [
     {
+      "rang": 628,
+      "nom": "1000%remplaçant",
+      "trophees": 137413,
+      "membres": 46,
+      "nous": false
+    },
+    {
       "rang": 629,
       "nom": "FR adulte",
       "trophees": 137410,
@@ -30,48 +37,41 @@
     },
     {
       "rang": 633,
-      "nom": "Bzh",
-      "trophees": 137402,
-      "membres": 50,
-      "nous": false
-    },
-    {
-      "rang": 634,
       "nom": "Clan Francais",
       "trophees": 137401,
       "membres": 49,
       "nous": true
     },
     {
+      "rang": 634,
+      "nom": "Bzh",
+      "trophees": 137401,
+      "membres": 50,
+      "nous": false
+    },
+    {
       "rang": 635,
       "nom": "BAHAMUT STYLE",
-      "trophees": 137399,
+      "trophees": 137396,
       "membres": 50,
       "nous": false
     },
     {
       "rang": 636,
-      "nom": "Band of Adultes",
-      "trophees": 137384,
-      "membres": 46,
-      "nous": false
-    },
-    {
-      "rang": 637,
       "nom": "Baguette Game",
-      "trophees": 137380,
+      "trophees": 137376,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 638,
+      "rang": 637,
       "nom": "Baguette",
       "trophees": 137375,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 639,
+      "rang": 638,
       "nom": "Les Chipmunks",
       "trophees": 137371,
       "membres": 50,
