@@ -1,80 +1,80 @@
 {
   "clans": [
     {
-      "rang": 628,
+      "rang": 626,
+      "nom": "Trentenaires",
+      "trophees": 137427,
+      "membres": 49,
+      "nous": false
+    },
+    {
+      "rang": 627,
       "nom": "Les Tontons",
       "trophees": 137424,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 629,
+      "rang": 628,
       "nom": "4.2.0",
       "trophees": 137424,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 630,
+      "rang": 629,
       "nom": "LES TEMPLIERS",
       "trophees": 137420,
       "membres": 46,
       "nous": false
     },
     {
-      "rang": 631,
+      "rang": 630,
       "nom": "Abbaye royale",
       "trophees": 137419,
       "membres": 47,
       "nous": false
     },
     {
-      "rang": 632,
-      "nom": "1PEKKAble",
-      "trophees": 137417,
-      "membres": 48,
-      "nous": false
-    },
-    {
-      "rang": 633,
+      "rang": 631,
       "nom": "Clan Francais",
       "trophees": 137408,
       "membres": 49,
       "nous": true
     },
     {
-      "rang": 634,
+      "rang": 632,
       "nom": "Arès",
       "trophees": 137406,
       "membres": 45,
       "nous": false
     },
     {
-      "rang": 635,
+      "rang": 633,
       "nom": "#DLCW FR",
       "trophees": 137406,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 636,
-      "nom": "Coiffeurs CJ",
-      "trophees": 137403,
-      "membres": 49,
-      "nous": false
-    },
-    {
-      "rang": 637,
+      "rang": 634,
       "nom": "Arcande",
       "trophees": 137401,
       "membres": 50,
       "nous": false
     },
     {
-      "rang": 638,
+      "rang": 635,
       "nom": "Savoie",
       "trophees": 137397,
       "membres": 47,
+      "nous": false
+    },
+    {
+      "rang": 636,
+      "nom": "1000%remplaçant",
+      "trophees": 137391,
+      "membres": 46,
       "nous": false
     }
   ]
