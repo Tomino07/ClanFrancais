@@ -1,20 +1,12 @@
 {
   "type": "warDay",
-  "jour": 4,
-  "majAt": "2026-11-28T09:30:58Z",
+  "jour": 5,
+  "majAt": "2026-11-28T10:01:05Z",
   "objectif": 10000,
   "clans": [
     {
       "nom": "INDIANS",
-      "points": 3176,
-      "aujourdhui": 2200,
-      "combats": 13,
-      "fini": false,
-      "nous": false
-    },
-    {
-      "nom": "DARK",
-      "points": 2002,
+      "points": 6352,
       "aujourdhui": 0,
       "combats": 0,
       "fini": false,
@@ -22,27 +14,35 @@
     },
     {
       "nom": "akacze spustacz",
-      "points": 1159,
-      "aujourdhui": 1250,
-      "combats": 8,
+      "points": 3118,
+      "aujourdhui": 0,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
     {
-      "nom": "Deutschland",
-      "points": 649,
-      "aujourdhui": 750,
-      "combats": 6,
+      "nom": "DARK",
+      "points": 2204,
+      "aujourdhui": 0,
+      "combats": 0,
       "fini": false,
       "nous": false
     },
     {
       "nom": "Clan Francais",
-      "points": 612,
-      "aujourdhui": 900,
-      "combats": 4,
+      "points": 1724,
+      "aujourdhui": 0,
+      "combats": 0,
       "fini": false,
       "nous": true
+    },
+    {
+      "nom": "Deutschland",
+      "points": 1398,
+      "aujourdhui": 0,
+      "combats": 0,
+      "fini": false,
+      "nous": false
     }
   ]
 }
